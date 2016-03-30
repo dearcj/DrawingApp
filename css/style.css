@@ -1,0 +1,1490 @@
+body {
+	margin: 0;
+}
+
+body #wrapper {
+	font-family: 'DINRoundPro-Bold', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+@font-face {
+  font-family: 'Shadow-Regular';
+  src: url('Shadow-Regular.woff') format('woff'),
+       url('Shadow-Regular.ttf') format('truetype'),
+       url('Shadow-Regular.svg#Shadow-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Shadow_regular';
+  src: url('Shadow_regular.eot');
+  src: url('Shadow_regular.eot?#iefix') format('embedded-opentype'),
+       url('Shadow_regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINRoundPro-Bold';
+  src: url('DINRoundPro-Bold.eot');
+  src: url('DINRoundPro-Bold.eot?#iefix') format('embedded-opentype'),
+       url('DINRoundPro-Bold.woff2') format('woff2'),
+       url('DINRoundPro-Bold.woff') format('woff'),
+       url('DINRoundPro-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.langs {
+	height: 10px;
+}
+
+.langs ul {
+	float: right;
+	margin: 0;
+	margin-right: 16px;
+}
+
+.langs ul li {
+	float: left;
+	margin-right: 15px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.langs ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+#wrapper {
+	background-color: #300F06;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	z-index: 1000;
+	background: url(../img/bg_mmoma.gif) repeat-x;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+.header a {
+	padding-left: 20px;
+}
+
+.header a img {
+	height: 110px;
+}
+
+#sky {
+	position: absolute;
+	background: url(../img/sky.jpg) no-repeat;
+	background-size: 100% 100%;
+	background-position: 50% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#art {
+	position: absolute;
+	background: url(../img/art.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: 50% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#dog {
+	background: url(../img/dog.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+#momandson {
+	background: url(../img/momandson.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+#couple {
+	background: url(../img/couple.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+#bottom-elements {
+	height: 0;
+}
+
+#bottom-elements div:hover {
+	cursor: pointer;
+}
+
+ul#buttons {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	list-style: none;
+}
+
+ul#buttons div {
+	float: left;
+	width: 22.8%;
+}
+
+ul#buttons div.middle-block {
+	float:left;
+	width: 51%;
+	margin: 0;
+	text-align: center;
+}
+
+ul#buttons li {
+	position: relative;
+}
+
+ul#buttons li.hor {
+	width: 100%;
+}
+
+ul#buttons li.vert {
+	display: inline-block;
+	width: 50%;
+}
+
+ul#buttons li#button-1 {
+	background: url(../img/button-1.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-2 {
+	background: url(../img/button-2.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-3 {
+	background: url(../img/button-3.png) no-repeat;
+	background-size: 100%;
+	float: left;
+}
+
+ul#buttons li#button-4 {
+	background: url(../img/button-4.png) no-repeat;
+	background-size: 100%;
+	float: right;
+}
+
+ul#buttons li#button-5 {
+	background: url(../img/button-5.png) no-repeat;
+	background-size: 100%;
+	margin-right: 0;
+}
+
+ul#buttons li#button-6 {
+	background: url(../img/button-6.png) no-repeat;
+	background-size: 100%;
+	margin-right: 0;
+}
+
+ul#buttons li:hover,
+ul#buttons li:focus {
+	cursor: pointer;
+}
+
+ul#buttons li#button-1:hover {
+	background: url(../img/button-1-hover.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-2:hover {
+	background: url(../img/button-2-hover.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-3:hover {
+	background: url(../img/button-3-hover.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-4:hover {
+	background: url(../img/button-4-hover.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-5:hover {
+	background: url(../img/button-5-hover.png) no-repeat;
+	background-size: 100%;
+	margin-right: 0;
+}
+
+ul#buttons li#button-6:hover {
+	background: url(../img/button-6-hover.png) no-repeat;
+	background-size: 100%;
+	margin-right: 0;
+}
+
+ul#buttons li span {
+	position: relative;
+	display: block;
+	opacity: 0;
+	z-index: 10;
+	width: auto;
+	color: white;
+	text-align: center;;
+	background-color: #31b2ee;
+	border-radius: 8px;
+	height: auto;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow:         0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+ul#buttons li:hover span {
+	opacity: 1;
+}
+
+ul#buttons li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.save-and-send:active {
+	outline: none;
+}
+
+ul#helpers {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 0;
+}
+
+#tools-wrapper ul#helpers li {
+	z-index: 100;
+}
+
+ul#helpers li {
+	position: relative;
+	list-style: none;
+	background: url(../img/help.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#helpers li:hover {
+	background: url(../img/help-hover.png) no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+li#helper-6,
+li#helper-6s {
+	width: 100% !important;
+	height: 0 !important;
+}
+
+li#helper-9 {
+    position: relative;
+    top: 450px;
+    left: -15px;
+}
+
+ul#helpers li span {
+	position: relative;
+	display: none;
+	text-align: center;
+	z-index: 100;
+	background-color: #31b2ee;
+	color: white;
+	border-radius: 20px;
+	height: auto;
+	padding: 30px 35px 35px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow:         0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+div.special span {
+	position: relative;
+	text-align: center;
+	z-index: 100;
+	background-color: white;
+	color: #31b2ee;
+	display: none;
+	border-radius: 20px;
+	height: auto;
+	padding: 30px 35px 35px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow:         0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+div.special span p {
+	display: inline;
+    margin: 0;
+	color: #31b2ee;
+}
+
+ul#helpers li#helper-6 span,
+ul#helpers li#helper-6s span {
+	margin: 0 auto;
+}
+
+
+ul#helpers li:hover span,
+ul#helpers li:focus span {
+	display: inline-block;
+}
+
+ul#helpers li#helper-8:hover span,
+ul#helpers li#helper-8:focus span,
+ul#helpers li#helper-10:hover span,
+ul#helpers li#helper-10:focus span {
+	display: inline-block;
+}
+
+ul#helpers li span p {
+	display: inline;
+	color: #FFF;
+    margin: 0;
+}
+
+#index-wrapper {
+	overflow: hidden;
+}
+
+#sending-wrapper {
+	background: url(../img/sending-back.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#tools-wrapper {
+	background: url(../img/background.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-canvas {
+	background: url(../img/main-canvas.jpg) no-repeat;
+    background-size: 100%;
+    margin: 0;
+    width: 650px;
+    float: right;
+    height: 400px;
+}
+
+.main-canvas p {
+	background-color: #31b2ee;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 120%;
+    height: auto;
+    position: relative;
+    color: white;
+}
+
+ul.interface {
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+ul.interface > li {
+	position: relative;
+	float: left;
+	border: none;
+}
+
+ul.interface > li.back {
+	background: url(../img/back-button.png) no-repeat;
+	background-size: 100%;
+}
+
+ul.interface > li.refresh {	
+	background: url(../img/refresh-button.png) no-repeat;
+	background-size: 100%;
+}
+
+ul.interface > li:hover,
+ul.interface > li:focus {
+	cursor: pointer;
+}
+
+ul.paintings {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.paintings.left-side {
+	float: left;
+}
+
+ul.paintings.right-side {
+	float: right;
+}
+
+ul.paintings li {
+	background-size: 100% auto !important;
+	height: 150px;
+	margin-bottom: 30px;
+	display: table !important;
+}
+
+ul.paintings li:hover {
+	cursor: pointer;
+}
+
+ul.paintings.left-side a:nth-child(1) li {
+	background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-1.jpg) no-repeat;
+}
+
+ul.paintings.left-side a:nth-child(1):hover li {
+	background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/painting-1.jpg) no-repeat;
+}
+
+ul.paintings.left-side a:nth-child(2) li {
+	background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-2.jpg) no-repeat;
+}
+
+ul.paintings.left-side a:nth-child(2):hover li {
+	background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-2.jpg) no-repeat;
+}
+
+ul.paintings.left-side a:nth-child(3) li {
+	background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-3.jpg) no-repeat;
+}
+
+ul.paintings.left-side a:nth-child(3):hover li {
+	background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-3.jpg) no-repeat;
+}
+
+ul.paintings.right-side a:nth-child(1) li {
+	background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-4.jpg) no-repeat;
+}
+
+ul.paintings.right-side a:nth-child(1):hover li {
+	background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-4.jpg) no-repeat;
+}
+
+ul.paintings.right-side a:nth-child(2) li {
+	background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-5.jpg) no-repeat;
+}
+
+ul.paintings.right-side a:nth-child(2):hover li {
+	background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-5.jpg) no-repeat;
+}
+
+ul.paintings.right-side a:nth-child(3) li {
+	background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-6.jpg) no-repeat;
+}
+
+ul.paintings.right-side a:nth-child(3):hover li {
+	background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-6.jpg) no-repeat;
+}
+
+ul.paintings li div {
+	text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 0;
+    margin: 0 auto;
+}
+
+ul.paintings li div span {
+	display: block;
+	padding-bottom: 6px;
+}
+
+ul.paintings li div span.title {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+ul.paintings li div span.author {
+	text-transform: capitalize;
+    font-size: 14px;
+}
+
+ul.paintings li div span.materials {
+	font-size: 12px;
+	text-transform: none;
+}
+
+a.group-1:hover div span,
+a.group-1:focus div span {
+	text-decoration: none;
+}
+
+ul.paintings a {
+	outline: none;
+	color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.paintings a:hover li div {
+	opacity: 0;
+}
+
+ul.paintings a:hover li div {
+	opacity: 1;
+}
+
+.main-painting {
+	background: url(../img/main-painting.jpg) no-repeat;
+	background-size: auto 100%;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow:    0px 0px 10px 2px rgba(0,0,0,0.2);
+    box-shadow:         0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+.main-painting p {
+	position: relative;
+	background-color: #31b2ee;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 150%;
+    height: auto;
+    color: white;
+}
+
+.museum-painting {
+	background: url(../img/main-painting.jpg) no-repeat;
+	background-size: auto 100%;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow:    0px 0px 10px 2px rgba(0,0,0,0.2);
+    box-shadow:         0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+.museum-painting p {
+	position: relative;
+	background-color: #31b2ee;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 150%;
+    height: auto;
+    color: white;
+}
+
+ul.ux-buttons {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.ux-buttons.home {
+	position: relative;
+	bottom: 65px;
+}
+
+ul.ux-buttons.home li:last-child {
+	margin-left: 5px;
+}
+
+ul.ux-buttons li {
+	width: 50px;
+	height: 50px;
+	float: left;
+	opacity: 1;
+}
+
+ul.ux-buttons li:hover,
+ul.ux-buttons li:focus {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+ul.ux-buttons li:first-child {
+	background: url(../img/sound-button.png) no-repeat;
+	background-size: 100%;
+}
+
+ul.ux-buttons li:last-child {
+	background: url(../img/fullscreen-button.png) no-repeat;
+	background-size: 100%;
+	margin-left: 5px;
+}
+
+form.sending-form {
+	background-color: white;
+	margin: 0 auto;
+}
+
+form.sending-form input {
+	width: 85%;
+    background-color: #e8e8e8;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    display: block;
+    border-radius: 2px;
+    padding-left: 10px;
+    color: #888;
+}
+
+form.sending-form input:focus {
+	outline: none;
+}
+
+form.sending-form button {
+	width: 35%;
+    float: right;
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(136, 200, 12, 1);
+    height: 100px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    font-family: 'Shadow-Regular', sans-serif;
+    line-height: 110%;
+    padding-top: 8px;
+}
+
+form.sending-form button:hover,
+form.sending-form button:focus {
+	background-color: rgba(123, 179, 11, 1);
+	cursor: pointer;
+}
+
+form.sending-form .work-author {
+	float: left;
+	width: 65%;
+}
+
+form.sending-form .work-author p {
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    color: #666;
+    padding: 0;
+    width: 85%;
+    margin: 0 auto;
+    width: 22%;
+	float: left;
+	text-align: right;
+}
+
+form.sending-form .work-author span {
+    text-align: center;
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: -5px;
+}
+
+form.sending-form .work-author .item-field {
+	width: 90%;
+	margin: 0 auto;
+}
+
+form.sending-form .work-author input {
+	width: 70%;
+	float: right;
+}
+
+form.sending-form .work-author p a {
+	color: black;
+	text-decoration: none;
+	font-size: inherit;
+}
+
+ul.tools-buttons {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    float: left;
+}
+
+ul.tools-buttons li {
+	position: relative;
+    float: left;
+    margin: 0 5px;
+    opacity: 1;
+}
+
+ul.tools-buttons.surface-tb li {
+	margin: 0;
+}
+
+ul.tools-buttons.tools-tb li {
+	margin: 0;
+	float: left;
+}
+
+ul.tools-buttons li:hover {
+	opacity: 0.85;
+	cursor: pointer;
+}
+
+ul.tools {
+	position: absolute;
+	padding-left: 0;
+	margin: 0;
+}
+
+ul.tools li {
+	position: relative;
+	width: 200px;
+	height: 175px;
+}
+
+ul.tools li:nth-child(1) {
+	background: url(../img/tools/scotch.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(2) {
+	background: url(../img/tools/chalk.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(3) {
+	background: url(../img/tools/grass.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(4) {
+	background: url(../img/tools/orange.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(5) {
+	background: url(../img/tools/circles.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(6) {
+	background: url(../img/tools/ketchup.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(7) {
+	background: url(../img/tools/needle.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(8) {
+	background: url(../img/tools/gun.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(1):hover,
+ul.tools li:nth-child(1):focus {
+	background: url(../img/tools/scotch.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(2):hover,
+ul.tools li:nth-child(2):focus {
+	background: url(../img/tools/chalk.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(3):hover,
+ul.tools li:nth-child(3):focus {
+	background: url(../img/tools/grass.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(4):hover,
+ul.tools li:nth-child(4):focus {
+	background: url(../img/tools/orange.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(5):hover,
+ul.tools li:nth-child(5):focus {
+	background: url(../img/tools/circles.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(6):hover,
+ul.tools li:nth-child(6):focus {
+	background: url(../img/tools/ketchup.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(7):hover,
+ul.tools li:nth-child(7):focus {
+	background: url(../img/tools/needle.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(8):hover,
+ul.tools li:nth-child(8):focus {
+	background: url(../img/tools/gun.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li:nth-child(2n+1) {
+	float: left;
+	clear: both;
+}
+
+ul.tools li:nth-child(2n+2) {
+	float: right;
+}
+
+ul.tools li p {
+	display: none;
+	color: white;
+	position: relative;
+	text-align: center;
+}
+
+ul.tools li:hover,
+ul.tools li:focus {
+	cursor: pointer;
+}
+
+li.back-to-tools,
+li.back-to-surface {
+	background: url(../img/tools-buttons-prev.png) no-repeat;
+	background-size: 100%;
+}
+
+li.go-to-tools,
+li.add-filter {
+	background: url(../img/tools-buttons-next.png) no-repeat;
+	background-size: 100%;
+}
+
+li.its-done,
+li.send-to-museum {
+	background: url(../img/filters-done.png) no-repeat;
+	background-size: 100%;
+}
+
+li.its-done:hover,
+li.its-done:focus  {
+	cursor: pointer;
+}
+
+li.send-to-museum:hover,
+li.send-to-museum:focus {
+	cursor: pointer;
+}
+
+div.new-painting {
+	background: url(../img/new-painting.png) no-repeat;
+	background-size: 100%;
+	display: none;
+	float: right;
+	max-width: 247px;
+}
+
+div.at-the-backyard {
+	background: url(../img/at-the-backyard.png) no-repeat;
+	background-size: 100%;
+	float: left;
+	max-width: 160px;
+}
+
+.surface-button.at-the-backyard {
+	position: relative;
+}
+
+#surface-wrapper {
+	background: url(../img/background.png) no-repeat;
+    background-position: 50% 0;
+    background-size: 100% auto;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.dark-side {
+	background-color: rgba(126,86,7,0.4);
+    position: relative;
+    margin: 0 auto;
+}
+
+.dark-side.surface {
+	background-color: rgba(0,0,0,0.35);
+	opacity: 0;
+}
+
+.dark-side.filters {
+	margin: 0;
+	float: right;
+}
+
+.dark-side.museum {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.dark-side.sending {
+	background-color: rgba(0,0,0,0.5);
+}
+
+#surface-canvas {
+	background: url(../img/textures/wood.jpg) no-repeat;
+    background-size: 100%;
+    float: right;
+}
+
+#surface-canvas p {
+	background-color: #31b2ee;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 120%;
+    height: auto;
+    position: relative;
+    color: white;
+}
+
+#surface-canvas.wood-texture {
+	background: url(../img/textures/wood.jpg) no-repeat;
+}
+
+#surface-canvas.board-texture {
+	background: url(../img/textures/board.jpg) no-repeat;
+}
+
+#surface-canvas.canvas-texture {
+	background: url(../img/textures/canvas.jpg) no-repeat;
+}
+
+#surface-canvas.brick-texture {
+	background: url(../img/textures/brick.jpg) no-repeat;
+}
+
+#surface-canvas.cardboard-texture {
+	background: url(../img/textures/cardboard.jpg) no-repeat;
+}
+
+#surface-canvas.wall-texture {
+	background: url(../img/textures/wallpaper.jpg) no-repeat;
+}
+
+#surface-canvas.metal-texture {
+	background: url(../img/textures/metal.jpg) no-repeat;
+}
+
+.hidden {
+	display: none;
+}
+
+.invisible {
+	opacity: 0;
+}
+
+ul.tools-buttons.surface-tb {
+	float: right;
+}
+
+ul.surfaces {
+	float: left;
+	padding: 0;
+}
+
+ul.surfaces li {
+	float: left;
+}
+
+ul.surfaces li p {
+	display: none;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    bottom: 30px;
+    color: white;
+}
+
+ul.surfaces li:hover,
+ul.surfaces li:focus {
+	cursor: pointer;
+}
+
+ul.surfaces li:nth-child(1) {
+	background: url(../img/surfaces/wood.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(2) {
+	background: url(../img/surfaces/board.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(3) {
+	background: url(../img/surfaces/canvas.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(4) {
+	background: url(../img/surfaces/brick.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(5) {
+	background: url(../img/surfaces/cardboard.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	clear: both;
+}
+
+ul.surfaces li:nth-child(6) {
+	background: url(../img/surfaces/wall.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(7) {
+	background: url(../img/surfaces/metal.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(1):hover,
+ul.surfaces li:nth-child(1):focus {
+	background: url(../img/surfaces/wood.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(2):hover,
+ul.surfaces li:nth-child(2):focus {
+	background: url(../img/surfaces/board.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(3):hover,
+ul.surfaces li:nth-child(3):focus {
+	background: url(../img/surfaces/canvas.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(4):hover,
+ul.surfaces li:nth-child(4):focus {
+	background: url(../img/surfaces/brick.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(5):hover,
+ul.surfaces li:nth-child(5):focus {
+	background: url(../img/surfaces/cardboard.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+	clear: both;
+}
+
+ul.surfaces li:nth-child(6):hover,
+ul.surfaces li:nth-child(6):focus {
+	background: url(../img/surfaces/wall.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li:nth-child(7):hover,
+ul.surfaces li:nth-child(7):focus {
+	background: url(../img/surfaces/metal.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+#filters-wrapper {
+	background: url(../img/background.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
+    height: 700px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.filters-canvas {
+	background: url(../img/main-canvas.jpg) no-repeat;
+    background-size: 100%;
+    margin: 0;
+    float: right;
+}
+
+.filters-canvas p {
+	background-color: #31b2ee;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 120%;
+    height: auto;
+    position: relative;
+    color: white;
+}
+
+ul.tools-buttons.filters-tb {
+    position: relative;
+    padding: 0;
+    float: left;
+}
+
+#wand {
+	background: url(../img/wand.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	float: left;
+	margin: 0;
+}
+
+#wand:hover,
+#wand:focus {
+	cursor: pointer;
+	background: url(../img/wand.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+#museum-wrapper {
+	background: url(../img/museum-back.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
+    width: 100%;
+    height: 795px;
+    position: relative;
+    overflow: hidden;
+}
+
+ul.social-icons {
+	float: right;
+	margin: -30px 0 0;
+}
+
+ul.social-icons li {
+	float: left;
+}
+
+ul.logotypes {
+	margin: 0 auto;
+	width: 350px;
+	height: 65px;
+	padding: 0;
+}
+
+ul.logotypes li:first-child {
+	float: left;
+}
+
+ul.logotypes li:last-child {
+	float: right;
+}
+
+ul.logotypes li span {
+	display: block;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+ul.logotypes li:last-child span {
+	margin-bottom: 12px;
+}
+
+ul.logotypes li a {
+	display: block;
+	text-align: center;
+}
+
+.painting-info {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 0 12px;
+    -webkit-box-shadow: 0px 0px 3px 1px #dedede;
+    -moz-box-shadow:    0px 0px 3px 1px #dedede;
+    box-shadow:         0px 0px 3px 1px #dedede;
+}
+
+.painting-info span {
+	display: block;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.painting-info span.title {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.painting-info span.author {
+	font-size: 16px;	
+}
+
+.painting-info span.materials {
+	font-size: 14px;
+}
+
+.social-buttons {
+    position: relative;
+    top: 105%;
+    float: right;
+}
+
+.social-buttons span {
+    padding-bottom: 10%;
+    display: block;
+    text-align: center;
+}
+
+.social-buttons ul {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.social-buttons ul li.vk {
+	background: url(../img/vk.png) no-repeat;
+	background-size: 100%;
+	float: left;
+}
+
+.social-buttons ul li.fb {
+	background: url(../img/fb.png) no-repeat;
+	background-size: 100%;
+	float: right;
+}
+
+.social-buttons ul li.vk:hover,
+.social-buttons ul li.vk:focus,
+.social-buttons ul li.fb:hover,
+.social-buttons ul li.vk:focus {
+	cursor: pointer;
+}
+
+.museum-button {
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	opacity: 1;
+}
+
+.museum-button:hover,
+.museum-button:focus {
+	cursor: pointer;
+	opacity: 0.85;
+}
+
+.surface-button:hover,
+.surface-button:focus {
+	cursor: pointer;
+	opacity: 0.85;
+}
+
+.social-icons li a img {
+	margin-right: 8px!important;
+}
+
+#cboxContent {
+	border-radius: 20px;
+}
+
+#cboxOverlay {
+	background: black !important;
+	opacity: 0.75 !important;
+}
+
+#cboxPrevious,
+#cboxNext,
+#cboxClose,
+#cboxCurrent {
+	display: none !important;
+}
+
+#cboxTitle {
+    bottom: 0 !important;
+    line-height: 20px;
+    font-size: 15px;
+    color: black !important;
+    background-color: white;
+    padding: 20px 0 25px;
+}
+
+#cboxTitle span {
+	position: relative;
+	top: 5px;
+	font-size: 12px;
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#cboxMiddleLeft,
+#cboxMiddleRight,
+#cboxTopCenter,
+#cboxTopLeft,
+#cboxTopRight,
+#cboxBottomCenter,
+#cboxBottomLeft,
+#cboxBottomRight {
+	background: none !important;
+}
+
+@media only screen and (max-width : 1110px) {
+	#tools-wrapper,
+	#filters-wrapper,
+	#sending-wrapper {
+		background-size: auto 100%;
+	}
+	.main-canvas {
+		width: 550px;
+	}
+	ul.tools li {
+		background-size: 100% !important;
+		background-position: 50% 50% !important;
+	}
+	form.sending-form {
+		width: 60%;
+	}
+	.museum-button {
+		height: 40px;
+		line-height: 40px;
+	}
+	ul.logotypes {
+		width: 300px;
+	}
+	.logotypes li:first-child a img {
+	    width: 5px !important;
+	    height: 55px !important;
+	}
+	.logotypes li:last-child a img {
+	    width: 110px !important;
+	    height: 21px !important;
+	}
+	.footer_secodn_block,
+	.footer_secodn_block a {
+		font-size: 10px;
+		text-align: left !important;
+		width: 65%;
+	}
+	a.cont_link:hover {
+		font-size: 10px;
+	}
+	ul.social-icons {
+		position: absolute;
+	    margin: 0;
+	    padding: 0;
+	    right: 1%;
+	    width: 200px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	ul.social-icons li {
+		margin-bottom: 5px;
+	}
+	.footer_secodn_block {
+		width: 50%;
+		bottom: -5px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	ul.social-icons {
+	    position: relative;
+	    margin: 0 auto;
+	    float: none;
+	    right: 0;
+	    width: 200px;
+	    height: 25px;
+	    padding: 0;
+	    display: block;
+	}
+	.social-icons li a img {
+		margin: 4px !important;
+	}
+	.footer_secodn_block {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	ul.ux-buttons li {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	ul.ux-buttons li {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	ul.ux-buttons li {
+		width: 35px;
+		height: 35px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	ul.ux-buttons li {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	form.sending-form .work-author input {
+		width: 65%;
+	}
+}
+
+@media only screen and (max-width: 395px) {
+	form.sending-form .work-author input {
+		width: 60%;
+	}
+}
