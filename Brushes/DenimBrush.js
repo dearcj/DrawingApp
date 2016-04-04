@@ -14,6 +14,19 @@ function DenimBrush(color) {
 	this.img.onload=function(){
 		self.imgLoaded = true;
 	};
+
+
+	switch (window.brushMode) {
+		case 0:
+			this.img.src='Assets/Jeans/jeans1.png';
+			break;
+		case 1:
+			this.img.src='Assets/Jeans/jeans2.png';
+		break;
+		case 2:
+			this.img.src='Assets/Jeans/jeans3.png';
+		break;
+	}
 	this.img.src='Assets/charcoaltrace.png';
 }
 

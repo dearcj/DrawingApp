@@ -11,7 +11,15 @@ function CoalBrush(color) {
 	this.img.onload=function(){
 		self.imgLoaded = true;
 	};
-	this.img.src='Assets/charcoaltrace.png';
+
+	switch (window.brushMode) {
+		case 0:
+			this.img.src='Assets/Coal/chalk1.png';
+		break;
+		case 1:
+			this.img.src='Assets/Coal/coal1.png';
+		break;
+	}
 }
 
 

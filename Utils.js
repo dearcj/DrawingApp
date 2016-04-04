@@ -8,7 +8,9 @@ function extend(Child, Parent) {
   Child.prototype.constructor = Child;
   Child.superclass = Parent.prototype;
 }
-
+function getRandomArbitrary(min, max) {
+  return Math.random() * (max - min) + min;
+}
 
 function getParameterByName(name) {
   name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");

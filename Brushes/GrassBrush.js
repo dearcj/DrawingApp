@@ -10,31 +10,37 @@ function GrassBrush(color) {
 	Brush.apply(this, color);
 
 	var self = this;
-	this.img=new Image();
-	this.img.onload=function(){
-		self.imgLoaded = true;
-	};
-	this.img.src='Assets/scotch.png';
+
+	this.imgs = [];
+	for (var i = 0; i < 8; ++i) {
+		this.img = new Image();
+		this.img.onload = function () {
+			self.imgLoaded = true;
+		};
+		this.img.src='Assets/Grass/grass' + (window.brushMode + 1).toString() + '.png';
+		this.imgs.push(this.img);
+	}
+
 }
 
 
 
 GrassBrush.prototype.drawParticle = function (ctx, x, y, scale, angle) {
 	ctx.setTransform(1, 0, 0, 1, 0,  0);
-
+	var img = this.imgs[getRandomArbitrary(0, 7)];
 	ctx.translate(x,  y);
 	ctx.rotate(angle);
-	ctx.translate( -this.img.width*0.5*scale,   -this.img.height*0.5*scale);
+	ctx.translate( -img.width*0.5*scale,   -img.height*0.5*scale);
 	ctx.scale(scale, scale);
 
 	this.lastX = x;
 	this.lastY = y;
-	ctx.drawImage(this.img, 0, 0, this.img.width, this.img.height, 0, 0, this.img.width, this.img.height);
+	ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, img.width, img.height);
 };
 
 
 GrassBrush.prototype.onDown = function (ctx, x, y) {
-	this.drawCatchupPart(ctx, x, y, 1 + Math.random());
+	this.drawParticle(ctx, x, y, 1 + Math.random(), 0);
 };
 
 GrassBrush.prototype.use = function (obj, ctx) {

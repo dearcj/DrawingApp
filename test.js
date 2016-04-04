@@ -4,6 +4,7 @@
 
 var initApplication = function() {
   lcg.setSeed(100);
+  window.brushMode = 0;
   var el = document.getElementById('back-canvas');
   var elDraw = document.getElementById('main-canvas');
   var backCtx = el.getContext('2d');
