@@ -11,10 +11,10 @@ class mMomaAPI extends Rest {
 	function __construct() {
 		parent::__construct();
 		
-		$this->_dbhost = "localhost";
+		$this->_dbhost = "188.227.16.35";
 		$this->_dbname = "mmoma";
 		$this->_dbuser = "root";
-		$this->_dbpass = "dedgame222";
+		$this->_dbpass = "jizn1945";
 		
 		$this->_databaseConnect();
 	}
