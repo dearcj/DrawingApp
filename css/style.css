@@ -1,5 +1,19 @@
+/*
+Theme Name: MMOMA
+Author: Yuriy Dorogoy
+Description: Theme for special project of Moscow Museum Of Modern Arts
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: art, web-app
+Text Domain: mmoma
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
 body {
-	margin: 0;
+    margin: 0;
 }
 
 body #wrapper {
@@ -244,9 +258,9 @@ ul#buttons li span {
 	background-color: #31b2ee;
 	border-radius: 8px;
 	height: auto;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow:    0px 0px 5px 0px rgba(0,0,0,0.3);
-    box-shadow:         0px 0px 5px 0px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+    -moz-box-shadow:    0 0 5px 0 rgba(0,0,0,0.3);
+    box-shadow:         0 0 5px 0 rgba(0,0,0,0.3);
 }
 
 ul#buttons li:hover span {
