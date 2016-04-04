@@ -255,7 +255,7 @@
       </li>
     </ul>
     
-    <ul class="social-icons">
+    <ul class="social-icons"> 
       <li><a href="https://www.facebook.com/MoscowMoMA" target="_blank"><img style="margin-right:17px" border="0" src="<?php echo $this->baseurl."/templates/".$this->template."/img/fb.gif" ?>"></a></li>
       <li><a href="http://vk.com/id77591204" target="_blank"><img style="margin-right:17px" border="0" src="<?php echo $this->baseurl."/templates/".$this->template."/img/vk.gif" ?>"></a></li>
       <li><a href="https://twitter.com/MMOMA" target="_blank"><img style="margin-right:17px" border="0" src="<?php echo $this->baseurl."/templates/".$this->template."/img/tw.gif" ?>></a></li>
