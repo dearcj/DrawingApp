@@ -1,0 +1,16 @@
+<ifModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /mmoma/api/
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_URI} !/$
+	RewriteRule ^(.*)$ $1/ [R=301,L]
+	
+	RewriteCond %{THE_REQUEST} //+
+	RewriteRule ^(.*)$ $1 [R=301,L]
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*)$ index.php?request=$1 [QSA,L]
+</ifModule>
