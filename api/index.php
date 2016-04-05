@@ -20,8 +20,8 @@ class mMomaAPI extends Rest {
 	}
 	
 	public function processApi() {
-		if (isset($_REQUEST["request"])) {
-			$function = strtolower(trim($_REQUEST["request"], "/"));
+		if (isset($_REQUEST["api_method"])) {
+			$function = $_REQUEST["api_method"];//strtolower(trim($_REQUEST["request"], "/"));
 			$function = "_".$function."Action";
 			
 			if (method_exists($this, $function)) {
