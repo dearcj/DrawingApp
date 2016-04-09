@@ -52,7 +52,7 @@ Canvas.prototype.resetCanvas = function () {
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = 'Assets/Backgrounds/test1.jpg';
+			imageObj.src = relPath + 'Assets/Backgrounds/test1.jpg';
 			break;
 		case '2':
 

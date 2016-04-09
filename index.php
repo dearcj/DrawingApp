@@ -16,7 +16,6 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-	<link rel='stylesheet' id='main-style'  href='<?php echo get_stylesheet_uri(); ?>' type='text/css' media='all' />
     <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/style.css">
     <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/colorbox.css">
     <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/mmoma.css">
@@ -136,10 +135,10 @@
             </li>
           </ul>
 
-          <div class="main-canvas">
-            <canvas style='pointer-events: none;' id="back-canvas"></canvas>
-            <canvas id="main-canvas"></canvas>
+          <canvas style='pointer-events: none;' id="back-canvas" width="750" height="530"></canvas>
+          <canvas id="main-canvas" width="750" height="530"></canvas>
 
+          <div class="main-canvas">
             <ul class="interface">
               <li class="back"></li>
               <li class="refresh"></li>

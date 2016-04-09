@@ -2,6 +2,8 @@
  * Created by mac-pc on 12/12/15.
  */
 
+var relPath = 'http://188.227.16.35/wp-content/themes/mmoma/';
+
 var initApplication = function() {
   lcg.setSeed(100);
   window.brushMode = 0;

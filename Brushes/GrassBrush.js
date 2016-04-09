@@ -17,7 +17,7 @@ function GrassBrush(color) {
 		this.img.onload = function () {
 			self.imgLoaded = true;
 		};
-		this.img.src='Assets/Grass/grass' + (window.brushMode + 1).toString() + '.png';
+		this.img.src = relPath + 'Assets/Grass/grass' + (window.brushMode + 1).toString() + '.png';
 		this.imgs.push(this.img);
 	}
 
