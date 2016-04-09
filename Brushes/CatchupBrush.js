@@ -11,7 +11,7 @@ function CatchupBrush(color) {
 	this.img.onload=function(){
 		self.imgLoaded = true;
 	};
-	this.img.src='Assets/Catchup/ketch1.png';
+	this.img.src = relPath + 'Assets/Catchup/ketch1.png';
 }
 
 CatchupBrush.prototype.onFinish = function () {
