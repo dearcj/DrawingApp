@@ -11,7 +11,7 @@ class mMomaAPI extends Rest {
 	function __construct() {
 		parent::__construct();
 		
-		$this->_dbhost = "188.227.16.35";
+		$this->_dbhost = "localhost";
 		$this->_dbname = "mmoma";
 		$this->_dbuser = "root";
 		$this->_dbpass = "jizn1945";
@@ -20,8 +20,8 @@ class mMomaAPI extends Rest {
 	}
 	
 	public function processApi() {
-		if (isset($_REQUEST["request"])) {
-			$function = strtolower(trim($_REQUEST["request"], "/"));
+		if (isset($_REQUEST["api_method"])) {
+			$function = $_REQUEST["api_method"];//strtolower(trim($_REQUEST["request"], "/"));
 			$function = "_".$function."Action";
 			
 			if (method_exists($this, $function)) {
