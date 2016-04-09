@@ -137,6 +137,9 @@
           </ul>
 
           <div class="main-canvas">
+            <canvas style='pointer-events: none;' id="back-canvas"></canvas>
+            <canvas id="main-canvas"></canvas>
+
             <ul class="interface">
               <li class="back"></li>
               <li class="refresh"></li>
@@ -146,14 +149,14 @@
           </div>
 
           <ul class="tools">
-            <li><p>Скотч</p></li>
-            <li><p>Мел</p></li>
-            <li><p>Трава</p></li>
-            <li><p>Апельсин</p></li>
-            <li><p>Джинсы</p></li>
-            <li><p>Кетчуп</p></li>
-            <li><p>Нитка</p></li>
-            <li><p>Пистолет</p></li>
+            <li id="btn-scotch"><p>Скотч</p></li>
+            <li id="btn-coal"><p>Мел</p></li>
+            <li id="btn-grass"><p>Трава</p></li>
+            <li id="btn-orange"><p>Апельсин</p></li>
+            <li id="btn-denim"><p>Джинсы</p></li>
+            <li id="btn-catchup"><p>Кетчуп</p></li>
+            <li id="btn-thread"><p>Нитка</p></li>
+            <li id="btn-pistol"><p>Пистолет</p></li>
           </ul>
 
           <ul class="ux-buttons">
@@ -284,6 +287,22 @@
       <div class="copy_index"><div>© ГБУК г. Москвы «Московский музей современного искусства», 2008 – 2016. Все права защищены. <a class="cont_link" href="/about/departments/">Контакты</a></div></div>
     </div>
   </div>
+
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Utils.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Canvas/Action.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Canvas/Canvas.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/Brush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/Pencil.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/DenimBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/CoalBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/ThreadBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/SmoothBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/PatternBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/PistolBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/CatchupBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/GrassBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/ScotchBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/test.js" defer></script>
 
   <?php wp_footer(); ?>
 </body>

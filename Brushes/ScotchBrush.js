@@ -6,12 +6,12 @@ extend(ScotchBrush, Brush);
 function ScotchBrush(color) {
 	Brush.apply(this, color);
 
-	var self = this;
+	var self = this, relPath = 'http://188.227.16.35/wp-content/themes/mmoma/';
 	this.img=new Image();
 	this.img.onload=function(){
 	self.imgLoaded = true;
 	};
-	this.img.src='Assets/scotch.png';
+	this.img.src=relPath + 'Assets/scotch.png';
 }
 
 

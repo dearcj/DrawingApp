@@ -396,6 +396,22 @@ ul#helpers li span p {
     overflow: hidden;
 }
 
+#main-canvas {
+	position: relative;
+	top: -395px;
+	width: 100%;
+	height: 100%;
+}
+
+#back-canvas {
+	width: 100%;
+	height: 100%;
+}
+
+/*canvas {*/
+	/*border: 1px solid #ccc;*/
+/*}*/
+
 .main-canvas {
 	background: url(../img/main-canvas.jpg) no-repeat;
     background-size: 100%;
