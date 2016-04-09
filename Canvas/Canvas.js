@@ -80,6 +80,7 @@ Canvas.prototype.redraw = function (ctx){
 
 Canvas.prototype.sendPic = function() {
 		data = {
+			api_method: 'applyimagetogallery',
 			user_id: 1,
 			image: this.saveImage(),
 			name: "פûגפûגפûג",
