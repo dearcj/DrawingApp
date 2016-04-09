@@ -60,26 +60,5 @@ var initApplication = function() {
 };
 
 
-postImage = function()
-{
-  setTimeout(function () {
-    data = {
-      user_id: 1,
-      image: window.mainCanvasObject.saveImage(),
-      name: "פûגפûגפûג",
-      description: "פûגפûג"
-    };
-
-    $.ajax({
-      type: "POST",
-      url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
-      data: data,
-      success: function cb(res) {
-        console.log(res);
-      }
-    });
-
-  });
-};
 
 initApplication();

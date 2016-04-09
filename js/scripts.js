@@ -118,6 +118,10 @@ jQuery(document).ready(function($) {
 	});
 
 	$('li.send-to-museum').click(function(event) {
+
+		window.mainCanvasObject.sendPic();
+
+
 		event.preventDefault();
 		$('#tools-wrapper').fadeOut(500);
 		$('#sending-wrapper').fadeIn(1000).removeClass('hidden');

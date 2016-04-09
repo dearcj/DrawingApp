@@ -76,6 +76,27 @@ Canvas.prototype.redraw = function (ctx){
 	}
 };
 
+
+
+Canvas.prototype.sendPic = function() {
+		data = {
+			user_id: 1,
+			image: this.saveImage(),
+			name: "פûגפûגפûג",
+			description: "פûגפûג"
+		};
+
+		$.ajax({
+			type: "POST",
+			url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
+			data: data,
+			success: function cb(res) {
+				console.log(res);
+			}
+		});
+};
+
+
 Canvas.prototype.finishAction = function (e) {
 	var el = document.getElementById('main-canvas');
 	this.state.backCtx.drawImage(el, 0, 0);
