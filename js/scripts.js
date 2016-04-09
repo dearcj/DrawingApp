@@ -132,6 +132,9 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		window.savedImage = window.mainCanvasObject.saveImage();
+
+		$('.filters-canvas').src = window.savedImage;
+
 		$('#tools-wrapper').fadeOut(500);
 		$('#filters-wrapper').fadeIn(1000).removeClass('hidden');
 		$('.filters-canvas p').delay(500).fadeIn(1500);
