@@ -49,8 +49,8 @@ class mMomaAPI extends Rest {
 			$this->response("", 406);
 		}
 		
-		if (isset($this->request["user_id"]) && !empty($this->request["user_id"])
-		 && isset($this->request["image_id"]) && !empty($this->request["image_id"])
+		if (((isset($this->request["user_id"]) && !empty($this->request["user_id"])) ||
+		(isset($this->request["new_user"]) && $this->request["new_user"] == "true"))
 		 && isset($this->request["image"]) && !empty($this->request["image"])
 		 && isset($this->request["name"]) && !empty($this->request["name"])
 		 && isset($this->request["description"]) && !empty($this->request["description"])) {
@@ -64,8 +64,7 @@ class mMomaAPI extends Rest {
 			$result = $db->fetch(PDO::FETCH_ASSOC);
 			
 			if ($result == false) {
-				$db = $this->_db->prepare("INSERT INTO tb_gallery (image_id, image, name, description) VALUES (:image_id, :image, :name, :description)");
-				$db->bindParam(":image_id", $image_id);
+				$db = $this->_db->prepare("INSERT INTO tb_gallery (image, name, description) VALUES (:image, :name, :description)");
 				$db->bindParam(":image", $this->request["image"]);
 				$db->bindParam(":name", $this->request["name"]);
 				$db->bindParam(":description", $this->request["description"]);

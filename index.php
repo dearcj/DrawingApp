@@ -23,6 +23,21 @@
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="http://188.227.16.35/wp-content/themes/mmoma/js/jquery.colorbox-min.js"></script>
     <script src="http://188.227.16.35/wp-content/themes/mmoma/js/scripts.js"></script>
+   <script src="http://188.227.16.35/wp-content/themes/mmoma/Utils.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Canvas/Action.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Canvas/Canvas.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/Brush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/Pencil.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/DenimBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/CoalBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/ThreadBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/SmoothBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/PatternBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/PistolBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/CatchupBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/GrassBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/ScotchBrush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/test.js" defer></script>
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -287,21 +302,6 @@
     </div>
   </div>
 
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Utils.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Canvas/Action.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Canvas/Canvas.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/Brush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/Pencil.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/DenimBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/CoalBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/ThreadBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/SmoothBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/PatternBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/PistolBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/CatchupBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/GrassBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/ScotchBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/test.js" defer></script>
 
   <?php wp_footer(); ?>
 </body>

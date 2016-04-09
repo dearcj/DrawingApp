@@ -16,6 +16,7 @@ function CatchupBrush(color) {
 
 CatchupBrush.prototype.onFinish = function () {
 	clearTimeout(this.timeout); this.timeout = null;
+
 };
 
 CatchupBrush.prototype.drawCatchupPart = function (ctx, x, y, scale) {
