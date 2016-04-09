@@ -181,6 +181,8 @@
 
         <div id="filters-wrapper" class="hidden">
           <div class="filters-canvas">
+
+            <canvas id="filters-canvas"></canvas>
             <div class="dark-side filters"></div>
 
             <ul class="tools-buttons filters-tb">
