@@ -284,6 +284,17 @@ ul#helpers {
 	height: 0;
 }
 
+#tools-wrapper ul#helpers {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 65px;
+	top: 7.25%;
+	left: 50%;
+	margin-left: -405px;
+	height: 66px !important;
+}
+
 #tools-wrapper ul#helpers li {
 	z-index: 100;
 }
@@ -360,6 +371,11 @@ ul#helpers li:focus span {
 	display: inline-block;
 }
 
+ul#helpers li#helper-8 {
+	width: 65px !important;
+	height: 66px !important;
+}
+
 ul#helpers li#helper-8:hover span,
 ul#helpers li#helper-8:focus span,
 ul#helpers li#helper-10:hover span,
@@ -390,7 +406,7 @@ ul#helpers li span p {
 	background: url(../img/background.png) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
-    height: 700px;
+    min-height: 725px;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -764,6 +780,11 @@ ul.tools-buttons {
     float: left;
 }
 
+ul.tools-buttons.tools-tb {
+	position: absolute;
+	left: 50%;
+}
+
 ul.tools-buttons li {
 	position: relative;
     float: left;
@@ -778,6 +799,8 @@ ul.tools-buttons.surface-tb li {
 ul.tools-buttons.tools-tb li {
 	margin: 0;
 	float: left;
+	width: 100px;
+	height: 87px;
 }
 
 ul.tools-buttons li:hover {
@@ -787,14 +810,17 @@ ul.tools-buttons li:hover {
 
 ul.tools {
 	position: absolute;
+	left: 50%;
+	top: 10%;
 	padding-left: 0;
 	margin: 0;
+	margin-left: -675px;
 }
 
 ul.tools li {
 	position: relative;
-	width: 200px;
-	height: 175px;
+	width: 150px;
+	height: 132px;
 }
 
 ul.tools li:nth-child(1) {
@@ -915,6 +941,8 @@ ul.tools li p {
 	color: white;
 	position: relative;
 	text-align: center;
+	margin-top: 125px;
+	font-size: 16px;
 }
 
 ul.tools li:hover,
@@ -936,6 +964,7 @@ li.add-filter {
 
 li.its-done,
 li.send-to-museum {
+	width: 226px !important;
 	background: url(../img/filters-done.png) no-repeat;
 	background-size: 100%;
 }
