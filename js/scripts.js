@@ -401,13 +401,11 @@ jQuery(document).ready(function($) {
 				return width/height;
 			},
 			interfaceButtonsRatio = interfaceButtonsRatio(22, 30);
-			toolsButtons = $('.main-canvas ul.tools-buttons'),
+			toolsButtons = $('ul.tools-buttons.tools-tb'),
 			toolsRatio = function (width, height) {
 				return width/height;
 			},
 			toolsRatio = toolsRatio(200, 175),
-			tools = $('ul.tools'),
-			toolsLi = $('ul.tools li'),
 			prevNextButtons = $('ul.tools-buttons.tools-tb li'),
 			sendToMuseum = $('.send-to-museum');
 
@@ -434,37 +432,14 @@ jQuery(document).ready(function($) {
 
 		interfaceButtons.css('top', toolsCanvasHeight + interfaceButtonLiWidth + 'px');
 
-		toolsLi.css('width', toolsCanvasWidth/4.04 + 'px');
+		var mainCanvas = $('#main-canvas');
+		var mainCanvasTop = toolsWrapper.height()/100 * 10;
 
-		var toolsLiWidth = toolsLi.width();
+		toolsButtons.css({width: 430 + 'px', top: mainCanvasTop + darkSideTools.height() + 530 + 'px'});
 
-		objHeight(toolsLi, toolsLiWidth/toolsRatio);
+		toolsButtonsWidth = parseInt(toolsButtons.css('width'));
 
-		var sideMargins = (width - toolsLiWidth*2 - toolsCanvasWidth)/3;
-
-		tools.css({width: toolsLiWidth * 2 + 1 + 'px', left: sideMargins + 'px', top: toolsCanvasMarginTop + 'px'});
-
-		toolsCanvas.css('margin-right', sideMargins + 'px');
-
-		darkSideTools.css('margin-right', sideMargins + 'px');
-		
-		prevNextButtons.css('width', toolsCanvasWidth/7.612 + 'px');
-
-		prevNextButtons.css('height', prevNextButtons.width()/pnButtonRatio + 'px');
-
-		sendToMuseum.css('width', prevNextButtons.height()*doneButtonRatio + 'px');
-
-		toolsLiP.css({'font-size': toolsLiWidth/1.3 + '%'});
-
-		toolsLiP.css('top', toolsLi.height()*0.8 + 'px');
-
-		$('ul.tools li:nth-child(7) p').css('padding-top', toolsLi.height()/11 + 'px');
-
-		var toolsButtons = $('ul.tools-buttons.tools-tb');
-
-		toolsButtons.css('width', prevNextButtons.width()*2 + sendToMuseum.width() + 2 + 'px');
-
-		toolsButtons.css({left: width - toolsCanvasWidth/2 - sideMargins - toolsButtons.width()/2 + 'px', top: toolsCanvasHeight + toolsCanvasMarginTop + darkSideTools.height()*2 + 'px'});
+		toolsButtons.css('margin-left', -toolsButtonsWidth/2 + 'px');
 		
 		var toolsCanvasText = toolsCanvas.find('p');
 			toolsTextWidth = toolsCanvasWidth/2,
@@ -686,7 +661,7 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-6 span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-6s span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-7 span').css({left: -spanWidth/2 + 'px', top: -spanTopPos + 'px'});
-		$('ul#helpers li#helper-8 span').css({left: -spanWidth/2 + 'px', top: -spanTopPos * 0.4 + 'px', width: width/100 * 20 + 'px'});
+		$('ul#helpers li#helper-8 span').css({left: -spanWidth/2 + 'px', top: -spanTopPos * 1.05 + 'px', width: width/100 * 20 + 'px'});
 		$('ul#helpers li#helper-9 span').css({left: spanWidth/4.655 + 'px', top: spanTopPos * 0.5 + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-10 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 3.4 + 'px'});
 		$('ul#helpers li#helper-11 span').css({left: -spanWidth + 'px', top: -spanTopPos + 'px'});
@@ -732,7 +707,6 @@ jQuery(document).ready(function($) {
 		coordinate(3, 91, 52);
 		coordinate(4, 74.25, 52);
 		coordinate(5, 18.5, 55);
-		coordinate(8, 29, 5);
 		coordinate(9, 1, 60);
 		coordinate(10, -1.7, 7.7);
 		coordinate(11, 86.75, 2);
