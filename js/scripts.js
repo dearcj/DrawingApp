@@ -118,6 +118,10 @@ jQuery(document).ready(function($) {
 	});
 
 	$('li.send-to-museum').click(function(event) {
+
+		window.mainCanvasObject.sendPic();
+
+
 		event.preventDefault();
 		$('#tools-wrapper').fadeOut(500);
 		$('#sending-wrapper').fadeIn(1000).removeClass('hidden');
@@ -126,6 +130,11 @@ jQuery(document).ready(function($) {
 
 	$('li.add-filter').click(function(event) {
 		event.preventDefault();
+
+		window.savedImage = window.mainCanvasObject.saveImage();
+
+		$('.filters-canvas').src = window.savedImage;
+
 		$('#tools-wrapper').fadeOut(500);
 		$('#filters-wrapper').fadeIn(1000).removeClass('hidden');
 		$('.filters-canvas p').delay(500).fadeIn(1500);
