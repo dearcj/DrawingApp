@@ -130,6 +130,8 @@ jQuery(document).ready(function($) {
 
 	$('li.add-filter').click(function(event) {
 		event.preventDefault();
+
+		window.savedImage = window.mainCanvasObject.saveImage();
 		$('#tools-wrapper').fadeOut(500);
 		$('#filters-wrapper').fadeIn(1000).removeClass('hidden');
 		$('.filters-canvas p').delay(500).fadeIn(1500);
