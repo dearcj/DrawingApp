@@ -17,7 +17,7 @@ Canvas.prototype.savePattern = function() {
 	var canvas = document.getElementById('main-canvas');
 	//resize issue
 
-	var dataURL = canvas.toDataURL("image/png");
+	var dataURL = canvas.toDataURL("image/jpg");
 	return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 };
 
