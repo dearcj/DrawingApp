@@ -43,6 +43,8 @@ Canvas.prototype.mouseMoveAction = function(e) {
 	}
 };
 
+
+
 Canvas.prototype.resetCanvas = function () {
 	this.state.backCtx.clearRect(0, 0, this.state.width, this.state.height);
 	var ctx = this.state.backCtx;
