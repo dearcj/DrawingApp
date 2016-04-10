@@ -14,10 +14,10 @@ function CoalBrush(color) {
 
 	switch (window.brushMode) {
 		case 0:
-			this.img.src = relPath + 'Assets/Coal/chalk1.png';
+			this.img.src = relPath + 'Coal/chalk1.png';
 		break;
 		case 1:
-			this.img.src= relPath + 'Assets/Coal/coal1.png';
+			this.img.src= relPath + 'Coal/coal1.png';
 		break;
 	}
 }
