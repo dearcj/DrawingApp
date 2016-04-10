@@ -58,7 +58,7 @@ class mMomaAPI extends Rest {
 			$user_id = intval($this->request["user_id"]);
 			$image_id = intval($this->request["image_id"]);
 
-			$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags) VALUES (:user_id, :image, :name, :descriptionm :tags)");
+			$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags) VALUES (:user_id, :image, :name, :description, :tags)");
 			$db->bindParam(":tags", $this->request["tags"]);
             $db->bindParam(":image", $this->request["image"]);
 			$db->bindParam(":name", $this->request["name"]);
