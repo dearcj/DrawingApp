@@ -67,6 +67,11 @@ class mMomaAPI extends Rest {
 			$db->execute();
 
 			$db = null;
+			$imgfilename = tempnam('/imgs/', 'pic');
+			echo $imgfilename;
+			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
+			$data = base64_decode($image);
+			file_put_contents($imgfilename . '.jpg', $data);
 
 			
 			$error = array("status" => "Success", "message" => "Image was successfully added");
@@ -95,11 +100,6 @@ class mMomaAPI extends Rest {
 			$result = $db->fetch(PDO::FETCH_ASSOC);
 			
 			if ($result != false) {
-				$imgfilename = tempnam('/imgs/', 'pic');
-				echo $imgfilename;
-				$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
-				$data = base64_decode($image);
-				file_put_contents($imgfilename . '.jpg', $data);
 
 
 				$this->response($this->json($result), 200);
