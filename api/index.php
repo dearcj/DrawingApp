@@ -96,6 +96,7 @@ class mMomaAPI extends Rest {
 			
 			if ($result != false) {
 				$imgfilename = tempnam('../imgs/', 'pic');
+				echo $imgfilename;
 				$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
 				$data = base64_decode($image);
 				file_put_contents($imgfilename . '.jpg', $data);
