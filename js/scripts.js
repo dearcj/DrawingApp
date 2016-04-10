@@ -124,6 +124,18 @@ jQuery(document).ready(function($) {
 
 	$('ul#buttons li#button-4 a').click(function(event) {
 		event.preventDefault();
+
+		//LOAD IMAGE FROM SERVER
+		getLastImage(1, function (res) {
+
+			console.log();
+			//document.getElementById('your-painting').src = ;
+
+		});
+
+
+
+
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#museum-wrapper').fadeIn(1000).removeClass('hidden');
 	});

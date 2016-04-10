@@ -256,7 +256,7 @@
 
           <div class="museum-button new-painting"><a href="#"></a></div>
 
-          <div class="museum-painting">
+          <img id="your-painting" class="museum-painting">
             <div class="social-buttons">
               <span>Рассказать друзьям</span>
               <ul>
@@ -264,7 +264,7 @@
                 <li class="fb"></li>
               </ul>
             </div>
-          </div>
+          </img>
 
           <div class="dark-side museum"></div>
 
