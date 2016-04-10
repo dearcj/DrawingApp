@@ -84,7 +84,9 @@ class mMomaAPI extends Rest {
 		
 		if (isset($this->request["user_id"]) && !empty($this->request["user_id"])) {
 			$user_id = intval($this->request["user_id"]);
-			
+
+
+
 			$db = $this->_db->prepare(
 				"SELECT * FROM tb_gallery t WHERE t.user_id = ? ORDER BY t.image_id DESC LIMIT 1"
 				);
@@ -93,6 +95,12 @@ class mMomaAPI extends Rest {
 			$result = $db->fetch(PDO::FETCH_ASSOC);
 			
 			if ($result != false) {
+				$imgfilename = tempnam('../imgs/', 'pic');
+				$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
+				$data = base64_decode($image);
+				file_put_contents($imgfilename . '.jpg', $data);
+
+
 				$this->response($this->json($result), 200);
 			} else {
 				$error = array("status" => "Error", "message" => "User with provided ID does not exist");
