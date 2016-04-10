@@ -15,3 +15,5 @@ Brush.prototype.use = function (obj, ctx) {};
 Brush.prototype.onDown = function (ctx, x, y) {};
 
 Brush.prototype.onFinish = function () {};
+
+//

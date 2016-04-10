@@ -15,7 +15,6 @@ function DenimBrush(color) {
 		self.imgLoaded = true;
 	};
 
-
 	switch (window.brushMode) {
 		case 0:
 			this.img.src = relPath + 'Jeans/jeans1.png';
@@ -60,4 +59,6 @@ DenimBrush.prototype.use = function (obj, ctx) {
 	if (this.timeout) clearTimeout(this.timeout);
 	this.timeout = setTimeout(this.use.bind(this, obj, ctx), 0);
 };
+
+//
 

@@ -26,3 +26,5 @@ SmoothBrush.prototype.use = function (obj, ctx) {
 	renderCircle.bind(this)(obj.x2, obj.y2);
 	renderCircle.bind(this)(obj.x1 + 0.5 * (obj.x2 - obj.x1), obj.y1 + 0.5 * (obj.y2 - obj.y1));
 };
+
+//

@@ -42,3 +42,5 @@ CatchupBrush.prototype.use = function (obj, ctx) {
 	this.drawCatchupPart(ctx, obj.x2, obj.y2, 1 + Math.random());
 };
 
+//
+

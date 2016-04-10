@@ -52,3 +52,5 @@ CoalBrush.prototype.use = function (obj, ctx) {
 
 	render.bind(this, obj.x2, obj.y2)();
 };
+
+//
