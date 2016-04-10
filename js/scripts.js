@@ -159,6 +159,8 @@ jQuery(document).ready(function($) {
 
 		drawImageToCanvas("filters-canvas", window.savedImage);
 
+		$('#filter-image').src =  window.savedImage;
+
 		$('#tools-wrapper').fadeOut(500);
 		$('#filters-wrapper').fadeIn(1000).removeClass('hidden');
 		$('.filters-canvas p').delay(500).fadeIn(1500);
