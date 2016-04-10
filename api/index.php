@@ -58,20 +58,16 @@ class mMomaAPI extends Rest {
 			$user_id = intval($this->request["user_id"]);
 			$image_id = intval($this->request["image_id"]);
 
-			if ($result == false) {
-				$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags) VALUES (:user_id, :image, :name, :descriptionm :tags)");
-				$db->bindParam(":tags", $this->request["tags"]);
-                $db->bindParam(":image", $this->request["image"]);
-				$db->bindParam(":name", $this->request["name"]);
-				$db->bindParam(":user_id", $this->request["user_id"]);
-				$db->bindParam(":description", $this->request["description"]);
-				$db->execute();
+			$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags) VALUES (:user_id, :image, :name, :descriptionm :tags)");
+			$db->bindParam(":tags", $this->request["tags"]);
+            $db->bindParam(":image", $this->request["image"]);
+			$db->bindParam(":name", $this->request["name"]);
+			$db->bindParam(":user_id", $this->request["user_id"]);
+			$db->bindParam(":description", $this->request["description"]);
+			$db->execute();
 
-				$db = null;
-			} else {
-				$error = array("status" => "Error", "message" => "Provided image_id is already exists");
-				$this->response($this->json($error), 400);
-			}
+			$db = null;
+
 			
 			$error = array("status" => "Success", "message" => "Image was successfully added");
 			$this->response($this->json($error), 200);

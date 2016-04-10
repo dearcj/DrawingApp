@@ -125,8 +125,8 @@ Canvas.prototype.sendPic = function() {
 			api_method: 'applyimagetogallery',
 			user_id: 1,
 			image: this.saveImage(),
-			name: "���������",
-			description: "������",
+			name: "dasd",
+			description: "asdasdasd",
 			tags: this.tags.join(';')
 		};
 
