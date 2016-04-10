@@ -8,7 +8,7 @@ extend(DenimBrush, Brush);
 
 function DenimBrush(color) {
 	Brush.apply(this, color);
-	this.name = 'denim';
+	this.name = 'деним';
 
 	var self = this;
 	this.img=new Image();

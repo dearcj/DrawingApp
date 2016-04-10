@@ -5,7 +5,7 @@ extend(CatchupBrush, Brush);
 
 function CatchupBrush(color) {
 	Brush.apply(this, color);
-	this.name = 'catchup';
+	this.name = 'кетчуп';
 
 	var self = this;
 	this.img=new Image();

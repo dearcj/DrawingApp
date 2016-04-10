@@ -11,7 +11,7 @@ extend(PistolBrush, Brush);
 
 function PistolBrush(color) {
 	Brush.apply(this, color);
-	this.name = 'pistol';
+	this.name = 'пистолет';
 
 	var self = this;
 	this.img=new Image();
