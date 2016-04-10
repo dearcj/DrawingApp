@@ -46,19 +46,56 @@ Canvas.prototype.mouseMoveAction = function(e) {
 Canvas.prototype.resetCanvas = function () {
 	this.state.backCtx.clearRect(0, 0, this.state.width, this.state.height);
 	var ctx = this.state.backCtx;
+	var relPath = 'http://188.227.16.35/wp-content/themes/mmoma/img/surfaces/';
 	switch (this.canvasType) {
 		case '1':
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = relPath + 'Assets/Backgrounds/test1.jpg';
+			imageObj.src = relPath + 'board.png';
 			break;
 		case '2':
-
+			var imageObj = new Image();
+			imageObj.onload = function() {
+				ctx.drawImage(this, 0, 0);
+			};
+			imageObj.src = relPath + 'brick.png';
 			break;
 		case '3':
-
+			var imageObj = new Image();
+			imageObj.onload = function() {
+				ctx.drawImage(this, 0, 0);
+			};
+			imageObj.src = relPath + 'canvas.png';
+			break;
+		case '4':
+			var imageObj = new Image();
+			imageObj.onload = function() {
+				ctx.drawImage(this, 0, 0);
+			};
+			imageObj.src = relPath + 'cardboard.png';
+			break;
+		case '5':
+			var imageObj = new Image();
+			imageObj.onload = function() {
+				ctx.drawImage(this, 0, 0);
+			};
+			imageObj.src = relPath + 'metal.png';
+			break;
+		case '6':
+			var imageObj = new Image();
+			imageObj.onload = function() {
+				ctx.drawImage(this, 0, 0);
+			};
+			imageObj.src = relPath + 'wall.png';
+			break;
+		case '7':
+			var imageObj = new Image();
+			imageObj.onload = function() {
+				ctx.drawImage(this, 0, 0);
+			};
+			imageObj.src = relPath + 'wood.png';
 			break;
 	}
 };
@@ -83,8 +120,8 @@ Canvas.prototype.sendPic = function() {
 			api_method: 'applyimagetogallery',
 			user_id: 1,
 			image: this.saveImage(),
-			name: "ôûâôûâôûâ",
-			description: "ôûâôûâ"
+			name: "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
+			description: "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
 		};
 
 		$.ajax({
