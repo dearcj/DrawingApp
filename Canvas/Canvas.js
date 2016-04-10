@@ -17,7 +17,7 @@ Canvas.prototype.savePattern = function() {
 	var canvas = document.getElementById('main-canvas');
 	//resize issue
 
-	var dataURL = canvas.toDataURL("image/png");
+	var dataURL = canvas.toDataURL("image/jpg");
 	return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 };
 
@@ -26,7 +26,7 @@ Canvas.prototype.saveImage = function() {
 	var canvas = document.getElementById('main-canvas');
 
 	var dataURL = canvas.toDataURL("image/png");
-	return dataURL;// dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+	return  dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
 };
 
 Canvas.prototype.mouseMoveAction = function(e) {

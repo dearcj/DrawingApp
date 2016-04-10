@@ -133,7 +133,7 @@ jQuery(document).ready(function($) {
 
 		window.savedImage = window.mainCanvasObject.saveImage();
 
-		$('.filters-canvas').src = window.savedImage;
+		document.getElementById("filters-canvas").src = window.savedImage;
 
 		$('#tools-wrapper').fadeOut(500);
 		$('#filters-wrapper').fadeIn(1000).removeClass('hidden');
