@@ -95,7 +95,7 @@ class mMomaAPI extends Rest {
 			$result = $db->fetch(PDO::FETCH_ASSOC);
 			
 			if ($result != false) {
-				$imgfilename = tempnam('../imgs/', 'pic');
+				$imgfilename = tempnam('/imgs/', 'pic');
 				echo $imgfilename;
 				$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
 				$data = base64_decode($image);
