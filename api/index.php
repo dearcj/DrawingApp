@@ -69,13 +69,15 @@ class mMomaAPI extends Rest {
 			$db = null;
 			$imgfilename = tempnam('/imgs/', 'pic');
 			echo $imgfilename;
+			$this->response($imgfilename, 200);
+
 			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
 			$data = base64_decode($image);
 			file_put_contents($imgfilename . '.jpg', $data);
 
 			
 			$error = array("status" => "Success", "message" => "Image was successfully added");
-			$this->response($this->json($error), 200);
+			$this->response($imgfilename, 200);
 		}
 		
 		$error = array("status" => "Error", "message" => "Provided data is incorrect");
