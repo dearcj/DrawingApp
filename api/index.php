@@ -58,11 +58,11 @@ class mMomaAPI extends Rest {
 			$user_id = intval($this->request["user_id"]);
 
 			$imgfilename = tempnam('', 'pic');
-			$imgfilename = str_replace('/tmp/', '', $imgfilename) . $user_id;
+			$imgfilename = str_replace('/tmp/', '', $imgfilename);
 		    $image = $this->request["image"];
 			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
-			$data = base64_decode($image);
-			$link = 'imgs/' . $imgfilename . '.jpg';
+			$data = 'tesssssssssst';
+			$link = 'imgs/' . $imgfilename .'--'. $user_id . '.jpg';
 			file_put_contents($link, $data);
 
 
