@@ -56,14 +56,12 @@ class mMomaAPI extends Rest {
 		 && isset($this->request["description"]) && !empty($this->request["description"])) {
 			
 			$user_id = intval($this->request["user_id"]);
-			$image_id = intval($this->request["image_id"]);
 
 			$imgfilename = tempnam('', 'pic');
-			$imgfilename = str_replace('/tmp/', '', $imgfilename);
-		    $image = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAWgBaAAD/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubw';
+			$imgfilename = str_replace('/tmp/', '', $imgfilename) . $user_id;
+		    $image = $this->request["image"];
 			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
 			$data = base64_decode($image);
-
 			$link = 'imgs/' . $imgfilename . '.jpg';
 			file_put_contents($link, $data);
 
@@ -76,17 +74,8 @@ class mMomaAPI extends Rest {
 			$db->bindParam(":description", $this->request["description"]);
 			$db->bindParam(":file", $link);
 			$db->execute();
-
 			$db = null;
-			$imgfilename = tempnam('/imgs/', 'pic');
-			echo $imgfilename;
-			$this->response($imgfilename, 200);
 
-			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
-			$data = base64_decode($image);
-			file_put_contents($imgfilename . '.jpg', $data);
-
-			
 			$error = array("status" => "Success", "message" => "Image was successfully added");
 			$this->response($imgfilename, 200);
 		}
