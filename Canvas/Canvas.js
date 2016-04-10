@@ -115,7 +115,7 @@ Canvas.prototype.redraw = function (ctx){
 	}
 };
 
-
+//
 
 Canvas.prototype.sendPic = function() {
 		data = {
