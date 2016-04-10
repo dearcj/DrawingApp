@@ -51,4 +51,5 @@ ScotchBrush.prototype.use = function (obj, ctx) {
 		// draw multiple times to fill gaps on outside of rope slices
 };
 
+//
 

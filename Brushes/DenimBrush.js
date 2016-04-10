@@ -15,19 +15,18 @@ function DenimBrush(color) {
 		self.imgLoaded = true;
 	};
 
-
 	switch (window.brushMode) {
 		case 0:
-			this.img.src = relPath + 'Assets/Jeans/jeans1.png';
+			this.img.src = relPath + 'Jeans/jeans1.png';
 			break;
 		case 1:
-			this.img.src = relPath + 'Assets/Jeans/jeans2.png';
+			this.img.src = relPath + 'Jeans/jeans2.png';
 		break;
 		case 2:
-			this.img.src = relPath + 'Assets/Jeans/jeans3.png';
+			this.img.src = relPath + 'Jeans/jeans3.png';
 		break;
 	}
-	this.img.src = relPath + 'Assets/charcoaltrace.png';
+	this.img.src = relPath + 'charcoaltrace.png';
 }
 
 DenimBrush.prototype.onFinish = function () {
@@ -60,4 +59,6 @@ DenimBrush.prototype.use = function (obj, ctx) {
 	if (this.timeout) clearTimeout(this.timeout);
 	this.timeout = setTimeout(this.use.bind(this, obj, ctx), 0);
 };
+
+//
 

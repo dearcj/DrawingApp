@@ -48,56 +48,56 @@ Canvas.prototype.mouseMoveAction = function(e) {
 Canvas.prototype.resetCanvas = function () {
 	this.state.backCtx.clearRect(0, 0, this.state.width, this.state.height);
 	var ctx = this.state.backCtx;
-	var relPath = 'http://188.227.16.35/wp-content/themes/mmoma/img/surfaces/';
+	var pathToSurfaces = 'http://188.227.16.35/wp-content/themes/mmoma/img/surfaces/';
 	switch (this.canvasType) {
-		case '1':
+		case 1:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = relPath + 'board.png';
+			imageObj.src = pathToSurfaces + 'board.png';
 			break;
-		case '2':
+		case 2:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = relPath + 'brick.png';
+			imageObj.src = pathToSurfaces + 'brick.png';
 			break;
-		case '3':
+		case 3:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = relPath + 'canvas.png';
+			imageObj.src = pathToSurfaces + 'canvas.png';
 			break;
-		case '4':
+		case 4:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = relPath + 'cardboard.png';
+			imageObj.src = pathToSurfaces + 'cardboard.png';
 			break;
-		case '5':
+		case 5:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = relPath + 'metal.png';
+			imageObj.src = pathToSurfaces + 'metal.png';
 			break;
-		case '6':
+		case 6:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = relPath + 'wall.png';
+			imageObj.src = pathToSurfaces + 'wall.png';
 			break;
-		case '7':
+		case 7:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = relPath + 'wood.png';
+			imageObj.src = pathToSurfaces + 'wood.png';
 			break;
 	}
 };
@@ -115,7 +115,7 @@ Canvas.prototype.redraw = function (ctx){
 	}
 };
 
-
+//
 
 Canvas.prototype.sendPic = function() {
 		data = {

@@ -11,7 +11,7 @@ function CatchupBrush(color) {
 	this.img.onload=function(){
 		self.imgLoaded = true;
 	};
-	this.img.src = relPath + 'Assets/Catchup/ketch1.png';
+	this.img.src = relPath + 'Catchup/ketch1.png';
 }
 
 CatchupBrush.prototype.onFinish = function () {
@@ -41,4 +41,6 @@ CatchupBrush.prototype.use = function (obj, ctx) {
 	if ((obj.x2 - this.lastX)*(obj.x2 - this.lastX) + (obj.y2 - this.lastY)*(obj.y2 - this.lastY) > 1800)
 	this.drawCatchupPart(ctx, obj.x2, obj.y2, 1 + Math.random());
 };
+
+//
 

@@ -17,7 +17,7 @@ function PistolBrush(color) {
 	this.img.onload=function(){
 		self.imgLoaded = true;
 	};
-	this.img.src = relPath + 'Assets/charcoaltrace.png';
+	this.img.src = relPath + 'charcoaltrace.png';
 }
 
 PistolBrush.prototype.onFinish = function () {
@@ -44,4 +44,6 @@ PistolBrush.prototype.use = function (obj, ctx) {
 	if (!this.imgLoaded) return;
 
 };
+
+//
 

@@ -43,3 +43,5 @@ PatternBrush.prototype.use = function (obj, ctx) {
   ctx.lineTo(obj.x1, obj.y1);
   ctx.stroke();
 };
+
+//
