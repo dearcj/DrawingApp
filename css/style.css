@@ -1032,6 +1032,8 @@ div.at-the-backyard {
 }
 
 #surface-canvas {
+	background: url(../img/textures/wood.jpg) no-repeat;
+	background-size: 100%;
     float: right;
 }
 
@@ -1212,8 +1214,6 @@ ul.surfaces li:nth-child(7):focus {
 }
 
 .filters-canvas {
-	background: url(../img/main-canvas.jpg) no-repeat;
-    background-size: 100%;
     margin: 0;
     float: right;
 }

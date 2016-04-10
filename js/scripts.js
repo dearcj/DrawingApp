@@ -33,6 +33,7 @@ jQuery(document).ready(function($) {
 	$('ul.surfaces li.board').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('board-texture').fadeIn(1000);
 		window.selectedSurface = 2;
+		console.log('hi');
 	});
 
 	$('ul.surfaces li.canvas').click(function() {
