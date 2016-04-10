@@ -64,17 +64,14 @@ class mMomaAPI extends Rest {
 			$result = $db->fetch(PDO::FETCH_ASSOC);
 			
 			if ($result == false) {
-				$db = $this->_db->prepare("INSERT INTO tb_gallery (image, name, description) VALUES (:image, :name, :description)");
-				$db->bindParam(":image", $this->request["image"]);
+				$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags) VALUES (:user_id, :image, :name, :descriptionm :tags)");
+				$db->bindParam(":tags", $this->request["tags"]);
+                $db->bindParam(":image", $this->request["image"]);
 				$db->bindParam(":name", $this->request["name"]);
+				$db->bindParam(":user_id", $this->request["user_id"]);
 				$db->bindParam(":description", $this->request["description"]);
 				$db->execute();
-				$db = null;
-				
-				$db = $this->_db->prepare("INSERT INTO tb_user_gallery (user_id, image_id) VALUES (:user_id, :image_id)");
-				$db->bindParam(":user_id", $user_id);
-				$db->bindParam(":image_id", $image_id);
-				$db->execute();
+
 				$db = null;
 			} else {
 				$error = array("status" => "Error", "message" => "Provided image_id is already exists");
