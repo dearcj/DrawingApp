@@ -156,7 +156,10 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		window.savedImage = window.mainCanvasObject.saveImage();
-		drawImageToCanvas("filters-canvas", window.savedImage);
+
+		setTimeout(
+		function () {	drawImageToCanvas("filters-canvas", window.savedImage);
+			}, 3000);
 
 		$('#tools-wrapper').fadeOut(500);
 		$('#filters-wrapper').fadeIn(1000).removeClass('hidden');
