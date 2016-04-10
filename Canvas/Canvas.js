@@ -23,7 +23,7 @@ Canvas.prototype.savePattern = function() {
 
 
 Canvas.prototype.saveImage = function() {
-	var canvas = document.getElementById('main-canvas');
+	var canvas = document.getElementById('back-canvas');
 
 	var dataURL = canvas.toDataURL("image/jpeg", 0.5);
 	return  dataURL;//.replace(/^data:image\/(png|jpg);base64,/, "");
