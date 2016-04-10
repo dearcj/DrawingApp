@@ -9,7 +9,6 @@ var initApplication = function() {
   var elDraw = document.getElementById('main-canvas');
   var backCtx = el.getContext('2d');
   var frontCtx = elDraw.getContext('2d');
-  window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 
   var canvas = new Canvas(frontCtx, backCtx, window.selectedSurface);
 

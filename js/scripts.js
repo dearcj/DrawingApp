@@ -1,3 +1,21 @@
+window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 jQuery(document).ready(function($) {
 
 	// ---------ELEMENTS FADE IN---------
