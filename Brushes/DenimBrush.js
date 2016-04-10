@@ -8,6 +8,7 @@ extend(DenimBrush, Brush);
 
 function DenimBrush(color) {
 	Brush.apply(this, color);
+	this.name = 'denim';
 
 	var self = this;
 	this.img=new Image();
@@ -31,6 +32,8 @@ function DenimBrush(color) {
 
 DenimBrush.prototype.onFinish = function () {
 	clearTimeout(this.timeout); this.timeout = null;
+
+	Brush.prototype.onFinish.call(this);
 }
 
 DenimBrush.prototype.onDown = function (ctx, x, y) {

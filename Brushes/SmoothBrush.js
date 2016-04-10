@@ -5,6 +5,9 @@ extend(SmoothBrush, Brush);
 
 function SmoothBrush(color) {
 	Brush.apply(this, color);
+
+	this.name = 'smooth';
+
 	this.w = 40;
 }
 

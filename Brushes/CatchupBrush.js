@@ -5,6 +5,7 @@ extend(CatchupBrush, Brush);
 
 function CatchupBrush(color) {
 	Brush.apply(this, color);
+	this.name = 'catchup';
 
 	var self = this;
 	this.img=new Image();
@@ -17,6 +18,7 @@ function CatchupBrush(color) {
 CatchupBrush.prototype.onFinish = function () {
 	clearTimeout(this.timeout); this.timeout = null;
 
+	Brush.prototype.onFinish.call(this);
 };
 
 CatchupBrush.prototype.drawCatchupPart = function (ctx, x, y, scale) {

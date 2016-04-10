@@ -5,6 +5,7 @@ extend(ScotchBrush, Brush);
 
 function ScotchBrush(color) {
 	Brush.apply(this, color);
+	this.name = 'scotch';
 
 	var self = this;
 	this.img=new Image();

@@ -48,6 +48,9 @@ Canvas.prototype.mouseMoveAction = function(e) {
 Canvas.prototype.resetCanvas = function () {
 	this.state.backCtx.clearRect(0, 0, this.state.width, this.state.height);
 	var ctx = this.state.backCtx;
+
+	this.tags = [];
+
 	var pathToSurfaces = 'http://188.227.16.35/wp-content/themes/mmoma/img/textures/';
 	switch (this.canvasType) {
 		case 1:
@@ -123,7 +126,8 @@ Canvas.prototype.sendPic = function() {
 			user_id: 1,
 			image: this.saveImage(),
 			name: "���������",
-			description: "������"
+			description: "������",
+			tags: this.tags.join(';')
 		};
 
 		$.ajax({
