@@ -159,7 +159,7 @@ jQuery(document).ready(function($) {
 
 		drawImageToCanvas("filters-canvas", window.savedImage);
 
-		$('#filter-image').src =  window.savedImage;
+		$('#filter-image')[0].src =  window.savedImage;
 
 		$('#tools-wrapper').fadeOut(500);
 		$('#filters-wrapper').fadeIn(1000).removeClass('hidden');
