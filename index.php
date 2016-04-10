@@ -108,7 +108,6 @@
           <div class="dark-side surface"></div>
 
           <div id="surface-canvas">
-            <canvas id="main-canvas"></canvas>
 
             <ul id="helpers" class="surface">
               <li id="helper-7"><span>Поверхность, которую художник выбирает для картины, называется основа.</span></li>
