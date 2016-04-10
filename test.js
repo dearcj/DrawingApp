@@ -60,6 +60,6 @@ var initApplication = function() {
   };
 };
 
-var goToTools = document.getElementById('go-to-tools');
+var goToTools = document.getElementById('go-to-tools');//////////
 
 goToTools.addEventListener('click', function () {initApplication();});
