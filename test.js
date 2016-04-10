@@ -2,8 +2,6 @@
  * Created by mac-pc on 12/12/15.
  */
 
-var relPath = 'http://188.227.16.35/wp-content/themes/mmoma/';
-
 var initApplication = function() {
   lcg.setSeed(100);
   window.brushMode = 0;
@@ -11,6 +9,7 @@ var initApplication = function() {
   var elDraw = document.getElementById('main-canvas');
   var backCtx = el.getContext('2d');
   var frontCtx = elDraw.getContext('2d');
+  var relPathToBrushes = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 
   var canvas = new Canvas(frontCtx, backCtx, window.selectedSurface);
 
@@ -61,6 +60,6 @@ var initApplication = function() {
   };
 };
 
+var goToTools = document.getElementById('go-to-tools');
 
-
-initApplication();
+goToTools.addEventListener('click', function () {initApplication();});

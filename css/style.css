@@ -956,7 +956,7 @@ li.back-to-surface {
 	background-size: 100%;
 }
 
-li.go-to-tools,
+li#go-to-tools,
 li.add-filter {
 	background: url(../img/tools-buttons-next.png) no-repeat;
 	background-size: 100%;

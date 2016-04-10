@@ -33,7 +33,6 @@ jQuery(document).ready(function($) {
 	$('ul.surfaces li.board').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('board-texture').fadeIn(1000);
 		window.selectedSurface = 2;
-		console.log('hi');
 	});
 
 	$('ul.surfaces li.canvas').click(function() {
@@ -111,7 +110,7 @@ jQuery(document).ready(function($) {
 		$('#museum-wrapper').fadeIn(1000).removeClass('hidden');
 	});
 
-	$('li.go-to-tools').click(function(event) {
+	$('li#go-to-tools').click(function(event) {
 		event.preventDefault();
 		$('#surface-wrapper').fadeOut(500);
 		$('#tools-wrapper').fadeIn(500).removeClass('hidden');

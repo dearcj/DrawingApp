@@ -117,7 +117,7 @@
           </div>
 
           <ul class="tools-buttons surface-tb">
-            <li class="go-to-tools hidden"></li>
+            <li class="hidden" id="go-to-tools"></li>
           </ul>
 
           <ul class="surfaces">
