@@ -58,12 +58,23 @@ class mMomaAPI extends Rest {
 			$user_id = intval($this->request["user_id"]);
 			$image_id = intval($this->request["image_id"]);
 
-			$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags) VALUES (:user_id, :image, :name, :description, :tags)");
+			$imgfilename = tempnam('', 'pic');
+			$imgfilename = str_replace('/tmp/', '', $imgfilename);
+		    $image = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAWgBaAAD/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubw';
+			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
+			$data = base64_decode($image);
+
+			$link = 'imgs/' . $imgfilename . '.jpg';
+			file_put_contents($link, $data);
+
+
+			$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags, file) VALUES (:user_id, :image, :name, :description, :tags, :file)");
 			$db->bindParam(":tags", $this->request["tags"]);
             $db->bindParam(":image", $this->request["image"]);
 			$db->bindParam(":name", $this->request["name"]);
 			$db->bindParam(":user_id", $this->request["user_id"]);
 			$db->bindParam(":description", $this->request["description"]);
+			$db->bindParam(":file", $link);
 			$db->execute();
 
 			$db = null;
