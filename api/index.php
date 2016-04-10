@@ -57,12 +57,7 @@ class mMomaAPI extends Rest {
 			
 			$user_id = intval($this->request["user_id"]);
 			$image_id = intval($this->request["image_id"]);
-			
-			$db = $this->_db->prepare("SELECT id FROM tb_user_gallery WHERE image_id = ?");
-			$db->bindParam(1, $image_id);
-			$db->execute();
-			$result = $db->fetch(PDO::FETCH_ASSOC);
-			
+
 			if ($result == false) {
 				$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags) VALUES (:user_id, :image, :name, :descriptionm :tags)");
 				$db->bindParam(":tags", $this->request["tags"]);
