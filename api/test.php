@@ -1,6 +1,7 @@
 
 <?php
 	$imgfilename = tempnam('', 'pic');
+			$imgfilename = preg_replace('/tmp/', '', $imgfilename);
 			echo $imgfilename;
 		    $image = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAWgBaAAD/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubw';
 			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
