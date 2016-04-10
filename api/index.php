@@ -61,9 +61,9 @@ class mMomaAPI extends Rest {
 			$imgfilename = str_replace('/tmp/', '', $imgfilename);
 		    $image = $this->request["image"];
 			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
-			$data = 'tesssssssssst';
+			$bin =  base64_decode($image);
 			$link = 'imgs/' . $imgfilename .'--'. $user_id . '.jpg';
-			file_put_contents("xxx.txt", $data);
+			file_put_contents($link, $bin);
 
 
 			$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags, file) VALUES (:user_id, :image, :name, :description, :tags, :file)");
@@ -77,7 +77,7 @@ class mMomaAPI extends Rest {
 			$db = null;
 
 			$error = array("status" => "Success", "message" => "Image was successfully added");
-			$this->response($imgfilename, 200);
+			$this->response($error, 200);
 		}
 		
 		$error = array("status" => "Error", "message" => "Provided data is incorrect");
