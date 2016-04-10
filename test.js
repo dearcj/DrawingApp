@@ -12,7 +12,7 @@ var initApplication = function() {
   var backCtx = el.getContext('2d');
   var frontCtx = elDraw.getContext('2d');
 
-  var canvas = new Canvas(frontCtx, backCtx, getParameterByName('c'));
+  var canvas = new Canvas(frontCtx, backCtx, window.selectedSurface);
 
 //  history.replaceState( {} , null, this.location.pathname );
 
