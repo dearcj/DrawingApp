@@ -127,10 +127,10 @@ jQuery(document).ready(function($) {
 
 		//LOAD IMAGE FROM SERVER
 		getLastImage(1, function (res) {
-
-			console.log();
-			//document.getElementById('your-painting').src = ;
-
+			document.getElementById('your-painting').src = res.image;
+			document.getElementById('painting-title').src = res.name;
+			document.getElementById('painting-author').src = "фывфыв";
+			document.getElementById('painting-materials').src = res.tags;
 		});
 
 

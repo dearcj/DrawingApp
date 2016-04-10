@@ -269,7 +269,7 @@
           <div class="dark-side museum"></div>
 
           <div class="painting-info">
-            <span class="title">Атлеты</span><span class="author">Казимир Малевич</span><span class="materials">(холст, мел, кетчуп, апельсины)</span>
+            <span id="painting-title" class="title">Атлеты</span><span id="painting-author" class="author">Казимир Малевич</span><span id="painting-materials" class="materials">(холст, мел, кетчуп, апельсины)</span>
           </div>
 
           <ul class="ux-buttons">
