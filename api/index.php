@@ -86,7 +86,7 @@ class mMomaAPI extends Rest {
 			$user_id = intval($this->request["user_id"]);
 			
 			$db = $this->_db->prepare(
-				"SELECT * FROM tb_gallery t WHERE t.user_id = ? ORDER BY t.id DESC LIMIT 1"
+				"SELECT * FROM tb_gallery t WHERE t.user_id = ? ORDER BY t.image_id DESC LIMIT 1"
 				);
 			$db->bindParam(1, $user_id);
 			$db->execute();
