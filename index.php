@@ -108,6 +108,7 @@
           <div class="dark-side surface"></div>
 
           <div id="surface-canvas">
+
             <ul id="helpers" class="surface">
               <li id="helper-7"><span>Поверхность, которую художник выбирает для картины, называется основа.</span></li>
             </ul>
@@ -182,7 +183,7 @@
         <div id="filters-wrapper" class="hidden">
           <div class="filters-canvas">
 
-            <canvas id="filters-canvas"></canvas>
+            <canvas id="filters-canvas"  width="750" height="530"></canvas>
             <div class="dark-side filters"></div>
 
             <ul class="tools-buttons filters-tb">
