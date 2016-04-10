@@ -27,7 +27,7 @@ function DenimBrush(color) {
 			this.img.src = relPath + 'Assets/Jeans/jeans3.png';
 		break;
 	}
-	this.img.src= relPath + 'Assets/charcoaltrace.png';
+	this.img.src = relPath + 'Assets/charcoaltrace.png';
 }
 
 DenimBrush.prototype.onFinish = function () {

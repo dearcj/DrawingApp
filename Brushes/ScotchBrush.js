@@ -11,7 +11,7 @@ function ScotchBrush(color) {
 	this.img.onload=function(){
 	self.imgLoaded = true;
 	};
-	this.img.src = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/scotch.png';
+	this.img.src = relPath + 'scotch.png';
 }
 
 

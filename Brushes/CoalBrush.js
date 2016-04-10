@@ -7,7 +7,6 @@ function CoalBrush(color) {
 	Brush.apply(this, color);
 
 	var self = this;
-	var relPathToBrushes = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 	this.img=new Image();
 	this.img.onload=function(){
 		self.imgLoaded = true;
@@ -15,10 +14,10 @@ function CoalBrush(color) {
 
 	switch (window.brushMode) {
 		case 0:
-			this.img.src = relPathToBrushes + 'Assets/Coal/chalk1.png';
+			this.img.src = relPath + 'Assets/Coal/chalk1.png';
 		break;
 		case 1:
-			this.img.src= relPathToBrushes + 'Assets/Coal/coal1.png';
+			this.img.src= relPath + 'Assets/Coal/coal1.png';
 		break;
 	}
 }
