@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
 		$(this).find('span').css('display', 'none');
 	});
 
-	$('ul.surfaces li.wood').click(function() {
+/*	$('ul.surfaces li.wood').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('wood-texture').fadeIn(1000);
 	});
 
@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 
 	$('ul.surfaces li.metal').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('metal-texture');
-	});
+	});*/
 
 
 	$('ul.surfaces li').mouseover(function() {
@@ -120,7 +120,6 @@ jQuery(document).ready(function($) {
 	$('li.send-to-museum').click(function(event) {
 
 		window.mainCanvasObject.sendPic();
-
 
 		event.preventDefault();
 		$('#tools-wrapper').fadeOut(500);
