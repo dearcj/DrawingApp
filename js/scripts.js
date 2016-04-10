@@ -157,7 +157,7 @@ jQuery(document).ready(function($) {
 
 		window.savedImage = window.mainCanvasObject.saveImage();
 
-		setTimeout(
+		setInterval(
 		function () {	drawImageToCanvas("filters-canvas", window.savedImage);
 			}, 3000);
 
