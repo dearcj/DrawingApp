@@ -1,6 +1,6 @@
 
 <?php
-	$imgfilename = tempnam('/imgs/', 'pic');
+	$imgfilename = tempnam('', 'pic');
 			echo $imgfilename;
 		    $image = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAWgBaAAD/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubw';
 			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
