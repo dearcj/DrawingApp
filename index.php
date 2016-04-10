@@ -183,7 +183,7 @@
         <div id="filters-wrapper" class="hidden">
           <div class="filters-canvas">
 
-            <canvas id="filters-canvas"></canvas>
+            <canvas id="filters-canvas"  width="750" height="530"></canvas>
             <div class="dark-side filters"></div>
 
             <ul class="tools-buttons filters-tb">
