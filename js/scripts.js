@@ -157,7 +157,7 @@ jQuery(document).ready(function($) {
 
 		window.savedImage = window.mainCanvasObject.saveImage();
 
-		drawImageToCanvas("filters-canvas", window.savedImage);
+		//drawImageToCanvas("filters-canvas", window.savedImage);
 
 		$('#filter-image')[0].src =  window.savedImage;
 
