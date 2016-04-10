@@ -22,6 +22,17 @@ function getParameterByName(name) {
   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
+function drawImageToCanvas (canvId, imgData) {
+  var myCanvas = document.getElementById(canvId);
+  var ctx = myCanvas.getContext('2d');
+
+  var img = new Image();
+  img.src = imgData;
+  img.onload = function(){
+    ctx.drawImage(img,0,0);
+  }
+}
+
 var lcg = (function() {
   // Set to values from http://en.wikipedia.org/wiki/Numerical_Recipes
   // m is basically chosen to be large (as it is the max period)
