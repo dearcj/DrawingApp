@@ -25,33 +25,40 @@ jQuery(document).ready(function($) {
 		$(this).find('span').css('display', 'none');
 	});
 
-/*	$('ul.surfaces li.wood').click(function() {
+	$('ul.surfaces li.wood').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('wood-texture').fadeIn(1000);
+		window.selectedSurface = 1;
 	});
 
 	$('ul.surfaces li.board').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('board-texture').fadeIn(1000);
+		window.selectedSurface = 2;
 	});
 
 	$('ul.surfaces li.canvas').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('canvas-texture');
+		window.selectedSurface = 3;
 	});
 
 	$('ul.surfaces li.brick').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('brick-texture');
+		window.selectedSurface = 4;
 	});
 
 	$('ul.surfaces li.cardboard').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('cardboard-texture');
+		window.selectedSurface = 5;
 	});
 	
 	$('ul.surfaces li.wall').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('wall-texture');
+		window.selectedSurface = 6;
 	});
 
 	$('ul.surfaces li.metal').click(function() {
 		$('#surface-canvas').removeAttr('class').addClass('metal-texture');
-	});*/
+		window.selectedSurface = 7;
+	});
 
 
 	$('ul.surfaces li').mouseover(function() {
