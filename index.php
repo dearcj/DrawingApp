@@ -190,14 +190,14 @@
             <li id="btn-catchup"><p>Кетчуп</p></li>
             <li id="needle"><p>Нитка</p>
               <ul>
-                <li id="btn-needle"></li>
-                <li id="btn-thread-1"></li>
-                <li id="btn-thread-2"></li>
-                <li id="btn-thread-3"></li>
-                <li id="btn-thread-4"></li>
-                <li id="btn-thread-5"></li>
-                <li id="btn-thread-6"></li>
-                <li id="btn-thread-7"></li>
+                <li id="btn-needle" class="needle-color"></li>
+                <li id="btn-thread-1" class="needle-color"></li>
+                <li id="btn-thread-2" class="needle-color"></li>
+                <li id="btn-thread-3" class="needle-color"></li>
+                <li id="btn-thread-4" class="needle-color"></li>
+                <li id="btn-thread-5" class="needle-color"></li>
+                <li id="btn-thread-6" class="needle-color"></li>
+                <li id="btn-thread-7" class="needle-color"></li>
               </ul>
             </li>
             <li id="btn-pistol"><p>Пистолет</p></li>

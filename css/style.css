@@ -951,56 +951,60 @@ ul.tools li#btn-thread-1 {
 	background: url(../img/tools/thread-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 73px;
-	height: 73px;
+	width: 11px;
+	height: 11px;
 }
 
 ul.tools li#btn-thread-2 {
 	background: url(../img/tools/thread-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 73px;
-	height: 73px;
+	width: 11px;
+	height: 11px;
 }
 
 ul.tools li#btn-thread-3 {
 	background: url(../img/tools/thread-3.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 73px;
-	height: 73px;
+	width: 11px;
+	height: 11px;
 }
 
 ul.tools li#btn-thread-4 {
 	background: url(../img/tools/thread-4.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 73px;
-	height: 73px;
+	width: 11px;
+	height: 11px;
 }
 
 ul.tools li#btn-thread-5 {
 	background: url(../img/tools/thread-5.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 73px;
-	height: 73px;
+	width: 11px;
+	height: 11px;
 }
 
 ul.tools li#btn-thread-6 {
 	background: url(../img/tools/thread-6.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 73px;
-	height: 73px;
+	width: 11px;
+	height: 11px;
 }
 
 ul.tools li#btn-thread-7 {
 	background: url(../img/tools/thread-7.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 73px;
-	height: 73px;
+	width: 11px;
+	height: 11px;
+}
+
+ul.tools li.needle-color {
+	float: left;
 }
 
 ul.tools li#btn-pistol {
