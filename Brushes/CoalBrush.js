@@ -1,3 +1,4 @@
+
 /**
  * Created by mac-pc on 12/15/15.
  */
@@ -5,6 +6,9 @@ extend(CoalBrush, Brush);
 
 function CoalBrush(color) {
 	Brush.apply(this, color);
+
+	this.name = 'мел';
+
 
 	var self = this;
 	this.img=new Image();
@@ -21,6 +25,7 @@ function CoalBrush(color) {
 		break;
 	}
 }
+
 
 
 CoalBrush.prototype.getPattern = function(ctx) {

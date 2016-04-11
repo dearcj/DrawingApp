@@ -124,6 +124,18 @@ jQuery(document).ready(function($) {
 
 	$('ul#buttons li#button-4 a').click(function(event) {
 		event.preventDefault();
+
+		//LOAD IMAGE FROM SERVER
+		getLastImage(1, function (res) {
+			document.getElementById('your-painting').src = res.image;
+			document.getElementById('painting-title').textContent = res.name;
+			document.getElementById('painting-author').textContent = "фывфыв";
+			document.getElementById('painting-materials').textContent = res.tags;
+		});
+
+
+
+
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#museum-wrapper').fadeIn(1000).removeClass('hidden');
 	});
@@ -156,7 +168,12 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		window.savedImage = window.mainCanvasObject.saveImage();
+
 		drawImageToCanvas("filters-canvas", window.savedImage);
+
+
+
+		//$('#filter-image')[0].src =  window.savedImage;
 
 		$('#tools-wrapper').fadeOut(500);
 		$('#filters-wrapper').fadeIn(1000).removeClass('hidden');
@@ -501,6 +518,11 @@ jQuery(document).ready(function($) {
 				return width/height;
 			},
 			wandRatio = wandRatio(800, 178);
+
+
+		document.getElementById("wand").addEventListener('click', function () {
+			console.log('asdasd');
+		});
 
 		filtersWrapper.css({'background-size': 'auto 100%', height: filtersBackgroundHeight + 'px'});
 

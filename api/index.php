@@ -56,33 +56,28 @@ class mMomaAPI extends Rest {
 		 && isset($this->request["description"]) && !empty($this->request["description"])) {
 			
 			$user_id = intval($this->request["user_id"]);
-			$image_id = intval($this->request["image_id"]);
-			
-			$db = $this->_db->prepare("SELECT id FROM tb_user_gallery WHERE image_id = ?");
-			$db->bindParam(1, $image_id);
+
+			$imgfilename = tempnam('', 'pic');
+			$imgfilename = str_replace('/tmp/', '', $imgfilename);
+		    $image = $this->request["image"];
+			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
+			$bin =  base64_decode($image);
+			$link = 'imgs/' . $imgfilename .'--'. $user_id . '.jpg';
+			file_put_contents($link, $bin);
+
+
+			$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags, file) VALUES (:user_id, :image, :name, :description, :tags, :file)");
+			$db->bindParam(":tags", $this->request["tags"]);
+            $db->bindParam(":image", $this->request["image"]);
+			$db->bindParam(":name", $this->request["name"]);
+			$db->bindParam(":user_id", $this->request["user_id"]);
+			$db->bindParam(":description", $this->request["description"]);
+			$db->bindParam(":file", $link);
 			$db->execute();
-			$result = $db->fetch(PDO::FETCH_ASSOC);
-			
-			if ($result == false) {
-				$db = $this->_db->prepare("INSERT INTO tb_gallery (image, name, description) VALUES (:image, :name, :description)");
-				$db->bindParam(":image", $this->request["image"]);
-				$db->bindParam(":name", $this->request["name"]);
-				$db->bindParam(":description", $this->request["description"]);
-				$db->execute();
-				$db = null;
-				
-				$db = $this->_db->prepare("INSERT INTO tb_user_gallery (user_id, image_id) VALUES (:user_id, :image_id)");
-				$db->bindParam(":user_id", $user_id);
-				$db->bindParam(":image_id", $image_id);
-				$db->execute();
-				$db = null;
-			} else {
-				$error = array("status" => "Error", "message" => "Provided image_id is already exists");
-				$this->response($this->json($error), 400);
-			}
-			
+			$db = null;
+
 			$error = array("status" => "Success", "message" => "Image was successfully added");
-			$this->response($this->json($error), 200);
+			$this->response($error, 200);
 		}
 		
 		$error = array("status" => "Error", "message" => "Provided data is incorrect");
@@ -96,20 +91,19 @@ class mMomaAPI extends Rest {
 		
 		if (isset($this->request["user_id"]) && !empty($this->request["user_id"])) {
 			$user_id = intval($this->request["user_id"]);
-			
+
+
+
 			$db = $this->_db->prepare(
-				"SELECT tb_gallery.*
-				FROM tb_user_gallery
-				LEFT JOIN tb_gallery ON tb_gallery.image_id = tb_user_gallery.image_id
-				WHERE tb_user_gallery.user_id = ?
-				ORDER BY tb_user_gallery.id DESC
-				LIMIT 1"
+				"SELECT * FROM tb_gallery t WHERE t.user_id = ? ORDER BY t.image_id DESC LIMIT 1"
 				);
 			$db->bindParam(1, $user_id);
 			$db->execute();
 			$result = $db->fetch(PDO::FETCH_ASSOC);
 			
 			if ($result != false) {
+
+
 				$this->response($this->json($result), 200);
 			} else {
 				$error = array("status" => "Error", "message" => "User with provided ID does not exist");

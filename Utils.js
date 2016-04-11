@@ -22,6 +22,26 @@ function getParameterByName(name) {
   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
+function getLastImage(uid, cb) {
+  data = {
+    api_method: 'getimagefromgallery',
+    user_id: uid
+  };
+
+  $.ajax({
+    type: "GET",
+    url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
+    data: data,
+    success: function callback(res) {
+      cb(res);
+      console.log(res);
+    }
+  });
+
+
+}
+
+
 function drawImageToCanvas (canvId, imgData) {
   var myCanvas = document.getElementById(canvId);
   var ctx = myCanvas.getContext('2d');
@@ -29,8 +49,11 @@ function drawImageToCanvas (canvId, imgData) {
   var img = new Image();
   img.src = imgData;
   img.onload = function(){
-    ctx.drawImage(img,0,0, 700, 530, 0, 0, 700, 530);
+    ctx.drawImage(img, 0, 0);
+  //  ctx.canvas.width = ctx.canvas.width;
   }
+  ctx.drawImage(img, 0 ,0 );
+
 }
 
 var lcg = (function() {

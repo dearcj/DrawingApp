@@ -182,8 +182,9 @@
 
         <div id="filters-wrapper" class="hidden">
           <div class="filters-canvas">
+            <canvas id="filters-canvas" width="750px" height="530px" />
+            <img id="filter-image"  width="750px" height="530px"></img>
 
-            <canvas id="filters-canvas"  width="750px" height="530px"></canvas>
             <div class="dark-side filters"></div>
 
             <ul class="tools-buttons filters-tb">
@@ -255,7 +256,7 @@
 
           <div class="museum-button new-painting"><a href="#"></a></div>
 
-          <div class="museum-painting">
+          <img id="your-painting" class="museum-painting">
             <div class="social-buttons">
               <span>Рассказать друзьям</span>
               <ul>
@@ -263,12 +264,12 @@
                 <li class="fb"></li>
               </ul>
             </div>
-          </div>
+          </img>
 
           <div class="dark-side museum"></div>
 
           <div class="painting-info">
-            <span class="title">Атлеты</span><span class="author">Казимир Малевич</span><span class="materials">(холст, мел, кетчуп, апельсины)</span>
+            <span id="painting-title" class="title">Атлеты</span><span id="painting-author" class="author">Казимир Малевич</span><span id="painting-materials" class="materials">(холст, мел, кетчуп, апельсины)</span>
           </div>
 
           <ul class="ux-buttons">

@@ -43,24 +43,29 @@ Canvas.prototype.mouseMoveAction = function(e) {
 	}
 };
 
+
+
 Canvas.prototype.resetCanvas = function () {
 	this.state.backCtx.clearRect(0, 0, this.state.width, this.state.height);
 	var ctx = this.state.backCtx;
-	var pathToSurfaces = 'http://188.227.16.35/wp-content/themes/mmoma/img/surfaces/';
+
+	this.tags = [];
+
+	var pathToSurfaces = 'http://188.227.16.35/wp-content/themes/mmoma/img/textures/';
 	switch (this.canvasType) {
 		case 1:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = pathToSurfaces + 'wood.jpg';
+			imageObj.src = pathToSurfaces + 'board.jpg';
 			break;
 		case 2:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = pathToSurfaces + 'board.jpg';
+			imageObj.src = pathToSurfaces + 'brick.jpg';
 			break;
 		case 3:
 			var imageObj = new Image();
@@ -74,14 +79,14 @@ Canvas.prototype.resetCanvas = function () {
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = pathToSurfaces + 'brick.jpg';
+			imageObj.src = pathToSurfaces + 'cardboard.jpg';
 			break;
 		case 5:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = pathToSurfaces + 'cardboard.jpg';
+			imageObj.src = pathToSurfaces + 'metal.jpg';
 			break;
 		case 6:
 			var imageObj = new Image();
@@ -95,7 +100,7 @@ Canvas.prototype.resetCanvas = function () {
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = pathToSurfaces + 'metal.jpg';
+			imageObj.src = pathToSurfaces + 'wood.jpg';
 			break;
 	}
 };

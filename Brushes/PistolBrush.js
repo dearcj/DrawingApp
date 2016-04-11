@@ -11,6 +11,7 @@ extend(PistolBrush, Brush);
 
 function PistolBrush(color) {
 	Brush.apply(this, color);
+	this.name = 'пистолет';
 
 	var self = this;
 	this.img=new Image();
@@ -22,6 +23,8 @@ function PistolBrush(color) {
 
 PistolBrush.prototype.onFinish = function () {
 	clearTimeout(this.timeout); this.timeout = null;
+	Brush.prototype.onFinish.call(this);
+
 }
 
 PistolBrush.prototype.onDown = function (ctx, x, y) {
