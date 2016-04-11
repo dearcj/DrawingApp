@@ -23,9 +23,9 @@ Canvas.prototype.savePattern = function() {
 
 
 Canvas.prototype.saveImage = function() {
-	var canvas = document.getElementById('main-canvas');
+	var canvas = document.getElementById('back-canvas');
 
-	var dataURL = canvas.toDataURL("image/png");
+	var dataURL = canvas.toDataURL("image/jpeg", 0.5);
 	return  dataURL;//.replace(/^data:image\/(png|jpg);base64,/, "");
 };
 
@@ -125,8 +125,9 @@ Canvas.prototype.sendPic = function() {
 			api_method: 'applyimagetogallery',
 			user_id: 1,
 			image: this.saveImage(),
-			name: "���������",
-			description: "������"
+			name: "dasd",
+			description: "asdasdasd",
+			tags: this.tags.join(';')
 		};
 
 		$.ajax({
