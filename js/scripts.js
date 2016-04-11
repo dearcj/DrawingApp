@@ -169,9 +169,11 @@ jQuery(document).ready(function($) {
 
 		window.savedImage = window.mainCanvasObject.saveImage();
 
-		//drawImageToCanvas("filters-canvas", window.savedImage);
+		drawImageToCanvas("filters-canvas", window.savedImage);
 
-		$('#filter-image')[0].src =  window.savedImage;
+
+
+		//$('#filter-image')[0].src =  window.savedImage;
 
 		$('#tools-wrapper').fadeOut(500);
 		$('#filters-wrapper').fadeIn(1000).removeClass('hidden');
@@ -516,6 +518,11 @@ jQuery(document).ready(function($) {
 				return width/height;
 			},
 			wandRatio = wandRatio(800, 178);
+
+
+		document.getElementById("wand").addEventListener('click', function () {
+			console.log('asdasd');
+		});
 
 		filtersWrapper.css({'background-size': 'auto 100%', height: filtersBackgroundHeight + 'px'});
 
