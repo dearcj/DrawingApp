@@ -49,9 +49,11 @@ function drawImageToCanvas (canvId, imgData) {
   var img = new Image();
   img.src = imgData;
   img.onload = function(){
-    ctx.drawImage(img,0,0, 700, 530, 0, 0, 700, 530);
-    ctx.canvas.width = ctx.canvas.width;
+    ctx.drawImage(img);
+  //  ctx.canvas.width = ctx.canvas.width;
   }
+  ctx.drawImage(img);
+
 }
 
 var lcg = (function() {
