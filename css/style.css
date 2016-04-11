@@ -822,7 +822,6 @@ ul.tools > li {
 	position: relative;
 	width: 149px;
 	height: 149px;
-	background-color: white;
 }
 
 ul.tools > li#scotch > ul,
@@ -953,7 +952,7 @@ ul.tools li#btn-needle {
 	background-position: 50% 50%;
 	width: 80px;
 	height: 74px;
-	margin: 25px auto 0;
+	margin: 25px auto 10px;
 }
 
 ul.tools li#btn-thread-1 {
