@@ -823,105 +823,274 @@ ul.tools li {
 	height: 132px;
 }
 
-ul.tools li:nth-child(1) {
+ul.tools li#btn-scotch {
 	background: url(../img/tools/scotch.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(2) {
-	background: url(../img/tools/chalk.png) no-repeat;
+ul.tools li#btn-scotch-1 {
+	background: url(../img/tools/scotch-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(3) {
+ul.tools li#btn-scotch-2 {
+	background: url(../img/tools/scotch-2.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-scotch-3 {
+	background: url(../img/tools/scotch-3.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-coal-1 {
+	background: url(../img/tools/chalk-1.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-coal-2 {
+	background: url(../img/tools/chalk-2.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-grass {
 	background: url(../img/tools/grass.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(4) {
+ul.tools li#btn-orange {
 	background: url(../img/tools/orange.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(5) {
-	background: url(../img/tools/circles.png) no-repeat;
+ul.tools li#btn-denim-1 {
+	background: url(../img/tools/denim-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(6) {
+ul.tools li#btn-denim-2 {
+	background: url(../img/tools/denim-2.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-denim-3 {
+	background: url(../img/tools/denim-3.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-catchup {
 	background: url(../img/tools/ketchup.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(7) {
+ul.tools li#btn-needle {
 	background: url(../img/tools/needle.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(8) {
+ul.tools li#btn-thread-1 {
+	background: url(../img/tools/thread-1.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-2 {
+	background: url(../img/tools/thread-2.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-3 {
+	background: url(../img/tools/thread-3.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-4 {
+	background: url(../img/tools/thread-4.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-5 {
+	background: url(../img/tools/thread-5.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-6 {
+	background: url(../img/tools/thread-6.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-7 {
+	background: url(../img/tools/thread-7.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-pistol {
 	background: url(../img/tools/gun.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(1):hover,
-ul.tools li:nth-child(1):focus {
+ul.tools li#btn-scotch:hover,
+ul.tools li#btn-scotch:focus {
 	background: url(../img/tools/scotch.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(2):hover,
-ul.tools li:nth-child(2):focus {
-	background: url(../img/tools/chalk.png) no-repeat;
+ul.tools li#btn-scotch-1:hover,
+ul.tools li#btn-scotch-1:focus {
+	background: url(../img/tools/scotch-1.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(3):hover,
-ul.tools li:nth-child(3):focus {
+ul.tools li#btn-scotch-2:hover,
+ul.tools li#btn-scotch-2:focus {
+	background: url(../img/tools/scotch-2.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-scotch-3:hover,
+ul.tools li#btn-scotch-3:focus {
+	background: url(../img/tools/scotch-3.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-coal-1:hover,
+ul.tools li#btn-coal-1:focus {
+	background: url(../img/tools/chalk-1.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-coal-2:hover,
+ul.tools li#btn-coal-2:focus {
+	background: url(../img/tools/chalk-2.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-grass:hover,
+ul.tools li#btn-grass:focus {
 	background: url(../img/tools/grass.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(4):hover,
-ul.tools li:nth-child(4):focus {
+ul.tools li#btn-orange:hover,
+ul.tools li#btn-orange:focus {
 	background: url(../img/tools/orange.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(5):hover,
-ul.tools li:nth-child(5):focus {
-	background: url(../img/tools/circles.png) no-repeat;
+ul.tools li#btn-denim-1:hover,
+ul.tools li#btn-denim-1:focus {
+	background: url(../img/tools/denim-1.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(6):hover,
-ul.tools li:nth-child(6):focus {
+ul.tools li#btn-denim-2:hover,
+ul.tools li#btn-denim-2:focus {
+	background: url(../img/tools/denim-2.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-denim-3:hover,
+ul.tools li#btn-denim-3:focus {
+	background: url(../img/tools/denim-3.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-catchup:hover,
+ul.tools li#btn-catchup:focus {
 	background: url(../img/tools/ketchup.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(7):hover,
-ul.tools li:nth-child(7):focus {
+ul.tools li#btn-needle:hover,
+ul.tools li#btn-needle:focus {
 	background: url(../img/tools/needle.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.tools li:nth-child(8):hover,
-ul.tools li:nth-child(8):focus {
+ul.tools li#btn-thread-1:hover,
+ul.tools li#btn-thread-1:focus {
+	background: url(../img/tools/thread-1.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-2:hover,
+ul.tools li#btn-thread-2:focus {
+	background: url(../img/tools/thread-2.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-3:hover,
+ul.tools li#btn-thread-3:focus {
+	background: url(../img/tools/thread-3.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-4:hover,
+ul.tools li#btn-thread-4:focus {
+	background: url(../img/tools/thread-4.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-5:hover,
+ul.tools li#btn-thread-5:focus {
+	background: url(../img/tools/thread-5.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-6:hover,
+ul.tools li#btn-thread-6:focus {
+	background: url(../img/tools/thread-6.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-7:hover,
+ul.tools li#btn-thread-7:focus {
+	background: url(../img/tools/thread-7.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-pistol:hover,
+ul.tools li#btn-pistol:focus {
 	background: url(../img/tools/gun.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
