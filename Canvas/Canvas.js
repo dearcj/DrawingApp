@@ -58,14 +58,14 @@ Canvas.prototype.resetCanvas = function () {
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = pathToSurfaces + 'board.jpg';
+			imageObj.src = pathToSurfaces + 'wood.jpg';
 			break;
 		case 2:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = pathToSurfaces + 'brick.jpg';
+			imageObj.src = pathToSurfaces + 'board.jpg';
 			break;
 		case 3:
 			var imageObj = new Image();
@@ -79,14 +79,14 @@ Canvas.prototype.resetCanvas = function () {
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = pathToSurfaces + 'cardboard.jpg';
+			imageObj.src = pathToSurfaces + 'brick.jpg';
 			break;
 		case 5:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = pathToSurfaces + 'metal.jpg';
+			imageObj.src = pathToSurfaces + 'cardboard.jpg';
 			break;
 		case 6:
 			var imageObj = new Image();
@@ -100,7 +100,7 @@ Canvas.prototype.resetCanvas = function () {
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
-			imageObj.src = pathToSurfaces + 'wood.jpg';
+			imageObj.src = pathToSurfaces + 'metal.jpg';
 			break;
 	}
 };
