@@ -171,8 +171,6 @@ jQuery(document).ready(function($) {
 
 		drawImageToCanvas("filters-canvas", window.savedImage);
 
-
-
 		//$('#filter-image')[0].src =  window.savedImage;
 
 		$('#tools-wrapper').fadeOut(500);
@@ -521,7 +519,7 @@ jQuery(document).ready(function($) {
 
 
 		document.getElementById("wand").addEventListener('click', function () {
-			console.log('asdasd');
+			applyFilter("filters-canvas", window.savedImage);
 		});
 
 		filtersWrapper.css({'background-size': 'auto 100%', height: filtersBackgroundHeight + 'px'});

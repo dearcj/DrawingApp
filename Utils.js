@@ -41,8 +41,34 @@ function getLastImage(uid, cb) {
 
 }
 
+function applyFilter(canvId, imgData, filterNumber) {
+  var cb;
 
-function drawImageToCanvas (canvId, imgData) {
+  if (filterNumber == 1 || filterNumber == 2) {
+   var src = relPath + 'filters/diptih.png';
+
+    cb = function () {
+     var myCanvas = document.getElementById(canvId);
+     var ctx = myCanvas.getContext('2d');
+
+     var img = new Image();
+     img.src = src;
+     img.onload = function(){
+       ctx.drawImage(img, 0, 0);
+       if (cb) cb();
+       //  ctx.canvas.width = ctx.canvas.width;
+     }
+     ctx.drawImage(img, 0 ,0 );
+
+   };
+  }
+  drawImageToCanvas(canvId, imgData, cb);
+
+}
+
+
+
+function drawImageToCanvas (canvId, imgData, cb) {
   var myCanvas = document.getElementById(canvId);
   var ctx = myCanvas.getContext('2d');
 
@@ -50,6 +76,7 @@ function drawImageToCanvas (canvId, imgData) {
   img.src = imgData;
   img.onload = function(){
     ctx.drawImage(img, 0, 0);
+    if (cb) cb();
   //  ctx.canvas.width = ctx.canvas.width;
   }
   ctx.drawImage(img, 0 ,0 );
