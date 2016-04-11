@@ -190,6 +190,7 @@
             <li id="btn-catchup"><p>Кетчуп</p></li>
             <li><p>Нитка</p>
               <ul>
+                <li id="btn-needle"></li>
                 <li id="btn-thread-1"></li>
                 <li id="btn-thread-2"></li>
                 <li id="btn-thread-3"></li>
