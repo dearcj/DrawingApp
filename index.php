@@ -164,13 +164,41 @@
           </div>
 
           <ul class="tools">
-            <li id="btn-scotch"><p>Скотч</p></li>
-            <li id="btn-coal"><p>Мел</p></li>
+            <li><p>Скотч</p>
+              <ul>
+                <li id="btn-scotch"></li>
+                <li id="btn-scotch-1"></li>
+                <li id="btn-scotch-2"></li>
+                <li id="btn-scotch-3"></li>
+              </ul>
+            </li>
+            <li><p>Мел</p>
+              <ul>
+                <li id="btn-coal-1"></li>
+                <li id="btn-coal-2"></li>
+              </ul>
+            </li>
             <li id="btn-grass"><p>Трава</p></li>
             <li id="btn-orange"><p>Апельсин</p></li>
-            <li id="btn-denim"><p>Джинсы</p></li>
+            <li><p>Джинсы</p>
+              <ul>
+                <li id="btn-denim-1"></li>
+                <li id="btn-denim-2"></li>
+                <li id="btn-denim-3"></li>
+              </ul>
+            </li>
             <li id="btn-catchup"><p>Кетчуп</p></li>
-            <li id="btn-thread"><p>Нитка</p></li>
+            <li><p>Нитка</p>
+              <ul>
+                <li id="btn-thread-1"></li>
+                <li id="btn-thread-2"></li>
+                <li id="btn-thread-3"></li>
+                <li id="btn-thread-4"></li>
+                <li id="btn-thread-5"></li>
+                <li id="btn-thread-6"></li>
+                <li id="btn-thread-7"></li>
+              </ul>
+            </li>
             <li id="btn-pistol"><p>Пистолет</p></li>
           </ul>
 
