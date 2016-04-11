@@ -130,8 +130,6 @@
             <li class="metal"><p>Металл</p></li>
           </ul>
 
-/////
-
           <ul class="ux-buttons">
             <li></li>
             <li></li>
@@ -166,7 +164,7 @@
           </div>
 
           <ul class="tools">
-            <li><p>Скотч</p>
+            <li id="scotch"><p>Скотч</p>
               <ul>
                 <li id="btn-scotch"></li>
                 <li id="btn-scotch-1"></li>
@@ -174,7 +172,7 @@
                 <li id="btn-scotch-3"></li>
               </ul>
             </li>
-            <li><p>Мел</p>
+            <li id="coal"><p>Мел</p>
               <ul>
                 <li id="btn-coal-1"></li>
                 <li id="btn-coal-2"></li>
@@ -182,7 +180,7 @@
             </li>
             <li id="btn-grass"><p>Трава</p></li>
             <li id="btn-orange"><p>Апельсин</p></li>
-            <li><p>Джинсы</p>
+            <li id="denim"><p>Джинсы</p>
               <ul>
                 <li id="btn-denim-1"></li>
                 <li id="btn-denim-2"></li>
@@ -190,7 +188,7 @@
               </ul>
             </li>
             <li id="btn-catchup"><p>Кетчуп</p></li>
-            <li><p>Нитка</p>
+            <li id="needle"><p>Нитка</p>
               <ul>
                 <li id="btn-needle"></li>
                 <li id="btn-thread-1"></li>
