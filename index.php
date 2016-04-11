@@ -130,7 +130,7 @@
             <li class="metal"><p>Металл</p></li>
           </ul>
 
-//
+/////
 
           <ul class="ux-buttons">
             <li></li>
