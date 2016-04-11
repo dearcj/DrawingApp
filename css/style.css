@@ -953,6 +953,7 @@ ul.tools li#btn-needle {
 	background-position: 50% 50%;
 	width: 80px;
 	height: 74px;
+	margin: 25px auto 0;
 }
 
 ul.tools li#btn-thread-1 {
@@ -961,6 +962,8 @@ ul.tools li#btn-thread-1 {
 	background-position: 50% 50%;
 	width: 11px;
 	height: 11px;
+	margin: 23px 0 2px;
+	clear: both;
 }
 
 ul.tools li#btn-thread-2 {
@@ -969,6 +972,7 @@ ul.tools li#btn-thread-2 {
 	background-position: 50% 50%;
 	width: 11px;
 	height: 11px;
+	margin: 0 2px;
 }
 
 ul.tools li#btn-thread-3 {
@@ -977,6 +981,7 @@ ul.tools li#btn-thread-3 {
 	background-position: 50% 50%;
 	width: 11px;
 	height: 11px;
+	margin: 0 2px;
 }
 
 ul.tools li#btn-thread-4 {
@@ -985,6 +990,7 @@ ul.tools li#btn-thread-4 {
 	background-position: 50% 50%;
 	width: 11px;
 	height: 11px;
+	margin: 0 2px;
 }
 
 ul.tools li#btn-thread-5 {
@@ -993,6 +999,7 @@ ul.tools li#btn-thread-5 {
 	background-position: 50% 50%;
 	width: 11px;
 	height: 11px;
+	margin: 0 2px;
 }
 
 ul.tools li#btn-thread-6 {
@@ -1001,6 +1008,7 @@ ul.tools li#btn-thread-6 {
 	background-position: 50% 50%;
 	width: 11px;
 	height: 11px;
+	margin: 0 2px;
 }
 
 ul.tools li#btn-thread-7 {
@@ -1009,6 +1017,7 @@ ul.tools li#btn-thread-7 {
 	background-position: 50% 50%;
 	width: 11px;
 	height: 11px;
+	margin: 0 2px;
 }
 
 ul.tools li.needle-color {
