@@ -49,10 +49,10 @@ function drawImageToCanvas (canvId, imgData) {
   var img = new Image();
   img.src = imgData;
   img.onload = function(){
-    ctx.drawImage(img);
+    ctx.drawImage(img, 0, 0);
   //  ctx.canvas.width = ctx.canvas.width;
   }
-  ctx.drawImage(img);
+  ctx.drawImage(img, 0 ,0 );
 
 }
 
