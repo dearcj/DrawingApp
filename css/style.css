@@ -913,6 +913,9 @@ ul.tools li#btn-denim-1 {
 	background-position: 50% 50%;
 	width: 46px;
 	height: 46px;
+	float: left;
+	margin-top: 36px;
+	margin-left: 16px;
 }
 
 ul.tools li#btn-denim-2 {
@@ -921,6 +924,9 @@ ul.tools li#btn-denim-2 {
 	background-position: 50% 50%;
 	width: 46px;
 	height: 46px;
+	float: right;
+	margin-top: 36px;
+	margin-right: 16px;
 }
 
 ul.tools li#btn-denim-3 {
@@ -929,6 +935,8 @@ ul.tools li#btn-denim-3 {
 	background-position: 50% 50%;
 	width: 45px;
 	height: 45px;
+	clear: both;
+	margin: 81px auto 0;
 }
 
 ul.tools li#btn-catchup {
