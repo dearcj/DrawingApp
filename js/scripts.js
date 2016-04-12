@@ -53,6 +53,8 @@ jQuery(document).ready(function($) {
 	function openSurface(pageName, prevPage, nextPage) {
 		addURL(pageName);
 		pagesTransition(pageName, prevPage, nextPage);
+		console.log(prevPage);
+		console.log(nextPage);
 	}
 
 	$('.go-to-surface').click(function() {
