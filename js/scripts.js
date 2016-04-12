@@ -28,7 +28,10 @@ if (href.indexOf('museum') + 1) {
 	$('#museum-wrapper').removeClass('hidden');
 }*/
 
+var stateObj = { index: "my-museum" };
+history.pushState(stateObj, "my-museum", "/");
 
+var currentState = history.state;
 
 
 jQuery(document).ready(function($) {
