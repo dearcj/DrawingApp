@@ -36,7 +36,6 @@ jQuery(document).ready(function($) {
 	var href = window.location.href;
 
 	function addURL(pageName) {
-		event.preventDefault();
 		var newHref = href + '?p=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
 	}
@@ -48,22 +47,25 @@ jQuery(document).ready(function($) {
 			$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
 	}
 
-	function openSurface(pageName, prevPage, nextPage) {
-		addURL(pageName);
+	function openPage(pageName, prevPage, nextPage) {
+		event.preventDefault();
+
+		if (href.indexOf(pageName) + 1) {
+			history.replaceState(stateObj, pageName, href);
+		} else {
+			addURL(pageName);
+		}
+
 		pagesTransition(pageName, prevPage, nextPage);
-		console.log(prevPage);
-		console.log(nextPage);
 	}
 
 	$('.go-to-surface').click(function() {
-		openSurface('surface', 'index', 'tools');
+		openPage('surface', 'index', 'tools');
 	});
 
-/*
-	if (href.indexOf(pageName) + 1) {
+	openPage('surface', 'index', 'tools');
 
-	}
-*/
+
 
 
 	// ---------ELEMENTS FADE IN---------
@@ -223,13 +225,6 @@ jQuery(document).ready(function($) {
 		$('#filters-wrapper').fadeOut(500);
 		$('#sending-wrapper').fadeIn(1000).removeClass('hidden');
 		$('.main-painting p').delay(500).fadeIn(1500);
-	});
-
-	$('.new-painting').click(function(event) {
-		event.preventDefault();
-		$('#museum-wrapper').fadeOut(500);
-		$('#surface-wrapper').fadeIn(1500).removeClass('hidden');
-		$('#surface-canvas p').delay(500).fadeIn(1500);
 	});
 
 	$('.museum-button.at-the-backyard').click(function(event) {
