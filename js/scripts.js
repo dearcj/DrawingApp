@@ -7,6 +7,7 @@ jQuery(document).ready(function($) {
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
+		var href = window.location.href + 'index.php';
 		var newHref = href + '?p=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
 	}
