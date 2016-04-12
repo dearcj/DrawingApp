@@ -1,20 +1,32 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 
 
+var href = window.location.href;
 
+if (href.indexOf('surface') + 1) {
+	$('#index-wrapper').addClass('hidden');
+	$('#surface-wrapper').removeClass('hidden');
+}
 
+if (href.indexOf('tools') + 1) {
+	$('#index-wrapper').addClass('hidden');
+	$('#tools-wrapper').removeClass('hidden');
+}
 
+if (href.indexOf('filters') + 1) {
+	$('#index-wrapper').addClass('hidden');
+	$('#filters-wrapper').removeClass('hidden');
+}
 
+if (href.indexOf('sending') + 1) {
+	$('#index-wrapper').addClass('hidden');
+	$('#sending-wrapper').removeClass('hidden');
+}
 
-
-
-
-
-
-
-
-
-
+if (href.indexOf('museum') + 1) {
+	$('#index-wrapper').addClass('hidden');
+	$('#museum-wrapper').removeClass('hidden');
+}
 
 jQuery(document).ready(function($) {
 
@@ -308,8 +320,6 @@ jQuery(document).ready(function($) {
 		mainPainting.css({width: width/2.5 + 'px', 'margin-top': width/30 + 'px'});
 
 		paintingWidth = parseInt(mainPainting.css('width'));
-
-		objHeight(mainPainting, paintingWidth/paintingRatio);
 
 		paintingInfo.css('width', paintingWidth/100 * 65 + 'px');
 

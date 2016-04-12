@@ -60,7 +60,7 @@
   </div>
 
   <div id="wrapper">
-        <div id="index-wrapper">
+        <div id="index-wrapper" class="screens">
           <div id="sky"></div>
 
           <div id="art"></div>
@@ -102,7 +102,7 @@
           </ul>
         </div>
 
-        <div id="surface-wrapper" class="hidden">
+        <div id="surface-wrapper" class="hidden screens">
           <div class="surface-button at-the-backyard"></div>
 
           <div class="dark-side surface"></div>
@@ -136,7 +136,7 @@
           </ul>
         </div>
 
-        <div id="tools-wrapper" class="hidden">
+        <div id="tools-wrapper" class="hidden screens">
           <ul class="tools-buttons tools-tb">
             <li class="back-to-surface"></li>
             <li class="send-to-museum"></li>
@@ -209,7 +209,7 @@
           </ul>
         </div>
 
-        <div id="filters-wrapper" class="hidden">
+        <div id="filters-wrapper" class="hidden screens">
           <div class="filters-canvas">
             <canvas id="filters-canvas" width="750px" height="530px" />
             <img id="filter-image"  width="750px" height="530px"></img>
@@ -236,7 +236,7 @@
           </ul>
         </div>
 
-        <div id="sending-wrapper" class="hidden">
+        <div id="sending-wrapper" class="hidden screens">
           <ul class="paintings left-side">
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
@@ -272,7 +272,7 @@
           </ul>
         </div>
 
-        <div id="museum-wrapper" class="hidden">
+        <div id="museum-wrapper" class="hidden screens">
           <ul id="helpers">
             <li id="helper-11"><span><p>Освещению в музее уделяется особое внимание</p></span></li>
             <li id="helper-12"><span><p>Стены музея выкрашены в белый цвет</p></span></li>
