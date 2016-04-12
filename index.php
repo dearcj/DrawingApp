@@ -71,8 +71,8 @@
               <li id="button-2" class="hor clear"><span class="down">Раздел в разработке</span></li>
             </div>
             <div class="middle-block">
-              <li id="button-3" class="vert mintop"><a href="http://188.227.16.35/surface"></a></li>
-              <li id="button-4" class="vert mintop"><a href="http://188.227.16.35/my-museum"></a></li>
+              <li id="button-3" class="vert mintop"><a href="http://188.227.16.35/"></a></li>
+              <li id="button-4" class="vert mintop"><a href="http://188.227.16.35/"></a></li>
             </div>
             <div class="right-block">
               <li id="button-5" class="hor mintop"><span class="up">Раздел в разработке</span></li>
