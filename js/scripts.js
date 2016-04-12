@@ -38,6 +38,7 @@ jQuery(document).ready(function($) {
 			event.preventDefault();
 			var href = window.location.href;
 			console.log(href);
+			alert(href);
 			window.location.href = href + '?p=painting';
 
 			$('#index-wrapper').fadeOut(500).addClass('hidden');
