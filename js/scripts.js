@@ -37,7 +37,7 @@ jQuery(document).ready(function($) {
 		$(button).click(function() {
 			event.preventDefault();
 			var href = window.location.href + '?p=painting';
-			history.replaceState(stateObj, "painting", "href");
+			history.replaceState(stateObj, "painting", href);
 
 			$('#index-wrapper').fadeOut(500).addClass('hidden');
 			$('#surface-wrapper').fadeIn(1000).removeClass('hidden');
