@@ -946,7 +946,7 @@ ul.tools li#btn-catchup {
 	height: 149px;
 }
 
-ul.tools li#btn-needle {
+ul.tools li#btn-thread {
 	background: url(../img/tools/needle.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -1115,8 +1115,8 @@ ul.tools li#btn-catchup:focus {
 	background-position: 50% 50%;
 }
 
-ul.tools li#btn-needle:hover,
-ul.tools li#btn-needle:focus {
+ul.tools li#btn-thread:hover,
+ul.tools li#btn-thread:focus {
 	background: url(../img/tools/needle.png) no-repeat;
 	background-size: 98%;
 	background-position: 50% 50%;
