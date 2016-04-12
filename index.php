@@ -138,7 +138,7 @@
 
         <div id="tools-wrapper" class="hidden screens">
           <ul class="tools-buttons tools-tb">
-            <li class="back-to-surface"><a href="http://188.227.16.35/surface"></a></li>
+            <li class="back-to-surface go-to-surface"><a href="http://188.227.16.35/surface"></a></li>
             <li class="send-to-museum"><a href="http://188.227.16.35/sending"></a></li>
             <li class="add-filter"><a href="http://188.227.16.35/filters"></a></li>
           </ul>
