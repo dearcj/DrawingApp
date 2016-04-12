@@ -13,4 +13,11 @@
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d
 	RewriteRule ^(.*)$ index.php?request=$1 [QSA,L]
+
+	RedirectMatch 301 /home(.*) //$1
+	RedirectMatch 301 /surface(.*) //$1
+	RedirectMatch 301 /tools(.*) //$1
+	RedirectMatch 301 /filters(.*) //$1
+	RedirectMatch 301 /sending(.*) //$1
+	RedirectMatch 301 /museum(.*) //$1
 </ifModule>
