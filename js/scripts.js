@@ -4,13 +4,13 @@ jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
-	var href = window.location.href;
+	var href = window.location.href + 'index.php';
 	var stateObj = { home: "screen" };
 
 	console.log(href);
 
 	function addURL(pageName) {
-		var newHref = href + 'index.php?p=' + pageName;
+		var newHref = href + '?p=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
 	}
 
