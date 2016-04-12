@@ -59,7 +59,7 @@ jQuery(document).ready(function($) {
 		openSurface('surface', 'index', 'tools');
 	});
 
-
+	openSurface('surface', 'index', 'tools');
 
 
 	// ---------ELEMENTS FADE IN---------
