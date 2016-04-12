@@ -1,34 +1,5 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 
-
-/*var href = window.location.href;
-
-if (href.indexOf('surface') + 1) {
-	$('#index-wrapper').addClass('hidden');
-	$('#surface-wrapper').removeClass('hidden');
-}
-
-if (href.indexOf('tools') + 1) {
-	$('#index-wrapper').addClass('hidden');
-	$('#tools-wrapper').removeClass('hidden');
-}
-
-if (href.indexOf('filters') + 1) {
-	$('#index-wrapper').addClass('hidden');
-	$('#filters-wrapper').removeClass('hidden');
-}
-
-if (href.indexOf('sending') + 1) {
-	$('#index-wrapper').addClass('hidden');
-	$('#sending-wrapper').removeClass('hidden');
-}
-
-if (href.indexOf('museum') + 1) {
-	$('#index-wrapper').addClass('hidden');
-	$('#museum-wrapper').removeClass('hidden');
-}*/
-
-
 jQuery(document).ready(function($) {
 
 	var href = window.location.href;
