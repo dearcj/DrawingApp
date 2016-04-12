@@ -510,7 +510,7 @@ jQuery(document).ready(function($) {
 		if (width <= '1420') {
 			tools.css({left: 0, 'margin-left': 0});
 		} else {
-			tools.css({left: 50%, 'margin-left': -705 + 'px'});
+			tools.css({left: 50 + '%', 'margin-left': -705 + 'px'});
 		}
 
 		hidingHelpers('.main-canvas p');
