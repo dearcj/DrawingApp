@@ -174,8 +174,8 @@
             </li>
             <li id="coal"><p>Мел</p>
               <ul>
-                <li id="btn-coal btn-coal-1"></li>
-                <li id="btn-coal btn-coal-2"></li>
+                <li id="btn-coal" class="btn-coal-1"></li>
+                <li id="btn-coal" class="btn-coal-2"></li>
               </ul>
             </li>
             <li id="btn-grass"><p>Трава</p></li>
