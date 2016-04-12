@@ -59,9 +59,7 @@ jQuery(document).ready(function($) {
 		openSurface('surface', 'index', 'tools');
 	});
 
-	$(window).load(function() {
-		pagesTransition('surface', 'index', 'tools');
-	});
+
 
 
 	// ---------ELEMENTS FADE IN---------
