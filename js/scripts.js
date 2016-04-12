@@ -6,18 +6,6 @@ history.pushState(stateObj, "my-museum", "index.php");
 var currentState = history.state;
 
 
-function addURL(button)
-{
-	$(button).click(function() {
-		$(this).attr('href', function() {
-			return this.href + '?p=painting';
-		});
-	});
-}
-
-addURL($('#button-3 a'));
-
-
 var href = window.location.href;
 
 if (href.indexOf('surface') + 1) {
@@ -46,6 +34,17 @@ if (href.indexOf('museum') + 1) {
 }
 
 jQuery(document).ready(function($) {
+
+	function addURL(button)
+	{
+		$(button).click(function() {
+			$(this).find('a').attr('href', function() {
+				return this.href + '?p=painting';
+			});
+		});
+	}
+
+	addURL($('#button-3'));
 
 	// ---------ELEMENTS FADE IN---------
 
