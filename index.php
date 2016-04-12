@@ -72,7 +72,7 @@
             </div>
             <div class="middle-block">
               <li id="button-3" class="vert mintop go-to-surface"><a href="#"></a></li>
-              <li id="button-4" class="vert mintop"><a href="#"></a></li>
+              <li id="button-4" class="vert mintop go-to-museum"><a href="#"></a></li>
             </div>
             <div class="right-block">
               <li id="button-5" class="hor mintop"><span class="up">Раздел в разработке</span></li>
@@ -103,7 +103,7 @@
         </div>
 
         <div id="surface-wrapper" class="hidden screens">
-          <div class="surface-button at-the-backyard"></div>
+          <div class="surface-button go-to-home at-the-backyard"></div>
 
           <div class="dark-side surface"></div>
 
@@ -117,7 +117,7 @@
           </div>
 
           <ul class="tools-buttons surface-tb">
-            <li class="hidden" id="go-to-tools"><a href="http://188.227.16.35/painting"></a></li>
+            <li class="hidden go-to-tools" id="go-to-tools"><a href="http://188.227.16.35/painting"></a></li>
           </ul>
 
           <ul class="surfaces">
@@ -136,11 +136,11 @@
           </ul>
         </div>
 
-        <div id="tools-wrapper" class="hidden screens">
+        <div id="tools-wrapper painting-wrapper" class="hidden screens">
           <ul class="tools-buttons tools-tb">
             <li class="back-to-surface go-to-surface"><a href="http://188.227.16.35/surface"></a></li>
-            <li class="send-to-museum"><a href="http://188.227.16.35/sending"></a></li>
-            <li class="add-filter"><a href="http://188.227.16.35/filters"></a></li>
+            <li class="send-to-museum go-to-publication"><a href="http://188.227.16.35/sending"></a></li>
+            <li class="add-filter go-to-filters"><a href="http://188.227.16.35/filters"></a></li>
           </ul>
 
           <div class="dark-side tools"></div>
@@ -154,7 +154,7 @@
           <canvas style='pointer-events: none;' id="back-canvas" width="750" height="530"></canvas>
           <canvas id="main-canvas" width="750" height="530"></canvas>
 
-          <div class="main-canvas">
+          <div class="main-canvas" id="tools-canvas">
             <ul class="interface">
               <li class="back"></li>
               <li class="refresh"></li>
@@ -217,8 +217,8 @@
             <div class="dark-side filters"></div>
 
             <ul class="tools-buttons filters-tb">
-              <li class="back-to-tools"><a href="http://188.227.16.35/painting"></a></li>
-              <li class="its-done"><a href="http://188.227.16.35/sending"></a></li>
+              <li class="go-to-tools"><a href="#"></a></li>
+              <li class="its-done go-to-publication"><a href="#"></a></li>
             </ul>
 
             <p class="hidden">Добавь немного Волшебства!</p>
@@ -236,7 +236,7 @@
           </ul>
         </div>
 
-        <div id="sending-wrapper" class="hidden screens">
+        <div id="sending-wrapper publication-wrapper" class="hidden screens">
           <ul class="paintings left-side">
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
@@ -249,7 +249,7 @@
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
           </ul>
 
-          <div class="main-painting">
+          <div class="main-painting" id="sending-canvas">
             <p class="hidden">Мы в музейном фонде живописи.<br>Здесь твоя работа встречает соседей.<br>Осмотрись хорошенько, не стесняйся!</p>
           </div>
 
@@ -260,7 +260,7 @@
               <div class="item-field"><p class="input-label">Автор:</p><input type="text" onfocus="javascript: if (this.value == 'Укажите ваше имя') this.value = '';" onblur="javascript: if (this.value == '') this.value = 'Укажите ваше имя'" name="image-name" value="Укажите ваше имя"></div>
               <div class="item-field"><p class="input-label">Название картины:</p><input type="text" onfocus="javascript: if (this.value == 'Напишите название работы') this.value = '';" onblur="javascript: if (this.value == '') this.value = 'Напишите название работы'" name="image-name" value="Напишите название работы"></div>
             </div>
-            <button name="send" value="Отправить картину в мой музей" type="submit" class="save-and-send">Отправить<br>картину в<br>мой музей</button>
+            <button name="send" value="Отправить картину в мой музей" type="submit" class="save-and-send go-to-museum">Отправить<br>картину в<br>мой музей</button>
             <ul id="helpers">
               <li id="helper-10"><span>У каждой работы есть автор и название. Подумай, как ты хочешь назвать свою картину.</span></li>
             </ul>
@@ -281,7 +281,7 @@
             <li id="helper-15"><span class="up"><p>Это объект. Он не всегда стоит на постаменте</p></span></li>
           </ul>
 
-          <div class="museum-button at-the-backyard"><a href="http://188.227.16.35/"></a></div>
+          <div class="museum-button go-to-home at-the-backyard"><a href="http://188.227.16.35/"></a></div>
 
           <div class="museum-button new-painting"></div>
 

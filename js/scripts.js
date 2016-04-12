@@ -2,11 +2,13 @@ window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 
 jQuery(document).ready(function($) {
 
+	//--------------ROUTING---------------
+
 	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
-		var newHref = href + '?p=' + pageName;
+		var newHref = href + 'index.php?p=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
 	}
 
@@ -41,7 +43,32 @@ jQuery(document).ready(function($) {
 		openPage('surface', 'index', 'tools');
 	});
 
+	$('.go-to-museum').click(function() {
+		openPage('museum', 'index', 'sending');
+	});
+
+	$('.go-to-tools').click(function() {
+		openPage('painting', 'index', 'surface');
+	});
+
+	$('.go-to-filters').click(function() {
+		openPage('filters', 'index', 'tools');
+	});
+
+	$('.go-to-publication').click(function() {
+		openPage('publication', 'tools', 'filters');
+	});
+
+	$('.go-to-home').click(function() {
+		openPage('index', 'surface', 'museum');
+	});
+
 	isItHome('surface', 'index', 'tools');
+	isItHome('museum', 'index', 'sending');
+	isItHome('painting', 'index', 'surface');
+	isItHome('filters', 'index', 'tools');
+	isItHome('publication', 'tools', 'filters');
+	isItHome('index', 'surface', 'museum');
 
 
 	// ---------ELEMENTS FADE IN---------
@@ -153,26 +180,10 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-author').textContent = "фывфыв";
 			document.getElementById('painting-materials').textContent = res.tags;
 		});
-
-		$('#index-wrapper').fadeOut(500).addClass('hidden');
-		$('#museum-wrapper').fadeIn(1000).removeClass('hidden');
-	});
-
-	$('li#go-to-tools').click(function(event) {
-		event.preventDefault();
-		$('#surface-wrapper').fadeOut(500);
-		$('#tools-wrapper').fadeIn(500).removeClass('hidden');
-		$('.main-canvas p').delay(500).fadeIn(1500);
 	});
 
 	$('li.send-to-museum').click(function(event) {
-
 		window.mainCanvasObject.sendPic();
-
-		event.preventDefault();
-		$('#tools-wrapper').fadeOut(500);
-		$('#sending-wrapper').fadeIn(1000).removeClass('hidden');
-		$('.main-painting p').delay(500).fadeIn(1500);
 	});
 
 	$('li.add-filter').click(function(event) {
@@ -183,36 +194,6 @@ jQuery(document).ready(function($) {
 		drawImageToCanvas("filters-canvas", window.savedImage);
 
 		//$('#filter-image')[0].src =  window.savedImage;
-
-		$('#tools-wrapper').fadeOut(500);
-		$('#filters-wrapper').fadeIn(1000).removeClass('hidden');
-		$('.filters-canvas p').delay(500).fadeIn(1500);
-	});
-
-	$('li.back-to-tools').click(function(event) {
-		event.preventDefault();
-		$('#filters-wrapper').fadeOut(500);
-		$('#tools-wrapper').fadeIn(1000).removeClass('hidden');
-		$('.main-canvas p').delay(500).fadeIn(1500);
-	});
-
-	$('li.its-done').click(function(event) {
-		event.preventDefault();
-		$('#filters-wrapper').fadeOut(500);
-		$('#sending-wrapper').fadeIn(1000).removeClass('hidden');
-		$('.main-painting p').delay(500).fadeIn(1500);
-	});
-
-	$('.museum-button.at-the-backyard').click(function(event) {
-		event.preventDefault();
-		$('#museum-wrapper').fadeOut(500);
-		$('#index-wrapper').fadeIn(1500).removeClass('hidden');
-	});
-
-	$('.surface-button.at-the-backyard').click(function(event) {
-		event.preventDefault();
-		$('#surface-wrapper').fadeOut(500);
-		$('#index-wrapper').fadeIn(1500).removeClass('hidden');
 	});
 
 	$('ul#buttons li a').click(function(event) {
@@ -227,8 +208,6 @@ jQuery(document).ready(function($) {
 		return false;
 		} else {
 			$('#museum-wrapper .painting-info span.title').html($(this).prev().find('input').val());
-			$('#sending-wrapper').fadeOut(500);
-			$('#museum-wrapper').fadeIn(1000).removeClass('hidden');
 		}
 	});
 	
