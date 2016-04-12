@@ -4,11 +4,11 @@ jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
+	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
-		var href = window.location.href;
-		var newHref = href + '?p=' + pageName;
+		var newHref = href + 'index.php?p=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
 	}
 
@@ -22,10 +22,8 @@ jQuery(document).ready(function($) {
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
 
-		var href = window.location.href;
-
-		if (href.indexOf(pageName) + 1) {
-			history.replaceState(stateObj, pageName, href);
+		if (window.location.href.indexOf(pageName) + 1) {
+			history.replaceState(stateObj, pageName, window.location.href);
 		} else {
 			addURL(pageName);
 		}
