@@ -245,12 +245,6 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	// ---------TOOLS ALWAYS ON A SCREEN-------------
-
-	if ($(window).width() <= '1420') {
-		$('ul.tools').css({left: 0, 'margin-left': 0});
-	}
-
 	// ---------FRONT PAGE BACKGROUND HEIGHT---------
 
 	var ratio = function (width, height) {
@@ -511,6 +505,10 @@ jQuery(document).ready(function($) {
 		toolsCanvasText.css({width: toolsTextWidth + 'px', 'border-radius': toolsTextBorderRadius + 'px', 'font-size': toolsCanvasHeight/2.5 + '%', 'padding': 6 * toolsTextPadding/7 + 'px ' + '0 ' + toolsTextPadding + 'px', top: 3 * toolsCanvasHeight/8 + 'px'});
 	
 		var toolsCanvasTextHeight = toolsCanvasText.innerHeight();
+
+		if (width <= '1420') {
+			$('ul.tools').css({left: 0, 'margin-left': 0});
+		}
 
 		hidingHelpers('.main-canvas p');
 	}
