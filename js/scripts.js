@@ -1,9 +1,19 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 
 var stateObj = { index: "my-museum" };
-history.pushState(stateObj, "my-museum", "my-museum.php");
+history.pushState(stateObj, "my-museum", "my-museum");
+
 var currentState = history.state;
 
+
+function addURL(button)
+{
+	$(button).click(function() {
+		$(this).attr('href', function() {
+			return this.href + '/my-museum';
+		});
+	});
+}
 
 
 var href = window.location.href;

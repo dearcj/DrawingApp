@@ -71,8 +71,8 @@
               <li id="button-2" class="hor clear"><span class="down">Раздел в разработке</span></li>
             </div>
             <div class="middle-block">
-              <li id="button-3" class="vert mintop"><a href="#"></a></li>
-              <li id="button-4" class="vert mintop"><a href="#"></a></li>
+              <li id="button-3" class="vert mintop"><a href="http://188.227.16.35/surface"></a></li>
+              <li id="button-4" class="vert mintop"><a href="http://188.227.16.35/my-museum"></a></li>
             </div>
             <div class="right-block">
               <li id="button-5" class="hor mintop"><span class="up">Раздел в разработке</span></li>
@@ -117,7 +117,7 @@
           </div>
 
           <ul class="tools-buttons surface-tb">
-            <li class="hidden" id="go-to-tools"></li>
+            <li class="hidden" id="go-to-tools"><a href="http://188.227.16.35/painting"></a></li>
           </ul>
 
           <ul class="surfaces">
@@ -138,9 +138,9 @@
 
         <div id="tools-wrapper" class="hidden screens">
           <ul class="tools-buttons tools-tb">
-            <li class="back-to-surface"></li>
-            <li class="send-to-museum"></li>
-            <li class="add-filter"></li>
+            <li class="back-to-surface"><a href="http://188.227.16.35/surface"></a></li>
+            <li class="send-to-museum"><a href="http://188.227.16.35/sending"></a></li>
+            <li class="add-filter"><a href="http://188.227.16.35/filters"></a></li>
           </ul>
 
           <div class="dark-side tools"></div>
@@ -217,8 +217,8 @@
             <div class="dark-side filters"></div>
 
             <ul class="tools-buttons filters-tb">
-              <li class="back-to-tools"></li>
-              <li class="its-done"></li>
+              <li class="back-to-tools"><a href="http://188.227.16.35/painting"></a></li>
+              <li class="its-done"><a href="http://188.227.16.35/sending"></a></li>
             </ul>
 
             <p class="hidden">Добавь немного Волшебства!</p>
@@ -281,9 +281,9 @@
             <li id="helper-15"><span class="up"><p>Это объект. Он не всегда стоит на постаменте</p></span></li>
           </ul>
 
-          <div class="museum-button at-the-backyard"></div>
+          <div class="museum-button at-the-backyard"><a href="http://188.227.16.35/"></a></div>
 
-          <div class="museum-button new-painting"><a href="#"></a></div>
+          <div class="museum-button new-painting"></div>
 
           <img id="your-painting" class="museum-painting">
           <div class="social-buttons">
