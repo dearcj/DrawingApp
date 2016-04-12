@@ -4,9 +4,8 @@ jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
+	var href = window.location.href + 'index.php';
 	var stateObj = { home: "screen" };
-
-	console.log(href);
 
 	function addURL(pageName) {
 		var newHref = href + '?p=' + pageName;
@@ -35,6 +34,9 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
+
+		var href = window.location.href + 'index.php';
+
 		if (href.indexOf('?') < 1) {
 			history.pushState(stateObj, "redirect", "index.php");
 		} else if (href.indexOf(pageName) + 1) {
