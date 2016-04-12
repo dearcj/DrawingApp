@@ -33,19 +33,36 @@ history.pushState(stateObj, "redirect", "index.php");
 
 jQuery(document).ready(function($) {
 
-	function addURL(button) {
-		$(button).click(function() {
-			event.preventDefault();
-			var href = window.location.href + '?p=painting';
-			history.replaceState(stateObj, "painting", href);
+	var href = window.location.href;
 
-			$('#index-wrapper').fadeOut(500).addClass('hidden');
-			$('#surface-wrapper').fadeIn(1000).removeClass('hidden');
-			$('#surface-canvas p').delay(500).fadeIn(1500);
-		});
+	function addURL(pageName) {
+		event.preventDefault();
+		var newHref = href + '?p=' + pageName;
+		history.replaceState(stateObj, pageName, newHref);
 	}
 
-	addURL($('#button-3'));
+	function pagesTransition(pageName, prevPage, nextPage) {
+		if (href.indexOf(pageName) + 1) {
+			$('#' + prevPage + '-wrapper').fadeOut(500).addClass('hidden');
+			$('#' + nextPage + '-wrapper').fadeOut(500).addClass('hidden');
+			$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
+			$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
+		}
+	}
+
+	function openSurface(pageName, prevPage, nextPage) {
+		addURL(pageName);
+		pagesTransition(pageName, prevPage, nextPage);
+	}
+
+	$('.go-to-surface').click(function() {
+		openSurface('surface', 'index', 'tools');
+	});
+
+	$(window).load(function() {
+		pagesTransition('surface', 'index', 'tools');
+	});
+
 
 	// ---------ELEMENTS FADE IN---------
 
@@ -157,9 +174,6 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-materials').textContent = res.tags;
 		});
 
-
-
-
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#museum-wrapper').fadeIn(1000).removeClass('hidden');
 	});
@@ -169,13 +183,6 @@ jQuery(document).ready(function($) {
 		$('#surface-wrapper').fadeOut(500);
 		$('#tools-wrapper').fadeIn(500).removeClass('hidden');
 		$('.main-canvas p').delay(500).fadeIn(1500);
-	});
-
-	$('li.back-to-surface').click(function(event) {
-		event.preventDefault();
-		$('#tools-wrapper').fadeOut(500);
-		$('#surface-wrapper').fadeIn(1000).removeClass('hidden');
-		$('#surface-canvas p').delay(500).fadeIn(1500);
 	});
 
 	$('li.send-to-museum').click(function(event) {
