@@ -33,22 +33,18 @@ history.pushState(stateObj, "my-museum", "index.php");
 
 jQuery(document).ready(function($) {
 
-	function addURL(button)
-	{
+	function addURL(button) {
 		$(button).click(function() {
-			$(this).attr('href', function() {
-				if (this.href.indexOf('painting') < 1) {
-					return this.href + '?p=painting';
-				}
-			});
-
-			$('#index-wrapper').fadeOut(500).addClass('hidden');
-			$('#surface-wrapper').fadeIn(1000).removeClass('hidden');
-			$('#surface-canvas p').delay(500).fadeIn(1500);
+			var href = window.location.href;
+			window.location.href = href + '?p=painting';
 		});
+
+		$('#index-wrapper').fadeOut(500).addClass('hidden');
+		$('#surface-wrapper').fadeIn(1000).removeClass('hidden');
+		$('#surface-canvas p').delay(500).fadeIn(1500);
 	}
 
-	addURL($('#button-3 a'));
+	addURL($('#button-3'));
 
 	// ---------ELEMENTS FADE IN---------
 
