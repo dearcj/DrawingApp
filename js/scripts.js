@@ -4,11 +4,10 @@ jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
-	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
-		var newHref = href + 'index.php?p=' + pageName;
+		var newHref = window.location.href + 'index.php?p=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
 	}
 
@@ -32,12 +31,9 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
-
-		var href = window.location.href;
-
-		if (href.indexOf('?') < 1) {
+		if (window.location.href.indexOf('?') < 1) {
 			history.pushState(stateObj, "redirect", "index.php");
-		} else if (href.indexOf(pageName) + 1) {
+		} else if (window.location.href.indexOf(pageName) + 1) {
 			openPage(pageName, prevPage, nextPage);
 		}
 	}
