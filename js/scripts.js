@@ -505,9 +505,12 @@ jQuery(document).ready(function($) {
 		toolsCanvasText.css({width: toolsTextWidth + 'px', 'border-radius': toolsTextBorderRadius + 'px', 'font-size': toolsCanvasHeight/2.5 + '%', 'padding': 6 * toolsTextPadding/7 + 'px ' + '0 ' + toolsTextPadding + 'px', top: 3 * toolsCanvasHeight/8 + 'px'});
 	
 		var toolsCanvasTextHeight = toolsCanvasText.innerHeight();
+		var tools = $('ul.tools');
 
 		if (width <= '1420') {
-			$('ul.tools').css({left: 0, 'margin-left': 0});
+			tools.css({left: 0, 'margin-left': 0});
+		} else {
+			tools.css({left: 50%, 'margin-left': -705 + 'px'});
 		}
 
 		hidingHelpers('.main-canvas p');
