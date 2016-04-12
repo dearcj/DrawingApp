@@ -28,10 +28,7 @@ if (href.indexOf('museum') + 1) {
 	$('#museum-wrapper').removeClass('hidden');
 }*/
 
-var stateObj = { index: "my-museum" };
-history.pushState(stateObj, "my-museum", "index.php");
 
-var currentState = history.state;
 
 
 jQuery(document).ready(function($) {
@@ -40,7 +37,9 @@ jQuery(document).ready(function($) {
 	{
 		$(button).click(function() {
 			$(this).attr('href', function() {
-				return this.href + '?p=painting';
+				if (this.href.indexOf('painting') < 1) {
+					return this.href + '?p=painting';
+				}
 			});
 		});
 
