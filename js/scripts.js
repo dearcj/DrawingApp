@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.go-to-surface').click(function() {
-		openPage('surface', 'index', 'tools');
+		openPage('surface', 'index', 'painting');
 	});
 
 	$('.go-to-museum').click(function() {
@@ -54,22 +54,22 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-filters').click(function() {
-		openPage('filters', 'index', 'tools');
+		openPage('filters', 'index', 'painting');
 	});
 
 	$('.go-to-publication').click(function() {
-		openPage('publication', 'tools', 'filters');
+		openPage('publication', 'painting', 'filters');
 	});
 
 	$('.go-to-home').click(function() {
 		openPage('index', 'surface', 'museum');
 	});
 
-	isItHome('surface', 'index', 'tools');
+	isItHome('surface', 'index', 'painting');
 	isItHome('museum', 'index', 'sending');
 	isItHome('painting', 'index', 'surface');
-	isItHome('filters', 'index', 'tools');
-	isItHome('publication', 'tools', 'filters');
+	isItHome('filters', 'index', 'painting');
+	isItHome('publication', 'painting', 'filters');
 	isItHome('index', 'surface', 'museum');
 
 
