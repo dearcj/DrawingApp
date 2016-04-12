@@ -4,10 +4,12 @@ jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
+	var mainUrl = 'http://188.227.16.35/index.php';
+	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
-		var newHref = window.location.href + '?p=' + pageName;
+		var newHref = mainUrl + '?p=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
 	}
 
@@ -21,8 +23,8 @@ jQuery(document).ready(function($) {
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
 
-		if (window.location.href.indexOf(pageName) + 1) {
-			history.replaceState(stateObj, pageName, window.location.href);
+		if (href.indexOf(pageName) + 1) {
+			history.replaceState(stateObj, pageName, mainUrl + '?p=' + pageName);
 		} else {
 			addURL(pageName);
 		}
@@ -31,9 +33,9 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
-		if (window.location.href.indexOf('?') < 1) {
+		if (href.indexOf('?') < 1) {
 			history.pushState(stateObj, "redirect", "index.php");
-		} else if (window.location.href.indexOf(pageName) + 1) {
+		} else if (href.indexOf(pageName) + 1) {
 			openPage(pageName, prevPage, nextPage);
 		}
 	}
