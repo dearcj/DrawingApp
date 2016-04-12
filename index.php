@@ -117,7 +117,7 @@
           </div>
 
           <ul class="tools-buttons surface-tb">
-            <li class="hidden go-to-tools" id="go-to-tools"><a href="http://188.227.16.35/painting"></a></li>
+            <li class="hidden go-to-tools" id="go-to-tools"><a href="#"></a></li>
           </ul>
 
           <ul class="surfaces">
@@ -136,11 +136,11 @@
           </ul>
         </div>
 
-        <div id="tools-wrapper painting-wrapper" class="hidden screens">
+        <div id="painting-wrapper" class="hidden screens">
           <ul class="tools-buttons tools-tb">
-            <li class="back-to-surface go-to-surface"><a href="http://188.227.16.35/surface"></a></li>
-            <li class="send-to-museum go-to-publication"><a href="http://188.227.16.35/sending"></a></li>
-            <li class="add-filter go-to-filters"><a href="http://188.227.16.35/filters"></a></li>
+            <li class="back-to-surface go-to-surface"><a href="#"></a></li>
+            <li class="send-to-museum go-to-publication"><a href="#"></a></li>
+            <li class="add-filter go-to-filters"><a href="#"></a></li>
           </ul>
 
           <div class="dark-side tools"></div>
@@ -236,7 +236,7 @@
           </ul>
         </div>
 
-        <div id="sending-wrapper publication-wrapper" class="hidden screens">
+        <div id="publication-wrapper" class="hidden screens">
           <ul class="paintings left-side">
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
@@ -281,7 +281,7 @@
             <li id="helper-15"><span class="up"><p>Это объект. Он не всегда стоит на постаменте</p></span></li>
           </ul>
 
-          <div class="museum-button go-to-home at-the-backyard"><a href="http://188.227.16.35/"></a></div>
+          <div class="museum-button go-to-home at-the-backyard"><a href="#"></a></div>
 
           <div class="museum-button new-painting"></div>
 

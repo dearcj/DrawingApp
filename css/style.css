@@ -284,7 +284,7 @@ ul#helpers {
 	height: 0;
 }
 
-#tools-wrapper ul#helpers {
+#painting-wrapper ul#helpers {
 	margin: 0;
 	padding: 0;
 	position: absolute;
@@ -295,7 +295,7 @@ ul#helpers {
 	height: 66px !important;
 }
 
-#tools-wrapper ul#helpers li {
+#painting-wrapper ul#helpers li {
 	z-index: 100;
 }
 
@@ -393,7 +393,7 @@ ul#helpers li span p {
 	overflow: hidden;
 }
 
-#sending-wrapper {
+#publication-wrapper {
 	background: url(../img/sending-back.jpg) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
@@ -402,7 +402,7 @@ ul#helpers li span p {
     overflow: hidden;
 }
 
-#tools-wrapper {
+#painting-wrapper {
 	background: url(../img/background.png) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
@@ -1696,9 +1696,9 @@ ul.logotypes li a {
 }
 
 @media only screen and (max-width : 1110px) {
-	#tools-wrapper,
+	#painting-wrapper,
 	#filters-wrapper,
-	#sending-wrapper {
+	#publication-wrapper {
 		background-size: auto 100%;
 	}
 	.main-canvas {

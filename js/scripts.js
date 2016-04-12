@@ -417,7 +417,7 @@ jQuery(document).ready(function($) {
 		var width = $(window).width(),
 			height = $(window).height(),
 			toolsCanvas = $('.main-canvas'),
-			toolsWrapper = $('#tools-wrapper'),
+			toolsWrapper = $('#painting-wrapper'),
 			darkSideTools = $('.dark-side.tools'),
 			toolsLiP = $('ul.tools li p'),
 			toolsBackgroundHeight = width/wrapperRatio,
