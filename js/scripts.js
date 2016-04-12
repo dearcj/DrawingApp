@@ -51,13 +51,15 @@ jQuery(document).ready(function($) {
 
 		if (href.indexOf('?') < 1) {
 			history.pushState(stateObj, "redirect", "index.php");
-		} else if (href.indexOf(pageName) + 1) {
-			history.replaceState(stateObj, pageName, href);
 		} else {
-			addURL(pageName);
-		}
+			if (href.indexOf(pageName) + 1) {
+				history.replaceState(stateObj, pageName, href);
+			} else {
+				addURL(pageName);
+			}
 
-		pagesTransition(pageName, prevPage, nextPage);
+			pagesTransition(pageName, prevPage, nextPage);
+		}
 	}
 
 	$('.go-to-surface').click(function() {
