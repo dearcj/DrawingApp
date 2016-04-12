@@ -42,12 +42,10 @@ jQuery(document).ready(function($) {
 	}
 
 	function pagesTransition(pageName, prevPage, nextPage) {
-		if (href.indexOf(pageName) + 1) {
 			$('#' + prevPage + '-wrapper').fadeOut(500).addClass('hidden');
 			$('#' + nextPage + '-wrapper').fadeOut(500).addClass('hidden');
 			$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
 			$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
-		}
 	}
 
 	function openSurface(pageName, prevPage, nextPage) {
@@ -60,6 +58,12 @@ jQuery(document).ready(function($) {
 	$('.go-to-surface').click(function() {
 		openSurface('surface', 'index', 'tools');
 	});
+
+/*
+	if (href.indexOf(pageName) + 1) {
+
+	}
+*/
 
 
 	// ---------ELEMENTS FADE IN---------
