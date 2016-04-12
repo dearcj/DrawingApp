@@ -31,9 +31,6 @@ if (href.indexOf('museum') + 1) {
 var stateObj = { index: "my-museum" };
 history.pushState(stateObj, "my-museum", "index.php");
 
-var currentState = history.state;
-
-
 jQuery(document).ready(function($) {
 
 	function addURL(button)
@@ -44,11 +41,11 @@ jQuery(document).ready(function($) {
 					return this.href + '?p=painting';
 				}
 			});
-		});
 
-		$('#index-wrapper').fadeOut(500).addClass('hidden');
-		$('#surface-wrapper').fadeIn(1000).removeClass('hidden');
-		$('#surface-canvas p').delay(500).fadeIn(1500);
+			$('#index-wrapper').fadeOut(500).addClass('hidden');
+			$('#surface-wrapper').fadeIn(1000).removeClass('hidden');
+			$('#surface-canvas p').delay(500).fadeIn(1500);
+		});
 	}
 
 	addURL($('#button-3 a'));
