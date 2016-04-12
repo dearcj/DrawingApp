@@ -1,76 +1,78 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 
-jQuery(document).ready(function($) {
+//--------------ROUTING---------------
 
-	//--------------ROUTING---------------
+var mainUrl = 'http://188.227.16.35/index.php';
+var href = window.location.href;
+var stateObj = { home: "screen" };
 
-	var mainUrl = 'http://188.227.16.35/index.php';
-	var href = window.location.href;
-	var stateObj = { home: "screen" };
+function addURL(pageName) {
+	var newHref = mainUrl + '?p=' + pageName;
+	history.replaceState(stateObj, pageName, newHref);
+}
 
-	function addURL(pageName) {
-		var newHref = mainUrl + '?p=' + pageName;
-		history.replaceState(stateObj, pageName, newHref);
+function pagesTransition(pageName, prevPage, nextPage) {
+	$('#' + prevPage + '-wrapper').fadeOut(500).addClass('hidden');
+	$('#' + nextPage + '-wrapper').fadeOut(500).addClass('hidden');
+	$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
+	$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
+}
+
+function openPage(pageName, prevPage, nextPage) {
+	event.preventDefault();
+
+	if (href.indexOf(pageName) + 1) {
+		history.replaceState(stateObj, pageName, mainUrl + '?p=' + pageName);
+	} else {
+		addURL(pageName);
 	}
 
-	function pagesTransition(pageName, prevPage, nextPage) {
-			$('#' + prevPage + '-wrapper').fadeOut(500).addClass('hidden');
-			$('#' + nextPage + '-wrapper').fadeOut(500).addClass('hidden');
-			$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
-			$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
+	pagesTransition(pageName, prevPage, nextPage);
+}
+
+function isItHome(pageName, prevPage, nextPage) {
+	if (href.indexOf('?') < 1) {
+		history.pushState(stateObj, "redirect", "index.php");
+	} else if (href.indexOf(pageName) + 1) {
+		openPage(pageName, prevPage, nextPage);
 	}
+}
 
-	function openPage(pageName, prevPage, nextPage) {
-		event.preventDefault();
+$('.go-to-surface').click(function() {
+	openPage('surface', 'index', 'painting');
+});
 
-		if (href.indexOf(pageName) + 1) {
-			history.replaceState(stateObj, pageName, mainUrl + '?p=' + pageName);
-		} else {
-			addURL(pageName);
-		}
+$('.go-to-museum').click(function() {
+	openPage('museum', 'index', 'sending');
+});
 
-		pagesTransition(pageName, prevPage, nextPage);
-	}
+$('.go-to-tools').click(function() {
+	openPage('painting', 'index', 'surface');
+});
 
-	function isItHome(pageName, prevPage, nextPage) {
-		if (href.indexOf('?') < 1) {
-			history.pushState(stateObj, "redirect", "index.php");
-		} else if (href.indexOf(pageName) + 1) {
-			openPage(pageName, prevPage, nextPage);
-		}
-	}
+$('.go-to-filters').click(function() {
+	openPage('filters', 'index', 'painting');
+});
 
-	$('.go-to-surface').click(function() {
-		openPage('surface', 'index', 'painting');
-	});
+$('.go-to-publication').click(function() {
+	openPage('publication', 'painting', 'filters');
+});
 
-	$('.go-to-museum').click(function() {
-		openPage('museum', 'index', 'sending');
-	});
+$('.go-to-home').click(function() {
+	openPage('index', 'surface', 'museum');
+});
 
-	$('.go-to-tools').click(function() {
-		openPage('painting', 'index', 'surface');
-	});
-
-	$('.go-to-filters').click(function() {
-		openPage('filters', 'index', 'painting');
-	});
-
-	$('.go-to-publication').click(function() {
-		openPage('publication', 'painting', 'filters');
-	});
-
-	$('.go-to-home').click(function() {
-		openPage('index', 'surface', 'museum');
-	});
-
+$(window).load(function() {
 	isItHome('surface', 'index', 'painting');
 	isItHome('museum', 'index', 'sending');
 	isItHome('painting', 'index', 'surface');
 	isItHome('filters', 'index', 'painting');
 	isItHome('publication', 'painting', 'filters');
 	isItHome('index', 'surface', 'museum');
+});
 
+
+jQuery(document).ready(function($) {
 
 	// ---------ELEMENTS FADE IN---------
 
