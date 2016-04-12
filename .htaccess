@@ -20,4 +20,6 @@
 	RedirectMatch 301 /filters(.*) //$1
 	RedirectMatch 301 /sending(.*) //$1
 	RedirectMatch 301 /museum(.*) //$1
+
+	Redirect 301 http://188.227.16.35/surface http://188.227.16.35
 </ifModule>
