@@ -6,14 +6,7 @@ history.pushState(stateObj, "my-museum", "my-museum");
 var currentState = history.state;
 
 
-function addURL(button)
-{
-	$(button).click(function() {
-		$(this).attr('href', function() {
-			return this.href + '/my-museum';
-		});
-	});
-}
+
 
 
 var href = window.location.href;
