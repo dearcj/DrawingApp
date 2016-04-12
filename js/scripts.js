@@ -49,16 +49,20 @@ jQuery(document).ready(function($) {
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
 
-		if (href.indexOf('?') < 1) {
-			history.pushState(stateObj, "redirect", "index.php");
-		}
-
 		if (href.indexOf(pageName) + 1) {
 			history.replaceState(stateObj, pageName, href);
-			pagesTransition(pageName, prevPage, nextPage);
 		} else {
 			addURL(pageName);
-			pagesTransition(pageName, prevPage, nextPage);
+		}
+
+		pagesTransition(pageName, prevPage, nextPage);
+	}
+
+	function isItHome(pageName, prevPage, nextPage) {
+		if (href.indexOf('?') < 1) {
+			history.pushState(stateObj, "redirect", "index.php");
+		} else {
+			openPage(pageName, prevPage, nextPage);
 		}
 	}
 
@@ -66,9 +70,7 @@ jQuery(document).ready(function($) {
 		openPage('surface', 'index', 'tools');
 	});
 
-	openPage('surface', 'index', 'tools');
-
-
+	isItHome('surface', 'index', 'tools');
 
 
 	// ---------ELEMENTS FADE IN---------
