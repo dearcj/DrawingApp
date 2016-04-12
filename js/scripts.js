@@ -4,7 +4,6 @@ jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
-	var href = window.location.href + 'index.php';
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
@@ -22,7 +21,7 @@ jQuery(document).ready(function($) {
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
 
-		var href = window.location.href + 'index.php';
+		var href = window.location.href;
 
 		if (href.indexOf(pageName) + 1) {
 			history.replaceState(stateObj, pageName, href);
