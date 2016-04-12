@@ -906,7 +906,7 @@ ul.tools li#btn-orange {
 	height: 149px;
 }
 
-ul.tools li#btn-denim-1 {
+ul.tools li.btn-denim-1 {
 	background: url(../img/tools/denim-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -917,7 +917,7 @@ ul.tools li#btn-denim-1 {
 	margin-left: 16px;
 }
 
-ul.tools li#btn-denim-2 {
+ul.tools li.btn-denim-2 {
 	background: url(../img/tools/denim-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -928,7 +928,7 @@ ul.tools li#btn-denim-2 {
 	margin-right: 16px;
 }
 
-ul.tools li#btn-denim-3 {
+ul.tools li.btn-denim-3 {
 	background: url(../img/tools/denim-3.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -1087,22 +1087,22 @@ ul.tools li#btn-orange:focus {
 	background-position: 50% 50%;
 }
 
-ul.tools li#btn-denim-1:hover,
-ul.tools li#btn-denim-1:focus {
+ul.tools li.btn-denim-1:hover,
+ul.tools li.btn-denim-1:focus {
 	background: url(../img/tools/denim-1.png) no-repeat;
 	background-size: 98%;
 	background-position: 50% 50%;
 }
 
-ul.tools li#btn-denim-2:hover,
-ul.tools li#btn-denim-2:focus {
+ul.tools li.btn-denim-2:hover,
+ul.tools li.btn-denim-2:focus {
 	background: url(../img/tools/denim-2.png) no-repeat;
 	background-size: 98%;
 	background-position: 50% 50%;
 }
 
-ul.tools li#btn-denim-3:hover,
-ul.tools li#btn-denim-3:focus {
+ul.tools li.btn-denim-3:hover,
+ul.tools li.btn-denim-3:focus {
 	background: url(../img/tools/denim-3.png) no-repeat;
 	background-size: 98%;
 	background-position: 50% 50%;

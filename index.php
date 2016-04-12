@@ -182,9 +182,9 @@
             <li id="btn-orange"><p>Апельсин</p></li>
             <li id="denim"><p>Джинсы</p>
               <ul>
-                <li id="btn-denim-1"></li>
-                <li id="btn-denim-2"></li>
-                <li id="btn-denim-3"></li>
+                <li id="btn-denim" class="btn-denim-1"></li>
+                <li id="btn-denim" class="btn-denim-2"></li>
+                <li id="btn-denim" class="btn-denim-3"></li>
               </ul>
             </li>
             <li id="btn-catchup"><p>Кетчуп</p></li>
