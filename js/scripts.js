@@ -28,12 +28,10 @@ if (href.indexOf('museum') + 1) {
 	$('#museum-wrapper').removeClass('hidden');
 }*/
 
-
+var stateObj = { index: "my-museum" };
+history.pushState(stateObj, "my-museum", "index.php");
 
 jQuery(document).ready(function($) {
-
-	var href = window.location.href;
-	window.location.href = href + 'index.php';
 
 	function addURL(button) {
 		$(button).click(function() {
