@@ -28,12 +28,11 @@ if (href.indexOf('museum') + 1) {
 	$('#museum-wrapper').removeClass('hidden');
 }*/
 
-var stateObj = { home: "screen" };
-history.pushState(stateObj, "redirect", "index.php");
 
 jQuery(document).ready(function($) {
 
 	var href = window.location.href;
+	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
 		var newHref = href + '?p=' + pageName;
@@ -50,7 +49,9 @@ jQuery(document).ready(function($) {
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
 
-		if (href.indexOf(pageName) + 1) {
+		if (href.indexOf('?') < 1) {
+			history.pushState(stateObj, "redirect", "index.php");
+		} else if (href.indexOf(pageName) + 1) {
 			history.replaceState(stateObj, pageName, href);
 		} else {
 			addURL(pageName);
