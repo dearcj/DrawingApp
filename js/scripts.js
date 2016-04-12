@@ -1,12 +1,7 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 
-var stateObj = { index: "my-museum" };
-history.pushState(stateObj, "my-museum", "index.php");
 
-var currentState = history.state;
-
-
-var href = window.location.href;
+/*var href = window.location.href;
 
 if (href.indexOf('surface') + 1) {
 	$('#index-wrapper').addClass('hidden');
@@ -31,20 +26,30 @@ if (href.indexOf('sending') + 1) {
 if (href.indexOf('museum') + 1) {
 	$('#index-wrapper').addClass('hidden');
 	$('#museum-wrapper').removeClass('hidden');
-}
+}*/
+
+var stateObj = { index: "my-museum" };
+history.pushState(stateObj, "my-museum", "index.php");
+
+var currentState = history.state;
+
 
 jQuery(document).ready(function($) {
 
 	function addURL(button)
 	{
 		$(button).click(function() {
-			$(this).find('a').attr('href', function() {
+			$(this).attr('href', function() {
 				return this.href + '?p=painting';
 			});
 		});
+
+		$('#index-wrapper').fadeOut(500).addClass('hidden');
+		$('#surface-wrapper').fadeIn(1000).removeClass('hidden');
+		$('#surface-canvas p').delay(500).fadeIn(1500);
 	}
 
-	addURL($('#button-3'));
+	addURL($('#button-3 a'));
 
 	// ---------ELEMENTS FADE IN---------
 
