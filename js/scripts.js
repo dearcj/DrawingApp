@@ -35,13 +35,15 @@ jQuery(document).ready(function($) {
 
 	function addURL(button) {
 		$(button).click(function() {
+			event.preventDefault();
 			var href = window.location.href;
+			console.log(href);
 			window.location.href = href + '?p=painting';
-		});
 
-		$('#index-wrapper').fadeOut(500).addClass('hidden');
-		$('#surface-wrapper').fadeIn(1000).removeClass('hidden');
-		$('#surface-canvas p').delay(500).fadeIn(1500);
+			$('#index-wrapper').fadeOut(500).addClass('hidden');
+			$('#surface-wrapper').fadeIn(1000).removeClass('hidden');
+			$('#surface-canvas p').delay(500).fadeIn(1500);
+		});
 	}
 
 	addURL($('#button-3'));
