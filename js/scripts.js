@@ -33,7 +33,7 @@ history.pushState(stateObj, "redirect", "index.php");
 
 jQuery(document).ready(function($) {
 
-	var href = window.location.href;
+/*	var href = window.location.href;
 
 	function addURL(pageName) {
 		event.preventDefault();
@@ -59,7 +59,7 @@ jQuery(document).ready(function($) {
 		openSurface('surface', 'index', 'tools');
 	});
 
-	openSurface('surface', 'index', 'tools');
+	openSurface('surface', 'index', 'tools');*/
 
 
 	// ---------ELEMENTS FADE IN---------

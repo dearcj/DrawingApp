@@ -174,23 +174,23 @@
             </li>
             <li id="coal"><p>Мел</p>
               <ul>
-                <li id="btn-coal" class="btn-coal-1"></li>
-                <li id="btn-coal" class="btn-coal-2"></li>
+                <li id="btn-coal-1"></li>
+                <li id="btn-coal-2"></li>
               </ul>
             </li>
             <li id="btn-grass"><p>Трава</p></li>
             <li id="btn-orange"><p>Апельсин</p></li>
             <li id="denim"><p>Джинсы</p>
               <ul>
-                <li id="btn-denim" class="btn-denim-1"></li>
-                <li id="btn-denim" class="btn-denim-2"></li>
-                <li id="btn-denim" class="btn-denim-3"></li>
+                <li id="btn-denim-1"></li>
+                <li id="btn-denim-2"></li>
+                <li id="btn-denim-3"></li>
               </ul>
             </li>
             <li id="btn-catchup"><p>Кетчуп</p></li>
             <li id="needle"><p>Нитка</p>
               <ul>
-                <li id="btn-thread"></li>
+                <li id="btn-needle"></li>
                 <li id="btn-thread-1" class="needle-color"></li>
                 <li id="btn-thread-2" class="needle-color"></li>
                 <li id="btn-thread-3" class="needle-color"></li>
