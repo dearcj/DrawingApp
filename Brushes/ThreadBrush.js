@@ -20,14 +20,26 @@ ThreadBrush.prototype.onSelect = function () {
 		self.imgLoaded = true;
 	};
 	switch (this.mode) {
-		case 0:
-			this.color.src = relPath + 'Jeans/jeans1.png';
-			break;
 		case 1:
-			this.img.src = relPath + 'Jeans/jeans2.png';
+			this.color = 0xd83610;
 			break;
 		case 2:
-			this.img.src = relPath + 'Jeans/jeans3.png';
+			this.color = 0xd87c10;
+			break;
+		case 3:
+			this.color = 0xd8b910;
+			break;
+		case 4:
+			this.color = 0x2cd810;
+			break;
+		case 5:
+			this.color = 0x1094d8;
+			break;
+		case 6:
+			this.color = 0x0a34cf;
+			break;
+		case 7:
+			this.color = 0x870fdb;
 			break;
 	}
 }
@@ -51,8 +63,8 @@ ThreadBrush.prototype.getPattern = function(ctx) {
 ThreadBrush.prototype.use = function (obj, ctx, action) {
 	ctx.beginPath();
 	ctx.lineWidth = 2;
-	ctx.strokeStyle = 'rgba(0,0,120,0.1)';
-
+	ctx.strokeStyle = this.color;//'rgba(0,0,120,0.1)';
+	ctx.globalAlpha = 0.1;
 	ctx.moveTo(obj.x1, obj.y1);
 	ctx.lineTo(obj.x2, obj.y2);
 	ctx.stroke();
@@ -66,7 +78,7 @@ ThreadBrush.prototype.use = function (obj, ctx, action) {
 		dx = x1 - obj.x2;
 		dy = y1 - obj.y2;
 		d = dx * dx + dy * dy;
-		ctx.strokeStyle = 'rgba(0,0,120,0.05)';
+		ctx.globalAlpha = 0.05;
 
 		var nearPoint = action.objects[i-3];
 		if (nearPoint) {
