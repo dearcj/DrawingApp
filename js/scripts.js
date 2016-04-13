@@ -560,7 +560,7 @@ jQuery(document).ready(function($) {
 
 		toolsButtons.css('width', prevNextButtons.width() + itsDone.width() + 22 + 'px');
 
-		toolsButtons.css('top', filtersCanvasHeight + 'px');
+		toolsButtons.css('top', darkSideFiltersHeight*2 + 'px');
 
 		toolsButtonsWidth = parseInt(toolsButtons.css('width'));
 

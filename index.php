@@ -216,7 +216,7 @@
               <li class="its-done go-to-publication"><a href="#"></a></li>
             </ul>
 
-            <canvas id="filters-canvas" width="750px" height="530px" />
+            <canvas id="filters-canvas" width="750px" height="530px"></canvas>
             <img id="filter-image"  width="750px" height="530px"></img>
 
             <div class="dark-side filters"></div>
