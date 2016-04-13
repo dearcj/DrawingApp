@@ -16,16 +16,25 @@ function CoalBrush(color) {
 		self.imgLoaded = true;
 	};
 
-	switch (window.brushMode) {
-		case 0:
-			this.img.src = relPath + 'Coal/chalk1.png';
-		break;
-		case 1:
-			this.img.src= relPath + 'Coal/coal1.png';
-		break;
-	}
+
 }
 
+
+CoalBrush.prototype.onSelect = function () {
+	var self = this;
+	this.img=new Image();
+	this.img.onload=function(){
+		self.imgLoaded = true;
+	};
+	switch (this.mode) {
+		case 1:
+			this.img.src = relPath + 'Coal/chalk1.png';
+			break;
+		case 2:
+			this.img.src= relPath + 'Coal/coal1.png';
+			break;
+	}
+}
 
 
 CoalBrush.prototype.getPattern = function(ctx) {

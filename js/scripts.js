@@ -176,6 +176,27 @@ jQuery(document).ready(function($) {
 
 		//LOAD IMAGE FROM SERVER
 		getLastImage(1, function (res) {
+			document.getElementById('post-fb').addEventListener('click', function() {
+				FB.ui(
+					{  method: 'feed',
+						link: 'www.museum',
+						picture: window.currentImgPic,
+						name: "asdasd",
+						caption: "asdasd",
+						description: "asdasdasd",
+					},
+
+					function(response) {
+						if (response && response.post_id) {
+							alert('Post was published.');
+						} else {
+							alert('Post was not published.');
+						}
+					}
+				);
+			});
+
+			window.currentImgPic = res.file;
 			document.getElementById('your-painting').src = res.image;
 			document.getElementById('painting-title').textContent = res.name;
 			document.getElementById('painting-author').textContent = "фывфыв";
@@ -507,7 +528,7 @@ jQuery(document).ready(function($) {
 
 
 		document.getElementById("wand").addEventListener('click', function () {
-			applyFilter("filters-canvas", window.savedImage);
+			applyFilter("filters-canvas", window.savedImage, 1);
 		});
 
 		filtersWrapper.css({'background-size': 'auto 100%', height: filtersBackgroundHeight + 'px'});

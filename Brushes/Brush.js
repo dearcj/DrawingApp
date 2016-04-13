@@ -6,6 +6,10 @@ function Brush(color) {
 	this.color = color;
 }
 
+Brush.prototype.onSelect = function () {
+
+}
+
 Brush.prototype.setMode = function (mode) {
 	this.mode = mode;
 };

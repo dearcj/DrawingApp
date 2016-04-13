@@ -58,6 +58,7 @@ Canvas.prototype.resetCanvas = function () {
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
+			this.tags.add('дерево');
 			imageObj.src = pathToSurfaces + 'wood.jpg';
 			break;
 		case 2:
@@ -66,6 +67,7 @@ Canvas.prototype.resetCanvas = function () {
 				ctx.drawImage(this, 0, 0);
 			};
 			imageObj.src = pathToSurfaces + 'board.jpg';
+			this.tags.add('доска');
 			break;
 		case 3:
 			var imageObj = new Image();
@@ -73,6 +75,8 @@ Canvas.prototype.resetCanvas = function () {
 				ctx.drawImage(this, 0, 0);
 			};
 			imageObj.src = pathToSurfaces + 'canvas.jpg';
+			this.tags.add('полотно');
+
 			break;
 		case 4:
 			var imageObj = new Image();
@@ -80,6 +84,8 @@ Canvas.prototype.resetCanvas = function () {
 				ctx.drawImage(this, 0, 0);
 			};
 			imageObj.src = pathToSurfaces + 'brick.jpg';
+			this.tags.add('кирпич');
+
 			break;
 		case 5:
 			var imageObj = new Image();
@@ -87,6 +93,8 @@ Canvas.prototype.resetCanvas = function () {
 				ctx.drawImage(this, 0, 0);
 			};
 			imageObj.src = pathToSurfaces + 'cardboard.jpg';
+			this.tags.add('картон');
+
 			break;
 		case 6:
 			var imageObj = new Image();
@@ -94,12 +102,16 @@ Canvas.prototype.resetCanvas = function () {
 				ctx.drawImage(this, 0, 0);
 			};
 			imageObj.src = pathToSurfaces + 'wallpaper.jpg';
+			this.tags.add('обои');
+
 			break;
 		case 7:
 			var imageObj = new Image();
 			imageObj.onload = function() {
 				ctx.drawImage(this, 0, 0);
 			};
+			this.tags.add('металл');
+
 			imageObj.src = pathToSurfaces + 'metal.jpg';
 			break;
 	}

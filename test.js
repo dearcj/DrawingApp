@@ -27,14 +27,149 @@ var initApplication = function() {
 
   canvas.currentBrush = brushScotch;
 
-  var btnScotch = document.getElementById('btn-scotch');
-  var btnCoal = document.getElementById('btn-coal');
-  var btnOrange = document.getElementById('btn-orange');
-  var btnDenim = document.getElementById('btn-denim');
-  var btnGrass = document.getElementById('btn-grass');
-  var btnCatchup = document.getElementById('btn-catchup');
-  var btnThread = document.getElementById('btn-thread');
-  var btnPistol= document.getElementById('btn-pistol');
+  document.getElementById('btn-scotch').addEventListener('click', function() {
+
+    brushScotch.mode = 1;
+    canvas.currentBrush = brushScotch;
+    brushScotch.onSelect();
+  });
+
+  document.getElementById('btn-scotch-1').addEventListener('click', function() {
+    brushScotch.mode = 1;
+    canvas.currentBrush = brushScotch;
+    brushScotch.onSelect();
+  })
+
+  document.getElementById('btn-scotch-2').addEventListener('click', function() {
+    brushScotch.mode = 2;
+    canvas.currentBrush = brushScotch;
+    brushScotch.onSelect();
+  })
+
+  document.getElementById('btn-scotch-3').addEventListener('click', function() {
+    brushScotch.mode = 3;
+    canvas.currentBrush = brushScotch;
+    brushScotch.onSelect();
+  })
+
+  document.getElementById('btn-coal-1').addEventListener('click', function() {
+    brushCoal.mode = 1;
+    canvas.currentBrush = brushCoal;
+    brushCoal.onSelect();
+  })
+
+  document.getElementById('btn-coal-2').addEventListener('click', function() {
+    brushCoal.mode = 2;
+    canvas.currentBrush = brushCoal;
+    brushCoal.onSelect();
+  })
+
+  document.getElementById('btn-grass').addEventListener('click', function() {
+    brushGrass.mode = 1;
+    canvas.currentBrush = brushGrass;
+    brushGrass.onSelect();
+
+  })
+
+  document.getElementById('btn-orange').addEventListener('click', function() {
+    brushOrange.mode = 1;
+    canvas.currentBrush = brushOrange;
+    brushOrange.onSelect();
+
+  });
+
+  document.getElementById('btn-denim-1').addEventListener('click', function() {
+    brushDenim.mode = 1;
+    canvas.currentBrush = brushDenim;
+    brushDenim.onSelect();
+
+  });
+
+  document.getElementById('btn-denim-2').addEventListener('click', function() {
+    brushDenim.mode = 2;
+    canvas.currentBrush = brushDenim;
+    brushDenim.onSelect();
+
+  });
+
+  document.getElementById('btn-denim-3').addEventListener('click', function() {
+    brushDenim.mode = 3;
+    canvas.currentBrush = brushDenim;
+    brushDenim.onSelect();
+
+  });
+
+  document.getElementById('btn-catchup').addEventListener('click', function() {
+    brushCatchup.mode = 1;
+    canvas.currentBrush = brushCatchup;
+    brushCatchup.onSelect();
+
+  });
+
+  document.getElementById('btn-needle').addEventListener('click', function() {
+    brushThread.mode = 1;
+    canvas.currentBrush = brushThread;
+    brushThread.onSelect();
+
+  });
+
+  document.getElementById('btn-thread-1').addEventListener('click', function() {
+    brushThread.mode = 1;
+    canvas.currentBrush = brushThread;
+    brushThread.onSelect();
+
+  });
+
+  document.getElementById('btn-thread-2').addEventListener('click', function() {
+    brushThread.mode = 2;
+    canvas.currentBrush = brushThread;
+    brushThread.onSelect();
+
+  });
+
+  document.getElementById('btn-thread-3').addEventListener('click', function() {
+    brushThread.mode = 3;
+    canvas.currentBrush = brushThread;
+    brushThread.onSelect();
+
+  });
+
+  document.getElementById('btn-thread-4').addEventListener('click', function() {
+    brushThread.mode = 4;
+    canvas.currentBrush = brushThread;
+    brushThread.onSelect();
+
+  });
+
+  document.getElementById('btn-thread-5').addEventListener('click', function() {
+    brushThread.mode = 5;
+    canvas.currentBrush = brushThread;
+    brushThread.onSelect();
+
+  });
+
+  document.getElementById('btn-thread-6').addEventListener('click', function() {
+    brushThread.mode = 6;
+    canvas.currentBrush = brushThread;
+    brushThread.onSelect();
+
+  });
+
+  document.getElementById('btn-thread-7').addEventListener('click', function() {
+    brushThread.mode = 7;
+    canvas.currentBrush = brushThread;
+    brushThread.onSelect();
+
+  });
+
+
+  document.getElementById('btn-pistol').addEventListener('click', function() {
+    brushPistol.mode = 1;
+    canvas.currentBrush = brushPistol;
+    brushPistol.onSelect();
+
+  });
+/*
 
   btnScotch.addEventListener('click', function () {canvas.currentBrush = brushScotch;});
   btnCoal.addEventListener('click', function () {canvas.currentBrush = brushCoal;});
@@ -43,7 +178,7 @@ var initApplication = function() {
   btnGrass.addEventListener('click', function () {canvas.currentBrush = brushGrass;});
   btnCatchup.addEventListener('click', function () {canvas.currentBrush = brushCatchup;});
   btnPistol.addEventListener('click', function () {canvas.currentBrush = brushPistol;});
-  btnThread.addEventListener('click', function () {canvas.currentBrush = brushThread;});
+  btnThread.addEventListener('click', function () {canvas.currentBrush = brushThread;});*/
   canvas.redraw(backCtx);
   elDraw.onmousedown = function(e) {
     console.log('start action');

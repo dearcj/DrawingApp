@@ -9,26 +9,27 @@ extend(DenimBrush, Brush);
 function DenimBrush(color) {
 	Brush.apply(this, color);
 	this.name = 'деним';
+}
 
+DenimBrush.prototype.onSelect = function () {
 	var self = this;
 	this.img=new Image();
 	this.img.onload=function(){
 		self.imgLoaded = true;
 	};
-
-	switch (window.brushMode) {
-		case 0:
+	switch (this.mode) {
+		case 1:
 			this.img.src = relPath + 'Jeans/jeans1.png';
 			break;
-		case 1:
-			this.img.src = relPath + 'Jeans/jeans2.png';
-		break;
 		case 2:
+			this.img.src = relPath + 'Jeans/jeans2.png';
+			break;
+		case 3:
 			this.img.src = relPath + 'Jeans/jeans3.png';
-		break;
+			break;
 	}
-	this.img.src = relPath + 'charcoaltrace.png';
 }
+
 
 DenimBrush.prototype.onFinish = function () {
 	clearTimeout(this.timeout); this.timeout = null;

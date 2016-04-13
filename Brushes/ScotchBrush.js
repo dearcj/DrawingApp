@@ -7,14 +7,18 @@ function ScotchBrush(color) {
 	Brush.apply(this, color);
 	this.name = 'скотч';
 
+
+}
+
+
+ScotchBrush.prototype.onSelect = function () {
 	var self = this;
 	this.img=new Image();
 	this.img.onload=function(){
-	self.imgLoaded = true;
+		self.imgLoaded = true;
 	};
-	this.img.src = relPath + 'scotch.png';
+	this.img.src = relPath + 'scotch' + this.mode + '.png';
 }
-
 
 ScotchBrush.prototype.onDown = function (ctx, x, y) {
 	this.startPoint = {x: x, y: y};

@@ -39,6 +39,29 @@
       <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/ScotchBrush.js"></script>
       <script src="http://188.227.16.35/wp-content/themes/mmoma/test.js" defer></script>
 
+
+<script>
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '590705137751335',
+                xfbml      : true,
+                version    : 'v2.5'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -290,7 +313,7 @@
             <span>Рассказать друзьям</span>
               <ul>
                 <li class="vk"></li>
-                <li class="fb"></li>
+                <li id='post-fb' class="fb"></li>
               </ul>
           </div>
 

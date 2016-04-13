@@ -13,6 +13,24 @@ function ThreadBrush(color) {
 
 }
 
+ThreadBrush.prototype.onSelect = function () {
+	var self = this;
+	this.img=new Image();
+	this.img.onload=function(){
+		self.imgLoaded = true;
+	};
+	switch (this.mode) {
+		case 0:
+			this.color.src = relPath + 'Jeans/jeans1.png';
+			break;
+		case 1:
+			this.img.src = relPath + 'Jeans/jeans2.png';
+			break;
+		case 2:
+			this.img.src = relPath + 'Jeans/jeans3.png';
+			break;
+	}
+}
 
 ThreadBrush.prototype.getPattern = function(ctx) {
 	var patternCanvas = document.createElement('canvas'),
