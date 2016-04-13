@@ -17,7 +17,7 @@ ScotchBrush.prototype.onSelect = function () {
 	this.img.onload=function(){
 		self.imgLoaded = true;
 	};
-	this.img.src = relPath + 'scotch' + this.mode + '.png';
+	this.img.src = relPath + 'Scotch/scotch' + this.mode + '.png';
 }
 
 ScotchBrush.prototype.onDown = function (ctx, x, y) {
