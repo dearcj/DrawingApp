@@ -1,5 +1,5 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
-
+window.selectedSurface = 1;
 jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
