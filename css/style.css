@@ -874,7 +874,7 @@ ul.tools li#btn-scotch-3 {
 	margin: 4px auto 0;
 }
 
-ul.tools li.btn-coal-1 {
+ul.tools li#btn-coal-1 {
 	background: url(../img/tools/chalk-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -882,7 +882,7 @@ ul.tools li.btn-coal-1 {
 	height: 73px;
 }
 
-ul.tools li.btn-coal-2 {
+ul.tools li#btn-coal-2 {
 	background: url(../img/tools/chalk-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -906,7 +906,7 @@ ul.tools li#btn-orange {
 	height: 149px;
 }
 
-ul.tools li.btn-denim-1 {
+ul.tools li#btn-denim-1 {
 	background: url(../img/tools/denim-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -917,7 +917,7 @@ ul.tools li.btn-denim-1 {
 	margin-left: 16px;
 }
 
-ul.tools li.btn-denim-2 {
+ul.tools li#btn-denim-2 {
 	background: url(../img/tools/denim-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -928,7 +928,7 @@ ul.tools li.btn-denim-2 {
 	margin-right: 16px;
 }
 
-ul.tools li.btn-denim-3 {
+ul.tools li#btn-denim-3 {
 	background: url(../img/tools/denim-3.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
