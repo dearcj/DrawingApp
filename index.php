@@ -211,15 +211,15 @@
 
         <div id="filters-wrapper" class="hidden screens">
           <div class="filters-canvas">
+            <ul class="tools-buttons filters-tb">
+              <li class="go-to-tools back-to-tools"><a href="#"></a></li>
+              <li class="its-done go-to-publication"><a href="#"></a></li>
+            </ul>
+
             <canvas id="filters-canvas" width="750px" height="530px" />
             <img id="filter-image"  width="750px" height="530px"></img>
 
             <div class="dark-side filters"></div>
-
-            <ul class="tools-buttons filters-tb">
-              <li class="go-to-tools"><a href="#"></a></li>
-              <li class="its-done go-to-publication"><a href="#"></a></li>
-            </ul>
 
             <p class="hidden">Добавь немного Волшебства!</p>
           </div>
