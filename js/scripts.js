@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
-		var newHref = mainUrl + pageName;
+		var newHref = mainUrl + 'p?=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
 	}
 
@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		if (href.indexOf(pageName) + 1) {
-			history.replaceState(stateObj, pageName, mainUrl + pageName);
+			history.replaceState(stateObj, pageName, mainUrl + 'p?=' + pageName);
 		} else {
 			addURL(pageName);
 		}
