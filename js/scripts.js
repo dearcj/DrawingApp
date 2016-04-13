@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		if (href.indexOf(pageName) + 1) {
-			history.replaceState(stateObj, pageName, mainUrl + '?p=' + pageName);
+			history.pushState(stateObj, pageName, mainUrl + '?p=' + pageName);
 		} else {
 			addURL(pageName);
 		}
