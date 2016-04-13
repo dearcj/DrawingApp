@@ -21,25 +21,25 @@ ThreadBrush.prototype.onSelect = function () {
 	};
 	switch (this.mode) {
 		case 1:
-			this.color = 0xd83610;
+			this.color = '#d83610';
 			break;
 		case 2:
-			this.color = 0xd87c10;
+			this.color = '#d87c10';
 			break;
 		case 3:
-			this.color = 0xd8b910;
+			this.color = '#d8b910';
 			break;
 		case 4:
-			this.color = 0x2cd810;
+			this.color = '#2cd810';
 			break;
 		case 5:
-			this.color = 0x1094d8;
+			this.color = '#1094d8';
 			break;
 		case 6:
-			this.color = 0x0a34cf;
+			this.color = '#0a34cf';
 			break;
 		case 7:
-			this.color = 0x870fdb;
+			this.color = '#870fdb';
 			break;
 	}
 }
