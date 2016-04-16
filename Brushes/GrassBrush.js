@@ -28,7 +28,7 @@ function GrassBrush(color) {
 
 GrassBrush.prototype.drawParticle = function (ctx, x, y, scale, angle) {
 	ctx.setTransform(1, 0, 0, 1, 0,  0);
-	var img = this.imgs[getRandomArbitrary(0, 7)];
+	var img = this.imgs[getRandomInt(0, 7)];
 	ctx.translate(x,  y);
 	ctx.rotate(angle);
 	ctx.translate( -img.width*0.5*scale,   -img.height*0.5*scale);

@@ -7,12 +7,15 @@ function OrangeBrush(color) {
 	Brush.apply(this, color);
 	this.name = 'кетчуп';
 
-	var self = this;
-	this.img=new Image();
-	this.img.onload=function(){
-		self.imgLoaded = true;
-	};
-	this.img.src = relPath + 'Catchup/ketch1.png';
+	this.imgs = [];
+	for (var i = 1; i < 6; ++i) {
+		this.img = new Image();
+		this.img.onload = function () {
+			self.imgLoaded = true;
+		};
+		this.img.src = relPath + 'Orange/orange' + (window.brushMode + 1).toString() + '.png';
+		this.imgs.push(this.img);
+	}
 }
 
 OrangeBrush.prototype.onFinish = function () {
@@ -23,7 +26,7 @@ OrangeBrush.prototype.onFinish = function () {
 
 OrangeBrush.prototype.drawCatchupPart = function (ctx, x, y, scale) {
 	ctx.setTransform(1, 0, 0, 1, 0,  0);
-
+	this.img = this.imgs[getRandomInt(0,5)];
 	ctx.translate(x,  y);
 	ctx.translate( -this.img.width*0.5*scale,   -this.img.height*0.5*scale);
 	ctx.scale(scale, scale);

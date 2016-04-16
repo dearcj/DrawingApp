@@ -40,7 +40,9 @@ function getLastImage(uid, cb) {
 
 
 }
-
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
 
