@@ -32,8 +32,8 @@ ScotchBrush.prototype.use = function (obj, ctx) {
 
 		var len = Math.sqrt((obj.x2 - this.startPoint.x)*(obj.x2 - this.startPoint.x) + (obj.y2 - this.startPoint.y)*(obj.y2 - this.startPoint.y));
 		var angle = Math.atan2((obj.y2 - this.startPoint.y) / len, (obj.x2 - this.startPoint.x) / len);
-		var dx = (obj.x2 - this.startPoint.x) / (len + 5);
-		var dy = (obj.y2 - this.startPoint.y) / (len + 5);
+		var dx = (obj.x2 - this.startPoint.x) / (len + 2);
+		var dy = (obj.y2 - this.startPoint.y) / (len + 2);
 
 	ctx.clearRect(0, 0, window.mainCanvasObject.state.width, window.mainCanvasObject.state.height);
 	ctx.canvas.width = ctx.canvas.width;
