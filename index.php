@@ -27,6 +27,8 @@
       <script src="http://188.227.16.35/wp-content/themes/mmoma/Canvas/Action.js"></script>
       <script src="http://188.227.16.35/wp-content/themes/mmoma/Canvas/Canvas.js"></script>
       <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/Brush.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/OrangeBrush.js"></script>
+
       <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/Pencil.js"></script>
       <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/DenimBrush.js"></script>
       <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/CoalBrush.js"></script>
@@ -235,7 +237,6 @@
         <div id="filters-wrapper" class="hidden screens">
           <div class="filters-canvas">
             <canvas id="filters-canvas" width="750px" height="530px"></canvas>
-            <img id="filter-image"  width="750px" height="530px"></img>
 
             <ul class="tools-buttons filters-tb">
               <li class="go-to-tools back-to-tools"><a href="#"></a></li>
@@ -272,6 +273,8 @@
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
           </ul>
 
+
+          <canvas id="main-painting-canvas" width="750px" height="530px"></canvas>
           <div class="main-painting" id="sending-canvas">
             <p class="hidden">Мы в музейном фонде живописи.<br>Здесь твоя работа встречает соседей.<br>Осмотрись хорошенько, не стесняйся!</p>
           </div>

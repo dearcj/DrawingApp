@@ -18,7 +18,7 @@ var initApplication = function() {
 
   var brushScotch = new ScotchBrush();
   var brushCoal = new CoalBrush();
-  var brushOrange = new PatternBrush();
+  var brushOrange = new OrangeBrush();
   var brushDenim = new DenimBrush();
   var brushGrass = new GrassBrush();
   var brushThread = new ThreadBrush();

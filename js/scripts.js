@@ -223,13 +223,17 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.save-and-send').click(function(event) {
-		event.preventDefault();
+
+
+		vent.preventDefault();
 		if ($(this).prev().find("input").val() == "" || $(this).prev().find("input").val() == "Напишите название работы") {
 			$(this).prev().find("input").css("color", "#FF0000");
 			$(this).prev().find("input").css("border", "1px solid #FF0000");
 		return false;
 		} else {
-			$('#museum-wrapper .painting-info span.title').html($(this).prev().find('input').val());
+
+
+		//	$('#museum-wrapper .painting-info span.title').html($(this).prev().find('input').val());
 		}
 	});
 	

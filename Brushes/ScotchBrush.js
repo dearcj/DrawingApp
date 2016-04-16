@@ -13,11 +13,15 @@ function ScotchBrush(color) {
 
 ScotchBrush.prototype.onSelect = function () {
 	var self = this;
-	this.img=new Image();
-	this.img.onload=function(){
-		self.imgLoaded = true;
-	};
-	this.img.src = relPath + 'Scotch/scotch' + this.mode + '.png';
+	this.imgs = [];
+	for (var i = 1; i <= 6; ++i) {
+		this.img = new Image();
+		this.img.onload = function () {
+			self.imgLoaded = true;
+		};
+		this.img.src = relPath + 'Orange/orange' + i + '.png';
+		this.imgs.push(this.img);
+	}
 }
 
 ScotchBrush.prototype.onDown = function (ctx, x, y) {
@@ -26,7 +30,7 @@ ScotchBrush.prototype.onDown = function (ctx, x, y) {
 
 ScotchBrush.prototype.use = function (obj, ctx) {
 	if (!this.imgLoaded) return;
-
+this.img = this.imgs[getRandomArbitrary(1, 6)];
 		var len = Math.sqrt((obj.x2 - this.startPoint.x)*(obj.x2 - this.startPoint.x) + (obj.y2 - this.startPoint.y)*(obj.y2 - this.startPoint.y));
 		var angle = Math.atan2((obj.y2 - this.startPoint.y) / len, (obj.x2 - this.startPoint.x) / len);
 		var dx = (obj.x2 - this.startPoint.x) / len;
