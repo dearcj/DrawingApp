@@ -13,7 +13,7 @@ function OrangeBrush(color) {
 		this.img.onload = function () {
 			self.imgLoaded = true;
 		};
-		this.img.src = relPath + 'Orange/orange' + (window.brushMode + 1).toString() + '.png';
+		this.img.src = relPath + 'Orange/orange' +i.toString() + '.png';
 		this.imgs.push(this.img);
 	}
 }
