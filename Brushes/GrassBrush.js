@@ -41,7 +41,7 @@ GrassBrush.prototype.drawParticle = function (ctx, x, y, scale, angle) {
 
 
 GrassBrush.prototype.onDown = function (ctx, x, y) {
-	this.drawParticle(ctx, x, y, 1 + Math.random(), 0);
+	this.drawParticle(ctx, x, y, 0.5 + 0.5*Math.random(), 0);
 };
 
 GrassBrush.prototype.use = function (obj, ctx) {
