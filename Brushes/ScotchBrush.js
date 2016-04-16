@@ -42,6 +42,7 @@ this.img = this.imgs[getRandomArbitrary(1, 6)];
 	var count = len / this.img.height;
 		var invCount = 0;
 		while (count > 0) {
+			///
 		//	ctx.setTransform(1,0,0,1,this.startPoint.x + dx*this.img.height*invCount,this.startPoint.y + dy*this.img.height*invCount);
 			ctx.setTransform(1, 0, 0, 1, 0, 0);
 
