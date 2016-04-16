@@ -40,7 +40,7 @@ CatchupBrush.prototype.onDown = function (ctx, x, y) {
 
 CatchupBrush.prototype.use = function (obj, ctx) {
 	if (!this.imgLoaded) return;
-	if ((obj.x2 - this.lastX)*(obj.x2 - this.lastX) + (obj.y2 - this.lastY)*(obj.y2 - this.lastY) > 1800)
+	if ((obj.x2 - this.lastX)*(obj.x2 - this.lastX) + (obj.y2 - this.lastY)*(obj.y2 - this.lastY) > 1000)
 	this.drawCatchupPart(ctx, obj.x2, obj.y2, 1 + Math.random());
 };
 
