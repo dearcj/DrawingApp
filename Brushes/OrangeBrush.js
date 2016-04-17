@@ -11,11 +11,12 @@ function OrangeBrush(color) {
 	for (var i = 1; i <= 6; ++i) {
 		this.img = new Image();
 		this.img.onload = function () {
-			self.imgLoaded = true;
 		};
 		this.img.src = relPath + 'Orange/orange' +i.toString() + '.png';
 		this.imgs.push(this.img);
+
 	}
+	self.imgLoaded = true;
 }
 
 OrangeBrush.prototype.onFinish = function () {
