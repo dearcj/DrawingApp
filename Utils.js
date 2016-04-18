@@ -84,6 +84,33 @@ function getInv (canvId, imgData) {
   }
 }
 
+function getPixelate(canvId, imgData) {
+
+  return function(img) {
+
+    var myCanvas = document.getElementById(canvId);
+    var ctx = myCanvas.getContext('2d');
+
+    var size = 20,
+      w = myCanvas.width * size,
+      h = myCanvas.height * size;
+
+// turn off image aliasing
+    ctx.msImageSmoothingEnabled = false;
+    ctx.mozImageSmoothingEnabled = false;
+    ctx.webkitImageSmoothingEnabled = false;
+    ctx.imageSmoothingEnabled = false;
+
+// enlarge the minimized image to full size
+    ctx.drawImage(canvas, 0, 0, w, h, 0, 0, myCanvas.width, myCanvas.height);
+
+    ctx.msImageSmoothingEnabled = true;
+    ctx.mozImageSmoothingEnabled = true;
+    ctx.webkitImageSmoothingEnabled = true;
+    ctx.imageSmoothingEnabled = true;
+  }
+}
+
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
 
