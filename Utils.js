@@ -91,10 +91,10 @@ function getPixelate(canvId, imgData) {
     var myCanvas = document.getElementById(canvId);
     var ctx = myCanvas.getContext('2d');
 
-    var size = 500,
+    var size = 4 /100,
       w = myCanvas.width * size,
       h = myCanvas.height * size;
-
+    ctx.drawImage(img, 0, 0, w, h);
 // turn off image aliasing
     ctx.msImageSmoothingEnabled = false;
     ctx.mozImageSmoothingEnabled = false;
