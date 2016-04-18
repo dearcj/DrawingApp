@@ -114,8 +114,8 @@ function getPixelate(canvId, imgData) {
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
 
-
-  cb = getInv(canvId, imgData);
+  cb = getPixelate(canvId, imgData);
+ // cb = getInv(canvId, imgData);
   /*
   if (filterNumber == 1) {
    var src = relPath + 'filters/diptih.png';
