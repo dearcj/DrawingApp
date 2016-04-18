@@ -43,29 +43,78 @@ function getLastImage(uid, cb) {
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+
+function applyOverFilter(src, canvId, imgData) {
+  cb = function () {
+    var myCanvas = document.getElementById(canvId);
+    var ctx = myCanvas.getContext('2d');
+
+    var img = new Image();
+    img.src = src;
+    img.onload = function () {
+      ctx.drawImage(img, 0, 0);
+      if (cb) cb();
+      //  ctx.canvas.width = ctx.canvas.width;
+    }
+    ctx.drawImage(img, 0, 0);
+  }
+  return cb;
+}
+
+function getInv (canvId, imgData) {
+  return function (img) {
+    var myCanvas = document.getElementById(canvId);
+    var ctx = myCanvas.getContext('2d');
+  var imageData = ctx.getImageData(0,0, img.width, img.height);
+  var data = imageData.data;
+
+  for(var i = 0; i < data.length; i += 4) {
+    // red
+    data[i] = 255 - data[i];
+    // green
+    data[i + 1] = 255 - data[i + 1];
+    // blue
+    data[i + 2] = 255 - data[i + 2];
+  }
+
+  // overwrite original image
+    ctx.putImageData(imageData, x, y);
+  }
+}
+
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
 
-  if (filterNumber == 1 || filterNumber == 2) {
+
+  cb = getInv(canvId, imgData);
+  /*
+  if (filterNumber == 1) {
    var src = relPath + 'filters/diptih.png';
-
-    cb = function () {
-     var myCanvas = document.getElementById(canvId);
-     var ctx = myCanvas.getContext('2d');
-
-     var img = new Image();
-     img.src = src;
-     img.onload = function(){
-       ctx.drawImage(img, 0, 0);
-       if (cb) cb();
-       //  ctx.canvas.width = ctx.canvas.width;
-     }
-     ctx.drawImage(img, 0 ,0 );
-
-   };
+   cb = applyOverFilter(src, canvId, imgData);
+   }
+  if (filterNumber == 2) {
+    var src = relPath + 'filters/modern.png';
+    cb = applyOverFilter(src, canvId, imgData);
   }
-  drawImageToCanvas(canvId, imgData, cb);
+  if (filterNumber == 3) {
+    var src = relPath + 'filters/poliptih.png';
+    cb = applyOverFilter(src, canvId, imgData);
+  }
+  if (filterNumber == 4) {
+    var src = relPath + 'filters/vintage.png';
+    cb = applyOverFilter(src, canvId, imgData);
+  }
+  if (filterNumber == 5) {
+    cb = getPixelate(canvId, imgData);
+  }
+  if (filterNumber == 6) {
+    cb = getInv(canvId, imgData);
+  }
+*/
 
+  drawImageToCanvas(canvId, imgData, cb);
 }
 
 
@@ -78,7 +127,7 @@ function drawImageToCanvas (canvId, imgData, cb) {
   img.src = imgData;
   img.onload = function(){
     ctx.drawImage(img, 0, 0);
-    if (cb) cb();
+    if (cb) cb(img);
   //  ctx.canvas.width = ctx.canvas.width;
   }
   ctx.drawImage(img, 0 ,0 );

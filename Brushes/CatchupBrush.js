@@ -6,7 +6,7 @@ extend(CatchupBrush, Brush);
 function CatchupBrush(color) {
 	Brush.apply(this, color);
 	this.name = 'кетчуп';
-
+	this.prevScale = 1;
 	var self = this;
 	this.img=new Image();
 	this.img.onload=function(){
@@ -40,8 +40,10 @@ CatchupBrush.prototype.onDown = function (ctx, x, y) {
 
 CatchupBrush.prototype.use = function (obj, ctx) {
 	if (!this.imgLoaded) return;
-	if ((obj.x2 - this.lastX)*(obj.x2 - this.lastX) + (obj.y2 - this.lastY)*(obj.y2 - this.lastY) > 1000)
-	this.drawCatchupPart(ctx, obj.x2, obj.y2, 1 + Math.random());
+	if ((obj.x2 - this.lastX)*(obj.x2 - this.lastX) + (obj.y2 - this.lastY)*(obj.y2 - this.lastY) > (this.img.width*this.prevScale)*(this.img.width*this.prevScale)) {
+		this.prevScale = 1 + Math.random();
+		this.drawCatchupPart(ctx, obj.x2, obj.y2, this.prevScale);
+	}
 };
 
 //
