@@ -53,11 +53,11 @@ function applyOverFilter(src, canvId, imgData) {
 
     var img = new Image();
     img.src = src;
-    img.onload = function () {
+   /* img.onload = function () {
       ctx.drawImage(img, 0, 0);
       if (cb) cb();
       //  ctx.canvas.width = ctx.canvas.width;
-    }
+    }*/
     ctx.drawImage(img, 0, 0);
   }
   return cb;
