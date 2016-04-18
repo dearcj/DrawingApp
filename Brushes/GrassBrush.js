@@ -13,12 +13,12 @@ function GrassBrush(color) {
 	var self = this;
 
 	this.imgs = [];
-	for (var i = 0; i < 8; ++i) {
+	for (var i = 1; i <= 8; ++i) {
 		this.img = new Image();
 		this.img.onload = function () {
 			self.imgLoaded = true;
 		};
-		this.img.src = relPath + 'Grass/grass' + (window.brushMode + 1).toString() + '.png';
+		this.img.src = relPath + 'Grass/grass' + i.toString() + '.png';
 		this.imgs.push(this.img);
 	}
 
