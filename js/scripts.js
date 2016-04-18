@@ -532,7 +532,7 @@ jQuery(document).ready(function($) {
 
 
 		document.getElementById("wand").addEventListener('click', function () {
-			applyFilter("filters-canvas", window.savedImage, 1);
+			applyFilter("filters-canvas", window.savedImage, getRandomInt(1, 12));
 		});
 
 		filtersWrapper.css({'background-size': 'auto 100%', height: filtersBackgroundHeight + 'px'});

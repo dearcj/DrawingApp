@@ -91,7 +91,7 @@ function getPixelate(canvId, imgData) {
     var myCanvas = document.getElementById(canvId);
     var ctx = myCanvas.getContext('2d');
 
-    var size = 4 /100,
+    var size = 3.96 /100,
       w = myCanvas.width * size,
       h = myCanvas.height * size;
     ctx.drawImage(img, 0, 0, w, h);
@@ -114,9 +114,8 @@ function getPixelate(canvId, imgData) {
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
 
-  cb = getPixelate(canvId, imgData);
- // cb = getInv(canvId, imgData);
-  /*
+
+
   if (filterNumber == 1) {
    var src = relPath + 'filters/diptih.png';
    cb = applyOverFilter(src, canvId, imgData);
@@ -133,13 +132,13 @@ function applyFilter(canvId, imgData, filterNumber) {
     var src = relPath + 'filters/vintage.png';
     cb = applyOverFilter(src, canvId, imgData);
   }
-  if (filterNumber == 5) {
+  if (filterNumber >= 5 && filterNumber <= 8) {
     cb = getPixelate(canvId, imgData);
   }
-  if (filterNumber == 6) {
+  if (filterNumber >= 9 && filterNumber <= 12) {
     cb = getInv(canvId, imgData);
   }
-*/
+
 
   drawImageToCanvas(canvId, imgData, cb);
 }
