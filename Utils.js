@@ -80,7 +80,7 @@ function getInv (canvId, imgData) {
   }
 
   // overwrite original image
-    ctx.putImageData(imageData, x, y);
+    ctx.putImageData(imageData, 0,0);
   }
 }
 
