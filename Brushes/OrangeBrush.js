@@ -16,7 +16,6 @@ function OrangeBrush(color) {
 		this.imgs.push(this.img);
 
 	}
-	self.imgLoaded = true;
 }
 
 OrangeBrush.prototype.onFinish = function () {
@@ -25,7 +24,7 @@ OrangeBrush.prototype.onFinish = function () {
 	Brush.prototype.onFinish.call(this);
 };
 
-OrangeBrush.prototype.drawCatchupPart = function (ctx, x, y, scale) {
+OrangeBrush.prototype.drawPart = function (ctx, x, y, scale) {
 	ctx.setTransform(1, 0, 0, 1, 0,  0);
 	this.img = this.imgs[getRandomInt(0,5)];
 	ctx.translate(x,  y);
@@ -39,13 +38,12 @@ OrangeBrush.prototype.drawCatchupPart = function (ctx, x, y, scale) {
 
 
 OrangeBrush.prototype.onDown = function (ctx, x, y) {
-	this.drawCatchupPart(ctx, x, y, 1 + Math.random());
+	this.drawPart(ctx, x, y, 1 + Math.random());
 };
 
 OrangeBrush.prototype.use = function (obj, ctx) {
-	if (!this.imgLoaded) return;
 	if ((obj.x2 - this.lastX)*(obj.x2 - this.lastX) + (obj.y2 - this.lastY)*(obj.y2 - this.lastY) > 1800)
-		this.drawCatchupPart(ctx, obj.x2, obj.y2, 1 + Math.random());
+		this.drawPart(ctx, obj.x2, obj.y2, 1 + Math.random());
 };
 
 //
