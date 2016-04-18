@@ -91,7 +91,7 @@ function getPixelate(canvId, imgData) {
     var myCanvas = document.getElementById(canvId);
     var ctx = myCanvas.getContext('2d');
 
-    var size = 20,
+    var size = 500,
       w = myCanvas.width * size,
       h = myCanvas.height * size;
 
