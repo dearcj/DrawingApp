@@ -102,7 +102,7 @@ function getPixelate(canvId, imgData) {
     ctx.imageSmoothingEnabled = false;
 
 // enlarge the minimized image to full size
-    ctx.drawImage(canvas, 0, 0, w, h, 0, 0, myCanvas.width, myCanvas.height);
+    ctx.drawImage(myCanvas, 0, 0, w, h, 0, 0, myCanvas.width, myCanvas.height);
 
     ctx.msImageSmoothingEnabled = true;
     ctx.mozImageSmoothingEnabled = true;
