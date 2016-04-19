@@ -825,13 +825,18 @@ ul.tools > li {
 }
 
 ul.tools > li#scotch > ul,
-ul.tools > li#coal > ul,
 ul.tools > li#denim > ul,
-ul.tools > li#needle > ul{
+ul.tools > li#needle > ul {
 	margin: 0;
 	padding: 0;
 	width: 149px;
 	height: 132px;
+}
+
+ul.tools > li#coal > ul {
+	margin: 0 auto;
+	width: 116px;
+	height: 146px;
 }
 
 ul.tools > li#scotch {
@@ -878,16 +883,18 @@ ul.tools li#btn-coal-1 {
 	background: url(../img/tools/chalk-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 149px;
-	height: 73px;
+	width: 58px;
+	height: 146px;
+	float: left;
 }
 
 ul.tools li#btn-coal-2 {
 	background: url(../img/tools/chalk-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 149px;
-	height: 78px;
+	width: 58px;
+	height: 146px;
+	float: left;
 }
 
 ul.tools li#btn-grass {
