@@ -163,6 +163,8 @@ function getPixelate(canvId, imgData) {
   }
 }
 
+filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
 
@@ -183,14 +185,24 @@ function applyFilter(canvId, imgData, filterNumber) {
     var src = relPath + 'filters/vintage.png';
     cb = applyOverFilter(src, canvId, imgData);
   }
-  if (filterNumber >= 5 && filterNumber <= 8) {
+  if (filterNumber == 5) {
     cb = getPixelate(canvId, imgData);
   }
-  if (filterNumber >= 9 && filterNumber <= 12) {
+  if (filterNumber == 6) {
     cb = getInv(canvId, imgData);
   }
 
-  cb = distortion(canvId, imgData);
+  if (filterNumber == 7) {
+    cb = distortion(canvId, imgData);
+  }
+
+  if (filterNumber == 8) {
+    cb = kaleidoscope(canvId, imgData);
+  }
+
+  if (filterNumber == 9) {
+    cb = getPattern(canvId, imgData);
+  }
 
   drawImageToCanvas(canvId, imgData, cb);
 }
