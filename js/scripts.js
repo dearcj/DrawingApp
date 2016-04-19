@@ -2,8 +2,6 @@ window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 window.selectedSurface = 1;
 jQuery(document).ready(function($) {
 
-
-
 	//--------------ROUTING---------------
 
 	var mainUrl = 'http://188.227.16.35/';
@@ -59,6 +57,8 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-filters').click(function() {
 		openPage('filters', 'index', 'painting');
+		console.log(window.currentUrl + ' = success!');
+		console.log(currentUrl + ' = happiness!');
 	});
 
 	$('.go-to-publication').click(function() {
