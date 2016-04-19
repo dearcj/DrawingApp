@@ -825,13 +825,25 @@ ul.tools > li {
 }
 
 ul.tools > li#scotch > ul,
-ul.tools > li#coal > ul,
-ul.tools > li#denim > ul,
-ul.tools > li#needle > ul{
+ul.tools > li#needle > ul {
 	margin: 0;
 	padding: 0;
 	width: 149px;
 	height: 132px;
+}
+
+ul.tools > li#denim > ul {
+	margin: 0;
+	padding: 0;
+	width: 156px;
+	height: 156px;
+}
+
+ul.tools > li#coal > ul {
+	margin: 0 auto;
+	padding: 0;
+	width: 116px;
+	height: 146px;
 }
 
 ul.tools > li#scotch {
@@ -842,27 +854,31 @@ ul.tools li#btn-scotch {
 	background: url(../img/tools/scotch.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 95px;
-	height: 64px;
-	margin: 0 auto;
+	width: 141px;
+	height: 99px;
+	margin: -10px auto 0;
 }
 
 ul.tools li#btn-scotch-1 {
 	background: url(../img/tools/scotch-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 90px;
-	height: 14px;
-	margin: 15px auto 0;
+	width: 98px;
+	height: 20px;
+	margin-top: 15px;
+	margin-right: 12px;
+	float: right;
 }
 
 ul.tools li#btn-scotch-2 {
 	background: url(../img/tools/scotch-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 90px;
-	height: 14px;
-	margin: 4px auto 0;
+	width: 98px;
+	height: 20px;
+	margin-top: 5px;
+	margin-right: 12px;
+	float: right;
 }
 
 ul.tools li#btn-scotch-3 {
@@ -878,16 +894,18 @@ ul.tools li#btn-coal-1 {
 	background: url(../img/tools/chalk-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 149px;
-	height: 73px;
+	width: 58px;
+	height: 146px;
+	float: left;
 }
 
 ul.tools li#btn-coal-2 {
 	background: url(../img/tools/chalk-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 149px;
-	height: 78px;
+	width: 58px;
+	height: 146px;
+	float: left;
 }
 
 ul.tools li#btn-grass {
@@ -910,32 +928,29 @@ ul.tools li#btn-denim-1 {
 	background: url(../img/tools/denim-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 46px;
-	height: 46px;
+	width: 78px;
+	height: 78px;
 	float: left;
-	margin-top: 36px;
-	margin-left: 16px;
 }
 
 ul.tools li#btn-denim-2 {
 	background: url(../img/tools/denim-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 46px;
-	height: 46px;
+	width: 78px;
+	height: 78px;
 	float: right;
-	margin-top: 36px;
-	margin-right: 16px;
 }
 
 ul.tools li#btn-denim-3 {
 	background: url(../img/tools/denim-3.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 45px;
-	height: 45px;
+	width: 78px;
+	height: 78px;
 	clear: both;
-	margin: 81px auto 0;
+	margin: 0 auto;
+	position: relative;
 }
 
 ul.tools li#btn-catchup {
