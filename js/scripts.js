@@ -74,7 +74,6 @@ jQuery(document).ready(function($) {
 
 	window.addEventListener("popstate", function(e) {
 		returnPrevHref();
-		console.log(currentHref);
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
