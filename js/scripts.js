@@ -10,7 +10,6 @@ jQuery(document).ready(function($) {
 
 	function addURL(pageName) {
 		var newHref = mainUrl + '?p=' + pageName;
-		window.currentHref = window.currentState;
 		history.replaceState(stateObj, pageName, newHref);
 	}
 
@@ -19,6 +18,11 @@ jQuery(document).ready(function($) {
 			$('#' + nextPage + '-wrapper').fadeOut(500).addClass('hidden');
 			$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
 			$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
+	}
+
+	function returnPrevHref() {
+		console.log(currentState);
+		return currentState;
 	}
 
 	function openPage(pageName, prevPage, nextPage) {
@@ -31,7 +35,6 @@ jQuery(document).ready(function($) {
 		}
 
 		pagesTransition(pageName, prevPage, nextPage);
-		window.currentUrl = window.currentHref;
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
@@ -68,8 +71,8 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		console.log($(this).currentUrl + ' = success!');
-		console.log(currentUrl + ' = happiness!');
+		returnPrevHref();
+		console.log(currentState);
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
