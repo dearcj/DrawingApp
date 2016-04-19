@@ -825,7 +825,6 @@ ul.tools > li {
 }
 
 ul.tools > li#scotch > ul,
-ul.tools > li#denim > ul,
 ul.tools > li#needle > ul {
 	margin: 0;
 	padding: 0;
@@ -833,8 +832,16 @@ ul.tools > li#needle > ul {
 	height: 132px;
 }
 
+ul.tools > li#denim > ul {
+	margin: 0;
+	padding: 0;
+	width: 156px;
+	height: 156px;
+}
+
 ul.tools > li#coal > ul {
 	margin: 0 auto;
+	padding: 0;
 	width: 116px;
 	height: 146px;
 }
@@ -920,8 +927,6 @@ ul.tools li#btn-denim-1 {
 	width: 78px;
 	height: 78px;
 	float: left;
-	margin-top: 36px;
-	margin-left: 16px;
 }
 
 ul.tools li#btn-denim-2 {
@@ -931,8 +936,6 @@ ul.tools li#btn-denim-2 {
 	width: 78px;
 	height: 78px;
 	float: right;
-	margin-top: 36px;
-	margin-right: 16px;
 }
 
 ul.tools li#btn-denim-3 {
@@ -942,7 +945,8 @@ ul.tools li#btn-denim-3 {
 	width: 78px;
 	height: 78px;
 	clear: both;
-	margin: 81px auto 0;
+	margin: 0 auto;
+	position: relative;
 }
 
 ul.tools li#btn-catchup {
