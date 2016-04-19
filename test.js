@@ -46,11 +46,11 @@ var initApplication = function() {
     brushScotch.onSelect();
   })
 
-  document.getElementById('btn-scotch-3').addEventListener('click', function() {
+/*  document.getElementById('btn-scotch-3').addEventListener('click', function() {
     brushScotch.mode = 3;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
-  })
+  })*/
 
   document.getElementById('btn-coal-1').addEventListener('click', function() {
     brushCoal.mode = 1;
