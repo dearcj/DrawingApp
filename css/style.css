@@ -620,7 +620,7 @@ ul.paintings a:hover li div {
     box-shadow:         0px 0px 10px 2px rgba(0,0,0,0.2);
 }
 
-canvas#main-painting-canvas {
+#main-image {
 	display: block;
 	margin: 0 auto;
 	background-color: white;
