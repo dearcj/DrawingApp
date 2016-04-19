@@ -52,7 +52,6 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-tools').click(function() {
 		window.currentState = window.location.href;
-		console.log(currentState);
 		openPage('painting', 'index', 'surface');
 	});
 
@@ -69,7 +68,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		console.log('sbs');
+		console.log(currentState);
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
