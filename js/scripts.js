@@ -13,8 +13,7 @@ jQuery(document).ready(function($) {
 	function addURL(pageName) {
 		var newHref = mainUrl + '?p=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
-		var currentHref = window.currentState;
-		console.log(currentHref);
+		console.log(window.currentState);
 	}
 
 	function pagesTransition(pageName, prevPage, nextPage) {
