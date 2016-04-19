@@ -228,7 +228,6 @@
             </li>
             <li id="btn-pistol"><p>Пистолет</p></li>
           </ul>
-////
           <ul class="ux-buttons">
             <li></li>
             <li></li>
