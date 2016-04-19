@@ -52,6 +52,7 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-tools').click(function() {
 		window.currentState = window.location.href;
+		console.log(currentState);
 		openPage('painting', 'index', 'surface');
 	});
 
