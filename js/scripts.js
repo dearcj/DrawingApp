@@ -57,7 +57,6 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-publication').click(function() {
-		document.getElementById('main-image').src = window.savedImage;
 //		drawImageToCanvas("main-painting-canvas", );
 
 		openPage('publication', 'painting', 'filters');
@@ -209,6 +208,7 @@ jQuery(document).ready(function($) {
 
 	$('li.send-to-museum').click(function(event) {
 		window.savedImage = window.mainCanvasObject.saveImage();
+		document.getElementById('main-image').src = window.savedImage;
 
 	});
 
