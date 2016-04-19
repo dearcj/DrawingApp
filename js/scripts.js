@@ -67,12 +67,12 @@ jQuery(document).ready(function($) {
 		openPage('index', 'surface', 'museum');
 	});
 
-	function testBack() {
+	function testBack(e) {
 		window.currentHref = window.currentState;
 		console.log('hi');
 	}
 
-	window.addEventListener("popstate", testBack(), false);
+	window.addEventListener("popstate", testBack(e), false);
 
 	isItHome('surface', 'index', 'painting');
 	isItHome('museum', 'index', 'publication');
