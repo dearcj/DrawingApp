@@ -7,7 +7,6 @@ jQuery(document).ready(function($) {
 	//--------------ROUTING---------------
 
 	var mainUrl = 'http://188.227.16.35/index.php';
-	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
