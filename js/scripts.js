@@ -53,9 +53,9 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-tools').click(function() {
-		openPage('painting', 'index', 'surface');
 		var prevHref = window.location.href;
 		console.log(prevHref);
+		openPage('painting', 'index', 'surface');
 	});
 
 	$('.go-to-filters').click(function() {
