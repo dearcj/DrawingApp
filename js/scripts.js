@@ -7,6 +7,7 @@ jQuery(document).ready(function($) {
 	//--------------ROUTING---------------
 
 	var mainUrl = 'http://188.227.16.35/index.php';
+	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
@@ -34,8 +35,8 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
-		console.log(window.location.href);
-		if (href.indexOf('?') < 1) {
+		var currentHref = window.location.href;
+		if (currentHref.indexOf('?') < 1) {
 			history.pushState(stateObj, "redirect", "home.php");
 		} else if (href.indexOf(pageName) + 1) {
 			openPage(pageName, prevPage, nextPage);
