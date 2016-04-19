@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
 			addURL(pageName);
 		}
 
-		window.currentState = history.state;
+		window.currentState = window.location.href;
 
 		pagesTransition(pageName, prevPage, nextPage);
 	}
