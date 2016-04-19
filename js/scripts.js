@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
 	window.addEventListener("popstate", function(e) {
 		var prevUrl = window.prevHref;
 		console.log(prevUrl);
-		if(prevUrl.indexOf(surface) > 0) {
+		if(prevUrl.indexOf('surface') > 0) {
 			openPage('surface', 'index', 'painting');
 		}
 	}, false);
