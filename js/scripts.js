@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 
 	function addURL(pageName) {
 		var newHref = mainUrl + '?p=' + pageName;
-		var currentHref = currentState;
+		var currentHref = window.currentState;
 		history.replaceState(stateObj, pageName, newHref);
 	}
 
