@@ -260,6 +260,8 @@
           </ul>
         </div>
 
+        <canvas id="main-painting-canvas" width="750px" height="530px"></canvas>
+
         <div id="publication-wrapper" class="hidden screens">
           <ul class="paintings left-side">
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
@@ -272,9 +274,6 @@
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
             <a href="http://188.227.16.35/wp-content/themes/mmoma/img/main-painting.jpg" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
           </ul>
-
-
-          <canvas id="main-painting-canvas" width="750px" height="530px"></canvas>
 
           <div class="dark-side sending"></div>
 
