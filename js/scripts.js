@@ -55,7 +55,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-tools').click(function() {
-		window.currentState = window.location.href;
+		window.currentState = history.state;
 		openPage('painting', 'index', 'surface');
 		returnPrevHref();
 	});
