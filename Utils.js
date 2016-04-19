@@ -92,7 +92,7 @@ function distortion(canvId, imgData) {
     var ctx = myCanvas.getContext('2d');
     var data = ctx.getImageData(0,0,myCanvas.width, myCanvas.height)
 
-    JSManipulate.lensdistortion.filter(data, {refraction: 3.0, radius: 75});
+    JSManipulate.sineripple.filter(data,{xAmplitude:5,yAmplitude:5,xWavelength:16,yWavelength:16});
     ctx.putImageData(data,0,0);
   }
 
