@@ -35,10 +35,10 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
-		var currentHref = window.location.href;
-		if (currentHref.indexOf('?') < 1) {
-			history.pushState(stateObj, "redirect", "home.php");
-		} else if (href.indexOf(pageName) + 1) {
+		var newHref = mainUrl + '?p=' + pageName;
+		if (newHref.indexOf('index') < 1) {
+			history.pushState(stateObj, "redirect", "index.php");
+		} else if (newHref.indexOf(pageName) + 1) {
 			openPage(pageName, prevPage, nextPage);
 		}
 	}
