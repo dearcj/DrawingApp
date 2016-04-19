@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		console.log('hi');
+		console.log(currentHref);
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
