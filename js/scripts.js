@@ -57,8 +57,6 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-filters').click(function() {
 		openPage('filters', 'index', 'painting');
-		console.log(window.currentUrl + ' = success!');
-		console.log(currentUrl + ' = happiness!');
 	});
 
 	$('.go-to-publication').click(function() {
@@ -70,7 +68,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		console.log(window.currentUrl + ' = success!');
+		console.log($(this).currentUrl + ' = success!');
 		console.log(currentUrl + ' = happiness!');
 	}, false);
 
