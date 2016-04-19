@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-tools').click(function() {
-		window.prevHref = window.location.href;
+		var prevHref = window.location.href;
 		openPage('painting', 'index', 'surface');
 	});
 
@@ -68,9 +68,8 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		var prevUrl = window.prevHref;
-		console.log(prevUrl);
-		if(prevUrl.indexOf('surface') > 0) {
+		console.log(prevHref);
+		if(prevHref.indexOf('surface') > 0) {
 			openPage('surface', 'index', 'painting');
 		}
 	}, false);
