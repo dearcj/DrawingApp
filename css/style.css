@@ -621,6 +621,8 @@ ul.paintings a:hover li div {
 }
 
 #main-image {
+	max-width: 750px;
+	max-height: 530px;
 	display: block;
 	margin: 0 auto;
 	background-color: white;
