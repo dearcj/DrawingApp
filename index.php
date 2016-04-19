@@ -194,7 +194,6 @@
                 <li id="btn-scotch"></li>
                 <li id="btn-scotch-1"></li>
                 <li id="btn-scotch-2"></li>
-                <li id="btn-scotch-3"></li>
               </ul>
             </li>
             <li id="coal"><p>Мел</p>
