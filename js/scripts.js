@@ -2,6 +2,8 @@ window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 window.selectedSurface = 1;
 jQuery(document).ready(function($) {
 
+
+
 	//--------------ROUTING---------------
 
 	var mainUrl = 'http://188.227.16.35/index.php';
@@ -45,7 +47,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-museum').click(function() {
-		openPage('museum', 'index', 'sending');
+		openPage('museum', 'index', 'publication');
 	});
 
 	$('.go-to-tools').click(function() {
