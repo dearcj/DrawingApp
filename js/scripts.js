@@ -13,7 +13,8 @@ jQuery(document).ready(function($) {
 	function addURL(pageName) {
 		var newHref = mainUrl + '?p=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
-		window.currentHref = window.currentState;
+		document.currentHref = window.currentState;
+		console.log(document.currentHref);
 	}
 
 	function pagesTransition(pageName, prevPage, nextPage) {
@@ -69,7 +70,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		console.log(currentHref);
+		console.log(document.currentHref);
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
