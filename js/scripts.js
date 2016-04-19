@@ -13,6 +13,7 @@ jQuery(document).ready(function($) {
 	function addURL(pageName) {
 		var newHref = mainUrl + '?p=' + pageName;
 		history.replaceState(stateObj, pageName, newHref);
+		console.log(currentState);
 	}
 
 	function pagesTransition(pageName, prevPage, nextPage) {
@@ -54,8 +55,6 @@ jQuery(document).ready(function($) {
 		window.currentState = window.location.href;
 		openPage('painting', 'index', 'surface');
 	});
-
-	console.log(window.currentState);
 
 	$('.go-to-filters').click(function() {
 		openPage('filters', 'index', 'painting');
