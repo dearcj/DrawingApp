@@ -6,7 +6,6 @@ jQuery(document).ready(function($) {
 
 	var mainUrl = 'http://188.227.16.35/';
 	var href = window.location.href;
-	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
 		var newHref = mainUrl + '?p=' + pageName;
@@ -28,6 +27,8 @@ jQuery(document).ready(function($) {
 
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
+
+		var stateObj = mainUrl + '?p=' + pageName;
 
 		if (href.indexOf(pageName) + 1) {
 			history.pushState(stateObj, pageName, mainUrl + '?p=' + pageName);
