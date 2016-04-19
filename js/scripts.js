@@ -34,7 +34,6 @@ jQuery(document).ready(function($) {
 
 		pagesTransition(pageName, prevPage, nextPage);
 		window.currentUrl = window.currentHref;
-		console.log(currentUrl + ' = success!');
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
@@ -71,7 +70,8 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		console.log('hi');
+		console.log(window.currentUrl + ' = success!');
+		console.log(currentUrl + ' = happiness!');
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
