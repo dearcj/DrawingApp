@@ -84,6 +84,20 @@ function getInv (canvId, imgData) {
   }
 }
 
+function distortion(canvId, imgData) {
+
+
+  return function(img) {
+    var myCanvas = document.getElementById(canvId);
+    var ctx = myCanvas.getContext('2d');
+    var data = ctx.getImageData(0,0,myCanvas.width, myCanvas.height)
+
+    JSManipulate.lensdistortion.filter(data, {refraction: 3.0, radius: 75});
+    ctx.putImageData(data,0,0);
+  }
+
+
+}
 
 
 function getPattern(canvId, imgData) {
@@ -100,7 +114,7 @@ function getPattern(canvId, imgData) {
       h = myCanvas.height / m;
     for (var i = 0; i < n; ++i) {
       for (var j = 0; j < m; ++j) {
-        ctx.drawImage(img, 0, 0, w, h, 0, 0, w, h);
+        ctx.drawImage(img, i*w, j*h, w, h );
       }
     }
 // enlarge the minimized image to full size
@@ -161,7 +175,7 @@ function applyFilter(canvId, imgData, filterNumber) {
     cb = getInv(canvId, imgData);
   }
 
-  cb = getPattern(canvId, imgData);
+  cb = distortion(canvId, imgData);
 
   drawImageToCanvas(canvId, imgData, cb);
 }
