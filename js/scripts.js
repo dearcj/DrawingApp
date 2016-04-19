@@ -611,8 +611,8 @@ jQuery(document).ready(function($) {
 	function sendingResponsive () {
 		var width = $(window).width(),
 			height = $(window).height(),
-			sendingCanvas = $('.main-painting'),
-			sendingWrapper = $('#sending-wrapper'),
+			sendingCanvas = $('#main-painting-canvas'),
+			sendingWrapper = $('#publication-wrapper'),
 			sendingForm = $('form.sending-form'),
 			sendingFormButton = $('form.sending-form button'),
 			sendingFormInput = $('form.sending-form input'),

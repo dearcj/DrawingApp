@@ -275,10 +275,6 @@
 
           <img id='main-image' width="750" height="530"> </img>
 
-          <div class="main-painting" id="sending-canvas">
-            <p class="hidden">Мы в музейном фонде живописи.<br>Здесь твоя работа встречает соседей.<br>Осмотрись хорошенько, не стесняйся!</p>
-          </div>
-
           <div class="dark-side sending"></div>
 
           <form class="sending-form">
