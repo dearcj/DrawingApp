@@ -12,9 +12,7 @@ jQuery(document).ready(function($) {
 
 	function addURL(pageName) {
 		var newHref = mainUrl + '?p=' + pageName;
-		window.currentHref = window.currentState;
 		history.replaceState(stateObj, pageName, newHref);
-		console.log(currentHref);
 	}
 
 	function pagesTransition(pageName, prevPage, nextPage) {
@@ -70,7 +68,8 @@ jQuery(document).ready(function($) {
 	});
 
 	function testBack() {
-		console.log(window.currentHref);
+		window.currentHref = window.currentState;
+		console.log(currentHref);
 	}
 
 	window.addEventListener("popstate", testBack(), false);
