@@ -208,7 +208,8 @@ jQuery(document).ready(function($) {
 	});
 
 	$('li.send-to-museum').click(function(event) {
-		window.mainCanvasObject.sendPic();
+		window.savedImage = window.mainCanvasObject.saveImage();
+
 	});
 
 	$('li.add-filter').click(function(event) {
@@ -226,6 +227,8 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.save-and-send').click(function(event) {
+
+		window.mainCanvasObject.sendPic();
 
 
 		vent.preventDefault();
