@@ -31,6 +31,8 @@ jQuery(document).ready(function($) {
 			addURL(pageName);
 		}
 
+		window.currentPageName = pageName;
+
 		pagesTransition(pageName, prevPage, nextPage);
 	}
 
@@ -52,6 +54,8 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-tools').click(function() {
 		openPage('painting', 'index', 'surface');
+		var prevHref = window.location.href;
+		console.log(prevHref);
 	});
 
 	$('.go-to-filters').click(function() {
@@ -59,8 +63,6 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-publication').click(function() {
-//		drawImageToCanvas("main-painting-canvas", );
-
 		openPage('publication', 'painting', 'filters');
 	});
 
