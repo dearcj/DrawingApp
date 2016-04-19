@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
 	});
 
 	isItHome('surface', 'index', 'painting');
-	isItHome('museum', 'index', 'sending');
+	isItHome('museum', 'index', 'publication');
 	isItHome('painting', 'index', 'surface');
 	isItHome('filters', 'index', 'painting');
 	isItHome('publication', 'painting', 'filters');
