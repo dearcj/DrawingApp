@@ -31,8 +31,6 @@ jQuery(document).ready(function($) {
 			addURL(pageName);
 		}
 
-		window.currentPageName = pageName;
-
 		pagesTransition(pageName, prevPage, nextPage);
 	}
 
@@ -53,8 +51,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-tools').click(function() {
-		var prevHref = window.location.href;
-		console.log(prevHref);
+		window.prevHref = window.location.href;
 		openPage('painting', 'index', 'surface');
 	});
 
@@ -71,7 +68,9 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		console.log('The Mirror is inside...');
+		if(window.prevHref.indexOf(surface) > 0) {
+			openPage('surface', 'index', 'painting');
+		}
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
