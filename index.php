@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/mmoma.css">
 
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+          <script src="http://188.227.16.35/wp-content/themes/mmoma/js/jsmanipulate.min.js"></script>
+
     <script src="http://188.227.16.35/wp-content/themes/mmoma/js/jquery.colorbox-min.js"></script>
     <script src="http://188.227.16.35/wp-content/themes/mmoma/js/scripts.js"></script>
    <script src="http://188.227.16.35/wp-content/themes/mmoma/Utils.js"></script>
@@ -226,7 +228,6 @@
             </li>
             <li id="btn-pistol"><p>Пистолет</p></li>
           </ul>
-////
           <ul class="ux-buttons">
             <li></li>
             <li></li>

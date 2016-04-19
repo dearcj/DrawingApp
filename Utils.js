@@ -46,19 +46,21 @@ function getRandomInt(min, max) {
 
 
 
-function applyOverFilter(src, canvId, imgData) {
+function applyOverFilter(src, canvId, imgData, dx, dy) {
   cb = function () {
     var myCanvas = document.getElementById(canvId);
     var ctx = myCanvas.getContext('2d');
 
     var img = new Image();
     img.src = src;
-   /* img.onload = function () {
-      ctx.drawImage(img, 0, 0);
-      if (cb) cb();
+
+    if (!dx) dx = 0;
+    if (!dy) dy = 0;
+    img.onload = function () {
+      ctx.drawImage(img, dx, dy);
       //  ctx.canvas.width = ctx.canvas.width;
-    }*/
-    ctx.drawImage(img, 0, 0);
+    }
+
   }
   return cb;
 }
@@ -84,6 +86,35 @@ function getInv (canvId, imgData) {
   }
 }
 
+function kaleidoscope(canvId, imgData) {
+
+
+  return function(img) {
+    var myCanvas = document.getElementById(canvId);
+    var ctx = myCanvas.getContext('2d');
+    var data = ctx.getImageData(0,0,myCanvas.width, myCanvas.height)
+
+    JSManipulate.kaleidoscope.filter(data);
+    ctx.putImageData(data,0,0);
+  }
+
+
+}
+
+function distortion(canvId, imgData) {
+
+
+  return function(img) {
+    var myCanvas = document.getElementById(canvId);
+    var ctx = myCanvas.getContext('2d');
+    var data = ctx.getImageData(0,0,myCanvas.width, myCanvas.height)
+
+    JSManipulate.sineripple.filter(data,{xAmplitude:5,yAmplitude:5,xWavelength:16,yWavelength:16});
+    ctx.putImageData(data,0,0);
+  }
+
+
+}
 
 
 function getPattern(canvId, imgData) {
@@ -100,7 +131,7 @@ function getPattern(canvId, imgData) {
       h = myCanvas.height / m;
     for (var i = 0; i < n; ++i) {
       for (var j = 0; j < m; ++j) {
-        ctx.drawImage(img, 0, 0, w, h, 0, 0, w, h);
+        ctx.drawImage(img, i*w, j*h, w, h );
       }
     }
 // enlarge the minimized image to full size
@@ -134,6 +165,8 @@ function getPixelate(canvId, imgData) {
   }
 }
 
+filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
 
@@ -154,15 +187,37 @@ function applyFilter(canvId, imgData, filterNumber) {
     var src = relPath + 'filters/vintage.png';
     cb = applyOverFilter(src, canvId, imgData);
   }
-  if (filterNumber >= 5 && filterNumber <= 8) {
+  if (filterNumber == 5) {
     cb = getPixelate(canvId, imgData);
   }
-  if (filterNumber >= 9 && filterNumber <= 12) {
+  if (filterNumber == 6) {
     cb = getInv(canvId, imgData);
   }
 
-  cb = getPattern(canvId, imgData);
+  if (filterNumber == 7) {
+    cb = distortion(canvId, imgData);
+  }
 
+  if (filterNumber == 8) {
+    cb = kaleidoscope(canvId, imgData);
+  }
+
+  if (filterNumber == 9) {
+    cb = getPattern(canvId, imgData);
+  }
+
+  if (filterNumber == 10) {
+    var src = relPath + 'filters/bubble1.png';
+    cb = applyOverFilter(src, canvId, imgData, Math.random()*200, Math.random()*200);
+  }
+  if (filterNumber == 11) {
+    var src = relPath + 'filters/bubble2.png';
+    cb = applyOverFilter(src, canvId, imgData, Math.random()*200, Math.random()*200);
+  }
+  if (filterNumber == 12) {
+    var src = relPath + 'filters/bubble3.png';
+    cb = applyOverFilter(src, canvId, imgData, Math.random()*200, Math.random()*200);
+  }
   drawImageToCanvas(canvId, imgData, cb);
 }
 
