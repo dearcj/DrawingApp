@@ -46,7 +46,7 @@ function getRandomInt(min, max) {
 
 
 
-function applyOverFilter(src, canvId, imgData) {
+function applyOverFilter(src, canvId, imgData, dx, dy) {
   cb = function () {
     var myCanvas = document.getElementById(canvId);
     var ctx = myCanvas.getContext('2d');
@@ -58,7 +58,9 @@ function applyOverFilter(src, canvId, imgData) {
       if (cb) cb();
       //  ctx.canvas.width = ctx.canvas.width;
     }*/
-    ctx.drawImage(img, 0, 0);
+    if (!dx) dx = 0;
+    if (!dy) dy = 0;
+    ctx.drawImage(img, dx, dy
   }
   return cb;
 }
@@ -204,6 +206,18 @@ function applyFilter(canvId, imgData, filterNumber) {
     cb = getPattern(canvId, imgData);
   }
 
+  if (filterNumber == 10) {
+    var src = relPath + 'filters/bubble1.png';
+    cb = applyOverFilter(src, canvId, imgData, Math.random()*200, Math.random()*200);
+  }
+  if (filterNumber == 11) {
+    var src = relPath + 'filters/bubble2.png';
+    cb = applyOverFilter(src, canvId, imgData, Math.random()*200, Math.random()*200);
+  }
+  if (filterNumber == 12) {
+    var src = relPath + 'filters/bubble3.png';
+    cb = applyOverFilter(src, canvId, imgData, Math.random()*200, Math.random()*200);
+  }
   drawImageToCanvas(canvId, imgData, cb);
 }
 
