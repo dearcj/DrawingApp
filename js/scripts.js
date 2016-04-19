@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-publication').click(function() {
-		$('#main-image').src = window.savedImage;
+		document.getElementById('main-image').src = window.savedImage;
 //		drawImageToCanvas("main-painting-canvas", );
 
 		openPage('publication', 'painting', 'filters');
