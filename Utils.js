@@ -46,7 +46,7 @@ function getRandomInt(min, max) {
 
 
 
-function applyOverFilter(src, canvId, imgData, dx, dy) {
+function applyOverFilter(saveImgCB, src, canvId, imgData, dx, dy) {
   cb = function () {
     var myCanvas = document.getElementById(canvId);
     var ctx = myCanvas.getContext('2d');
@@ -58,6 +58,7 @@ function applyOverFilter(src, canvId, imgData, dx, dy) {
     if (!dy) dy = 0;
     img.onload = function () {
       ctx.drawImage(img, dx, dy);
+      saveImgCB(myCanvas);
       //  ctx.canvas.width = ctx.canvas.width;
     }
 
@@ -65,7 +66,7 @@ function applyOverFilter(src, canvId, imgData, dx, dy) {
   return cb;
 }
 
-function getInv (canvId, imgData) {
+function getInv (saveImgCB, canvId, imgData) {
   return function (img) {
     var myCanvas = document.getElementById(canvId);
     var ctx = myCanvas.getContext('2d');
@@ -83,10 +84,12 @@ function getInv (canvId, imgData) {
 
   // overwrite original image
     ctx.putImageData(imageData, 0,0);
+    saveImgCB(myCanvas);
+
   }
 }
 
-function kaleidoscope(canvId, imgData) {
+function kaleidoscope(saveImgCB, canvId, imgData) {
 
 
   return function(img) {
@@ -96,12 +99,14 @@ function kaleidoscope(canvId, imgData) {
 
     JSManipulate.kaleidoscope.filter(data);
     ctx.putImageData(data,0,0);
+    saveImgCB(myCanvas);
+
   }
 
 
 }
 
-function distortion(canvId, imgData) {
+function distortion(saveImgCB, canvId, imgData) {
 
 
   return function(img) {
@@ -111,13 +116,15 @@ function distortion(canvId, imgData) {
 
     JSManipulate.sineripple.filter(data,{xAmplitude:5,yAmplitude:5,xWavelength:16,yWavelength:16});
     ctx.putImageData(data,0,0);
+    saveImgCB(myCanvas);
+
   }
 
 
 }
 
 
-function getPattern(canvId, imgData) {
+function getPattern(saveImgCB, canvId, imgData) {
 
   var n = 3;
   var m = 3;
@@ -134,11 +141,13 @@ function getPattern(canvId, imgData) {
         ctx.drawImage(img, i*w, j*h, w, h );
       }
     }
+    saveImgCB(myCanvas);
+
 // enlarge the minimized image to full size
   }
 }
 
-function getPixelate(canvId, imgData) {
+function getPixelate(saveImgCB, canvId, imgData) {
 
   return function(img) {
 
@@ -162,6 +171,9 @@ function getPixelate(canvId, imgData) {
     ctx.mozImageSmoothingEnabled = true;
     ctx.webkitImageSmoothingEnabled = true;
     ctx.imageSmoothingEnabled = true;
+
+    saveImgCB(myCanvas);
+
   }
 }
 
@@ -170,54 +182,57 @@ filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
 
-
+  var saveImgCB = function (canvas) {
+    window.savedImage = canvas.toDataURL("image/jpeg", 0.8);
+  }
   if (filterNumber == 1) {
    var src = relPath + 'filters/diptih.png';
-   cb = applyOverFilter(src, canvId, imgData);
+   cb = applyOverFilter(saveImgCB, src, canvId, imgData);
    }
   if (filterNumber == 2) {
     var src = relPath + 'filters/modern.png';
-    cb = applyOverFilter(src, canvId, imgData);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData);
   }
   if (filterNumber == 3) {
     var src = relPath + 'filters/poliptih.png';
-    cb = applyOverFilter(src, canvId, imgData);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData);
   }
   if (filterNumber == 4) {
     var src = relPath + 'filters/vintage.png';
-    cb = applyOverFilter(src, canvId, imgData);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData);
   }
   if (filterNumber == 5) {
-    cb = getPixelate(canvId, imgData);
+    cb = getPixelate(saveImgCB, canvId, imgData);
   }
   if (filterNumber == 6) {
-    cb = getInv(canvId, imgData);
+    cb = getInv(saveImgCB, canvId, imgData);
   }
 
   if (filterNumber == 7) {
-    cb = distortion(canvId, imgData);
+    cb = distortion(saveImgCB, canvId, imgData);
   }
 
   if (filterNumber == 8) {
-    cb = kaleidoscope(canvId, imgData);
+    cb = kaleidoscope(saveImgCB, canvId, imgData);
   }
 
   if (filterNumber == 9) {
-    cb = getPattern(canvId, imgData);
+    cb = getPattern(saveImgCB, canvId, imgData);
   }
 
   if (filterNumber == 10) {
     var src = relPath + 'filters/bubble1.png';
-    cb = applyOverFilter(src, canvId, imgData, Math.random()*200, Math.random()*200);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*200, Math.random()*200);
   }
   if (filterNumber == 11) {
     var src = relPath + 'filters/bubble2.png';
-    cb = applyOverFilter(src, canvId, imgData, Math.random()*200, Math.random()*200);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*200, Math.random()*200);
   }
   if (filterNumber == 12) {
     var src = relPath + 'filters/bubble3.png';
-    cb = applyOverFilter(src, canvId, imgData, Math.random()*200, Math.random()*200);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*200, Math.random()*200);
   }
+
   drawImageToCanvas(canvId, imgData, cb);
 }
 
