@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
 		openPage('index', 'surface', 'museum');
 	});
 
-	window.addEventListener("popstate", function() {
+	window.addEventListener("popstate", function(e) {
 		console.log('The Mirror is inside...');
 	}, false);
 
