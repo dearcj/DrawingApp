@@ -68,6 +68,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
+		console.log(window.prevHref);
 		if(window.prevHref.indexOf(surface) > 0) {
 			openPage('surface', 'index', 'painting');
 		}
