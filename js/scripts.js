@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function returnPrevHref() {
-		var currentHref = window.currentState;
+		window.currentHref = window.currentState;
 		console.log(currentHref);
 		return currentHref;
 	}
@@ -74,7 +74,7 @@ jQuery(document).ready(function($) {
 
 	window.addEventListener("popstate", function(e) {
 		returnPrevHref();
-		console.log(currentState);
+		console.log(currentHref);
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
