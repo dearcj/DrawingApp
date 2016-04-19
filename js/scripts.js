@@ -52,7 +52,7 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-tools').click(function() {
 		var prevHref = history.state;
-		console.log(prevHref);
+		console.log('bab');
 		openPage('painting', 'index', 'surface');
 	});
 
