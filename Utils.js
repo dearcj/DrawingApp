@@ -84,6 +84,29 @@ function getInv (canvId, imgData) {
   }
 }
 
+
+
+function getPattern(canvId, imgData) {
+
+  var n = 3;
+  var m = 3;
+  return function(img) {
+
+    var myCanvas = document.getElementById(canvId);
+    var ctx = myCanvas.getContext('2d');
+
+    var
+      w = myCanvas.width / n,
+      h = myCanvas.height / m;
+    for (var i = 0; i < n; ++i) {
+      for (var j = 0; j < m; ++j) {
+        ctx.drawImage(img, 0, 0, w, h, 0, 0, w, h);
+      }
+    }
+// enlarge the minimized image to full size
+  }
+}
+
 function getPixelate(canvId, imgData) {
 
   return function(img) {
@@ -115,7 +138,6 @@ function applyFilter(canvId, imgData, filterNumber) {
   var cb;
 
 
-
   if (filterNumber == 1) {
    var src = relPath + 'filters/diptih.png';
    cb = applyOverFilter(src, canvId, imgData);
@@ -139,6 +161,7 @@ function applyFilter(canvId, imgData, filterNumber) {
     cb = getInv(canvId, imgData);
   }
 
+  cb = getPattern(canvId, imgData);
 
   drawImageToCanvas(canvId, imgData, cb);
 }
