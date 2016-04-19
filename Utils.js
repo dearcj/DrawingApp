@@ -84,6 +84,21 @@ function getInv (canvId, imgData) {
   }
 }
 
+function kaleidoscope(canvId, imgData) {
+
+
+  return function(img) {
+    var myCanvas = document.getElementById(canvId);
+    var ctx = myCanvas.getContext('2d');
+    var data = ctx.getImageData(0,0,myCanvas.width, myCanvas.height)
+
+    JSManipulate.kaleidoscope.filter(data);
+    ctx.putImageData(data,0,0);
+  }
+
+
+}
+
 function distortion(canvId, imgData) {
 
 
