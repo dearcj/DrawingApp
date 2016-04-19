@@ -12,6 +12,7 @@ jQuery(document).ready(function($) {
 
 	function addURL(pageName) {
 		var newHref = mainUrl + '?p=' + pageName;
+		window.currentHref = window.currentState;
 		history.replaceState(stateObj, pageName, newHref);
 	}
 
@@ -32,6 +33,8 @@ jQuery(document).ready(function($) {
 		}
 
 		pagesTransition(pageName, prevPage, nextPage);
+		window.currentUrl = window.currentHref;
+		console.log(currentUrl + ' = success!');
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
@@ -67,12 +70,9 @@ jQuery(document).ready(function($) {
 		openPage('index', 'surface', 'museum');
 	});
 
-	function testBack(e) {
-		window.currentHref = window.currentState;
+	window.addEventListener("popstate", function(e) {
 		console.log('hi');
-	}
-
-	window.addEventListener("popstate", testBack(e), false);
+	}, false);
 
 	isItHome('surface', 'index', 'painting');
 	isItHome('museum', 'index', 'publication');
