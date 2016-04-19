@@ -210,7 +210,7 @@ jQuery(document).ready(function($) {
 
 	$('li.send-to-museum').click(function(event) {
 		window.savedImage = window.mainCanvasObject.saveImage();
-		document.getElementById('main-image').src = window.savedImage;
+		document.getElementById('painting-img').src = window.savedImage;
 
 	});
 
@@ -616,7 +616,7 @@ jQuery(document).ready(function($) {
 	function sendingResponsive () {
 		var width = $(window).width(),
 			height = $(window).height(),
-			sendingCanvas = $('#main-image'),
+			sendingCanvas = $('#painting-img'),
 			sendingWrapper = $('#publication-wrapper'),
 			sendingForm = $('form.sending-form'),
 			sendingFormButton = $('form.sending-form button'),
