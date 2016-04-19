@@ -31,6 +31,8 @@ jQuery(document).ready(function($) {
 			addURL(pageName);
 		}
 
+		window.currentState = history.state;
+
 		pagesTransition(pageName, prevPage, nextPage);
 	}
 
@@ -51,8 +53,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-tools').click(function() {
-		var prevHref = history.state;
-		console.log('bab');
+		console.log(currentState);
 		openPage('painting', 'index', 'surface');
 	});
 
@@ -70,7 +71,6 @@ jQuery(document).ready(function($) {
 
 	window.addEventListener("popstate", function(e) {
 		console.log('sbs');
-		history.back();
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
