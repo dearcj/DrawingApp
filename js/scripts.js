@@ -55,6 +55,8 @@ jQuery(document).ready(function($) {
 		openPage('painting', 'index', 'surface');
 	});
 
+	console.log(window.currentState);
+
 	$('.go-to-filters').click(function() {
 		openPage('filters', 'index', 'painting');
 	});
