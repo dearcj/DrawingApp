@@ -609,7 +609,7 @@ jQuery(document).ready(function($) {
 		var width = $(window).width(),
 			height = $(window).height(),
 			sendingCanvas = $('#main-painting-canvas'),
-			sendingWrapper = $('#sending-wrapper'),
+			sendingWrapper = $('#publication-wrapper'),
 			sendingForm = $('form.sending-form'),
 			sendingFormButton = $('form.sending-form button'),
 			sendingFormInput = $('form.sending-form input'),
