@@ -68,6 +68,10 @@ jQuery(document).ready(function($) {
 		openPage('index', 'surface', 'museum');
 	});
 
+	window.addEventListener("popstate", function() {
+		console.log('The Mirror is inside...');
+	}, false);
+
 	isItHome('surface', 'index', 'painting');
 	isItHome('museum', 'index', 'publication');
 	isItHome('painting', 'index', 'surface');
