@@ -69,10 +69,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		console.log(prevHref);
-		if(prevHref.indexOf('surface') > 0) {
-			openPage('surface', 'index', 'painting');
-		}
+		console.log('sbs');
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
