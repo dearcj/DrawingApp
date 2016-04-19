@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
-	var mainUrl = 'http://188.227.16.35/index.php';
+	var mainUrl = 'http://188.227.16.35/';
 	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
@@ -35,10 +35,9 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
-		var newHref = mainUrl + '?p=' + pageName;
-		if (newHref.indexOf('index') > 0) {
+		if (pageName.indexOf('index') > 0) {
 			history.pushState(stateObj, "redirect", "index.php");
-		} else if (newHref.indexOf(pageName) > 0) {
+		} else if (href.indexOf(pageName) > 0) {
 			openPage(pageName, prevPage, nextPage);
 		}
 	}
