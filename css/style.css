@@ -856,7 +856,7 @@ ul.tools li#btn-scotch {
 	background-position: 50% 50%;
 	width: 141px;
 	height: 99px;
-	margin: 0 auto;
+	margin: -10px auto 0;
 }
 
 ul.tools li#btn-scotch-1 {
