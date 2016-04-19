@@ -25,11 +25,12 @@ var initApplication = function() {
   var brushPistol = new PistolBrush();
   var brushCatchup = new CatchupBrush();
 
-  canvas.currentBrush = brushScotch;
+  canvas.currentBrush = brushOrange;
+  brushOrange.mode = 1;
 
   document.getElementById('btn-scotch').addEventListener('click', function() {
 
-    brushScotch.mode = 1;
+    brushScotch.mode = 3;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
   });
