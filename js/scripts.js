@@ -230,6 +230,9 @@ jQuery(document).ready(function($) {
 
 	$('.save-and-send').click(function(event) {
 
+		window.savedImage = window.mainCanvasObject.saveImage();
+		document.getElementById('your-painting').src = window.savedImage;
+
 		window.mainCanvasObject.sendPic();
 
 
