@@ -60,7 +60,7 @@ function applyOverFilter(src, canvId, imgData, dx, dy) {
     }*/
     if (!dx) dx = 0;
     if (!dy) dy = 0;
-    ctx.drawImage(img, dx, dy
+    ctx.drawImage(img, dx, dy);
   }
   return cb;
 }
