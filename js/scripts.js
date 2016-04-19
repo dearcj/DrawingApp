@@ -31,8 +31,6 @@ jQuery(document).ready(function($) {
 			addURL(pageName);
 		}
 
-		window.currentState = window.location.href;
-
 		pagesTransition(pageName, prevPage, nextPage);
 	}
 
@@ -53,7 +51,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-tools').click(function() {
-		console.log(currentState);
+		window.currentState = window.location.href;
 		openPage('painting', 'index', 'surface');
 	});
 
