@@ -21,8 +21,9 @@ jQuery(document).ready(function($) {
 	}
 
 	function returnPrevHref() {
-		console.log(currentState);
-		return currentState;
+		var currentHref = window.currentState;
+		console.log(currentHref);
+		return currentHref;
 	}
 
 	function openPage(pageName, prevPage, nextPage) {
@@ -56,6 +57,7 @@ jQuery(document).ready(function($) {
 	$('.go-to-tools').click(function() {
 		window.currentState = window.location.href;
 		openPage('painting', 'index', 'surface');
+		returnPrevHref();
 	});
 
 	$('.go-to-filters').click(function() {
