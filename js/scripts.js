@@ -69,9 +69,11 @@ jQuery(document).ready(function($) {
 		openPage('index', 'surface', 'museum');
 	});
 
-	window.addEventListener("popstate", function(e) {
+	function testBack() {
 		console.log(window.currentHref);
-	}, false);
+	}
+
+	window.addEventListener("popstate", testBack(), false);
 
 	isItHome('surface', 'index', 'painting');
 	isItHome('museum', 'index', 'publication');
