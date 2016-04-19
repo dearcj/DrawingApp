@@ -69,7 +69,7 @@ jQuery(document).ready(function($) {
 
 	function testBack() {
 		window.currentHref = window.currentState;
-		console.log(currentHref);
+		console.log('hi');
 	}
 
 	window.addEventListener("popstate", testBack(), false);
