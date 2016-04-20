@@ -1,6 +1,6 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 window.selectedSurface = 1;
-jQuery(document).ready(function($) {
+$(window).load(function() {
 
 	//--------------ROUTING---------------
 
@@ -73,7 +73,8 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		history.back();
+		returnPrevHref();
+		console.log(currentHref);
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
