@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
-		if (href.indexOf('index') > 0) {
+		if (href.indexOf('?') < 0) {
 			history.pushState(stateObj, "redirect", "index.php");
 		} else if (href.indexOf(pageName) > 0) {
 			openPage(pageName, prevPage, nextPage);
