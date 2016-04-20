@@ -42,10 +42,12 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.go-to-surface').click(function() {
+		window.currentState = window.location.href;
 		openPage('surface', 'index', 'painting');
 	});
 
 	$('.go-to-museum').click(function() {
+		window.currentState = window.location.href;
 		openPage('museum', 'index', 'publication');
 	});
 
@@ -55,14 +57,17 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-filters').click(function() {
+		window.currentState = window.location.href;
 		openPage('filters', 'index', 'painting');
 	});
 
 	$('.go-to-publication').click(function() {
+		window.currentState = window.location.href;
 		openPage('publication', 'painting', 'filters');
 	});
 
 	$('.go-to-home').click(function() {
+		window.currentState = window.location.href;
 		openPage('index', 'surface', 'museum');
 	});
 
