@@ -53,9 +53,9 @@ jQuery(document).ready(function($) {
 			for (var j = 1; j < 4; j++) {
 				var randomIntLeft = Math.floor(Math.random()*(i-j+1) + 1);
 				imgNumbers.splice(randomIntLeft,1);
+				console.log(randomIntLeft);
 				var randomIntRight = Math.floor(Math.random()*(i-j) + 1);
 				imgNumbers.splice(randomIntRight,1);
-				console.log(randomIntLeft);
 				console.log(randomIntRight);
 				$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg) no-repeat');
 				$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg) no-repeat');
