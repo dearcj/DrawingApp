@@ -255,7 +255,14 @@ jQuery(document).ready(function($) {
 	$('li.send-to-museum').click(function(event) {
 		window.savedImage = window.mainCanvasObject.saveImage();
 		document.getElementById('painting-img').src = window.savedImage;
-
+		for (var i=0; i<4, i++) {
+			var randomIntLeft = getRandomInt(1, 12);
+			var randomIntRight = getRandomInt(1, 12);
+			$('ul.paintings.left-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntLeft + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntRight + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntLeft + '.jpg');
+			$('ul.paintings.right-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntRight + '.jpg');
+		}
 	});
 
 	$('li.add-filter').click(function(event) {
