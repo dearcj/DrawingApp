@@ -15,10 +15,10 @@ jQuery(document).ready(function($) {
 	}
 
 	function pagesTransition(pageName, prevPage, nextPage) {
-			$('#' + prevPage + '-wrapper').fadeOut(500).addClass('hidden');
-			$('#' + nextPage + '-wrapper').fadeOut(500).addClass('hidden');
-			$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
-			$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
+		$('#' + prevPage + '-wrapper').fadeOut(500).addClass('hidden');
+		$('#' + nextPage + '-wrapper').fadeOut(500).addClass('hidden');
+		$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
+		$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
 	}
 
 	function openPage(pageName, prevPage, nextPage) {
@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('surface') > 0) {
+		if (currentState.indexOf('index') > 0) {
 			openPage('index', 'surface', 'museum');
 		}
 	}, false);
@@ -86,6 +86,7 @@ jQuery(document).ready(function($) {
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('painting') > 0) {
 			openPage('painting', 'filters', 'surface');
+			$('#publication-wrapper').fadeOut(500).addClass('hidden');
 		}
 	}, false);
 
