@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
-		var newHref = mainUrl + pageName;
+		var newHref = mainUrl + '?p=' + pageName;
 		history.pushState(stateObj, pageName, newHref);
 	}
 
@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		if (href.indexOf(pageName) + 1) {
-			history.pushState(stateObj, pageName, mainUrl + pageName);
+			history.pushState(stateObj, pageName, mainUrl + '?p=' + pageName);
 		} else {
 			addURL(pageName);
 		}
@@ -35,8 +35,6 @@ jQuery(document).ready(function($) {
 
 	function isItHome(pageName, prevPage, nextPage) {
 		if (href.indexOf('a') < 0 && href.indexOf('e') < 0) {
-			history.pushState(stateObj, "redirect", "index");
-		} else if (pageName.indexOf('index') > 0) {
 			history.pushState(stateObj, "redirect", "index");
 		} else if (href.indexOf(pageName) > 0) {
 			openPage(pageName, prevPage, nextPage);
@@ -111,12 +109,12 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
+	isItHome('index', 'surface', 'museum');
 	isItHome('surface', 'index', 'painting');
 	isItHome('museum', 'index', 'publication');
 	isItHome('painting', 'index', 'surface');
 	isItHome('filters', 'index', 'painting');
 	isItHome('publication', 'painting', 'filters');
-	isItHome('index', 'surface', 'museum');
 
 	// ---------ELEMENTS FADE IN---------
 
