@@ -67,8 +67,9 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		console.log(window.currentState + '!');
-		console.log(currentState + '&');
+		if (currentState.inndexOf('surface') > 0) {
+			openPage('surface', 'index', 'painting');
+		}
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
