@@ -62,7 +62,6 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg');
 			imgNumbers.splice(randomIntLeft,1);
 			imgNumbers.splice(randomIntRight,1);
-			stop();
 		}
 	}
 
