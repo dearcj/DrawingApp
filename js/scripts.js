@@ -1,12 +1,6 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 window.selectedSurface = 1;
 
-window.addEventListener("popstate", function(e) {
-	window.currentHref = window.currentState;
-	console.log(window.currentHref + '!');
-	console.log(currentHref + '&');
-}, false);
-
 jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
@@ -76,6 +70,13 @@ jQuery(document).ready(function($) {
 	$('.go-to-home').click(function() {
 		openPage('index', 'surface', 'museum');
 	});
+
+	window.currentHref = window.currentState;
+
+	window.addEventListener("popstate", function(e) {
+		console.log(window.currentHref + '!');
+		console.log(currentHref + '&');
+	}, false);
 
 	isItHome('surface', 'index', 'painting');
 	isItHome('museum', 'index', 'publication');
