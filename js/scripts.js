@@ -1,6 +1,9 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 window.selectedSurface = 1;
-$(window).load(function() {
+window.currentHref = window.currentState;
+console.log(currentHref);
+
+jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
@@ -22,7 +25,6 @@ $(window).load(function() {
 
 	function returnPrevHref() {
 		window.currentHref = window.currentState;
-		console.log(currentHref);
 		return currentHref;
 	}
 
@@ -73,8 +75,7 @@ $(window).load(function() {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		returnPrevHref();
-		console.log(currentHref);
+		history.back();
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
