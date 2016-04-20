@@ -70,9 +70,14 @@ jQuery(document).ready(function($) {
 		window.currentState = window.location.href;
 		openPage('publication', 'painting', 'filters');
 
-	});
+			var randomIntLeft = getRandomInt(1, 12);
+			var randomIntRight = getRandomInt(1, 12);
+			$('ul.paintings.left-side a:nth-child(1) li').css('background', 'url(../imgs/painting-' + randomIntLeft + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(2) li').css('background', 'url(../imgs/painting-' + randomIntRight + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(1)').attr('href', 'http://188.227.16.35/wp-content/themes/mmoma/imgs/painting-' + randomIntLeft + '.jpg');
+			$('ul.paintings.right-side a:nth-child(2)').attr('href', 'http://188.227.16.35/wp-content/themes/mmoma/imgs/painting-' + randomIntRight + '.jpg');
 
-	getRandomInt();
+	});
 
 	$('.go-to-home').click(function() {
 		window.currentState = window.location.href;
