@@ -667,7 +667,7 @@ jQuery(document).ready(function($) {
 			prevNextButtonsHeight = parseInt(prevNextButtons.css('height')),
 			filtersCanvasTextWidth = parseInt(filtersCanvasText.css('width'));
 
-		filtersCanvasText.css({top: width/12.5 + filtersCanvasHeight/2 - filtersTextWidth/1.432 + 'px', right: sideMargins + filtersCanvasWidth/2 - filtersTextWidth/2 + 'px'});
+		filtersCanvasText.css({top: width/12.5 + filtersCanvasHeight/2 - filtersTextWidth/5.728 + 'px', right: sideMargins + filtersCanvasWidth/2 - filtersTextWidth/2 + 'px'});
 
 		itsDone.css('width', prevNextButtons.height()*doneButtonRatio + 'px');
 
