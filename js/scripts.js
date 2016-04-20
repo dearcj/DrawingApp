@@ -90,6 +90,7 @@ jQuery(document).ready(function($) {
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('painting') > 0) {
 			openPage('painting', 'filters', 'surface');
+			$('#index-wrapper').fadeOut(500).addClass('hidden');
 			$('#publication-wrapper').fadeOut(500).addClass('hidden');
 		}
 	}, false);
