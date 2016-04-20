@@ -15,14 +15,13 @@ jQuery(document).ready(function($) {
 		history.pushState(stateObj, pageName, newHref);
 	}
 
-	function pagesTransition(pageName, prevPage, nextPage) {
-		$('#' + prevPage + '-wrapper').fadeOut(500).addClass('hidden');
-		$('#' + nextPage + '-wrapper').fadeOut(500).addClass('hidden');
+	function pagesTransition(pageName) {
+		$('.screens').fadeOut(500).addClass('hidden');
 		$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
 		$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
 	}
 
-	function openPage(pageName, prevPage, nextPage) {
+	function openPage(pageName) {
 		event.preventDefault();
 
 		if (href.indexOf(pageName) + 1) {
@@ -31,14 +30,14 @@ jQuery(document).ready(function($) {
 			addURL(pageName);
 		}
 
-		pagesTransition(pageName, prevPage, nextPage);
+		pagesTransition(pageName);
 	}
 
-	function isItHome(pageName, prevPage, nextPage) {
+	function isItHome(pageName) {
 		if (href.indexOf('?') < 0) {
 			history.pushState(stateObj, "redirect", "#index");
 		} else if (href.indexOf(pageName) > 0) {
-			openPage(pageName, prevPage, nextPage);
+			openPage(pageName);
 		}
 	}
 
@@ -59,7 +58,7 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-surface').click(function() {
 		window.currentState = window.location.href;
-		openPage('surface', 'index', 'painting');
+		openPage('surface');
 	});
 
 	$('.go-to-museum').click(function() {
@@ -73,19 +72,19 @@ jQuery(document).ready(function($) {
 
 
 		window.currentState = window.location.href;
-		openPage('museum', 'index', 'publication');
+		openPage('museum');
 
 
 	});
 
 	$('.go-to-tools').click(function() {
 		window.currentState = window.location.href;
-		openPage('painting', 'index', 'surface');
+		openPage('painting');
 	});
 
 	$('.go-to-filters').click(function() {
 		window.currentState = window.location.href;
-		openPage('filters', 'index', 'painting');
+		openPage('filters');
 	});
 
 	$('.go-to-publication').click(function() {
@@ -93,60 +92,56 @@ jQuery(document).ready(function($) {
 
 		document.getElementById('painting-img').src = window.savedImage;
 
-		openPage('publication', 'painting', 'filters');
+		openPage('publication');
 	});
 
 	$('.go-to-home').click(function() {
 		window.currentState = window.location.href;
-		openPage('index', 'surface', 'museum');
+		openPage('index');
 	});
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('index') > 0) {
-			openPage('index', 'surface', 'museum');
+			openPage('index');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('surface') > 0) {
-			openPage('surface', 'index', 'painting');
+			openPage('surface');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('painting') > 0) {
-			openPage('painting', 'filters', 'surface');
-			$('#index-wrapper').fadeOut(500).addClass('hidden');
-			$('#publication-wrapper').fadeOut(500).addClass('hidden');
+			openPage('painting');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('filters') > 0) {
-			openPage('filters', 'publication', 'painting');
+			openPage('filters');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('publication') > 0) {
-			openPage('publication', 'painting', 'filters');
-			$('#museum-wrapper').fadeOut(500).addClass('hidden');
+			openPage('publication');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('museum') > 0) {
-			openPage('museum', 'painting', 'filters');
-			$('#publication-wrapper').fadeOut(500).addClass('hidden');
+			openPage('museum');
 		}
 	}, false);
 
-	isItHome('index', 'surface', 'museum');
-	isItHome('surface', 'index', 'painting');
-	isItHome('museum', 'index', 'publication');
-	isItHome('painting', 'index', 'surface');
-	isItHome('filters', 'index', 'painting');
-	isItHome('publication', 'painting', 'filters');
+	isItHome('index');
+	isItHome('surface');
+	isItHome('museum');
+	isItHome('painting');
+	isItHome('filters');
+	isItHome('publication');
 
 	function setRandomImgs() {
 		var imgNumbers = [];
@@ -166,8 +161,8 @@ jQuery(document).ready(function($) {
 
 			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + j + ') li:hover').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + j + ') li:hover').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
 			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntLeft + '.jpg');
 			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntRight + '.jpg');
 		}
