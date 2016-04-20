@@ -245,10 +245,21 @@ jQuery(document).ready(function($) {
 	$('ul#buttons li#button-4 a').click(function(event) {
 		event.preventDefault();
 
+		openMyMuseum();
 		//LOAD IMAGE FROM SERVER
 
 
-		getLastImage(localStorage.getItem('imageId'), function (res) {
+	});
+
+	$('li.send-to-museum').click(function(event) {
+		window.savedImage = window.mainCanvasObject.saveImage();
+		document.getElementById('painting-img').src = window.savedImage;
+	});
+
+
+	function openMyMuseum() {
+		var imageId = localStorage.getItem('imageId');
+		getLastImage(imageId, function (res) {
 			document.getElementById('post-fb').addEventListener('click', function() {
 				FB.ui(
 					{  method: 'feed',
@@ -275,12 +286,7 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = res.tags;
 		});
-	});
-
-	$('li.send-to-museum').click(function(event) {
-		window.savedImage = window.mainCanvasObject.saveImage();
-		document.getElementById('painting-img').src = window.savedImage;
-	});
+	}
 
 	$('li.add-filter').click(function(event) {
 		event.preventDefault();
