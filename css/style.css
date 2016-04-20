@@ -1245,9 +1245,12 @@ li.add-filter {
 
 li.its-done,
 li.send-to-museum {
-	width: 226px !important;
 	background: url(../img/filters-done.png) no-repeat;
 	background-size: 100%;
+}
+
+li.send-to-museum {
+	width: 226px !important;
 }
 
 li.its-done:hover,
