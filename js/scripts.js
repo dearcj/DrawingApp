@@ -68,7 +68,37 @@ jQuery(document).ready(function($) {
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('surface') > 0) {
+			openPage('index', 'surface', 'museum');
+		}
+	}, false);
+
+	window.addEventListener("popstate", function(e) {
+		if (currentState.indexOf('surface') > 0) {
 			openPage('surface', 'index', 'painting');
+		}
+	}, false);
+
+	window.addEventListener("popstate", function(e) {
+		if (currentState.indexOf('painting') > 0) {
+			openPage('painting', 'index', 'surface');
+		}
+	}, false);
+
+	window.addEventListener("popstate", function(e) {
+		if (currentState.indexOf('filters') > 0) {
+			openPage('filters', 'index', 'painting');
+		}
+	}, false);
+
+	window.addEventListener("popstate", function(e) {
+		if (currentState.indexOf('publication') > 0) {
+			openPage('publication', 'painting', 'filters');
+		}
+	}, false);
+
+	window.addEventListener("popstate", function(e) {
+		if (currentState.indexOf('museum') > 0) {
+			openPage('museum', 'painting', 'filters');
 		}
 	}, false);
 
@@ -78,7 +108,6 @@ jQuery(document).ready(function($) {
 	isItHome('filters', 'index', 'painting');
 	isItHome('publication', 'painting', 'filters');
 	isItHome('index', 'surface', 'museum');
-
 
 	// ---------ELEMENTS FADE IN---------
 
