@@ -74,8 +74,7 @@ jQuery(document).ready(function($) {
 			var randomIntRight = getRandomInt(1, 12);
 			$('ul.paintings.left-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntLeft + '.jpg) no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntRight + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntLeft + '.jpg');
-			$('ul.paintings.right-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntRight + '.jpg');
+
 		}
 	});
 
