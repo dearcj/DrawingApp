@@ -6,11 +6,12 @@ jQuery(document).ready(function($) {
 	//--------------ROUTING---------------
 
 	var mainUrl = 'http://188.227.16.35/';
+	var homeUrl = mainUrl + 'home';
 	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
-		var newHref = mainUrl + '?p=' + pageName;
+		var newHref = mainUrl + pageName;
 		history.pushState(stateObj, pageName, newHref);
 	}
 
@@ -25,7 +26,7 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		if (href.indexOf(pageName) + 1) {
-			history.pushState(stateObj, pageName, mainUrl + '?p=' + pageName);
+			history.pushState(stateObj, pageName, mainUrl + pageName);
 		} else {
 			addURL(pageName);
 		}
@@ -35,7 +36,7 @@ jQuery(document).ready(function($) {
 
 	function isItHome(pageName, prevPage, nextPage) {
 		if (pageName.indexOf('index') > 0) {
-			history.pushState(stateObj, "redirect", "index.php");
+			history.pushState(stateObj, "redirect", "home.php");
 		} else if (href.indexOf(pageName) > 0) {
 			openPage(pageName, prevPage, nextPage);
 		}
@@ -105,6 +106,7 @@ jQuery(document).ready(function($) {
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('museum') > 0) {
 			openPage('museum', 'painting', 'filters');
+			$('#publication-wrapper').fadeOut(500).addClass('hidden');
 		}
 	}, false);
 
