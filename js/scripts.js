@@ -6,12 +6,12 @@ jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
-	var mainUrl = 'http://188.227.16.35/';
+	var mainUrl = 'http://188.227.16.35/index.php';
 	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
-		var newHref = mainUrl + pageName + '.php';
+		var newHref = mainUrl + '?p=' + pageName;
 		history.pushState(stateObj, pageName, newHref);
 	}
 
@@ -25,8 +25,8 @@ jQuery(document).ready(function($) {
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
 
-		if (window.location.href.indexOf(pageName) + 1) {
-			history.pushState(stateObj, pageName, mainUrl + pageName + '.php');
+		if (href.indexOf(pageName) + 1) {
+			history.pushState(stateObj, pageName, mainUrl + '?p=' + pageName);
 		} else {
 			addURL(pageName);
 		}
@@ -35,37 +35,12 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
-		if (href.indexOf('a') < 0 && href.indexOf('e') < 0) {
+		if (href.indexOf('index') > 0) {
 			history.pushState(stateObj, "redirect", "index.php");
-		} else if (window.location.href.indexOf(pageName) > 0) {
+		} else if (href.indexOf(pageName) > 0) {
 			openPage(pageName, prevPage, nextPage);
 		}
 	}
-
-	function setRandomImgs() {
-		var imgNumbers = [];
-		var n = 12;
-
-		for (var i = 1; i <= n; i++) {
-			imgNumbers[i] = i;
-		}
-
-		for (var j = 1; j < 4; j++) {
-			var randomIntLeft = Math.floor(Math.random()*imgNumbers.length + 1);
-			imgNumbers.splice(randomIntLeft,1);
-			var randomIntRight = Math.floor(Math.random()*imgNumbers.length + 1);
-			imgNumbers.splice(randomIntRight,1);
-			console.log(randomIntLeft);
-			console.log(randomIntRight);
-
-			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntLeft + '.jpg');
-			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntRight + '.jpg');
-		}
-	}
-
-	setRandomImgs();
 
 	$('.go-to-surface').click(function() {
 		window.currentState = window.location.href;
@@ -145,6 +120,31 @@ jQuery(document).ready(function($) {
 	isItHome('painting', 'index', 'surface');
 	isItHome('filters', 'index', 'painting');
 	isItHome('publication', 'painting', 'filters');
+
+	function setRandomImgs() {
+		var imgNumbers = [];
+		var n = 12;
+
+		for (var i = 1; i <= n; i++) {
+			imgNumbers[i] = i;
+		}
+
+		for (var j = 1; j < 4; j++) {
+			var randomIntLeft = Math.floor(Math.random()*imgNumbers.length + 1);
+			imgNumbers.splice(randomIntLeft,1);
+			var randomIntRight = Math.floor(Math.random()*imgNumbers.length + 1);
+			imgNumbers.splice(randomIntRight,1);
+			console.log(randomIntLeft);
+			console.log(randomIntRight);
+
+			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntLeft + '.jpg');
+			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntRight + '.jpg');
+		}
+	}
+
+	setRandomImgs();
 
 	// ---------ELEMENTS FADE IN---------
 
