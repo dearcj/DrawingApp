@@ -55,7 +55,9 @@ jQuery(document).ready(function($) {
 
 		for (var j = 0; j < 4; j++) {
 			var randomIntLeft = getRandomInt(1, 12);
+			console.log(randomIntLeft);
 			var randomIntRight = getRandomInt(1, 12);
+			console.log(randomIntRight);
 			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg) no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg) no-repeat');
 			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg');
