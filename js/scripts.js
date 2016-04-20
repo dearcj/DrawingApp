@@ -35,8 +35,8 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName, prevPage, nextPage) {
-		if (href.indexOf('188') > 0) {
-			history.pushState(stateObj, "redirect", "home.php");
+		if (href.indexOf('a') < 0 && href.indexOf('e') < 0) {
+			history.pushState(stateObj, "redirect", "home");
 		} else if (href.indexOf(pageName) > 0) {
 			openPage(pageName, prevPage, nextPage);
 		}
@@ -73,7 +73,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('index') > 0) {
+		if (currentState.indexOf('home') > 0) {
 			openPage('index', 'surface', 'museum');
 		}
 	}, false);
