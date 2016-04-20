@@ -50,6 +50,7 @@ jQuery(document).ready(function($) {
 	$('.go-to-museum').click(function() {
 		window.currentState = window.location.href;
 		openPage('museum', 'index', 'publication');
+		openMyMuseum();
 	});
 
 	$('.go-to-tools').click(function() {
@@ -245,7 +246,6 @@ jQuery(document).ready(function($) {
 	$('ul#buttons li#button-4 a').click(function(event) {
 		event.preventDefault();
 
-		openMyMuseum();
 		//LOAD IMAGE FROM SERVER
 
 
