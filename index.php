@@ -238,14 +238,14 @@
           <div class="filters-canvas">
             <canvas id="filters-canvas" width="750px" height="530px"></canvas>
 
+            <p class="hidden">Добавь немного Волшебства!</p>
+
             <ul class="tools-buttons filters-tb">
               <li class="go-to-tools back-to-tools"><a href="#"></a></li>
               <li class="its-done go-to-publication"><a href="#"></a></li>
             </ul>
 
             <div class="dark-side filters"></div>
-
-            <p class="hidden">Добавь немного Волшебства!</p>
           </div>
 
           <div id="wand">

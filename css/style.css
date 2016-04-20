@@ -1511,7 +1511,7 @@ ul.surfaces li:nth-child(7):focus {
     margin: 0 auto;
     line-height: 120%;
     height: auto;
-    position: relative;
+    position: absolute;
     color: white;
 }
 
