@@ -667,7 +667,7 @@ jQuery(document).ready(function($) {
 			prevNextButtonsHeight = parseInt(prevNextButtons.css('height')),
 			filtersCanvasTextWidth = parseInt(filtersCanvasText.css('width'));
 
-		filtersCanvasText.css({top: 3*filtersCanvasHeight/8 - darkSideFiltersHeight - prevNextButtonsHeight + 'px', left: (filtersCanvasWidth - filtersCanvasTextWidth)/2 + 'px'});
+		filtersCanvasText.css({top: width/12.5 + filtersCanvasHeight + 'px', right: sideMargins + filtersTextWidth/4 + 'px'});
 
 		itsDone.css('width', prevNextButtons.height()*doneButtonRatio + 'px');
 
@@ -684,11 +684,9 @@ jQuery(document).ready(function($) {
 		toolsButtons.css('margin-left', (filtersCanvasWidth - toolsButtonsWidth)/2 + 'px');
 
 		$(window).mouseup(function (e) {
-		    var container = $('.filters-canvas p');
-
-		    if (!container.is(e.target) && container.has(e.target).length === 0)
+		    if (!filtersCanvasText.is(e.target) && filtersCanvasText.has(e.target).length === 0)
 		    {
-		        container.fadeOut(500).css('display', 'inline-block');
+				filtersCanvasText.fadeOut(500).css('display', 'inline-block');
 		    }
 		});
 	}
