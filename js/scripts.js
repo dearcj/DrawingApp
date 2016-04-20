@@ -23,11 +23,6 @@ jQuery(document).ready(function($) {
 			$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
 	}
 
-	function returnPrevHref() {
-		window.currentHref = window.currentState;
-		return currentHref;
-	}
-
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
 
