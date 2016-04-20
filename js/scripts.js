@@ -6,7 +6,6 @@ jQuery(document).ready(function($) {
 	//--------------ROUTING---------------
 
 	var mainUrl = 'http://188.227.16.35/';
-	var homeUrl = mainUrl + 'home';
 	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
@@ -36,7 +35,7 @@ jQuery(document).ready(function($) {
 
 	function isItHome(pageName, prevPage, nextPage) {
 		if (href.indexOf('a') < 0 && href.indexOf('e') < 0) {
-			history.pushState(stateObj, "redirect", "home");
+			history.pushState(stateObj, "redirect", "index");
 		} else if (href.indexOf(pageName) > 0) {
 			openPage(pageName, prevPage, nextPage);
 		}
@@ -73,7 +72,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('home') > 0) {
+		if (currentState.indexOf('index') > 0) {
 			openPage('index', 'surface', 'museum');
 		}
 	}, false);
