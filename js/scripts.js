@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
-		var newHref = mainUrl + '?p=' + pageName + '.php';
+		var newHref = mainUrl + '?p=' + pageName;
 		history.pushState(stateObj, pageName, newHref);
 	}
 
@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		if (href.indexOf(pageName) + 1) {
-			history.pushState(stateObj, pageName, mainUrl + '?p=' + pageName + '.php');
+			history.pushState(stateObj, pageName, mainUrl + '?p=' + pageName);
 		} else {
 			addURL(pageName);
 		}
@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 
 	function isItHome(pageName, prevPage, nextPage) {
 		if (href.indexOf('?') < 0) {
-			history.pushState(stateObj, "redirect", "index.php");
+			history.pushState(stateObj, "redirect", "?p=index");
 		} else if (href.indexOf(pageName) > 0) {
 			openPage(pageName, prevPage, nextPage);
 		}
@@ -45,16 +45,12 @@ jQuery(document).ready(function($) {
 
 	$('.save-and-send').click(function(event) {
 
-
-
-
 		event.preventDefault();
 		if ($(this).prev().find("input").val() == "" || $(this).prev().find("input").val() == "Напишите название работы") {
 			$(this).prev().find("input").css("color", "#FF0000");
 			$(this).prev().find("input").css("border", "1px solid #FF0000");
 			return false;
 		} else {
-
 
 			//	$('#museum-wrapper .painting-info span.title').html($(this).prev().find('input').val());
 		}
@@ -68,7 +64,7 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-museum').click(function() {
 
-		if (window.location.search != '' || window.location.search== "?p=index"){
+		if (window.location.search != '' || window.location.search== "?p=index"){ //
 			window.savedImage = window.mainCanvasObject.saveImage();
 			document.getElementById('your-painting').src = window.savedImage;
 
@@ -168,10 +164,10 @@ jQuery(document).ready(function($) {
 			console.log(randomIntLeft);
 			console.log(randomIntRight);
 
-			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg');
-			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg');
+			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntLeft + '.jpg');
+			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntRight + '.jpg');
 		}
 	}
 
