@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('filters') > 0) {
-			openPage('filters', 'index', 'painting');
+			openPage('filters', 'publication', 'painting');
 		}
 	}, false);
 
