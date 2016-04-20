@@ -6,12 +6,12 @@ jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
-	var mainUrl = 'http://188.227.16.35/index.php';
+	var mainUrl = 'http://188.227.16.35/';
 	var href = window.location.href;
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
-		var newHref = mainUrl + '?p=' + pageName;
+		var newHref = mainUrl + '?p=' + pageName + '.php';
 		history.pushState(stateObj, pageName, newHref);
 	}
 
@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		if (href.indexOf(pageName) + 1) {
-			history.pushState(stateObj, pageName, mainUrl + '?p=' + pageName);
+			history.pushState(stateObj, pageName, mainUrl + '?p=' + pageName + '.php');
 		} else {
 			addURL(pageName);
 		}
