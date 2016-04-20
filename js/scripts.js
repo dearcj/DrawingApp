@@ -42,6 +42,25 @@ jQuery(document).ready(function($) {
 		}
 	}
 
+
+	$('.save-and-send').click(function(event) {
+
+
+
+
+		event.preventDefault();
+		if ($(this).prev().find("input").val() == "" || $(this).prev().find("input").val() == "Напишите название работы") {
+			$(this).prev().find("input").css("color", "#FF0000");
+			$(this).prev().find("input").css("border", "1px solid #FF0000");
+			return false;
+		} else {
+
+
+			//	$('#museum-wrapper .painting-info span.title').html($(this).prev().find('input').val());
+		}
+	});
+
+
 	$('.go-to-surface').click(function() {
 		window.currentState = window.location.href;
 		openPage('surface', 'index', 'painting');
@@ -50,7 +69,12 @@ jQuery(document).ready(function($) {
 	$('.go-to-museum').click(function() {
 		window.currentState = window.location.href;
 		openPage('museum', 'index', 'publication');
-		openMyMuseum();
+
+		window.savedImage = window.mainCanvasObject.saveImage();
+		document.getElementById('your-painting').src = window.savedImage;
+
+		window.mainCanvasObject.sendPic(openMyMuseum);
+
 	});
 
 	$('.go-to-tools').click(function() {
@@ -302,25 +326,6 @@ jQuery(document).ready(function($) {
 		$(this).parents('#wrapper').prev().css('position', 'relative');
 	});
 
-	$('.save-and-send').click(function(event) {
-
-		window.savedImage = window.mainCanvasObject.saveImage();
-		document.getElementById('your-painting').src = window.savedImage;
-
-		window.mainCanvasObject.sendPic();
-
-
-		event.preventDefault();
-		if ($(this).prev().find("input").val() == "" || $(this).prev().find("input").val() == "Напишите название работы") {
-			$(this).prev().find("input").css("color", "#FF0000");
-			$(this).prev().find("input").css("border", "1px solid #FF0000");
-		return false;
-		} else {
-
-
-		//	$('#museum-wrapper .painting-info span.title').html($(this).prev().find('input').val());
-		}
-	});
 	
 	$(".group1").colorbox({rel:'group1', title: function() {
 			return 'Никита Алексеев. «Фонарик». 1991. Холст, акрил, пастель<br><span>В темноте ярко светит фонарик. Он настолько маленький, что освещает совсем немного – видно только как вокруг него идёт снег или дождь. Фонарик висит где-то на улице, и не смотря на свои размеры наверняка будет хорошо виден издалека. Эта небольшая история нарисована художником при помощи всего лишь мелка, который на темном холсте оставляет яркий контрастный след – не зря и для школьных досок используется сочетание белых значков на тёмном фоне – чтобы всем было хорошо видно!';

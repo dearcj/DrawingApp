@@ -132,7 +132,7 @@ Canvas.prototype.redraw = function (ctx){
 
 //
 
-Canvas.prototype.sendPic = function() {
+Canvas.prototype.sendPic = function(cbbbb) {
 		data = {
 			api_method: 'applyimagetogallery',
 			user_id: 1,
@@ -149,6 +149,7 @@ Canvas.prototype.sendPic = function() {
 			success: function cb(res) {
 				localStorage.setItem('imageId', res.imageId);
 				console.log(res);
+				cbbbb();
 			}
 		});
 };
