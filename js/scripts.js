@@ -1,7 +1,7 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 window.selectedSurface = 1;
-window.currentHref = window.currentState;
-console.log(currentHref);
+console.log(window.currentState);
+console.log(currentState);
 
 jQuery(document).ready(function($) {
 
@@ -59,7 +59,6 @@ jQuery(document).ready(function($) {
 	$('.go-to-tools').click(function() {
 		window.currentState = window.location.href;
 		openPage('painting', 'index', 'surface');
-		returnPrevHref();
 	});
 
 	$('.go-to-filters').click(function() {
