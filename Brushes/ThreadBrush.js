@@ -9,7 +9,7 @@ extend(ThreadBrush, Brush);
 function ThreadBrush(color) {
 	Brush.apply(this, color);
 
-	this.name = 'нитки';
+	this.name = 'РЅРёС‚РєРё';
 
 }
 
