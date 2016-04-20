@@ -246,7 +246,9 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		//LOAD IMAGE FROM SERVER
-		getLastImage(1, function (res) {
+
+
+		getLastImage(localStorage.getItem('imageId'), function (res) {
 			document.getElementById('post-fb').addEventListener('click', function() {
 				FB.ui(
 					{  method: 'feed',

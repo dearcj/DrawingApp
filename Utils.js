@@ -22,10 +22,10 @@ function getParameterByName(name) {
   return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
-function getLastImage(uid, cb) {
+function getLastImage(iid, cb) {
   data = {
     api_method: 'getimagefromgallery',
-    user_id: uid
+    image_id: iid
   };
 
   $.ajax({
