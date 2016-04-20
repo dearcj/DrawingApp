@@ -43,7 +43,26 @@ jQuery(document).ready(function($) {
 	}
 
 	function setRandomImgs() {
+		var imgNumbers = [];
+		var n = 12;
 
+		for (var i = 1; i <= n; i++) {
+			imgNumbers[i] = i;
+		}
+
+		for (var j = 1; j < 4; j++) {
+			var randomIntLeft = Math.floor(Math.random()*imgNumbers.length + 1);
+			imgNumbers.splice(randomIntLeft,1);
+			var randomIntRight = Math.floor(Math.random()*imgNumbers.length + 1);
+			imgNumbers.splice(randomIntRight,1);
+			console.log(randomIntLeft);
+			console.log(randomIntRight);
+
+			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg');
+			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg');
+		}
 	}
 
 	setRandomImgs();
