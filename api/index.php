@@ -76,10 +76,10 @@ class mMomaAPI extends Rest {
 			$db->execute();
 			$db = null;
 
-			$error = array("status" => "Success",
+			$res = array("status" => "Success",
 			"message" => "Image was successfully added",
 			'imageId' => mysql_insert_id());
-			$this->response($error, 200);
+			$this->response($this->json($res), 200);
 		}
 		
 		$error = array("status" => "Error", "message" => "Provided data is incorrect");
