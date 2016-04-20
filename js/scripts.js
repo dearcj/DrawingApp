@@ -21,11 +21,6 @@ jQuery(document).ready(function($) {
 			$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
 	}
 
-	function returnPrevHref() {
-		window.currentHref = window.currentState;
-		return currentHref;
-	}
-
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
 
@@ -55,7 +50,6 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-tools').click(function() {
-		window.currentState = window.location.href;
 		openPage('painting', 'index', 'surface');
 	});
 
@@ -71,11 +65,8 @@ jQuery(document).ready(function($) {
 		openPage('index', 'surface', 'museum');
 	});
 
-	window.currentHref = window.currentState;
-
 	window.addEventListener("popstate", function(e) {
-		console.log(window.currentHref + '!');
-		console.log(currentHref + '&');
+		history.go(-1);
 	}, false);
 
 	isItHome('surface', 'index', 'painting');
