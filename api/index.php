@@ -74,11 +74,12 @@ class mMomaAPI extends Rest {
 			$db->bindParam(":description", $this->request["description"]);
 			$db->bindParam(":file", $link);
 			$db->execute();
+			$insertId = $this->_db->lastInsertId();
 			$db = null;
 
 			$res = array("status" => "Success",
 			"message" => "Image was successfully added",
-			'imageId' => mysql_insert_id());
+			'imageId' => $insertId);
 			$this->response($this->json($res), 200);
 		}
 		
