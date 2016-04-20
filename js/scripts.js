@@ -47,13 +47,21 @@ jQuery(document).ready(function($) {
 	}
 
 	function setRandomImgs() {
-		for (var i=0; i<4; i++) {
+		var imgNumbers = [];
+
+		for (var i = 0; i <= 12; i++) {
+			imgNumbers[i] = i+1;
+		}
+
+		for (var j = 0; j < 4; j++) {
 			var randomIntLeft = getRandomInt(1, 12);
 			var randomIntRight = getRandomInt(1, 12);
-			$('ul.paintings.left-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntLeft + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntRight + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntLeft + '.jpg');
-			$('ul.paintings.right-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntRight + '.jpg');
+			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + '/painting-' + imgNumbers[randomIntLeft] + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + '/painting-' + imgNumbers[randomIntRight] + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + '/painting-' + imgNumbers[randomIntLeft] + '.jpg');
+			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + '/painting-' + imgNumbers[randomIntRight] + '.jpg');
+			imgNumbers.splice(randomIntLeft,1);
+			imgNumbers.splice(randomIntRight,1);
 		}
 	}
 
