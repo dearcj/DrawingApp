@@ -2,9 +2,8 @@ window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 window.selectedSurface = 1;
 
 window.addEventListener("popstate", function(e) {
-	returnPrevHref();
-	console.log(window.currentHref + '!');
-	console.log(currentHref + '&');
+	console.log(window.currentState + '!');
+	console.log(currentState + '&');
 }, false);
 
 jQuery(document).ready(function($) {
