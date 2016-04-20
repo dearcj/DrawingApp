@@ -25,7 +25,7 @@ jQuery(document).ready(function($) {
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
 
-		if (href.indexOf(pageName) + 1) {
+		if (window.location.href.indexOf(pageName) + 1) {
 			history.pushState(stateObj, pageName, mainUrl + pageName + '.php');
 		} else {
 			addURL(pageName);
