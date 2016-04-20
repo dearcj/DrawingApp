@@ -28,8 +28,6 @@ jQuery(document).ready(function($) {
 	function openPage(pageName, prevPage, nextPage) {
 		event.preventDefault();
 
-		var stateObj = mainUrl + '?p=' + pageName;
-
 		if (href.indexOf(pageName) + 1) {
 			history.pushState(stateObj, pageName, mainUrl + '?p=' + pageName);
 		} else {
@@ -59,6 +57,7 @@ jQuery(document).ready(function($) {
 		window.currentState = history.state;
 		openPage('painting', 'index', 'surface');
 		returnPrevHref();
+		var stateObj = mainUrl + '?p=painting';
 	});
 
 	$('.go-to-filters').click(function() {
