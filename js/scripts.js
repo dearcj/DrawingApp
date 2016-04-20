@@ -46,6 +46,19 @@ jQuery(document).ready(function($) {
 		return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
+	function setRandomImgs() {
+		for (var i=0; i<4; i++) {
+			var randomIntLeft = getRandomInt(1, 12);
+			var randomIntRight = getRandomInt(1, 12);
+			$('ul.paintings.left-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntLeft + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntRight + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntLeft + '.jpg');
+			$('ul.paintings.right-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntRight + '.jpg');
+		}
+	}
+
+	setRandomImgs();
+
 	$('.go-to-surface').click(function() {
 		window.currentState = window.location.href;
 		openPage('surface', 'index', 'painting');
@@ -181,8 +194,6 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 7;
 	});
 
-
-
 	$('ul.surfaces li').mouseover(function() {
 		$(this).find('p').css('display', 'block');
 	});
@@ -253,15 +264,8 @@ jQuery(document).ready(function($) {
 	});
 
 	$('li.send-to-museum').click(function(event) {
-		var i=0;
-		for (i; i<4, i++) {
-			var randomIntLeft = getRandomInt(1, 12);
-			var randomIntRight = getRandomInt(1, 12);
-			$('ul.paintings.left-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntLeft + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntRight + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntLeft + '.jpg');
-			$('ul.paintings.right-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntRight + '.jpg');
-		}
+		window.savedImage = window.mainCanvasObject.saveImage();
+		document.getElementById('painting-img').src = window.savedImage;
 	});
 
 	$('li.add-filter').click(function(event) {
