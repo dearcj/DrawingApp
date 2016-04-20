@@ -67,15 +67,18 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-museum').click(function() {
+
+		if (window.location.search != '' || window.location.search== "?p=index"){
+			window.savedImage = window.mainCanvasObject.saveImage();
+			document.getElementById('your-painting').src = window.savedImage;
+
+			window.mainCanvasObject.sendPic(openMyMuseum)} else
+			openMyMuseum();
+
+
 		window.currentState = window.location.href;
 		openPage('museum', 'index', 'publication');
 
-		if (window.location.search != ''){
-		window.savedImage = window.mainCanvasObject.saveImage();
-		document.getElementById('your-painting').src = window.savedImage;
-
-		window.mainCanvasObject.sendPic(openMyMuseum)} else
-		openMyMuseum();
 
 	});
 
