@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('painting') > 0) {
-			openPage('painting', 'index', 'surface');
+			openPage('painting', 'filters', 'surface');
 		}
 	}, false);
 
