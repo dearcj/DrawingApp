@@ -1,5 +1,5 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
-window.imgPath = 'http://188.227.16.35/wp-content/themes/mmoma/imgs/';
+
 window.selectedSurface = 1;
 
 jQuery(document).ready(function($) {
@@ -42,7 +42,9 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-
+	function getRandomInt(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
 
 	$('.go-to-surface').click(function() {
 		window.currentState = window.location.href;
@@ -68,12 +70,12 @@ jQuery(document).ready(function($) {
 		window.currentState = window.location.href;
 		openPage('publication', 'painting', 'filters');
 		for (var i=1; i<=3: i++) {
-			var randomIntLeft = 1;
-			var randomIntRight = 6;
+			var randomIntLeft = getRandomInt(1, 12);
+			var randomIntRight = getRandomInt(1, 12);
 			$('ul.paintings.left-side a:nth-child(' + i + ') li').css('background', 'url(../imgs/painting-' + randomIntLeft + '.jpg) no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + i + ') li').css('background', 'url(../imgs/painting-' + randomIntRight + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + i + ')').attr('href', imgPath + 'painting-' + randomIntLeft + '.jpg');
-			$('ul.paintings.right-side a:nth-child(' + i + ')').attr('href', imgPath + 'painting-' + randomIntRight + '.jpg');
+			$('ul.paintings.left-side a:nth-child(' + i + ')').attr('href', 'http://188.227.16.35/wp-content/themes/mmoma/imgs/painting-' + randomIntLeft + '.jpg');
+			$('ul.paintings.right-side a:nth-child(' + i + ')').attr('href', 'http://188.227.16.35/wp-content/themes/mmoma/imgs/painting-' + randomIntRight + '.jpg');
 		}
 	});
 
