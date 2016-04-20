@@ -166,6 +166,8 @@ jQuery(document).ready(function($) {
 
 			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + j + ') li:hover').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + j + ') li:hover').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
 			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntLeft + '.jpg');
 			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntRight + '.jpg');
 		}
