@@ -5,7 +5,7 @@ extend(ScotchBrush, Brush);
 
 function ScotchBrush(color) {
 	Brush.apply(this, color);
-	this.name = 'скотч';
+	this.name = 'СЃРєРѕС‚С‡';
 
 
 }

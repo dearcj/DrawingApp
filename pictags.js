@@ -6,92 +6,92 @@
 var picTags = [
 	{
 		pic: 'pictags/canvas/board.jpg',
-		tag: 'доска',
+		tag: 'РґРѕСЃРєР°',
 		fulltags: ''
 	},
 	{
 		pic: 'pictags/canvas/brick.jpg',
-		tag: 'кирпич',
+		tag: 'РєРёСЂРїРёС‡',
 		fulltags: ''
 	},
 	{
 		pic: 'pictags/canvas/canvas.jpg',
-		tag: 'полотно',
+		tag: 'РїРѕР»РѕС‚РЅРѕ',
 		fulltags: ''
 	},
 	{
 		pic: 'pictags/canvas/cardboard.jpg',
-		tag: 'картон',
+		tag: 'РєР°СЂС‚РѕРЅ',
 		fulltags: ''
 	},
 	{
 		pic: 'pictags/canvas/metal.jpg',
-		tag: 'метал',
+		tag: 'РјРµС‚Р°Р»',
 		fulltags: ''
 
 	},
 	{
 		pic: 'pictags/canvas/wallpaper.jpg',
-		tag: 'обои',
+		tag: 'РѕР±РѕРё',
 		fulltags: ''
 
 	},
 	{
 		pic: 'pictags/canvas/wood.jpg',
-		tag: 'дерево',
+		tag: 'РґРµСЂРµРІРѕ',
 		fulltags: ''
 
 	},
 	{
 		pic: 'pictags/filters/bubble.jpg',
-		tag: 'пузырек',
+		tag: 'РїСѓР·С‹СЂРµРє',
 		fulltags: ''
 
 	},
 	{
 		pic: 'pictags/filters/diptih.jpg',
-		tag: 'диптих',
+		tag: 'РґРёРїС‚РёС…',
 		fulltags: ''
 
 	},
 	{
 		pic: 'pictags/filters/diptih2.jpg',
-		tag: 'диптих',
+		tag: 'РґРёРїС‚РёС…',
 		fulltags: ''
 
 	},
 	{
 		pic: 'pictags/filters/distortion.jpg',
-		tag: 'искажение',
+		tag: 'РёСЃРєР°Р¶РµРЅРёРµ',
 		fulltags: ''
 
 	},
 	{
 		pic: 'pictags/filters/inv1.jpg',
-		tag: 'инверсия',
+		tag: 'РёРЅРІРµСЂСЃРёСЏ',
 		fulltags: ''
 
 	},
 	{
 		pic: 'pictags/filters/pattern.jpg',
-		tag: 'паттерн',
+		tag: 'РїР°С‚С‚РµСЂРЅ',
 		fulltags: ''
 	},
 	{
 		pic: 'pictags/filters/pixelization.jpg',
-		tag: 'пикселизация',
+		tag: 'РїРёРєСЃРµР»РёР·Р°С†РёСЏ',
 		fulltags: ''
 	}
 	,
 	{
 		pic: 'pictags/filters/rama.jpg',
-		tag: 'рамка',
+		tag: 'СЂР°РјРєР°',
 		fulltags: ''
 	}
 	,
 	{
 		pic: 'pictags/filters/rama2.jpg',
-		tag: 'рамка',
+		tag: 'СЂР°РјРєР°',
 		fulltags: ''
 	}
 ];

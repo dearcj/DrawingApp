@@ -7,7 +7,7 @@ extend(CoalBrush, Brush);
 function CoalBrush(color) {
 	Brush.apply(this, color);
 
-	this.name = 'мел';
+	this.name = 'РјРµР»';
 
 
 	var self = this;
