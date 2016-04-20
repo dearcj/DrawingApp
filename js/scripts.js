@@ -112,7 +112,6 @@ jQuery(document).ready(function($) {
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('museum') > 0) {
 			openPage('museum', 'painting', 'filters');
-			$('#index-wrapper').fadeOut(500).addClass('hidden');
 			$('#publication-wrapper').fadeOut(500).addClass('hidden');
 		}
 	}, false);
