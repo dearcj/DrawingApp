@@ -6,6 +6,7 @@ jQuery(document).ready(function($) {
 
 	var mainUrl = 'http://188.227.16.35/';
 	var href = window.location.href;
+	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
 		var newHref = mainUrl + '?p=' + pageName;
@@ -57,7 +58,6 @@ jQuery(document).ready(function($) {
 		window.currentState = history.state;
 		openPage('painting', 'index', 'surface');
 		returnPrevHref();
-		var stateObj = mainUrl + '?p=painting';
 	});
 
 	$('.go-to-filters').click(function() {
