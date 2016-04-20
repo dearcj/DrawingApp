@@ -1,4 +1,5 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
+window.imgPath = 'http://188.227.16.35/wp-content/themes/mmoma/imgs/';
 window.selectedSurface = 1;
 
 jQuery(document).ready(function($) {
@@ -41,6 +42,10 @@ jQuery(document).ready(function($) {
 		}
 	}
 
+	function getRandomInt(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
+
 	$('.go-to-surface').click(function() {
 		window.currentState = window.location.href;
 		openPage('surface', 'index', 'painting');
@@ -64,6 +69,14 @@ jQuery(document).ready(function($) {
 	$('.go-to-publication').click(function() {
 		window.currentState = window.location.href;
 		openPage('publication', 'painting', 'filters');
+		for (i=1; i<=3: i++) {
+			var randomIntLeft = getRandomInt(1, 12);
+			var randomIntRight = getRandomInt(1, 12);
+			$('ul.paintings.left-side a:nth-child(' + i + ') li').css('background', 'url(../imgs/painting-' + randomIntLeft + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + i + ') li').css('background', 'url(../imgs/painting-' + randomIntRight + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + i + ')').attr('href', imgPath + 'painting-' + randomIntLeft + '.jpg');
+			$('ul.paintings.right-side a:nth-child(' + i + ')').attr('href', imgPath + 'painting-' + randomIntRight + '.jpg');
+		}
 	});
 
 	$('.go-to-home').click(function() {
@@ -176,7 +189,6 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 7;
 	});
 
-
 	$('ul.surfaces li').mouseover(function() {
 		$(this).find('p').css('display', 'block');
 	});
@@ -212,8 +224,6 @@ jQuery(document).ready(function($) {
 	$('ul#buttons li#button-4 a').mouseout(function() {
 		$(this).parents('ul#buttons').next().find('li#helper-6s span').css('display', 'none');
 	});
-	
-
 
 	$('ul#buttons li#button-4 a').click(function(event) {
 		event.preventDefault();
@@ -242,7 +252,7 @@ jQuery(document).ready(function($) {
 
 			window.currentImgPic = res.file;
 			document.getElementById('your-painting').src = res.image;
-			document.getElementById('painting-title').textContent = "asd asd";
+			document.getElementById('painting-title').textContent = res.name;
 			document.getElementById('painting-author').textContent = "фывфыв";
 			document.getElementById('painting-materials').textContent = res.tags;
 		});
