@@ -1,7 +1,9 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 window.selectedSurface = 1;
-console.log(window.currentState);
-console.log(currentState);
+
+window.addEventListener("popstate", function(e) {
+	console.log('hi');
+}, false);
 
 jQuery(document).ready(function($) {
 
@@ -21,6 +23,11 @@ jQuery(document).ready(function($) {
 			$('#' + nextPage + '-wrapper').fadeOut(500).addClass('hidden');
 			$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
 			$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
+	}
+
+	function returnPrevHref() {
+		window.currentHref = window.currentState;
+		return currentHref;
 	}
 
 	function openPage(pageName, prevPage, nextPage) {
@@ -67,10 +74,6 @@ jQuery(document).ready(function($) {
 	$('.go-to-home').click(function() {
 		openPage('index', 'surface', 'museum');
 	});
-
-	window.addEventListener("popstate", function(e) {
-		history.back();
-	}, false);
 
 	isItHome('surface', 'index', 'painting');
 	isItHome('museum', 'index', 'publication');
