@@ -104,7 +104,6 @@ jQuery(document).ready(function($) {
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('publication') > 0) {
 			openPage('publication', 'painting', 'filters');
-			$('#index-wrapper').fadeOut(500).addClass('hidden');
 			$('#museum-wrapper').fadeOut(500).addClass('hidden');
 		}
 	}, false);
