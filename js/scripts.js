@@ -45,23 +45,18 @@ jQuery(document).ready(function($) {
 	function setRandomImgs() {
 		var imgNumbers = [];
 
-		for (var i = 1; i <= 12; i++) {
-			imgNumbers[i] = i;
+		for (var i = 12; i >= 1; i--) {
+			var randomInt = Math.floor(Math.random() * i) + 1;
+			imgNumbers[i] = randomInt;
 		}
 
-		for (var i = 12; i >= 1; i-=2) {
-			for (var j = 1; j < 4; j++) {
-				var randomIntLeft = Math.floor(Math.random()*(i-j+1) + 1);
-				imgNumbers.splice(randomIntLeft,1);
-				console.log(randomIntLeft);
-				var randomIntRight = Math.floor(Math.random()*(i-j) + 1);
-				imgNumbers.splice(randomIntRight,1);
-				console.log(randomIntRight);
-				$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg) no-repeat');
-				$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg) no-repeat');
-				$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg');
-				$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg');
-			}
+		for (var j = 1; j < 4; j++) {
+			console.log(randomIntLeft);
+			console.log(randomIntRight);
+			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[j] + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[12 - j] + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[j] + '.jpg');
+			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[12 - j] + '.jpg');
 		}
 	}
 
