@@ -49,11 +49,11 @@ jQuery(document).ready(function($) {
 	function setRandomImgs() {
 		var imgNumbers = [];
 
-		for (var i = 0; i <= 12; i++) {
-			imgNumbers[i] = i+1;
+		for (var i = 1; i <= 12; i++) {
+			imgNumbers[i] = i;
 		}
 
-		for (var j = 0; j < 4; j++) {
+		for (var j = 1; j < 4; j++) {
 			var randomIntLeft = getRandomInt(1, 12);
 			var randomIntRight = getRandomInt(1, 12);
 			console.log(randomIntLeft);
