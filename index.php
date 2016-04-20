@@ -318,9 +318,11 @@
 
           <div class="dark-side museum"></div>
 
-          <div class="painting-info">
-            <span id="painting-title" class="title"></span><span id="painting-author" class="author"></span><span id="painting-materials" class="materials"></span>
-          </div>
+
+            <div id="painting-title" class="title"></div>
+            <div id="painting-author" class="author"></div>
+            <div id="painting-materials" class="materials"></div>
+
 
           <ul class="ux-buttons">
             <li></li>
