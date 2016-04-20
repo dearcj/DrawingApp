@@ -70,10 +70,12 @@ jQuery(document).ready(function($) {
 		window.currentState = window.location.href;
 		openPage('museum', 'index', 'publication');
 
+		if (window.location.search != ''){
 		window.savedImage = window.mainCanvasObject.saveImage();
 		document.getElementById('your-painting').src = window.savedImage;
 
-		window.mainCanvasObject.sendPic(openMyMuseum);
+		window.mainCanvasObject.sendPic(openMyMuseum)} else
+		openMyMuseum();
 
 	});
 
