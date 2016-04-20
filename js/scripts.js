@@ -1,5 +1,5 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
-
+window.imgPath = 'http://188.227.16.35/wp-content/themes/mmoma/imgs/';
 window.selectedSurface = 1;
 
 jQuery(document).ready(function($) {
@@ -72,10 +72,10 @@ jQuery(document).ready(function($) {
 
 			var randomIntLeft = getRandomInt(1, 12);
 			var randomIntRight = getRandomInt(1, 12);
-			$('ul.paintings.left-side a:nth-child(1) li').css('background', 'url(../imgs/painting-' + randomIntLeft + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(2) li').css('background', 'url(../imgs/painting-' + randomIntRight + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(1)').attr('href', 'http://188.227.16.35/wp-content/themes/mmoma/imgs/painting-' + randomIntLeft + '.jpg');
-			$('ul.paintings.right-side a:nth-child(2)').attr('href', 'http://188.227.16.35/wp-content/themes/mmoma/imgs/painting-' + randomIntRight + '.jpg');
+			$('ul.paintings.left-side a:nth-child(1) li').css('background', 'url(' + imgPath + '/painting-' + randomIntLeft + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(2) li').css('background', 'url(' + imgPath + '/painting-' + randomIntRight + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(1)').attr('href', imgPath + '/painting-' + randomIntLeft + '.jpg');
+			$('ul.paintings.right-side a:nth-child(2)').attr('href', imgPath + '/painting-' + randomIntRight + '.jpg');
 
 	});
 
