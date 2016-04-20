@@ -42,7 +42,9 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-
+	function getRandomInt(min, max) {
+		return Math.floor(Math.random() * (max - min + 1)) + min;
+	}
 
 	$('.go-to-surface').click(function() {
 		window.currentState = window.location.href;
@@ -69,6 +71,8 @@ jQuery(document).ready(function($) {
 		openPage('publication', 'painting', 'filters');
 
 	});
+
+	getRandomInt();
 
 	$('.go-to-home').click(function() {
 		window.currentState = window.location.href;
