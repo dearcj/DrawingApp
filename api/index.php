@@ -76,7 +76,9 @@ class mMomaAPI extends Rest {
 			$db->execute();
 			$db = null;
 
-			$error = array("status" => "Success", "message" => "Image was successfully added");
+			$error = array("status" => "Success",
+			"message" => "Image was successfully added",
+			'imageId' => mysql_insert_id());
 			$this->response($error, 200);
 		}
 		
@@ -89,15 +91,15 @@ class mMomaAPI extends Rest {
 			$this->response("", 406);
 		}
 		
-		if (isset($this->request["user_id"]) && !empty($this->request["user_id"])) {
-			$user_id = intval($this->request["user_id"]);
+		if (isset($this->request["image_id"]) && !empty($this->request["image_id"])) {
+			$image_id = intval($this->request["image_id"]);
 
 
 
 			$db = $this->_db->prepare(
-				"SELECT * FROM tb_gallery t WHERE t.user_id = ? ORDER BY t.image_id DESC LIMIT 1"
+				"SELECT * FROM tb_gallery t WHERE t.image_id = ? ORDER BY t.image_id DESC LIMIT 1"
 				);
-			$db->bindParam(1, $user_id);
+			$db->bindParam(1, $image_id);
 			$db->execute();
 			$result = $db->fetch(PDO::FETCH_ASSOC);
 			
