@@ -42,10 +42,6 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-	function getRandomInt(min, max) {
-		return Math.floor(Math.random() * (max - min + 1)) + min;
-	}
-
 	function setRandomImgs() {
 		var imgNumbers = [];
 
@@ -53,17 +49,19 @@ jQuery(document).ready(function($) {
 			imgNumbers[i] = i;
 		}
 
-		for (var j = 1; j < 4; j++) {
-			var randomIntLeft = getRandomInt(1, 12);
-			var randomIntRight = getRandomInt(1, 12);
-			console.log(randomIntLeft);
-			console.log(randomIntRight);
-			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg');
-			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg');
-			imgNumbers.splice(randomIntLeft,1);
-			imgNumbers.splice(randomIntRight,1);
+		for (var i = 12; i >= 1; i-=2) {
+			for (var j = 1; j < 4; j++) {
+				var randomIntLeft = Math.floor(Math.random()*(i-j+1) + 1);
+				imgNumbers.splice(randomIntLeft,1);
+				var randomIntRight = Math.floor(Math.random()*(i-j) + 1);
+				imgNumbers.splice(randomIntRight,1);
+				console.log(randomIntLeft);
+				console.log(randomIntRight);
+				$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg) no-repeat');
+				$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'url(' + imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg) no-repeat');
+				$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntLeft] + '.jpg');
+				$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomIntRight] + '.jpg');
+			}
 		}
 	}
 
