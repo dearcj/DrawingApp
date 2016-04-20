@@ -89,6 +89,9 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-publication').click(function() {
 		window.currentState = window.location.href;
+
+		document.getElementById('painting-img').src = window.savedImage;
+
 		openPage('publication', 'painting', 'filters');
 	});
 
