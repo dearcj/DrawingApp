@@ -249,7 +249,7 @@ function drawImageToCanvas (canvId, imgData, cb) {
     if (cb) cb(img);
   //  ctx.canvas.width = ctx.canvas.width;
   }
-  ctx.drawImage(img, 0 ,0 );
+//  ctx.drawImage(img, 0 ,0 );
 
 }
 
