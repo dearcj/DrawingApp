@@ -282,7 +282,7 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		window.savedImage = window.mainCanvasObject.saveImage();
-
+		window.filterSavedImage = window.savedImage;
 		drawImageToCanvas("filters-canvas", window.savedImage);
 
 		//$('#filter-image')[0].src =  window.savedImage;
@@ -609,7 +609,7 @@ jQuery(document).ready(function($) {
 		document.getElementById("wand").addEventListener('click', function () {
 
 			if (!window.currentFilter || window.currentFilter >= filterOrder.length) window.currentFilter = 0;
-			applyFilter("filters-canvas", window.savedImage, filterOrder[window.currentFilter]);
+			applyFilter("filters-canvas", window.filterSavedImage, filterOrder[window.currentFilter]);
 			window.currentFilter++;
 		});
 
