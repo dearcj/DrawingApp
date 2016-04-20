@@ -68,14 +68,6 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-publication').click(function() {
 		window.currentState = window.location.href;
-		for (var i=0; i<4, i++) {
-			var randomIntLeft = getRandomInt(1, 12);
-			var randomIntRight = getRandomInt(1, 12);
-			$('ul.paintings.left-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntLeft + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + i + ') li').css('background', 'url(' + imgPath + '/painting-' + randomIntRight + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntLeft + '.jpg');
-			$('ul.paintings.right-side a:nth-child(' + i + ')').attr('href', imgPath + '/painting-' + randomIntRight + '.jpg');
-		}
 		openPage('publication', 'painting', 'filters');
 	});
 
