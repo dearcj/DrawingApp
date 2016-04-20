@@ -271,8 +271,8 @@ jQuery(document).ready(function($) {
 
 			window.currentImgPic = res.file;
 			document.getElementById('your-painting').src = res.image;
-			document.getElementById('painting-title').textContent = res.name;
-			document.getElementById('painting-author').textContent = "фывфыв";
+			document.getElementById('painting-title').textContent = res.description;
+			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = res.tags;
 		});
 	});
