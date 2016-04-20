@@ -282,7 +282,7 @@ jQuery(document).ready(function($) {
 		window.mainCanvasObject.sendPic();
 
 
-		vent.preventDefault();
+		event.preventDefault();
 		if ($(this).prev().find("input").val() == "" || $(this).prev().find("input").val() == "Напишите название работы") {
 			$(this).prev().find("input").css("color", "#FF0000");
 			$(this).prev().find("input").css("border", "1px solid #FF0000");

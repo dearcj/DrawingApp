@@ -137,8 +137,8 @@ Canvas.prototype.sendPic = function() {
 			api_method: 'applyimagetogallery',
 			user_id: 1,
 			image: this.saveImage(),
-			name: "dasd",
-			description: "asdasdasd",
+			name: $('#in-author').val(),
+			description: $('#in-label').val(),
 			tags: this.tags.join(';')
 		};
 
