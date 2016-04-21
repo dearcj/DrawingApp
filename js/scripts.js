@@ -93,6 +93,12 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
+	if (this.location.hash != '') {
+		window.currentHash = history.state;
+	} else {
+		window.currentHash = { hash: 'index' };
+	}
+
 	switch (currentHash.hash) {
 		case 'index':
 			openPage('index');
