@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName) {
-		if (href.indexOf('?') < 0) {
+		if (href.indexOf('u') < 0 && href.indexOf('t') < 0) {
 			history.pushState(stateObj, "redirect", "#index");
 		} else if (href.indexOf(pageName) > 0) {
 			openPage(pageName);
@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
 	$('.go-to-filters').click(function() {
 		window.currentState = window.location.href;
 		openPage('filters');
-		$('.filters-canvas p').fadeIn(5000).removeClass('hidden');
+		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-publication').click(function() {
