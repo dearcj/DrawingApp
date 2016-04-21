@@ -29,21 +29,18 @@ var initApplication = function() {
   brushOrange.mode = 1;
 
   document.getElementById('btn-scotch').addEventListener('click', function() {
-    document.getElementById('btn-scotch').style.backgroundColor = 'red';
     brushScotch.mode = 3;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
   });
 
   document.getElementById('btn-scotch-1').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushScotch.mode = 1;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
   })
 
   document.getElementById('btn-scotch-2').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushScotch.mode = 2;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
@@ -56,21 +53,18 @@ var initApplication = function() {
   })*/
 
   document.getElementById('btn-coal-1').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushCoal.mode = 1;
     canvas.currentBrush = brushCoal;
     brushCoal.onSelect();
   })
 
   document.getElementById('btn-coal-2').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushCoal.mode = 2;
     canvas.currentBrush = brushCoal;
     brushCoal.onSelect();
   })
 
   document.getElementById('btn-grass').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushGrass.mode = 1;
     canvas.currentBrush = brushGrass;
     brushGrass.onSelect();
@@ -78,7 +72,6 @@ var initApplication = function() {
   })
 
   document.getElementById('btn-orange').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushOrange.mode = 1;
     canvas.currentBrush = brushOrange;
     brushOrange.onSelect();
@@ -86,7 +79,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-denim-1').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushDenim.mode = 1;
     canvas.currentBrush = brushDenim;
     brushDenim.onSelect();
@@ -94,7 +86,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-denim-2').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushDenim.mode = 2;
     canvas.currentBrush = brushDenim;
     brushDenim.onSelect();
@@ -102,7 +93,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-denim-3').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushDenim.mode = 3;
     canvas.currentBrush = brushDenim;
     brushDenim.onSelect();
@@ -110,7 +100,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-catchup').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushCatchup.mode = 1;
     canvas.currentBrush = brushCatchup;
     brushCatchup.onSelect();
@@ -118,7 +107,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-needle').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushThread.mode = 1;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -126,7 +114,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-1').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushThread.mode = 1;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -134,7 +121,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-2').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushThread.mode = 2;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -142,7 +128,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-3').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushThread.mode = 3;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -150,7 +135,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-4').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushThread.mode = 4;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -158,7 +142,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-5').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushThread.mode = 5;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -166,7 +149,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-6').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushThread.mode = 6;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -174,7 +156,6 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-7').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushThread.mode = 7;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -183,7 +164,6 @@ var initApplication = function() {
 
 
   document.getElementById('btn-pistol').addEventListener('click', function() {
-    this.css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
     brushPistol.mode = 1;
     canvas.currentBrush = brushPistol;
     brushPistol.onSelect();
