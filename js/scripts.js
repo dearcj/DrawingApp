@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
 
 	var mainUrl = 'http://188.227.16.35/';
 	var hash = window.location.hash;
-	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
 		var newHref = mainUrl + '#' + pageName;
@@ -25,13 +24,13 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		window.currentHash = history.state;
-		console.log(currentHash.hash);
-		var stateObj = { hash: currentHash.hash };
+		console.log(currentHash);
+		var stateObj = { hash: currentHash };
 
 		if (hash.indexOf(pageName) > 0) {
 			window.currentHash = history.state;
-			console.log(currentHash.hash);
-			var stateObj = { hash: currentHash.hash };
+			console.log(currentHash);
+			var stateObj = { hash: currentHash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
