@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
 		pagesTransition(pageName);
 	}
 
-	function isItHome(pageName) {
+	function refreshOpen(pageName) {
 		if (window.location.hash == '') {
 			var stateObj = { hash: 'index' };
 			history.pushState(stateObj, "redirect", "#index");
@@ -125,12 +125,27 @@ jQuery(document).ready(function($) {
 		if (location.hash != '') {
 			window.hashBeforeReload = history.state;
 		}
-		isItHome('index');
-		isItHome('surface');
-		isItHome('museum');
-		isItHome('painting');
-		isItHome('filters');
-		isItHome('publication');
+
+		switch (location.hash) {
+			case 'index':
+				refreshOpen('index');
+				break;
+			case 'surface':
+				refreshOpen('surface');
+				break;
+			case 'painting':
+				refreshOpen('painting');
+				break;
+			case 'filters':
+				refreshOpen('filters');
+				break;
+			case 'publication':
+				refreshOpen('publication');
+				break;
+			case 'museum':
+				refreshOpen('museum');
+				break;
+		}
 	});
 
 	function setRandomImgs() {
