@@ -134,7 +134,7 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
-	$(window).load(function() {
+	window.load(function() {
 		console.log(currentState);
 		isItHome('index');
 		isItHome('surface');
