@@ -93,7 +93,7 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
-	$(window).load(function() {
+
 		if (this.location.hash != '') {
 			window.hashBeforeReload = history.state;
 		} else {
@@ -120,7 +120,7 @@ jQuery(document).ready(function($) {
 				openPage('museum');
 				break;
 		}
-	});
+
 
 	$('.save-and-send').click(function(event) {
 
