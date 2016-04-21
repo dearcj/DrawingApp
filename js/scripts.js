@@ -34,10 +34,11 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName) {
+		window.currentHash = window.location.hash;
 		if (window.location.hash == '') {
 			history.pushState(stateObj, "redirect", "#index");
 		} else if (hash.indexOf(pageName) > 0) {
-			console.log(window.currentState);
+			console.log(window.currentHash);
 			openPage(pageName);
 		}
 	}
