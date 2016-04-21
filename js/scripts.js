@@ -24,12 +24,12 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 
 		window.currentHash = history.state;
-		console.log(currentHash);
+		console.log(currentHash.hash);
 		var stateObj = { hash: currentHash.hash };
 
 		if (hash.indexOf(pageName) > 0) {
 			window.currentHash = history.state;
-			console.log(currentHash);
+			console.log(currentHash.hash);
 			var stateObj = { hash: currentHash.hash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
