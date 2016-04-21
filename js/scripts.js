@@ -133,8 +133,10 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	$(window).load(function() {
-		var currentHref = history.state;
-		console.log(currentHref.home);
+		if (location.hash != '') {
+			var currentHref = history.state;
+			console.log(currentHref.home);
+		}
 		isItHome('index');
 		isItHome('surface');
 		isItHome('museum');
