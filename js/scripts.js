@@ -54,6 +54,7 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-tools').click(function() {
 		openPage('painting');
+		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-filters').click(function() {
