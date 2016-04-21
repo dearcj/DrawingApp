@@ -10,10 +10,10 @@ jQuery(document).ready(function($) {
 	var hash = window.location.hash;
 
 	function addURL(pageName) {
-		window.currentHash = history.state;
 		var stateObj = { hash: pageName };
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
+		window.currentHash = history.state;
 	}
 
 	function pagesTransition(pageName) {
