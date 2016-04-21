@@ -22,8 +22,6 @@ jQuery(document).ready(function($) {
 	}
 
 	function openPage(pageName) {
-		window.currentHash = history.state;
-
 		if (window.location.hash.indexOf(pageName) > 0) {
 			var stateObj = { hash: currentHash.hash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
