@@ -22,8 +22,6 @@ jQuery(document).ready(function($) {
 	}
 
 	function openPage(pageName) {
-		event.preventDefault();
-
 		window.currentHash = history.state;
 
 		if (window.location.hash.indexOf(pageName) > 0) {
