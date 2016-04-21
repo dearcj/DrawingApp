@@ -12,6 +12,9 @@ jQuery(document).ready(function($) {
 
 	function addURL(pageName) {
 		var newHref = mainUrl + '#' + pageName;
+		console.log(currentState);
+		console.log(window.currentState);
+		var stateObj = { hash: currentState };
 		history.pushState(stateObj, pageName, newHref);
 	}
 
