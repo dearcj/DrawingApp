@@ -98,46 +98,44 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('index') > 0) {
+		if (currentState.indexOf('index') > 0 || hashBeforeReload.hash.indexOf('index') > 0) {
 			openPage('index');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('surface') > 0) {
+		if (currentState.indexOf('surface') > 0 || hashBeforeReload.hash.indexOf('surface') > 0) {
 			openPage('surface');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('painting') > 0) {
+		if (currentState.indexOf('painting') > 0 || hashBeforeReload.hash.indexOf('painting') > 0) {
 			openPage('painting');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('filters') > 0) {
+		if (currentState.indexOf('filters') > 0 || hashBeforeReload.hash.indexOf('filters') > 0) {
 			openPage('filters');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('publication') > 0) {
+		if (currentState.indexOf('publication') > 0 || hashBeforeReload.hash.indexOf('publication') > 0) {
 			openPage('publication');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('museum') > 0) {
+		if (currentState.indexOf('museum') > 0 || hashBeforeReload.hash.indexOf('museum') > 0) {
 			openPage('museum');
 		}
 	}, false);
 
 	$(window).load(function() {
-		if (location.hash != '') {
-			var currentHref = history.state;
-			console.log(currentHref.hash);
-		}
+		window.hashBeforeReload = history.state;
+
 		isItHome('index');
 		isItHome('surface');
 		isItHome('museum');
