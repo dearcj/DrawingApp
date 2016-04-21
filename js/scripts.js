@@ -16,9 +16,9 @@ jQuery(document).ready(function($) {
 	}
 
 	function pagesTransition(pageName) {
+		$('.screens').fadeOut(10).addClass('hidden');
 		$('#' + pageName + '-wrapper').fadeIn(500).removeClass('hidden');
 		$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
-		$('.screens').fadeOut(10).addClass('hidden');
 	}
 
 	function openPage(pageName) {
