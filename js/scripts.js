@@ -135,7 +135,8 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	$(window).load(function() {
-		console.log(window.currentState);
+		var currentHref = history.state;
+		console.log(currentHref);
 		isItHome('index');
 		isItHome('surface');
 		isItHome('museum');
