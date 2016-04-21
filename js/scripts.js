@@ -144,23 +144,19 @@ jQuery(document).ready(function($) {
 
 		for (var j = 1; j < 4; j++) {
 			var randomInt = Math.floor(Math.random()*imgNumbers.length);
-			console.log(randomInt);
-			console.log(imgNumbers[randomInt]);
-			console.log(imgNumbers);
 
 			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
 			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
 
 			imgNumbers.splice(randomInt,1);
 		}
 
 		for (var k = 1; k < 4; k++) {
-			console.log(imgNumbers);
 			var randomInt = Math.floor(Math.random()*imgNumbers.length);
 
 			$('ul.paintings.right-side a:nth-child(' + k + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + k + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + k + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + k + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
 
 			imgNumbers.splice(randomInt,1);
@@ -325,10 +321,7 @@ jQuery(document).ready(function($) {
 	});
 
 	
-	$(".group1").colorbox({rel:'group1', title: function() {
-			return 'Никита Алексеев. «Фонарик». 1991. Холст, акрил, пастель<br><span>В темноте ярко светит фонарик. Он настолько маленький, что освещает совсем немного – видно только как вокруг него идёт снег или дождь. Фонарик висит где-то на улице, и не смотря на свои размеры наверняка будет хорошо виден издалека. Эта небольшая история нарисована художником при помощи всего лишь мелка, который на темном холсте оставляет яркий контрастный след – не зря и для школьных досок используется сочетание белых значков на тёмном фоне – чтобы всем было хорошо видно!';
-		}
-	});
+	$(".group1").colorbox({rel:'group1'});
 
 	// ---------FRONT PAGE BACKGROUND HEIGHT---------
 

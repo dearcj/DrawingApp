@@ -389,7 +389,7 @@ ul#helpers li span p {
     margin: 0;
 }
 
-#index-wrapper {
+ul.paintings.left-side a:nth-child#index-wrapper {
 	overflow: hidden;
 }
 
