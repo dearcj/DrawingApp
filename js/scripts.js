@@ -104,13 +104,13 @@ jQuery(document).ready(function($) {
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('surface') > 0) {
-			history.back();
+			openPage('surface');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('painting') > 0) {
-			history.back();
+			openPage('painting');
 		}
 	}, false);
 
@@ -133,7 +133,7 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	$(window).load(function() {
-		var currentHref = location.hash;
+		var currentHref = history.state;
 		console.log(currentHref);
 		isItHome('index');
 		isItHome('surface');
