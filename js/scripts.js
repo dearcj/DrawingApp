@@ -23,14 +23,9 @@ jQuery(document).ready(function($) {
 	function openPage(pageName) {
 		event.preventDefault();
 
-		window.currentHash = history.state;
-		console.log(currentHash.hash);
 		var stateObj = { hash: currentHash.hash };
 
 		if (hash.indexOf(pageName) > 0) {
-			window.currentHash = history.state;
-			console.log(currentHash.hash);
-			var stateObj = { hash: currentHash.hash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
@@ -64,6 +59,8 @@ jQuery(document).ready(function($) {
 
 
 	$('.go-to-surface').click(function() {
+		window.currentHash = history.state;
+		console.log(currentHash.hash);
 		openPage('surface');
 	});
 
@@ -76,10 +73,14 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
+		window.currentHash = history.state;
+		console.log(currentHash.hash);
 		openPage('museum');
 	});
 
 	$('.go-to-tools').click(function() {
+		window.currentHash = history.state;
+		console.log(currentHash.hash);
 		openPage('painting');
 	});
 
