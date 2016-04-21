@@ -683,12 +683,7 @@ jQuery(document).ready(function($) {
 
 		toolsButtons.css('margin-left', (filtersCanvasWidth - toolsButtonsWidth)/2 + 'px');
 
-		$(window).mouseup(function (e) {
-		    if (!filtersCanvasText.is(e.target) && filtersCanvasText.has(e.target).length === 0)
-		    {
-				filtersCanvasText.fadeOut(500).css('display', 'none');
-		    }
-		});
+		hidingHelpers('.filters-canvas p');
 	}
 
 
