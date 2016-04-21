@@ -8,7 +8,6 @@ jQuery(document).ready(function($) {
 
 	var mainUrl = 'http://188.227.16.35/';
 	var hash = window.location.hash;
-	window.hashBeforeReload = { hash: 'index' };
 
 	function addURL(pageName) {
 		var stateObj = { hash: pageName };
@@ -110,7 +109,8 @@ jQuery(document).ready(function($) {
 	$(window).load(function() {
 		if (this.location.hash != '') {
 			window.hashBeforeReload = history.state;
-			console.log(hashBeforeReload.hash);
+		} else {
+			window.hashBeforeReload = { hash: 'index' };
 		}
 
 		switch (hashBeforeReload.hash) {
