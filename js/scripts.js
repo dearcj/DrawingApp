@@ -134,8 +134,8 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
-	window.load(function() {
-		console.log(currentState);
+	$(window).load(function() {
+		console.log(window.currentState);
 		isItHome('index');
 		isItHome('surface');
 		isItHome('museum');
