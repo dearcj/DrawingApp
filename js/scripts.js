@@ -27,6 +27,7 @@ jQuery(document).ready(function($) {
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
+			console.log('hi');
 		}
 
 		pagesTransition(pageName);
@@ -96,7 +97,6 @@ jQuery(document).ready(function($) {
 	}
 
 	$(window).load(function() {
-
 		switch (currentHash.hash) {
 			case 'index':
 				openPage('index');
