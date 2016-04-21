@@ -29,6 +29,9 @@ jQuery(document).ready(function($) {
 		var stateObj = { hash: currentHash.hash };
 
 		if (hash.indexOf(pageName) > 0) {
+			window.currentHash = history.state;
+			console.log(currentHash.hash);
+			var stateObj = { hash: currentHash.hash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
