@@ -185,10 +185,41 @@ function vkpost(t) {
   var img;
  // ga('send', 'event', 'Social', 'click-postvk');
 
+
+
+
+
   function authInfo(response) {
     if (response.session) {
 
-      VK.api('wall.post', {
+
+      VK.api('wall.getPhotoUploadServer', function (data) {
+        if (data.response) {
+          var uploadUrl = data.response.upload_url;
+          $.post(app.baseUrl + 'upload.php', {uploadUrl: uploadUrl}, function(data) {
+            if (data) {
+              var upload = data;
+              var message = ' Û- Û';
+              VK.api('wall.savePost', {
+                wall_id: response.session.user.id,
+                server: upload.server,
+                photo: upload.photo,
+                hash: upload.hash,
+                message: message
+              }, function (data) {
+                if (data.response) {
+                  VK.addCallback('onWallPostSave', app.onWallPost);
+                  VK.addCallback('onWallPostCancel', app.onWallPost);
+                  VK.callMethod('saveWallPost', data.response.post_hash);
+                }
+              });
+            }
+          }, 'json');
+        }
+      });
+
+
+    /*  VK.api('wall.post', {
         message: t,
       //  attachments: [img, "https://vk.com/app5374624"]
 
@@ -197,7 +228,7 @@ function vkpost(t) {
 
         if (data.response) {
         }
-      });
+      });*/
 
     } else {
     }
