@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
 	var hash = window.location.hash;
 
 	function addURL(pageName) {
+		var stateObj = { hash: currentHash.hash };
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
 	}
@@ -23,9 +24,8 @@ jQuery(document).ready(function($) {
 	function openPage(pageName) {
 		event.preventDefault();
 
-		var stateObj = { hash: currentHash.hash };
-
 		if (hash.indexOf(pageName) > 0) {
+			var stateObj = { hash: hashBeforeReload.hash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
