@@ -29,7 +29,7 @@ var initApplication = function() {
   brushOrange.mode = 1;
 
   document.getElementById('btn-scotch').addEventListener('click', function() {
-    this.style.backgroundColor = 'red';
+    document.getElementById('btn-scotch').style.backgroundColor = 'red';
     brushScotch.mode = 3;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
