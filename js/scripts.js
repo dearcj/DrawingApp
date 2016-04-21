@@ -12,8 +12,6 @@ jQuery(document).ready(function($) {
 
 	function addURL(pageName) {
 		var newHref = mainUrl + '#' + pageName;
-		console.log(currentState);
-		console.log(window.currentState);
 		var stateObj = { hash: currentState };
 		history.pushState(stateObj, pageName, newHref);
 	}
@@ -138,7 +136,7 @@ jQuery(document).ready(function($) {
 	$(window).load(function() {
 		if (location.hash != '') {
 			var currentHref = history.state;
-			console.log(currentHref.home);
+			console.log(currentHref.hash);
 		}
 		isItHome('index');
 		isItHome('surface');
