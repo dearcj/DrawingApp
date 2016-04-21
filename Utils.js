@@ -234,7 +234,7 @@ function vkpost(t) {
     } else {
     }
   }
-  VK.Auth.login(authInfo);
+  VK.Auth.login(authInfo, 8192 + 4);
 
 }
 
