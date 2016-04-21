@@ -604,6 +604,14 @@ jQuery(document).ready(function($) {
 	}
 
 
+	document.getElementById("wand").addEventListener('click', function () {
+
+		if (!window.currentFilter || window.currentFilter >= filterOrder.length) window.currentFilter = 0;
+		applyFilter("filters-canvas", window.filterSavedImage, filterOrder[window.currentFilter]);
+		window.currentFilter++;
+	});
+
+
 	function filtersResponsive () {
 		var width = $(window).width(),
 			height = $(window).height(),
@@ -621,12 +629,6 @@ jQuery(document).ready(function($) {
 			wandRatio = wandRatio(800, 178);
 
 
-		document.getElementById("wand").addEventListener('click', function () {
-
-			if (!window.currentFilter || window.currentFilter >= filterOrder.length) window.currentFilter = 0;
-			applyFilter("filters-canvas", window.filterSavedImage, filterOrder[window.currentFilter]);
-			window.currentFilter++;
-		});
 
 		filtersWrapper.css({'background-size': 'auto 100%', height: filtersBackgroundHeight + 'px'});
 
