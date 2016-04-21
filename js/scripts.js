@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
 
 	function isItHome(pageName) {
 		if (window.location.hash == '') {
-			var stateObj = { hash: '#index' };
+			var stateObj = { hash: 'index' };
 			history.pushState(stateObj, "redirect", "#index");
 		} else if (hash.indexOf(pageName) > 0) {
 			openPage(pageName);
@@ -85,6 +85,8 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-filters').click(function() {
+		window.currentHash = history.state;
+		console.log(currentHash.hash);
 		openPage('filters');
 		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
 	});
