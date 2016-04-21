@@ -20,6 +20,14 @@
     <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/colorbox.css">
     <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/mmoma.css">
 
+    <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        VK.init({
+            apiId: 5413948
+        });
+    </script>
+
+
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
           <script src="http://188.227.16.35/wp-content/themes/mmoma/js/jsmanipulate.min.js"></script>
 
@@ -311,7 +319,7 @@
           <div class="social-buttons">
             <span>Рассказать друзьям</span>
               <ul>
-                <li class="vk"></li>
+                <li id='post-vk' class="vk"></li>
                 <li id='post-fb' class="fb"></li>
               </ul>
           </div>
