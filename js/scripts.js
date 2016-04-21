@@ -34,6 +34,7 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.go-to-surface').click(function() {
+		window.currentHash = {hash: 'surface'};
 		openPage('surface');
 	});
 
@@ -45,25 +46,30 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
+		window.currentHash = {hash: 'museum'};
 		openPage('museum');
 	});
 
 	$('.go-to-tools').click(function() {
+		window.currentHash = {hash: 'painting'};
 		openPage('painting');
 		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-filters').click(function() {
+		window.currentHash = {hash: 'filters'};
 		openPage('filters');
 		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-publication').click(function() {
+		window.currentHash = {hash: 'publication'};
 		document.getElementById('painting-img').src = window.savedImage;
 		openPage('publication');
 	});
 
 	$('.go-to-home').click(function() {
+		window.currentHash = {hash: 'index'};
 		openPage('index');
 	});
 
@@ -90,7 +96,9 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
-
+	if (window.location.hash != '') {
+		window.currentHash = {hash: 'index'};
+	}
 
 	$(window).load(function() {
 		switch (currentHash.hash) {
