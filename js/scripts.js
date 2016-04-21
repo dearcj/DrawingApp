@@ -134,12 +134,15 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
-	isItHome('index');
-	isItHome('surface');
-	isItHome('museum');
-	isItHome('painting');
-	isItHome('filters');
-	isItHome('publication');
+	$(window).load(function() {
+		console.log(currentState);
+		isItHome('index');
+		isItHome('surface');
+		isItHome('museum');
+		isItHome('painting');
+		isItHome('filters');
+		isItHome('publication');
+	});
 
 	function setRandomImgs() {
 		var imgNumbers = [];
