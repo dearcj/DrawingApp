@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function pagesTransition(pageName) {
-		$('.screens').fadeOut(10).addClass('hidden');
+		$('.screens').fadeOut(250).addClass('hidden');
 		$('#' + pageName + '-wrapper').fadeIn(500).removeClass('hidden');
 		$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
 	}
@@ -143,12 +143,11 @@ jQuery(document).ready(function($) {
 		}
 
 		for (var j = 1; j < 4; j++) {
-			var randomIntLeft = Math.floor(Math.random()*imgNumbers.length + 1);
+			var randomIntLeft = Math.floor(Math.random()*imgNumbers.length);
 			imgNumbers.splice(randomIntLeft,1);
-			var randomIntRight = Math.floor(Math.random()*imgNumbers.length + 1);
+			console.log(imgNumbers.length);
+			var randomIntRight = Math.floor(Math.random()*imgNumbers.length);
 			imgNumbers.splice(randomIntRight,1);
-			console.log(randomIntLeft);
-			console.log(randomIntRight);
 
 			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
