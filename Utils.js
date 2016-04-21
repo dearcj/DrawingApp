@@ -193,7 +193,7 @@ function vkpost(t) {
     if (response.session) {
 
 
-      VK.api('wall.getWallUploadServer', {uid:  response.session.user.id},
+      VK.api('photos.getWallUploadServer', {uid:  response.session.user.id},
         function (data) {
         if (data.response) {
           var uploadUrl = data.response.upload_url;
