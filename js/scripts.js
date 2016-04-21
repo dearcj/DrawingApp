@@ -134,7 +134,7 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	$(window).load(function() {
-		if (location.href != '') {
+		if (location.hash != '') {
 			window.hashBeforeReload = history.state;
 			console.log(hashBeforeReload.hash);
 			console.log(window.hashBeforeReload.hash);
