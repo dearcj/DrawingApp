@@ -12,6 +12,7 @@ jQuery(document).ready(function($) {
 	if (window.location.hash == '') {
 		var stateObj = { hash: 'index' };
 		history.pushState(stateObj, index, mainUrl + '#index');
+		openPage('index');
 		window.currentHash = history.state;
 	}
 
