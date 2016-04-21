@@ -686,7 +686,7 @@ jQuery(document).ready(function($) {
 		$(window).mouseup(function (e) {
 		    if (!filtersCanvasText.is(e.target) && filtersCanvasText.has(e.target).length === 0)
 		    {
-				filtersCanvasText.fadeOut(500).css({'display': 'inline-block', 'opacity': 0});
+				filtersCanvasText.fadeOut(500).css('display', 'none');
 		    }
 		});
 	}
