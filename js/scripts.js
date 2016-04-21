@@ -60,7 +60,6 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-surface').click(function() {
 		window.currentHash = history.state;
-		console.log(currentHash.hash);
 		openPage('surface');
 	});
 
@@ -74,51 +73,54 @@ jQuery(document).ready(function($) {
 		}
 
 		window.currentHash = history.state;
-		console.log(currentHash.hash);
 		openPage('museum');
 	});
 
 	$('.go-to-tools').click(function() {
 		window.currentHash = history.state;
-		console.log(currentHash.hash);
 		openPage('painting');
 	});
 
 	$('.go-to-filters').click(function() {
 		window.currentHash = history.state;
-		console.log(currentHash.hash);
 		openPage('filters');
 		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-publication').click(function() {
+		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
 		openPage('publication');
 	});
 
 	$('.go-to-home').click(function() {
+		window.currentHash = history.state;
 		openPage('index');
 	});
 
 	window.addEventListener("popstate", function(e) {
+		console.log(currentHash.hash);
 		if (currentHash.hash.indexOf('index') > 0) {
 			openPage('index');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
+		console.log(currentHash.hash);
 		if (currentHash.hash.indexOf('surface') > 0) {
 			openPage('surface');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
+		console.log(currentHash.hash);
 		if (currentHash.hash.indexOf('painting') > 0) {
 			openPage('painting');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
+		console.log(currentHash.hash);
 		if (currentHash.hash.indexOf('filters') > 0) {
 			openPage('filters');
 		}
