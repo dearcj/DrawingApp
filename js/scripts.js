@@ -108,6 +108,7 @@ jQuery(document).ready(function($) {
 	window.addEventListener("popstate", function(e) {
 		console.log(currentHash.hash);
 		if (currentHash.hash.indexOf('surface') > 0) {
+			console.log('hi');
 			openPage('surface');
 		}
 	}, false);
