@@ -8,6 +8,7 @@ jQuery(document).ready(function($) {
 
 	var mainUrl = 'http://188.227.16.35/';
 	var hash = window.location.hash;
+	window.currentHash = { hash: index };
 
 	function addURL(pageName) {
 		var stateObj = { hash: pageName };
@@ -42,21 +43,6 @@ jQuery(document).ready(function($) {
 			openPage(pageName);
 		}
 	}
-
-
-	$('.save-and-send').click(function(event) {
-
-		event.preventDefault();
-		if ($(this).prev().find("input").val() == "" || $(this).prev().find("input").val() == "Напишите название работы") {
-			$(this).prev().find("input").css("color", "#FF0000");
-			$(this).prev().find("input").css("border", "1px solid #FF0000");
-			return false;
-		} else {
-
-			//	$('#museum-wrapper .painting-info span.title').html($(this).prev().find('input').val());
-		}
-	});
-
 
 	$('.go-to-surface').click(function() {
 		window.currentHash = history.state;
@@ -122,11 +108,12 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	$(window).load(function() {
-		if (location.hash != '') {
+		if (this.location.hash != '') {
 			window.hashBeforeReload = history.state;
+			console.log(hashBeforeReload.hash);
 		}
 
-		switch (location.hash) {
+		switch (this.location.hash) {
 			case 'index':
 				refreshOpen('index');
 				break;
@@ -145,6 +132,19 @@ jQuery(document).ready(function($) {
 			case 'museum':
 				refreshOpen('museum');
 				break;
+		}
+	});
+
+	$('.save-and-send').click(function(event) {
+
+		event.preventDefault();
+		if ($(this).prev().find("input").val() == "" || $(this).prev().find("input").val() == "Напишите название работы") {
+			$(this).prev().find("input").css("color", "#FF0000");
+			$(this).prev().find("input").css("border", "1px solid #FF0000");
+			return false;
+		} else {
+
+			//	$('#museum-wrapper .painting-info span.title').html($(this).prev().find('input').val());
 		}
 	});
 
