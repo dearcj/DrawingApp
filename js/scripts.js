@@ -28,7 +28,6 @@ jQuery(document).ready(function($) {
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
-			console.log('hi');
 		}
 
 		pagesTransition(pageName);
