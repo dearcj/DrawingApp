@@ -25,12 +25,12 @@ jQuery(document).ready(function($) {
 
 		window.currentHash = history.state;
 		console.log(currentHash);
-		var stateObj = { hash: currentHash };
+		var stateObj = { currentHash };
 
 		if (hash.indexOf(pageName) > 0) {
 			window.currentHash = history.state;
 			console.log(currentHash);
-			var stateObj = { hash: currentHash };
+			var stateObj = { currentHash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
