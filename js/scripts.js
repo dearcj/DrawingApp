@@ -112,7 +112,7 @@ jQuery(document).ready(function($) {
 			console.log(hashBeforeReload.hash);
 		}
 
-		switch (this.location.hash) {
+		switch (hashBeforeReload.hash) {
 			case 'index':
 				refreshOpen('index');
 				break;
