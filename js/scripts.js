@@ -85,6 +85,7 @@ jQuery(document).ready(function($) {
 	$('.go-to-filters').click(function() {
 		window.currentState = window.location.href;
 		openPage('filters');
+		$('.filters-canvas p').css('display', 'block');
 	});
 
 	$('.go-to-publication').click(function() {
