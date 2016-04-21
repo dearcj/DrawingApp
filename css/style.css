@@ -874,7 +874,7 @@ ul.tools li#btn-scotch {
 	margin: -10px auto 0;
 }
 
-ul.tools li#btn-scotch.active {
+ul.tools li#btn-scotch.scotch-active {
 	background: url(../img/tools/scotch-hover.png) no-repeat;
 }
 
