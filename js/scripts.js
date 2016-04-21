@@ -134,9 +134,11 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	$(window).load(function() {
-		window.hashBeforeReload = history.state;
-		console.log(hashBeforeReload.hash);
-		console.log(window.hashBeforeReload.hash);
+		if (location.href != '') {
+			window.hashBeforeReload = history.state;
+			console.log(hashBeforeReload.hash);
+			console.log(window.hashBeforeReload.hash);
+		}
 
 		isItHome('index');
 		isItHome('surface');
