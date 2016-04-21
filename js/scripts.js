@@ -104,8 +104,7 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		console.log(window.hashBeforeReload);
-		console.log(hashBeforeReload);
+		console.log(hashBeforeReload.hash);
 		if (currentState.indexOf('surface') > 0 || hashBeforeReload.hash.indexOf('surface') > 0) {
 			openPage('surface');
 		}
