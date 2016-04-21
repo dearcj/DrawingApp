@@ -135,8 +135,10 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	$(window).load(function() {
-		var currentHref = history.state;
-		console.log(currentHref.url);
+		if (window.location.hash != '') {
+			var currentHref = history.state;
+			console.log(currentHref.url);
+		}
 		isItHome('index');
 		isItHome('surface');
 		isItHome('museum');
