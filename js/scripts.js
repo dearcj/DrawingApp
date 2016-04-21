@@ -73,6 +73,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
+		console.log(currentHash.hash);
 		switch (currentHash.hash) {
 			case 'index':
 				openPage('index');
