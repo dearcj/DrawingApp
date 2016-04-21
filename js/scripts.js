@@ -138,8 +138,8 @@ jQuery(document).ready(function($) {
 		var imgNumbers = [];
 		var n = 6;
 
-		for (var i = 1; i <= n; i++) {
-			imgNumbers[i] = i;
+		for (var i = 0; i < n; i++) {
+			imgNumbers[i] = i+1;
 		}
 
 		console.log(imgNumbers.length);
