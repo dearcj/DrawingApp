@@ -11,6 +11,8 @@ jQuery(document).ready(function($) {
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
+		window.currentHash = history.state;
+		console.log(currentHash.hash);
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
 	}
