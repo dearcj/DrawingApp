@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
 
 
 	$('.go-to-surface').click(function() {
-		window.currentState = window.location.hash;
+		window.hashBeforeSwitch = history.state;
 		openPage('surface');
 	});
 
@@ -71,12 +71,12 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
-		window.currentState = window.location.hash;
+		window.hashBeforeSwitch = history.state;
 		openPage('museum');
 	});
 
 	$('.go-to-tools').click(function() {
-		window.currentState = window.location.hash;
+		window.hashBeforeSwitch = history.state;
 		openPage('painting');
 	});
 
@@ -87,49 +87,50 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-publication').click(function() {
-		window.currentState = window.location.hash;
+		window.hashBeforeSwitch = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
 		openPage('publication');
 	});
 
 	$('.go-to-home').click(function() {
-		window.currentState = window.location.hash;
+		window.hashBeforeSwitch = history.state;
 		openPage('index');
 	});
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('index') > 0 || hashBeforeReload.hash.indexOf('index') > 0) {
+		if (hashBeforeSwitch.hash.indexOf('index') > 0 || hashBeforeReload.hash.indexOf('index') > 0) {
 			openPage('index');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
 		console.log(hashBeforeReload.hash);
-		if (currentState.indexOf('surface') > 0 || hashBeforeReload.hash.indexOf('surface') > 0) {
+		console.log(hashBeforeSwitch.hash);
+		if (hashBeforeSwitch.hash.indexOf('surface') > 0 || hashBeforeReload.hash.indexOf('surface') > 0) {
 			openPage('surface');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('painting') > 0 || hashBeforeReload.hash.indexOf('painting') > 0) {
+		if (hashBeforeSwitch.hash.indexOf('painting') > 0 || hashBeforeReload.hash.indexOf('painting') > 0) {
 			openPage('painting');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('filters') > 0 || hashBeforeReload.hash.indexOf('filters') > 0) {
+		if (hashBeforeSwitch.hash.indexOf('filters') > 0 || hashBeforeReload.hash.indexOf('filters') > 0) {
 			openPage('filters');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('publication') > 0 || hashBeforeReload.hash.indexOf('publication') > 0) {
+		if (hashBeforeSwitch.hash.indexOf('publication') > 0 || hashBeforeReload.hash.indexOf('publication') > 0) {
 			openPage('publication');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		if (currentState.indexOf('museum') > 0 || hashBeforeReload.hash.indexOf('museum') > 0) {
+		if (hashBeforeSwitch.hash.indexOf('museum') > 0 || hashBeforeReload.hash.indexOf('museum') > 0) {
 			openPage('museum');
 		}
 	}, false);
