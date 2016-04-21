@@ -34,15 +34,6 @@ jQuery(document).ready(function($) {
 		pagesTransition(pageName);
 	}
 
-	function refreshOpen(pageName) {
-		if (window.location.hash == '') {
-			var stateObj = { hash: 'index' };
-			history.pushState(stateObj, "redirect", "#index");
-		} else if (hash.indexOf(pageName) > 0) {
-			openPage(pageName);
-		}
-	}
-
 	$('.go-to-surface').click(function() {
 		window.currentHash = history.state;
 		openPage('surface');
@@ -115,22 +106,22 @@ jQuery(document).ready(function($) {
 
 		switch (hashBeforeReload.hash) {
 			case 'index':
-				refreshOpen('index');
+				openPage('index');
 				break;
 			case 'surface':
-				refreshOpen('surface');
+				openPage('surface');
 				break;
 			case 'painting':
-				refreshOpen('painting');
+				openPage('painting');
 				break;
 			case 'filters':
-				refreshOpen('filters');
+				openPage('filters');
 				break;
 			case 'publication':
-				refreshOpen('publication');
+				openPage('publication');
 				break;
 			case 'museum':
-				refreshOpen('museum');
+				openPage('museum');
 				break;
 		}
 	});
