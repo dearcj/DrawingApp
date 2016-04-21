@@ -4,6 +4,10 @@ window.selectedSurface = 1;
 
 jQuery(document).ready(function($) {
 
+	$('ul.tools > li').click(function() {
+		$(this).css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
+	});
+
 	//--------------ROUTING---------------
 
 	var mainUrl = 'http://188.227.16.35/';
