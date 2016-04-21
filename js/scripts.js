@@ -136,25 +136,32 @@ jQuery(document).ready(function($) {
 
 	function setRandomImgs() {
 		var imgNumbers = [];
-		var n = 12;
+		var n = 6;
 
 		for (var i = 1; i <= n; i++) {
 			imgNumbers[i] = i;
 		}
 
 		for (var j = 1; j < 4; j++) {
-			var randomIntLeft = Math.floor(Math.random()*imgNumbers.length);
-			imgNumbers.splice(randomIntLeft,1);
-			console.log(imgNumbers.length);
-			var randomIntRight = Math.floor(Math.random()*imgNumbers.length);
-			imgNumbers.splice(randomIntRight,1);
+			var randomInt = Math.floor(Math.random()*imgNumbers.length);
+			console.log(randomInt);
+			imgNumbers.splice(randomInt,1);
 
-			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + randomIntLeft + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + randomIntRight + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntLeft + '.jpg');
-			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + randomIntRight + '.jpg');
+			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
+			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
+		}
+
+		console.log('hi');
+		console.log(imgNumbers.length);
+
+		for (var k = 1; k < 4; k++) {
+			var randomInt = Math.floor(Math.random()*imgNumbers.length);
+			imgNumbers.splice(randomInt,1);
+
+			$('ul.paintings.right-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
+			$('ul.paintings.right-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
 		}
 	}
 
