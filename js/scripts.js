@@ -37,8 +37,8 @@ jQuery(document).ready(function($) {
 		if (window.location.hash == '') {
 			history.pushState(stateObj, "redirect", "#index");
 		} else if (hash.indexOf(pageName) > 0) {
+			console.log(window.currentState);
 			openPage(pageName);
-			console.log(currentState);
 		}
 	}
 
