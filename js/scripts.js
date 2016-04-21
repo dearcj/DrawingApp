@@ -10,10 +10,10 @@ jQuery(document).ready(function($) {
 	var hash = window.location.hash;
 
 	function addURL(pageName) {
-		window.currentHash = history.state;
 		var stateObj = { hash: pageName };
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
+		window.currentHash = history.state;
 	}
 
 	function pagesTransition(pageName) {
@@ -28,7 +28,6 @@ jQuery(document).ready(function($) {
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
-			console.log('hi');
 		}
 
 		pagesTransition(pageName);
@@ -73,6 +72,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
+		console.log(currentHash.hash);
 		switch (currentHash.hash) {
 			case 'index':
 				openPage('index');
