@@ -142,6 +142,8 @@ jQuery(document).ready(function($) {
 			imgNumbers[i] = i;
 		}
 
+		console.log(imgNumbers.length);
+
 		for (var j = 1; j < 4; j++) {
 			var randomInt = Math.floor(Math.random()*imgNumbers.length);
 			console.log(randomInt);
