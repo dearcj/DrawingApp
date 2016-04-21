@@ -155,6 +155,7 @@ jQuery(document).ready(function($) {
 		}
 
 		for (var k = 1; k < 4; k++) {
+			console.log(imgNumbers);
 			var randomInt = Math.floor(Math.random()*imgNumbers.length);
 			imgNumbers.splice(randomInt,1);
 
