@@ -238,7 +238,7 @@
           <div class="filters-canvas">
             <canvas id="filters-canvas" width="750px" height="530px"></canvas>
 
-            <p class="hidden">Добавь немного Волшебства!</p>
+            <p>Добавь немного Волшебства!</p>
 
             <ul class="tools-buttons filters-tb">
               <li class="go-to-tools back-to-tools"><a href="#"></a></li>
