@@ -139,12 +139,12 @@ jQuery(document).ready(function($) {
 		var n = 6;
 
 		for (var i = 0; i < n; i++) {
-			imgNumbers[i] = i+1;
+			imgNumbers[i] = i;
 		}
 
 		for (var j = 1; j < 4; j++) {
 			var randomInt = Math.floor(Math.random()*imgNumbers.length) + 1;
-			imgNumbers.splice(randomInt-1,1);
+			imgNumbers.splice(randomInt,1);
 			console.log(randomInt);
 			console.log(imgNumbers);
 
