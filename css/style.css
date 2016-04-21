@@ -1705,7 +1705,7 @@ ul.logotypes li a {
     line-height: 20px;
     font-size: 15px;
     color: black !important;
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
     padding: 20px 0 25px;
 }
 
@@ -1714,7 +1714,7 @@ ul.logotypes li a {
 	top: 5px;
 	font-size: 12px;
 	display: block;
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 }
 
