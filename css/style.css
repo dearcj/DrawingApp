@@ -869,21 +869,17 @@ ul.tools li#btn-scotch {
 	background: url(../img/tools/scotch.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 141px;
-	height: 100px;
+	width: 137px;
+	height: 96px;
 	margin: -10px auto 0;
-}
-
-ul.tools li#btn-scotch.scotch-active {
-	background: url(../img/tools/scotch-hover.png) no-repeat;
 }
 
 ul.tools li#btn-scotch-1 {
 	background: url(../img/tools/scotch-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 98px;
-	height: 20px;
+	width: 108px;
+	height: 30px;
 	margin-top: 15px;
 	margin-right: 12px;
 	float: right;
@@ -893,28 +889,28 @@ ul.tools li#btn-scotch-2 {
 	background: url(../img/tools/scotch-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 98px;
-	height: 20px;
+	width: 107px;
+	height: 29px;
 	margin-top: 5px;
 	margin-right: 12px;
 	float: right;
 }
 
-ul.tools li#btn-scotch-3 {
-	background: url(../img/tools/scotch-3.png) no-repeat;
-	background-size: 100%;
-	background-position: 50% 50%;
-	width: 90px;
-	height: 13px;
-	margin: 4px auto 0;
-}
+/*ul.tools li#btn-scotch-3 {*/
+	/*background: url(../img/tools/scotch-3.png) no-repeat;*/
+	/*background-size: 100%;*/
+	/*background-position: 50% 50%;*/
+	/*width: 90px;*/
+	/*height: 13px;*/
+	/*margin: 4px auto 0;*/
+/*}*/
 
 ul.tools li#btn-coal-1 {
 	background: url(../img/tools/chalk-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 58px;
-	height: 146px;
+	width: 43px;
+	height: 106px;
 	float: left;
 }
 
@@ -922,8 +918,8 @@ ul.tools li#btn-coal-2 {
 	background: url(../img/tools/chalk-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 58px;
-	height: 146px;
+	width: 43px;
+	height: 106px;
 	float: left;
 }
 
@@ -931,24 +927,24 @@ ul.tools li#btn-grass {
 	background: url(../img/tools/grass.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 149px;
-	height: 149px;
+	width: 106px;
+	height: 108px;
 }
 
 ul.tools li#btn-orange {
 	background: url(../img/tools/orange.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 149px;
-	height: 149px;
+	width: 111px;
+	height: 97px;
 }
 
 ul.tools li#btn-denim-1 {
 	background: url(../img/tools/denim-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 78px;
-	height: 78px;
+	width: 76px;
+	height: 76px;
 	float: left;
 }
 
@@ -956,8 +952,8 @@ ul.tools li#btn-denim-2 {
 	background: url(../img/tools/denim-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 78px;
-	height: 78px;
+	width: 76px;
+	height: 76px;
 	float: right;
 }
 
@@ -965,8 +961,8 @@ ul.tools li#btn-denim-3 {
 	background: url(../img/tools/denim-3.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 78px;
-	height: 78px;
+	width: 76px;
+	height: 76px;
 	clear: both;
 	margin: 0 auto;
 	position: relative;
@@ -976,16 +972,16 @@ ul.tools li#btn-catchup {
 	background: url(../img/tools/ketchup.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 149px;
-	height: 149px;
+	width: 128px;
+	height: 64px;
 }
 
 ul.tools li#btn-needle {
 	background: url(../img/tools/needle.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 80px;
-	height: 74px;
+	width: 127px;
+	height: 101px;
 	margin: 25px auto 10px;
 }
 
@@ -993,8 +989,8 @@ ul.tools li#btn-thread-1 {
 	background: url(../img/tools/thread-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 11px;
-	height: 11px;
+	width: 20px;
+	height: 20px;
 	margin: 0 2px 0 23px;
 	clear: both;
 }
@@ -1003,8 +999,8 @@ ul.tools li#btn-thread-2 {
 	background: url(../img/tools/thread-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 11px;
-	height: 11px;
+	width: 20px;
+	height: 20px;
 	margin: 0 2px;
 }
 
@@ -1012,8 +1008,8 @@ ul.tools li#btn-thread-3 {
 	background: url(../img/tools/thread-3.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 11px;
-	height: 11px;
+	width: 20px;
+	height: 20px;
 	margin: 0 2px;
 }
 
@@ -1021,8 +1017,8 @@ ul.tools li#btn-thread-4 {
 	background: url(../img/tools/thread-4.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 11px;
-	height: 11px;
+	width: 20px;
+	height: 20px;
 	margin: 0 2px;
 }
 
@@ -1030,8 +1026,8 @@ ul.tools li#btn-thread-5 {
 	background: url(../img/tools/thread-5.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 11px;
-	height: 11px;
+	width: 20px;
+	height: 20px;
 	margin: 0 2px;
 }
 
@@ -1039,8 +1035,8 @@ ul.tools li#btn-thread-6 {
 	background: url(../img/tools/thread-6.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 11px;
-	height: 11px;
+	width: 20px;
+	height: 20px;
 	margin: 0 2px;
 }
 
@@ -1048,8 +1044,8 @@ ul.tools li#btn-thread-7 {
 	background: url(../img/tools/thread-7.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 11px;
-	height: 11px;
+	width: 20px;
+	height: 20px;
 	margin: 0 2px;
 }
 
@@ -1061,8 +1057,88 @@ ul.tools li#btn-pistol {
 	background: url(../img/tools/gun.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 149px;
-	height: 149px;
+	width: 103px;
+	height: 80px;
+}
+
+ul.tools li#btn-scotch.scotch-active.active {
+	background: url(../img/tools/scotch-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.scotch-1-active.active {
+	background: url(../img/tools/scotch-1-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.scotch-2-active.active {
+	background: url(../img/tools/scotch-2-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.coal-1-active.active {
+	background: url(../img/tools/chalk-1-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.coal-2-active.active {
+	background: url(../img/tools/chalk-2-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.grass-active.active {
+	background: url(../img/tools/grass-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.orange-active.active {
+	background: url(../img/tools/orange-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.denim-1-active.active {
+	background: url(../img/tools/denim-1-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.denim-2-active.active {
+	background: url(../img/tools/denim-2-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.denim-3-active.active {
+	background: url(../img/tools/denim-3-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.catchup-active.active {
+	background: url(../img/tools/ketchup-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.needle-active.active {
+	background: url(../img/tools/needle-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.thread-1-active.active {
+	background: url(../img/tools/thread-1-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.thread-2-active.active {
+	background: url(../img/tools/thread-2-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.thread-3-active.active {
+	background: url(../img/tools/thread-3-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.thread-4-active.active {
+	background: url(../img/tools/thread-4-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.thread-5-active.active {
+	background: url(../img/tools/thread-5-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.thread-6-active.active {
+	background: url(../img/tools/thread-6-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.thread-7-active.active {
+	background: url(../img/tools/thread-7-hover.png) no-repeat;
+}
+
+ul.tools li#btn-scotch.pistol-active.active {
+	background: url(../img/tools/gun-hover.png) no-repeat;
 }
 
 ul.tools li#btn-scotch:hover,
