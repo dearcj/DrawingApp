@@ -837,6 +837,9 @@ ul.tools > li {
 	position: relative;
 	width: 149px;
 	height: 149px;
+	-webkit-box-shadow: 0px 0px 25px 5px rgba(255,221,0,0.9);
+	-moz-box-shadow: 0px 0px 25px 5px rgba(255,221,0,0.9);
+	box-shadow: 0px 0px 25px 5px rgba(255,221,0,0.9);
 }
 
 ul.tools > li#scotch > ul,
