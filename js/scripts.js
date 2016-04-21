@@ -4,6 +4,8 @@ window.selectedSurface = 1;
 
 jQuery(document).ready(function($) {
 
+	$('ul.tools > li#btn-orange').css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
+
 	$('ul.tools > li').click(function() {
 		$('ul.tools > li').css({'-webkit-box-shadow': 'none', '-moz-box-shadow': 'none', 'box-shadow': 'none'});
 		$(this).css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
