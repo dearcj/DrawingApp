@@ -22,11 +22,9 @@ jQuery(document).ready(function($) {
 	}
 
 	function openPage(pageName) {
-		event.preventDefault();
-
 		window.currentHash = history.state;
 
-		if (hash.indexOf(pageName) > 0) {
+		if (window.location.hash.indexOf(pageName) > 0) {
 			var stateObj = { hash: currentHash.hash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
