@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 	//--------------ROUTING---------------
 
 	var mainUrl = 'http://188.227.16.35/';
-	var href = window.location.href;
+	var hash = window.location.hash;
 	var stateObj = { home: "screen" };
 
 	function addURL(pageName) {
@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 	function openPage(pageName) {
 		event.preventDefault();
 
-		if (href.indexOf(pageName) + 1) {
+		if (hash.indexOf(pageName) > 0) {
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
@@ -34,9 +34,9 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName) {
-		if (href.indexOf('#') < 0) {
+		if (window.location.hash == '') {
 			history.pushState(stateObj, "redirect", "#index");
-		} else if (href.indexOf(pageName) > 0) {
+		} else if (hash.indexOf(pageName) > 0) {
 			openPage(pageName);
 		}
 	}
@@ -57,47 +57,42 @@ jQuery(document).ready(function($) {
 
 
 	$('.go-to-surface').click(function() {
-		window.currentState = window.location.href;
+		window.currentState = window.location.hash;
 		openPage('surface');
 	});
 
 	$('.go-to-museum').click(function() {
-
-		if (window.location.search != '' || window.location.search== "?p=index"){ //
+		if (window.location.hash != '' || window.location.hash == "#index") {
 			window.savedImage = window.mainCanvasObject.saveImage();
 			document.getElementById('your-painting').src = window.savedImage;
-
-			window.mainCanvasObject.sendPic(openMyMuseum)} else
+			window.mainCanvasObject.sendPic(openMyMuseum)
+		} else {
 			openMyMuseum();
+		}
 
-
-		window.currentState = window.location.href;
+		window.currentState = window.location.hash;
 		openPage('museum');
-
-
 	});
 
 	$('.go-to-tools').click(function() {
-		window.currentState = window.location.href;
+		window.currentState = window.location.hash;
 		openPage('painting');
 	});
 
 	$('.go-to-filters').click(function() {
-		window.currentState = window.location.href;
+		window.currentState = window.location.hash;
 		openPage('filters');
 		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-publication').click(function() {
-		window.currentState = window.location.href;
-
+		window.currentState = window.location.hash;
 		document.getElementById('painting-img').src = window.savedImage;
-
 		openPage('publication');
 	});
 
 	$('.go-to-home').click(function() {
-		window.currentState = window.location.href;
+		window.currentState = window.location.hash;
 		openPage('index');
 	});
 
