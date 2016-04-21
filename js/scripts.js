@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
 		if (window.location.hash != '' && window.location.hash != "#index") {
 			window.savedImage = window.mainCanvasObject.saveImage();
 			document.getElementById('your-painting').src = window.savedImage;
-			window.mainCanvasObject.sendPic(openMyMuseum)
+			window.mainCanvasObject.sendPic(openMyMuseum, window.savedImage)
 		} else {
 			openMyMuseum();
 		}
@@ -304,7 +304,7 @@ jQuery(document).ready(function($) {
 			document.getElementById('your-painting').src = res.image;
 			document.getElementById('painting-title').textContent = res.description;
 			document.getElementById('painting-author').textContent = res.name;
-			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, '') + ')';
+			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ',') + ')';
 		});
 	}
 
@@ -600,6 +600,14 @@ jQuery(document).ready(function($) {
 	}
 
 
+	document.getElementById("wand").addEventListener('click', function () {
+
+		if (!window.currentFilter || window.currentFilter >= filterOrder.length) window.currentFilter = 0;
+		applyFilter("filters-canvas", window.filterSavedImage, filterOrder[window.currentFilter]);
+		window.currentFilter++;
+	});
+
+
 	function filtersResponsive () {
 		var width = $(window).width(),
 			height = $(window).height(),
@@ -617,12 +625,6 @@ jQuery(document).ready(function($) {
 			wandRatio = wandRatio(800, 178);
 
 
-		document.getElementById("wand").addEventListener('click', function () {
-
-			if (!window.currentFilter || window.currentFilter >= filterOrder.length) window.currentFilter = 0;
-			applyFilter("filters-canvas", window.filterSavedImage, filterOrder[window.currentFilter]);
-			window.currentFilter++;
-		});
 
 		filtersWrapper.css({'background-size': 'auto 100%', height: filtersBackgroundHeight + 'px'});
 

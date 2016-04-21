@@ -132,11 +132,11 @@ Canvas.prototype.redraw = function (ctx){
 
 //
 
-Canvas.prototype.sendPic = function(cbbbb) {
+Canvas.prototype.sendPic = function(cbbbb, img) {
 		data = {
 			api_method: 'applyimagetogallery',
 			user_id: 1,
-			image: this.saveImage(),
+			image: img,
 			name: $('#in-author').val(),
 			description: $('#in-label').val(),
 			tags: this.tags.join(';')
