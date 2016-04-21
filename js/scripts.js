@@ -142,20 +142,15 @@ jQuery(document).ready(function($) {
 			imgNumbers[i] = i+1;
 		}
 
-		console.log(imgNumbers.length);
-
 		for (var j = 1; j < 4; j++) {
 			var randomInt = Math.floor(Math.random()*imgNumbers.length) + 1;
-			console.log(randomInt);
 			imgNumbers.splice(randomInt-1,1);
+			console.log(imgNumbers.length);
 
 			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
 			$('ul.paintings.left-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
 			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
 		}
-
-		console.log('hi');
-		console.log(imgNumbers.length);
 
 		for (var k = 1; k < 4; k++) {
 			var randomInt = Math.floor(Math.random()*imgNumbers.length);
