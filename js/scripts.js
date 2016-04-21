@@ -32,12 +32,6 @@ jQuery(document).ready(function($) {
 		pagesTransition(pageName);
 	}
 
-	if (window.location.hash == '') {
-		window.currentHash = {hash: 'index'};
-	} else {
-		window.currenthash = history.state;
-	}
-
 	$('.go-to-surface').click(function() {
 		if (window.location.hash == '') {
 			window.currentHash = {hash: 'index'};
@@ -106,6 +100,10 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	$(window).load(function() {
+		if (window.location.hash == '') {
+			window.currentHash = {hash: 'index'};
+		}
+
 		switch (currentHash.hash) {
 			case 'index':
 				openPage('index');
