@@ -33,6 +33,10 @@ jQuery(document).ready(function($) {
 		pagesTransition(pageName);
 	}
 
+	if (window.location.hash == '') {
+		window.currentHash = {hash: 'index'};
+	}
+
 	$('.go-to-surface').click(function() {
 		window.currentHash = {hash: 'surface'};
 		openPage('surface');
@@ -95,10 +99,6 @@ jQuery(document).ready(function($) {
 				break;
 		}
 	}, false);
-
-	if (window.location.hash == '') {
-		window.currentHash = {hash: 'index'};
-	}
 
 	$(window).load(function() {
 		switch (currentHash.hash) {
