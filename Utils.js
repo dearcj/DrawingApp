@@ -183,14 +183,14 @@ filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 function vkpost(t) {
   var img;
-  ga('send', 'event', 'Social', 'click-postvk');
+ // ga('send', 'event', 'Social', 'click-postvk');
 
   function authInfo(response) {
     if (response.session) {
 
       VK.api('wall.post', {
         message: t,
-        attachments: [img, "https://vk.com/app5374624"]
+      //  attachments: [img, "https://vk.com/app5374624"]
 
       },function(data) {
         console.log(JSON.stringify(data));
