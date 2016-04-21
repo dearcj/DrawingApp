@@ -85,7 +85,7 @@ jQuery(document).ready(function($) {
 	$('.go-to-filters').click(function() {
 		window.currentState = window.location.href;
 		openPage('filters');
-		$('.filters-canvas p').fadeIn(1000).removeClass('hidden');
+		$('.filters-canvas p').fadeIn(5000).removeClass('hidden');
 	});
 
 	$('.go-to-publication').click(function() {
