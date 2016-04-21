@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
 
 	var mainUrl = 'http://188.227.16.35/';
 	var hash = window.location.hash;
-	var stateObj = { home: "screen" };
+	var stateObj = { hash: 'index' };
 
 	function addURL(pageName) {
 		var newHref = mainUrl + '#' + pageName;
@@ -41,7 +41,6 @@ jQuery(document).ready(function($) {
 			openPage(pageName);
 		}
 	}
-
 
 	$('.save-and-send').click(function(event) {
 
