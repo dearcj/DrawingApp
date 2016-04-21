@@ -38,7 +38,6 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-museum').click(function() {
 		if (window.location.hash != '' && window.location.hash != "#index") {
-			window.savedImage = window.mainCanvasObject.saveImage();
 			document.getElementById('your-painting').src = window.savedImage;
 			window.mainCanvasObject.sendPic(openMyMuseum, window.savedImage)
 		} else {
