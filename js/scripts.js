@@ -13,7 +13,6 @@ jQuery(document).ready(function($) {
 		var stateObj = { hash: pageName };
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
-		window.currentHash = history.state;
 	}
 
 	function pagesTransition(pageName) {
@@ -35,9 +34,16 @@ jQuery(document).ready(function($) {
 
 	if (window.location.hash == '') {
 		window.currentHash = {hash: 'index'};
+	} else {
+		window.currenthash = history.state;
 	}
 
 	$('.go-to-surface').click(function() {
+		if (window.location.hash == '') {
+			window.currentHash = {hash: 'index'};
+		} else {
+			window.currenthash = history.state;
+		}
 		openPage('surface');
 	});
 
@@ -53,6 +59,11 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-tools').click(function() {
+		if (window.location.hash == '') {
+			window.currentHash = {hash: 'index'};
+		} else {
+			window.currenthash = history.state;
+		}
 		openPage('painting');
 		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
