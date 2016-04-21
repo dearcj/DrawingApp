@@ -96,7 +96,7 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
-	if (window.location.hash != '') {
+	if (window.location.hash == '') {
 		window.currentHash = {hash: 'index'};
 	}
 
