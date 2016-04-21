@@ -8,7 +8,8 @@ jQuery(document).ready(function($) {
 
 	$('ul.tools > li').click(function() {
 		var currentBack = $(this).css('background');
-		console.log(currentBack);
+		var this = $(this);
+		console.log(this);
 	});
 
 	//--------------ROUTING---------------
