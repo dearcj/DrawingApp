@@ -855,10 +855,10 @@ ul.tools > li#denim > ul {
 }
 
 ul.tools > li#coal > ul {
-	margin: 0 auto;
+	margin: 22px auto 0;
 	padding: 0;
-	width: 116px;
-	height: 146px;
+	width: 86px;
+	height: 106px;
 }
 
 ul.tools > li#scotch {
@@ -869,18 +869,18 @@ ul.tools li#btn-scotch {
 	background: url(../img/tools/scotch.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 137px;
-	height: 96px;
-	margin: -10px auto 0;
+	width: 127px;
+	height: 78px;
+	margin: 8px auto 0;
 }
 
 ul.tools li#btn-scotch-1 {
 	background: url(../img/tools/scotch-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 108px;
-	height: 30px;
-	margin-top: 15px;
+	width: 105px;
+	height: 20px;
+	margin-top: 10px;
 	margin-right: 12px;
 	float: right;
 }
@@ -889,9 +889,9 @@ ul.tools li#btn-scotch-2 {
 	background: url(../img/tools/scotch-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 107px;
-	height: 29px;
-	margin-top: 5px;
+	width: 105px;
+	height: 20px;
+	margin-top: 6px;
 	margin-right: 12px;
 	float: right;
 }
@@ -928,44 +928,51 @@ ul.tools li#btn-grass {
 	background-size: 100%;
 	background-position: 50% 50%;
 	width: 106px;
-	height: 108px;
+	height: 130px;
+	margin-left: 25px;
 }
 
 ul.tools li#btn-orange {
 	background: url(../img/tools/orange.png) no-repeat;
-	background-size: 100%;
+	background-size: 98%;
 	background-position: 50% 50%;
 	width: 111px;
-	height: 97px;
+	margin-right: 21px;
+	height: 130px;
 }
 
 ul.tools li#btn-denim-1 {
 	background: url(../img/tools/denim-1.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 76px;
-	height: 76px;
+	width: 72px;
+	height: 72px;
 	float: left;
+	margin-left: 5px;
+	margin-top: 7px;
 }
 
 ul.tools li#btn-denim-2 {
 	background: url(../img/tools/denim-2.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 76px;
-	height: 76px;
+	width: 72px;
+	height: 72px;
 	float: right;
+	margin-right: 5px;
+	margin-top: 7px;
 }
 
 ul.tools li#btn-denim-3 {
 	background: url(../img/tools/denim-3.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 76px;
-	height: 76px;
+	width: 72px;
+	height: 72px;
 	clear: both;
 	margin: 0 auto;
 	position: relative;
+	top: -9px;
 }
 
 ul.tools li#btn-catchup {
@@ -974,6 +981,8 @@ ul.tools li#btn-catchup {
 	background-position: 50% 50%;
 	width: 128px;
 	height: 64px;
+	margin-top: 40px;
+	margin-right: 5px;
 }
 
 ul.tools li#btn-needle {
@@ -982,7 +991,7 @@ ul.tools li#btn-needle {
 	background-position: 50% 50%;
 	width: 127px;
 	height: 101px;
-	margin: 25px auto 10px;
+	margin: 5px auto;
 }
 
 ul.tools li#btn-thread-1 {
@@ -991,7 +1000,7 @@ ul.tools li#btn-thread-1 {
 	background-position: 50% 50%;
 	width: 20px;
 	height: 20px;
-	margin: 0 2px 0 23px;
+	margin-left: 5px
 	clear: both;
 }
 
@@ -1001,7 +1010,6 @@ ul.tools li#btn-thread-2 {
 	background-position: 50% 50%;
 	width: 20px;
 	height: 20px;
-	margin: 0 2px;
 }
 
 ul.tools li#btn-thread-3 {
@@ -1010,7 +1018,6 @@ ul.tools li#btn-thread-3 {
 	background-position: 50% 50%;
 	width: 20px;
 	height: 20px;
-	margin: 0 2px;
 }
 
 ul.tools li#btn-thread-4 {
@@ -1019,7 +1026,6 @@ ul.tools li#btn-thread-4 {
 	background-position: 50% 50%;
 	width: 20px;
 	height: 20px;
-	margin: 0 2px;
 }
 
 ul.tools li#btn-thread-5 {
@@ -1028,7 +1034,6 @@ ul.tools li#btn-thread-5 {
 	background-position: 50% 50%;
 	width: 20px;
 	height: 20px;
-	margin: 0 2px;
 }
 
 ul.tools li#btn-thread-6 {
@@ -1037,7 +1042,6 @@ ul.tools li#btn-thread-6 {
 	background-position: 50% 50%;
 	width: 20px;
 	height: 20px;
-	margin: 0 2px;
 }
 
 ul.tools li#btn-thread-7 {
@@ -1046,7 +1050,6 @@ ul.tools li#btn-thread-7 {
 	background-position: 50% 50%;
 	width: 20px;
 	height: 20px;
-	margin: 0 2px;
 }
 
 ul.tools li.needle-color {
@@ -1058,7 +1061,8 @@ ul.tools li#btn-pistol {
 	background-size: 100%;
 	background-position: 50% 50%;
 	width: 103px;
-	height: 80px;
+	height: 112px;
+	margin-right: 25px;
 }
 
 ul.tools li#btn-scotch.scotch-active.active {
