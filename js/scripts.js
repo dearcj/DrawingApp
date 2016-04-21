@@ -9,6 +9,12 @@ jQuery(document).ready(function($) {
 	var mainUrl = 'http://188.227.16.35/';
 	var hash = window.location.hash;
 
+	if (window.location.hash == '') {
+		var stateObj = { hash: 'index' };
+		history.pushState(stateObj, index, mainUrl + '#index');
+		window.currentHash = history.state;
+	}
+
 	function addURL(pageName) {
 		var stateObj = { hash: pageName };
 		var newHref = mainUrl + '#' + pageName;
@@ -54,6 +60,7 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-tools').click(function() {
 		openPage('painting');
+		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-filters').click(function() {
@@ -119,7 +126,6 @@ jQuery(document).ready(function($) {
 			openPage('museum');
 			break;
 	}
-
 
 	$('.save-and-send').click(function(event) {
 
