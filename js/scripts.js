@@ -89,12 +89,13 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
+	if (window.location.hash != '') {
+		window.currentHash = history.state;
+	} else {
+		window.currentHash = {hash: 'index'};
+	}
+
 	$(window).load(function() {
-		if (window.location.hash != '') {
-			window.currentHash = history.state;
-		} else {
-			window.currentHash = {hash: 'index'};
-		}
 
 		switch (currentHash.hash) {
 			case 'index':
