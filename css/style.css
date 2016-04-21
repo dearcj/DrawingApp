@@ -1729,6 +1729,10 @@ ul.logotypes li a {
 	background: none !important;
 }
 
+#cboxContent {
+	background: transparent;
+}
+
 @media only screen and (max-width : 1110px) {
 	#painting-wrapper,
 	#filters-wrapper,
