@@ -34,11 +34,9 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName) {
-		window.currentHash = window.location.hash;
 		if (window.location.hash == '') {
 			history.pushState(stateObj, "redirect", "#index");
 		} else if (hash.indexOf(pageName) > 0) {
-			console.log(window.currentHash);
 			openPage(pageName);
 		}
 	}
@@ -106,13 +104,13 @@ jQuery(document).ready(function($) {
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('surface') > 0) {
-			openPage('surface');
+			history.back();
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
 		if (currentState.indexOf('painting') > 0) {
-			openPage('painting');
+			history.back();
 		}
 	}, false);
 
@@ -135,10 +133,8 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	$(window).load(function() {
-		if (window.location.hash != '') {
-			var currentHref = history.state;
-			console.log(currentHref.url);
-		}
+		var currentHref = location.hash;
+		console.log(currentHref);
 		isItHome('index');
 		isItHome('surface');
 		isItHome('museum');
