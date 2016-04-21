@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 	var hash = window.location.hash;
 
 	function addURL(pageName) {
-		var stateObj = { hash: currentHash.hash };
+		var stateObj = { hash: pageName };
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
 	}
