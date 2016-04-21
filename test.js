@@ -29,7 +29,7 @@ var initApplication = function() {
   brushOrange.mode = 1;
 
   document.getElementById('btn-scotch').addEventListener('click', function() {
-    document.getElementById('btn-scotch').css({'-webkit-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', '-moz-box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)', 'box-shadow': '0 0 25px 5px rgba(255,221,0,0.9)'});
+    document.getElementById('btn-scotch').css('display', 'none'});
     brushScotch.mode = 3;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
