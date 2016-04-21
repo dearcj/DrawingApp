@@ -38,6 +38,7 @@ jQuery(document).ready(function($) {
 			history.pushState(stateObj, "redirect", "#index");
 		} else if (hash.indexOf(pageName) > 0) {
 			openPage(pageName);
+			console.log(currentState);
 		}
 	}
 
