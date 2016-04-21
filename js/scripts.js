@@ -180,7 +180,7 @@ jQuery(document).ready(function($) {
 
 		    if (!container.is(e.target) && container.has(e.target).length === 0)
 		    {
-		        container.fadeOut(500).css('display', 'block');
+		        container.fadeOut(500);
 		    }
 		});
 	}

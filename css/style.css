@@ -1509,6 +1509,7 @@ ul.surfaces li:nth-child(7):focus {
 }
 
 .filters-canvas p {
+	display: block;
 	background-color: #31b2ee;
     text-align: center;
     margin: 0 auto;
