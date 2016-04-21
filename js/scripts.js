@@ -32,7 +32,11 @@ jQuery(document).ready(function($) {
 		pagesTransition(pageName);
 	}
 
-
+	if (window.location.hash == '') {
+		window.currentHash = {hash: 'index'};
+	} else {
+		window.currenthash = history.state;
+	}
 
 	$('.go-to-surface').click(function() {
 		if (window.location.hash == '') {
