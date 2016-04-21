@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
 	var hash = window.location.hash;
 
 	function addURL(pageName) {
+		window.currentHash = history.state;
 		var stateObj = { hash: pageName };
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
@@ -38,7 +39,6 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.go-to-surface').click(function() {
-		window.currentHash = history.state;
 		openPage('surface');
 	});
 
@@ -50,30 +50,25 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
-		window.currentHash = history.state;
 		openPage('museum');
 	});
 
 	$('.go-to-tools').click(function() {
-		window.currentHash = history.state;
 		openPage('painting');
 		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-filters').click(function() {
-		window.currentHash = history.state;
 		openPage('filters');
 		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-publication').click(function() {
-		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
 		openPage('publication');
 	});
 
 	$('.go-to-home').click(function() {
-		window.currentHash = history.state;
 		openPage('index');
 	});
 
