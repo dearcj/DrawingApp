@@ -93,33 +93,26 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
-
-		if (this.location.hash != '') {
-			window.hashBeforeReload = history.state;
-		} else {
-			window.hashBeforeReload = { hash: 'index' };
-		}
-
-		switch (hashBeforeReload.hash) {
-			case 'index':
-				openPage('index');
-				break;
-			case 'surface':
-				openPage('surface');
-				break;
-			case 'painting':
-				openPage('painting');
-				break;
-			case 'filters':
-				openPage('filters');
-				break;
-			case 'publication':
-				openPage('publication');
-				break;
-			case 'museum':
-				openPage('museum');
-				break;
-		}
+	switch (currentHash.hash) {
+		case 'index':
+			openPage('index');
+			break;
+		case 'surface':
+			openPage('surface');
+			break;
+		case 'painting':
+			openPage('painting');
+			break;
+		case 'filters':
+			openPage('filters');
+			break;
+		case 'publication':
+			openPage('publication');
+			break;
+		case 'museum':
+			openPage('museum');
+			break;
+	}
 
 
 	$('.save-and-send').click(function(event) {
