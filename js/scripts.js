@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
 	function openPage(pageName) {
 		event.preventDefault();
 
-		window.currentHash = history.state();
+		window.currentHash = history.state;
 		console.log(currentHash.hash);
 		var stateObj = { hash: currentHash.hash };
 
