@@ -1434,8 +1434,7 @@ li.send-to-museum:focus {
 	cursor: pointer;
 }
 
-div.new-painting {
-	display: none;
+.new-painting {
 	background: url(../img/new-painting.png) no-repeat;
 	background-size: 100%;
 	max-width: 247px;
@@ -1772,7 +1771,6 @@ ul.logotypes li a {
 
 .painting-info {
 	position: relative;
-	display: block;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;

@@ -155,6 +155,10 @@ jQuery(document).ready(function($) {
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
 			$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
+		} else {
+			$('.new-painting').css('display', 'none');
+			$('.painting-info').css('display', 'block');
+			$('#museum-wrapper p').addClass('hidden');
 		}
 
 		window.currentHash = {hash: 'museum'};
