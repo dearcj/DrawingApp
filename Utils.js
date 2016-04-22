@@ -198,10 +198,18 @@ function vkpost(t, im) {
         if (data.response) {
           var uploadUrl = data.response.upload_url;
 
-          $.post( data.response.upload_url, {content: im}, function(data) {
-            console.log(data);
 
-          }, 'json');
+          $.ajax({
+            type: "post",
+            url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
+            data: {upload_url: uploadUrl, image: img},
+            success: function callback(res) {
+              cb(res);
+              console.log(res);
+            }
+          });
+
+
         }
       });
 
