@@ -127,11 +127,13 @@ jQuery(document).ready(function($) {
 
 		if (stateObj.hash == pageName) {
 			history.replaceState(stateObj, pageName, freshUrl);
+			pagesTransition(pageName);
 		} else {
 			history.pushState(stateObj, pageName, freshUrl);
+			pagesTransition(pageName);
 		}
 
-		pagesTransition(pageName);
+
 	}
 
 	$(window).load(function() {
