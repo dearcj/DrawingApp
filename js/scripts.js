@@ -151,20 +151,6 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
-		var imageId = localStorage.getItem('#your-painting');
-
-		if (!imageId) {
-			$('.new-painting').css('display', 'block');
-			$('.painting-info').css('display', 'none');
-			$('#museum-wrapper p').css('opacity', 1);
-		} else {
-			$('.new-painting').css('display', 'none');
-			$('.painting-info').css('display', 'block');
-			$('#museum-wrapper p').css('opacity', 0);
-		}
-
-		console.log(imageId);
-
 		window.currentHash = {hash: 'museum'};
 		openPage('museum');
 	});
@@ -425,6 +411,16 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-title').textContent = res.description;
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ',') + ')';
+
+			var imageId = localStorage.getItem('#your-painting');
+
+			if (!imageId) {
+				console.log('hi');
+			} else {
+				console.log('bye');
+			}
+
+
 		});
 	}
 
