@@ -154,11 +154,11 @@ jQuery(document).ready(function($) {
 		if (!$('#your-painting').attr('src')) {
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
-			$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
+			$('#museum-wrapper p').css('display', 'block');
 		} else {
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');
-			$('#museum-wrapper p').fadeOut(200).addClass('hidden');
+			$('#museum-wrapper p').css('display', 'none');
 		}
 
 		window.currentHash = {hash: 'museum'};
