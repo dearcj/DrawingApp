@@ -158,7 +158,7 @@ jQuery(document).ready(function($) {
 		} else {
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');
-			$('#museum-wrapper p').addClass('hidden');
+			$('#museum-wrapper p').fadeOut(200).addClass('hidden');
 		}
 
 		window.currentHash = {hash: 'museum'};
