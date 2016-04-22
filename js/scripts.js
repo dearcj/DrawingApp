@@ -412,7 +412,7 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ',') + ')';
 
-
+			var imageId = localStorage.getItem('imageId');
 
 			if (!imageId) {
 				$('.new-painting').css('display', 'block');
