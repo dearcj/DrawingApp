@@ -379,6 +379,7 @@ jQuery(document).ready(function($) {
 
 
 	function openMyMuseum() {
+		var imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
 
 			document.getElementById('post-vk').addEventListener('click', function() {
@@ -411,7 +412,7 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ',') + ')';
 
-			var imageId = localStorage.getItem('#your-painting');
+
 
 			if (!imageId) {
 				$('.new-painting').css('display', 'block');
