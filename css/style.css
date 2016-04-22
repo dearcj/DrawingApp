@@ -434,6 +434,10 @@ ul.paintings.left-side a:nth-child#index-wrapper {
 	display: none;
 }
 
+.dark-side.museum {
+	height: 0 !important;
+}
+
 /*canvas {*/
 	/*border: 1px solid #ccc;*/
 /*}*/
@@ -1502,7 +1506,7 @@ div.at-the-backyard {
 	margin: 0 auto;
 	line-height: 120%;
 	height: auto;
-	position: relative;
+	position: absolute;
 	color: white;
 }
 
