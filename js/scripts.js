@@ -125,17 +125,37 @@ jQuery(document).ready(function($) {
 			window.stateObj = { hash: window.location.hash };
 		}
 
-		if (stateObj.hash == pageName) {
-			history.replaceState(stateObj, pageName, freshUrl);
-			pagesTransition(pageName);
-		} else {
-			history.pushState(stateObj, pageName, freshUrl);
-			pagesTransition(pageName);
-		}
+		history.pushState(stateObj, pageName, freshUrl);
+
+		pagesTransition(pageName);
 	}
 
-	$(window).load(function() {
-		switch (location.hash) {
+	switch (window.location.hash) {
+		case '':
+			openPage('index');
+			break;
+		case 'index':
+			openPage('index');
+			break;
+		case 'surface':
+			openPage('surface');
+			break;
+		case 'painting':
+			openPage('painting');
+			break;
+		case 'filters':
+			openPage('filters');
+			break;
+		case 'publication':
+			openPage('publication');
+			break;
+		case 'museum':
+			openPage('museum');
+			break;
+	}
+
+	window.addEventListener("popstate", function(e) {
+		switch (stateObj.hash) {
 			case '':
 				openPage('index');
 				break;
@@ -158,7 +178,7 @@ jQuery(document).ready(function($) {
 				openPage('museum');
 				break;
 		}
-	});
+	}, false);
 
 	$('.go-to-surface').click(function() {
 		openPage('surface');
@@ -194,28 +214,6 @@ jQuery(document).ready(function($) {
 		openPage('index');
 	});
 
-	window.addEventListener("popstate", function(e) {
-		switch (stateObj.hash) {
-			case 'index':
-				openPage('index');
-				break;
-			case 'surface':
-				openPage('surface');
-				break;
-			case 'painting':
-				openPage('painting');
-				break;
-			case 'filters':
-				openPage('filters');
-				break;
-			case 'publication':
-				openPage('publication');
-				break;
-			case 'museum':
-				openPage('museum');
-				break;
-		}
-	}, false);
 
 	$('.save-and-send').click(function(event) {
 
