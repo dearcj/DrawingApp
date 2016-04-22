@@ -119,10 +119,10 @@ jQuery(document).ready(function($) {
 	function openPage(pageName) {
 		var freshUrl = mainUrl + '#' + pageName;
 
-		if (window.location.href.indexOf('#') < 0) {
+		if (window.location.href.indexOf('#') < 0 || stateObj.hash == 'index') {
 			window.stateObj = { hash: pageName };
 		} else {
-			window.stateObj = { hash: stateObj.hash };
+			window.stateObj = { hash: window.location.hash };
 		}
 
 		if (stateObj.hash == pageName) {
