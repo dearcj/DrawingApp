@@ -154,9 +154,9 @@ jQuery(document).ready(function($) {
 		if ($('img#your-painting').attr('src') == '') {
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
+			$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
 		}
 
-		$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
 		window.currentHash = {hash: 'museum'};
 		openPage('museum');
 	});
