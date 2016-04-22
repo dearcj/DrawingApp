@@ -313,7 +313,7 @@
 
           <div class="museum-button go-to-home at-the-backyard"><a href="#"></a></div>
 
-          <img id="your-painting" class="museum-painting">
+          <img id="your-painting" class="museum-painting" src="">
 
           <p class="hidden">Здесь может появиться твоя новая картина</p>
 
