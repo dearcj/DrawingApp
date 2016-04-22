@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 
 	var yourPainting = localStorage.getItem('#your-painting');
 
-	if (yourPainting.is(':empty')) {
+	if (yourPainting == null) {
 		$('.new-painting').css('display', 'block');
 		$('.painting-info').css('display', 'none');
 	}
