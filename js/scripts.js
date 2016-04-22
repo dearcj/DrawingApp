@@ -153,11 +153,7 @@ jQuery(document).ready(function($) {
 
 		var yourPainting = localStorage.getItem('#your-painting');
 
-		if (yourPainting != null) {
-			console.log('hi');
-		} else {
-			console.log('bye');
-		}
+		console.log(yourPainting);
 
 		$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
 		window.currentHash = {hash: 'museum'};
