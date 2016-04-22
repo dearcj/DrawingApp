@@ -123,23 +123,14 @@ jQuery(document).ready(function($) {
 	}
 
 	function openPage(pageName) {
-		window.currentHash = window.location.hash;
-
-		var stateObj = { hash: currentHash.hash };
-
-		if (window.location.hash.indexOf(pageName) > 0) {
-			history.replaceState(stateObj, pageName, mainUrl + '#' + pageName);
-		} else {
-			addURL(pageName);
-		}
-
+		var stateObj = { hash: window.location.hash };
+		addURL(pageName);
 		pagesTransition(pageName);
 	}
 
-	if (window.location.hash == '') {
-		window.currentHash = {hash: 'index'};
-	} else {
-		window.currentHash = {hash: window.location.hash};
+	if (window.location.hash.indexOf(pageName) == '') {
+		var stateObj = { hash: 'index' };
+		openPage('index');
 	}
 
 	$('.go-to-surface').click(function() {
