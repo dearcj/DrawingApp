@@ -181,7 +181,7 @@ filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 
 
-function vkpost(t, im) {
+function vkpost(t, im, imPath) {
   var img;
  // ga('send', 'event', 'Social', 'click-postvk');
 
