@@ -546,6 +546,13 @@ jQuery(document).ready(function($) {
 
 		newPaintingButton.css({width: newPaintingButtonWidth + 'px', height: newPaintingButtonWidth/newPaintingButtonRatio + 'px'});
 
+		var museumText = $('#museum-wrapper p'),
+			museumTextWidth = paintingWidth/2,
+			museumTextBorderRadius = museumTextWidth/20,
+			museumTextPadding = museumTextWidth/12;
+
+		museumText.css({width: museumTextWidth + 'px', 'border-radius': museumTextBorderRadius + 'px', 'font-size': paintingHeight/2.2 + '%', 'padding': 6 * museumTextPadding/7 + 'px ' + '0 ' + museumTextPadding + 'px', top: 3 * paintingHeight/8 + 'px'});
+
 		var newPaintingButtonHeight = parseInt(newPaintingButton.css('height')),
 			darkSideMuseumHeight = parseInt(darkSideMuseum.css('height')),
 			backyardButtonHeight = newPaintingButtonHeight,
