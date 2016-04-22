@@ -5,7 +5,7 @@ window.selectedSurface = 1;
 jQuery(document).ready(function($) {
 
 	$(window).load(function() {
-		if ($('#your-painting').attr('src') != '') {
+		if ($('#your-painting').src.length > 0') {
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');
 			$('#museum-wrapper p').css('opacity', 0);
