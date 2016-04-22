@@ -151,7 +151,10 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
-		var yourPainting = localStorage.getItem('#your-painting');
+		if ($('img#your-painting').attr('src') == '') {
+			$('.new-painting').css('display', 'block');
+			$('.painting-info').css('display', 'none');
+		}
 
 		console.log(yourPainting);
 
@@ -512,7 +515,10 @@ jQuery(document).ready(function($) {
 
 		mainPainting.css({width: width/2.5 + 'px', 'margin-top': width/30 + 'px'});
 
-		paintingWidth = parseInt(mainPainting.css('width'));
+		var paintingWidth = parseInt(mainPainting.css('width'));
+		var paintingHeight = paintingWidth/paintingRatio;
+
+		mainPainting.css(height, paintingHeight + 'px');
 
 		paintingInfo.css('width', paintingWidth/100 * 65 + 'px');
 
@@ -541,8 +547,6 @@ jQuery(document).ready(function($) {
 		socialButtons.find('ul').css('width', (socialButtonsLiWidth + 3)*2 + 1 + 'px');
 
 		darkSideMuseum.css('width', paintingWidth + 'px');
-
-		var paintingHeight = paintingWidth/paintingRatio;
 
 		darkSideMuseum.css({height: paintingHeight/15 + 'px', top: -paintingHeight/15 + 'px'});
 

@@ -648,6 +648,7 @@ ul.paintings a:hover li div {
 }
 
 .museum-painting {
+	background-color: white;
 	margin: 0 auto;
 	display: block;
 	clear: both;
@@ -1434,7 +1435,7 @@ li.send-to-museum:focus {
 }
 
 div.new-painting {
-	display: block;
+	display: none;
 	background: url(../img/new-painting.png) no-repeat;
 	background-size: 100%;
 	max-width: 247px;
@@ -1771,7 +1772,7 @@ ul.logotypes li a {
 
 .painting-info {
 	position: relative;
-	display: none;
+	display: block;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;
