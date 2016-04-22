@@ -4,13 +4,6 @@ window.selectedSurface = 1;
 
 jQuery(document).ready(function($) {
 
-	var yourPainting = localStorage.getItem('#your-painting');
-
-	if (yourPainting != null) {
-		$('.new-painting').css('display', 'none');
-		$('.painting-info').css('display', 'block');
-	}
-
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
 	$('ul.tools li#btn-scotch').click(function() {
@@ -156,6 +149,13 @@ jQuery(document).ready(function($) {
 			window.mainCanvasObject.sendPic(openMyMuseum, window.savedImage)
 		} else {
 			openMyMuseum();
+		}
+
+		var yourPainting = localStorage.getItem('#your-painting');
+
+		if (yourPainting != null) {
+			$('.new-painting').css('display', 'none');
+			$('.painting-info').css('display', 'block');
 		}
 
 		$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
