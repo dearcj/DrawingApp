@@ -186,7 +186,6 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	switch (stateObj.hash) {
-		console.log(stateObj.hash);
 		case 'index':
 			openPage('index');
 			break;
