@@ -170,6 +170,9 @@ jQuery(document).ready(function($) {
 
 	window.addEventListener("popstate", function(e) {
 		switch (currentHash.hash) {
+			case '':
+				openPage('index');
+				break;
 			case 'index':
 				openPage('index');
 				break;
@@ -191,7 +194,7 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
-	switch (currentHash.hash) {
+	switch (window.location.hash) {
 		case 'index':
 			openPage('index');
 			break;
