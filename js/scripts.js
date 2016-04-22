@@ -117,9 +117,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function openPage(pageName) {
-		window.currentHash = { hash: window.location.hash };
-
-		var stateObj = currentHash;
+		window.stateObj = { hash: pageName };
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
 
@@ -165,7 +163,7 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		switch (currentHash.hash) {
+		switch (stateObj.hash) {
 			case 'index':
 				openPage('index');
 				break;
