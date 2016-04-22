@@ -151,7 +151,7 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
-		if ($('#your-painting').attr('src')) {
+		if (!$('#your-painting').attr('src')) {
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
 			$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
