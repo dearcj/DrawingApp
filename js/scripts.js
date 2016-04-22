@@ -389,7 +389,6 @@ jQuery(document).ready(function($) {
 
 
 	function openMyMuseum() {
-		var imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
 
 			document.getElementById('post-vk').addEventListener('click', function() {
