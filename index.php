@@ -313,11 +313,11 @@
 
           <div class="museum-button go-to-home at-the-backyard"><a href="#"></a></div>
 
-          <div class="museum-button new-painting"></div>
-
           <img id="your-painting" class="museum-painting">
 
           <p class="hidden">Здесь может появиться твоя новая картина</p>
+
+          <div class="museum-button new-painting"></div>
 
           <div class="social-buttons">
             <span>Рассказать друзьям</span>

@@ -1436,8 +1436,8 @@ li.send-to-museum:focus {
 div.new-painting {
 	background: url(../img/new-painting.png) no-repeat;
 	background-size: 100%;
-	float: right;
 	max-width: 247px;
+	margin: 0 auto;
 }
 
 div.at-the-backyard {

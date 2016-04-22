@@ -544,7 +544,7 @@ jQuery(document).ready(function($) {
 
 		var newPaintingButtonWidth = paintingWidth/4.5;
 
-		newPaintingButton.css({width: newPaintingButtonWidth + 'px', height: newPaintingButtonWidth/newPaintingButtonRatio + 'px'});
+		newPaintingButton.css({width: newPaintingButtonWidth + 'px', height: newPaintingButtonWidth/newPaintingButtonRatio + 'px', 'top': newPaintingButtonWidth/newPaintingButtonRatio + 'px'});
 
 		var museumText = $('#museum-wrapper p'),
 			museumTextWidth = paintingWidth/2,
