@@ -134,6 +134,32 @@ jQuery(document).ready(function($) {
 		pagesTransition(pageName);
 	}
 
+	$(window).load(function() {
+		switch (location.hash) {
+			case '':
+				openPage('index');
+				break;
+			case 'index':
+				openPage('index');
+				break;
+			case 'surface':
+				openPage('surface');
+				break;
+			case 'painting':
+				openPage('painting');
+				break;
+			case 'filters':
+				openPage('filters');
+				break;
+			case 'publication':
+				openPage('publication');
+				break;
+			case 'museum':
+				openPage('museum');
+				break;
+		}
+	});
+
 	$('.go-to-surface').click(function() {
 		openPage('surface');
 	});
@@ -190,8 +216,6 @@ jQuery(document).ready(function($) {
 				break;
 		}
 	}, false);
-
-	openPage('index');
 
 	$('.save-and-send').click(function(event) {
 
