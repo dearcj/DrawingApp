@@ -112,7 +112,6 @@ jQuery(document).ready(function($) {
 	var hash = window.location.hash;
 
 	function addURL(pageName) {
-		var stateObj = { hash: pageName };
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
 	}
@@ -126,9 +125,10 @@ jQuery(document).ready(function($) {
 	function openPage(pageName) {
 		window.currentHash = window.location.hash;
 
+		var stateObj = { hash: currentHash.hash };
+
 		if (window.location.hash.indexOf(pageName) > 0) {
-			var stateObj = { hash: pageName };
-			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
+			history.replaceState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
 		}
@@ -198,29 +198,6 @@ jQuery(document).ready(function($) {
 				break;
 		}
 	}, false);
-
-	$(window).load(function() {
-		switch (currentHash.hash) {
-			case 'index':
-				openPage('index');
-				break;
-			case 'surface':
-				openPage('surface');
-				break;
-			case 'painting':
-				openPage('painting');
-				break;
-			case 'filters':
-				openPage('filters');
-				break;
-			case 'publication':
-				openPage('publication');
-				break;
-			case 'museum':
-				openPage('museum');
-				break;
-		}
-	});
 
 	$('.save-and-send').click(function(event) {
 
