@@ -492,7 +492,7 @@ jQuery(document).ready(function($) {
 			paintingRatio = function(width, height) {
 				return width/height;
 			},
-			paintingRatio = paintingRatio(850, 571),
+			paintingRatio = paintingRatio(750, 530),
 			darkSideMuseum = $('.dark-side.museum'),
 			newPaintingButton = $('.new-painting'),
 			newPaintingButtonRatio = function(width, height) {
@@ -538,7 +538,7 @@ jQuery(document).ready(function($) {
 
 		darkSideMuseum.css('width', paintingWidth + 'px');
 
-		var paintingHeight = parseInt(mainPainting.css('height'));
+		var paintingHeight = paintingWidth/paintingRatio;
 
 		darkSideMuseum.css({height: paintingHeight/15 + 'px', top: -paintingHeight/15 + 'px'});
 
