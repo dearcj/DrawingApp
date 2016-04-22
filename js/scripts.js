@@ -379,7 +379,6 @@ jQuery(document).ready(function($) {
 
 
 	function openMyMuseum() {
-		var imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
 
 			document.getElementById('post-vk').addEventListener('click', function() {
@@ -415,9 +414,13 @@ jQuery(document).ready(function($) {
 			var imageId = localStorage.getItem('#your-painting');
 
 			if (!imageId) {
-				console.log('hi');
+				$('.new-painting').css('display', 'block');
+				$('.painting-info').css('display', 'none');
+				$('#museum-wrapper p').css('opacity', 1);
 			} else {
-				console.log('bye');
+				$('.new-painting').css('display', 'none');
+				$('.painting-info').css('display', 'block');
+				$('#museum-wrapper p').css('opacity', 0);
 			}
 
 
