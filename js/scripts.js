@@ -393,7 +393,7 @@ jQuery(document).ready(function($) {
 		getLastImage(imageId, function (res) {
 
 			document.getElementById('post-vk').addEventListener('click', function() {
-				vkpost('asdasd');
+				vkpost('asdasd', res.image);
 			});
 
 			document.getElementById('post-fb').addEventListener('click', function() {

@@ -181,7 +181,7 @@ filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 
 
-function vkpost(t) {
+function vkpost(t, im) {
   var img;
  // ga('send', 'event', 'Social', 'click-postvk');
 
@@ -197,24 +197,10 @@ function vkpost(t) {
         function (data) {
         if (data.response) {
           var uploadUrl = data.response.upload_url;
-          $.post(app.baseUrl + 'upload.php', {uploadUrl: uploadUrl}, function(data) {
-            if (data) {
-              var upload = data;
-              var message = ' Û- Û';
-              VK.api('wall.savePost', {
-                wall_id: response.session.user.id,
-                server: upload.server,
-                photo: upload.photo,
-                hash: upload.hash,
-                message: message
-              }, function (data) {
-                if (data.response) {
-                  VK.addCallback('onWallPostSave', app.onWallPost);
-                  VK.addCallback('onWallPostCancel', app.onWallPost);
-                  VK.callMethod('saveWallPost', data.response.post_hash);
-                }
-              });
-            }
+
+          $.post( data.response.upload_url, {content: im}, function(data) {
+            console.log(data);
+
           }, 'json');
         }
       });
