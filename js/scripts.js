@@ -6,9 +6,9 @@ jQuery(document).ready(function($) {
 
 	var yourPainting = localStorage.getItem('#your-painting');
 
-	if (yourPainting == null) {
-		$('.new-painting').css('display', 'block');
-		$('.painting-info').css('display', 'none');
+	if (yourPainting != null) {
+		$('.new-painting').css('display', 'none');
+		$('.painting-info').css('display', 'block');
 	}
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
