@@ -1496,6 +1496,16 @@ div.at-the-backyard {
     color: white;
 }
 
+#museum-wrapper p {
+	background-color: #31b2ee;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 120%;
+	height: auto;
+	position: relative;
+	color: white;
+}
+
 #surface-canvas.wood-texture {
 	background: url(../img/textures/wood.jpg) no-repeat;
 }
