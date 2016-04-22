@@ -119,7 +119,7 @@ jQuery(document).ready(function($) {
 	function openPage(pageName) {
 		var freshUrl = mainUrl + '#' + pageName;
 
-		if (window.location.hash == '') {
+		if (window.location.href.indexOf('#') < 0) {
 			window.stateObj = { hash: 'index' };
 		} else {
 			window.stateObj = { hash: window.location.hash };
