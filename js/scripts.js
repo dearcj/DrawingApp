@@ -124,6 +124,8 @@ jQuery(document).ready(function($) {
 	}
 
 	function openPage(pageName) {
+		window.currentHash = window.location.hash;
+
 		if (window.location.hash.indexOf(pageName) > 0) {
 			var stateObj = { hash: pageName };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
@@ -136,10 +138,11 @@ jQuery(document).ready(function($) {
 
 	if (window.location.hash == '') {
 		window.currentHash = {hash: 'index'};
+	} else {
+		window.currentHash = {hash: window.location.hash};
 	}
 
 	$('.go-to-surface').click(function() {
-		window.currentHash = {hash: 'surface'};
 		openPage('surface');
 	});
 
@@ -151,30 +154,25 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
-		window.currentHash = {hash: 'museum'};
 		openPage('museum');
 	});
 
 	$('.go-to-tools').click(function() {
-		window.currentHash = {hash: 'painting'};
 		openPage('painting');
 		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-filters').click(function() {
-		window.currentHash = {hash: 'filters'};
 		openPage('filters');
 		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-publication').click(function() {
 		document.getElementById('painting-img').src = window.savedImage;
-		window.currentHash = {hash: 'publication'};
 		openPage('publication');
 	});
 
 	$('.go-to-home').click(function() {
-		window.currentHash = {hash: 'index'};
 		openPage('index');
 	});
 
@@ -412,8 +410,6 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ',') + ')';
 
-			var imageId = localStorage.getItem('imageId');
-
 			if (!imageId) {
 				$('.new-painting').css('display', 'block');
 				$('.painting-info').css('display', 'none');
@@ -423,8 +419,6 @@ jQuery(document).ready(function($) {
 				$('.painting-info').css('display', 'block');
 				$('#museum-wrapper p').css('opacity', 0);
 			}
-
-
 		});
 	}
 
