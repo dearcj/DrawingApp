@@ -316,6 +316,9 @@
           <div class="museum-button new-painting"></div>
 
           <img id="your-painting" class="museum-painting">
+
+          <p class="hidden">Здесь может появиться твоя новая картина</p>
+
           <div class="social-buttons">
             <span>Рассказать друзьям</span>
               <ul>
@@ -337,8 +340,7 @@
             <li></li>
           </ul>
         </div>
-
-    </div>
+  </div>
 
   <div class="podval_new">
     <ul class="logotypes">

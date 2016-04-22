@@ -151,6 +151,7 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
+		$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
 		window.currentHash = {hash: 'museum'};
 		openPage('museum');
 	});

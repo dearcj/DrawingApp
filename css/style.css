@@ -1432,7 +1432,6 @@ li.send-to-museum:focus {
 div.new-painting {
 	background: url(../img/new-painting.png) no-repeat;
 	background-size: 100%;
-	display: none;
 	float: right;
 	max-width: 247px;
 }
