@@ -159,24 +159,31 @@ jQuery(document).ready(function($) {
 		switch (stateObj.hash) {
 			case '':
 				openPage('index');
+				console.log('index');
 				break;
 			case 'index':
 				openPage('index');
+				console.log('index');
 				break;
 			case 'surface':
 				openPage('surface');
+				console.log('surface');
 				break;
 			case 'painting':
 				openPage('painting');
+				console.log('painting');
 				break;
 			case 'filters':
 				openPage('filters');
+				console.log('filters');
 				break;
 			case 'publication':
 				openPage('publication');
+				console.log('publication');
 				break;
 			case 'museum':
 				openPage('museum');
+				console.log('museum');
 				break;
 		}
 	}, false);
