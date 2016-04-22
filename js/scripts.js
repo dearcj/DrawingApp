@@ -109,11 +109,6 @@ jQuery(document).ready(function($) {
 	//--------------ROUTING---------------
 
 	var mainUrl = 'http://188.227.16.35/';
-	var hash = window.location.hash;
-
-	function addURL(pageName) {
-
-	}
 
 	function pagesTransition(pageName) {
 		$('.screens').fadeOut(250).addClass('hidden');
