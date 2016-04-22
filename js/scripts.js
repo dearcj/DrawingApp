@@ -195,6 +195,9 @@ jQuery(document).ready(function($) {
 	}, false);
 
 	switch (window.location.hash) {
+		case '':
+			openPage('index');
+			break;
 		case 'index':
 			openPage('index');
 			break;
