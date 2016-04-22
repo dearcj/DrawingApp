@@ -879,7 +879,7 @@ ul.tools li#btn-scotch-1 {
 	background-size: 100%;
 	background-position: 50% 50%;
 	width: 105px;
-	height: 20px;
+	height: 27px;
 	margin-top: 10px;
 	margin-right: 12px;
 	float: right;
@@ -890,7 +890,7 @@ ul.tools li#btn-scotch-2 {
 	background-size: 100%;
 	background-position: 50% 50%;
 	width: 105px;
-	height: 20px;
+	height: 27px;
 	margin-top: 6px;
 	margin-right: 12px;
 	float: right;
@@ -930,6 +930,8 @@ ul.tools li#btn-grass {
 	width: 106px;
 	height: 130px;
 	margin-left: 25px;
+	position: relative;
+	top: 4px;
 }
 
 ul.tools li#btn-orange {
@@ -1000,7 +1002,7 @@ ul.tools li#btn-thread-1 {
 	background-position: 50% 50%;
 	width: 20px;
 	height: 20px;
-	margin-left: 5px
+	margin-left: 5px;
 	clear: both;
 }
 
@@ -1079,7 +1081,7 @@ ul.tools li#btn-scotch-1.scotch-1-active.active {
 	background-size: 100%;
 	background-position: 50% 50%;
 	width: 105px;
-	height: 20px;
+	height: 27px;
 	margin-top: 10px;
 	margin-right: 12px;
 	float: right;
@@ -1090,7 +1092,7 @@ ul.tools li#btn-scotch-2.scotch-2-active.active {
 	background-size: 100%;
 	background-position: 50% 50%;
 	width: 105px;
-	height: 20px;
+	height: 27px;
 	margin-top: 6px;
 	margin-right: 12px;
 	float: right;
@@ -1121,6 +1123,8 @@ ul.tools li#btn-grass.grass-active.active {
 	width: 106px;
 	height: 130px;
 	margin-left: 25px;
+	position: relative;
+	top: 4px;
 }
 
 ul.tools li#btn-orange.orange-active.active {
