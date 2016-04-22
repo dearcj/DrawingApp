@@ -518,7 +518,7 @@ jQuery(document).ready(function($) {
 		var paintingWidth = parseInt(mainPainting.css('width'));
 		var paintingHeight = paintingWidth/paintingRatio;
 
-		mainPainting.css(height, paintingHeight + 'px');
+		mainPainting.css('height', paintingHeight + 'px');
 
 		paintingInfo.css('width', paintingWidth/100 * 65 + 'px');
 
