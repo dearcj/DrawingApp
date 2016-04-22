@@ -151,6 +151,9 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
+		window.currentHash = {hash: 'museum'};
+		openPage('museum');
+
 		if ($('#your-painting').attr('src')) {
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');
@@ -160,9 +163,6 @@ jQuery(document).ready(function($) {
 			$('.painting-info').css('display', 'none');
 			$('#museum-wrapper p').css('opacity', 1);
 		}
-
-		window.currentHash = {hash: 'museum'};
-		openPage('museum');
 	});
 
 	$('.go-to-tools').click(function() {
