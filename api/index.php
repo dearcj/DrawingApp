@@ -86,7 +86,30 @@ class mMomaAPI extends Rest {
 		$error = array("status" => "Error", "message" => "Provided data is incorrect");
 		$this->response($this->json($error), 400);
 	}
-	
+
+
+	private function _uploadpicAction() {
+		if($this->getRequestMethod() != "POST") {
+    			$this->response("", 406);
+    		}
+
+    		$link = intval($this->request["upload_url"]);
+    		$image = intval($this->request["image"]);
+	$data = array('photo' => $image);
+
+	$options = array(
+    	'http' => array(
+        	'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        	'method'  => 'POST',
+        	'content' => http_build_query($data)
+    	)
+	);
+
+		$context  = stream_context_create($options);
+		$result = file_get_contents($url, false, $context);
+		$this->response($this->json($result), 200);
+	}
+
 	private function _getimagefromgalleryAction() {
 		if($this->getRequestMethod() != "GET") {
 			$this->response("", 406);
