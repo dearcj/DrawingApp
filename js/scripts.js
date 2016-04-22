@@ -117,11 +117,8 @@ jQuery(document).ready(function($) {
 	}
 
 	function openPage(pageName) {
-		if (window.location.hash == '') {
-			window.currentHash = { hash: 'index' };
-		} else {
-			window.currentHash = { hash: window.location.hash };
-		}
+		window.currentHash = { hash: window.location.hash };
+
 		var stateObj = currentHash;
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
@@ -130,7 +127,7 @@ jQuery(document).ready(function($) {
 	}
 
 	if (window.location.hash == '') {
-		console.log('hi');
+		window.currentHash = { hash: 'index' };
 	}
 
 	$('.go-to-surface').click(function() {
@@ -169,9 +166,6 @@ jQuery(document).ready(function($) {
 
 	window.addEventListener("popstate", function(e) {
 		switch (currentHash.hash) {
-			case '':
-				openPage('index');
-				break;
 			case 'index':
 				openPage('index');
 				break;
@@ -193,10 +187,7 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
-	switch (window.location.hash) {
-		case '':
-			openPage('index');
-			break;
+	switch (currentHash.hash) {
 		case 'index':
 			openPage('index');
 			break;
