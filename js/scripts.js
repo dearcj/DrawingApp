@@ -4,6 +4,10 @@ window.selectedSurface = 1;
 
 jQuery(document).ready(function($) {
 
+	var yourPainting = localStorage.getItem('#your-painting');
+
+	console.log(yourPainting);
+
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
 	$('ul.tools li#btn-scotch').click(function() {
