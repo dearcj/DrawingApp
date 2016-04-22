@@ -121,6 +121,16 @@ jQuery(document).ready(function($) {
 		$('.screens').fadeOut(250).addClass('hidden');
 		$('#' + pageName + '-wrapper').fadeIn(500).removeClass('hidden');
 		$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
+
+		if ($('#your-painting').attr('src')) {
+			$('.new-painting').css('display', 'none');
+			$('.painting-info').css('display', 'block');
+			$('#museum-wrapper p').css('opacity', 0);
+		} else {
+			$('.new-painting').css('display', 'block');
+			$('.painting-info').css('display', 'none');
+			$('#museum-wrapper p').css('opacity', 1);
+		}
 	}
 
 	function openPage(pageName) {
@@ -153,16 +163,6 @@ jQuery(document).ready(function($) {
 
 		window.currentHash = {hash: 'museum'};
 		openPage('museum');
-
-		if ($('#your-painting').attr('src')) {
-			$('.new-painting').css('display', 'none');
-			$('.painting-info').css('display', 'block');
-			$('#museum-wrapper p').css('opacity', 0);
-		} else {
-			$('.new-painting').css('display', 'block');
-			$('.painting-info').css('display', 'none');
-			$('#museum-wrapper p').css('opacity', 1);
-		}
 	});
 
 	$('.go-to-tools').click(function() {

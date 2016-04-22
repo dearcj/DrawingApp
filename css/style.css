@@ -1801,7 +1801,7 @@ ul.logotypes li a {
 
 .social-buttons {
     position: relative;
-    top: 3%;
+    top: -15%;
 	right: 29%;
     float: right;
 }
