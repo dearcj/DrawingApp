@@ -118,8 +118,9 @@ jQuery(document).ready(function($) {
 
 	function openPage(pageName) {
 		var freshUrl = mainUrl + '#' + pageName;
+		var href = window.location.href;
 
-		if (window.location.href.indexOf('#') < 0 || stateObj.hash == 'index') {
+		if (href.indexOf('#') < 0 || href.indexOf('index') > 0) {
 			window.stateObj = { hash: pageName };
 		} else {
 			window.stateObj = { hash: window.location.hash };
@@ -130,7 +131,7 @@ jQuery(document).ready(function($) {
 		pagesTransition(pageName);
 	}
 
-	switch (window.location.hash) {
+/*	switch (window.location.hash) {
 		case '':
 			openPage('index');
 			break;
@@ -152,7 +153,7 @@ jQuery(document).ready(function($) {
 		case 'museum':
 			openPage('museum');
 			break;
-	}
+	}*/
 
 	window.addEventListener("popstate", function(e) {
 		switch (stateObj.hash) {
