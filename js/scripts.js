@@ -514,7 +514,7 @@ jQuery(document).ready(function($) {
 
 		var paintingInfoWidth = parseInt(paintingInfo.css('width'));
 
-		paintingInfo.css('height', paintingInfoWidth/4.54 + 'px');
+		paintingInfo.css({height: paintingInfoWidth/4.54 + 'px', 'top': -paintingInfoWidth/4.54 + 'px'});
 
 		paintingInfo.find('span.title').css('font-size', paintingInfoWidth/2.25 + '%');
 
