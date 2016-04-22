@@ -93,13 +93,13 @@ class mMomaAPI extends Rest {
     			$this->response("", 406);
     		}
 
-    		$link = intval($this->request["upload_url"]);
-    		$image = intval($this->request["image"]);
+    		$link = $this->request["upload_url"];
+    		$image = $this->request["image"];
     		$ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $link);
             curl_setopt($ch, CURLOPT_POST, 1);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS,  array('photo' => $image));
+            curl_setopt($ch, CURLOPT_POSTFIELDS,  array('photo' => 'https://pp.vk.me/c633531/v633531845/1ee3e/C9ijNu495M4.jpg'));
             $result = curl_exec($ch);
             curl_close($ch);
 
