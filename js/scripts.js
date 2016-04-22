@@ -4,18 +4,6 @@ window.selectedSurface = 1;
 
 jQuery(document).ready(function($) {
 
-	$(window).load(function() {
-		if ($('#your-painting').attr('src') != '') {
-			$('.new-painting').css('display', 'none');
-			$('.painting-info').css('display', 'block');
-			$('#museum-wrapper p').css('opacity', 0);
-		} else {
-			$('.new-painting').css('display', 'block');
-			$('.painting-info').css('display', 'none');
-			$('#museum-wrapper p').css('opacity', 1);
-		}
-	});
-
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
 	$('ul.tools li#btn-scotch').click(function() {
@@ -161,6 +149,16 @@ jQuery(document).ready(function($) {
 			window.mainCanvasObject.sendPic(openMyMuseum, window.savedImage)
 		} else {
 			openMyMuseum();
+		}
+
+		if (!localStorage.getItem('#your-painting')) {
+			$('.new-painting').css('display', 'none');
+			$('.painting-info').css('display', 'block');
+			$('#museum-wrapper p').css('opacity', 0);
+		} else {
+			$('.new-painting').css('display', 'block');
+			$('.painting-info').css('display', 'none');
+			$('#museum-wrapper p').css('opacity', 1);
 		}
 
 		window.currentHash = {hash: 'museum'};
