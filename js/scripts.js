@@ -151,14 +151,14 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
-		if (!$('#your-painting').attr('src')) {
-			$('.new-painting').css('display', 'block');
-			$('.painting-info').css('display', 'none');
-			$('#museum-wrapper p').css('opacity', 1);
-		} else {
+		if ($('#your-painting').attr('src')) {
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');
 			$('#museum-wrapper p').css('opacity', 0);
+		} else {
+			$('.new-painting').css('display', 'block');
+			$('.painting-info').css('display', 'none');
+			$('#museum-wrapper p').css('opacity', 1);
 		}
 
 		window.currentHash = {hash: 'museum'};
