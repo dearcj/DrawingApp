@@ -151,9 +151,9 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
-		var yourpainting = localStorage.getItem('#your-painting');
+		var imageId = localStorage.getItem('#your-painting');
 
-		if (!yourpainting) {
+		if (!imageId) {
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
 			$('#museum-wrapper p').css('opacity', 1);
@@ -163,7 +163,7 @@ jQuery(document).ready(function($) {
 			$('#museum-wrapper p').css('opacity', 0);
 		}
 
-		console.log(yourpainting);
+		console.log(imageId);
 
 		window.currentHash = {hash: 'museum'};
 		openPage('museum');
