@@ -125,7 +125,7 @@ jQuery(document).ready(function($) {
 	}
 
 	if (window.location.hash == '') {
-		window.currentHash = { hash: 'index' };
+		window.stateObj = { hash: 'index' };
 	}
 
 	$('.go-to-surface').click(function() {
