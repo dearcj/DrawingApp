@@ -397,7 +397,7 @@ jQuery(document).ready(function($) {
 		getLastImage(imageId, function (res) {
 
 			document.getElementById('post-vk').addEventListener('click', function() {
-				vkpost('asdasd', res.image);
+				vkpost('asdasd', res.image, res.file);
 			});
 
 			document.getElementById('post-fb').addEventListener('click', function() {
