@@ -199,6 +199,13 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
+	openPage('index');
+	openPage('surface');
+	openPage('painting');
+	openPage('filters');
+	openPage('publication');
+	openPage('museum');
+
 	$('.save-and-send').click(function(event) {
 
 		event.preventDefault();
