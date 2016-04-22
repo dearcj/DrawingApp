@@ -498,7 +498,7 @@ jQuery(document).ready(function($) {
 			newPaintingButtonRatio = function(width, height) {
 				return width/height;
 			},
-			newPaintingButtonRatio = newPaintingButtonRatio(148, 81),
+			newPaintingButtonRatio = newPaintingButtonRatio(247, 90),
 			backyardButton = $('.at-the-backyard'),
 			paintingInfo = $('.painting-info'),
 			socialButtons = $('.social-buttons');
