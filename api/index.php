@@ -52,8 +52,8 @@ class mMomaAPI extends Rest {
 		if (((isset($this->request["user_id"]) && !empty($this->request["user_id"])) ||
 		(isset($this->request["new_user"]) && $this->request["new_user"] == "true"))
 		 && isset($this->request["image"]) && !empty($this->request["image"])
-		 && isset($this->request["name"]) && !empty($this->request["name"])
-		 && isset($this->request["description"]) && !empty($this->request["description"])) {
+
+		  ) {
 			
 			$user_id = intval($this->request["user_id"]);
 
@@ -97,10 +97,11 @@ class mMomaAPI extends Rest {
     		$image = $this->request["image"];
     		$ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $link);
-            curl_setopt($ch, CURLOPT_POST, 1);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_POSTFIELDS,  array('photo' => 'https://pp.vk.me/c633531/v633531845/1ee3e/C9ijNu495M4.jpg'));
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS,  array('file1' => $image));
             $result = curl_exec($ch);
+            var_dump($result);
             curl_close($ch);
 
 /*	$data = array('photo' => $image);
