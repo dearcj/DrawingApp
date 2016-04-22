@@ -1506,7 +1506,7 @@ div.at-the-backyard {
 	margin: 0 auto;
 	line-height: 120%;
 	height: auto;
-	position: absolute;
+	position: relative;
 	color: white;
 }
 

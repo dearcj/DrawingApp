@@ -551,7 +551,7 @@ jQuery(document).ready(function($) {
 			museumTextBorderRadius = museumTextWidth/20,
 			museumTextPadding = museumTextWidth/12;
 
-		museumText.css({width: museumTextWidth + 'px', 'border-radius': museumTextBorderRadius + 'px', 'font-size': paintingHeight/2.2 + '%', 'padding': 6 * museumTextPadding/7 + 'px ' + '0 ' + museumTextPadding + 'px', top: width/30 + 3 * paintingHeight/8 + 'px'});
+		museumText.css({width: museumTextWidth + 'px', 'border-radius': museumTextBorderRadius + 'px', 'font-size': paintingHeight/2.2 + '%', 'padding': 6 * museumTextPadding/7 + 'px ' + '0 ' + museumTextPadding + 'px', top: -(paintingHeight/2 + paintingHeight/7.85) + 'px'});
 
 		var newPaintingButtonHeight = parseInt(newPaintingButton.css('height')),
 			darkSideMuseumHeight = parseInt(darkSideMuseum.css('height')),
