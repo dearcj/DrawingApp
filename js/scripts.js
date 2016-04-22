@@ -129,6 +129,10 @@ jQuery(document).ready(function($) {
 		pagesTransition(pageName);
 	}
 
+	if (window.location.hash == '') {
+		console.log('hi');
+	}
+
 	$('.go-to-surface').click(function() {
 		openPage('surface');
 	});
