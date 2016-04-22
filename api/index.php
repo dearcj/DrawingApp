@@ -106,7 +106,7 @@ class mMomaAPI extends Rest {
 	);
 
 		$context  = stream_context_create($options);
-		$result = file_get_contents($url, false, $context);
+		$result = file_get_contents($link, false, $context);
 		$this->response($this->json($result), 200);
 	}
 

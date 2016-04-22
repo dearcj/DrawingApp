@@ -204,7 +204,8 @@ function vkpost(t, im) {
             url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
             data: {
               api_method: 'uploadpic',
-              upload_url: uploadUrl, image: im},
+              upload_url: uploadUrl,
+              image: im},
             success: function callback(res) {
               cb(res);
               console.log(res);
