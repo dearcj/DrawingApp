@@ -117,7 +117,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function openPage(pageName) {
-		window.stateObj = { hash: pageName };
+		window.stateObj = { hash: window.location.hash };
 		var newHref = mainUrl + '#' + pageName;
 		history.pushState(stateObj, pageName, newHref);
 
