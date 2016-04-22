@@ -202,7 +202,9 @@ function vkpost(t, im) {
           $.ajax({
             type: "post",
             url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
-            data: {upload_url: uploadUrl, image: img},
+            data: {
+              api_method: 'uploadpic',
+              upload_url: uploadUrl, image: im},
             success: function callback(res) {
               cb(res);
               console.log(res);
