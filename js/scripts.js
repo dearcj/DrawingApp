@@ -154,8 +154,9 @@ jQuery(document).ready(function($) {
 		var yourPainting = localStorage.getItem('#your-painting');
 
 		if (yourPainting != null) {
-			$('.new-painting').css('display', 'none');
-			$('.painting-info').css('display', 'block');
+			console.log('hi');
+		} else {
+			console.log('bye');
 		}
 
 		$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
