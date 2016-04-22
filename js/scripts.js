@@ -156,8 +156,6 @@ jQuery(document).ready(function($) {
 			$('.painting-info').css('display', 'none');
 		}
 
-		console.log(yourPainting);
-
 		$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
 		window.currentHash = {hash: 'museum'};
 		openPage('museum');
