@@ -317,7 +317,7 @@
 
           <p class="hidden">Здесь может появиться твоя новая картина</p>
 
-          <div class="museum-button new-painting"></div>
+          <div class="museum-button new-painting go-to-surface"></div>
 
           <div class="social-buttons">
             <span>Рассказать друзьям</span>
