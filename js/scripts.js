@@ -151,7 +151,7 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
-		if (!localStorage.getItem('#your-painting')) {
+		if (localStorage.getItem('#your-painting')) {
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');
 			$('#museum-wrapper p').css('opacity', 0);
