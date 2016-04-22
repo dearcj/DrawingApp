@@ -117,15 +117,21 @@ jQuery(document).ready(function($) {
 	}
 
 	function openPage(pageName) {
-		window.stateObj = { hash: stateObj.hash };
-		var newHref = mainUrl + '#' + pageName;
-		history.pushState(stateObj, pageName, newHref);
+		var freshUrl = mainUrl + '#' + pageName;
+
+		if (window.location.hash == '') {
+			window.stateObj = { hash: 'index' };
+		} else {
+			window.stateObj = { hash: window.location.hash };
+		}
+
+		if (stateObj.hash == pageName) {
+			history.replaceState(stateObj, pageName, freshUrl);
+		} else {
+			history.pushState(stateObj, pageName, freshUrl);
+		}
 
 		pagesTransition(pageName);
-	}
-
-	if (window.location.hash == '') {
-		window.stateObj = { hash: 'index' };
 	}
 
 	$('.go-to-surface').click(function() {
@@ -185,28 +191,12 @@ jQuery(document).ready(function($) {
 		}
 	}, false);
 
-	switch (stateObj.hash) {
-		case 'index':
-			console.log('hi');
-			openPage('index');
-			break;
-		case 'surface':
-			console.log('bye');
-			openPage('surface');
-			break;
-		case 'painting':
-			openPage('painting');
-			break;
-		case 'filters':
-			openPage('filters');
-			break;
-		case 'publication':
-			openPage('publication');
-			break;
-		case 'museum':
-			openPage('museum');
-			break;
-	}
+	openPage('index');
+	openPage('surface');
+	openPage('painting');
+	openPage('filters');
+	openPage('publication');
+	openPage('museum');
 
 	$('.save-and-send').click(function(event) {
 
