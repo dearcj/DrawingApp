@@ -187,9 +187,11 @@ jQuery(document).ready(function($) {
 
 	switch (stateObj.hash) {
 		case 'index':
+			console.log('hi');
 			openPage('index');
 			break;
 		case 'surface':
+			console.log('bye');
 			openPage('surface');
 			break;
 		case 'painting':
