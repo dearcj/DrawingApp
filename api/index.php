@@ -95,7 +95,15 @@ class mMomaAPI extends Rest {
 
     		$link = intval($this->request["upload_url"]);
     		$image = intval($this->request["image"]);
-	$data = array('photo' => $image);
+    		$ch = curl_init();
+            curl_setopt($ch, CURLOPT_URL, $link);
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS,  array('photo' => $image));
+            $result = curl_exec($ch);
+            curl_close($ch);
+
+/*	$data = array('photo' => $image);
 
 	$options = array(
     	'http' => array(
@@ -106,7 +114,7 @@ class mMomaAPI extends Rest {
 	);
 
 		$context  = stream_context_create($options);
-		$result = file_get_contents($link, false, $context);
+		$result = file_get_contents($link, false, $context);*/
 		$this->response($this->json($result), 200);
 	}
 
