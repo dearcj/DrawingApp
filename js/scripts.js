@@ -151,10 +151,8 @@ jQuery(document).ready(function($) {
 			openMyMuseum();
 		}
 
-		if ($('img#your-painting').attr('src') == '') {
-			$('.new-painting').css('display', 'block');
-			$('.painting-info').css('display', 'none');
-			$('#museum-wrapper p').fadeIn(2000).removeClass('hidden');
+		if ($('#your-painting').attr('src') == '') {
+			console.log('hi');
 		}
 
 		window.currentHash = {hash: 'museum'};
