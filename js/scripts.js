@@ -120,9 +120,9 @@ jQuery(document).ready(function($) {
 		var freshUrl = mainUrl + '#' + pageName;
 
 		if (window.location.href.indexOf('#') < 0) {
-			window.stateObj = { hash: 'index' };
+			window.stateObj = { hash: pageName };
 		} else {
-			window.stateObj = { hash: window.location.hash };
+			window.stateObj = { hash: stateObj.hash };
 		}
 
 		if (stateObj.hash == pageName) {
@@ -132,8 +132,6 @@ jQuery(document).ready(function($) {
 			history.pushState(stateObj, pageName, freshUrl);
 			pagesTransition(pageName);
 		}
-
-
 	}
 
 	$(window).load(function() {
