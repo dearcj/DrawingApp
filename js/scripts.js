@@ -128,7 +128,7 @@ jQuery(document).ready(function($) {
 		pagesTransition(pageName);
 	}
 
-	if (window.location.hash.indexOf(pageName) == '') {
+	if (window.location.hash == '') {
 		var stateObj = { hash: 'index' };
 		openPage('index');
 	}
