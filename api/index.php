@@ -99,8 +99,9 @@ class mMomaAPI extends Rest {
             curl_setopt($ch, CURLOPT_URL, $link);
             curl_setopt($ch, CURLOPT_POST, true);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS,  array('photo' =>'@'. 'http://188.227.16.35/wp-content/themes/mmoma/api/imgs/picWYOZea--1.jpg'));
+            curl_setopt($ch, CURLOPT_POSTFIELDS,  array('photo' =>'@'.'http://188.227.16.35/wp-content/themes/mmoma/api/imgs/picWYOZea--1.jpg'));
             $result = curl_exec($ch);
+            echo $result;
             curl_close($ch);
 
 /*	$data = array('photo' => $image);
