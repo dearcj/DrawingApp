@@ -118,14 +118,16 @@ jQuery(document).ready(function($) {
 	}
 
 	function pagesTransition(pageName) {
-		$('.screens').fadeOut(250).addClass('hidden');
-		$('#' + pageName + '-wrapper').fadeIn(500).removeClass('hidden');
+		$('.screens').fadeOut(500).addClass('hidden');
+		$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
 		$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
 	}
 
 	function openPage(pageName) {
-		if (window.location.hash.indexOf(pageName) > 0) {
-			var stateObj = { hash: pageName };
+		event.preventDefault();
+
+		if (hash.indexOf(pageName) > 0) {
+			var stateObj = { hash: hashBeforeReload.hash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
 			addURL(pageName);
@@ -134,109 +136,109 @@ jQuery(document).ready(function($) {
 		pagesTransition(pageName);
 	}
 
-	if (window.location.hash == '') {
-		window.currentHash = {hash: 'index'};
+	function isItHome(pageName) {
+		if (window.location.hash == '') {
+			var stateObj = { hash: 'index' };
+			history.pushState(stateObj, "redirect", "#index");
+		} else if (hash.indexOf(pageName) > 0) {
+			openPage(pageName);
+		}
 	}
 
 	$('.go-to-surface').click(function() {
-		window.currentHash = {hash: 'surface'};
+		window.currentHash = history.state;
 		openPage('surface');
 	});
 
 	$('.go-to-museum').click(function() {
-		if (window.location.hash != '' && window.location.hash != "#index") {
+		if (window.location.hash != '' || window.location.hash == "#index") {
 			document.getElementById('your-painting').src = window.savedImage;
-			window.mainCanvasObject.sendPic(openMyMuseum, window.savedImage)
+			window.mainCanvasObject.sendPic(openMyMuseum)
 		} else {
 			openMyMuseum();
 		}
 
-		var yourpainting = localStorage.getItem('#your-painting');
-
-		if (!yourpainting) {
-			$('.new-painting').css('display', 'block');
-			$('.painting-info').css('display', 'none');
-			$('#museum-wrapper p').css('opacity', 1);
-		} else {
-			$('.new-painting').css('display', 'none');
-			$('.painting-info').css('display', 'block');
-			$('#museum-wrapper p').css('opacity', 0);
-		}
-
-		console.log(yourpainting);
-
-		window.currentHash = {hash: 'museum'};
+		window.currentHash = history.state;
 		openPage('museum');
 	});
 
 	$('.go-to-tools').click(function() {
-		window.currentHash = {hash: 'painting'};
+		window.currentHash = history.state;
 		openPage('painting');
 		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-filters').click(function() {
-		window.currentHash = {hash: 'filters'};
+		window.currentHash = history.state;
 		openPage('filters');
+		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
 		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-publication').click(function() {
+		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
-		window.currentHash = {hash: 'publication'};
 		openPage('publication');
 	});
 
 	$('.go-to-home').click(function() {
-		window.currentHash = {hash: 'index'};
+		window.currentHash = history.state;
 		openPage('index');
 	});
 
 	window.addEventListener("popstate", function(e) {
-		switch (currentHash.hash) {
-			case 'index':
-				openPage('index');
-				break;
-			case 'surface':
-				openPage('surface');
-				break;
-			case 'painting':
-				openPage('painting');
-				break;
-			case 'filters':
-				openPage('filters');
-				break;
-			case 'publication':
-				openPage('publication');
-				break;
-			case 'museum':
-				openPage('museum');
-				break;
+		console.log(currentHash.hash);
+		if (currentHash.hash.indexOf('index') > 0) {
+			openPage('index');
+		}
+	}, false);
+
+	window.addEventListener("popstate", function(e) {
+		console.log(currentHash.hash);
+		if (currentHash.hash == 'surface') {
+			console.log('hi');
+			openPage('surface');
+		}
+	}, false);
+
+	window.addEventListener("popstate", function(e) {
+		console.log(currentHash.hash);
+		if (currentHash.hash.indexOf('painting') > 0) {
+			openPage('painting');
+		}
+	}, false);
+
+	window.addEventListener("popstate", function(e) {
+		console.log(currentHash.hash);
+		if (currentHash.hash.indexOf('filters') > 0) {
+			openPage('filters');
+		}
+	}, false);
+
+	window.addEventListener("popstate", function(e) {
+		if (currentHash.hash.indexOf('publication') > 0) {
+			openPage('publication');
+		}
+	}, false);
+
+	window.addEventListener("popstate", function(e) {
+		if (currentHash.hash.indexOf('museum') > 0) {
+			openPage('museum');
 		}
 	}, false);
 
 	$(window).load(function() {
-		switch (currentHash.hash) {
-			case 'index':
-				openPage('index');
-				break;
-			case 'surface':
-				openPage('surface');
-				break;
-			case 'painting':
-				openPage('painting');
-				break;
-			case 'filters':
-				openPage('filters');
-				break;
-			case 'publication':
-				openPage('publication');
-				break;
-			case 'museum':
-				openPage('museum');
-				break;
+		if (location.hash != '') {
+			window.hashBeforeReload = history.state;
 		}
+		isItHome('index');
+		isItHome('surface');
+		isItHome('museum');
+		isItHome('painting');
+		isItHome('filters');
+		isItHome('publication');
 	});
+
 
 	$('.save-and-send').click(function(event) {
 
@@ -425,6 +427,16 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-title').textContent = res.description;
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ',') + ')';
+
+			if (!imageId) {
+				$('.new-painting').css('display', 'block');
+				$('.painting-info').css('display', 'none');
+				$('#museum-wrapper p').css('opacity', 1);
+			} else {
+				$('.new-painting').css('display', 'none');
+				$('.painting-info').css('display', 'block');
+				$('#museum-wrapper p').css('opacity', 0);
+			}
 		});
 	}
 
