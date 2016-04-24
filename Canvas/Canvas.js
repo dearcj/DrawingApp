@@ -4,7 +4,8 @@ function Canvas(frontCtx, backCtx, canvasType) {
 	this.currentBrush = null;
 	var el = document.getElementById('main-canvas');
 	this.cursImg=new Image();
-	this.cursorSrc = relPath + 'Jeans/jeans1.png';
+	this.cursorSrc = window.basePath + 'imgs/tools/orange.png';
+
 	this.state = {
 		width: el.width,
 		height: el.height,
