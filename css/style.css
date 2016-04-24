@@ -1420,7 +1420,8 @@ li.back-to-surface {
 li#go-to-tools,
 li.add-filter {
 	background: url(../img/tools-buttons-next.png) no-repeat;
-	background-size: 100%;
+	background-size: 80%;
+	background-position: 50% 50%;
 }
 
 li.its-done,

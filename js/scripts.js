@@ -685,7 +685,7 @@ jQuery(document).ready(function($) {
 
 		var surfaceCanvasHeight = parseInt(surfaceCanvas.css('height'));
 
-		surfaceCanvas.css('margin-top', (660 - surfaceCanvasHeight)/2 + 'px');
+		surfaceCanvas.css('margin-top', (660 - surfaceCanvasHeight)/4 + 'px');
 
 		darkSideSurface.css({height: surfaceCanvasHeight/15 + 'px', top: -surfaceCanvasHeight/15 + 'px'});
 		
@@ -696,7 +696,7 @@ jQuery(document).ready(function($) {
 		var sideMargins = (width - surfacesLiWidth*2 - surfaceCanvasWidth)/3,
 			surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
 
-		$('ul.surfaces').css({width: surfacesLiWidth*2 + 'px', height: surfacesLi.height()*2 + 'px', 'margin-left': sideMargins + 'px'});
+		$('ul.surfaces').css({width: surfacesLiWidth*2 + 'px', height: surfacesLi.height()*4 + 'px', 'margin-left': sideMargins + 'px', 'margin-top': (660 - surfaceCanvasHeight)/2 + 'px'});
 
 		$('ul.surfaces li:nth-child(7)').css('margin-left', surfacesLiWidth/2 + 'px');
 
@@ -718,7 +718,7 @@ jQuery(document).ready(function($) {
 		var forwardButtonWidth = parseInt(forwardButton.css('width')),
 			forwardButtonHeight = parseInt(forwardButton.css('height'));
 
-		$('ul.tools-buttons.surface-tb').css({left: surfaceCanvasWidth/2 + forwardButtonWidth/2 + 'px', top: surfaceCanvasHeight + forwardButtonHeight*1.5 + 'px'});
+		$('ul.tools-buttons.surface-tb').css({left: surfaceCanvasWidth/2 + forwardButtonWidth/2 + 'px', top: (660 - surfaceCanvasHeight)/2 + surfaceCanvasHeight + 'px'});
 
 		$('ul#helpers.surface').css('top', 0);
 
