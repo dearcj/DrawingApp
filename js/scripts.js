@@ -980,7 +980,7 @@ jQuery(document).ready(function($) {
 					objHeight('ul#buttons li.vert', artHeight/100 * verticalButtonsHeightPercent);	
 		}
 			
-		setPercents(26.4, 45.2, 13.35, 30);
+		setPercents(26.4, 39.4, 13.35, 30);
 	}
 
 
