@@ -822,7 +822,7 @@ ul.tools-buttons li {
 }
 
 ul.tools-buttons.surface-tb li {
-	display: block;
+	margin: 0;
 }
 
 ul.tools-buttons.tools-tb li {
@@ -1502,7 +1502,8 @@ div.at-the-backyard {
 
 #surface-canvas {
 	background: url(../img/textures/wood.jpg) no-repeat;
-	background-size: 100%;
+	background-size: 0;
+	background-position: 50% 50%;
 	margin: 0 auto;
 	max-width: 750px;
 	max-height: 530px;
@@ -1565,7 +1566,8 @@ div.at-the-backyard {
 }
 
 ul.tools-buttons.surface-tb {
-	float: right;
+	float: none;
+	display: block;
 }
 
 ul.surfaces {
