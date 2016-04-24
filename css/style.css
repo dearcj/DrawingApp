@@ -1452,6 +1452,10 @@ div.at-the-backyard {
 	position: relative;
 }
 
+.screens {
+	height: 660px !important;
+}
+
 #surface-wrapper {
 	background: url(../img/background.png) no-repeat;
     background-position: 50% 0;
