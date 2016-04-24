@@ -682,7 +682,11 @@ jQuery(document).ready(function($) {
 
 		surfaceBackyard.css({top: width/75 + 'px', left: width/75 + 'px'});
 
-		surfaceWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
+		surfaceWrapper.css('height', 660 + 'px');
+
+		if (width < 1641) {
+			surfaceWrapper.css('background-size', 'auto 100%');
+		}
 
 		surfaceCanvas.css('width', width/2.5 + 'px');
 
