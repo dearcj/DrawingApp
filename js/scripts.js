@@ -693,7 +693,7 @@ jQuery(document).ready(function($) {
 
 		surfacesLi.css({width: surfacesLiWidth + 'px', height: surfacesLiWidth/surfaceLiRatio + 'px'});
 
-		var sideMargins = (width - surfacesLiWidth*2 - surfaceCanvasWidth)/3,
+		var sideMargins = ((width - surfaceCanvasWidth)/2 - surfacesLiWidth*2)*3/4,
 			surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
 
 		$('ul.surfaces').css({width: surfacesLiWidth*2 + 'px', height: surfacesLi.height()*4 + 'px', 'margin-left': sideMargins + 'px', 'margin-top': (660 - surfaceCanvasHeight)/2 + 'px'});
