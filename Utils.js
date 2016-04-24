@@ -249,7 +249,7 @@ function applyFilter(canvId, imgData, filterNumber) {
   var cb;
   ZSound.Play('filter');
   var saveImgCB = function (canvas) {
-    window.savedImage = canvas.toDataURL("image/jpeg", 0.8);
+    window.savedImage = canvas.toDataURL("image/png", 0.8);
   }
   if (filterNumber == 1) {
    var src = relPath + 'filters/diptih.png';
