@@ -197,8 +197,10 @@ jQuery(document).ready(function($) {
 		if (window.location.hash == '') {
 			var stateObj = { hash: 'index' };
 			history.pushState(stateObj, "redirect", "#index");
+			ZSound.PlayMusic('street');
 		} else if (hash.indexOf(pageName) > 0) {
 			openPage(pageName);
+			ZSound.stopMusic('street');
 		}
 	}
 
