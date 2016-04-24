@@ -46,10 +46,13 @@ function getRandomInt(min, max) {
 
 
 
-function applyOverFilter(saveImgCB, src, canvId, imgData, dx, dy) {
+function applyOverFilter(saveImgCB, src, canvId, imgData, dx, dy, remove) {
   cb = function () {
     var myCanvas = document.getElementById(canvId);
     var ctx = myCanvas.getContext('2d');
+
+    if (remove) 	ctx.globalCompositeOperation = 'destination-out';
+
 
     var img = new Image();
     img.src = src;
@@ -58,6 +61,8 @@ function applyOverFilter(saveImgCB, src, canvId, imgData, dx, dy) {
     if (!dy) dy = 0;
     img.onload = function () {
       ctx.drawImage(img, dx, dy);
+
+      if (remove) ctx.globalCompositeOperation = null;
       saveImgCB(myCanvas);
       //  ctx.canvas.width = ctx.canvas.width;
     }
@@ -248,7 +253,7 @@ function applyFilter(canvId, imgData, filterNumber) {
   }
   if (filterNumber == 1) {
    var src = relPath + 'filters/diptih.png';
-   cb = applyOverFilter(saveImgCB, src, canvId, imgData);
+   cb = applyOverFilter(saveImgCB, src, canvId, imgData, true);
    }
   if (filterNumber == 2) {
     var src = relPath + 'filters/modern.png';
@@ -256,7 +261,7 @@ function applyFilter(canvId, imgData, filterNumber) {
   }
   if (filterNumber == 3) {
     var src = relPath + 'filters/poliptih.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, true);
   }
   if (filterNumber == 4) {
     var src = relPath + 'filters/vintage.png';
