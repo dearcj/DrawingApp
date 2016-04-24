@@ -204,6 +204,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('surface');
+		$('ul.surfaces').animate({"margin-left": "+=517px"}, "slow");
 	});
 
 	$('.go-to-museum').click(function() {
@@ -696,7 +697,7 @@ jQuery(document).ready(function($) {
 		var sideMargins = ((width - surfaceCanvasWidth)/2 - surfacesLiWidth*2)*3/4,
 			surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
 
-		$('ul.surfaces').css({width: surfacesLiWidth*2 + 'px', height: surfacesLi.height()*4 + 'px', 'margin-left': sideMargins + 'px'});
+		$('ul.surfaces').css({width: surfacesLiWidth*2 + 'px', height: surfacesLi.height()*4 + 'px', 'margin-left': -surfacesLiWidth*2 + 'px'});
 
 		$('ul.surfaces li:nth-child(7)').css('margin-left', surfacesLiWidth/2 + 'px');
 
