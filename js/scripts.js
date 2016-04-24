@@ -18,7 +18,11 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
+	// Free from resize
+
 	$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
+	forwardButton.css('top', forwardButtonHeight + 'px');
+	$('.surface-button.at-the-backyard').css('left', -$(window).width()/20 + 'px');
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
@@ -691,7 +695,7 @@ jQuery(document).ready(function($) {
 			},
 			surfaceBackgroundHeight = width/wrapperRatio;
 
-		surfaceBackyard.css({top: width/75 + 'px', left: -width/20 + 'px'});
+		surfaceBackyard.css({top: width/75 + 'px'});
 
 		surfaceWrapper.css('height', 660 + 'px');
 
@@ -736,8 +740,6 @@ jQuery(document).ready(function($) {
 
 		var forwardButtonWidth = parseInt(forwardButton.css('width'));
 		window.forwardButtonHeight = parseInt(forwardButton.css('height'));
-
-		forwardButton.css('top', forwardButtonHeight + 'px');
 
 		$('ul.tools-buttons.surface-tb').css('width', forwardButtonWidth + 'px');
 
