@@ -209,7 +209,7 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('surface');
 		$('#surface-wrapper').animate({'opacity': 1}, 500);
-		$('ul.surfaces').delay(500).animate({'margin-left': surfacesLiWidth + 'px'}, 1500);
+		$('ul.surfaces').delay(500).animate({'margin-left': surfacesMarginLeft + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1000);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
 		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
@@ -688,6 +688,8 @@ jQuery(document).ready(function($) {
 
 		if (width < 1641) {
 			surfaceWrapper.css('background-size', 'auto 100%');
+		} else {
+			surfaceWrapper.css('background-size', '100% auto');
 		}
 
 		surfaceCanvas.css('width', width/2.5 + 'px');
@@ -705,13 +707,14 @@ jQuery(document).ready(function($) {
 		darkSideSurface.css({height: surfaceCanvasHeight/15 + 'px', top: -surfaceCanvasHeight/15 + 'px'});
 		
 		window.surfacesLiWidth = surfaceCanvasWidth/4.229;
+		window.surfacesMarginLeft = ((width - surfaceCanvasWidth)/2 - surfacesLiWidth*2)/2;
 
 		surfacesLi.css({width: surfacesLiWidth + 'px', height: surfacesLiWidth/surfaceLiRatio + 'px'});
 
 		var sideMargins = ((width - surfaceCanvasWidth)/2 - surfacesLiWidth*2)*3/4,
 			surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
 
-		$('ul.surfaces').css({width: surfacesLiWidth*2 + 'px', height: surfacesLi.height()*4 + 'px'});
+		$('ul.surfaces').css({width: surfacesLiWidth*2 + 'px', height: surfacesLi.height()*4 + 'px', 'margin-top': surfacesLi.height() + 'px'});
 
 		$('ul.surfaces li:nth-child(7)').css('margin-left', surfacesLiWidth/2 + 'px');
 
