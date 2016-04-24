@@ -223,7 +223,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('#go-to-tools').on(window.eventType, function(event) {
-		$('ul.surfaces').animate({'margin-left': -$(window).width/5.28 + 'px'}, 500);
+		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
 		$('ul.tools').delay(500).animate({'margin-left': -705 + 'px'}, 1000);
 	});
