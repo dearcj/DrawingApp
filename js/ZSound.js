@@ -5,7 +5,7 @@ var ZSound = {
     loaded : false
 };
 
-ZSound.Init = function(manifest) {
+ZSound.Init = function(manifest, cb) {
 
     var audioPath = "/wp-content/themes/mmoma/Assets/Sounds/";
 
