@@ -1457,12 +1457,12 @@ div.at-the-backyard {
 	max-width: 130px;
 }
 
-.surface-button.at-the-backyard {
-	position: relative;
+.screens {
+    height: 660px !important;
 }
 
-.screens {
-	height: 660px !important;
+.surface-button.at-the-backyard {
+	position: relative;
 }
 
 #surface-wrapper {
