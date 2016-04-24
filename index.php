@@ -173,7 +173,7 @@
           </ul>
         </div>
 
-        <div id="painting-wrapper" class="screens test">
+        <div id="painting-wrapper" class="screens">
           <ul class="tools-buttons tools-tb">
             <li class="back-to-surface go-to-surface"><a href="#"></a></li>
             <li class="send-to-museum go-to-publication"><a href="#"></a></li>
