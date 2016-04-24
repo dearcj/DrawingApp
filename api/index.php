@@ -97,7 +97,7 @@ class mMomaAPI extends Rest {
     		$image = $this->request["image"];
 
 
-            $cfile = curl_file_create(realpath('imgs/picWYOZea--1.jpg'),'image/jpg','testpic');
+            $cfile = curl_file_create(realpath('api/imgs/picWYOZea--1.jpg'),'image/jpg','testpic');
             $ch = curl_init($url);
                         curl_setopt($ch, CURLOPT_URL, $url);
                         curl_setopt($ch, CURLOPT_POST, 1);
