@@ -211,7 +211,7 @@ jQuery(document).ready(function($) {
 
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#surface-wrapper').fadeIn(500).removeClass('hidden');
-		$('ul.surfaces').delay(500).animate({'margin-left': ($(window).width - 750)/2 - 360 + 'px'}, 2000);
+		$('ul.surfaces').delay(500).animate({'margin-left': (1920 - 750)/2 - 360 + 'px'}, 2000);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
 		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
