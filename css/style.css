@@ -413,7 +413,7 @@ ul.paintings.left-side a:nth-child#index-wrapper {
 }
 
 #painting-wrapper {
-	opacity: 0;
+	display: none;
 	background: url(../img/background.png) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;

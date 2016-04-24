@@ -224,7 +224,7 @@ jQuery(document).ready(function($) {
 	$('#go-to-tools').on(window.eventType, function(event) {
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
-		$('#painting-wrapper').animate({'opacity': 0}, 500);
+		$('#painting-wrapper').animate({'display': 'block'}, 500);
 		$('ul.tools').delay(1000).animate({'margin-left': -705 + 'px'}, 1000);
 	});
 
