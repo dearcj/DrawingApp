@@ -218,6 +218,7 @@ jQuery(document).ready(function($) {
 		if (window.location.hash != '' && window.location.hash != "#index") {
 			document.getElementById('your-painting').src = window.savedImage;
 			ZSound.Play('complete');
+			window.hideHint = true;
 			window.mainCanvasObject.sendPic(openMyMuseum, window.savedImage)
 		} else {
 			ZSound.Play('stage');
