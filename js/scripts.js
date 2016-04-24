@@ -205,6 +205,7 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-surface').click(function() {
 
+		ZSound.stopMusic('street');
 
 		ZSound.Play('stage');
 		window.currentHash = history.state;
