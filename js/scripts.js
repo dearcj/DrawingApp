@@ -700,8 +700,6 @@ jQuery(document).ready(function($) {
 
 		$('ul.surfaces li:nth-child(7)').css('margin-left', surfacesLiWidth/2 + 'px');
 
-		surfaceCanvas.css('margin-right', sideMargins + 'px');
-
 		var surfaceCanvasText = surfaceCanvas.find('p'),
 			surfaceTextWidth = surfaceCanvasWidth/2,
 			surfaceTextBorderRadius = surfaceTextWidth/20,
