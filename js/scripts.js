@@ -175,7 +175,7 @@ jQuery(document).ready(function($) {
 	function pagesTransition(pageName) {
 		$('.screens').fadeOut(500).addClass('hidden');
 		$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
-		$('#' + pageName + '-canvas p').delay(500).fadeIn(1500);
+		$('#' + pageName + '-canvas p').delay(2500).fadeIn(1000);
 	}
 
 	function openPage(pageName) {
