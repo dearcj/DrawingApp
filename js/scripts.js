@@ -207,7 +207,7 @@ jQuery(document).ready(function($) {
 		$('ul.surfaces').animate({'margin-left': surfacesLiWidth + 'px'}, 1500);
 		$('#surface-canvas').animate({'background-size': '100%'}, 1000);
 		$('ul#helpers li').delay(1500).animate({'opacity': 1}, 500);
-		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 1000);
+		$('.go-to-tools').delay(1000).animate({'top': 0 + 'px'}, 500);
 	});
 
 	$('.go-to-museum').click(function() {
