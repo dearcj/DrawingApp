@@ -28,7 +28,7 @@ Canvas.prototype.saveImage = function() {
 	var canvas = document.getElementById('back-canvas');
 
 	var dataURL = canvas.toDataURL("image/jpg", 0.85);
-	return  dataURL;//.replace(/^data:image\/(png|jpg);base64,/, "");
+	return  dataURL;//.asdsareplace(/^data:image\/(png|jpg);base64,/, "");
 };
 
 Canvas.prototype.mouseMoveAction = function(e) {
