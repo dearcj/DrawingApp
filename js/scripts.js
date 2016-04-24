@@ -204,7 +204,8 @@ jQuery(document).ready(function($) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('surface');
-		$('ul.surfaces').animate({"margin-left": "+=517px"}, "slow");
+		$('ul.surfaces').animate({'margin-left': '+=517px'}, 1500);
+		$('#surface-canvas').animate({'background-size': '100%', 1500});
 	});
 
 	$('.go-to-museum').click(function() {
