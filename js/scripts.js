@@ -20,6 +20,8 @@ jQuery(document).ready(function($) {
 	ZSound.stopMusic('street');
 
 
+	$('ul.surfaces').css('margin-left', -surfacesLiWidth*2 + 'px');
+
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
 	$('ul.tools li#btn-scotch').click(function() {
@@ -205,7 +207,7 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('surface');
 		$('#surface-wrapper').animate({'opacity': 1}, 500);
-		$('ul.surfaces').delay(500).animate({'margin-left': surfacesLiWidth + 'px' + '!important'}, 1500);
+		$('ul.surfaces').delay(500).animate({'margin-left': surfacesLiWidth + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1000);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
 		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
@@ -702,7 +704,7 @@ jQuery(document).ready(function($) {
 		var sideMargins = ((width - surfaceCanvasWidth)/2 - surfacesLiWidth*2)*3/4,
 			surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
 
-		$('ul.surfaces').css({width: surfacesLiWidth*2 + 'px', height: surfacesLi.height()*4 + 'px', 'margin-left': -surfacesLiWidth*2 + 'px'});
+		$('ul.surfaces').css({width: surfacesLiWidth*2 + 'px', height: surfacesLi.height()*4 + 'px'});
 
 		$('ul.surfaces li:nth-child(7)').css('margin-left', surfacesLiWidth/2 + 'px');
 
