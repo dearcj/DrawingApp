@@ -173,8 +173,6 @@ jQuery(document).ready(function($) {
 	}
 
 	function pagesTransition(pageName) {
-		$('.screens').fadeOut(500).addClass('hidden');
-		$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
 		$('#' + pageName + '-canvas p').delay(2500).fadeIn(1000);
 	}
 
@@ -217,8 +215,9 @@ jQuery(document).ready(function($) {
 	});
 
 	$('#go-to-tools').on(window.eventType, function(event) {
-		$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
-		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
+		$('ul.surfaces').animate({'margin-left': -$(window).width/5.28 + 'px'}, 500);
+		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
+		$('ul.tools').delay(500).animate({'margin-left': -705 + 'px'}, 1000);
 	});
 
 	$('.go-to-museum').on(window.eventType, function(event) {
@@ -817,7 +816,7 @@ jQuery(document).ready(function($) {
 		if (width <= '1420') {
 			tools.css({left: 0, 'margin-left': 0});
 		} else {
-			tools.css({left: 50 + '%', 'margin-left': -705 + 'px'});
+			tools.css({left: 50 + '%', 'margin-left': -1250 + 'px'});
 		}
 
 		hidingHelpers('.main-canvas p');
