@@ -41,11 +41,7 @@ Canvas.prototype.mouseMoveAction = function(e) {
 
 		this.state.prevMouseX = this.state.mouseX;
 		this.state.prevMouseY = this.state.mouseY;
-
-
 	}
-
-
 	if (this.cursImg.src != this.cursorSrc)
 	this.cursImg.src = this.cursorSrc;
 
@@ -53,10 +49,7 @@ Canvas.prototype.mouseMoveAction = function(e) {
 	var ctx = cursCanv.getContext('2d');
 	ctx.clearRect(0, 0, this.state.width, this.state.height);
 	ctx.drawImage(this.cursImg,  e.layerX,  e.layerY);
-
 };
-
-
 
 Canvas.prototype.resetCanvas = function () {
 	this.state.backCtx.clearRect(0, 0, this.state.width, this.state.height);

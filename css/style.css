@@ -430,6 +430,15 @@ ul.paintings.left-side a:nth-child#index-wrapper {
 	background-color: white;
 }
 
+
+#cursor-canvas {
+	position: absolute;
+	left: 50%;
+	margin-left: -375px;
+	top: 10%;
+	background-color: white;
+}
+
 .dark-side.tools {
 	display: none;
 }
