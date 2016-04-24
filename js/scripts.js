@@ -18,7 +18,7 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
-	$('ul.surfaces').css('margin-left', ($(window).width - 750)/2 - 360 + 'px');
+	$('ul.surfaces').css('margin-left', ($(window).width - 750)/2 + 'px');
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
