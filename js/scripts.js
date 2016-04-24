@@ -4,9 +4,24 @@ window.selectedSurface = 1;
 
 jQuery(document).ready(function($) {
 
+
+
+	ZSound.Init([
+		{id: 'click', src: "click.ogg"},
+		{id: 'filter', src: "filter.ogg"},
+		{id: 'complete', src: "complete.ogg"},
+		{id: 'stage', src: "stage.ogg"},
+		{id: 'street', src: "street.ogg"},
+
+	]);
+
+
+
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
 	$('ul.tools li#btn-scotch').click(function() {
+
+		ZSound.Play('click');
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active scotch-active');
 	});
