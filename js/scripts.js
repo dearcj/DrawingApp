@@ -208,11 +208,14 @@ jQuery(document).ready(function($) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('surface');
-		$('ul.surfaces').animate({'margin-left': surfacesMarginLeft + 'px'}, 2000);
-		$('#surface-canvas').animate({'background-size': '100%'}, 1500);
-		$('ul#helpers li').delay(1500).animate({'opacity': 1}, 500);
-		$('.go-to-tools').delay(1000).animate({'top': 0 + 'px'}, 500);
-		$('.surface-button.at-the-backyard').delay(1000).animate({'left': $(window).width()/100 + 'px'}, 500)
+
+		$('#index-wrapper').fadeOut(500).addClass('hidden');
+		$('#surface-wrapper').fadeIn(500).removeClass('hidden');
+		$('ul.surfaces').delay(500).animate({'margin-left': surfacesMarginLeft + 'px'}, 2000);
+		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
+		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
+		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
+		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
 	});
 
 	$('#go-to-tools').on(window.eventType, function(event) {
