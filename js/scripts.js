@@ -18,7 +18,7 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
-	$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
+	$('ul.surfaces').css('margin-left', ($(window).width - 750)/2 - 360 + 'px');
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
@@ -720,8 +720,6 @@ jQuery(document).ready(function($) {
 
 		var sideMargins = ((width - surfaceCanvasWidth)/2 - surfacesLiWidth*2)*3/4,
 			surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
-
-		$('ul.surfaces').css({'margin-top': 30 + 'px'});
 
 		$('ul.surfaces li:nth-child(7)').css('margin-left', surfacesLiWidth/2 + 'px');
 
