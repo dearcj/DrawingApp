@@ -205,7 +205,7 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('surface');
 		$('ul.surfaces').animate({'margin-left': '+=517px'}, 1500);
-		$('#surface-canvas').animate({'background-size': '100%'}, 1500);
+		$('#surface-canvas').animate({'background-size': '100%'}, 500);
 	});
 
 	$('.go-to-museum').click(function() {
