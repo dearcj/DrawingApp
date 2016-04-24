@@ -658,7 +658,7 @@ jQuery(document).ready(function($) {
 			backyardButtonHeight = newPaintingButtonHeight,
 			backyardButtonWidth = newPaintingButtonWidth;
 
-		backyardButton.css({width: backyardButtonWidth + 'px', height: backyardButtonHeight + 'px'});
+		backyardButton.css({width: backyardButtonWidth + 'px', height: backyardButtonHeight + 'px', 'top': width/100 + 'px', 'left': -width/20 + 'px'});
 	}
 
 
@@ -683,7 +683,7 @@ jQuery(document).ready(function($) {
 			},
 			surfaceBackgroundHeight = width/wrapperRatio;
 
-		surfaceBackyard.css({top: width/75 + 'px', left: width/75 + 'px'});
+		surfaceBackyard.css({top: width/75 + 'px', left: -width/20 + 'px'});
 
 		surfaceWrapper.css('height', 660 + 'px');
 
