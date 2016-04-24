@@ -213,7 +213,7 @@ jQuery(document).ready(function($) {
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1000);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
 		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
-		$('.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
+		//$('.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
 	});
 
 	$('.go-to-museum').click(function() {
