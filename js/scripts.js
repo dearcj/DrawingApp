@@ -195,16 +195,17 @@ jQuery(document).ready(function($) {
 
 	function isItHome(pageName) {
 		if (window.location.hash == '') {
+			ZSound.PlayMusic('street');
 			var stateObj = { hash: 'index' };
 			history.pushState(stateObj, "redirect", "#index");
-			ZSound.PlayMusic('street');
 		} else if (hash.indexOf(pageName) > 0) {
 			openPage(pageName);
-			ZSound.stopMusic('street');
 		}
 	}
 
 	$('.go-to-surface').click(function() {
+
+
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('surface');
@@ -217,6 +218,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-museum').click(function() {
+		ZSound.stopMusic('street');
 		if (window.location.hash != '' && window.location.hash != "#index") {
 			document.getElementById('your-painting').src = window.savedImage;
 			ZSound.Play('complete');
