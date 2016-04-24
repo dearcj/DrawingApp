@@ -1520,8 +1520,8 @@ div.at-the-backyard {
 	background-size: 0;
 	background-position: 50% 50%;
 	margin: 0 auto;
-	max-width: 750px;
-	max-height: 530px;
+	width: 750px !important;
+	height: 530px !important;
 }
 
 #surface-canvas p {
