@@ -53,6 +53,10 @@ ul {
   font-style: normal;
 }
 
+.screens {
+    height: 660px !important;
+}
+
 .langs {
 	height: 10px;
 }
