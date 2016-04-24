@@ -201,7 +201,7 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-	$('.go-to-surface').click(function() {
+	$('.go-to-surface').on(window.eventType, function(event) {
 
 		ZSound.stopMusic('street');
 
@@ -216,7 +216,12 @@ jQuery(document).ready(function($) {
 		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
 	});
 
-	$('.go-to-museum').click(function() {
+	$('#go-to-tools').on(window.eventType, function(event) {
+		$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
+		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
+	});
+
+	$('.go-to-museum').on(window.eventType, function(event) {
 		ZSound.stopMusic('street');
 		if (window.location.hash != '' && window.location.hash != "#index") {
 			document.getElementById('your-painting').src = window.savedImage;
@@ -503,14 +508,14 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ',') + ')';
 
-			if (!imageId) {
-				$('.new-painting').css('display', 'block');
-				$('.painting-info').css('display', 'none');
-				$('#museum-wrapper p').css('opacity', 1);
-			} else {
+			if (localStorage.getItem('imageId')) {
 				$('.new-painting').css('display', 'none');
 				$('.painting-info').css('display', 'block');
 				$('#museum-wrapper p').css('opacity', 0);
+			} else {
+				$('.new-painting').css('display', 'block');
+				$('.painting-info').css('display', 'none');
+				$('#museum-wrapper p').css('opacity', 1);
 			}
 		});
 	}
