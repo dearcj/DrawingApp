@@ -209,7 +209,7 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('surface');
 		$('#surface-wrapper').animate({'opacity': 1}, 500);
-		$('ul.surfaces').delay(500).animate({'margin-left': surfacesMarginLeft + 'px'}, 1500);
+		$('ul.surfaces').delay(500).animate({'margin-left': surfacesMarginLeft + 'px'}, 1000);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1000);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
 		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
