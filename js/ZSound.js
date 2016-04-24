@@ -7,7 +7,7 @@ var ZSound = {
 
 ZSound.Init = function(manifest) {
 
-    var audioPath = "Assets/Sounds/";
+    var audioPath = "/wp-content/themes/mmoma/Assets/Sounds/";
 
     /*if (!MOBILE) {
         createjs.FlashAudioPlugin.swfPath = "res/sndnew/"; // Initialize the base path from this document to the Flash Plugin
