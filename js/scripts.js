@@ -17,7 +17,6 @@ ZSound.soundLoadedFunction = function() {
 }
 
 jQuery(document).ready(function($) {
-	ZSound.stopMusic('street');
 
 
 	$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
