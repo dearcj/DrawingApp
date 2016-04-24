@@ -173,6 +173,8 @@ jQuery(document).ready(function($) {
 	}
 
 	function pagesTransition(pageName) {
+		$('.screens').fadeOut(500).addClass('hidden');
+		$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
 		$('#' + pageName + '-canvas p').delay(2500).fadeIn(1000);
 	}
 
@@ -816,7 +818,7 @@ jQuery(document).ready(function($) {
 		if (width <= '1420') {
 			tools.css({left: 0, 'margin-left': 0});
 		} else {
-			tools.css({left: 50 + '%', 'margin-left': -1250 + 'px'});
+			tools.css({left: 50 + '%', 'margin-left': -705 + 'px'});
 		}
 
 		hidingHelpers('.main-canvas p');
