@@ -1502,6 +1502,8 @@ div.at-the-backyard {
 	background: url(../img/textures/wood.jpg) no-repeat;
 	background-size: 100%;
     float: right;
+	max-width: 750px;
+	max-height: 530px;
 }
 
 #surface-canvas p {

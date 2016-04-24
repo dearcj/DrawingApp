@@ -687,7 +687,7 @@ jQuery(document).ready(function($) {
 
 		darkSideSurface.css({height: surfaceCanvasHeight/15 + 'px', top: -surfaceCanvasHeight/15 + 'px'});
 		
-		var surfacesLiWidth = surfaceCanvasWidth/3.26;
+		var surfacesLiWidth = surfaceCanvasWidth/4.229;
 
 		surfacesLi.css({width: surfacesLiWidth + 'px', height: surfacesLiWidth/surfaceLiRatio + 'px'});
 
