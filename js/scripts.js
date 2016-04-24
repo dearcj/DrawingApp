@@ -241,7 +241,7 @@ jQuery(document).ready(function($) {
 	$('.go-to-tools').on(window.eventType, function(event) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
-		openPage('painting');
+		//openPage('painting');
 		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
