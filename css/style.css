@@ -1483,6 +1483,7 @@ div.at-the-backyard {
 .dark-side.surface {
 	background-color: rgba(0,0,0,0.35);
 	opacity: 0;
+	display: none;
 }
 
 .dark-side.filters {

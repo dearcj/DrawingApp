@@ -675,7 +675,7 @@ jQuery(document).ready(function($) {
 
 		surfaceWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
 
-		surfaceCanvas.css({width: width/2.5 + 'px', 'margin-top': width/22 + 'px'});
+		surfaceCanvas.css({width: width/2.5 + 'px', 'margin-top': (660 - width/2.5)/2 + 'px'});
 
 		var surfaceCanvasWidth = parseInt(surfaceCanvas.css('width'));
 
