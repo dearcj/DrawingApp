@@ -75,6 +75,16 @@ ul {
 	color: #333;
 }
 
+.podval_new {
+	position: absolute;
+	width: 100%;
+	top: 770px;
+	background-color: white;
+	margin: 0;
+	padding: 15px 20px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
 #wrapper {
 	background-color: #300F06;
 }
@@ -399,7 +409,7 @@ ul.paintings.left-side a:nth-child#index-wrapper {
     background-size: 100% auto;
     background-position: 50% 0;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
 
@@ -407,9 +417,8 @@ ul.paintings.left-side a:nth-child#index-wrapper {
 	background: url(../img/background.png) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
-    min-height: 725px;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -1477,7 +1486,7 @@ div.at-the-backyard {
     background-position: 50% 0;
     background-size: 100% auto;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 	opacity: 0;
 }
@@ -1532,7 +1541,7 @@ div.at-the-backyard {
 	margin: 0 auto;
 	line-height: 120%;
 	height: auto;
-	position: relative;
+	position: absolute;
 	color: white;
 }
 
@@ -1699,9 +1708,9 @@ ul.surfaces li:nth-child(7):focus {
 	background: url(../img/background.png) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
-    height: 700px;
+    height: 660px;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
 
