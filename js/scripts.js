@@ -675,7 +675,7 @@ jQuery(document).ready(function($) {
 
 		surfaceWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
 
-		surfaceCanvas.css({width: width/2.5 + 'px', 'margin-top': (660 - width/2.5)/2 + 'px'});
+		surfaceCanvas.css('width', width/2.5 + 'px');
 
 		var surfaceCanvasWidth = parseInt(surfaceCanvas.css('width'));
 
@@ -684,6 +684,8 @@ jQuery(document).ready(function($) {
 		darkSideSurface.css('width', surfaceCanvasWidth + 'px');
 
 		var surfaceCanvasHeight = parseInt(surfaceCanvas.css('height'));
+
+		surfaceCanvas.css('margin-top', (660 - surfaceCanvasHeight)/2 + 'px');
 
 		darkSideSurface.css({height: surfaceCanvasHeight/15 + 'px', top: -surfaceCanvasHeight/15 + 'px'});
 		
