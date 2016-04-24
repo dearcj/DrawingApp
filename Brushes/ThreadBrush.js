@@ -62,16 +62,16 @@ ThreadBrush.prototype.getPattern = function(ctx) {
 
 ThreadBrush.prototype.use = function (obj, ctx, action) {
 	ctx.beginPath();
-	ctx.lineWidth = 2;
+	ctx.lineWidth = 3;
 	ctx.strokeStyle = this.color;//'rgba(0,0,120,0.1)';
-	ctx.globalAlpha = 0.1;
+	ctx.globalAlpha = 0.3;
 	ctx.moveTo(obj.x1, obj.y1);
 	ctx.lineTo(obj.x2, obj.y2);
 	ctx.stroke();
 
 
 	var	len = action.objects.length;
-	for (var i = Math.round(len*0.9); i < len; i++) {
+	for (var i = Math.round(len*0.4); i < len; i++) {
 
 		var x1 = action.objects[i].x1;
 		var y1 = action.objects[i].y1;
@@ -80,13 +80,22 @@ ThreadBrush.prototype.use = function (obj, ctx, action) {
 		d = dx * dx + dy * dy;
 		ctx.globalAlpha = 0.05;
 
-		var nearPoint = action.objects[i-3];
+		var nearPoint = action.objects[i-4];
 		if (nearPoint) {
-				ctx.moveTo(nearPoint.x1, nearPoint.y1);
-				ctx.lineTo(x1, y1);
-			}
+			ctx.moveTo(nearPoint.x1, nearPoint.y1);
+			ctx.lineTo(x1, y1);
 		}
+	}
 	ctx.stroke();
+
+
+	/*	if (d > 300 && d < 1000) {
+	 ctx.beginPath();
+	 ctx.strokeStyle = 'rgba(0,0,120,0.3)';
+	 ctx.moveTo( obj.x2 + (dx * 0.2), obj.y2 + (dy * 0.2));
+	 ctx.lineTo( x1 - (dx * 0.2), y1 - (dy * 0.2));
+	 ctx.stroke();
+	 }*/
 
 
 	/*	if (d > 300 && d < 1000) {

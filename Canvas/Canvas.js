@@ -40,6 +40,18 @@ Canvas.prototype.mouseMoveAction = function(e) {
 
 		this.state.prevMouseX = this.state.mouseX;
 		this.state.prevMouseY = this.state.mouseY;
+
+
+		this.cursImg=new Image();
+		this.cursImg.onload=function(){
+			this.src = relPath + 'Jeans/jeans1.png';
+		};
+
+		var cursCanv =   document.getElementById('cursor-canvas');
+		var ctx = cursCanv.getContext('2d');
+		ctx.clearRect(0, 0, this.state.width, this.state.height);
+		ctx.drawImage(this.cursImg,  this.state.mouseX,  this.state.mouseY);
+
 	}
 };
 

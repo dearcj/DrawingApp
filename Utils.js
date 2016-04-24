@@ -242,7 +242,7 @@ function vkpost(t, im, imPath) {
 
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
-
+  ZSound.Play('filter');
   var saveImgCB = function (canvas) {
     window.savedImage = canvas.toDataURL("image/jpeg", 0.8);
   }

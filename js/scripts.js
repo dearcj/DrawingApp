@@ -2,121 +2,158 @@ window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 window.imgPath = 'http://188.227.16.35/wp-content/themes/mmoma/imgs/';
 window.selectedSurface = 1;
 
+ZSound.Init([
+	{id: 'click', src: "click.ogg"},
+	{id: 'filter', src: "filter.ogg"},
+	{id: 'complete', src: "complete.ogg"},
+	{id: 'stage', src: "stage.ogg"},
+	{id: 'street', src: "street.ogg"},
+
+]);
+
+
 jQuery(document).ready(function($) {
 
-
-
-	ZSound.Init([
-		{id: 'click', src: "click.ogg"},
-		{id: 'filter', src: "filter.ogg"},
-		{id: 'complete', src: "complete.ogg"},
-		{id: 'stage', src: "stage.ogg"},
-		{id: 'street', src: "street.ogg"},
-
-	]);
-
-
+	ZSound.PlayMusic('street');
+	var custom_event = $.support.touch ? "tap" : "click";
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
 	$('ul.tools li#btn-scotch').click(function() {
-
 		ZSound.Play('click');
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active scotch-active');
 	});
 
 	$('ul.tools li#btn-scotch-1').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active scotch-1-active');
 	});
 
 	$('ul.tools li#btn-scotch-2').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active scotch-2-active');
 	});
 
 	$('ul.tools li#btn-coal-1').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active coal-1-active');
 	});
 
 	$('ul.tools li#btn-coal-2').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active coal-2-active');
 	});
 
 	$('ul.tools li#btn-grass').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active grass-active');
 	});
 
 	$('ul.tools li#btn-orange').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active orange-active');
 	});
 
 	$('ul.tools li#btn-denim-1').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active denim-1-active');
 	});
 
 	$('ul.tools li#btn-denim-2').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active denim-2-active');
 	});
 
 	$('ul.tools li#btn-denim-3').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active denim-3-active');
 	});
 
 	$('ul.tools li#btn-catchup').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active catchup-active');
 	});
 
 	$('ul.tools li#btn-needle').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active needle-active');
 	});
 
 	$('ul.tools li#btn-thread-1').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-1-active');
 	});
 
 	$('ul.tools li#btn-thread-2').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-2-active');
 	});
 
 	$('ul.tools li#btn-thread-3').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-3-active');
 	});
 
 	$('ul.tools li#btn-thread-4').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-4-active');
 	});
 
 	$('ul.tools li#btn-thread-5').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-5-active');
 	});
 
 	$('ul.tools li#btn-thread-6').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-6-active');
 	});
 
 	$('ul.tools li#btn-thread-7').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-7-active');
 	});
 
 	$('ul.tools li#btn-pistol').click(function() {
+		ZSound.Play('click');
+
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active pistol-active');
 	});
@@ -161,6 +198,7 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.go-to-surface').click(function() {
+		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('surface');
 	});
@@ -168,8 +206,10 @@ jQuery(document).ready(function($) {
 	$('.go-to-museum').click(function() {
 		if (window.location.hash != '' && window.location.hash != "#index") {
 			document.getElementById('your-painting').src = window.savedImage;
+			ZSound.Play('complete');
 			window.mainCanvasObject.sendPic(openMyMuseum)
 		} else {
+			ZSound.Play('stage');
 			openMyMuseum();
 		}
 
@@ -178,12 +218,14 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-tools').click(function() {
+		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('painting');
 		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
 	$('.go-to-filters').click(function() {
+		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('filters');
 		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
@@ -191,12 +233,15 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-publication').click(function() {
+		ZSound.Play('stage');
 		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
 		openPage('publication');
 	});
 
 	$('.go-to-home').click(function() {
+		ZSound.Play('stage');
+
 		window.currentHash = history.state;
 		openPage('index');
 	});
