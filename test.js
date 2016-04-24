@@ -1,7 +1,7 @@
 /**
  * Created by mac-pc on 12/12/15.
  */
-
+//
 var initApplication = function() {
   lcg.setSeed(100);
   window.brushMode = 0;
