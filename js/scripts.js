@@ -1062,7 +1062,7 @@ jQuery(document).ready(function($) {
 		coordinate(14, 94.5, 38);
 		coordinate(15, 75.8, 44.7);
 
-		$('#index-wrapper').css('height', artHeight + 'px !important');
+		$('#index-wrapper').css('height', artHeight + 'px' + ' !important');
 
 		var helper = $('ul#helpers li'),
 			dog = $('#dog'),
