@@ -54,7 +54,7 @@ ul {
 }
 
 .langs {
-	height: 10px;
+	height: 0;
 }
 
 .langs ul {
@@ -1458,6 +1458,10 @@ div.at-the-backyard {
 }
 
 .surface-button.at-the-backyard {
+	position: relative;
+}
+
+#index-wrapper {
 	position: relative;
 }
 

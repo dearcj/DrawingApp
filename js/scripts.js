@@ -673,11 +673,13 @@ jQuery(document).ready(function($) {
 
 		surfaceBackyard.css({top: width/75 + 'px', left: width/75 + 'px'});
 
-		surfaceWrapper.css({'background-size': '100% auto', height: surfaceBackgroundHeight + 'px'});
+		surfaceWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
 
-		surfaceCanvas.css({width: width/2.5 + 'px', 'margin-top': width/22 + 'px', height: 660 + 'px'});
+		surfaceCanvas.css({width: width/2.5 + 'px', 'margin-top': width/22 + 'px'});
 
 		var surfaceCanvasWidth = parseInt(surfaceCanvas.css('width'));
+
+		objHeight(surfaceCanvas, surfaceCanvasWidth/surfaceRatio);
 
 		darkSideSurface.css('width', surfaceCanvasWidth + 'px');
 
@@ -746,11 +748,13 @@ jQuery(document).ready(function($) {
 			prevNextButtons = $('ul.tools-buttons.tools-tb li'),
 			sendToMuseum = $('.send-to-museum');
 
-		toolsWrapper.css({'background-size': '100% auto', height: toolsBackgroundHeight + 'px'});
+		toolsWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
 
-		toolsCanvas.css({width: width/2.5 + 'px', 'margin-top': width/18 + 'px', height: 660 + 'px'});
+		toolsCanvas.css({width: width/2.5 + 'px', 'margin-top': width/18 + 'px'});
 
 		var toolsCanvasWidth = toolsCanvas.width();
+
+		objHeight(toolsCanvas, toolsCanvasWidth/surfaceRatio);
 
 		darkSideTools.css('width', toolsCanvasWidth + 'px');
 
@@ -820,11 +824,13 @@ jQuery(document).ready(function($) {
 			},
 			wandRatio = wandRatio(800, 178);
 
-		filtersWrapper.css({'background-size': '100% auto', height: filtersBackgroundHeight + 'px'});
+		filtersWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
 
-		filtersCanvas.css({width: width/2.5 + 'px', height: 660 + 'px'});
+		filtersCanvas.css({width: width/2.5 + 'px'});
 
 		var filtersCanvasWidth = filtersCanvas.width();
+
+		objHeight(filtersCanvas, filtersCanvasWidth/surfaceRatio);
 
 		darkSideFilters.css('width', filtersCanvasWidth + 'px');
 
@@ -892,11 +898,13 @@ jQuery(document).ready(function($) {
 			darkSideSending = $('.dark-side.sending'),
 			sendingBackgroundHeight = width/wrapperRatio;
 
-		sendingWrapper.css({'background-size': '100% auto', height: sendingBackgroundHeight + 'px'});
+		sendingWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
 
-		sendingCanvas.css({width: width/2.5 + 'px', 'margin-top': width/15 + 'px', height: 660 + 'px'});
+		sendingCanvas.css({width: width/2.5 + 'px', 'margin-top': width/15 + 'px'});
 
 		var sendingCanvasWidth = sendingCanvas.width();
+
+		objHeight(sendingCanvas, sendingCanvasWidth/surfaceRatio);
 
 		darkSideSending.css('width', sendingCanvasWidth + 'px');
 
@@ -1054,7 +1062,7 @@ jQuery(document).ready(function($) {
 		coordinate(14, 94.5, 38);
 		coordinate(15, 75.8, 44.7);
 
-		$('#index-wrapper').css('height', artHeight + 'px');
+		$('#index-wrapper').css({height: artHeight + 'px', 'margin-top': artHeight/6.48 + 'px'});
 
 		var helper = $('ul#helpers li'),
 			dog = $('#dog'),
