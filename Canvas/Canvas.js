@@ -3,7 +3,8 @@ function Canvas(frontCtx, backCtx, canvasType) {
 	this.actions = [];
 	this.currentBrush = null;
 	var el = document.getElementById('main-canvas');
-
+	this.cursImg=new Image();
+	this.cursorSrc = relPath + 'Jeans/jeans1.png';
 	this.state = {
 		width: el.width,
 		height: el.height,
@@ -42,17 +43,17 @@ Canvas.prototype.mouseMoveAction = function(e) {
 		this.state.prevMouseY = this.state.mouseY;
 
 
-		this.cursImg=new Image();
-		this.cursImg.onload=function(){
-			this.src = relPath + 'Jeans/jeans1.png';
-		};
-
-		var cursCanv =   document.getElementById('cursor-canvas');
-		var ctx = cursCanv.getContext('2d');
-		ctx.clearRect(0, 0, this.state.width, this.state.height);
-		ctx.drawImage(this.cursImg,  this.state.mouseX,  this.state.mouseY);
-
 	}
+
+
+	if (this.cursImg.src != this.cursorSrc)
+	this.cursImg.src = this.cursorSrc;
+
+	var cursCanv =   document.getElementById('cursor-canvas');
+	var ctx = cursCanv.getContext('2d');
+	ctx.clearRect(0, 0, this.state.width, this.state.height);
+	ctx.drawImage(this.cursImg,  this.state.mouseX,  this.state.mouseY);
+
 };
 
 
