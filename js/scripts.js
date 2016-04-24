@@ -206,6 +206,7 @@ jQuery(document).ready(function($) {
 		openPage('surface');
 		$('ul.surfaces').animate({'margin-left': surfacesLiWidth + 'px'}, 1500);
 		$('#surface-canvas').animate({'background-size': '100%'}, 1000);
+		$('#helper-7').animate({'top': -spanTopPos*5 + 'px'}, 2000);
 	});
 
 	$('.go-to-museum').click(function() {
@@ -1000,7 +1001,7 @@ jQuery(document).ready(function($) {
 		
 		span.css({'border-radius': spanPadding/1.5 + 'px'});
 
-		var spanTopPos = -spanWidth/5;
+		window.spanTopPos = -spanWidth/5;
 
 		$('ul#helpers li#helper-1 span.down').css({left: -spanWidth/2 + 'px', top: spanTopPos * 3.6 + 'px'});
 		$('ul#helpers li#helper-2 span.down').css({left: -spanWidth/2 + 'px', top: spanTopPos * 2.75 + 'px'});
