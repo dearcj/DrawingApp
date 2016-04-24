@@ -718,12 +718,10 @@ jQuery(document).ready(function($) {
 		window.surfacesLiWidth = surfaceCanvasWidth/4.229;
 		window.surfacesMarginLeft = ((width - surfaceCanvasWidth)/2 - surfacesLiWidth*2)/2;
 
-		surfacesLi.css({width: surfacesLiWidth + 'px', height: surfacesLiWidth/surfaceLiRatio + 'px'});
-
 		var sideMargins = ((width - surfaceCanvasWidth)/2 - surfacesLiWidth*2)*3/4,
 			surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
 
-		$('ul.surfaces').css({width: surfacesLiWidth*2 + 'px', height: surfacesLi.height()*4 + 'px', 'margin-top': surfacesLi.height()/4 + 'px'});
+		$('ul.surfaces').css({'margin-top': 30 + 'px'});
 
 		$('ul.surfaces li:nth-child(7)').css('margin-left', surfacesLiWidth/2 + 'px');
 
@@ -736,7 +734,7 @@ jQuery(document).ready(function($) {
 		
 		forwardButton.css({width: surfaceCanvasWidth/7.612 + 'px', height: (surfaceCanvasWidth/7.612)/pnButtonRatio + 'px'});
 
-		surfacesLiP.css({'font-size': surfacesLiWidth/1.333 + '%', bottom: surfacesLi.height()/4.7592 + 'px'});
+		surfacesLiP.css({'font-size': surfacesLiWidth/1.333 + '%', bottom: 25 + 'px'});
 
 		var forwardButtonWidth = parseInt(forwardButton.css('width'));
 		window.forwardButtonHeight = parseInt(forwardButton.css('height'));

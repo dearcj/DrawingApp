@@ -1589,10 +1589,14 @@ ul.surfaces {
 	padding: 0;
 	clear: both;
 	margin-top: 0;
+	width: 360px;
+	height: 476px;
 }
 
 ul.surfaces li {
 	float: left;
+	width: 180px;
+	height: 119px;
 }
 
 ul.surfaces li p {
