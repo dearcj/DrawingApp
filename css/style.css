@@ -1597,6 +1597,7 @@ ul.surfaces li {
 	float: left;
 	width: 180px;
 	height: 119px;
+	margin-top: -5px;
 }
 
 ul.surfaces li p {
@@ -1611,6 +1612,10 @@ ul.surfaces li p {
 ul.surfaces li:hover,
 ul.surfaces li:focus {
 	cursor: pointer;
+}
+
+ul.surfaces li:nth-child(2n+2) {
+	margin-left: -15px;
 }
 
 ul.surfaces li:nth-child(1) {
