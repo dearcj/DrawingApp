@@ -46,11 +46,11 @@ Canvas.prototype.mouseMoveAction = function(e) {
 	if (this.cursImg.src != this.cursorSrc)
 	this.cursImg.src = this.cursorSrc;
 
-/*	var cursCanv =   document.getElementById('cursor-canvas');
+	var cursCanv =   document.getElementById('cursor-canvas');
 	var ctx = cursCanv.getContext('2d');
 	ctx.clearRect(0, 0, this.state.width, this.state.height);
 	ctx.drawImage(this.cursImg,  e.layerX - this.cursImg.width / 2,  e.layerY - this.cursImg.height/2);
-	*/
+
 };
 
 Canvas.prototype.resetCanvas = function () {

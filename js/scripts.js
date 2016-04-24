@@ -10,12 +10,12 @@ ZSound.Init([
 	{id: 'stage', src: "stage.ogg"},
 	{id: 'street', src: "street.ogg"},
 ]);
+window.eventType = $.support.touch ? "tap" : "click";
 
 
 jQuery(document).ready(function($) {
 
 	ZSound.PlayMusic('street');
-	window.eventType = $.support.touch ? "tap" : "click";
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
