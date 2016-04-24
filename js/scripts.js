@@ -175,7 +175,7 @@ jQuery(document).ready(function($) {
 	function pagesTransition(pageName) {
 		$('.screens').fadeOut(500).addClass('hidden');
 		$('#' + pageName + '-wrapper').fadeIn(1000).removeClass('hidden');
-		$('#' + pageName + '-canvas p').delay(2500).fadeIn(1000);
+		$('#' + pageName + '-canvas p').delay(3000).fadeIn(1000);
 	}
 
 	function openPage(pageName) {
@@ -204,10 +204,12 @@ jQuery(document).ready(function($) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('surface');
-		$('ul.surfaces').animate({'margin-left': surfacesLiWidth + 'px'}, 1500);
-		$('#surface-canvas').animate({'background-size': '100%'}, 1000);
-		$('ul#helpers li').delay(1500).animate({'opacity': 1}, 500);
-		$('.go-to-tools').delay(1000).animate({'top': 0 + 'px'}, 500);
+		$('#surface-wrapper').animate({'opacity': 1}, 500);
+		$('ul.surfaces').delay(500).animate({'margin-left': surfacesLiWidth + 'px'}, 1500);
+		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1000);
+		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
+		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
+		$('.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
 	});
 
 	$('.go-to-museum').click(function() {
@@ -650,7 +652,7 @@ jQuery(document).ready(function($) {
 			backyardButtonHeight = newPaintingButtonHeight,
 			backyardButtonWidth = newPaintingButtonWidth;
 
-		backyardButton.css({width: backyardButtonWidth + 'px', height: backyardButtonHeight + 'px', top: width/100 + 'px', left: width/100 + 'px'});
+		backyardButton.css({width: backyardButtonWidth + 'px', height: backyardButtonHeight + 'px', top: width/100 + 'px', left: -width/20 + 'px'});
 	}
 
 

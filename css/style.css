@@ -1479,6 +1479,7 @@ div.at-the-backyard {
     width: 100%;
     position: relative;
     overflow: hidden;
+	opacity: 0;
 }
 
 .dark-side {
