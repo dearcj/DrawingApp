@@ -822,7 +822,7 @@ ul.tools-buttons li {
 }
 
 ul.tools-buttons.surface-tb li {
-	margin: 0;
+	display: block;
 }
 
 ul.tools-buttons.tools-tb li {

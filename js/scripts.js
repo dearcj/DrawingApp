@@ -716,7 +716,7 @@ jQuery(document).ready(function($) {
 		var forwardButtonWidth = parseInt(forwardButton.css('width')),
 			forwardButtonHeight = parseInt(forwardButton.css('height'));
 
-		$('ul.tools-buttons.surface-tb').css({left: surfaceCanvasWidth/2 + forwardButtonWidth/2 + 'px', top: (660 - surfaceCanvasHeight)/4 + surfaceCanvasHeight + 'px'});
+		$('ul.tools-buttons.surface-tb').css('width', forwardButtonWidth + 'px');
 
 		$('ul#helpers.surface').css('top', 0);
 
