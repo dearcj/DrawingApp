@@ -658,7 +658,7 @@ jQuery(document).ready(function($) {
 			backyardButtonHeight = newPaintingButtonHeight,
 			backyardButtonWidth = newPaintingButtonWidth;
 
-		backyardButton.css({width: backyardButtonWidth + 'px', height: backyardButtonHeight + 'px', 'top': width/100 + 'px', 'left': -width/20 + 'px'});
+		backyardButton.css({width: backyardButtonWidth + 'px', height: backyardButtonHeight + 'px'});
 	}
 
 
