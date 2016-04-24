@@ -1571,6 +1571,7 @@ ul.tools-buttons.surface-tb {
 ul.surfaces {
 	float: left;
 	padding: 0;
+	clear: both;
 }
 
 ul.surfaces li {

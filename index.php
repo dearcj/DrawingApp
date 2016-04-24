@@ -144,6 +144,16 @@
 
           <div class="dark-side surface"></div>
 
+          <ul class="surfaces">
+            <li class="wood"><p>Дерево</p></li>
+            <li class="board"><p>Доска</p></li>
+            <li class="canvas"><p>Холст</p></li>
+            <li class="brick"><p>Кирпич</p></li>
+            <li class="cardboard"><p>Коробка</p></li>
+            <li class="wall"><p>Обои</p></li>
+            <li class="metal"><p>Металл</p></li>
+          </ul>
+
           <div id="surface-canvas">
 
             <ul id="helpers" class="surface">
@@ -155,16 +165,6 @@
 
           <ul class="tools-buttons surface-tb">
             <li class="hidden go-to-tools" id="go-to-tools"><a href="#"></a></li>
-          </ul>
-
-          <ul class="surfaces">
-            <li class="wood"><p>Дерево</p></li>
-            <li class="board"><p>Доска</p></li>
-            <li class="canvas"><p>Холст</p></li>
-            <li class="brick"><p>Кирпич</p></li>
-            <li class="cardboard"><p>Коробка</p></li>
-            <li class="wall"><p>Обои</p></li>
-            <li class="metal"><p>Металл</p></li>
           </ul>
 
           <ul class="ux-buttons">
