@@ -53,6 +53,10 @@ ul {
   font-style: normal;
 }
 
+.screens {
+    height: 660px !important;
+}
+
 .langs {
 	height: 10px;
 }
@@ -1468,10 +1472,6 @@ div.at-the-backyard {
     width: 100%;
     position: relative;
     overflow: hidden;
-}
-
-.screens {
-    height: 660px !important;
 }
 
 .dark-side {
