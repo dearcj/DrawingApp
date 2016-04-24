@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 	// Free from resize
 
 	$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
-	forwardButton.css('top', forwardButtonHeight + 'px');
+	$('#go-to-tools').css('top', forwardButtonHeight + 'px');
 	$('.surface-button.at-the-backyard').css('left', -$(window).width()/20 + 'px');
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
