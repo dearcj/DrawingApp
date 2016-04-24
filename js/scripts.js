@@ -206,7 +206,7 @@ jQuery(document).ready(function($) {
 		openPage('surface');
 		$('ul.surfaces').animate({'margin-left': surfacesLiWidth + 'px'}, 1500);
 		$('#surface-canvas').animate({'background-size': '100%'}, 1000);
-		$('#helper-7').animate({'top': -spanTopPos*5 + 'px'}, 2000);
+		$('#helper-7').animate({'top': -spanTopPos + 'px'}, 2000);
 	});
 
 	$('.go-to-museum').click(function() {
