@@ -674,7 +674,7 @@ jQuery(document).ready(function($) {
 
 		surfaceBackyard.css({top: width/75 + 'px', left: width/75 + 'px'});
 
-		surfaceWrapper.css({'background-size': 'auto 100%', height: surfaceBackgroundHeight + 'px'});
+		surfaceWrapper.css({'background-size': '100% auto', height: surfaceBackgroundHeight + 'px'});
 
 		surfaceCanvas.css({width: width/2.5 + 'px', 'margin-top': width/22 + 'px'});
 
@@ -749,7 +749,7 @@ jQuery(document).ready(function($) {
 			prevNextButtons = $('ul.tools-buttons.tools-tb li'),
 			sendToMuseum = $('.send-to-museum');
 
-		toolsWrapper.css({'background-size': 'auto 100%', height: toolsBackgroundHeight + 'px'});
+		toolsWrapper.css({'background-size': '100% auto', height: toolsBackgroundHeight + 'px'});
 
 		toolsCanvas.css({width: width/2.5 + 'px', 'margin-top': width/18 + 'px'});
 
@@ -827,7 +827,7 @@ jQuery(document).ready(function($) {
 
 
 
-		filtersWrapper.css({'background-size': 'auto 100%', height: filtersBackgroundHeight + 'px'});
+		filtersWrapper.css({'background-size': '100% auto', height: filtersBackgroundHeight + 'px'});
 
 		filtersCanvas.css('width', width/2.5 + 'px');
 
@@ -901,7 +901,7 @@ jQuery(document).ready(function($) {
 			darkSideSending = $('.dark-side.sending'),
 			sendingBackgroundHeight = width/wrapperRatio;
 
-		sendingWrapper.css({'background-size': 'auto 100%', height: sendingBackgroundHeight + 'px'});
+		sendingWrapper.css({'background-size': '100% auto', height: sendingBackgroundHeight + 'px'});
 
 		sendingCanvas.css({width: width/2.5 + 'px', 'margin-top': width/15 + 'px'});
 
