@@ -18,145 +18,144 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 	ZSound.stopMusic('street');
-
-
+	
 	$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
-	$('ul.tools li#btn-scotch').click(function() {
+	$('ul.tools li#btn-scotch').on(window.eventType, function(event) {
 		ZSound.Play('click');
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active scotch-active');
 	});
 
-	$('ul.tools li#btn-scotch-1').click(function() {
+	$('ul.tools li#btn-scotch-1').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active scotch-1-active');
 	});
 
-	$('ul.tools li#btn-scotch-2').click(function() {
+	$('ul.tools li#btn-scotch-2').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active scotch-2-active');
 	});
 
-	$('ul.tools li#btn-coal-1').click(function() {
+	$('ul.tools li#btn-coal-1').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active coal-1-active');
 	});
 
-	$('ul.tools li#btn-coal-2').click(function() {
+	$('ul.tools li#btn-coal-2').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active coal-2-active');
 	});
 
-	$('ul.tools li#btn-grass').click(function() {
+	$('ul.tools li#btn-grass').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active grass-active');
 	});
 
-	$('ul.tools li#btn-orange').click(function() {
+	$('ul.tools li#btn-orange').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active orange-active');
 	});
 
-	$('ul.tools li#btn-denim-1').click(function() {
+	$('ul.tools li#btn-denim-1').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active denim-1-active');
 	});
 
-	$('ul.tools li#btn-denim-2').click(function() {
+	$('ul.tools li#btn-denim-2').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active denim-2-active');
 	});
 
-	$('ul.tools li#btn-denim-3').click(function() {
+	$('ul.tools li#btn-denim-3').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active denim-3-active');
 	});
 
-	$('ul.tools li#btn-catchup').click(function() {
+	$('ul.tools li#btn-catchup').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active catchup-active');
 	});
 
-	$('ul.tools li#btn-needle').click(function() {
+	$('ul.tools li#btn-needle').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active needle-active');
 	});
 
-	$('ul.tools li#btn-thread-1').click(function() {
+	$('ul.tools li#btn-thread-1').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-1-active');
 	});
 
-	$('ul.tools li#btn-thread-2').click(function() {
+	$('ul.tools li#btn-thread-2').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-2-active');
 	});
 
-	$('ul.tools li#btn-thread-3').click(function() {
+	$('ul.tools li#btn-thread-3').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-3-active');
 	});
 
-	$('ul.tools li#btn-thread-4').click(function() {
+	$('ul.tools li#btn-thread-4').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-4-active');
 	});
 
-	$('ul.tools li#btn-thread-5').click(function() {
+	$('ul.tools li#btn-thread-5').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-5-active');
 	});
 
-	$('ul.tools li#btn-thread-6').click(function() {
+	$('ul.tools li#btn-thread-6').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-6-active');
 	});
 
-	$('ul.tools li#btn-thread-7').click(function() {
+	$('ul.tools li#btn-thread-7').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active thread-7-active');
 	});
 
-	$('ul.tools li#btn-pistol').click(function() {
+	$('ul.tools li#btn-pistol').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		$('ul.tools li').removeClass('active');
@@ -202,7 +201,7 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-	$('.go-to-surface').click(function() {
+	$('.go-to-surface').on(window.eventType, function(event) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('surface');
@@ -214,7 +213,7 @@ jQuery(document).ready(function($) {
 		$('.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
 	});
 
-	$('.go-to-museum').click(function() {
+	$('.go-to-museum').on(window.eventType, function(event) {
 		if (window.location.hash != '' && window.location.hash != "#index") {
 			document.getElementById('your-painting').src = window.savedImage;
 			ZSound.Play('complete');
@@ -229,14 +228,14 @@ jQuery(document).ready(function($) {
 		openPage('museum');
 	});
 
-	$('.go-to-tools').click(function() {
+	$('.go-to-tools').on(window.eventType, function(event) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('painting');
 		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
-	$('.go-to-filters').click(function() {
+	$('.go-to-filters').on(window.eventType, function(event) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('filters');
@@ -244,14 +243,14 @@ jQuery(document).ready(function($) {
 		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
-	$('.go-to-publication').click(function() {
+	$('.go-to-publication').on(window.eventType, function(event) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
 		openPage('publication');
 	});
 
-	$('.go-to-home').click(function() {
+	$('.go-to-home').on(window.eventType, function(event) {
 		ZSound.Play('stage');
 
 		window.currentHash = history.state;
@@ -381,37 +380,37 @@ jQuery(document).ready(function($) {
 		$(this).find('span').css('display', 'none');
 	});
 
-	$('ul.surfaces li.wood').click(function() {
+	$('ul.surfaces li.wood').on(window.eventType, function(event) {
 		$('#surface-canvas').removeAttr('class').addClass('wood-texture').fadeIn(1000);
 		window.selectedSurface = 1;
 	});
 
-	$('ul.surfaces li.board').click(function() {
+	$('ul.surfaces li.board').on(window.eventType, function(event) {
 		$('#surface-canvas').removeAttr('class').addClass('board-texture').fadeIn(1000);
 		window.selectedSurface = 2;
 	});
 
-	$('ul.surfaces li.canvas').click(function() {
+	$('ul.surfaces li.canvas').on(window.eventType, function(event) {
 		$('#surface-canvas').removeAttr('class').addClass('canvas-texture');
 		window.selectedSurface = 3;
 	});
 
-	$('ul.surfaces li.brick').click(function() {
+	$('ul.surfaces li.brick').on(window.eventType, function(event) {
 		$('#surface-canvas').removeAttr('class').addClass('brick-texture');
 		window.selectedSurface = 4;
 	});
 
-	$('ul.surfaces li.cardboard').click(function() {
+	$('ul.surfaces li.cardboard').on(window.eventType, function(event) {
 		$('#surface-canvas').removeAttr('class').addClass('cardboard-texture');
 		window.selectedSurface = 5;
 	});
 	
-	$('ul.surfaces li.wall').click(function() {
+	$('ul.surfaces li.wall').on(window.eventType, function(event) {
 		$('#surface-canvas').removeAttr('class').addClass('wall-texture');
 		window.selectedSurface = 6;
 	});
 
-	$('ul.surfaces li.metal').click(function() {
+	$('ul.surfaces li.metal').on(window.eventType, function(event) {
 		$('#surface-canvas').removeAttr('class').addClass('metal-texture');
 		window.selectedSurface = 7;
 	});
