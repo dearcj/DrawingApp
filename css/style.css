@@ -1572,6 +1572,7 @@ ul.surfaces {
 	float: left;
 	padding: 0;
 	clear: both;
+	margin-top: 0;
 }
 
 ul.surfaces li {
