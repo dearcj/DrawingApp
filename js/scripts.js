@@ -17,8 +17,7 @@ ZSound.soundLoadedFunction = function() {
 }
 
 jQuery(document).ready(function($) {
-	ZSound.stopMusic('street');
-	
+
 	$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
@@ -194,6 +193,7 @@ jQuery(document).ready(function($) {
 
 	function isItHome(pageName) {
 		if (window.location.hash == '') {
+			ZSound.PlayMusic('street');
 			var stateObj = { hash: 'index' };
 			history.pushState(stateObj, "redirect", "#index");
 		} else if (hash.indexOf(pageName) > 0) {
@@ -201,7 +201,10 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-	$('.go-to-surface').on(window.eventType, function(event) {
+	$('.go-to-surface').click(function() {
+
+		ZSound.stopMusic('street');
+
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('surface');
@@ -213,7 +216,8 @@ jQuery(document).ready(function($) {
 		$('.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
 	});
 
-	$('.go-to-museum').on(window.eventType, function(event) {
+	$('.go-to-museum').click(function() {
+		ZSound.stopMusic('street');
 		if (window.location.hash != '' && window.location.hash != "#index") {
 			document.getElementById('your-painting').src = window.savedImage;
 			ZSound.Play('complete');
