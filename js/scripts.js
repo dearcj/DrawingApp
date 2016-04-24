@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
 
 	$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
 	$('#go-to-tools').css('top', 65 + 'px');
-	$('.surface-button.at-the-backyard').css('left', -$(window).width()/25 + 'px');
+	$('.surface-button.at-the-backyard').css('left', -$(window).width()/15 + 'px');
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
