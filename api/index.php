@@ -95,7 +95,24 @@ class mMomaAPI extends Rest {
 
     		$link = $this->request["upload_url"];
     		$image = $this->request["image"];
-    		$ch = curl_init();
+
+
+            $cfile = curl_file_create(realpath('imgs/picWYOZea--1.jpg'),'image/jpg','testpic');
+            $ch = curl_init($url);
+                        curl_setopt($ch, CURLOPT_URL, $url);
+                        curl_setopt($ch, CURLOPT_POST, 1);
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                   curl_setopt($ch, CURLOPT_POSTFIELDS,array('photo' => $cfile));
+                        $result = curl_exec($ch);
+                        curl_close($ch);
+
+
+
+
+
+
+
+    /*		$ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $link);
             curl_setopt($ch, CURLOPT_POST, true);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -103,7 +120,7 @@ class mMomaAPI extends Rest {
             $result = curl_exec($ch);
             echo $result;
             curl_close($ch);
-
+*/
 
 
 
