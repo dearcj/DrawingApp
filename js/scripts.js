@@ -1,5 +1,6 @@
 window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
 window.imgPath = 'http://188.227.16.35/wp-content/themes/mmoma/imgs/';
+window.basePath = 'http://188.227.16.35/wp-content/themes/mmoma/';
 window.selectedSurface = 1;
 
 ZSound.Init([
@@ -8,14 +9,13 @@ ZSound.Init([
 	{id: 'complete', src: "complete.ogg"},
 	{id: 'stage', src: "stage.ogg"},
 	{id: 'street', src: "street.ogg"},
-
 ]);
 
 
 jQuery(document).ready(function($) {
 
 	ZSound.PlayMusic('street');
-	var custom_event = $.support.touch ? "tap" : "click";
+	window.eventType = $.support.touch ? "tap" : "click";
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
