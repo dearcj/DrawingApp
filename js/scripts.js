@@ -711,7 +711,7 @@ jQuery(document).ready(function($) {
 
 		surfaceCanvasText.css({width: surfaceTextWidth + 'px', 'border-radius': surfaceTextBorderRadius + 'px', 'font-size': surfaceCanvasHeight/2.2 + '%', 'padding': 6 * surfaceTextPadding/7 + 'px ' + '0 ' + surfaceTextPadding + 'px', top: 3 * surfaceCanvasHeight/8 + 'px'});
 		
-		forwardButton.css({width: surfaceCanvasWidth/7.612 + 'px', height: forwardButton.width()/pnButtonRatio + 'px'});
+		forwardButton.css({width: surfaceCanvasWidth/7.612 + 'px', height: (surfaceCanvasWidth/7.612)/pnButtonRatio + 'px'});
 
 		surfacesLiP.css({'font-size': surfacesLiWidth/1.333 + '%', bottom: surfacesLi.height()/4.7592 + 'px'});
 
