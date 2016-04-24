@@ -588,8 +588,7 @@ jQuery(document).ready(function($) {
 			paintingInfo = $('.painting-info'),
 			socialButtons = $('.social-buttons');
 
-
-		objHeight('#museum-wrapper', width/museumRatio);
+		$('#museum-wrapper').css('height', 660 + 'px');
 
 		mainPainting.css({width: width/2.5 + 'px', 'margin-top': width/30 + 'px'});
 
@@ -673,11 +672,9 @@ jQuery(document).ready(function($) {
 
 		surfaceWrapper.css({'background-size': '100% auto', height: surfaceBackgroundHeight + 'px'});
 
-		surfaceCanvas.css({width: width/2.5 + 'px', 'margin-top': width/22 + 'px'});
+		surfaceCanvas.css({width: width/2.5 + 'px', 'margin-top': width/22 + 'px', height: 660 + 'px'});
 
 		var surfaceCanvasWidth = parseInt(surfaceCanvas.css('width'));
-
-		objHeight(surfaceCanvas, surfaceCanvasWidth/surfaceRatio);
 
 		darkSideSurface.css('width', surfaceCanvasWidth + 'px');
 
@@ -748,11 +745,9 @@ jQuery(document).ready(function($) {
 
 		toolsWrapper.css({'background-size': '100% auto', height: toolsBackgroundHeight + 'px'});
 
-		toolsCanvas.css({width: width/2.5 + 'px', 'margin-top': width/18 + 'px'});
+		toolsCanvas.css({width: width/2.5 + 'px', 'margin-top': width/18 + 'px', height: 660 + 'px'});
 
 		var toolsCanvasWidth = toolsCanvas.width();
-
-		objHeight(toolsCanvas, toolsCanvasWidth/surfaceRatio);
 
 		darkSideTools.css('width', toolsCanvasWidth + 'px');
 
@@ -822,15 +817,11 @@ jQuery(document).ready(function($) {
 			},
 			wandRatio = wandRatio(800, 178);
 
-
-
 		filtersWrapper.css({'background-size': '100% auto', height: filtersBackgroundHeight + 'px'});
 
-		filtersCanvas.css('width', width/2.5 + 'px');
+		filtersCanvas.css({width: width/2.5 + 'px', height: 660 + 'px'});
 
 		var filtersCanvasWidth = filtersCanvas.width();
-
-		objHeight(filtersCanvas, filtersCanvasWidth/surfaceRatio);
 
 		darkSideFilters.css('width', filtersCanvasWidth + 'px');
 
@@ -900,11 +891,9 @@ jQuery(document).ready(function($) {
 
 		sendingWrapper.css({'background-size': '100% auto', height: sendingBackgroundHeight + 'px'});
 
-		sendingCanvas.css({width: width/2.5 + 'px', 'margin-top': width/15 + 'px'});
+		sendingCanvas.css({width: width/2.5 + 'px', 'margin-top': width/15 + 'px', height: 660 + 'px'});
 
 		var sendingCanvasWidth = sendingCanvas.width();
-
-		objHeight(sendingCanvas, sendingCanvasWidth/surfaceRatio);
 
 		darkSideSending.css('width', sendingCanvasWidth + 'px');
 
