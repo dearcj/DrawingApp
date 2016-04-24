@@ -208,8 +208,8 @@ jQuery(document).ready(function($) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('surface');
-		$('ul.surfaces').animate({'margin-left': surfacesMarginLeft + 'px'}, 1000);
-		$('#surface-canvas').animate({'background-size': '100%'}, 1000);
+		$('ul.surfaces').animate({'margin-left': surfacesMarginLeft + 'px'}, 2000);
+		$('#surface-canvas').animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li').delay(1500).animate({'opacity': 1}, 500);
 		$('.go-to-tools').delay(1000).animate({'top': 0 + 'px'}, 500);
 		$('.surface-button.at-the-backyard').delay(1000).animate({'left': $(window).width()/100 + 'px'}, 500)
