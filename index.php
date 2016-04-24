@@ -27,6 +27,8 @@
         });
     </script>
 
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/js/soundjs-NEXT.min.js"></script>
+   <script src="http://188.227.16.35/wp-content/themes/mmoma/js/ZSound.js"></script>
 
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
           <script src="http://188.227.16.35/wp-content/themes/mmoma/js/jsmanipulate.min.js"></script>
@@ -185,10 +187,9 @@
               <span>Современные художники чем только не рисуют! И углём, и мелом, и соком апельсина, а вместо кисточки иногда используют даже швейную иголку или водяной пистолет.</span>
             </li>
           </ul>
-
           <canvas style='pointer-events: none;' id="back-canvas" width="750" height="530"></canvas>
           <canvas id="main-canvas" width="750" height="530"></canvas>
-
+          <canvas style='pointer-events: none;' z-index='-122' id="cursor-canvas" width="750" height="530"></canvas>
           <div class="main-canvas" id="tools-canvas">
             <ul class="interface">
               <li class="back"></li>
@@ -367,8 +368,6 @@
       <div class="copy_index"><div>© ГБУК г. Москвы «Московский музей современного искусства», 2008 – 2016. Все права защищены. <a class="cont_link" href="/about/departments/">Контакты</a></div></div>
     </div>
   </div>
-
-
   <?php wp_footer(); ?>
 </body>
 </html>

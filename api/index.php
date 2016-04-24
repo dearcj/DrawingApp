@@ -95,14 +95,35 @@ class mMomaAPI extends Rest {
 
     		$link = $this->request["upload_url"];
     		$image = $this->request["image"];
-    		$ch = curl_init();
+
+
+            $cfile = curl_file_create(realpath('imgs/picWYOZea--1.jpg'),'image/jpg','testpic');
+            $ch = curl_init($url);
+                        curl_setopt($ch, CURLOPT_URL, $url);
+                        curl_setopt($ch, CURLOPT_POST, 1);
+                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                   curl_setopt($ch, CURLOPT_POSTFIELDS,array('photo' => $cfile));
+                        $result = curl_exec($ch);
+                        curl_close($ch);
+
+
+
+
+
+
+
+    /*		$ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $link);
             curl_setopt($ch, CURLOPT_POST, true);
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            curl_setopt($ch, CURLOPT_POSTFIELDS,  array('file1' => $image));
+            curl_setopt($ch, CURLOPT_POSTFIELDS,  array('photo' =>'@'.'http://188.227.16.35/wp-content/themes/mmoma/api/imgs/picWYOZea--1.jpg'));
             $result = curl_exec($ch);
-            var_dump($result);
+            echo $result;
             curl_close($ch);
+*/
+
+
+
 
 /*	$data = array('photo' => $image);
 
@@ -116,7 +137,7 @@ class mMomaAPI extends Rest {
 
 		$context  = stream_context_create($options);
 		$result = file_get_contents($link, false, $context);*/
-		$this->response($this->json($result), 200);
+		$this->response($result, 200);
 	}
 
 	private function _getimagefromgalleryAction() {

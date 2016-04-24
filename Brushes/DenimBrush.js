@@ -59,7 +59,8 @@ DenimBrush.prototype.use = function (obj, ctx) {
 
 	ctx.drawImage(this.img, 0, 0, this.img.width, this.img.height, 0, 0, this.img.width, this.img.height);
 	this.rotation += 0.01;
-	this.scale += 0.01;
+	this.scale += 0.005;
+	if (this.scale > 1) this.scale = 1;
 	if (this.timeout) clearTimeout(this.timeout);
 	this.timeout = setTimeout(this.use.bind(this, obj, ctx), 0);
 };
