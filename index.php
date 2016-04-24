@@ -187,10 +187,10 @@
               <span>Современные художники чем только не рисуют! И углём, и мелом, и соком апельсина, а вместо кисточки иногда используют даже швейную иголку или водяной пистолет.</span>
             </li>
           </ul>
+          <canvas id="cursor-canvas" width="750" height="530"></canvas>
 
           <canvas style='pointer-events: none;' id="back-canvas" width="750" height="530"></canvas>
           <canvas id="main-canvas" width="750" height="530"></canvas>
-          <canvas id="cursor-canvas" width="750" height="530"></canvas>
 
           <div class="main-canvas" id="tools-canvas">
             <ul class="interface">
