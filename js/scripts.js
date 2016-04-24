@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 	ZSound.stopMusic('street');
 
 
-	$('ul.surfaces').css('margin-left', -surfacesLiWidth*2 + 'px');
+	$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
