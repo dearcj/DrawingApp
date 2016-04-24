@@ -1425,6 +1425,11 @@ li.add-filter {
 	background-position: 50% 50%;
 }
 
+li#go-to-tools {
+	position: relative;
+	top: 0;
+}
+
 li.its-done,
 li.send-to-museum {
 	background: url(../img/filters-done.png) no-repeat;

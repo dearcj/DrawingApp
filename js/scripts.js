@@ -206,7 +206,8 @@ jQuery(document).ready(function($) {
 		openPage('surface');
 		$('ul.surfaces').animate({'margin-left': surfacesLiWidth + 'px'}, 1500);
 		$('#surface-canvas').animate({'background-size': '100%'}, 1000);
-		$('ul#helpers li').delay(1000).animate({'opacity': 1}, 500);
+		$('ul#helpers li').delay(1500).animate({'opacity': 1}, 500);
+		$('.go-to-tools').delay(1500).animate({'top': forwardButtonHeight + 'px'}, 1000);
 	});
 
 	$('.go-to-museum').click(function() {
@@ -716,8 +717,8 @@ jQuery(document).ready(function($) {
 
 		surfacesLiP.css({'font-size': surfacesLiWidth/1.333 + '%', bottom: surfacesLi.height()/4.7592 + 'px'});
 
-		var forwardButtonWidth = parseInt(forwardButton.css('width')),
-			forwardButtonHeight = parseInt(forwardButton.css('height'));
+		var forwardButtonWidth = parseInt(forwardButton.css('width'));
+		window.forwardButtonHeight = parseInt(forwardButton.css('height'));
 
 		$('ul.tools-buttons.surface-tb').css('width', forwardButtonWidth + 'px');
 
