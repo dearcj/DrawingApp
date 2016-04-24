@@ -416,6 +416,7 @@ ul.paintings.left-side a:nth-child#index-wrapper {
 }
 
 #main-canvas {
+	cursor: none;
 	position: absolute;
 	left: 50%;
 	margin-left: -375px;
@@ -423,6 +424,7 @@ ul.paintings.left-side a:nth-child#index-wrapper {
 }
 
 #back-canvas {
+	cursor: none;
 	position: absolute;
 	left: 50%;
 	margin-left: -375px;
