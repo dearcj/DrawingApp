@@ -253,7 +253,7 @@ function applyFilter(canvId, imgData, filterNumber) {
   }
   if (filterNumber == 1) {
    var src = relPath + 'filters/diptih.png';
-   cb = applyOverFilter(saveImgCB, src, canvId, imgData, true);
+   cb = applyOverFilter(saveImgCB, src, canvId, imgData, 0, 0, true);
    }
   if (filterNumber == 2) {
     var src = relPath + 'filters/modern.png';
@@ -261,7 +261,7 @@ function applyFilter(canvId, imgData, filterNumber) {
   }
   if (filterNumber == 3) {
     var src = relPath + 'filters/poliptih.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, true);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, 0, 0, true);
   }
   if (filterNumber == 4) {
     var src = relPath + 'filters/vintage.png';
