@@ -224,8 +224,8 @@ jQuery(document).ready(function($) {
 	$('#go-to-tools').on(window.eventType, function(event) {
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
-		$('#painting-wrapper').css('z-index', '100');
-		$('#painting-wrapper').css('z-index', '200');
+		$('#surface-wrapper').css('z-index', '100');
+		$('#painting-wrapper').delay(5000).css('z-index', '200');
 		$('ul.tools').delay(1000).animate({'margin-left': -705 + 'px'}, 1000);
 	});
 
