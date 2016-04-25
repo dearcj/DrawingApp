@@ -2144,4 +2144,7 @@ ul.logotypes li a {
 	ul.paintings.right-side {
 		margin-right: 8%;
 	}
+	.social-buttons {
+		right: 18%;
+	}
 }
