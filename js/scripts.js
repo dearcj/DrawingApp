@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
 
 	//
 
-	if (window.location.hash = '' || window.location.hash = 'index') {
+	if (window.location.hash == '' || window.location.hash == 'index') {
 		$('.podval_new').css('top', 0);
 	}
 
