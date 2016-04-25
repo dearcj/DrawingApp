@@ -682,14 +682,7 @@ jQuery(document).ready(function($) {
 
 		$('#museum-wrapper').css('height', 660 + 'px');
 
-		mainPainting.css({width: width/2.5 + 'px', 'margin-top': width/30 + 'px'});
-
-		var paintingWidth = parseInt(mainPainting.css('width'));
-		var paintingHeight = paintingWidth/paintingRatio;
-
-		mainPainting.css('height', paintingHeight + 'px');
-
-		paintingInfo.css('width', paintingWidth/100 * 65 + 'px');
+		paintingInfo.css('width', 750/100 * 65 + 'px');
 
 		var paintingInfoWidth = parseInt(paintingInfo.css('width'));
 
@@ -705,7 +698,7 @@ jQuery(document).ready(function($) {
 
 		socialButtons.find('span').css('font-size', paintingInfoWidth/3.75 + '%');
 
-		socialButtons.css('width', (paintingWidth - paintingInfoWidth)/2 + 'px');
+		socialButtons.css('width', (750 - paintingInfoWidth)/2 + 'px');
 
 		var socialButtonsWidth = parseInt(socialButtons.css('width'));
 
@@ -715,20 +708,20 @@ jQuery(document).ready(function($) {
 
 		socialButtons.find('ul').css('width', (socialButtonsLiWidth + 3)*2 + 1 + 'px');
 
-		darkSideMuseum.css('width', paintingWidth + 'px');
+		darkSideMuseum.css('width', 750 + 'px');
 
-		darkSideMuseum.css({height: paintingHeight/15 + 'px', top: -paintingHeight/15 + 'px'});
+		darkSideMuseum.css({height: 530/15 + 'px', top: -530/15 + 'px'});
 
-		var newPaintingButtonWidth = paintingWidth/4.5;
+		var newPaintingButtonWidth = 750/4.5;
 
 		newPaintingButton.css({width: newPaintingButtonWidth + 'px', height: newPaintingButtonWidth/newPaintingButtonRatio + 'px', 'top': -newPaintingButtonWidth/newPaintingButtonRatio + 'px'});
 
 		var museumText = $('#museum-wrapper p'),
-			museumTextWidth = paintingWidth/2,
+			museumTextWidth = 750/2,
 			museumTextBorderRadius = museumTextWidth/20,
 			museumTextPadding = museumTextWidth/12;
 
-		museumText.css({width: museumTextWidth + 'px', 'border-radius': museumTextBorderRadius + 'px', 'font-size': paintingHeight/2.2 + '%', 'padding': 6 * museumTextPadding/7 + 'px ' + '0 ' + museumTextPadding + 'px', top: -(paintingHeight/2 + paintingHeight/7.85) + 'px'});
+		museumText.css({width: museumTextWidth + 'px', 'border-radius': museumTextBorderRadius + 'px', 'font-size': 530/2.2 + '%', 'padding': 6 * museumTextPadding/7 + 'px ' + '0 ' + museumTextPadding + 'px', top: -(530/2 + 530/7.85) + 'px'});
 
 		var newPaintingButtonHeight = parseInt(newPaintingButton.css('height')),
 			darkSideMuseumHeight = parseInt(darkSideMuseum.css('height')),
