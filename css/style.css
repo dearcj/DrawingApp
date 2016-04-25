@@ -1747,7 +1747,6 @@ ul.surfaces li:nth-child(7):focus {
 	background: url(../img/background.png) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
-    height: 660px;
     width: 100%;
     position: absolute;
     overflow: hidden;

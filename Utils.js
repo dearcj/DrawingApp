@@ -239,11 +239,6 @@ function vkpost(t, im, imPath) {
 
 }
 
-
-
-
-
-
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
   ZSound.Play('filter');
