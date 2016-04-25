@@ -254,7 +254,7 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
-		$('#museum-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#museum-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '200');
 		$('#museum-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
