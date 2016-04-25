@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 
 	// Free from resize
 
-	$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
+	$('ul.surfaces').css('margin-left', -350 + 'px');
 	$('ul.tools').css('margin-left', -1500 + 'px');
 	$('#go-to-tools').css('top', 65 + 'px');
 	$('.surface-button.at-the-backyard').css('left', -$(window).width()/15 + 'px');
