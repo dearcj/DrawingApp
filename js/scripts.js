@@ -37,8 +37,8 @@ jQuery(document).ready(function($) {
 	$('li.its-done').css('top', 100 + 'px');
 	$('ul.paintings.left-side').css('margin-left', -15 + '%');
 	$('ul.paintings.right-side').css('margin-right', -15 + '%');
-	$('form.sending-form').css('top', -200 + 'px');
-	$('.painting-info').css('top', -200 + 'px');
+	$('form.sending-form').css('top', 200 + 'px');
+	$('.painting-info').css('top', 200 + 'px');
 
 	//
 
