@@ -43,6 +43,10 @@ jQuery(document).ready(function($) {
 
 	//
 
+	if (window.location.hash = '' || window.location.hash = 'index') {
+		$('.podval_new').css('top', 0);
+	}
+
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
 	$('ul.tools li#btn-scotch').on(window.eventType, function(event) {
