@@ -531,15 +531,15 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul#buttons li#button-3 a').mouseout(function() {
-		$(this).parents('ul#buttons').next().find('li#helper-6 span').css('display', 'none');
+		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6 span').css('display', 'none');
 	});
 
 	$('ul#buttons li#button-4 a').mouseover(function() {
-		$(this).parents('ul#buttons').next().find('li#helper-6s span').css('display', 'block');
+		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6s span').css('display', 'block');
 	});
 
 	$('ul#buttons li#button-4 a').mouseout(function() {
-		$(this).parents('ul#buttons').next().find('li#helper-6s span').css('display', 'none');
+		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6s span').css('display', 'none');
 	});
 
 	$('ul#buttons li#button-4 a').click(function(event) {
