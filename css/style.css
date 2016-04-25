@@ -1820,7 +1820,7 @@ ul.tools-buttons.filters-tb {
     background-size: 100% auto;
     background-position: 50% 0;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
 

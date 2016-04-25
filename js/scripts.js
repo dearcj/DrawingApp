@@ -232,6 +232,13 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'height': 660 + 'px'}, 200).css('z-index', '200');
+
+		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+			$('.podval_new').css('top', 0);
+		} else {
+			$('.podval_new').css('top', 660 + 'px');
+		}
+
 		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/2.2 + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
@@ -264,6 +271,13 @@ jQuery(document).ready(function($) {
 		$('#museum-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
+
+		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+			$('.podval_new').css('top', 0);
+		} else {
+			$('.podval_new').css('top', 660 + 'px');
+		}
+
 		$('.museum-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 		$('.painting-info').delay(1000).animate({'top': -20 + 'px'}, 1000);
 		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
@@ -288,6 +302,13 @@ jQuery(document).ready(function($) {
 		$('#painting-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
+
+		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+			$('.podval_new').css('top', 0);
+		} else {
+			$('.podval_new').css('top', 660 + 'px');
+		}
+
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
 		$('ul.tools').delay(500).animate({'margin-left': -670 + 'px'}, 1000);
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
@@ -310,6 +331,13 @@ jQuery(document).ready(function($) {
 		$('#filters-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
+
+		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+			$('.podval_new').css('top', 0);
+		} else {
+			$('.podval_new').css('top', 660 + 'px');
+		}
+
 		$('#filters-wrapper ul#helpers').css('z-index', '250');
 		$('#wand').delay(1500).animate({'background-size': '100%'}, 1000);
 		$('li.back-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
@@ -336,6 +364,13 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
+
+		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+			$('.podval_new').css('top', 0);
+		} else {
+			$('.podval_new').css('top', 660 + 'px');
+		}
+
 		$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
 		if ($(window).width() > 1535) {
 			$('ul.paintings.left-side').delay(1500).animate({'margin-left': 12 + '%'}, 1000);
@@ -352,6 +387,12 @@ jQuery(document).ready(function($) {
 
 		window.currentHash = history.state;
 		openPage('index');
+
+		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+			$('.podval_new').css('top', 0);
+		} else {
+			$('.podval_new').css('top', 660 + 'px');
+		}
 	});
 
 	window.addEventListener("popstate", function(e) {
