@@ -527,7 +527,7 @@ jQuery(document).ready(function($) {
 	$('ul.tools-buttons li').fadeIn(1500).removeClass('hidden');
 
 	$('ul#buttons li#button-3 a').mouseover(function() {
-		$(this).css('opacity', 0);
+		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6 span').css('display', 'block');
 	});
 
 	$('ul#buttons li#button-3 a').mouseout(function() {
