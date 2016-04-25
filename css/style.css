@@ -76,7 +76,7 @@ ul {
 }
 
 .podval_new {
-	position: absolute;
+	position: relative;
 	top: 660px;
 	background-color: white;
 	margin: 0;
@@ -1521,9 +1521,9 @@ div.at-the-backyard {
 	background: url(../img/textures/wood.jpg) no-repeat;
 	background-size: 0;
 	background-position: 50% 50%;
-	margin: 0 auto;
-	width: 750px !important;
-	height: 530px !important;
+	margin: 35px auto 0;
+	width: 750px;
+	height: 530px;
 }
 
 #surface-canvas p {

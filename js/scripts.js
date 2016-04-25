@@ -692,7 +692,7 @@ jQuery(document).ready(function($) {
 			surfaceLiRatio = surfaceLiRatio(180, 119),
 			darkSideSurface = $('.dark-side.surface'),
 			coordinate = function (helperNum, leftPercent, topPercent) {
-				return $('ul#helpers #helper-' + helperNum).css({left: width/100 * leftPercent + 'px', top: surfaceCanvasHeight/100 * topPercent + 'px'});	
+				return $('ul#helpers #helper-' + helperNum).css({left: width/100 * leftPercent + 'px', top: 530/100 * topPercent + 'px'});
 			},
 			surfaceBackgroundHeight = width/wrapperRatio;
 
@@ -706,36 +706,18 @@ jQuery(document).ready(function($) {
 			surfaceWrapper.css('background-size', '100% auto');
 		}
 
-		surfaceCanvas.css('width', width/2.5 + 'px');
-
-		var surfaceCanvasWidth = parseInt(surfaceCanvas.css('width'));
-
-		objHeight(surfaceCanvas, surfaceCanvasWidth/surfaceRatio);
-
-		darkSideSurface.css('width', surfaceCanvasWidth + 'px');
-
-		var surfaceCanvasHeight = parseInt(surfaceCanvas.css('height'));
-
-		surfaceCanvas.css('margin-top', (660 - surfaceCanvasHeight)/4 + 'px');
-
-		darkSideSurface.css({height: surfaceCanvasHeight/15 + 'px', top: -surfaceCanvasHeight/15 + 'px'});
-		
-		window.surfacesLiWidth = surfaceCanvasWidth/4.229;
-		window.surfacesMarginLeft = ((width - surfaceCanvasWidth)/2 - surfacesLiWidth*2)/2;
-
-		var sideMargins = ((width - surfaceCanvasWidth)/2 - surfacesLiWidth*2)*3/4,
-			surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
+		var surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
 
 		$('ul.surfaces li:nth-child(7)').css('margin-left', surfacesLiWidth/2 + 'px');
 
 		var surfaceCanvasText = surfaceCanvas.find('p'),
-			surfaceTextWidth = surfaceCanvasWidth/2,
+			surfaceTextWidth = 375,
 			surfaceTextBorderRadius = surfaceTextWidth/20,
 			surfaceTextPadding = surfaceTextWidth/12;
 
-		surfaceCanvasText.css({width: surfaceTextWidth + 'px', 'border-radius': surfaceTextBorderRadius + 'px', 'font-size': surfaceCanvasHeight/2.2 + '%', 'padding': 6 * surfaceTextPadding/7 + 'px ' + '0 ' + surfaceTextPadding + 'px', top: 3 * surfaceCanvasHeight/8 + 'px'});
+		surfaceCanvasText.css({width: surfaceTextWidth + 'px', 'border-radius': surfaceTextBorderRadius + 'px', 'font-size': 530/2.2 + '%', 'padding': 6 * surfaceTextPadding/7 + 'px ' + '0 ' + surfaceTextPadding + 'px', top: 3 * 530/8 + 'px'});
 		
-		forwardButton.css({width: surfaceCanvasWidth/7.612 + 'px', height: (surfaceCanvasWidth/7.612)/pnButtonRatio + 'px'});
+		forwardButton.css({width: 750/7.612 + 'px', height: (750/7.612)/pnButtonRatio + 'px'});
 
 		surfacesLiP.css({'font-size': surfacesLiWidth/1.333 + '%', bottom: 25 + 'px'});
 
