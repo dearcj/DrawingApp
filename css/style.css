@@ -350,6 +350,39 @@ ul#helpers li span {
     box-shadow:         0px 0px 5px 0px rgba(0,0,0,0.3);
 }
 
+#helper-11 {
+	right: 212px;
+	top: 5px;
+}
+
+#helper-12 {
+	right: 212px;
+	top: 5px;
+}
+
+#helper-13 {
+	right: 212px;
+	top: 5px;
+}
+
+#helper-14 {
+	right: 212px;
+	top: 5px;
+}
+
+#helper-15 {
+	right: 212px;
+	top: 5px;
+}
+
+#helper-11,
+#helper-12,
+#helper-13,
+#helper-14,
+#helper-15 {
+	position: absolute;
+}
+
 div.special span {
 	position: relative;
 	text-align: center;
