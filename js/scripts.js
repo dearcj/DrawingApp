@@ -190,10 +190,6 @@ jQuery(document).ready(function($) {
 		history.pushState(stateObj, pageName, newHref);
 	}
 
-	function pagesTransition(pageName) {
-		$('#' + pageName + '-canvas p').delay(2500).fadeIn(1000);
-	}
-
 	function openPage(pageName) {
 		event.preventDefault();
 
@@ -232,7 +228,8 @@ jQuery(document).ready(function($) {
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
 		$('#go-to-tools').delay(1500).animate({'top': -10 + 'px'}, 500);
-		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
+		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
+		$('#surface-canvas p').delay(2500).fadeIn(1000);
 	});
 
 	$('.go-to-tools').on(window.eventType, function(event) {
@@ -255,19 +252,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.add-filter').on(window.eventType, function(event) {
-		$('ul.tools').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
-		$('#painting-wrapper').css({'opacity': 0, 'z-index': '100'});
-		$('#painting-wrapper').each(function(){
-			$(this).children().css('z-index', '100');
-		});
-		$('#filters-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
-		$('#filters-wrapper').each(function(){
-			$(this).children().css('z-index', '200');
-		});
-		$('#filters-wrapper ul#helpers').css('z-index', '250');
-		$('#wand').delay(1500).animate({'background-size': '100%'}, 1000);
-		$('li.back-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
-		$('li.its-done').delay(1500).animate({'top': 0 + 'px'}, 500);
+
 	});
 
 	$('.go-to-museum').on(window.eventType, function(event) {
@@ -297,8 +282,21 @@ jQuery(document).ready(function($) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('filters');
-		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
-		$('.filters-canvas p').fadeIn(2000).removeClass('hidden');
+
+		$('ul.tools').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
+		$('#painting-wrapper').css({'opacity': 0, 'z-index': '100'});
+		$('#painting-wrapper').each(function(){
+			$(this).children().css('z-index', '100');
+		});
+		$('#filters-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#filters-wrapper').each(function(){
+			$(this).children().css('z-index', '200');
+		});
+		$('#filters-wrapper ul#helpers').css('z-index', '250');
+		$('#wand').delay(1500).animate({'background-size': '100%'}, 1000);
+		$('li.back-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
+		$('li.its-done').delay(1500).animate({'top': 0 + 'px'}, 500);
+		$('.filters-canvas p').delay(2500).fadeIn(1000);
 	});
 
 	$('.go-to-publication').on(window.eventType, function(event) {
@@ -306,6 +304,20 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
 		openPage('publication');
+
+		$('#wand').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
+		$('#painting-wrapper').css({'opacity': 0, 'z-index': '100'});
+		$('#filters-wrapper').css({'opacity': 0, 'z-index': '100'});
+		$('#painting-wrapper').each(function(){
+			$(this).children().css('z-index', '100');
+		});
+		$('#filters-wrapper').each(function(){
+			$(this).children().css('z-index', '100');
+		});
+		$('#publication-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#publication-wrapper').each(function(){
+			$(this).children().css('z-index', '200');
+		});
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
