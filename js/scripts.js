@@ -851,7 +851,7 @@ jQuery(document).ready(function($) {
 			filtersTextBorderRadius = filtersTextWidth/20,
 			filtersTextPadding = filtersTextWidth/12;
 
-		filtersCanvasText.css({width: filtersTextWidth + 'px', 'border-radius': filtersTextBorderRadius + 'px', 'font-size': filtersCanvasHeight/2.2 + '%', 'padding': 6 * filtersTextPadding/7 + 'px ' + '0 ' + filtersTextPadding + 'px'});
+		filtersCanvasText.css({width: filtersTextWidth + 'px', 'border-radius': filtersTextBorderRadius + 'px', 'font-size': 530/2.2 + '%', 'padding': 6 * filtersTextPadding/7 + 'px ' + '0 ' + filtersTextPadding + 'px'});
 	
 		prevNextButtons.css('width', 750/7.612 + 'px');
 
@@ -861,11 +861,11 @@ jQuery(document).ready(function($) {
 			prevNextButtonsHeight = parseInt(prevNextButtons.css('height')),
 			filtersCanvasTextWidth = parseInt(filtersCanvasText.css('width'));
 
-		filtersCanvasText.css({top: width/12.5 + filtersCanvasHeight/2 - filtersTextWidth/5.728 + 'px', right: sideMargins + 750/2 - filtersTextWidth/2 + 'px'});
+		filtersCanvasText.css({top: width/12.5 + 530/2 - filtersTextWidth/5.728 + 'px', right: sideMargins + 750/2 - filtersTextWidth/2 + 'px'});
 
 		itsDone.css('width', prevNextButtons.height()*doneButtonRatio + 'px');
 
-		filtersButtons.css({top: filtersCanvasHeight + 'px', 'margin-left': 30 + 'px'});
+		filtersButtons.css({top: 530 + 'px', 'margin-left': 30 + 'px'});
 
 		var toolsButtons = $('ul.tools-buttons.filters-tb');
 
