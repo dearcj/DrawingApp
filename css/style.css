@@ -657,6 +657,7 @@ ul.paintings a:hover li div {
 }
 
 #painting-img {
+	position: absolute;
 	width: 100%;
 	height: 100%;
 }

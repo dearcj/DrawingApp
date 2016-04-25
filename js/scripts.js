@@ -279,7 +279,7 @@ jQuery(document).ready(function($) {
 		}
 
 		$('.museum-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
-		$('.painting-info').delay(1000).animate({'top': -20 + 'px'}, 1000);
+		$('.painting-info').delay(500).animate({'top': 0 + 'px'}, 500);
 		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
 	});
 
@@ -884,14 +884,6 @@ jQuery(document).ready(function($) {
 
 		hidingHelpers('.main-canvas p');
 	}
-
-
-	document.getElementById("wand").addEventListener('click', function () {
-		if (!window.currentFilter || window.currentFilter >= filterOrder.length) window.currentFilter = 0;
-		applyFilter("filters-canvas", window.filterSavedImage, filterOrder[window.currentFilter]);
-		window.currentFilter++;
-	});
-
 
 	function filtersResponsive () {
 		var width = $(window).width(),
