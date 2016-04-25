@@ -1764,8 +1764,7 @@ ul.surfaces li:nth-child(7):focus {
 }
 
 #filters-canvas {
-	width: 100%;
-	height: 100%;
+	position: relative;
 }
 
 .filters-canvas p {
