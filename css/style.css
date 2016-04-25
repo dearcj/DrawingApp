@@ -356,18 +356,18 @@ ul#helpers li span {
 }
 
 #helper-12 {
-	right: 212px;
-	top: 5px;
+	right: 130px;
+	top: 210px;
 }
 
 #helper-13 {
-	right: 212px;
-	top: 5px;
+	left: 125px;
+	top: 375px;
 }
 
 #helper-14 {
-	right: 212px;
-	top: 5px;
+	right: 30px;
+	top: 520px;
 }
 
 #helper-15 {
@@ -380,7 +380,7 @@ ul#helpers li span {
 #helper-13,
 #helper-14,
 #helper-15 {
-	position: absolute;
+	position: absolute !important;
 }
 
 div.special span {
