@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 
 	$('ul.surfaces').css('margin-left', -350 + 'px');
 	$('ul.tools').css('margin-left', -1500 + 'px');
-	$('#go-to-tools').css('top', 100 + 'px');
+	$('#go-to-tools').css('top', 150 + 'px');
 	$('.surface-button.at-the-backyard').css('left', -150 + 'px');
 	$('.museum-button.at-the-backyard').css('left', -150 + 'px');
 	$('li.send-to-museum').css('top', 100 + 'px');
@@ -236,6 +236,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
+		$('ul#helpers').css('z-index', '300');
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
@@ -309,6 +310,8 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
+		$('ul#helpers').css('z-index', '300');
+
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
 		} else {
@@ -337,6 +340,8 @@ jQuery(document).ready(function($) {
 		$('#filters-wrapper').each(function(){
 			$(this).children().css({'z-index': '200', 'opacity': 1});
 		});
+
+		$('ul#helpers').css('z-index', '300');
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
@@ -371,6 +376,8 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
+		$('ul#helpers').css('z-index', '300');
+
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
 		} else {
@@ -402,6 +409,8 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
+
+		$('ul#helpers').css('z-index', '300');
 
 		$('#dog').css('z-index', '250');
 		$('#momandson').css('z-index', '250');
@@ -615,7 +624,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul#buttons li#button-4 a').mouseover(function() {
-		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6s span').css({'display': 'inline-block', 'margin-left': -homeSpanWidth/2 + 'px'});
+		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6s span').css({'display': 'inline-block', 'margin-left': -(homeSpanWidth + spanPadding*2)/2 + 'px'});
 	});
 
 	$('ul#buttons li#button-4 a').mouseout(function() {
