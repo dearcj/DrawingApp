@@ -232,6 +232,10 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
+		$('#museum-wrapper').each(function(){
+			$(this).children().css({'opacity': 1, 'z-index': '200'});
+		});
+
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
@@ -269,7 +273,7 @@ jQuery(document).ready(function($) {
 		});
 		$('#museum-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		$('#museum-wrapper').each(function(){
-			$(this).children().css('z-index', '200');
+			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
@@ -300,7 +304,7 @@ jQuery(document).ready(function($) {
 		});
 		$('#painting-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		$('#painting-wrapper').each(function(){
-			$(this).children().css('z-index', '200');
+			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
@@ -362,7 +366,7 @@ jQuery(document).ready(function($) {
 		});
 		$('#publication-wrapper').delay(1000).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		$('#publication-wrapper').each(function(){
-			$(this).children().css('z-index', '200');
+			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
