@@ -905,8 +905,6 @@ jQuery(document).ready(function($) {
 			prevNextButtons = $('ul.tools-buttons.filters-tb li'),
 			wand = $('#wand'),
 			itsDone = $('.its-done');
-
-		filtersWrapper.css({'background-size': '100% auto'});
 	
 		prevNextButtons.css('width', 750/7.612 + 'px');
 
