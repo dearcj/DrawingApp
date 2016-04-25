@@ -235,10 +235,11 @@ jQuery(document).ready(function($) {
 		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
 	});
 
-	$('#go-to-tools').on(window.eventType, function(event) {
+	$('.go-to-tools').on(window.eventType, function(event) {
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
 		$('#surface-wrapper').css({'opacity': 0, 'z-index': '100'});
+		$('#filters-wrapper').css({'opacity': 0, 'z-index': '100'});
 		$('#surface-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
@@ -264,7 +265,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css('z-index', '200');
 		});
 		$('#filters-wrapper ul#helpers').css('z-index', '250');
-		$('#wand').delay(1000).animate({'background-size': '100%'}, 1500);
+		$('#wand').delay(1500).animate({'background-size': '100%'}, 1000);
 		$('li.back-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
 		$('li.its-done').delay(1500).animate({'top': 0 + 'px'}, 500);
 	});
