@@ -1487,6 +1487,10 @@ li.send-to-museum:focus {
 	cursor: pointer;
 }
 
+li.go-to-home {
+	top: 18px !important;
+}
+
 .new-painting {
 	background: url(../img/new-painting.png) no-repeat;
 	background-size: 100%;
