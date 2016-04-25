@@ -232,6 +232,7 @@ jQuery(document).ready(function($) {
 		$('#painting-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
+		$('#painting-wrapper ul#helpers').css('z-index', '250');
 		$('ul.tools').delay(500).animate({'margin-left': -705 + 'px'}, 1000);
 	});
 
@@ -788,12 +789,6 @@ jQuery(document).ready(function($) {
 		var mainCanvas = $('#main-canvas');
 		var mainCanvasTop = toolsWrapper.height()/100 * 10;
 
-		toolsButtons.css({width: 430 + 'px', top: mainCanvasTop + darkSideTools.height() + 530 + 'px'});
-
-		toolsButtonsWidth = parseInt(toolsButtons.css('width'));
-
-		toolsButtons.css('margin-left', -toolsButtonsWidth/2 + 'px');
-		
 		var toolsCanvasText = toolsCanvas.find('p');
 			toolsTextWidth = toolsCanvasWidth/2,
 			toolsTextBorderRadius = toolsTextWidth/20,
