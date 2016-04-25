@@ -269,7 +269,7 @@
           </ul>
         </div>
 
-        <div id="publication-wrapper" class="hidden screens">
+        <div id="publication-wrapper" class="screens">
           <ul class="paintings left-side">
             <a href="#" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
             <a href="#" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
