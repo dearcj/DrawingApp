@@ -607,7 +607,7 @@ jQuery(document).ready(function($) {
 	$('ul.tools-buttons li').fadeIn(1500).removeClass('hidden');
 
 	$('ul#buttons li#button-3 a').mouseover(function() {
-		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6 span').css('display', 'block');
+		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6 span').css({'display': 'inline-block', 'margin-left': -width/10 * 3 + 'px'});
 	});
 
 	$('ul#buttons li#button-3 a').mouseout(function() {
@@ -615,7 +615,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul#buttons li#button-4 a').mouseover(function() {
-		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6s span').css('display', 'block');
+		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6s span').css({'display': 'inline-block', 'margin-left': -width/10 * 3 + 'px'});
 	});
 
 	$('ul#buttons li#button-4 a').mouseout(function() {
