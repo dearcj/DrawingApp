@@ -405,6 +405,7 @@ ul#helpers li span p {
 
 #publication-wrapper {
 	opacity: 0;
+	height: 0;
 	background: url(../img/sending-back.jpg) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
@@ -421,6 +422,7 @@ ul#helpers li span p {
     background-position: 50% 0;
     width: 100%;
     position: absolute;
+	height: 0;
     overflow: hidden;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -1517,6 +1519,7 @@ div.at-the-backyard {
     width: 100%;
     position: absolute;
     overflow: hidden;
+	height: 0;
 }
 
 .dark-side {
@@ -1750,6 +1753,7 @@ ul.surfaces li:nth-child(7):focus {
     position: absolute;
     overflow: hidden;
 	opacity: 0;
+	height: 0;
 }
 
 .filters-canvas {
@@ -1812,6 +1816,7 @@ ul.tools-buttons.filters-tb {
 
 #museum-wrapper {
 	opacity: 0;
+	height: 0;
 	background: url(../img/museum-back.jpg) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;

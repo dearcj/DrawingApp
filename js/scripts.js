@@ -225,7 +225,7 @@ jQuery(document).ready(function($) {
 
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
-		$('#surface-wrapper').fadeIn(500).removeClass('hidden').css('z-index', '200');
+		$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'height': 660 + 'px'}, 200).css('z-index', '200');
 		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/2 + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
@@ -254,7 +254,7 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
-		$('#museum-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#museum-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		$('#museum-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
@@ -278,7 +278,7 @@ jQuery(document).ready(function($) {
 		$('#filters-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
-		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#painting-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		$('#painting-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
@@ -300,7 +300,7 @@ jQuery(document).ready(function($) {
 		$('#painting-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
-		$('#filters-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#filters-wrapper').delay(1000).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		$('#filters-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
@@ -326,7 +326,7 @@ jQuery(document).ready(function($) {
 		$('#filters-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
-		$('#publication-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#publication-wrapper').delay(1000).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
@@ -956,7 +956,7 @@ jQuery(document).ready(function($) {
 					objHeight('ul#buttons li.vert', artHeight/100 * verticalButtonsHeightPercent);	
 		}
 			
-		setPercents(26.4, 39.4, 13.35, 30);
+		setPercents(26.4, 42.4, 13.35, 30);
 	}
 
 
