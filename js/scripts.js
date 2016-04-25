@@ -671,11 +671,11 @@ jQuery(document).ready(function($) {
 			if (localStorage.getItem('imageId')) {
 				$('.new-painting').css('display', 'none');
 				$('.painting-info').css('display', 'block');
-				$('#museum-wrapper p').css('opacity', 0);
+				$('#museum-wrapper > p').css('opacity', 0);
 			} else {
 				$('.new-painting').css('display', 'block');
 				$('.painting-info').css('display', 'none');
-				$('#museum-wrapper p').css('opacity', 1);
+				$('#museum-wrapper > p').css('opacity', 1);
 			}
 		});
 	}
@@ -791,10 +791,9 @@ jQuery(document).ready(function($) {
 
 		var museumText = $('#museum-wrapper p'),
 			museumTextWidth = 750/2,
-			museumTextBorderRadius = museumTextWidth/20,
 			museumTextPadding = museumTextWidth/12;
 
-		museumText.css({width: museumTextWidth + 'px', 'border-radius': museumTextBorderRadius + 'px', 'font-size': 530/2.2 + '%', 'padding': 6 * museumTextPadding/7 + 'px ' + '0 ' + museumTextPadding + 'px', top: -(530/2 + 530/7.85) + 'px'});
+		museumText.css({width: museumTextWidth + 'px', 'font-size': 100 + '%', 'padding': 6 * museumTextPadding/7 + 'px ' + '0 ' + museumTextPadding + 'px', top: 0 + 'px'});
 
 		var newPaintingButtonHeight = parseInt(newPaintingButton.css('height')),
 			darkSideMuseumHeight = parseInt(darkSideMuseum.css('height'));

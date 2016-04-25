@@ -1605,7 +1605,7 @@ div.at-the-backyard {
     color: white;
 }
 
-#museum-wrapper p {
+#museum-wrapper > p {
 	background-color: #31b2ee;
 	text-align: center;
 	margin: 0 auto;
