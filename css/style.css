@@ -825,7 +825,7 @@ ul.tools-buttons.tools-tb {
 	left: 50%;
 	margin-left: -213px;
 	width: 426px;
-	top: 575px;
+	top: 565px;
 }
 
 ul.tools-buttons li {
@@ -1432,6 +1432,14 @@ li.back-to-surface {
 	background: url(../img/tools-buttons-prev.png) no-repeat;
 	background-size: 80%;
 	background-position: 50% 50%;
+}
+
+li.back-to-surface {
+	margin-right: -25px !important;
+}
+
+li.add-filter {
+	margin-left: -25px !important;
 }
 
 li#go-to-tools,
