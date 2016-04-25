@@ -213,7 +213,7 @@ jQuery(document).ready(function($) {
 		openPage('surface');
 
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
-		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
+
 		$('#surface-wrapper').fadeIn(500).removeClass('hidden').css('z-index', '200');
 		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/2 + 'px'}, 2000);
 		$('#surface-canvas').delay(500).animate({'background-size': 'auto 100%'}, 1500);
