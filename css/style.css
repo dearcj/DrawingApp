@@ -1655,94 +1655,100 @@ ul.surfaces li:nth-child(2n+2) {
 	margin-left: -15px;
 }
 
-ul.surfaces li:nth-child(1) {
+ul.surfaces li.wood {
 	background: url(../img/surfaces/wood.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(2) {
+ul.surfaces li.wood.wood-active.active {
+	background: url(../img/surfaces/wood-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.board {
 	background: url(../img/surfaces/board.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(3) {
+ul.surfaces li.canvas {
 	background: url(../img/surfaces/canvas.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(4) {
+ul.surfaces li.brick {
 	background: url(../img/surfaces/brick.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(5) {
+ul.surfaces li.cardboard {
 	background: url(../img/surfaces/cardboard.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 	clear: both;
 }
 
-ul.surfaces li:nth-child(6) {
+ul.surfaces li.wall {
 	background: url(../img/surfaces/wall.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(7) {
+ul.surfaces li.metal {
 	background: url(../img/surfaces/metal.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(1):hover,
-ul.surfaces li:nth-child(1):focus {
+ul.surfaces li.wood:hover,
+ul.surfaces li.wood:focus {
 	background: url(../img/surfaces/wood.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(2):hover,
-ul.surfaces li:nth-child(2):focus {
+ul.surfaces li.board:hover,
+ul.surfaces li.board:focus {
 	background: url(../img/surfaces/board.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(3):hover,
-ul.surfaces li:nth-child(3):focus {
+ul.surfaces li.canvas:hover,
+ul.surfaces li.canvas:focus {
 	background: url(../img/surfaces/canvas.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(4):hover,
-ul.surfaces li:nth-child(4):focus {
+ul.surfaces li.brick:hover,
+ul.surfaces li.brick:focus {
 	background: url(../img/surfaces/brick.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(5):hover,
-ul.surfaces li:nth-child(5):focus {
+ul.surfaces li.cardboard:hover,
+ul.surfaces li.cardboard:focus {
 	background: url(../img/surfaces/cardboard.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 	clear: both;
 }
 
-ul.surfaces li:nth-child(6):hover,
-ul.surfaces li:nth-child(6):focus {
+ul.surfaces li.wall:hover,
+ul.surfaces li.wall:focus {
 	background: url(../img/surfaces/wall.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;
 }
 
-ul.surfaces li:nth-child(7):hover,
-ul.surfaces li:nth-child(7):focus {
+ul.surfaces li.metal:hover,
+ul.surfaces li.metal:focus {
 	background: url(../img/surfaces/metal.png) no-repeat;
 	background-size: 95%;
 	background-position: 50% 50%;

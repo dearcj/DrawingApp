@@ -536,6 +536,8 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li.wood').on(window.eventType, function(event) {
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active wood-active');
 		$('#surface-canvas').removeAttr('class').addClass('wood-texture').fadeIn(1000);
 		window.selectedSurface = 1;
 	});
