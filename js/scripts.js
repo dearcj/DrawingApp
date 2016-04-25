@@ -898,6 +898,12 @@ jQuery(document).ready(function($) {
 		hidingHelpers('.main-canvas p');
 	}
 
+	document.getElementById("wand").addEventListener('click', function () {
+		if (!window.currentFilter || window.currentFilter >= filterOrder.length) window.currentFilter = 0;
+		applyFilter("filters-canvas", window.filterSavedImage, filterOrder[window.currentFilter]);
+		window.currentFilter++;
+	});
+
 	function filtersResponsive () {
 		var width = $(window).width(),
 			height = $(window).height(),
