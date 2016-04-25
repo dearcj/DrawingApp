@@ -1465,6 +1465,10 @@ li.send-to-museum {
 	width: 226px !important;
 }
 
+li.its-done {
+	margin-left: -10px !important;
+}
+
 li.its-done:hover,
 li.its-done:focus  {
 	cursor: pointer;
@@ -1769,11 +1773,12 @@ ul.tools-buttons.filters-tb {
     padding: 0;
 	margin: 0 auto;
     float: none;
+	width: 326px;
 }
 
 #wand {
 	background: url(../img/wand.png) no-repeat;
-	background-size: 100%;
+	background-size: 0;
 	background-position: 50% 50%;
 	float: left;
 	width: 120px;

@@ -264,6 +264,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css('z-index', '200');
 		});
 		$('#filters-wrapper ul#helpers').css('z-index', '250');
+		$('#wand').animate({'background-size': '100%'}, 1500);
 		$('li.back-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
 		$('li.its-done').delay(1500).animate({'top': 0 + 'px'}, 500);
 	});
