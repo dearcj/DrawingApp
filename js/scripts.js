@@ -388,6 +388,15 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('index');
 
+		$('.screens').delay(500).animate({'opacity': 1, 'height': 0 + 'px'}, 100).css('z-index', '100');
+		$('.screens').each(function(){
+			$(this).children().css('z-index', '100');
+		});
+		$('#index-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#index-wrapper').each(function(){
+			$(this).children().css('z-index', '200');
+		});
+
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
 		} else {
