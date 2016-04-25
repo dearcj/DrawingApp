@@ -1741,6 +1741,10 @@ ul.surfaces li:nth-child(7):focus {
 }
 
 .filters-canvas {
+	position: relative;
+	top: 35px;
+	width: 750px;
+	height: 530px;
     margin: 0 auto;
 	background-color: white;
 }
