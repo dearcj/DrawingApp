@@ -887,7 +887,6 @@ jQuery(document).ready(function($) {
 
 
 	document.getElementById("wand").addEventListener('click', function () {
-
 		if (!window.currentFilter || window.currentFilter >= filterOrder.length) window.currentFilter = 0;
 		applyFilter("filters-canvas", window.filterSavedImage, filterOrder[window.currentFilter]);
 		window.currentFilter++;

@@ -50,7 +50,7 @@ function applyOverFilter(saveImgCB, src, canvId, imgData, dx, dy, remove) {
     var myCanvas = document.getElementById(canvId);
     var ctx = myCanvas.getContext('2d');
 
-    if (remove) 	ctx.globalCompositeOperation = 'destination-out';
+    //if (remove) 	ctx.globalCompositeOperation = 'destination-out';
 
 
     var img = new Image();
@@ -61,7 +61,7 @@ function applyOverFilter(saveImgCB, src, canvId, imgData, dx, dy, remove) {
     img.onload = function () {
       ctx.drawImage(img, dx, dy);
 
-      if (remove) ctx.globalCompositeOperation = null;
+      //if (remove) ctx.globalCompositeOperation = null;
       saveImgCB(myCanvas);
       //  ctx.canvas.width = ctx.canvas.width;
     }
@@ -246,7 +246,7 @@ function applyFilter(canvId, imgData, filterNumber) {
     window.savedImage = canvas.toDataURL("image/png", 0.8);
   }
   if (filterNumber == 1) {
-   var src = relPath + 'filters/modern.png';
+   var src = relPath + 'filters/diptih.png';
    cb = applyOverFilter(saveImgCB, src, canvId, imgData, 0, 0, true);
    }
   if (filterNumber == 2) {
