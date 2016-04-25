@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 	// Free from resize
 
 	$('ul.surfaces').css('margin-left', -$(window).width/5.28 + 'px');
-	$('ul.tools').css('margin-left', -$(window).width/6 + 'px');
+	$('ul.tools').css('margin-left', -1500 + 'px');
 	$('#go-to-tools').css('top', 65 + 'px');
 	$('.surface-button.at-the-backyard').css('left', -$(window).width()/15 + 'px');
 
@@ -225,7 +225,7 @@ jQuery(document).ready(function($) {
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
 		$('#surface-wrapper').css('z-index', '100');
-		$('#painting-wrapper').delay(5000).animate({'opacity': 1}, 1000).css('z-index', '200');
+		$('#painting-wrapper').animate({'opacity': 1}, 1000).css('z-index', '200');
 		$('ul.tools').delay(1000).animate({'margin-left': -705 + 'px'}, 1000);
 	});
 
