@@ -230,7 +230,7 @@ jQuery(document).ready(function($) {
 	$('#go-to-tools').on(window.eventType, function(event) {
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
-		$('#surface-wrapper').css('z-index', '100');
+		$('#surface-wrapper').css({'opacity': 0, 'z-index': '100'});
 		$('#surface-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
@@ -247,8 +247,8 @@ jQuery(document).ready(function($) {
 
 	$('.add-filter').on(window.eventType, function(event) {
 		$('ul.tools').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
-		$('#painting-wrapper').css('z-index', '100');
-		$('#surface-wrapper').each(function(){
+		$('#painting-wrapper').css({'opacity': 0, 'z-index': '100'});
+		$('#painting-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
 		$('#filters-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
