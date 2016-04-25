@@ -428,26 +428,23 @@ ul.paintings.left-side a:nth-child#index-wrapper {
 
 #main-canvas {
 	cursor: none;
-	position: absolute;
-	left: 50%;
-	margin-left: -375px;
-	top: 10%;
+	position: relative;
+	display: block;
+	margin: 35px auto 0;
 }
 
 #back-canvas {
 	cursor: none;
-	position: absolute;
-	left: 50%;
-	margin-left: -375px;
-	top: 10%;
+	position: relative;
+	display: block;
+	margin: 35px auto 0;
 	background-color: white;
 }
 
 #cursor-canvas {
-	position: absolute;
-	left: 50%;
-	margin-left: -375px;
-	top: 10%;
+	position: relative;
+	display: block;
+	margin: 35px auto 0;
 }
 
 .dark-side.tools {
