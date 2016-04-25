@@ -244,10 +244,7 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('museum');
 
-		$('#index-wrapper').css({'opacity': 0, 'z-index': '100'});
-		$('#index-wrapper').each(function(){
-			$(this).children().css('z-index', '100');
-		});
+		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#publication-wrapper').css({'opacity': 0, 'z-index': '100'});
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
