@@ -324,7 +324,7 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
-		$('#main-image').delay(1000).animate({'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
+		$('#main-image').delay(500).animate({'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
 		$('ul.paintings.left-side').delay(1500).animate({'margin-left': 12 + '%'}, 1000);
 		$('ul.paintings.right-side').delay(1500).animate({'margin-right': 12 + '%'}, 1000);
 	});
