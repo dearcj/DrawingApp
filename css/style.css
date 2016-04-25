@@ -733,6 +733,7 @@ ul.ux-buttons li:last-child {
 form.sending-form {
 	background-color: white;
 	margin: 0 auto;
+	width: 600px;
 }
 
 form.sending-form input {

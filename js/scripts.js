@@ -35,6 +35,8 @@ jQuery(document).ready(function($) {
 	$('li.add-filter').css('top', -75 + 'px');
 	$('li.back-to-tools').css('top', 100 + 'px');
 	$('li.its-done').css('top', 100 + 'px');
+	$('ul.paintings.left-side').css('margin-left', -15 + '%');
+	$('ul.paintings.right-side').css('margin-right', -15 + '%');
 
 	//
 
@@ -319,6 +321,8 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
+		$('ul.paintings.left-side').delay(1500).animate({'marrgin-left': 12 + '%'}, 1000);
+		$('ul.paintings.right-side').delay(1500).animate({'marrgin-right': 12 + '%'}, 1000);
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
@@ -900,7 +904,6 @@ jQuery(document).ready(function($) {
 
 		sendingWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
 
-		sendingForm.css('width', 750 + 'px');
 		sendingForm.css('height', sendingForm.width()/5.907 + 'px');
 
 		var sendingFormHeight = sendingForm.height();
@@ -929,10 +932,6 @@ jQuery(document).ready(function($) {
 			paintingsLiRight = $('ul.paintings.right-side li');
 
 		paintingsLi.css('height', (530 - paintingsLiMarginBot*2)/3 + 'px');
-
-		paintingsLiLeft.css('margin-left', (width - 750 - 2*paintingsLi.width())/4 + 'px');
-		paintingsLiRight.css('margin-right', (width - 750 - 2*paintingsLi.width())/4 + 'px');
-
 
 		paintingsLiText.find('span.title').css({'font-size': paintingsLi.height() + '%'});
 		paintingsLiText.find('span.author').css({'font-size': paintingsLi.height()/1.3 + '%'});
