@@ -913,7 +913,6 @@ jQuery(document).ready(function($) {
 		sendingForm.css('border-radius', 10*sendingFormHeight/100 + 'px');
 
 		paintingsLi.css({width: 750/3 + 'px', 'margin-bottom': 5.66*530/100 + 'px'});
-		$('ul.paintings').css('margin-top', width/15 + 'px');
 
 		var paintingsLiMarginBot = parseInt(paintingsLi.css('margin-bottom')),
 			paintingsLiLeft = $('ul.paintings.left-side li'),

@@ -399,10 +399,6 @@ ul#helpers li span p {
     margin: 0;
 }
 
-ul.paintings.left-side a:nth-child#index-wrapper {
-	overflow: hidden;
-}
-
 #publication-wrapper {
 	opacity: 0;
 	background: url(../img/sending-back.jpg) no-repeat;
@@ -512,6 +508,7 @@ ul.interface > li:focus {
 
 ul.paintings {
 	margin: 0;
+	margin-top: 35px;
 	padding: 0;
 	list-style: none;
 }
@@ -646,8 +643,8 @@ ul.paintings a:hover li div {
 }
 
 #main-image {
-	width: 750px;
-	height: 530px;
+	width: 600px;
+	height: 424px;
 	display: block;
 	margin: 35px auto 0;
 	background-color: white;
