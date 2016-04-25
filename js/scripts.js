@@ -842,35 +842,14 @@ jQuery(document).ready(function($) {
 			filtersButtons = $('.filters-canvas ul.tools-buttons'),
 			prevNextButtons = $('ul.tools-buttons.filters-tb li'),
 			wand = $('#wand'),
-			itsDone = $('.its-done'),
-			wandRatio = function (width, height) {
-				return width/height;
-			},
-			wandRatio = wandRatio(800, 178);
+			itsDone = $('.its-done');
 
 		filtersWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
 
-		filtersCanvas.css({width: width/2.5 + 'px'});
-
-		var filtersCanvasWidth = filtersCanvas.width();
-
-		objHeight(filtersCanvas, filtersCanvasWidth/surfaceRatio);
-
 		darkSideFilters.css('width', filtersCanvasWidth + 'px');
 
-		var filtersCanvasHeight = filtersCanvas.height();
-
 		darkSideFilters.css({height: filtersCanvasHeight/15 + 'px', top: 14*filtersCanvasHeight/15 + 'px'});
-
-		wand.css('height', filtersCanvasHeight*1.508 + 'px');
-
-		wand.css('width', wand.height()/wandRatio + 'px');
-
-		var wandWidth = wand.width(),
-			sideMargins = (width - 4*filtersCanvasWidth/3 - wandWidth)/2;
-
-		filtersCanvas.css({'margin-right': sideMargins + 'px', 'margin-top': width/12.5 + 'px'});
-		wand.css({'margin-left': sideMargins + 'px', 'margin-top': width/54 + 'px'});
+		
 		darkSideFilters.css('margin-left', filtersCanvasWidth + 'px');
 
 		var filtersCanvasText = filtersCanvas.find('p');
