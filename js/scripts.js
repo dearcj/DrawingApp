@@ -855,13 +855,6 @@ jQuery(document).ready(function($) {
 			itsDone = $('.its-done');
 
 		filtersWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
-
-		var filtersCanvasText = filtersCanvas.find('p');
-			filtersTextWidth = 750/2,
-			filtersTextBorderRadius = filtersTextWidth/20,
-			filtersTextPadding = filtersTextWidth/12;
-
-		filtersCanvasText.css({width: filtersTextWidth + 'px', 'border-radius': filtersTextBorderRadius + 'px', 'font-size': 530/2.2 + '%', 'padding': 6 * filtersTextPadding/7 + 'px ' + '0 ' + filtersTextPadding + 'px'});
 	
 		prevNextButtons.css('width', 750/7.612 + 'px');
 
@@ -870,8 +863,6 @@ jQuery(document).ready(function($) {
 		var darkSideFiltersHeight = parseInt(darkSideFilters.css('height')),
 			prevNextButtonsHeight = parseInt(prevNextButtons.css('height')),
 			filtersCanvasTextWidth = parseInt(filtersCanvasText.css('width'));
-
-		filtersCanvasText.css({top: width/12.5 + 530/2 - filtersTextWidth/5.728 + 'px', right: 750/2 - filtersTextWidth/2 + 'px'});
 
 		var toolsButtons = $('ul.tools-buttons.filters-tb');
 
