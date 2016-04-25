@@ -199,8 +199,6 @@ jQuery(document).ready(function($) {
 		} else {
 			addURL(pageName);
 		}
-
-		pagesTransition(pageName);
 	}
 
 	function isItHome(pageName) {
@@ -214,7 +212,6 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.go-to-surface').on(window.eventType, function(event) {
-
 		ZSound.stopMusic('street');
 
 		ZSound.Play('stage');
@@ -230,29 +227,6 @@ jQuery(document).ready(function($) {
 		$('#go-to-tools').delay(1500).animate({'top': -10 + 'px'}, 500);
 		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 		$('#surface-canvas p').delay(2500).fadeIn(1000);
-	});
-
-	$('.go-to-tools').on(window.eventType, function(event) {
-		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
-		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
-		$('#surface-wrapper').css({'opacity': 0, 'z-index': '100'});
-		$('#filters-wrapper').css({'opacity': 0, 'z-index': '100'});
-		$('#surface-wrapper').each(function(){
-			$(this).children().css('z-index', '100');
-		});
-		$('#painting-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
-		$('#painting-wrapper').each(function(){
-			$(this).children().css('z-index', '200');
-		});
-		$('#painting-wrapper ul#helpers').css('z-index', '250');
-		$('ul.tools').delay(500).animate({'margin-left': -705 + 'px'}, 1000);
-		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
-		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
-		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
-	});
-
-	$('.add-filter').on(window.eventType, function(event) {
-
 	});
 
 	$('.go-to-museum').on(window.eventType, function(event) {
@@ -274,7 +248,24 @@ jQuery(document).ready(function($) {
 	$('.go-to-tools').on(window.eventType, function(event) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
-		//openPage('painting');
+		openPage('painting');
+
+		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
+		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
+		$('#surface-wrapper').css({'opacity': 0, 'z-index': '100'});
+		$('#filters-wrapper').css({'opacity': 0, 'z-index': '100'});
+		$('#surface-wrapper').each(function(){
+			$(this).children().css('z-index', '100');
+		});
+		$('#painting-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#painting-wrapper').each(function(){
+			$(this).children().css('z-index', '200');
+		});
+		$('#painting-wrapper ul#helpers').css('z-index', '250');
+		$('ul.tools').delay(500).animate({'margin-left': -705 + 'px'}, 1000);
+		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
+		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
+		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
 		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
 	});
 
