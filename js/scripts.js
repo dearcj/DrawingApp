@@ -279,7 +279,7 @@ jQuery(document).ready(function($) {
 		}
 
 		$('.museum-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
-		$('.painting-info').delay(500).animate({'top': 0 + 'px'}, 500);
+		$('.painting-info').delay(500).animate({'top': -20 + 'px'}, 500);
 		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
 	});
 

@@ -658,8 +658,8 @@ ul.paintings a:hover li div {
 
 #painting-img {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 600px;
+	height: 424px;
 }
 
 .main-painting p {
@@ -1492,7 +1492,7 @@ li.send-to-museum:focus {
 	background-size: 100%;
 	max-width: 247px;
 	margin: 0 auto;
-	opacity: 0 !important;
+	opacity: 1 !important;
 }
 
 div.at-the-backyard {
