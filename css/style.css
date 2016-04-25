@@ -404,6 +404,7 @@ ul.paintings.left-side a:nth-child#index-wrapper {
 }
 
 #publication-wrapper {
+	opacity: 0;
 	background: url(../img/sending-back.jpg) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
