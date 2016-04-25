@@ -1487,7 +1487,7 @@ li.send-to-museum:focus {
 	cursor: pointer;
 }
 
-li.go-to-home {
+.go-to-home {
 	top: 18px !important;
 }
 
