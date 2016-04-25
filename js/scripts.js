@@ -231,7 +231,7 @@ jQuery(document).ready(function($) {
 
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
-		$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'height': 660 + 'px'}, 200).css('z-index', '200');
+		$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
