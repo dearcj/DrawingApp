@@ -226,7 +226,7 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'height': 660 + 'px'}, 200).css('z-index', '200');
-		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/2 + 'px'}, 1500);
+		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/1.8 + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
 		$('#go-to-tools').delay(1500).animate({'top': -10 + 'px'}, 500);
@@ -966,7 +966,7 @@ jQuery(document).ready(function($) {
 		
 		var spanWidth = parseInt(span.css('width'));
 		
-		span.css({'font-size': spanWidth/2 + '%'});
+		span.css({'font-size': spanWidth/2.5 + '%'});
 		
 		var spanPadding = spanWidth/10;
 		
@@ -1070,7 +1070,7 @@ jQuery(document).ready(function($) {
 		couple.css({width: width/13.124 + 'px', height: width/11.464 + 'px', left: (width/100) * 83.97 + 'px', top: (width/100) * 43.46 + 'px'});
 
 		dog.find('span').css({left: specialSpanWidth/6.34 + 'px', top: -(width/100) * 24.69 + 'px'});
-		momandson.find('span').css({left: -specialSpanWidth/2 + 'px', top: -(width/100) * 26 + 'px'});
+		momandson.find('span').css({left: -specialSpanWidth/2 + 'px', top: -(width/100) * 25.5 + 'px'});
 		couple.find('span').css({left: -specialSpanWidth + 'px', top: -(width/100) * 15.87 + 'px'});
 	}
 
