@@ -708,7 +708,7 @@ jQuery(document).ready(function($) {
 
 		var surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
 
-		$('ul.surfaces li:nth-child(7)').css('margin-left', surfacesLiWidth/2 + 'px');
+		$('ul.surfaces li:nth-child(7)').css('margin-left', 90 + 'px');
 
 		var surfaceCanvasText = surfaceCanvas.find('p'),
 			surfaceTextWidth = 375,
@@ -719,7 +719,7 @@ jQuery(document).ready(function($) {
 		
 		forwardButton.css({width: 750/7.612 + 'px', height: (750/7.612)/pnButtonRatio + 'px'});
 
-		surfacesLiP.css({'font-size': surfacesLiWidth/1.333 + '%', bottom: 25 + 'px'});
+		surfacesLiP.css({'font-size': 180/1.333 + '%', bottom: 25 + 'px'});
 
 		var forwardButtonWidth = parseInt(forwardButton.css('width'));
 		window.forwardButtonHeight = parseInt(forwardButton.css('height'));
