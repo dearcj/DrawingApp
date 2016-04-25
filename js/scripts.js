@@ -240,9 +240,9 @@ jQuery(document).ready(function($) {
 		});
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
 		$('ul.tools').delay(500).animate({'margin-left': -705 + 'px'}, 1000);
-		$('li.send-to-museum').animate({'top': 0 + 'px'}, 1000);
-		$('li.back-to-surface').animate({'top': 0 + 'px'}, 1000);
-		$('li.add-filter').animate({'top': 0 + 'px'}, 1000);
+		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
+		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
+		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
 	});
 
 	$('.go-to-museum').on(window.eventType, function(event) {
