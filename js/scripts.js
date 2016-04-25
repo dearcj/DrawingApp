@@ -288,7 +288,7 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('painting');
 
-		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
+		$('ul.surfaces').animate({'margin-left': -$(window).width()/6 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
 		$('#surface-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
 		$('#filters-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
