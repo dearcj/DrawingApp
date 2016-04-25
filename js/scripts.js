@@ -399,10 +399,11 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').fadeIn(500).animate({'opacity': 1}, 200).removeClass('hidden').css('z-index', '200');
 		$('#index-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
-			$('#dog').css('z-index', '250');
-			$('#momandson').css('z-index', '250');
-			$('#couple').css('z-index', '250');
 		});
+
+		$('#dog').css('z-index', '250');
+		$('#momandson').css('z-index', '250');
+		$('#couple').css('z-index', '250');
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
