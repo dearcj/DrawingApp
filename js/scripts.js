@@ -321,8 +321,8 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
-		$('ul.paintings.left-side').delay(1500).animate({'marrgin-left': 12 + '%'}, 1000);
-		$('ul.paintings.right-side').delay(1500).animate({'marrgin-right': 12 + '%'}, 1000);
+		$('ul.paintings.left-side').delay(1500).animate({'margin-left': 12 + '%'}, 1000);
+		$('ul.paintings.right-side').delay(1500).animate({'margin-right': 12 + '%'}, 1000);
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
