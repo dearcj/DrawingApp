@@ -1490,7 +1490,7 @@ li.send-to-museum:focus {
 	background-size: 100%;
 	max-width: 247px;
 	margin: 0 auto;
-	opacity: 0;
+	opacity: 0 !important;
 }
 
 div.at-the-backyard {

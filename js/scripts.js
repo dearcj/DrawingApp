@@ -250,7 +250,7 @@ jQuery(document).ready(function($) {
 		openPage('museum');
 
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
-		$('#publication-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
+		$('#publication-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
