@@ -33,6 +33,8 @@ jQuery(document).ready(function($) {
 	$('li.send-to-museum').css('top', 100 + 'px');
 	$('li.back-to-surface').css('top', -75 + 'px');
 	$('li.add-filter').css('top', -75 + 'px');
+	$('li.back-to-tools').css('top', 100 + 'px');
+	$('li.its-done').css('top', 100 + 'px');
 
 	//
 
@@ -229,7 +231,7 @@ jQuery(document).ready(function($) {
 		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/2 + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
-		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
+		$('#go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
 		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
 	});
 
@@ -262,6 +264,8 @@ jQuery(document).ready(function($) {
 			$(this).children().css('z-index', '200');
 		});
 		$('#filters-wrapper ul#helpers').css('z-index', '250');
+		$('li.back-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
+		$('li.its-done').delay(1500).animate({'top': 0 + 'px'}, 500);
 	});
 
 	$('.go-to-museum').on(window.eventType, function(event) {
