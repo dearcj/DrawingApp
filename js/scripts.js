@@ -846,20 +846,14 @@ jQuery(document).ready(function($) {
 
 		filtersWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
 
-		darkSideFilters.css('width', filtersCanvasWidth + 'px');
-
-		darkSideFilters.css({height: filtersCanvasHeight/15 + 'px', top: 14*filtersCanvasHeight/15 + 'px'});
-
-		darkSideFilters.css('margin-left', filtersCanvasWidth + 'px');
-
 		var filtersCanvasText = filtersCanvas.find('p');
-			filtersTextWidth = filtersCanvasWidth/2,
+			filtersTextWidth = 750/2,
 			filtersTextBorderRadius = filtersTextWidth/20,
 			filtersTextPadding = filtersTextWidth/12;
 
 		filtersCanvasText.css({width: filtersTextWidth + 'px', 'border-radius': filtersTextBorderRadius + 'px', 'font-size': filtersCanvasHeight/2.2 + '%', 'padding': 6 * filtersTextPadding/7 + 'px ' + '0 ' + filtersTextPadding + 'px'});
 	
-		prevNextButtons.css('width', filtersCanvasWidth/7.612 + 'px');
+		prevNextButtons.css('width', 750/7.612 + 'px');
 
 		prevNextButtons.css('height', prevNextButtons.width()/pnButtonRatio + 'px');
 
@@ -867,7 +861,7 @@ jQuery(document).ready(function($) {
 			prevNextButtonsHeight = parseInt(prevNextButtons.css('height')),
 			filtersCanvasTextWidth = parseInt(filtersCanvasText.css('width'));
 
-		filtersCanvasText.css({top: width/12.5 + filtersCanvasHeight/2 - filtersTextWidth/5.728 + 'px', right: sideMargins + filtersCanvasWidth/2 - filtersTextWidth/2 + 'px'});
+		filtersCanvasText.css({top: width/12.5 + filtersCanvasHeight/2 - filtersTextWidth/5.728 + 'px', right: sideMargins + 750/2 - filtersTextWidth/2 + 'px'});
 
 		itsDone.css('width', prevNextButtons.height()*doneButtonRatio + 'px');
 
@@ -881,7 +875,7 @@ jQuery(document).ready(function($) {
 
 		toolsButtonsWidth = parseInt(toolsButtons.css('width'));
 
-		toolsButtons.css('margin-left', (filtersCanvasWidth - toolsButtonsWidth)/2 + 'px');
+		toolsButtons.css('margin-left', (750 - toolsButtonsWidth)/2 + 'px');
 
 		hidingHelpers('.filters-canvas p');
 	}
