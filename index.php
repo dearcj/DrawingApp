@@ -303,7 +303,7 @@
           </ul>
         </div>
 
-        <div id="museum-wrapper" class="hidden screens">
+        <div id="museum-wrapper" class="screens">
           <ul id="helpers">
             <li id="helper-11"><span><p>Освещению в музее уделяется особое внимание</p></span></li>
             <li id="helper-12"><span><p>Стены музея выкрашены в белый цвет</p></span></li>
