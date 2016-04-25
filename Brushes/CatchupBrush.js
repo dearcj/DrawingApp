@@ -34,8 +34,11 @@ CatchupBrush.prototype.drawCatchupPart = function (ctx, x, y, scale) {
 };
 
 
+
 CatchupBrush.prototype.onDown = function (ctx, x, y) {
 	this.drawCatchupPart(ctx, x, y, 1 + Math.random());
+	ZSound.Play('needle');
+
 };
 
 CatchupBrush.prototype.use = function (obj, ctx) {

@@ -527,12 +527,12 @@ jQuery(document).ready(function($) {
 	{
 		$(window).mouseup(function (e)
 		{
-		    var container = $(div);
+			var container = $(div);
 
-		    if (!container.is(e.target) && container.has(e.target).length === 0)
-		    {
-		        container.fadeOut(500);
-		    }
+			if (!container.is(e.target) && container.has(e.target).length === 0)
+			{
+				container.fadeOut(500);
+			}
 		});
 	}
 
@@ -547,6 +547,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li.wood').on(window.eventType, function(event) {
+		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active wood-active');
 		$('#surface-canvas').removeAttr('class').addClass('wood-texture').fadeIn(1000);
@@ -554,6 +555,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li.board').on(window.eventType, function(event) {
+		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active board-active');
 		$('#surface-canvas').removeAttr('class').addClass('board-texture').fadeIn(1000);
@@ -561,6 +563,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li.canvas').on(window.eventType, function(event) {
+		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active canvas-active');
 		$('#surface-canvas').removeAttr('class').addClass('canvas-texture');
@@ -568,6 +571,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li.brick').on(window.eventType, function(event) {
+		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active brick-active');
 		$('#surface-canvas').removeAttr('class').addClass('brick-texture');
@@ -575,13 +579,15 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li.cardboard').on(window.eventType, function(event) {
+		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active cardboard-active');
 		$('#surface-canvas').removeAttr('class').addClass('cardboard-texture');
 		window.selectedSurface = 5;
 	});
-	
+
 	$('ul.surfaces li.wall').on(window.eventType, function(event) {
+		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active wall-active');
 		$('#surface-canvas').removeAttr('class').addClass('wall-texture');
@@ -589,6 +595,8 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li.metal').on(window.eventType, function(event) {
+
+		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active metal-active');
 		$('#surface-canvas').removeAttr('class').addClass('metal-texture');
@@ -705,10 +713,10 @@ jQuery(document).ready(function($) {
 		$(this).parents('#wrapper').prev().css('position', 'relative');
 	});
 
-	
+
 	$(".group1").colorbox({rel:'group1', title: function() {
-			return 'Никита Алексеев. «Фонарик». 1991. Холст, акрил, пастель<br><span>В темноте ярко светит фонарик. Он настолько маленький, что освещает совсем немного – видно только как вокруг него идёт снег или дождь. Фонарик висит где-то на улице, и не смотря на свои размеры наверняка будет хорошо виден издалека.';
-		}
+		return 'Никита Алексеев. «Фонарик». 1991. Холст, акрил, пастель<br><span>В темноте ярко светит фонарик. Он настолько маленький, что освещает совсем немного – видно только как вокруг него идёт снег или дождь. Фонарик висит где-то на улице, и не смотря на свои размеры наверняка будет хорошо виден издалека.';
+	}
 	});
 
 	// ---------FRONT PAGE BACKGROUND HEIGHT---------
@@ -737,22 +745,22 @@ jQuery(document).ready(function($) {
 			return width/height;
 		},
 		doneButtonRatio = doneButtonRatio(226, 87)
-		width = $(window).width(),
+	width = $(window).width(),
 		objHeight = function (obj, num) {
 			return $(obj).css('height', num + 'px');
 		},
 		objLeft = function (obj, num) {
-			return $(obj).css('left', num + 'px');	
+			return $(obj).css('left', num + 'px');
 		},
 		objTop = function (obj, num) {
-			return $(obj).css('top', num + 'px');	
+			return $(obj).css('top', num + 'px');
 		};
 
 	function setBgImageSize () {
 		var width = $(window).width();
-		
+
 		objHeight('#art', width/ratio),
-		objHeight('#sky', width/ratio);
+			objHeight('#sky', width/ratio);
 
 		uxButtonsLiWidth = $('ul.ux-buttons li').width();
 
@@ -819,7 +827,7 @@ jQuery(document).ready(function($) {
 			surfaceCanvas = $('#surface-canvas'),
 			surfaceWrapper = $('#surface-wrapper'),
 			surfaceBackyard = $('.surface-button.at-the-backyard');
-			forwardButton = $('ul.tools-buttons.surface-tb li'),
+		forwardButton = $('ul.tools-buttons.surface-tb li'),
 			surfacesLi = $('ul.surfaces li'),
 			surfacesLiP = $('ul.surfaces li p'),
 			surfaceLiRatio = function (width, height) {
@@ -880,7 +888,7 @@ jQuery(document).ready(function($) {
 				return width/height;
 			},
 			interfaceButtonsRatio = interfaceButtonsRatio(22, 30);
-			toolsButtons = $('ul.tools-buttons.tools-tb'),
+		toolsButtons = $('ul.tools-buttons.tools-tb'),
 			toolsRatio = function (width, height) {
 				return width/height;
 			},
@@ -915,12 +923,12 @@ jQuery(document).ready(function($) {
 		var mainCanvasTop = toolsWrapper.height()/100 * 10;
 
 		var toolsCanvasText = toolsCanvas.find('p');
-			toolsTextWidth = toolsCanvasWidth/2,
+		toolsTextWidth = toolsCanvasWidth/2,
 			toolsTextBorderRadius = toolsTextWidth/20,
 			toolsTextPadding = toolsTextWidth/12;
 
 		toolsCanvasText.css({width: toolsTextWidth + 'px', 'border-radius': toolsTextBorderRadius + 'px', 'font-size': toolsCanvasHeight/2.5 + '%', 'padding': 6 * toolsTextPadding/7 + 'px ' + '0 ' + toolsTextPadding + 'px', top: 3 * toolsCanvasHeight/8 + 'px'});
-	
+
 		var toolsCanvasTextHeight = toolsCanvasText.innerHeight();
 
 		hidingHelpers('.main-canvas p');
@@ -943,7 +951,7 @@ jQuery(document).ready(function($) {
 			prevNextButtons = $('ul.tools-buttons.filters-tb li'),
 			wand = $('#wand'),
 			itsDone = $('.its-done');
-	
+
 		prevNextButtons.css('width', 750/7.612 + 'px');
 
 		prevNextButtons.css('height', prevNextButtons.width()/pnButtonRatio + 'px');
@@ -1013,7 +1021,7 @@ jQuery(document).ready(function($) {
 		darkSideSending.css({height: 530/15 + 'px', top: 530 - 530/15 + width/12.5 + 'px'});
 
 		var sendingCanvasText = sendingCanvas.find('p');
-			sendingTextWidth = 65*750/100,
+		sendingTextWidth = 65*750/100,
 			sendingTextBorderRadius = sendingTextWidth/20,
 			sendingTextPadding = sendingTextWidth/12;
 
@@ -1029,12 +1037,12 @@ jQuery(document).ready(function($) {
 			width = $(window).width();
 
 		function setPercents (houseMenuLeftPercent, houseMenuTopPercent, horizontalButtonsHeightPercent, verticalButtonsHeightPercent) {
-			return	objLeft('ul#buttons', width/100 * houseMenuLeftPercent), 
-					objTop('ul#buttons', artHeight/100 * houseMenuTopPercent), 
-					objHeight('ul#buttons li.hor', artHeight/100 * horizontalButtonsHeightPercent), 
-					objHeight('ul#buttons li.vert', artHeight/100 * verticalButtonsHeightPercent);	
+			return	objLeft('ul#buttons', width/100 * houseMenuLeftPercent),
+				objTop('ul#buttons', artHeight/100 * houseMenuTopPercent),
+				objHeight('ul#buttons li.hor', artHeight/100 * horizontalButtonsHeightPercent),
+				objHeight('ul#buttons li.vert', artHeight/100 * verticalButtonsHeightPercent);
 		}
-			
+
 		setPercents(26.4, 45.5, 13.35, 30);
 	}
 
@@ -1044,17 +1052,17 @@ jQuery(document).ready(function($) {
 	function helpersTextProperties() {
 		var span = $('ul#helpers li span'),
 			width = $(window).width();
-		
+
 		span.css({width: width/100 * 20 + 'px'});
-		
+
 		var spanWidth = parseInt(span.css('width'));
-		
+
 		span.css({'font-size': spanWidth/2.5 + '%'});
-		
+
 		window.spanPadding = spanWidth/10;
-		
+
 		span.css({padding: spanPadding/7 * 6 + 'px ' + spanPadding + 'px ' + spanPadding + 'px'});
-		
+
 		span.css({'border-radius': spanPadding/1.5 + 'px'});
 
 		window.spanTopPos = -spanWidth/5;
@@ -1107,7 +1115,7 @@ jQuery(document).ready(function($) {
 		var artHeight = parseInt($('#art').css('height')),
 			width = $(window).width(),
 			coordinate = function(helperNum, leftPercent, topPercent) {
-				return $('ul#helpers #helper-' + helperNum).css({left: width/100 * leftPercent + 'px', top: artHeight/100 * topPercent + 'px'});	
+				return $('ul#helpers #helper-' + helperNum).css({left: width/100 * leftPercent + 'px', top: artHeight/100 * topPercent + 'px'});
 			};
 
 		coordinate(1, 74.5, 32);
@@ -1132,18 +1140,18 @@ jQuery(document).ready(function($) {
 			specialSpan = $('div.special span');
 
 
-		
+
 		specialSpan.css({width: width/100 * 20 + 'px'});
 		$('#dog').find('span').css({width: width/100 * 8 + 'px'});
-		
+
 		var specialSpanWidth = width/100 * 20;
-		
+
 		specialSpan.css({'font-size': specialSpanWidth/3 + '%'});
-		
+
 		var specialSpanPadding = specialSpanWidth/10;
-		
+
 		specialSpan.css({padding: specialSpanPadding/7 * 6 + 'px ' + specialSpanPadding + 'px ' + specialSpanPadding + 'px'});
-		
+
 		specialSpan.css({'border-radius': specialSpanPadding/1.5 + 'px'});
 
 		helper.css('width', width/29.27 + 'px');
@@ -1172,14 +1180,14 @@ jQuery(document).ready(function($) {
 		coordinateHelpers();
 	});
 
-		setBgImageSize();
-		museumResponsive();
-		surfaceResponsive();
-		toolsResponsive();
-		filtersResponsive();
-		sendingResponsive();
-		coordinateHouseMenu();
-		helpersTextProperties();
-		buttonHelpersPosition();
-		coordinateHelpers();
+	setBgImageSize();
+	museumResponsive();
+	surfaceResponsive();
+	toolsResponsive();
+	filtersResponsive();
+	sendingResponsive();
+	coordinateHouseMenu();
+	helpersTextProperties();
+	buttonHelpersPosition();
+	coordinateHelpers();
 });

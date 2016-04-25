@@ -44,6 +44,13 @@ ThreadBrush.prototype.onSelect = function () {
 	}
 }
 
+
+ThreadBrush.prototype.onDown = function (ctx, x, y) {
+Brush.prototype.onDown.call(this, ctx, x, y);
+	ZSound.Play('needle');
+
+
+}
 ThreadBrush.prototype.getPattern = function(ctx) {
 	var patternCanvas = document.createElement('canvas'),
 		dotWidth = 20,
