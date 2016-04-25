@@ -29,8 +29,8 @@ jQuery(document).ready(function($) {
 	$('ul.surfaces').css('margin-left', -350 + 'px');
 	$('ul.tools').css('margin-left', -1500 + 'px');
 	$('#go-to-tools').css('top', 100 + 'px');
-	$('.surface-button.at-the-backyard').css('left', -$(window).width()/15 + 'px');
-	$('.museum-button.at-the-backyard').css('left', -$(window).width()/15 + 'px');
+	$('.surface-button.at-the-backyard').css('left', -150 + 'px');
+	$('.museum-button.at-the-backyard').css('left', -150 + 'px');
 	$('li.send-to-museum').css('top', 100 + 'px');
 	$('li.back-to-surface').css('top', -75 + 'px');
 	$('li.add-filter').css('top', -75 + 'px');
@@ -388,11 +388,11 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('index');
 
-		$('.screens').delay(500).animate({'opacity': 1, 'height': 0 + 'px'}, 100).css('z-index', '100');
+		$('.screens').animate({'opacity': 0, 'height': 0 + 'px'}, 200).css('z-index', '100');
 		$('.screens').each(function(){
 			$(this).children().css('z-index', '100');
 		});
-		$('#index-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#index-wrapper').fadeIn(500).removeClass('hidden').css('z-index', '200');
 		$('#index-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
