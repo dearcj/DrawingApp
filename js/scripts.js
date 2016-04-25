@@ -224,9 +224,9 @@ jQuery(document).ready(function($) {
 	$('#go-to-tools').on(window.eventType, function(event) {
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
-		$('#surface-wrapper').css('z-index', '100');
-		$('#painting-wrapper').animate({'opacity': 1}, 1000).css('z-index', '200');
-		$('ul.tools').delay(1000).animate({'margin-left': -705 + 'px'}, 1000);
+		$('#surface-wrapper').animate({'opacity': 0}, 100)css('z-index', '100');
+		$('#painting-wrapper').animate({'opacity': 1}, 100).css('z-index', '200');
+		$('ul.tools').delay(500).animate({'margin-left': -705 + 'px'}, 1000);
 	});
 
 	$('.go-to-museum').on(window.eventType, function(event) {
