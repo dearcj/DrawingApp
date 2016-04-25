@@ -276,6 +276,8 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
+		$('#helpers').css('z-index', '300');
+
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
 		} else {
@@ -1063,7 +1065,7 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-12 span').css({left: -spanWidth + 'px', top: spanTopPos * 1.35 + 'px'});
 		$('ul#helpers li#helper-13 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 1.35 + 'px'});
 		$('ul#helpers li#helper-14 span').css({left: -spanWidth + 'px', top: spanTopPos * 1.35 + 'px'});
-		$('ul#helpers li#helper-15 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 1.35 + 'px'});
+		$('ul#helpers li#helper-15 span').css({left: 0 + 'px', top: spanTopPos * 2 + 'px'});
 	}
 
 

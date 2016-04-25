@@ -371,8 +371,8 @@ ul#helpers li span {
 }
 
 #helper-15 {
-	right: 212px;
-	top: 5px;
+	left: 140px;
+	top: 205px
 }
 
 #helper-11,
@@ -1613,6 +1613,7 @@ div.at-the-backyard {
 	height: auto;
 	position: absolute;
 	color: white;
+	display: none;
 }
 
 #surface-canvas.wood-texture {
