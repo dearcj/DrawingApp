@@ -701,11 +701,7 @@ jQuery(document).ready(function($) {
 
 		var socialButtonsWidth = parseInt(socialButtons.css('width'));
 
-		socialButtons.find('ul li').css({width: socialButtonsWidth/2.78 + 'px', height: socialButtonsWidth/2.55 + 'px'});
-
 		var socialButtonsLiWidth = parseInt(socialButtons.find('ul li').css('width'));
-
-		socialButtons.find('ul').css('width', (socialButtonsLiWidth + 3)*2 + 1 + 'px');
 
 		darkSideMuseum.css('width', 750 + 'px');
 
