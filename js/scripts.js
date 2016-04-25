@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
 
 	$('ul.surfaces').css('margin-left', -350 + 'px');
 	$('ul.tools').css('margin-left', -1500 + 'px');
-	$('#go-to-tools').css('top', 65 + 'px');
+	$('#go-to-tools').css('top', 100 + 'px');
 	$('.surface-button.at-the-backyard').css('left', -$(window).width()/15 + 'px');
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
@@ -213,9 +213,10 @@ jQuery(document).ready(function($) {
 		openPage('surface');
 
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
+		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#surface-wrapper').fadeIn(500).removeClass('hidden').css('z-index', '200');
 		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/2 + 'px'}, 2000);
-		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
+		$('#surface-canvas').delay(500).animate({'background-size': 'auto 100%'}, 1500);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
 		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
 		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500)
