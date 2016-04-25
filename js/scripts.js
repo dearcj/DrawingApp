@@ -272,7 +272,7 @@ jQuery(document).ready(function($) {
 		$('#filters-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
-		$('#painting-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '200');
 		$('#painting-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
