@@ -1062,10 +1062,10 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-9 span').css({left: spanWidth/4.655 + 'px', top: spanTopPos * 0.5 + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-10 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 3.4 + 'px'});
 		$('ul#helpers li#helper-11 span').css({left: -spanWidth + 'px', top: -spanTopPos + 'px'});
-		$('ul#helpers li#helper-12 span').css({left: -spanWidth + 'px', top: spanTopPos * 1.35 + 'px'});
+		$('ul#helpers li#helper-12 span').css({left: 0 + 'px', top: spanTopPos * 1.35 + 'px'});
 		$('ul#helpers li#helper-13 span').css({left: 0 + 'px', top: spanTopPos * 1.35 + 'px'});
 		$('ul#helpers li#helper-14 span').css({left: -spanWidth + 'px', top: spanTopPos * 1.35 + 'px'});
-		$('ul#helpers li#helper-15 span').css({left: 0 + 'px', top: spanTopPos * 2 + 'px'});
+		$('ul#helpers li#helper-15 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 1.7 + 'px'});
 	}
 
 
