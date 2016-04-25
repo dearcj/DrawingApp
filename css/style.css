@@ -413,7 +413,7 @@ ul.paintings.left-side a:nth-child#index-wrapper {
 }
 
 #painting-wrapper {
-	display: none;
+	z-index: 100;
 	background: url(../img/background.png) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
@@ -1482,6 +1482,7 @@ div.at-the-backyard {
 }
 
 #surface-wrapper {
+	z-index: 200;
 	background: url(../img/background.png) no-repeat;
     background-position: 50% 0;
     background-size: 100% auto;

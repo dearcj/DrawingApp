@@ -213,7 +213,7 @@ jQuery(document).ready(function($) {
 		openPage('surface');
 
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
-		$('#surface-wrapper').fadeIn(500).removeClass('hidden');
+		$('#surface-wrapper').fadeIn(500).removeClass('hidden').css('z-index', '200');
 		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/2 + 'px'}, 2000);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
@@ -224,7 +224,8 @@ jQuery(document).ready(function($) {
 	$('#go-to-tools').on(window.eventType, function(event) {
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
-		$('#painting-wrapper').css('display', 'block');
+		$('#painting-wrapper').css('z-index', '100');
+		$('#painting-wrapper').css('z-index', '200');
 		$('ul.tools').delay(1000).animate({'margin-left': -705 + 'px'}, 1000);
 	});
 
