@@ -1172,7 +1172,7 @@ jQuery(document).ready(function($) {
 		coordinateHelpers();
 	});
 
-	$(window).load(function(){
+
 		setBgImageSize();
 		museumResponsive();
 		surfaceResponsive();
@@ -1183,6 +1183,6 @@ jQuery(document).ready(function($) {
 		helpersTextProperties();
 		buttonHelpersPosition();
 		coordinateHelpers();
-	});
+
 	
 });
