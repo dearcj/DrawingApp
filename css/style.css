@@ -835,7 +835,8 @@ ul.tools-buttons li {
     opacity: 1;
 }
 
-ul.tools-buttons.surface-tb li {
+ul.tools-buttons.surface-tb li,
+ul.tools-buttons.filters-tb li {
 	margin: 0;
 }
 
@@ -1459,9 +1460,6 @@ li.send-to-museum {
 	background: url(../img/filters-done.png) no-repeat;
 	background-size: 80%;
 	background-position: 50% 50%;
-}
-
-li.send-to-museum {
 	width: 226px !important;
 }
 

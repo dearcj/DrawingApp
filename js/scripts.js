@@ -755,13 +755,11 @@ jQuery(document).ready(function($) {
 			surfaceTextPadding = surfaceTextWidth/12;
 
 		surfaceCanvasText.css({width: surfaceTextWidth + 'px', 'border-radius': surfaceTextBorderRadius + 'px', 'font-size': 530/2.2 + '%', 'padding': 6 * surfaceTextPadding/7 + 'px ' + '0 ' + surfaceTextPadding + 'px', top: 3 * 530/8 + 'px'});
-		
-		forwardButton.css({width: 750/7.612 + 'px', height: (750/7.612)/pnButtonRatio + 'px'});
 
 		surfacesLiP.css({'font-size': 180/1.333 + '%', bottom: 25 + 'px'});
 
-		var forwardButtonWidth = parseInt(forwardButton.css('width'));
-		window.forwardButtonHeight = parseInt(forwardButton.css('height'));
+		var forwardButtonWidth = 100;
+		window.forwardButtonHeight = 100;
 
 		$('ul.tools-buttons.surface-tb').css('width', forwardButtonWidth + 'px');
 
@@ -872,8 +870,6 @@ jQuery(document).ready(function($) {
 			filtersCanvasTextWidth = parseInt(filtersCanvasText.css('width'));
 
 		filtersCanvasText.css({top: width/12.5 + 530/2 - filtersTextWidth/5.728 + 'px', right: 750/2 - filtersTextWidth/2 + 'px'});
-
-		itsDone.css('width', prevNextButtons.height()*doneButtonRatio + 'px');
 
 		var toolsButtons = $('ul.tools-buttons.filters-tb');
 
