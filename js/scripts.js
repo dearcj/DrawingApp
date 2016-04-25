@@ -239,7 +239,7 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('top', 660 + 'px');
 		}
 
-		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/2.5 + 'px'}, 1500);
+		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/3 + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
 		$('#go-to-tools').delay(1500).animate({'top': -10 + 'px'}, 500);
