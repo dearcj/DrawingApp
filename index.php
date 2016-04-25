@@ -173,7 +173,7 @@
           </ul>
         </div>
 
-        <div id="painting-wrapper" class="hidden screens">
+        <div id="painting-wrapper" class="screens">
           <ul class="tools-buttons tools-tb">
             <li class="back-to-surface go-to-surface"><a href="#"></a></li>
             <li class="send-to-museum go-to-publication"><a href="#"></a></li>
@@ -243,7 +243,13 @@
           </ul>
         </div>
 
-        <div id="filters-wrapper" class="hidden screens">
+        <div id="filters-wrapper" class="screens">
+          <div id="wand">
+            <ul id="helpers">
+                <li id="helper-9"><span>В таком деле как творчество - не обходится без волшебства. Это подтвердит любой художник.</span></li>
+            </ul>
+          </div>
+
           <div class="filters-canvas">
             <canvas id="filters-canvas" width="750px" height="530px"></canvas>
 
@@ -255,12 +261,6 @@
             </ul>
 
             <div class="dark-side filters"></div>
-          </div>
-
-          <div id="wand">
-            <ul id="helpers">
-              <li id="helper-9"><span>В таком деле как творчество - не обходится без волшебства. Это подтвердит любой художник.</span></li>
-            </ul>
           </div>
 
           <ul class="ux-buttons">

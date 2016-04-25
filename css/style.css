@@ -75,6 +75,15 @@ ul {
 	color: #333;
 }
 
+.podval_new {
+	position: relative;
+	top: 660px;
+	background-color: white;
+	margin: 0;
+	padding: 25px 20px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
 #wrapper {
 	background-color: #300F06;
 }
@@ -289,7 +298,7 @@ ul#helpers {
 	padding: 0;
 	position: absolute;
 	width: 65px;
-	top: 7.25%;
+	top: 12px;
 	left: 50%;
 	margin-left: -405px;
 	height: 66px !important;
@@ -399,17 +408,18 @@ ul.paintings.left-side a:nth-child#index-wrapper {
     background-size: 100% auto;
     background-position: 50% 0;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
 
 #painting-wrapper {
+	opacity: 0;
+	z-index: 100;
 	background: url(../img/background.png) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
-    min-height: 725px;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -419,25 +429,25 @@ ul.paintings.left-side a:nth-child#index-wrapper {
 #main-canvas {
 	cursor: none;
 	position: absolute;
+	top: 35px;
 	left: 50%;
 	margin-left: -375px;
-	top: 10%;
 }
 
 #back-canvas {
 	cursor: none;
 	position: absolute;
+	top: 35px;
 	left: 50%;
 	margin-left: -375px;
-	top: 10%;
 	background-color: white;
 }
 
 #cursor-canvas {
 	position: absolute;
+	top: 35px;
 	left: 50%;
 	margin-left: -375px;
-	top: 10%;
 }
 
 .dark-side.tools {
@@ -813,6 +823,9 @@ ul.tools-buttons {
 ul.tools-buttons.tools-tb {
 	position: absolute;
 	left: 50%;
+	margin-left: -213px;
+	width: 426px;
+	top: 565px;
 }
 
 ul.tools-buttons li {
@@ -840,12 +853,14 @@ ul.tools-buttons li:hover {
 
 ul.tools {
 	position: absolute;
+	top: 35px;
 	left: 50%;
-	top: 10%;
+	margin-top: 35px;
 	padding-left: 0;
 	margin: 0;
 	margin-left: -705px;
 	width: 300px;
+	height: 575px;
 }
 
 ul.tools > li {
@@ -1415,7 +1430,16 @@ ul.tools li:focus {
 li.back-to-tools,
 li.back-to-surface {
 	background: url(../img/tools-buttons-prev.png) no-repeat;
-	background-size: 100%;
+	background-size: 80%;
+	background-position: 50% 50%;
+}
+
+li.back-to-surface {
+	margin-right: -25px !important;
+}
+
+li.add-filter {
+	margin-left: -25px !important;
 }
 
 li#go-to-tools,
@@ -1433,7 +1457,8 @@ li#go-to-tools {
 li.its-done,
 li.send-to-museum {
 	background: url(../img/filters-done.png) no-repeat;
-	background-size: 100%;
+	background-size: 80%;
+	background-position: 50% 50%;
 }
 
 li.send-to-museum {
@@ -1473,13 +1498,13 @@ div.at-the-backyard {
 }
 
 #surface-wrapper {
+	z-index: 200;
 	background: url(../img/background.png) no-repeat;
     background-position: 50% 0;
     background-size: 100% auto;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
-	opacity: 0;
 }
 
 .dark-side {
@@ -1511,9 +1536,9 @@ div.at-the-backyard {
 	background: url(../img/textures/wood.jpg) no-repeat;
 	background-size: 0;
 	background-position: 50% 50%;
-	margin: 0 auto;
-	max-width: 750px;
-	max-height: 530px;
+	margin: 35px auto 0;
+	width: 750px;
+	height: 530px;
 }
 
 #surface-canvas p {
@@ -1532,7 +1557,7 @@ div.at-the-backyard {
 	margin: 0 auto;
 	line-height: 120%;
 	height: auto;
-	position: relative;
+	position: absolute;
 	color: white;
 }
 
@@ -1581,11 +1606,16 @@ ul.surfaces {
 	float: left;
 	padding: 0;
 	clear: both;
-	margin-top: 0;
+	margin-top: 30px;
+	width: 360px;
+	height: 476px;
 }
 
 ul.surfaces li {
 	float: left;
+	width: 180px;
+	height: 119px;
+	margin-top: -5px;
 }
 
 ul.surfaces li p {
@@ -1600,6 +1630,10 @@ ul.surfaces li p {
 ul.surfaces li:hover,
 ul.surfaces li:focus {
 	cursor: pointer;
+}
+
+ul.surfaces li:nth-child(2n+2) {
+	margin-left: -15px;
 }
 
 ul.surfaces li:nth-child(1) {
@@ -1699,15 +1733,19 @@ ul.surfaces li:nth-child(7):focus {
 	background: url(../img/background.png) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
-    height: 700px;
+    height: 660px;
     width: 100%;
-    position: relative;
+    position: absolute;
     overflow: hidden;
+	opacity: 0;
 }
 
 .filters-canvas {
-    margin: 0;
-    float: right;
+	position: relative;
+	top: 35px;
+	width: 750px;
+	height: 530px;
+    margin: 0 auto;
 	background-color: white;
 }
 
@@ -1737,7 +1775,10 @@ ul.tools-buttons.filters-tb {
 	background-size: 100%;
 	background-position: 50% 50%;
 	float: left;
-	margin: 0;
+	width: 120px;
+	height: 575px;
+	left: 20%;
+	position: relative;
 }
 
 #wand:hover,
