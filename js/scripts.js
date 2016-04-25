@@ -607,7 +607,7 @@ jQuery(document).ready(function($) {
 	$('ul.tools-buttons li').fadeIn(1500).removeClass('hidden');
 
 	$('ul#buttons li#button-3 a').mouseover(function() {
-		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6 span').css({'display': 'inline-block', 'margin-left': -homeSpanWidth/2 + 'px'});
+		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6 span').css({'display': 'inline-block', 'margin-left': -(homeSpanWidth + spanPadding*2)/2 + 'px'});
 	});
 
 	$('ul#buttons li#button-3 a').mouseout(function() {
@@ -1042,7 +1042,7 @@ jQuery(document).ready(function($) {
 		
 		span.css({'font-size': spanWidth/2.5 + '%'});
 		
-		var spanPadding = spanWidth/10;
+		window.spanPadding = spanWidth/10;
 		
 		span.css({padding: spanPadding/7 * 6 + 'px ' + spanPadding + 'px ' + spanPadding + 'px'});
 		
