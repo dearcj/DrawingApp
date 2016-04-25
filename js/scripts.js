@@ -871,8 +871,6 @@ jQuery(document).ready(function($) {
 
 		itsDone.css('width', prevNextButtons.height()*doneButtonRatio + 'px');
 
-		filtersButtons.css({top: 530 + 'px', 'margin-left': 30 + 'px'});
-
 		var toolsButtons = $('ul.tools-buttons.filters-tb');
 
 		toolsButtons.css('top', darkSideFiltersHeight*2 + 'px');
