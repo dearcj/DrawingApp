@@ -1097,7 +1097,7 @@ jQuery(document).ready(function($) {
 		coordinate(14, 94.5, 41);
 		coordinate(15, 75.8, 47.7);
 
-		$('#index-wrapper').css({height: artHeight + 'px', 'margin-top': -artHeight/6.48 + 'px'});
+		$('#index-wrapper').css({height: artHeight - artHeight/6.48 + 'px', 'top': -artHeight/6.48 + 'px'});
 
 		var helper = $('ul#helpers li'),
 			dog = $('#dog'),
