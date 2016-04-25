@@ -730,9 +730,9 @@ jQuery(document).ready(function($) {
 		surfaceWrapper.css('height', 660 + 'px');
 
 		if (width < 1641) {
-			surfaceWrapper.css('background-size', 'auto 100%');
+			$('.screens').css('background-size', 'auto 100%');
 		} else {
-			surfaceWrapper.css('background-size', '100% auto');
+			$('.screens').css('background-size', '100% auto');
 		}
 
 		var surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));

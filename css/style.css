@@ -1775,7 +1775,10 @@ ul.tools-buttons.filters-tb {
 	background-size: 100%;
 	background-position: 50% 50%;
 	float: left;
-	margin: 0;
+	width: 120px;
+	height: 575px;
+	left: 20%;
+	position: relative;
 }
 
 #wand:hover,
