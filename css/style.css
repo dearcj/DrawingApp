@@ -1801,6 +1801,7 @@ ul.tools-buttons.filters-tb {
 }
 
 #museum-wrapper {
+	opacity: 0;
 	background: url(../img/museum-back.jpg) no-repeat;
     background-size: 100% auto;
     background-position: 50% 0;
