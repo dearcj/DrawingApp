@@ -847,6 +847,7 @@ ul.tools-buttons li:hover {
 
 ul.tools {
 	position: absolute;
+	top: 35px;
 	left: 50%;
 	margin-top: 35px;
 	padding-left: 0;

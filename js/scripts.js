@@ -229,7 +229,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css('z-index', '100');
 		});
 		$('#painting-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
-		$('#surface-wrapper').each(function(){
+		$('#painting-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
 		$('ul.tools').delay(500).animate({'margin-left': -705 + 'px'}, 1000);
