@@ -37,6 +37,7 @@ jQuery(document).ready(function($) {
 	$('li.its-done').css('top', 100 + 'px');
 	$('ul.paintings.left-side').css('margin-left', -15 + '%');
 	$('ul.paintings.right-side').css('margin-right', -15 + '%');
+	$('form.sending-form').css('top', -200 + 'px');
 
 	//
 
@@ -324,9 +325,10 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
-		$('#main-image').delay(500).animate({'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
+		$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
 		$('ul.paintings.left-side').delay(1500).animate({'margin-left': 12 + '%'}, 1000);
 		$('ul.paintings.right-side').delay(1500).animate({'margin-right': 12 + '%'}, 1000);
+		$('form.sending-form').delay(2000).animate({'top': 0}, 1000);
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
