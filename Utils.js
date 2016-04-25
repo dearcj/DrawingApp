@@ -246,7 +246,7 @@ function applyFilter(canvId, imgData, filterNumber) {
     window.savedImage = canvas.toDataURL("image/png", 0.8);
   }
   if (filterNumber == 1) {
-   var src = relPath + 'filters/diptih.png';
+   var src = relPath + 'filters/modern.png';
    cb = applyOverFilter(saveImgCB, src, canvId, imgData, 0, 0, true);
    }
   if (filterNumber == 2) {
