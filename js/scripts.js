@@ -861,8 +861,7 @@ jQuery(document).ready(function($) {
 		prevNextButtons.css('height', prevNextButtons.width()/pnButtonRatio + 'px');
 
 		var darkSideFiltersHeight = parseInt(darkSideFilters.css('height')),
-			prevNextButtonsHeight = parseInt(prevNextButtons.css('height')),
-			filtersCanvasTextWidth = parseInt(filtersCanvasText.css('width'));
+			prevNextButtonsHeight = parseInt(prevNextButtons.css('height'));
 
 		var toolsButtons = $('ul.tools-buttons.filters-tb');
 
