@@ -277,10 +277,10 @@ jQuery(document).ready(function($) {
 		$('#surface-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
 		$('#filters-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
 		$('#surface-wrapper').each(function(){
-			$(this).children().css('z-index', '100');
+			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
 		$('#filters-wrapper').each(function(){
-			$(this).children().css('z-index', '100');
+			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
 		$('#painting-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		$('#painting-wrapper').each(function(){
