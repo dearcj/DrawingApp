@@ -393,6 +393,10 @@ ul#helpers li#helper-10:focus span {
 	display: inline-block;
 }
 
+li#helper-10 {
+	top: 70px !important;
+}
+
 ul#helpers li span p {
 	display: inline;
 	color: #FFF;
@@ -677,7 +681,7 @@ ul.paintings a:hover li div {
 	width: 600px;
 	height: 424px;
 	position: relative;
-	top: -26px;
+	top: -46px;
 }
 
 .museum-painting p {
@@ -1486,13 +1490,15 @@ li.send-to-museum:focus {
 	background-size: 100%;
 	max-width: 247px;
 	margin: 0 auto;
+	opacity: 0;
 }
 
 div.at-the-backyard {
 	background: url(../img/at-the-backyard.png) no-repeat;
 	background-size: 100%;
 	float: left;
-	max-width: 130px;
+	width: 148px;
+	height: 81px;
 }
 
 .surface-button.at-the-backyard {
@@ -1890,8 +1896,8 @@ ul.logotypes li a {
 	opacity: 0;
 	width: 100px;
     position: relative;
-	right: 30%;
-	top: 0;
+	right: 26%;
+	top: -46%;
     float: right;
 }
 
@@ -2125,5 +2131,14 @@ ul.logotypes li a {
 @media only screen and (max-width: 395px) {
 	form.sending-form .work-author input {
 		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 1535px) {
+	ul.paintings.left-side {
+		margin-left: 8%;
+	}
+	ul.paintings.right-side {
+		margin-right: 8%;
 	}
 }

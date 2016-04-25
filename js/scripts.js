@@ -259,7 +259,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css('z-index', '200');
 		});
 		$('.museum-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
-		$('.painting-info').delay(1000).animate({'top': 0}, 1000);
+		$('.painting-info').delay(1000).animate({'top': -20 + 'px'}, 1000);
 		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
 	});
 
@@ -331,8 +331,13 @@ jQuery(document).ready(function($) {
 			$(this).children().css('z-index', '200');
 		});
 		$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
-		$('ul.paintings.left-side').delay(1500).animate({'margin-left': 12 + '%'}, 1000);
-		$('ul.paintings.right-side').delay(1500).animate({'margin-right': 12 + '%'}, 1000);
+		if ($(window).width() > 1535) {
+			$('ul.paintings.left-side').delay(1500).animate({'margin-left': 12 + '%'}, 1000);
+			$('ul.paintings.right-side').delay(1500).animate({'margin-right': 12 + '%'}, 1000);
+		} else {
+			$('ul.paintings.left-side').delay(1500).animate({'margin-left': 8 + '%'}, 1000);
+			$('ul.paintings.right-side').delay(1500).animate({'margin-right': 8 + '%'}, 1000);
+		}
 		$('form.sending-form').delay(2000).animate({'top': 0}, 1000);
 	});
 
