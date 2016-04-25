@@ -1089,7 +1089,7 @@ jQuery(document).ready(function($) {
 		coordinate(10, -1.7, 10.7);
 		coordinate(11, 86.75, 5);
 		coordinate(12, 10, 23);
-		coordinate(13, 9, 36);
+		coordinate(13, 10, 35);
 		coordinate(14, 94.5, 41);
 		coordinate(15, 75.8, 47.7);
 
