@@ -388,7 +388,7 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('index');
 
-		$('.inside').animate({'opacity': 0}, 200).css('z-index', '100');
+		$('.inside').animate({'opacity': 0, 'height': 0}, 200).css('z-index', '100');
 		$('.inside').each(function(){
 			$(this).children().css('z-index', '100');
 		});
