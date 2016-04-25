@@ -139,7 +139,7 @@
           </ul>
         </div>
 
-        <div id="surface-wrapper" class="hidden screens">
+        <div id="surface-wrapper" class="hidden screens inside">
           <div class="surface-button go-to-home at-the-backyard"></div>
 
           <div class="dark-side surface"></div>
@@ -173,7 +173,7 @@
           </ul>
         </div>
 
-        <div id="painting-wrapper" class="screens">
+        <div id="painting-wrapper" class="screens inside">
           <ul class="tools-buttons tools-tb">
             <li class="back-to-surface go-to-surface"><a href="#"></a></li>
             <li class="send-to-museum go-to-publication"><a href="#"></a></li>
@@ -243,7 +243,7 @@
           </ul>
         </div>
 
-        <div id="filters-wrapper" class="screens">
+        <div id="filters-wrapper" class="screens inside">
           <div id="wand">
             <ul id="helpers">
                 <li id="helper-9"><span>В таком деле как творчество - не обходится без волшебства. Это подтвердит любой художник.</span></li>
@@ -269,7 +269,7 @@
           </ul>
         </div>
 
-        <div id="publication-wrapper" class="screens">
+        <div id="publication-wrapper" class="screens inside">
           <ul class="paintings left-side">
             <a href="#" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
             <a href="#" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
@@ -303,7 +303,7 @@
           </ul>
         </div>
 
-        <div id="museum-wrapper" class="screens">
+        <div id="museum-wrapper" class="screens inside">
           <ul id="helpers">
             <li id="helper-11"><span><p>Освещению в музее уделяется особое внимание</p></span></li>
             <li id="helper-12"><span><p>Стены музея выкрашены в белый цвет</p></span></li>
