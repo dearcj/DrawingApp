@@ -38,6 +38,7 @@ jQuery(document).ready(function($) {
 	$('ul.paintings.left-side').css('margin-left', -15 + '%');
 	$('ul.paintings.right-side').css('margin-right', -15 + '%');
 	$('form.sending-form').css('top', -200 + 'px');
+	$('.painting-info').css('top', -200 + 'px');
 
 	//
 
@@ -256,6 +257,8 @@ jQuery(document).ready(function($) {
 		$('#museum-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
+		$('.painting-info').delay(1000).animate({'top': 0}, 1000);
+		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
 	});
 
 	$('.go-to-tools').on(window.eventType, function(event) {
@@ -686,8 +689,6 @@ jQuery(document).ready(function($) {
 
 		var paintingInfoWidth = parseInt(paintingInfo.css('width'));
 
-		paintingInfo.css({height: paintingInfoWidth/4.54 + 'px', 'top': -paintingInfoWidth/4.54 + 'px'});
-
 		paintingInfo.find('span.title').css('font-size', paintingInfoWidth/2.25 + '%');
 
 		paintingInfo.find('span.author').css('font-size', paintingInfoWidth/2.75 + '%');
@@ -697,8 +698,6 @@ jQuery(document).ready(function($) {
 		paintingInfo.find('span').css('padding-bottom', paintingInfo.height()/36.27 + 'px');
 
 		socialButtons.find('span').css('font-size', paintingInfoWidth/3.75 + '%');
-
-		socialButtons.css('width', (750 - paintingInfoWidth)/2 + 'px');
 
 		var socialButtonsWidth = parseInt(socialButtons.css('width'));
 

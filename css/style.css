@@ -1855,6 +1855,8 @@ ul.logotypes li a {
 }
 
 .painting-info {
+	width: 450px;
+	height: 100px;
 	position: relative;
     margin: 0 auto;
     background-color: white;
@@ -1885,9 +1887,11 @@ ul.logotypes li a {
 }
 
 .social-buttons {
+	opacity: 0;
+	width: 300px;
     position: relative;
 	right: 29%;
-	top: -10%;
+	top: 0;
     float: right;
 }
 
