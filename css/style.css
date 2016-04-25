@@ -1767,7 +1767,8 @@ ul.surfaces li:nth-child(7):focus {
 ul.tools-buttons.filters-tb {
     position: relative;
     padding: 0;
-    float: left;
+	margin: 0 auto;
+    float: none;
 }
 
 #wand {

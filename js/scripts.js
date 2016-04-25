@@ -875,13 +875,7 @@ jQuery(document).ready(function($) {
 
 		var toolsButtons = $('ul.tools-buttons.filters-tb');
 
-		toolsButtons.css('width', prevNextButtons.width() + itsDone.width() + 22 + 'px');
-
 		toolsButtons.css('top', darkSideFiltersHeight*2 + 'px');
-
-		toolsButtonsWidth = parseInt(toolsButtons.css('width'));
-
-		toolsButtons.css('margin-left', (750 - toolsButtonsWidth)/2 + 'px');
 
 		hidingHelpers('.filters-canvas p');
 	}
