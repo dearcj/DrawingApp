@@ -849,7 +849,7 @@ jQuery(document).ready(function($) {
 		darkSideFilters.css('width', filtersCanvasWidth + 'px');
 
 		darkSideFilters.css({height: filtersCanvasHeight/15 + 'px', top: 14*filtersCanvasHeight/15 + 'px'});
-		
+
 		darkSideFilters.css('margin-left', filtersCanvasWidth + 'px');
 
 		var filtersCanvasText = filtersCanvas.find('p');
