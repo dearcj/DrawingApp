@@ -966,7 +966,7 @@ jQuery(document).ready(function($) {
 		
 		var spanWidth = parseInt(span.css('width'));
 		
-		span.css({'font-size': spanWidth/3 + '%'});
+		span.css({'font-size': spanWidth/2 + '%'});
 		
 		var spanPadding = spanWidth/10;
 		
@@ -1070,7 +1070,7 @@ jQuery(document).ready(function($) {
 		couple.css({width: width/13.124 + 'px', height: width/11.464 + 'px', left: (width/100) * 83.97 + 'px', top: (width/100) * 43.46 + 'px'});
 
 		dog.find('span').css({left: specialSpanWidth/6.34 + 'px', top: -(width/100) * 24.69 + 'px'});
-		momandson.find('span').css({left: -specialSpanWidth/2 + 'px', top: -(width/100) * 28 + 'px'});
+		momandson.find('span').css({left: -specialSpanWidth/2 + 'px', top: -(width/100) * 26 + 'px'});
 		couple.find('span').css({left: -specialSpanWidth + 'px', top: -(width/100) * 15.87 + 'px'});
 	}
 
