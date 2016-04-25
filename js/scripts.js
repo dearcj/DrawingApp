@@ -543,31 +543,43 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li.board').on(window.eventType, function(event) {
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active board-active');
 		$('#surface-canvas').removeAttr('class').addClass('board-texture').fadeIn(1000);
 		window.selectedSurface = 2;
 	});
 
 	$('ul.surfaces li.canvas').on(window.eventType, function(event) {
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active canvas-active');
 		$('#surface-canvas').removeAttr('class').addClass('canvas-texture');
 		window.selectedSurface = 3;
 	});
 
 	$('ul.surfaces li.brick').on(window.eventType, function(event) {
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active brick-active');
 		$('#surface-canvas').removeAttr('class').addClass('brick-texture');
 		window.selectedSurface = 4;
 	});
 
 	$('ul.surfaces li.cardboard').on(window.eventType, function(event) {
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active cardboard-active');
 		$('#surface-canvas').removeAttr('class').addClass('cardboard-texture');
 		window.selectedSurface = 5;
 	});
 	
 	$('ul.surfaces li.wall').on(window.eventType, function(event) {
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active wall-active');
 		$('#surface-canvas').removeAttr('class').addClass('wall-texture');
 		window.selectedSurface = 6;
 	});
 
 	$('ul.surfaces li.metal').on(window.eventType, function(event) {
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active metal-active');
 		$('#surface-canvas').removeAttr('class').addClass('metal-texture');
 		window.selectedSurface = 7;
 	});

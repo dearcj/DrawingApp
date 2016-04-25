@@ -1673,14 +1673,32 @@ ul.surfaces li.board {
 	background-position: 50% 50%;
 }
 
+ul.surfaces li.board.board-active.active {
+	background: url(../img/surfaces/board-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
 ul.surfaces li.canvas {
 	background: url(../img/surfaces/canvas.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
+ul.surfaces li.canvas.canvas-active.active {
+	background: url(../img/surfaces/canvas-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
 ul.surfaces li.brick {
 	background: url(../img/surfaces/brick.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.brick.brick-active.active {
+	background: url(../img/surfaces/brick-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
@@ -1692,14 +1710,32 @@ ul.surfaces li.cardboard {
 	clear: both;
 }
 
+ul.surfaces li.cardboard.cardboard-active.active {
+	background: url(../img/surfaces/cardboard-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
 ul.surfaces li.wall {
 	background: url(../img/surfaces/wall.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
 
+ul.surfaces li.wall.wall-active.active {
+	background: url(../img/surfaces/wall-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
 ul.surfaces li.metal {
 	background: url(../img/surfaces/metal.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.metal.metal-active.active {
+	background: url(../img/surfaces/metal-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
 }
