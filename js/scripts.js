@@ -220,7 +220,7 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#surface-wrapper').fadeIn(500).removeClass('hidden').css('z-index', '200');
-		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/2 + 'px'}, 2000);
+		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/2 + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li').delay(2000).animate({'opacity': 1}, 500);
 		$('.go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
@@ -243,6 +243,19 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
+	});
+
+	$('.add-filter').on(window.eventType, function(event) {
+		$('ul.tools').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
+		$('#painting-wrapper').css('z-index', '100');
+		$('#surface-wrapper').each(function(){
+			$(this).children().css('z-index', '100');
+		});
+		$('#filters-wrapper').delay(1000).animate({'opacity': 1}, 100).css('z-index', '200');
+		$('#filters-wrapper').each(function(){
+			$(this).children().css('z-index', '200');
+		});
+		$('#filters-wrapper ul#helpers').css('z-index', '250');
 	});
 
 	$('.go-to-museum').on(window.eventType, function(event) {

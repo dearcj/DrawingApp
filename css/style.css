@@ -1737,6 +1737,7 @@ ul.surfaces li:nth-child(7):focus {
     width: 100%;
     position: absolute;
     overflow: hidden;
+	opacity: 0;
 }
 
 .filters-canvas {
