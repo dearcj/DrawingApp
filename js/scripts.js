@@ -30,6 +30,7 @@ jQuery(document).ready(function($) {
 	$('ul.tools').css('margin-left', -1500 + 'px');
 	$('#go-to-tools').css('top', 100 + 'px');
 	$('.surface-button.at-the-backyard').css('left', -$(window).width()/15 + 'px');
+	$('.museum-button.at-the-backyard').css('left', -$(window).width()/15 + 'px');
 	$('li.send-to-museum').css('top', 100 + 'px');
 	$('li.back-to-surface').css('top', -75 + 'px');
 	$('li.add-filter').css('top', -75 + 'px');
@@ -257,6 +258,7 @@ jQuery(document).ready(function($) {
 		$('#museum-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
+		$('.museum-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 		$('.painting-info').delay(1000).animate({'top': 0}, 1000);
 		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
 	});
@@ -679,7 +681,6 @@ jQuery(document).ready(function($) {
 				return width/height;
 			},
 			newPaintingButtonRatio = newPaintingButtonRatio(247, 90),
-			backyardButton = $('.at-the-backyard'),
 			paintingInfo = $('.painting-info'),
 			socialButtons = $('.social-buttons');
 
@@ -715,11 +716,7 @@ jQuery(document).ready(function($) {
 		museumText.css({width: museumTextWidth + 'px', 'border-radius': museumTextBorderRadius + 'px', 'font-size': 530/2.2 + '%', 'padding': 6 * museumTextPadding/7 + 'px ' + '0 ' + museumTextPadding + 'px', top: -(530/2 + 530/7.85) + 'px'});
 
 		var newPaintingButtonHeight = parseInt(newPaintingButton.css('height')),
-			darkSideMuseumHeight = parseInt(darkSideMuseum.css('height')),
-			backyardButtonHeight = newPaintingButtonHeight,
-			backyardButtonWidth = newPaintingButtonWidth;
-
-		backyardButton.css({width: backyardButtonWidth + 'px', height: backyardButtonHeight + 'px', 'top': width/100 + 'px'});
+			darkSideMuseumHeight = parseInt(darkSideMuseum.css('height'));
 	}
 
 

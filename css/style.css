@@ -1888,9 +1888,9 @@ ul.logotypes li a {
 
 .social-buttons {
 	opacity: 0;
-	width: 130px;
+	width: 100px;
     position: relative;
-	right: 29%;
+	right: 30%;
 	top: 0;
     float: right;
 }
@@ -1904,12 +1904,12 @@ ul.logotypes li a {
 .social-buttons ul {
 	margin: 0 auto;
 	padding: 0;
-	width: 120px;
+	width: 100px;
 }
 
 .social-buttons ul li {
-	width: 55px;
-	height: 60px;
+	width: 45px;
+	height: 45px;
 }
 
 .social-buttons ul li.vk {
