@@ -689,8 +689,6 @@ jQuery(document).ready(function($) {
 			paintingInfo = $('.painting-info'),
 			socialButtons = $('.social-buttons');
 
-		$('#museum-wrapper').css('height', 660 + 'px');
-
 		paintingInfo.css('width', 750/100 * 65 + 'px');
 
 		var paintingInfoWidth = parseInt(paintingInfo.css('width'));
@@ -748,8 +746,6 @@ jQuery(document).ready(function($) {
 
 		surfaceBackyard.css({top: width/75 + 'px'});
 
-		surfaceWrapper.css('height', 660 + 'px');
-
 		if (width < 1641) {
 			$('.screens').css('background-size', 'auto 100%');
 		} else {
@@ -804,7 +800,7 @@ jQuery(document).ready(function($) {
 			prevNextButtons = $('ul.tools-buttons.tools-tb li'),
 			sendToMuseum = $('.send-to-museum');
 
-		toolsWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
+		toolsWrapper.css({'background-size': '100% auto'});
 
 		toolsCanvas.css({width: width/2.5 + 'px', 'margin-top': width/18 + 'px'});
 
@@ -863,7 +859,7 @@ jQuery(document).ready(function($) {
 			wand = $('#wand'),
 			itsDone = $('.its-done');
 
-		filtersWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
+		filtersWrapper.css({'background-size': '100% auto'});
 	
 		prevNextButtons.css('width', 750/7.612 + 'px');
 
@@ -894,7 +890,7 @@ jQuery(document).ready(function($) {
 			darkSideSending = $('.dark-side.sending'),
 			sendingBackgroundHeight = width/wrapperRatio;
 
-		sendingWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
+		sendingWrapper.css({'background-size': '100% auto'});
 
 		sendingForm.css('height', sendingForm.width()/5.907 + 'px');
 
@@ -956,7 +952,7 @@ jQuery(document).ready(function($) {
 					objHeight('ul#buttons li.vert', artHeight/100 * verticalButtonsHeightPercent);	
 		}
 			
-		setPercents(26.4, 42.4, 13.35, 30);
+		setPercents(26.4, 44, 13.35, 30);
 	}
 
 
