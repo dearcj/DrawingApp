@@ -699,10 +699,6 @@ jQuery(document).ready(function($) {
 
 		socialButtons.find('span').css('font-size', paintingInfoWidth/3.75 + '%');
 
-		var socialButtonsWidth = parseInt(socialButtons.css('width'));
-
-		var socialButtonsLiWidth = parseInt(socialButtons.find('ul li').css('width'));
-
 		darkSideMuseum.css('width', 750 + 'px');
 
 		darkSideMuseum.css({height: 530/15 + 'px', top: -530/15 + 'px'});
