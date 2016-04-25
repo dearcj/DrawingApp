@@ -23,8 +23,11 @@ ScotchBrush.prototype.onSelect = function () {
 }
 
 
+
+
 ScotchBrush.prototype.onDown = function (ctx, x, y) {
 	this.startPoint = {x: x, y: y};
+	ZSound.Play('scotch');
 };
 
 ScotchBrush.prototype.use = function (obj, ctx) {

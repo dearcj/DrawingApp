@@ -20,6 +20,12 @@ function CoalBrush(color) {
 }
 
 
+CoalBrush.prototype.onDown = function (ctx, x, y) {
+	Brush.prototype.onDown.call(this, ctx, x, y);
+	ZSound.Play('coal');
+}
+
+
 CoalBrush.prototype.onSelect = function () {
 	var self = this;
 	this.img=new Image();
