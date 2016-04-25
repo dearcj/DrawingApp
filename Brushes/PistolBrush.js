@@ -33,6 +33,8 @@ PistolBrush.prototype.drawCatchupPart = function (ctx, x, y, scale) {
 
 PistolBrush.prototype.onDown = function (ctx, x, y) {
 	this.drawCatchupPart(ctx, x, y, 1 + Math.random());
+	ZSound.Play('gun');
+
 };
 
 PistolBrush.prototype.use = function (obj, ctx) {

@@ -39,6 +39,8 @@ OrangeBrush.prototype.drawPart = function (ctx, x, y, scale) {
 
 OrangeBrush.prototype.onDown = function (ctx, x, y) {
 	this.drawPart(ctx, x, y, 1 + Math.random());
+
+	ZSound.Play('orange');
 };
 
 OrangeBrush.prototype.use = function (obj, ctx) {

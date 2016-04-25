@@ -42,6 +42,9 @@ GrassBrush.prototype.drawParticle = function (ctx, x, y, scale, angle) {
 
 GrassBrush.prototype.onDown = function (ctx, x, y) {
 	this.drawParticle(ctx, x, y, 0.5 + 0.5*Math.random(), 0);
+
+	ZSound.Play('grass');
+
 };
 
 GrassBrush.prototype.use = function (obj, ctx) {

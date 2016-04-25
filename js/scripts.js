@@ -9,6 +9,12 @@ ZSound.Init([
 	{id: 'complete', src: "complete.ogg"},
 	{id: 'stage', src: "stage.ogg"},
 	{id: 'street', src: "street.ogg"},
+	{id: 'coal', src: "coal chalk.ogg"},
+	{id: 'grass', src: "grass.ogg"},
+	{id: 'gun', src: "gun.ogg"},
+	{id: 'jeans', src: "jeans.ogg"},
+	{id: 'needle', src: "needle.ogg"},
+	{id: 'orange', src: "orange.ogg"},
 ]);
 window.eventType = $.support.touch ? "tap" : "click";
 
