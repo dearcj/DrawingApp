@@ -313,6 +313,8 @@ ul#helpers li {
 	list-style: none;
 	background: url(../img/help.png) no-repeat;
 	background-size: 100%;
+	width: 50px;
+	height: 50px;
 }
 
 ul#helpers li:hover {

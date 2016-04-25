@@ -1105,15 +1105,15 @@ jQuery(document).ready(function($) {
 		coordinate(5, 18.5, 55);
 		coordinate(9, 1, 60);
 		coordinate(10, -1.7, 10.7);
-		coordinate(11, 86.75, 5);
-		coordinate(12, 10, 23);
-		coordinate(13, 10, 35);
-		coordinate(14, 94.5, 41);
-		coordinate(15, 75.8, 47.7);
+		//coordinate(11, 86.75, 5);
+		//coordinate(12, 10, 23);
+		//coordinate(13, 10, 35);
+		//coordinate(14, 94.5, 41);
+		//coordinate(15, 75.8, 47.7);
 
 		$('#index-wrapper').css({height: artHeight - artHeight/6.48 + 'px', 'top': -artHeight/6.48 + 'px'});
 
-		var helper = $('ul#helpers li'),
+		var helper = $('ul#helpers.home-helpers li'),
 			dog = $('#dog'),
 			momandson = $('#momandson'),
 			couple = $('#couple'),
@@ -1135,7 +1135,7 @@ jQuery(document).ready(function($) {
 		specialSpan.css({'border-radius': specialSpanPadding/1.5 + 'px'});
 
 		helper.css('width', width/29.27 + 'px');
-		
+
 		helper.css('height', helper.width() + 1 + 'px');
 
 		dog.css({width: width/21.625 + 'px', height: width/30.693 + 'px', left: (width/100) * 5.78 + 'px', top: (width/100) * 60.01 + 'px'});
