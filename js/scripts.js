@@ -890,17 +890,7 @@ jQuery(document).ready(function($) {
 
 		sendingWrapper.css({'background-size': '100% auto', height: 660 + 'px'});
 
-		sendingCanvas.css({width: width/2.5 + 'px', 'margin-top': width/15 + 'px'});
-
-		var sendingCanvasWidth = sendingCanvas.width();
-
-		objHeight(sendingCanvas, sendingCanvasWidth/surfaceRatio);
-
-		darkSideSending.css('width', sendingCanvasWidth + 'px');
-
-		var sendingCanvasHeight = sendingCanvas.height();
-
-		sendingForm.css('width', sendingCanvasWidth + 'px');
+		sendingForm.css('width', 750 + 'px');
 		sendingForm.css('height', sendingForm.width()/5.907 + 'px');
 
 		var sendingFormHeight = sendingForm.height();
@@ -922,17 +912,17 @@ jQuery(document).ready(function($) {
 
 		sendingForm.css('border-radius', 10*sendingFormHeight/100 + 'px');
 
-		paintingsLi.css({width: sendingCanvasWidth/3 + 'px', 'margin-bottom': 5.66*sendingCanvasHeight/100 + 'px'});
+		paintingsLi.css({width: 750/3 + 'px', 'margin-bottom': 5.66*530/100 + 'px'});
 		$('ul.paintings').css('margin-top', width/15 + 'px');
 
 		var paintingsLiMarginBot = parseInt(paintingsLi.css('margin-bottom')),
 			paintingsLiLeft = $('ul.paintings.left-side li'),
 			paintingsLiRight = $('ul.paintings.right-side li');
 
-		paintingsLi.css('height', (sendingCanvasHeight - paintingsLiMarginBot*2)/3 + 'px');
+		paintingsLi.css('height', (530 - paintingsLiMarginBot*2)/3 + 'px');
 
-		paintingsLiLeft.css('margin-left', (width - sendingCanvasWidth - 2*paintingsLi.width())/4 + 'px');
-		paintingsLiRight.css('margin-right', (width - sendingCanvasWidth - 2*paintingsLi.width())/4 + 'px');
+		paintingsLiLeft.css('margin-left', (width - 750 - 2*paintingsLi.width())/4 + 'px');
+		paintingsLiRight.css('margin-right', (width - 750 - 2*paintingsLi.width())/4 + 'px');
 
 
 		paintingsLiText.find('span.title').css({'font-size': paintingsLi.height() + '%'});
@@ -941,14 +931,14 @@ jQuery(document).ready(function($) {
 		paintingsLiText.find('span').css({'padding-bottom': paintingsLi.width()/42.66 + 'px'});
 
 
-		darkSideSending.css({height: sendingCanvasHeight/15 + 'px', top: sendingCanvasHeight - sendingCanvasHeight/15 + width/12.5 + 'px'});
+		darkSideSending.css({height: 530/15 + 'px', top: 530 - 530/15 + width/12.5 + 'px'});
 
 		var sendingCanvasText = sendingCanvas.find('p');
-			sendingTextWidth = 65*sendingCanvasWidth/100,
+			sendingTextWidth = 65*750/100,
 			sendingTextBorderRadius = sendingTextWidth/20,
 			sendingTextPadding = sendingTextWidth/12;
 
-		sendingCanvasText.css({width: sendingTextWidth + 'px', 'border-radius': sendingTextBorderRadius + 'px', 'font-size': sendingCanvasHeight/3.5 + '%', 'padding': 6 * sendingTextPadding/7 + 'px ' + '0 ' + sendingTextPadding + 'px', top: 3 * sendingCanvasHeight/8 + 'px'});
+		sendingCanvasText.css({width: sendingTextWidth + 'px', 'border-radius': sendingTextBorderRadius + 'px', 'font-size': 530/3.5 + '%', 'padding': 6 * sendingTextPadding/7 + 'px ' + '0 ' + sendingTextPadding + 'px', top: 3 * 530/8 + 'px'});
 
 		hidingHelpers('.main-painting p');
 	}
