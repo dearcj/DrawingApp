@@ -243,7 +243,7 @@
           </ul>
         </div>
 
-        <div id="filters-wrapper" class="hidden screens">
+        <div id="filters-wrapper" class="screens">
           <div class="filters-canvas">
             <canvas id="filters-canvas" width="750px" height="530px"></canvas>
 
