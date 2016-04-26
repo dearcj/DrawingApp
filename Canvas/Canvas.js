@@ -45,20 +45,28 @@ Canvas.prototype.GetMousePositionInElement = function(ev, element)
 
 Canvas.prototype.saveState = function(e) {
 	var canvas = document.getElementById('back-canvas');
-	var dataURL = canvas.toDataURL();
+	var dataURL = canvas.toDataURL("image/jpg", 0.85);
 	this.backups.push(dataURL);
 	if (this.backups.length > 10) this.backups.splice(0, 1);
 }
 
+
 Canvas.prototype.makeUndo = function(e) {
 	if (this.backups.length > 0) {
-	var b = this.backups[this.backups.length - 1];
-	this.backups.splice(this.backups.length - 1, 1);
+		var b = this.backups[this.backups.length - 1];
+		this.backups.splice(this.backups.length - 1, 1);
 		var i = new Image();
 		i.src = b;
-		var ctx = this.state.ctx;
+		var ctx = this.state.backCtx;
 		i.onload = function() {
+			var el = document.getElementById('main-canvas');
+			var ctx = el.getContext('2d');
 			ctx.drawImage(i, 0, 0);
+
+			var el = document.getElementById('back-canvas');
+			var ctx = el.getContext('2d');
+			ctx.clearRect(0, 0, this.state.width, this.state.height);
+
 		};
 	}
 }
