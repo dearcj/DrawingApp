@@ -201,14 +201,17 @@ var initApplication = function() {
   canvas.redraw(backCtx);
   elDraw.onmousedown = function(e) {
     console.log('start action');
+
     canvas.startAction(e);
   };
 
-  elDraw.onmousemove = function(e) {
+  window.onmousemove = function(e) {
+    if (canvas.drawState)
     canvas.mouseMoveAction(e);
   };
 
-  elDraw.onmouseup = function(e) {
+  window.onmouseup = function(e) {
+    if (canvas.drawState)
     canvas.finishAction(e);
   };
 };

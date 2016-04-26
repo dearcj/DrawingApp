@@ -337,8 +337,8 @@
           </div>
 
           <ul class="ux-buttons">
-            <li></li>
-            <li></li>
+            <li id="btn-sound"></li>
+            <li id="btn-full"></li>
           </ul>
         </div>
   </div>
