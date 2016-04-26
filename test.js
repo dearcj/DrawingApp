@@ -207,12 +207,12 @@ var initApplication = function() {
 
 
   document.body.onmousemove = function(e) {
-    if (canvas.drawState)
+    if (canvas.state.drawState)
     canvas.mouseMoveAction(e);
   };
 
   document.body.onmouseup = function(e) {
-    if (canvas.drawState)
+    if (canvas.state.drawState)
     canvas.finishAction(e);
   };
 };
