@@ -207,7 +207,7 @@ var initApplication = function() {
 
 
   document.body.onmousemove = function(e) {
-    if (canvas.state.drawState)
+  //  if (canvas.state.drawState)
     canvas.mouseMoveAction(e);
   };
 

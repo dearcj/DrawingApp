@@ -32,9 +32,11 @@ Canvas.prototype.saveImage = function() {
 };
 
 Canvas.prototype.mouseMoveAction = function(e) {
+	var cursCanv =   document.getElementById('cursor-canvas');
+	this.state.mouseX = e.clientX - cursCanv.offsetLeft;
+	this.state.mouseY = e.clientY  - cursCanv.offsetTop;
+
 	if (this.state.drawState == 'insideAction') {
-		this.state.mouseX = e.layerX;
-		this.state.mouseY = e.layerY;
 
 		var action = this.actions[this.actions.length - 1];
 		var obj = action.addObject(this.state.prevMouseX, this.state.prevMouseY, this.state.mouseX, this.state.mouseY);
@@ -44,12 +46,12 @@ Canvas.prototype.mouseMoveAction = function(e) {
 		this.state.prevMouseY = this.state.mouseY;
 	}
 	if (this.cursImg.src != this.cursorSrc)
-	this.cursImg.src = this.cursorSrc;
+		this.cursImg.src = this.cursorSrc;
 
 	var cursCanv =   document.getElementById('cursor-canvas');
 	var ctx = cursCanv.getContext('2d');
 	ctx.clearRect(0, 0, this.state.width, this.state.height);
-	ctx.drawImage(this.cursImg,  e.layerX - this.cursImg.width / 2,  e.layerY - this.cursImg.height/2);
+	ctx.drawImage(this.cursImg,  this.state.mouseX - this.cursImg.width / 2,  this.state.mouseY - this.cursImg.height/2);
 
 };
 
