@@ -56,10 +56,9 @@ Canvas.prototype.makeUndo = function(e) {
 	this.backups.splice(this.backups.length - 1, 1);
 		var i = new Image();
 		i.src = b;
-		var el = document.getElementById('main-canvas');
-
+		var ctx = this.state.ctx;
 		i.onload = function() {
-			el.drawImage(i, 0, 0);
+			ctx.drawImage(i, 0, 0);
 		};
 	}
 }
