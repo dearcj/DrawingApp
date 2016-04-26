@@ -44,7 +44,7 @@ Canvas.prototype.GetMousePositionInElement = function(ev, element)
 }
 
 Canvas.prototype.mouseMoveAction = function(e) {
-	var cursCanv =   document.getElementById('cursor-canvas');
+	var cursCanv =  $('#main-canvas');
 	var mp = this.GetMousePositionInElement(e, cursCanv);
 	this.state.mouseX = mp.x;
 	this.state.mouseY = mp.y;
@@ -64,9 +64,10 @@ Canvas.prototype.mouseMoveAction = function(e) {
 	var cursCanv =   document.getElementById('cursor-canvas');
 	var ctx = cursCanv.getContext('2d');
 	ctx.clearRect(0, 0, this.state.width, this.state.height);
-	ctx.drawImage(this.cursImg,  this.state.mouseX - this.cursImg.width / 2,  this.state.mouseY - this.cursImg.height/2);
+	ctx.drawImage(this.cursImg,  this.state.mouseX - this.cursImg.width / 2,  500 - this.state.mouseY - this.cursImg.height/2);
 
 };
+
 
 
 Canvas.prototype.resetCanvas = function () {
