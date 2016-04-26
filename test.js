@@ -205,12 +205,13 @@ var initApplication = function() {
     canvas.startAction(e);
   };
 
-  window.onmousemove = function(e) {
+
+  document.body.onmousemove = function(e) {
     if (canvas.drawState)
     canvas.mouseMoveAction(e);
   };
 
-  window.onmouseup = function(e) {
+  document.body.onmouseup = function(e) {
     if (canvas.drawState)
     canvas.finishAction(e);
   };
