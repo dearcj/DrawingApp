@@ -292,20 +292,27 @@ function applyFilter(canvId, imgData, filterNumber) {
     var src = relPath + 'filters/bubble3.png';
     cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*200, Math.random()*200);
   }
-
-  drawImageToCanvas(canvId, imgData, cb);
+  var dw = 1;
+  var dh = 1;
+  if (filterNumber == 2 || filterNumber == 4) {
+    dw = 0.95;
+    dh = 0.95;
+  }
+    drawImageToCanvas(canvId, imgData, cb, dw, dh);
 }
 
 
 
-function drawImageToCanvas (canvId, imgData, cb) {
+function drawImageToCanvas (canvId, imgData, cb, dw, dh) {
   var myCanvas = document.getElementById(canvId);
   var ctx = myCanvas.getContext('2d');
 
+  if (!dw) dw = 1;
+  if (!dh) dh = 1;
   var img = new Image();
   img.src = imgData;
   img.onload = function(){
-    ctx.drawImage(img, 0, 0);
+    ctx.drawImage(img, (1 - dw)*img.width, (1 - dh)*img.height, img.width*dw, img.height*dh);
     if (cb) cb(img);
   //  ctx.canvas.width = ctx.canvas.width;
   }
