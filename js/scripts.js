@@ -52,6 +52,11 @@ jQuery(document).ready(function($) {
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
 
+
+	$('#helper-8').on(window.eventType, function(event) {
+		window.mainCanvasObject.makeUndo();
+	});
+
 	$('#btn-sound').on(window.eventType, function(event) {
 		ZSound.available = !ZSound.available;
 		ZSound.playSounds = !ZSound.playSounds;

@@ -5,7 +5,7 @@ function Canvas(frontCtx, backCtx, canvasType) {
 	var el = document.getElementById('main-canvas');
 	this.cursImg=new Image();
 	this.cursorSrc = window.basePath + 'img/tools/orange.png';
-
+	this.backups = [];
 	this.state = {
 		width: el.width,
 		height: el.height,
@@ -43,11 +43,33 @@ Canvas.prototype.GetMousePositionInElement = function(ev, element)
 	return { x: x, y: y, y_fromTop: element.height() - y };
 }
 
+Canvas.prototype.saveState = function(e) {
+	var canvas = document.getElementById('back-canvas');
+	var dataURL = canvas.toDataURL();
+	this.backups.push(dataURL);
+	if (this.backups.length > 10) this.backups.splice(0, 1);
+}
+
+Canvas.prototype.makeUndo = function(e) {
+	if (this.backups.length > 0) {
+	var b = this.backups[this.backups.length - 1];
+	this.backups.splice(this.backups.length - 1, 1);
+		var i = new Image();
+		i.src = b;
+		var el = document.getElementById('main-canvas');
+
+		i.onload = function() {
+			el.drawImage(i, 0, 0);
+		};
+	}
+}
+
+
 Canvas.prototype.mouseMoveAction = function(e) {
 	var cursCanv =  $('#main-canvas');
 	var mp = this.GetMousePositionInElement(e, cursCanv);
 	this.state.mouseX = mp.x;
-	this.state.mouseY = mp.y;
+	this.state.mouseY = mp.y_fromTop;
 	console.log(this.state.mouseX, this.state.mouseY);
 	if (this.state.drawState == 'insideAction') {
 
@@ -64,9 +86,10 @@ Canvas.prototype.mouseMoveAction = function(e) {
 	var cursCanv =   document.getElementById('cursor-canvas');
 	var ctx = cursCanv.getContext('2d');
 	ctx.clearRect(0, 0, this.state.width, this.state.height);
-	ctx.drawImage(this.cursImg,  this.state.mouseX - this.cursImg.width / 2,  500 - this.state.mouseY - this.cursImg.height/2);
+	ctx.drawImage(this.cursImg,  this.state.mouseX - this.cursImg.width / 2,  this.state.mouseY - this.cursImg.height/2);
 
 };
+
 
 
 
@@ -187,6 +210,7 @@ Canvas.prototype.finishAction = function (e) {
 	this.state.ctx.clearRect(0, 0, this.state.width, this.state.height);
 	this.state.drawState = null;
 	this.actions[this.actions.length - 1].brush.onFinish();
+	this.saveState();
 };
 
 Canvas.prototype.startAction = function (e) {
