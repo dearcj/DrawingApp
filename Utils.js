@@ -118,7 +118,7 @@ function distortion(saveImgCB, canvId, imgData) {
     var ctx = myCanvas.getContext('2d');
     var data = ctx.getImageData(0,0,myCanvas.width, myCanvas.height)
 
-    JSManipulate.sineripple.filter(data,{xAmplitude:5,yAmplitude:5,xWavelength:16,yWavelength:16});
+    JSManipulate.sineripple.filter(data,{xAmplitude:6,yAmplitude:6,xWavelength:44,yWavelength:44});
     ctx.putImageData(data,0,0);
     saveImgCB(myCanvas);
 

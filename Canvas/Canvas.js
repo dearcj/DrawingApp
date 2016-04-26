@@ -31,11 +31,24 @@ Canvas.prototype.saveImage = function() {
 	return  dataURL;//.asdsareplace(/^data:image\/(png|jpg);base64,/, "");
 };
 
+Canvas.prototype.GetMousePositionInElement = function(ev, element)
+{
+	var offset = element.offset();
+
+	var bottom = offset.top + element.height();
+
+	var x = ev.pageX - offset.left;
+	var y = bottom - ev.pageY;
+
+	return { x: x, y: y, y_fromTop: element.height() - y };
+}
+
 Canvas.prototype.mouseMoveAction = function(e) {
 	var cursCanv =   document.getElementById('cursor-canvas');
-	this.state.mouseX = e.clientX - cursCanv.offsetLeft;
-	this.state.mouseY = e.clientY  - cursCanv.offsetTop;
-
+	var mp = this.GetMousePositionInElement(e, cursCanv);
+	this.state.mouseX = mp.x;
+	this.state.mouseY = mp.y;
+	console.log(this.state.mouseX, this.state.mouseY);
 	if (this.state.drawState == 'insideAction') {
 
 		var action = this.actions[this.actions.length - 1];
@@ -54,6 +67,7 @@ Canvas.prototype.mouseMoveAction = function(e) {
 	ctx.drawImage(this.cursImg,  this.state.mouseX - this.cursImg.width / 2,  this.state.mouseY - this.cursImg.height/2);
 
 };
+
 
 Canvas.prototype.resetCanvas = function () {
 	this.state.backCtx.clearRect(0, 0, this.state.width, this.state.height);
