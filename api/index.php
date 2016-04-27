@@ -94,7 +94,6 @@ class mMomaAPI extends Rest {
     		}
 
     		$link = $this->request["upload_url"];
-    		$image = $this->request["image"];
     		$file = $this->request["file"];
 
 

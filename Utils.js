@@ -201,7 +201,7 @@ function vkpost(t, im, imPath) {
         function (data) {
         if (data.response) {
           var uploadUrl = data.response.upload_url;
-
+          console.log(imPath);
 
           $.ajax({
             type: "post",
@@ -210,7 +210,7 @@ function vkpost(t, im, imPath) {
             //  api_method: 'uploadpic',
 
               upload_url: uploadUrl,
-              photo: im},
+              file: imPath},
             success: function callback(res) {
               cb(res);
               console.log(res);
