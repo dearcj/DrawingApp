@@ -57,11 +57,13 @@ Canvas.prototype.makeUndo = function(e) {
 		this.backups.splice(this.backups.length - 1, 1);
 		var i = new Image();
 		i.src = b;
+		var w = this.state.width;
+		var h = this.state.height;
 		var ctx = this.state.backCtx;
 		i.onload = function() {
 			var el = document.getElementById('main-canvas');
 			var ctx = el.getContext('2d');
-			ctx.clearRect(0, 0, this.state.width, this.state.height);
+			ctx.clearRect(0, 0, w, h);
 
 
 			var el = document.getElementById('back-canvas');
@@ -77,7 +79,7 @@ Canvas.prototype.mouseMoveAction = function(e) {
 	var mp = this.GetMousePositionInElement(e, cursCanv);
 	this.state.mouseX = mp.x;
 	this.state.mouseY = mp.y_fromTop;
-	console.log(this.state.mouseX, this.state.mouseY);
+	//console.log(this.state.mouseX, this.state.mouseY);
 	if (this.state.drawState == 'insideAction') {
 
 		var action = this.actions[this.actions.length - 1];
