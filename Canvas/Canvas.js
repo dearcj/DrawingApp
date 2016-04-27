@@ -61,12 +61,12 @@ Canvas.prototype.makeUndo = function(e) {
 		i.onload = function() {
 			var el = document.getElementById('main-canvas');
 			var ctx = el.getContext('2d');
-			ctx.drawImage(i, 0, 0);
+			ctx.clearRect(0, 0, this.state.width, this.state.height);
+
 
 			var el = document.getElementById('back-canvas');
 			var ctx = el.getContext('2d');
-			ctx.clearRect(0, 0, this.state.width, this.state.height);
-
+			ctx.drawImage(i, 0, 0);
 		};
 	}
 }
