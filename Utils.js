@@ -205,7 +205,7 @@ function vkpost(t, im, imPath) {
 
           $.ajax({
             type: "post",
-            url: "http://188.227.16.35/wp-content/themes/mmoma/api/test.php",
+            url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
             data: {
               api_method: 'uploadpic',
 
