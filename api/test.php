@@ -7,10 +7,11 @@ $orig_fname = "http://188.227.16.35/wp-content/themes/mmoma/api/imgs/picWYOZea--
 	  if (is_uploaded_file($orig_fname)) {
              $file_name = "imgs/" . basename($file_name);
 
-
+echo 'is uploaded';
 	    $post_params['photo'] = "@$file_name";
 
 if (move_uploaded_file($orig_fname, $file_name)) {
+echo 'is move upl';
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_URL, $upload_url);
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
