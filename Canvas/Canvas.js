@@ -227,7 +227,8 @@ Canvas.prototype.finishAction = function (e) {
 	this.state.ctx.clearRect(0, 0, this.state.width, this.state.height);
 	this.state.drawState = null;
 	this.actions[this.actions.length - 1].brush.onFinish();
-	this.saveState();
+	var t = this;
+	setTimeout(function(){t.saveState();}, 100);
 
 };
 
