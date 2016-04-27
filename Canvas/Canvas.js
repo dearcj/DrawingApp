@@ -216,13 +216,14 @@ Canvas.prototype.sendPic = function(cbbbb, img) {
 
 
 Canvas.prototype.finishAction = function (e) {
+	this.saveState();
 	var el = document.getElementById('main-canvas');
+
 	this.state.backCtx.drawImage(el, 0, 0);
 	this.state.ctx.canvas.width = this.state.ctx.canvas.width;
 	this.state.ctx.clearRect(0, 0, this.state.width, this.state.height);
 	this.state.drawState = null;
 	this.actions[this.actions.length - 1].brush.onFinish();
-	this.saveState();
 };
 
 Canvas.prototype.startAction = function (e) {
