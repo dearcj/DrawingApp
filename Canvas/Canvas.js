@@ -64,11 +64,14 @@ Canvas.prototype.makeUndo = function(e) {
 			var el = document.getElementById('main-canvas');
 			var ctx = el.getContext('2d');
 			ctx.clearRect(0, 0, w, h);
+			ctx.canvas.width = ctx.canvas.width;
 
 
 			var el = document.getElementById('back-canvas');
 			var ctx = el.getContext('2d');
 			ctx.drawImage(i, 0, 0);
+			ctx.canvas.width = ctx.canvas.width;
+
 		};
 	}
 }
