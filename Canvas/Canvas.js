@@ -61,16 +61,20 @@ Canvas.prototype.makeUndo = function(e) {
 		var h = this.state.height;
 		var ctx = this.state.backCtx;
 		i.onload = function() {
-			var el = document.getElementById('main-canvas');
-			var ctx = el.getContext('2d');
-			ctx.clearRect(0, 0, w, h);
-			ctx.canvas.width = ctx.canvas.width;
+
 
 
 			var el = document.getElementById('back-canvas');
 			var ctx = el.getContext('2d');
+			ctx.clearRect(0, 0, w, h);
 			ctx.drawImage(i, 0, 0);
-			ctx.canvas.width = ctx.canvas.width;
+
+
+			var el = document.getElementById('main-canvas');
+			var ctx = el.getContext('2d');
+			ctx.clearRect(0, 0, w, h);
+
+			//ctx.canvas.width = ctx.canvas.width;
 
 		};
 	}
@@ -193,30 +197,29 @@ Canvas.prototype.redraw = function (ctx){
 //
 
 Canvas.prototype.sendPic = function(cbbbb, img) {
-		data = {
-			api_method: 'applyimagetogallery',
-			user_id: 1,
-			image: img,
-			name: $('#in-author').val(),
-			description: $('#in-label').val(),
-			tags: this.tags.join(';')
-		};
+	data = {
+		api_method: 'applyimagetogallery',
+		user_id: 1,
+		image: img,
+		name: $('#in-author').val(),
+		description: $('#in-label').val(),
+		tags: this.tags.join(';')
+	};
 
-		$.ajax({
-			type: "POST",
-			url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
-			data: data,
-			success: function cb(res) {
-				localStorage.setItem('imageId', res.imageId);
-				console.log(res);
-				cbbbb();
-			}
-		});
+	$.ajax({
+		type: "POST",
+		url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
+		data: data,
+		success: function cb(res) {
+			localStorage.setItem('imageId', res.imageId);
+			console.log(res);
+			cbbbb();
+		}
+	});
 };
 
 
 Canvas.prototype.finishAction = function (e) {
-	this.saveState();
 	var el = document.getElementById('main-canvas');
 
 	this.state.backCtx.drawImage(el, 0, 0);
@@ -224,6 +227,8 @@ Canvas.prototype.finishAction = function (e) {
 	this.state.ctx.clearRect(0, 0, this.state.width, this.state.height);
 	this.state.drawState = null;
 	this.actions[this.actions.length - 1].brush.onFinish();
+	this.saveState();
+
 };
 
 Canvas.prototype.startAction = function (e) {
