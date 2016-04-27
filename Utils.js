@@ -212,7 +212,17 @@ function vkpost(t, im, imPath) {
               upload_url: uploadUrl,
               file: imPath},
             success: function callback(res) {
-              cb(res);
+              if (res.photo) {
+                var p = JSON.parse(res.photo);
+
+                VK.api("photos.saveWallPhoto", res, onSaveWallPhoto);
+
+                function onSaveWallPhoto(data) {
+                  console.log(data);
+                  VK.api("wall.post", {"attachments": data.response[0].id});
+                }
+
+              }
               console.log(res);
             }
           });
