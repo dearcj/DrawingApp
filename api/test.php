@@ -17,6 +17,6 @@ if (isset($_POST["upload_url"])) {
             curl_setopt($ch, CURLOPT_POSTFIELDS, $post_params);
  
             $result = curl_exec($ch);
- 
+            echo $result;
             curl_close($ch);
             ?>
