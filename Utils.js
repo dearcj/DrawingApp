@@ -183,14 +183,29 @@ function getPixelate(saveImgCB, canvId, imgData) {
 
 filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
+function fbpost(t, im, imPath) {
+  FB.ui(
+    {  method: 'feed',
+      picture: 'http://188.227.16.35/wp-content/themes/mmoma/api/' + imPath,
+      name: '',//"���� ������ � ����: ��-�-�-������ �����������",
+      caption: "asdasd",
+      description: '' //"����� � ����, ��������� ���������� �������� � ������ ���� �������� ������ ����� �� ���������� ����������� ������ � ����: ��-�-�-������ �����������",
 
+    },
+
+    function(response) {
+      if (response && response.post_id) {
+        alert('Post was published.');
+      } else {
+        alert('Post was not published.');
+      }
+    }
+  );
+}
 
 function vkpost(t, im, imPath) {
   var img;
  // ga('send', 'event', 'Social', 'click-postvk');
-
-
-
 
 
   function authInfo(response) {

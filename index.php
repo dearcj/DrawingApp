@@ -21,6 +21,25 @@
     <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/mmoma.css">
 
     <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
+      <script>
+
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId      : '590705137751335',
+                    xfbml      : true,
+                    version    : 'v2.5'
+                });
+            };
+
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
     <script type="text/javascript">
         VK.init({
             apiId: 5413948

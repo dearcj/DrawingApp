@@ -673,23 +673,7 @@ jQuery(document).ready(function($) {
 			});
 
 			document.getElementById('post-fb').addEventListener('click', function() {
-				FB.ui(
-					{  method: 'feed',
-						link: 'www.museum',
-						picture: window.currentImgPic,
-						name: "asdasd",
-						caption: "asdasd",
-						description: "asdasdasd",
-					},
-
-					function(response) {
-						if (response && response.post_id) {
-							alert('Post was published.');
-						} else {
-							alert('Post was not published.');
-						}
-					}
-				);
+				fbpost('asdasd', res.image, res.file);
 			});
 
 			window.currentImgPic = res.file;
