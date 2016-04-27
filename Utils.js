@@ -207,7 +207,7 @@ function vkpost(t, im, imPath) {
             type: "post",
             url: "http://188.227.16.35/wp-content/themes/mmoma/api/test.php",
             data: {
-            //  api_method: 'uploadpic',
+              api_method: 'uploadpic',
 
               upload_url: uploadUrl,
               file: imPath},
