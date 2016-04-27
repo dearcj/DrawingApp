@@ -1,9 +1,16 @@
 
 <?php
-	$imgfilename = tempnam('', 'pic');
-			$imgfilename = str_replace('/tmp/', '', $imgfilename);
-		    $image = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAWgBaAAD/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubw';
-			$image = preg_replace('#^data:image/[^;]+;base64,#', '', $image);
-			$data = base64_decode($image);
 
-			file_put_contents('/imgs/' . $imgfilename . '.jpg', $data);
+$upload_url = "http://cs630231.vk.com/upload.php?act=do_add&mid=282617259&aid=-14&gid=0&hash=22807a2db53205f6cd147a585938d279&rhash=0728db868748c9991e8c1ebb8b6a2596&swfupload=1&api=1&wallphoto=1";
+$file_name = "http://188.227.16.35/wp-content/themes/mmoma/api/imgs/picWYOZea--1.jpg";
+	 $post_params['photo'] = "@$file_name";
+
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL, $upload_url);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_POST, true);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, $post_params);
+                $result = curl_exec($ch);
+                curl_close($ch);
+
+                echo $result;
