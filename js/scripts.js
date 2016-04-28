@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
 
-		$('#surface-wrapper').animate('height', 300 + 'px !important');
+		$('#surface-wrapper').animate('height', 100 + '%');
 		$('#surface-canvas').css({width: 285 + 'px', height: 196 + 'px'});
 		$('#surface-wrapper p').css({'opacity': 0, height: 0});
 		$('.surface-button.at-the-backyard').css('display', 'none');
@@ -263,7 +263,12 @@ jQuery(document).ready(function($) {
 
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
-		$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
+		if ($(window).width() < 600) {
+			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%'}, 200).css('z-index', '200');
+		} else {
+			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
+		}
+
 		$('#surface-wrapper').each(function(){
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
