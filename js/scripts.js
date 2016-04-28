@@ -24,6 +24,23 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
+	/////check device type
+	/////set canvas W and H
+
+	window.GLOB_CANV_W = 750;
+	window.GLOB_CANV_H = 530;
+
+	document.getElementById('main-canvas').width = GLOB_CANV_W;
+	document.getElementById('main-canvas').height = GLOB_CANV_H;
+	document.getElementById('back-canvas').width = GLOB_CANV_W;
+	document.getElementById('back-canvas').height = GLOB_CANV_H;
+	document.getElementById('cursor-canvas').width = GLOB_CANV_W;
+	document.getElementById('cursor-canvas').height = GLOB_CANV_H;
+	document.getElementById('filters-canvas').width = GLOB_CANV_W;
+	document.getElementById('filters-canvas').height = GLOB_CANV_H;
+
+
+
 	if ($(window).width() < 600) {
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
