@@ -59,10 +59,10 @@ jQuery(document).ready(function($) {
 		$('ul.tools li#btn-denim-3').css({width: 40 + 'px', height: 40 + 'px', top: -6 + 'px'});
 		$('ul.tools li#btn-catchup').css({width: 70 + 'px', height: 72 + 'px', 'margin-top': 0, 'margin-right': -6 + 'px'});
 		$('ul.tools li#btn-needle').css({width: 72 + 'px', height: 52 + 'px', 'margin': '8px + auto + 2px'});
-		$('ul.tools > li#needle > ul').css(width, 92 + 'px');
+		$('ul.tools > li#needle > ul').css('width', 92 + 'px');
 		$('ul.tools li.needle-color').css({width: 15 + 'px', height: 15 + 'px', 'margin-left': -2 + 'px'});
 		$('ul.tools li#btn-pistol').css({width: 56 + 'px', height: 84 + 'px', 'margin-right': 2 + 'px'});
-		$('li.send-to-museum').css(width, '150px !important');
+		$('li.send-to-museum').css('width', '150px !important');
 		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 225 + 'px', 'margin-left': -116 + 'px'});
 	}
 
