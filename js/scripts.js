@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
 		$('#surface-canvas p').css('display', 'none');
 		$('.surface-button.at-the-backyard').css('display', 'none');
 		$('ul#helpers li').css('display', 'none');
-		$('ul.surfaces').css({width: 150 + 'px', height: 220 + 'px', 'margin-top': 35 + 'px', 'margin-left': 0 + '!important'});
+		$('ul.surfaces').css({width: 150 + 'px', height: 220 + 'px', 'margin-top': 35 + 'px', 'margin-left': 0 + 'px'});
 		$('ul.surfaces li').css({width: 75 + 'px', height: 50 + 'px', 'margin-top': 0 + 'px'});
 		$('ul.surfaces li:nth-child(2n+2)').css('margin-left', -8 + 'px');
 		$('ul.surfaces li.metal').css('margin-left', 35 + 'px');
