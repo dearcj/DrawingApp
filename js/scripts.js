@@ -1128,7 +1128,7 @@ jQuery(document).ready(function($) {
 
 		$('#index-wrapper').css({height: artHeight - artHeight/6.48 + 'px', 'top': -artHeight/6.48 + 'px'});
 
-		var helper = $('ul#helpers.index li'),
+		var helper = $('ul.index li'),
 			dog = $('#dog'),
 			momandson = $('#momandson'),
 			couple = $('#couple'),
