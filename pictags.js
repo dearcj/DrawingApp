@@ -3,6 +3,7 @@
  */
 
 
+
 var picTags = [
 	{
 		pic: 'pictags/canvas/board.jpg',
@@ -95,6 +96,9 @@ var picTags = [
 		fulltags: ''
 	}
 ];
+
+
+
 
 getImagesByTags = function (tags) {
 	var res = [];

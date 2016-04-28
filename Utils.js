@@ -269,6 +269,7 @@ function vkpost(t, im, imPath) {
 
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
+  window.filterTag = '';
   ZSound.Play('filter');
   var saveImgCB = function (canvas) {
     window.savedImage = canvas.toDataURL("image/png", 0.8);
@@ -276,49 +277,61 @@ function applyFilter(canvId, imgData, filterNumber) {
   if (filterNumber == 1) {
    var src = relPath + 'filters/diptih.png';
    cb = applyOverFilter(saveImgCB, src, canvId, imgData, 0, 0, true);
+    window.filterTag = 'диптих';
    }
   if (filterNumber == 2) {
     var src = relPath + 'filters/modern.png';
     cb = applyOverFilter(saveImgCB, src, canvId, imgData);
+    window.filterTag = 'рамка';
   }
   if (filterNumber == 3) {
     var src = relPath + 'filters/poliptih.png';
     cb = applyOverFilter(saveImgCB, src, canvId, imgData, 0, 0, true);
+    window.filterTag = 'диптих';
   }
   if (filterNumber == 4) {
     var src = relPath + 'filters/vintage.png';
     cb = applyOverFilter(saveImgCB, src, canvId, imgData);
+    window.filterTag = 'рамка';
   }
   if (filterNumber == 5) {
     cb = getPixelate(saveImgCB, canvId, imgData);
+    window.filterTag = 'пикселизация';
   }
   if (filterNumber == 6) {
     cb = getInv(saveImgCB, canvId, imgData);
+    window.filterTag = 'инверсия';
   }
 
   if (filterNumber == 7) {
     cb = distortion(saveImgCB, canvId, imgData);
+    window.filterTag = 'искажение';
   }
 
   if (filterNumber == 8) {
     cb = kaleidoscope(saveImgCB, canvId, imgData);
+    window.filterTag = 'калейдоскоп';
   }
 
   if (filterNumber == 9) {
     cb = getPattern(saveImgCB, canvId, imgData);
+    window.filterTag = 'паттерн';
   }
 
   if (filterNumber == 10) {
     var src = relPath + 'filters/bubble1.png';
     cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*200, Math.random()*200);
+    window.filterTag = 'пузырек';
   }
   if (filterNumber == 11) {
     var src = relPath + 'filters/bubble2.png';
     cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*200, Math.random()*200);
+    window.filterTag = 'пузырек';
   }
   if (filterNumber == 12) {
     var src = relPath + 'filters/bubble3.png';
     cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*200, Math.random()*200);
+    window.filterTag = 'пузырек';
   }
   var dw = 1;
   var dh = 1;

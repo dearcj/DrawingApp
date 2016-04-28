@@ -431,10 +431,18 @@ jQuery(document).ready(function($) {
 		$('.filters-canvas p').delay(2500).fadeIn(1000);
 	});
 
-	$('.go-to-publication').on(window.eventType, function(event) {
+
+	$('.its-done').on(window.eventType, function(event) {
+		if (window.filterTag && window.filterTag != '') {
+			window.mainCanvasObject.tags.push(window.filterTag);
+		}
+	});
+		$('.go-to-publication').on(window.eventType, function(event) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
+				var imgs = getImagesByTags(window.mainCanvasObject.tags);
+
 		openPage('publication');
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
@@ -993,7 +1001,7 @@ jQuery(document).ready(function($) {
 		hidingHelpers('.main-canvas p');
 	}
 
-	document.getElementById("wand").addEventListener('click', function () {
+	document.getElementById("wand").addEventListener(window.eventType, function () {
 		if (!window.currentFilter || window.currentFilter >= filterOrder.length) window.currentFilter = 0;
 		applyFilter("filters-canvas", window.filterSavedImage, filterOrder[window.currentFilter]);
 		window.currentFilter++;
