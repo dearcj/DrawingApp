@@ -26,13 +26,13 @@ jQuery(document).ready(function($) {
 
 	if ($(window).width() < 600) {
 		$('#surface-canvas').css({width: 285 + 'px', height: 196 + 'px'});
-		$('#surface-canvas p').css('display', 'none');
+		$('#surface-canvas p').css({'opacity': 0, height: 0});
 		$('.surface-button.at-the-backyard').css('display', 'none');
 		$('ul#helpers li').css('display', 'none');
-		$('ul.surfaces').css({width: 150 + 'px', height: 220 + 'px', 'margin-top': 35 + 'px', 'margin-left': 'auto !important'});
+		$('ul.surfaces').css({width: 150 + 'px', height: 220 + 'px', 'margin-top': 35 + 'px', left: -(($(window).width() - 750)/2 - 360)/3.5 + 'px'});
 		$('ul.surfaces li').css({width: 75 + 'px', height: 50 + 'px', 'margin-top': 0 + 'px'});
 		$('ul.surfaces li:nth-child(2n+2)').css('margin-left', -8 + 'px');
-		$('ul.surfaces li.metal').css('margin-left', '35px !important');
+		$('ul.surfaces li.metal').css(left, -55 + 'px');
 		$('ul.tools-buttons li').css({width: 65 + 'px', height: 65 + 'px', top: 0});
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
 	}

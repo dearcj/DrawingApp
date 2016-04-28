@@ -1664,6 +1664,7 @@ ul.tools-buttons.surface-tb {
 }
 
 ul.surfaces {
+	position: relative;
 	float: left;
 	padding: 0;
 	clear: both;
