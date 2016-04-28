@@ -40,9 +40,30 @@ jQuery(document).ready(function($) {
 		$('ul.tools-buttons li').css({width: 65 + 'px', height: 65 + 'px', 'margin-top': 15 + 'px'});
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
 
-		$('#back-canvas').css({width: 285 + 'px', height: 196 + 'px'});
-		$('#main-canvas').css({width: 285 + 'px', height: 196 + 'px'});
-		$('#cursor-canvas').css({width: 285 + 'px', height: 196 + 'px'});
+		$('#back-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -143 + 'px'});
+		$('#main-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -143 + 'px'});
+		$('#cursor-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -143 + 'px'});
+		$('ul.tools').css({width: 144 + 'px', height: 288 + 'px'});
+		$('ul.tools > li').css({width: 72 + 'px', height: 72 + 'px'});
+		$('ul.tools > li#coal > ul').css({width: 50 + 'px', height: 80 + 'px'});
+		$('ul.tools > li#coal > ul li').css({width: 25 + 'px', height: 80 + 'px'});
+		$('ul.tools > li#scotch > ul').css({width: 72 + 'px', height: 72 + 'px'});
+		$('ul.tools li#btn-scotch').css({width: 70 + 'px', height: 44 + 'px'});
+		$('ul.tools li#btn-scotch-1').css({width: 60 + 'px', height: 10 + 'px', 'margin-top': 4 + 'px', 'margin-right': 2 + 'px'});
+		$('ul.tools li#btn-scotch-2').css({width: 60 + 'px', height: 10 + 'px', 'margin-top': 5 + 'px', 'margin-right': 2 + 'px'});
+		$('ul.tools li#btn-grass').css({top: 10 + 'px', 'margin-left': 3 + 'px'});
+		$('ul.tools li#btn-orange').css({width: 68 + 'px', height: 86 + 'px'});
+		$('ul.tools > li#denim > ul').css({width: 80 + 'px', height: 74 + 'px'});
+		$('ul.tools li#btn-denim-1').css({width: 40 + 'px', height: 40 + 'px', 'margin-top': 0, 'margin-left': 0});
+		$('ul.tools li#btn-denim-2').css({width: 40 + 'px', height: 40 + 'px', 'margin-top': 0, 'margin-right': 0});
+		$('ul.tools li#btn-denim-3').css({width: 40 + 'px', height: 40 + 'px', top: -6 + 'px'});
+		$('ul.tools li#btn-catchup').css({width: 70 + 'px', height: 72 + 'px', 'margin-top': 0, 'margin-right': -6 + 'px'});
+		$('ul.tools li#btn-needle').css({width: 72 + 'px', height: 52 + 'px', 'margin': '8px + auto + 2px'});
+		$('ul.tools > li#needle > ul').css(width, 92 + 'px');
+		$('ul.tools li.needle-color').css({width: 15 + 'px', height: 15 + 'px', 'margin-left': -2 + 'px'});
+		$('ul.tools li#btn-pistol').css({width: 56 + 'px', height: 84 + 'px', 'margin-right': 2 + 'px'});
+		$('li.send-to-museum').css(width, '150px !important');
+		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 225 + 'px', 'margin-left': -116 + 'px'});
 	}
 
 	// Free from resize
