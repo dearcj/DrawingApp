@@ -24,6 +24,10 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
+	if ($(window).width() < 600) {
+		$('#surface-canvas').css({width: 325 + 'px', height: 224 + 'px'});
+	}
+
 	// Free from resize
 
 	$('ul.surfaces').css('margin-left', -350 + 'px');
