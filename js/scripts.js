@@ -28,7 +28,7 @@ jQuery(document).ready(function($) {
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
 
-		$('#surface-wrapper').css('height', 100 + '%');
+		$('#surface-wrapper').css('height', 300 + 'px !important');
 		$('#surface-canvas').css({width: 285 + 'px', height: 196 + 'px'});
 		$('#surface-wrapper p').css({'opacity': 0, height: 0});
 		$('.surface-button.at-the-backyard').css('display', 'none');
