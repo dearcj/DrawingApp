@@ -24,7 +24,7 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
-	if ($(window).width() < 600) {
+	if ($(window).width() < 700) {
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
 
@@ -62,7 +62,7 @@ jQuery(document).ready(function($) {
 		$('ul.tools > li#needle > ul').css('width', 92 + 'px');
 		$('ul.tools li.needle-color').css({width: 15 + 'px', height: 15 + 'px', 'margin-left': -2 + 'px'});
 		$('ul.tools li#btn-pistol').css({width: 56 + 'px', height: 84 + 'px', 'margin-right': 2 + 'px'});
-		$('li.send-to-museum').css('width', '150px !important');
+		$('li.send-to-museum').css('width', 150 + 'px');
 		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 225 + 'px', 'margin-left': -116 + 'px'});
 	}
 
@@ -284,7 +284,7 @@ jQuery(document).ready(function($) {
 
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
-		if ($(window).width() < 600) {
+		if ($(window).width() < 700) {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%'}, 200).css('z-index', '200');
 		} else {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
@@ -363,7 +363,11 @@ jQuery(document).ready(function($) {
 		$('#filters-wrapper').each(function(){
 			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
-		$('#painting-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+		if ($(window).width() < 700) {
+			$('#painting-wrapper').delay(500).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+		} else {
+			$('#painting-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+		}
 		$('#painting-wrapper').each(function(){
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
