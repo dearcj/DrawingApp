@@ -52,9 +52,9 @@ jQuery(document).ready(function($) {
 		$('ul.surfaces li').css({width: 75 + 'px', height: 50 + 'px', 'margin-top': 0 + 'px'});
 		$('ul.surfaces li:nth-child(2n+2)').css('margin-left', -8 + 'px');
 		$('ul.surfaces li.metal').css('left', -55 + 'px');
+
 		$('ul.tools-buttons li').css({width: 65 + 'px', height: 65 + 'px', 'margin-top': 15 + 'px'});
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
-
 		$('#back-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
 		$('#main-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
 		$('#cursor-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
@@ -79,6 +79,10 @@ jQuery(document).ready(function($) {
 		$('ul.tools li#btn-pistol').css({width: 56 + 'px', height: 84 + 'px', 'margin-right': 2 + 'px'});
 		$('li.send-to-museum').css('width', 150 + 'px');
 		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 225 + 'px', 'margin-left': -90 + 'px'});
+
+		$('.filters-canvas').css({width: 285 + 'px', height: 196 + 'px'});
+		$('#filters-canvas').css({width: 285 + 'px', height: 196 + 'px'});
+		$('.filters-canvas p').css({'opacity': 0, height: 0});
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
 	}
@@ -445,7 +449,11 @@ jQuery(document).ready(function($) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
-				var imgs = getImagesByTags(window.mainCanvasObject.tags);
+		var imgs = getImagesByTags(window.mainCanvasObject.tags);
+
+		console.log(imgs);
+
+		setRandomImgs();
 
 		openPage('publication');
 
@@ -578,35 +586,14 @@ jQuery(document).ready(function($) {
 	});
 
 	function setRandomImgs() {
-		var imgNumbers = [];
-		var n = 6;
-
-		for (var i = 0; i < n; i++) {
-			imgNumbers[i] = i;
-		}
-
-		for (var j = 1; j < 4; j++) {
-			var randomInt = Math.floor(Math.random()*imgNumbers.length);
-
 			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
 			$('ul.paintings.left-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
 			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
 
-			imgNumbers.splice(randomInt,1);
-		}
-
-		for (var k = 1; k < 4; k++) {
-			var randomInt = Math.floor(Math.random()*imgNumbers.length);
-
 			$('ul.paintings.right-side a:nth-child(' + k + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + k + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + k + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
-
-			imgNumbers.splice(randomInt,1);
-		}
 	}
-
-	setRandomImgs();
 
 	// ---------ELEMENTS FADE IN---------
 

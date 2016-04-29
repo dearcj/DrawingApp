@@ -6,92 +6,92 @@
 
 var picTags = [
 	{
-		pic: 'pictags/canvas/board.jpg',
+		pic: relPath + 'pictags/canvas/board.jpg',
 		tag: 'доска',
 		fulltags: ''
 	},
 	{
-		pic: 'pictags/canvas/brick.jpg',
+		pic: relPath + 'pictags/canvas/brick.jpg',
 		tag: 'кирпич',
 		fulltags: ''
 	},
 	{
-		pic: 'pictags/canvas/canvas.jpg',
+		pic: relPath + 'pictags/canvas/canvas.jpg',
 		tag: 'полотно',
 		fulltags: ''
 	},
 	{
-		pic: 'pictags/canvas/cardboard.jpg',
+		pic: relPath + 'pictags/canvas/cardboard.jpg',
 		tag: 'картон',
 		fulltags: ''
 	},
 	{
-		pic: 'pictags/canvas/metal.jpg',
+		pic: relPath + 'pictags/canvas/metal.jpg',
 		tag: 'метал',
 		fulltags: ''
 
 	},
 	{
-		pic: 'pictags/canvas/wallpaper.jpg',
+		pic: relPath + 'pictags/canvas/wallpaper.jpg',
 		tag: 'обои',
 		fulltags: ''
 
 	},
 	{
-		pic: 'pictags/canvas/wood.jpg',
+		pic: relPath + 'pictags/canvas/wood.jpg',
 		tag: 'дерево',
 		fulltags: ''
 
 	},
 	{
-		pic: 'pictags/filters/bubble.jpg',
+		pic: relPath + 'pictags/filters/bubble.jpg',
 		tag: 'пузырек',
 		fulltags: ''
 
 	},
 	{
-		pic: 'pictags/filters/diptih.jpg',
+		pic: relPath + 'pictags/filters/diptih.jpg',
 		tag: 'диптих',
 		fulltags: ''
 
 	},
 	{
-		pic: 'pictags/filters/diptih2.jpg',
+		pic: relPath + 'pictags/filters/diptih2.jpg',
 		tag: 'диптих',
 		fulltags: ''
 
 	},
 	{
-		pic: 'pictags/filters/distortion.jpg',
+		pic: relPath + 'pictags/filters/distortion.jpg',
 		tag: 'искажение',
 		fulltags: ''
 
 	},
 	{
-		pic: 'pictags/filters/inv1.jpg',
+		pic: relPath + 'pictags/filters/inv1.jpg',
 		tag: 'инверсия',
 		fulltags: ''
 
 	},
 	{
-		pic: 'pictags/filters/pattern.jpg',
+		pic: relPath + 'pictags/filters/pattern.jpg',
 		tag: 'паттерн',
 		fulltags: ''
 	},
 	{
-		pic: 'pictags/filters/pixelization.jpg',
+		pic: relPath + 'pictags/filters/pixelization.jpg',
 		tag: 'пикселизация',
 		fulltags: ''
 	}
 	,
 	{
-		pic: 'pictags/filters/rama.jpg',
+		pic: relPath + 'pictags/filters/rama.jpg',
 		tag: 'рамка',
 		fulltags: ''
 	}
 	,
 	{
-		pic: 'pictags/filters/rama2.jpg',
+		pic: relPath + 'pictags/filters/rama2.jpg',
 		tag: 'рамка',
 		fulltags: ''
 	}
