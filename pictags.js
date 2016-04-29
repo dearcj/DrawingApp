@@ -97,7 +97,7 @@ var picTags = [
 	}
 ];
 
-getImagesByTags = function (tags) {
+var getImagesByTags = function (tags) {
 	var res = [];
 	for (var i = 0; i < tags.length; ++i) {
 		var x = tags[i];
