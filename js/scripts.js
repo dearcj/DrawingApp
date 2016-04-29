@@ -264,6 +264,16 @@ jQuery(document).ready(function($) {
 		$(this).addClass('active pistol-active');
 	});
 
+	function setRandomImgs() {
+		$('ul.paintings.left-side a:nth-child(1) li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
+		$('ul.paintings.left-side a:nth-child(2):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
+		$('ul.paintings.left-side a:nth-child(3)').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
+
+		$('ul.paintings.right-side a:nth-child(1) li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
+		$('ul.paintings.right-side a:nth-child(2):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
+		$('ul.paintings.right-side a:nth-child(3)').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
+	}
+
 	//--------------ROUTING---------------
 
 	var mainUrl = 'http://188.227.16.35/';
@@ -445,7 +455,8 @@ jQuery(document).ready(function($) {
 			window.mainCanvasObject.tags.push(window.filterTag);
 		}
 	});
-		$('.go-to-publication').on(window.eventType, function(event) {
+
+	$('.go-to-publication').on(window.eventType, function(event) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
@@ -584,16 +595,6 @@ jQuery(document).ready(function($) {
 			//	$('#museum-wrapper .painting-info span.title').html($(this).prev().find('input').val());
 		}
 	});
-
-	function setRandomImgs() {
-			$('ul.paintings.left-side a:nth-child(' + j + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + j + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + j + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
-
-			$('ul.paintings.right-side a:nth-child(' + k + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + k + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg) no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + k + ')').attr('href', imgPath + 'painting-' + imgNumbers[randomInt] + '.jpg');
-	}
 
 	// ---------ELEMENTS FADE IN---------
 
