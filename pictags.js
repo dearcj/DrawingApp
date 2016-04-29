@@ -97,15 +97,15 @@ var picTags = [
 	}
 ];
 
-
-
-
 getImagesByTags = function (tags) {
 	var res = [];
 	for (var i = 0; i < tags.length; ++i) {
 		var x = tags[i];
 		for (var j = 0; j < picTags.length; ++j) {
 			var y = picTags[j];
+			//откомментиь и можно будет для одной картинки делать несколько тегов типа tag: 'рамка, диптих',
+			//if (picTags[j].tag.indexOf(tags[i]) >= 0)
+
 			if (tags[i] == picTags[j].tag)
 			res.push(picTags[j]);
 		}
