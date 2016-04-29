@@ -55,10 +55,10 @@ jQuery(document).ready(function($) {
 		$('ul.tools-buttons li').css({width: 65 + 'px', height: 65 + 'px', 'margin-top': 15 + 'px'});
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
 
-		$('#back-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -143 + 'px'});
-		$('#main-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -143 + 'px'});
-		$('#cursor-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -143 + 'px'});
-		$('ul.tools').css({width: 144 + 'px', height: 288 + 'px', left: 118 + '%', top: 0});
+		$('#back-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
+		$('#main-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
+		$('#cursor-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
+		$('ul.tools').css({width: 144 + 'px', height: 288 + 'px', left: 123 + '%', top: 0});
 		$('ul.tools > li').css({width: 72 + 'px', height: 72 + 'px'});
 		$('ul.tools > li#coal > ul').css({width: 50 + 'px', height: 80 + 'px'});
 		$('ul.tools > li#coal > ul li').css({width: 25 + 'px', height: 80 + 'px'});
@@ -77,10 +77,10 @@ jQuery(document).ready(function($) {
 		$('ul.tools > li#needle > ul').css('width', 92 + 'px');
 		$('ul.tools li.needle-color').css({width: 15 + 'px', height: 15 + 'px', 'margin-left': -2 + 'px'});
 		$('ul.tools li#btn-pistol').css({width: 56 + 'px', height: 84 + 'px', 'margin-right': 2 + 'px'});
-		$('li.send-to-museum').css('width', '150px');
-		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 225 + 'px', 'margin-left': -116 + 'px'});
+		$('li.send-to-museum').css('width', 150 + 'px');
+		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 225 + 'px', 'margin-left': -90 + 'px'});
 	} else {
-		$('li.send-to-museum').css('width', '226px');
+		$('li.send-to-museum').css('width', 226 + 'px');
 	}
 
 	// Free from resize
