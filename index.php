@@ -48,6 +48,7 @@
 
       <script src="http://188.227.16.35/wp-content/themes/mmoma/js/soundjs-NEXT.min.js"></script>
    <script src="http://188.227.16.35/wp-content/themes/mmoma/js/ZSound.js"></script>
+      <script src="http://188.227.16.35/wp-content/themes/mmoma/pictags.js"></script>
 
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
           <script src="http://188.227.16.35/wp-content/themes/mmoma/js/jsmanipulate.min.js"></script>

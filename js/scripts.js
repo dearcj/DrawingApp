@@ -24,6 +24,21 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
+	/////check device type
+	/////set canvas W and H
+
+	window.GLOB_CANV_W = 750;
+	window.GLOB_CANV_H = 530;
+
+	document.getElementById('main-canvas').width = GLOB_CANV_W;
+	document.getElementById('main-canvas').height = GLOB_CANV_H;
+	document.getElementById('back-canvas').width = GLOB_CANV_W;
+	document.getElementById('back-canvas').height = GLOB_CANV_H;
+	document.getElementById('cursor-canvas').width = GLOB_CANV_W;
+	document.getElementById('cursor-canvas').height = GLOB_CANV_H;
+	document.getElementById('filters-canvas').width = GLOB_CANV_W;
+	document.getElementById('filters-canvas').height = GLOB_CANV_H;
+
 	if ($(window).width() < 700) {
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
@@ -418,10 +433,18 @@ jQuery(document).ready(function($) {
 		$('.filters-canvas p').delay(2500).fadeIn(1000);
 	});
 
-	$('.go-to-publication').on(window.eventType, function(event) {
+
+	$('.its-done').on(window.eventType, function(event) {
+		if (window.filterTag && window.filterTag != '') {
+			window.mainCanvasObject.tags.push(window.filterTag);
+		}
+	});
+		$('.go-to-publication').on(window.eventType, function(event) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
+				var imgs = getImagesByTags(window.mainCanvasObject.tags);
+
 		openPage('publication');
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
@@ -980,7 +1003,7 @@ jQuery(document).ready(function($) {
 		hidingHelpers('.main-canvas p');
 	}
 
-	document.getElementById("wand").addEventListener('click', function () {
+	document.getElementById("wand").addEventListener(window.eventType, function () {
 		if (!window.currentFilter || window.currentFilter >= filterOrder.length) window.currentFilter = 0;
 		applyFilter("filters-canvas", window.filterSavedImage, filterOrder[window.currentFilter]);
 		window.currentFilter++;
