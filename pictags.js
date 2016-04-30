@@ -102,7 +102,7 @@ var getImagesByTags = function (tags) {
 	for (var i = 0; i < tags.length; ++i) {
 		for (var j = 0; j < picTags.length; ++j) {
 			if (picTags[j].tag.indexOf(tags[i]) >= 0) {
-			//if (tags[i] == picTags[j].tag)
+				//if (tags[i] == picTags[j].tag)
 				res.push(picTags[j]);
 			}
 		}
