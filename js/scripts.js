@@ -462,6 +462,8 @@ jQuery(document).ready(function($) {
 		document.getElementById('painting-img').src = window.savedImage;
 		var imgs = window.mainCanvasObject.tags;
 
+		getImagesByTags(imgs);
+
 		console.log(imgs);
 
 		setRandomImgs();
