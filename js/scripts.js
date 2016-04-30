@@ -267,7 +267,7 @@ jQuery(document).ready(function($) {
 	function setRandomImgs() {
 
 		for (var i=0; i < 6; i++) {
-			console.log(imgs[i].pic);
+			console.log(i);
 		}
 
 		$('ul.paintings.left-side a:nth-child(1) li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + imgPath + 'painting-1.jpg) no-repeat');
