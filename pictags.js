@@ -107,10 +107,10 @@ var getImagesByTags = function (tags) {
 			//if (tags[i] == picTags[j].tag)
 
 			res.push(picTags[j]);
+
+			console.log(tags[i]);
 		}
 	}
-
-	console.log(picTags.length);
 
 	return shuffle(res);
 }
