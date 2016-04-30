@@ -103,12 +103,12 @@ var getImagesByTags = function (tags) {
 		var x = tags[i];
 		for (var j = 0; j < picTags.length; ++j) {
 			var y = picTags[j];
-			if (y.tag.indexOf(x) >= 0)
+			if (picTags[j].tag.indexOf(tags[i]) >= 0)
 			//if (tags[i] == picTags[j].tag)
 
 			res.push(picTags[j]);
 
-			console.log(res);
+			console.log(picTags[j]);
 		}
 	}
 
