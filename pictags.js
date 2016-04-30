@@ -107,6 +107,7 @@ var getImagesByTags = function (tags) {
 			}
 			console.log(j);
 		}
+		console.log(i);
 	}
 
 	return shuffle(res);
