@@ -464,8 +464,6 @@ jQuery(document).ready(function($) {
 
 		getImagesByTags(imgs);
 
-		console.log(imgs);
-
 		setRandomImgs();
 
 		openPage('publication');
