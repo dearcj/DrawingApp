@@ -100,17 +100,15 @@ var picTags = [
 var getImagesByTags = function (tags) {
 	var res = [];
 	for (var i = 0; i < tags.length; ++i) {
-		var x = tags[i];
 		for (var j = 0; j < picTags.length; ++j) {
-			var y = picTags[j];
-			if (picTags[j].tag.indexOf(tags[i]) >= 0)
+			if (picTags[j].tag.indexOf(tags[i]) >= 0) {
 			//if (tags[i] == picTags[j].tag)
-
-			res.push(picTags[j]);
-
-			console.log(picTags[j]);
+				res.push(picTags[j]);
+			}
 		}
 	}
+
+	console.log(res);
 
 	return shuffle(res);
 }
