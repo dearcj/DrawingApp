@@ -104,7 +104,7 @@ var getImagesByTags = function (tags) {
 			if (tags[i] == picTags[j].tag) {
 				//if (tags[i] == picTags[j].tag)
 				res.push(picTags[j]);
-
+				console.log(j);
 			}
 		}
 	}
