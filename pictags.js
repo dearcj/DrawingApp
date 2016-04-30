@@ -100,7 +100,7 @@ var picTags = [
 var getImagesByTags = function (tags) {
 	var res = [];
 	for (var i = 0; i < tags.length; ++i) {
-		for (var j = 0; j < picTags.length; ++j) {
+		for (var j = picTags.length; j < 0; j--) {
 			if (tags[i] == picTags[j].tag) {
 				//if (tags[i] == picTags[j].tag)
 				res.push(picTags[j]);
