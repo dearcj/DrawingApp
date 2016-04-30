@@ -102,11 +102,10 @@ var getImagesByTags = function (tags) {
 	for (var i = 0; i < tags.length; ++i) {
 		for (var j = 0; j < picTags.length; j++) {
 			if (tags[i] == picTags[j].tag) {
-				//if (tags[i] == picTags[j].tag)
 				res.push(picTags[j]);
-				console.log(res);
 			}
 		}
+		console.log(tags[i]);
 	}
 
 	return shuffle(res);
