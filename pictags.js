@@ -44,19 +44,31 @@ var picTags = [
 
 	},
 	{
+		pic: 'pictags/tools/orange.jpg',
+		tag: 'апельсин',
+		fulltags: ''
+
+	},
+	{
 		pic: 'pictags/filters/bubble.jpg',
 		tag: 'пузырек',
 		fulltags: ''
 
 	},
 	{
-		pic: 'pictags/filters/diptih.jpg',
+		pic: 'pictags/filters/diptih-1.jpg',
 		tag: 'диптих',
 		fulltags: ''
 
 	},
 	{
-		pic: 'pictags/filters/diptih2.jpg',
+		pic: 'pictags/filters/diptih-2.jpg',
+		tag: 'диптих',
+		fulltags: ''
+
+	},
+	{
+		pic: 'pictags/filters/diptih-3.jpg',
 		tag: 'диптих',
 		fulltags: ''
 
@@ -68,7 +80,19 @@ var picTags = [
 
 	},
 	{
-		pic: 'pictags/filters/inv1.jpg',
+		pic: 'pictags/filters/inversion-1.jpg',
+		tag: 'инверсия',
+		fulltags: ''
+
+	},
+	{
+		pic: 'pictags/filters/inversion-2.jpg',
+		tag: 'инверсия',
+		fulltags: ''
+
+	},
+	{
+		pic: 'pictags/filters/inversion-3.jpg',
 		tag: 'инверсия',
 		fulltags: ''
 
@@ -85,13 +109,13 @@ var picTags = [
 	}
 	,
 	{
-		pic: 'pictags/filters/rama.jpg',
+		pic: 'pictags/filters/rama-1.jpg',
 		tag: 'рамка',
 		fulltags: ''
 	}
 	,
 	{
-		pic: 'pictags/filters/rama2.jpg',
+		pic: 'pictags/filters/rama-2.jpg',
 		tag: 'рамка',
 		fulltags: ''
 	}
@@ -105,7 +129,6 @@ var getImagesByTags = function (tags) {
 				res.push(picTags[j]);
 			}
 		}
-		console.log(tags[i]);
 	}
 
 	return shuffle(res);
