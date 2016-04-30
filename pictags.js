@@ -108,7 +108,7 @@ var getImagesByTags = function (tags) {
 
 			res.push(picTags[j]);
 
-			console.log(tags[i]);
+			console.log(picTags[j].tag);
 		}
 	}
 
