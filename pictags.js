@@ -110,9 +110,9 @@ var getImagesByTags = function (tags) {
 		}
 	}
 
-	return shuffle(res);
-
 	console.log(res);
+
+	return shuffle(res);
 }
 
 
