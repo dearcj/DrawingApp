@@ -271,9 +271,7 @@ jQuery(document).ready(function($) {
 		for (var i = 0; i < 3; i++) {
 			leftAbsPath = relPath + imgs[i].pic;
 			var j = imgs.length;
-			console.log(j);
-			console.log(imgs.length);
-			rightAbsPath = relPath + imgs[j].pic;
+			rightAbsPath = relPath + imgs[j-1].pic;
 
 			$('ul.paintings.left-side a:nth-child(i+1)').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(i+1) li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftAbsPath + ') no-repeat');
