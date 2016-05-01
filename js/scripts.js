@@ -82,6 +82,7 @@ jQuery(document).ready(function($) {
 		$('.filters-canvas').css({width: 285 + 'px', height: 196 + 'px'});
 		$('#filters-canvas').css({width: 285 + 'px', height: 196 + 'px'});
 		$('.filters-canvas p').css({'opacity': 0, height: 0});
+		$('li.its-done').css('width', 150 + 'px');
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
 	}
@@ -1040,19 +1041,12 @@ jQuery(document).ready(function($) {
 			filtersBackgroundHeight = width/wrapperRatio,
 			filtersButtons = $('.filters-canvas ul.tools-buttons'),
 			prevNextButtons = $('ul.tools-buttons.filters-tb li'),
-			wand = $('#wand'),
-			itsDone = $('.its-done');
-
-		prevNextButtons.css('width', 750/7.612 + 'px');
-
-		prevNextButtons.css('height', prevNextButtons.width()/pnButtonRatio + 'px');
+			wand = $('#wand');
 
 		var darkSideFiltersHeight = parseInt(darkSideFilters.css('height')),
 			prevNextButtonsHeight = parseInt(prevNextButtons.css('height'));
 
 		var toolsButtons = $('ul.tools-buttons.filters-tb');
-
-		toolsButtons.css('top', darkSideFiltersHeight*2 + 'px');
 
 		hidingHelpers('.filters-canvas p');
 	}
