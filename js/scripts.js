@@ -387,7 +387,7 @@ jQuery(document).ready(function($) {
 		var toolsHeight = $(window).width()/3.34;
 
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
-		$('ul.tools').css({width: toolsWidth*2 + 'px', height: toolsHeight + 'px'}).delay(500).animate({'margin-left': -toolsWidth*5 + 'px'}, 1000);
+		$('ul.tools').delay(500).animate({'margin-left': -toolsWidth*5 + 'px'}, 1000);
 		//$('ul.tools > li').css({width: toolsWidth + 'px', height: toolsWidth + 'px'});
 		//$('ul.tools > li#btn-grass').css({width: $(window).width()/18.11 + 'px', height: $(window).width()/14.77 + 'px'});
 		//$('ul.tools > li#btn-orange').css({width: $(window).width()/17.29 + 'px', height: $(window).width()/14.77 + 'px'});
