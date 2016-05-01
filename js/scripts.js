@@ -48,7 +48,6 @@ jQuery(document).ready(function($) {
 		$('#surface-wrapper p').css({'opacity': 0, height: 0});
 		$('.surface-button.at-the-backyard').css('display', 'none');
 		$('ul#helpers li').css('display', 'none');
-		$('ul.surfaces').css({width: 150 + 'px', height: 220 + 'px', 'margin-top': 35 + 'px', left: (($(window).width() - 285)/2 - 125)/2 + 'px', 'margin-left': 0});
 		$('ul.surfaces li').css({width: 75 + 'px', height: 50 + 'px', 'margin-top': 0 + 'px'});
 		$('ul.surfaces li:nth-child(2n+2)').css('margin-left', -8 + 'px');
 		$('ul.surfaces li.metal').css('left', -55 + 'px');
@@ -317,16 +316,22 @@ jQuery(document).ready(function($) {
 	function surfaceAnimation() {
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
+
+		var surfaceWidth = $(window).width()/10.666;
+		var surfaceHeight = $(window).width()/16.134;
+
 		if ($(window).width() < 700) {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({
 				'opacity': 1,
 				'height': 100 + '%'
 			}, 200).css('z-index', '200');
+			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 700)/4 - surfaceWidth + 'px'}, 1500);
 		} else {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({
 				'opacity': 1,
 				'height': 660 + 'px'
 			}, 200).css('z-index', '200');
+			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 700)/4 - surfaceWidth + 'px'}, 1500);
 		}
 
 		$('#surface-wrapper').each(function () {
@@ -341,11 +346,7 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('top', 660 + 'px');
 		}
 
-		var surfaceWidth = $(window).width()/10.666;
-		var surfaceHeight = $(window).width()/16.134;
-
 		$('ul.surfaces li').css({width: surfaceWidth + 'px', height: surfaceHeight + 'px'});
-		$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 700)/4 - surfaceWidth + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
 		$('#go-to-tools').delay(1500).animate({'top': -10 + 'px'}, 500);
