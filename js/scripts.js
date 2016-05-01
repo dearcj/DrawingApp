@@ -83,8 +83,13 @@ jQuery(document).ready(function($) {
 		$('#filters-canvas').css({width: 285 + 'px', height: 196 + 'px'});
 		$('.filters-canvas p').css({'opacity': 0, height: 0});
 		$('li.its-done').css('width', 150 + 'px');
+		$('ul.tools-buttons.filters-tb').css({width: 205 + 'px', height: 65 + 'px'});
+		$('ul.tools-buttons.filters-tb li').css({'margin-top': 0 + 'px'});
+		$('#wand').css({width: 55 + 'px', height: 260 + 'px', right: (($(window).width() - 285)/2 - 60)/4 + 'px'});
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
+		$('li.its-done').css('width', 226 + 'px');
+		$('#wand').css({width: 120 + 'px', height: 575 + 'px', right: (($(window).width() - 700)/2 - 120)/4 + 'px'});
 	}
 
 	// Free from resize
