@@ -1249,7 +1249,7 @@ jQuery(document).ready(function($) {
 	$(window).resize(function(){
 		if (window.location.href.indexOf('surface')) {
 			console.log(window.location.href);
-			surfaceAnimation();
+			//surfaceAnimation();
 		}
 		setBgImageSize();
 		museumResponsive();
