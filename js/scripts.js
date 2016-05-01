@@ -388,11 +388,11 @@ jQuery(document).ready(function($) {
 
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
 		$('ul.tools').css({width: toolsWidth*2 + 'px', height: toolsHeight + 'px'}).delay(500).animate({'margin-left': -toolsWidth*5 + 'px'}, 1000);
-		$('ul.tools > li').css({width: toolsWidth + 'px', height: toolsWidth + 'px'});
-		$('ul.tools > li#btn-grass').css({width: $(window).width()/18.11 + 'px', height: $(window).width()/14.77 + 'px'});
-		$('ul.tools > li#btn-orange').css({width: $(window).width()/17.29 + 'px', height: $(window).width()/14.77 + 'px'});
-		$('ul.tools > li#btn-catchup').css({width: $(window).width()/15 + 'px', height: $(window).width()/30 + 'px'});
-		$('ul.tools > li#btn-pistol').css({width: $(window).width()/18.64 + 'px', height: $(window).width()/17.14 + 'px'});
+		//$('ul.tools > li').css({width: toolsWidth + 'px', height: toolsWidth + 'px'});
+		//$('ul.tools > li#btn-grass').css({width: $(window).width()/18.11 + 'px', height: $(window).width()/14.77 + 'px'});
+		//$('ul.tools > li#btn-orange').css({width: $(window).width()/17.29 + 'px', height: $(window).width()/14.77 + 'px'});
+		//$('ul.tools > li#btn-catchup').css({width: $(window).width()/15 + 'px', height: $(window).width()/30 + 'px'});
+		//$('ul.tools > li#btn-pistol').css({width: $(window).width()/18.64 + 'px', height: $(window).width()/17.14 + 'px'});
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
