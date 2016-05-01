@@ -272,12 +272,12 @@ jQuery(document).ready(function($) {
 			leftAbsPath = relPath + imgs[i].pic;
 			rightAbsPath = relPath + imgs[imgs.length - i].pic;
 			$('ul.paintings.left-side a:nth-child(i+1)').attr('href', leftAbsPath);
-			$('ul.paintings.left-side a:nth-child(i+1) li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url('leftAbsPath') no-repeat');
-			$('ul.paintings.left-side a:nth-child(i+1):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('leftAbsPath') no-repeat');
+			$('ul.paintings.left-side a:nth-child(i+1) li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftAbsPath + ') no-repeat');
+			$('ul.paintings.left-side a:nth-child(i+1):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + leftAbsPath + ') no-repeat');
 
 			$('ul.paintings.right-side a:nth-child(i+1)').attr('href', rightAbsPath);
-			$('ul.paintings.right-side a:nth-child(i+1) li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url('rightAbsPath') no-repeat');
-			$('ul.paintings.right-side a:nth-child(i+1):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('rightAbsPath') no-repeat');
+			$('ul.paintings.right-side a:nth-child(i+1) li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightAbsPath + ') no-repeat');
+			$('ul.paintings.right-side a:nth-child(i+1):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + rightAbsPath + ') no-repeat');
 		}
 	}
 
