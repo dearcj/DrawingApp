@@ -341,8 +341,8 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('top', 660 + 'px');
 		}
 
-		$('ul.surfaces li').css({width: ($(window).width() - 700)/6.776 + 'px', height: ($(window).width() - 700)/10.248 + 'px'});
-		$('ul.surfaces').css({width: ($(window).width() - 700)/3.388 + 'px', height: ($(window).width() - 700)/2.562 + 'px'}).delay(500).animate({'margin-left': (($(window).width() - 700) / 2 - 360) / 2 + 'px'}, 1500);
+		$('ul.surfaces li').css({width: $(window).width()/10.666 + 'px', height: $(window).width()/16.134 + 'px'});
+		$('ul.surfaces').css({width: $(window).width()/5.333 + 'px', height: $(window).width()/4.033 + 'px'}).delay(500).animate({'margin-left': (($(window).width() - 700) / 2 - 360) / 2 + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
 		$('#go-to-tools').delay(1500).animate({'top': -10 + 'px'}, 500);
