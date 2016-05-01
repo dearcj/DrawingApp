@@ -266,11 +266,11 @@ jQuery(document).ready(function($) {
 
 	function setRandomImgs() {
 
-		var leftAbsPath = '', rightAbsPath = '', j = imgs.length;
+		var leftAbsPath = '', rightAbsPath = '', j = imgs.length - 1;
 
 		for (var i = 0; i < 3; i++) {
 			leftAbsPath = relPath + imgs[i].pic;
-			rightAbsPath = relPath + imgs[j-i-1].pic;
+			rightAbsPath = relPath + imgs[j-i].pic;
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftAbsPath + ') no-repeat');
