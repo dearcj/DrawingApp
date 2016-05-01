@@ -388,6 +388,7 @@ jQuery(document).ready(function($) {
 
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
 		$('ul.tools').css({width: toolsWidth*2 + 'px', height: toolsHeight + 'px'}).delay(500).animate({'margin-left': -toolsWidth*5 + 'px'}, 1000);
+		$('ul.tools li').css({width: toolsWidth + 'px', height: toolsWidth + 'px'});
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
