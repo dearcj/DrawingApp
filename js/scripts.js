@@ -387,7 +387,7 @@ jQuery(document).ready(function($) {
 		var toolsHeight = $(window).width()/3.34;
 
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
-		$('ul.tools').css({width: toolsWidth*2 + 'px', height: toolsHeight + 'px'});delay(500).animate({'margin-left': -toolsWidth + 'px'}, 1000);
+		$('ul.tools').css({width: toolsWidth*2 + 'px', height: toolsHeight + 'px'});delay(500).animate({'margin-left': -100 + 'px'}, 1000);
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
