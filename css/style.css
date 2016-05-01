@@ -1677,8 +1677,6 @@ ul.surfaces {
 ul.surfaces li {
 	position: relative;
 	float: left;
-	width: 180px;
-	height: 119px;
 	margin-top: -5px;
 }
 
