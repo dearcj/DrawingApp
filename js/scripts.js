@@ -1243,6 +1243,7 @@ jQuery(document).ready(function($) {
 	}
 
 	$(window).resize(function(){
+		surfaceAnimation();
 		setBgImageSize();
 		museumResponsive();
 		surfaceResponsive();
