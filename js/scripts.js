@@ -1247,7 +1247,9 @@ jQuery(document).ready(function($) {
 	}
 
 	$(window).resize(function(){
-		surfaceAnimation();
+		if (window.location.href.indexOf('surface')) {
+			surfaceAnimation();
+		}
 		setBgImageSize();
 		museumResponsive();
 		surfaceResponsive();
