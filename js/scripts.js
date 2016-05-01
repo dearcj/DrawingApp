@@ -325,13 +325,13 @@ jQuery(document).ready(function($) {
 				'opacity': 1,
 				'height': 100 + '%'
 			}, 200).css('z-index', '200');
-			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 285)/4 - surfaceWidth + 'px', 'margin-top': (196 - surfaceHeight*4)/2 + 'px'}, 1500);
+			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 285)/4 - surfaceWidth + 'px', 'margin-top': (196 - surfaceHeight*4)/2 + 35 + 'px'}, 1500);
 		} else {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({
 				'opacity': 1,
 				'height': 660 + 'px'
 			}, 200).css('z-index', '200');
-			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 700)/4 - surfaceWidth + 'px', 'margin-top': (495 - surfaceHeight*4)/2 + 'px'}, 1500);
+			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 700)/4 - surfaceWidth + 'px', 'margin-top': (495 - surfaceHeight*4)/2 + 35 + 'px'}, 1500);
 		}
 
 		$('#surface-wrapper').each(function () {
