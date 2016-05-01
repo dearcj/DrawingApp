@@ -373,6 +373,8 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
+		$('ul#helpers li#helper-8').delay(2000).animate({'opacity': 1}, 500);
+
 		$('ul#helpers').css('z-index', '300');
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
