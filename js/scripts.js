@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
 		$('#surface-wrapper p').css({'opacity': 0, height: 0});
 		$('.surface-button.at-the-backyard').css('display', 'none');
 		$('ul#helpers li').css('display', 'none');
-		$('ul.surfaces').css({width: 150 + 'px', height: 220 + 'px', 'margin-top': 35 + 'px', left: -(($(window).width() - 285)/2 - 125)/2 + 'px'});
+		$('ul.surfaces').css({width: 150 + 'px', height: 220 + 'px', 'margin-top': 35 + 'px', left: -(($(window).width() - 285)/2 - 125) + 'px'});
 		$('ul.surfaces li').css({width: 75 + 'px', height: 50 + 'px', 'margin-top': 0 + 'px'});
 		$('ul.surfaces li:nth-child(2n+2)').css('margin-left', -8 + 'px');
 		$('ul.surfaces li.metal').css('left', -55 + 'px');
