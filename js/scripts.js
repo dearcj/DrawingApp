@@ -268,9 +268,9 @@ jQuery(document).ready(function($) {
 
 		var leftAbsPath = '', rightAbsPath = '';
 
-		for (var i=0; i < 3; i++) {
+		for (var i = 0; i < 3; i++) {
 			leftAbsPath = relPath + imgs[i].pic;
-			var j = 5 - i;
+			var j = imgs.length;
 			rightAbsPath = relPath + imgs[j].pic;
 
 			$('ul.paintings.left-side a:nth-child(i+1)').attr('href', leftAbsPath);
