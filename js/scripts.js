@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
 		$('#back-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
 		$('#main-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
 		$('#cursor-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
-		$('ul.tools').css({width: 144 + 'px', height: 288 + 'px', left: 123 + '%', top: 0});
+		$('ul.tools').css({width: 144 + 'px', height: 288 + 'px', left: 44 + '%', top: 0});
 		$('ul.tools > li').css({width: 72 + 'px', height: 72 + 'px'});
 		$('ul.tools > li#coal > ul').css({width: 50 + 'px', height: 80 + 'px'});
 		$('ul.tools > li#coal > ul li').css({width: 25 + 'px', height: 80 + 'px'});
