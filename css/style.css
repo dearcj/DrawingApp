@@ -329,6 +329,10 @@ li#helper-6s {
 	height: 0 !important;
 }
 
+#helper-7 {
+	opacity: 0;
+}
+
 li#helper-9 {
     position: relative;
     top: 450px;
