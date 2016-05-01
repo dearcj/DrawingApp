@@ -353,13 +353,50 @@ jQuery(document).ready(function($) {
 		$('#surface-canvas p').delay(2500).fadeIn(1000);
 	}
 
+	function paintingAnimation() {
+		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
+		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
+		$('#surface-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
+		$('#filters-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
+		$('#surface-wrapper').each(function(){
+			$(this).children().css({'z-index': '100', 'opacity': 0});
+		});
+		$('#filters-wrapper').each(function(){
+			$(this).children().css({'z-index': '100', 'opacity': 0});
+		});
+		if ($(window).width() < 700) {
+			$('#painting-wrapper').delay(500).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+		} else {
+			$('#painting-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+		}
+		$('#painting-wrapper').each(function(){
+			$(this).children().css({'opacity': 1, 'z-index': '200'});
+		});
+
+		$('ul#helpers').css('z-index', '300');
+
+		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+			$('.podval_new').css('top', 0);
+		} else {
+			$('.podval_new').css('top', 660 + 'px');
+		}
+
+		var toolsWidth = $(window).width()/12.88;
+		var toolsHeight = $(window).width()/3.34;
+
+		$('#painting-wrapper ul#helpers').css('z-index', '250');
+		$('ul.tools').css({width: toolsWidth*2 + 'px', height: toolsHeight + 'px'});delay(500).animate({'margin-left': -toolsWidth*5 + 'px'}, 1000);
+		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
+		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
+		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
+		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
+	}
+
 	$('.go-to-surface').on(window.eventType, function(event) {
 		ZSound.stopMusic('street');
-
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('surface');
-
 		surfaceAnimation();
 	});
 
@@ -405,40 +442,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		openPage('painting');
-
-		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
-		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
-		$('#surface-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
-		$('#filters-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
-		$('#surface-wrapper').each(function(){
-			$(this).children().css({'z-index': '100', 'opacity': 0});
-		});
-		$('#filters-wrapper').each(function(){
-			$(this).children().css({'z-index': '100', 'opacity': 0});
-		});
-		if ($(window).width() < 700) {
-			$('#painting-wrapper').delay(500).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-		} else {
-			$('#painting-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-		}
-		$('#painting-wrapper').each(function(){
-			$(this).children().css({'opacity': 1, 'z-index': '200'});
-		});
-
-		$('ul#helpers').css('z-index', '300');
-
-		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
-			$('.podval_new').css('top', 0);
-		} else {
-			$('.podval_new').css('top', 660 + 'px');
-		}
-
-		$('#painting-wrapper ul#helpers').css('z-index', '250');
-		$('ul.tools').delay(500).animate({'margin-left': -670 + 'px'}, 1000);
-		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
-		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
-		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
-		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
+		paintingAnimation();
 	});
 
 	$('.go-to-filters').on(window.eventType, function(event) {
@@ -1248,10 +1252,9 @@ jQuery(document).ready(function($) {
 
 	$(window).resize(function(){
 		if (window.location.href.indexOf('surface') > 0) {
-			console.log(window.location.href);
 			surfaceAnimation();
-		} else {
-			console.log('hi');
+		} else if (window.location.href.indexOf('painting') > 0) {
+			paintingAnimation();
 		}
 		setBgImageSize();
 		museumResponsive();
