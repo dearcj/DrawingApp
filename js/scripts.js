@@ -341,7 +341,7 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('top', 660 + 'px');
 		}
 
-		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 750)/2 - 360)/3.5 + 'px'}, 1500);
+		$('ul.surfaces').delay(500).animate({'margin-left': (($(window).width() - 700)/2 - 360)/2 + 'px'}, 1500);
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
 		$('#go-to-tools').delay(1500).animate({'top': -10 + 'px'}, 500);
@@ -1122,11 +1122,11 @@ jQuery(document).ready(function($) {
 
 		var spanWidth = parseInt(span.css('width'));
 
-		span.css({'font-size': spanWidth/2.5 + '%'});
+		span.css({'font-size': spanWidth/2.93 + '%'});
 
-		window.spanPadding = spanWidth/10;
+		window.spanPadding = spanWidth/13.6;
 
-		span.css({padding: spanPadding/7 * 6 + 'px ' + spanPadding + 'px ' + spanPadding + 'px'});
+		span.css({padding: spanPadding*0.89 + 'px ' + spanPadding + 'px ' + spanPadding + 'px'});
 
 		span.css({'border-radius': spanPadding/1.5 + 'px'});
 
