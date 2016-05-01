@@ -266,8 +266,13 @@ jQuery(document).ready(function($) {
 
 	function setRandomImgs() {
 
+		var leftAbsPath = '', rightAbsPath = '';
+
 		for (var i=0; i < 3; i++) {
-			console.log(i);
+			leftAbsPath = relPath + imgs[i].pic;
+			rightAbsPath = relPath + imgs[5 - i].pic;
+			console.log(leftAbsPath);
+			console.log(rightAbsPath);
 		}
 	}
 
