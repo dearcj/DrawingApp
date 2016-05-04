@@ -524,10 +524,10 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
-		if ($('#in-label').val()) {
-			console.log($('#in-label').val());
-		} else {
+		if ($('#in-label').val() == '') {
 			console.log('bye');
+		} else {
+			console.log($('#in-label').val());
 		}
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
