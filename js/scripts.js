@@ -524,6 +524,12 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
+		if ($('#in-label').val() != '' && $('#in-label').val() != 'Напишите название работы') {
+			$('#in-label').value = 'Напишите название работы';
+			var test = $('#in-label').val();
+			console.log(test);
+		}
+
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
 		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
 		$('#filters-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
