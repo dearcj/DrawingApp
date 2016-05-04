@@ -524,10 +524,10 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
-		if ($('#in-label').val() == 'undefined' || $('#in-label').val() == undefined) {
-			console.log('bye');
+		if (!$('#in-label').val()) {
+			console.log('im a blackstar');
 		} else {
-			console.log($('#in-label').val());
+			console.log('im your doll');
 		}
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
