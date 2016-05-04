@@ -292,7 +292,7 @@ jQuery(document).ready(function($) {
 			rightImgMats = imgs[j-i].materials;
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').innerText = leftImgTitle;
-			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').text('Привет');
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').text(leftImgAuthor);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.materials').innerText = imgs[i].materials;
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftAbsPath + ') no-repeat');
