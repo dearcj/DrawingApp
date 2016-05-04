@@ -474,7 +474,12 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('top', 660 + 'px');
 		}
 
-		$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
+		if ($(window).width() < 700) {
+			$('#main-image').delay(500).animate({'opacity': 1, 'width': 285 + 'px', 'height': 196 + 'px'}, 1000);
+		} else {
+			$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
+		}
+
 		if ($(window).width() > 1535) {
 			$('ul.paintings.left-side').delay(1500).animate({'margin-left': 12 + '%'}, 1000);
 			$('ul.paintings.right-side').delay(1500).animate({'margin-right': 12 + '%'}, 1000);
