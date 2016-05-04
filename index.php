@@ -291,15 +291,15 @@
 
         <div id="publication-wrapper" class="screens inside">
           <ul class="paintings left-side">
-            <a href="#" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
-            <a href="#" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
-            <a href="#" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
           </ul>
 
           <ul class="paintings right-side">
-            <a href="#" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
-            <a href="#" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
-            <a href="#" class="group1"><li><div><span class="title">«Луг»</span><span class="author">Геннадий Баранкин</span><span class="materials">(скотч, джинсы, кетчуп)</span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
           </ul>
 
           <div id="main-image"><img id="painting-img"></div>
