@@ -279,11 +279,7 @@ jQuery(document).ready(function($) {
 			leftImgAuthor = imgs[i].author;
 			rightImgAuthor = imgs[j-i].author;
 			leftImgMats = imgs[i].materials;
-			rightImgMats = imgs[j-i].materials;
-
-			console.log(leftImgAuthor);
-			console.log(leftImgTitle);
-			console.log(leftImgMats);
+			rightImgMats = imgs[j-i].materials;;
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').textContent = leftImgTitle;
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').textContent = leftImgAuthor;
