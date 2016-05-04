@@ -503,7 +503,7 @@ jQuery(document).ready(function($) {
 		});
 
 		if ($(window).width() < 700) {
-			$('#museum-wrapper').delay(500).animate({'opacity': 1, 'height': 100% + 'px'}, 100).css('z-index', '200');
+			$('#museum-wrapper').delay(500).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
 		} else {
 			$('#museum-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		}
