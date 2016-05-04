@@ -88,6 +88,8 @@ jQuery(document).ready(function($) {
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
 		$('li.its-done').css('width', 226 + 'px');
+
+		$('img#painting-img').css({width: 285 + 'px', height: 196 + 'px'});
 	}
 
 	// Free from resize
@@ -447,6 +449,40 @@ jQuery(document).ready(function($) {
 		$('.filters-canvas p').delay(2500).fadeIn(1000);
 	}
 
+	function publicationAnimation() {
+		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
+		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
+		$('#filters-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
+		$('#painting-wrapper').each(function(){
+			$(this).children().css('z-index', '100');
+		});
+		$('#filters-wrapper').each(function(){
+			$(this).children().css('z-index', '100');
+		});
+		$('#publication-wrapper').delay(1000).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+		$('#publication-wrapper').each(function(){
+			$(this).children().css({'opacity': 1, 'z-index': '200'});
+		});
+
+		$('ul#helpers').css('z-index', '300');
+
+		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+			$('.podval_new').css('top', 0);
+		} else {
+			$('.podval_new').css('top', 660 + 'px');
+		}
+
+		$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
+		if ($(window).width() > 1535) {
+			$('ul.paintings.left-side').delay(1500).animate({'margin-left': 12 + '%'}, 1000);
+			$('ul.paintings.right-side').delay(1500).animate({'margin-right': 12 + '%'}, 1000);
+		} else {
+			$('ul.paintings.left-side').delay(1500).animate({'margin-left': 6 + '%'}, 1000);
+			$('ul.paintings.right-side').delay(1500).animate({'margin-right': 6 + '%'}, 1000);
+		}
+		$('form.sending-form').delay(2000).animate({'top': 0}, 1000);
+	}
+
 	$('.go-to-surface').on(window.eventType, function(event) {
 		ZSound.stopMusic('street');
 		ZSound.Play('stage');
@@ -529,37 +565,7 @@ jQuery(document).ready(function($) {
 			$('#in-label').val('');
 		}*/
 
-		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
-		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
-		$('#filters-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
-		$('#painting-wrapper').each(function(){
-			$(this).children().css('z-index', '100');
-		});
-		$('#filters-wrapper').each(function(){
-			$(this).children().css('z-index', '100');
-		});
-		$('#publication-wrapper').delay(1000).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-		$('#publication-wrapper').each(function(){
-			$(this).children().css({'opacity': 1, 'z-index': '200'});
-		});
-
-		$('ul#helpers').css('z-index', '300');
-
-		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
-			$('.podval_new').css('top', 0);
-		} else {
-			$('.podval_new').css('top', 660 + 'px');
-		}
-
-		$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
-		if ($(window).width() > 1535) {
-			$('ul.paintings.left-side').delay(1500).animate({'margin-left': 12 + '%'}, 1000);
-			$('ul.paintings.right-side').delay(1500).animate({'margin-right': 12 + '%'}, 1000);
-		} else {
-			$('ul.paintings.left-side').delay(1500).animate({'margin-left': 6 + '%'}, 1000);
-			$('ul.paintings.right-side').delay(1500).animate({'margin-right': 6 + '%'}, 1000);
-		}
-		$('form.sending-form').delay(2000).animate({'top': 0}, 1000);
+		publicationAnimation();
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
@@ -1287,6 +1293,8 @@ jQuery(document).ready(function($) {
 			paintingAnimation();
 		} else if (window.location.href.indexOf('filters') > 0) {
 			filtersAnimation();
+		} else if (window.location.href.indexOf('publication') > 0) {
+			publicationAnimation();
 		}
 		setBgImageSize();
 		museumResponsive();
