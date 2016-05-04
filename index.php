@@ -309,7 +309,7 @@
           <form class="sending-form">
             <div class="work-author">
               <div class="item-field"><p class="input-label">Автор:</p><input id='in-author' type="text" placeholder="Укажите ваше имя"></div>
-              <div class="item-field"><p class="input-label">Название картины:</p><input id='in-label' type="text" onfocus="javascript: if (this.value == 'Напишите название работы') this.value = '';" onblur="javascript: if (this.value == '') this.value = 'Напишите название работы'" name="image-name" value="Напишите название работы"></div>
+              <div class="item-field"><p class="input-label">Название картины:</p><input id='in-label' type="text" placeholder="Напишите название работы"></div>
             </div>
             <button name="send" value="Отправить картину в мой музей" type="submit" class="save-and-send go-to-museum">Отправить<br>картину в<br>мой музей</button>
             <ul id="helpers">
