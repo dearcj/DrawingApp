@@ -566,7 +566,7 @@ jQuery(document).ready(function($) {
 			$('#in-label').val('');
 		}*/
 
-		publicationAnimation();
+
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
