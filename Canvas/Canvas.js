@@ -233,8 +233,12 @@ Canvas.prototype.finishAction = function (e) {
 };
 
 Canvas.prototype.startAction = function (e) {
-	this.state.prevMouseX = e.layerX;
-	this.state.prevMouseY = e.layerY;
+	var cursCanv =  $('#main-canvas');
+
+	var mp = this.GetMousePositionInElement(e, cursCanv);
+	this.state.prevMouseX = mp.x;
+	this.state.prevMouseY = mp.y_fromTop;
+
 	this.state.drawState = 'insideAction';
 	this.actions.push(new Action(this.currentBrush));
 

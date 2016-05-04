@@ -70,7 +70,7 @@ var initApplication = function() {
   })
 
   document.getElementById('btn-grass').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/grass.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_grass.png';
     brushGrass.mode = 1;
     canvas.currentBrush = brushGrass;
     brushGrass.onSelect();
