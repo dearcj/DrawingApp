@@ -529,7 +529,7 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-surface').on(window.eventType, function(event) {
 		ZSound.stopMusic('street');
-		ZSound.Play('stage');
+		ZSound.Play('click');
 		window.currentHash = history.state;
 		openPage('surface');
 		surfaceAnimation();
