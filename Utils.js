@@ -234,9 +234,7 @@ function vkpost(t, im, imPath) {
 
                 function onSaveWallPhoto(data) {
                   console.log(data);
-                  VK.api("wall.post", {"attachments": data.response[0].id}, function cb(res) {
-
-                    console;
+                  VK.api("wall.post", {message: t, "attachments": data.response[0].id}, function cb(res) {
                   });   }
 
               }

@@ -4,6 +4,8 @@ window.basePath = 'http://188.227.16.35/wp-content/themes/mmoma/';
 window.selectedSurface = 1;
 
 ZSound.Init([
+	{id: 'scotch', src: "scotch.ogg"},
+
 	{id: 'click', src: "click.ogg"},
 	{id: 'filter', src: "filter.ogg"},
 	{id: 'complete', src: "complete.ogg"},
@@ -821,8 +823,10 @@ jQuery(document).ready(function($) {
 		var imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
 
+
+			var message  = res.name + ': ' + res.description + ' ' +  "Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты создай свою картину!";
 			document.getElementById('post-vk').addEventListener('click', function() {
-				vkpost('asdasd', res.image, res.file);
+				vkpost(message, res.image, res.file);
 			});
 
 			document.getElementById('post-fb').addEventListener('click', function() {
