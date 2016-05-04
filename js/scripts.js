@@ -525,6 +525,7 @@ jQuery(document).ready(function($) {
 		openPage('publication');
 
 		if ($('#in-label').val() != '' && $('#in-label').val() != 'Напишите название работы') {
+			$('#in-label').value = 'Напишите название работы';
 			var test = $('#in-label').val();
 			console.log(test);
 		}
