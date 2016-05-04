@@ -515,6 +515,12 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-publication').on(window.eventType, function(event) {
+		if (!$('#in-label').val()) {
+			console.log('im a blackstar');
+		} else {
+			console.log('im your doll');
+		}
+
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
@@ -523,12 +529,6 @@ jQuery(document).ready(function($) {
 		setRandomImgs();
 
 		openPage('publication');
-
-		if (!$('#in-label').val()) {
-			console.log('im a blackstar');
-		} else {
-			console.log('im your doll');
-		}
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
 		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
