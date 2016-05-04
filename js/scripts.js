@@ -524,7 +524,7 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
-		if (imgs) {
+		if (localStorage.getItem('imageId')) {
 			console.log('hi');
 		}
 
