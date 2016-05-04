@@ -260,6 +260,10 @@ var getImagesByTags = function (tags) {
 		}
 	}
 
+	if (res.length < 6) {
+		console.log('hi');
+	}
+
 	return shuffle(res);
 }
 
