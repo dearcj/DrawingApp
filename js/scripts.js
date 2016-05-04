@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').css('width', 226 + 'px');
 		$('li.its-done').css('width', 226 + 'px');
 
-
+		$('#painting-img').css({width: 285 + 'px', height: 196 + 'px'});
 	}
 
 	// Free from resize
@@ -452,8 +452,8 @@ jQuery(document).ready(function($) {
 
 	function publicationAnimation() {
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
-		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
-		$('#filters-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
+		$('#painting-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
+		$('#filters-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#painting-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
