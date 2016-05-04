@@ -87,6 +87,7 @@ jQuery(document).ready(function($) {
 		$('ul.tools-buttons.filters-tb').css({width: 205 + 'px', height: 65 + 'px'});
 		$('ul.tools-buttons.filters-tb li').css({'margin-top': 0 + 'px'});
 		$('#painting-img').css({width: 285 + 'px', height: 196 + 'px'});
+		$('.paintings').css('display', 'none');
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
 		$('li.its-done').css('width', 226 + 'px');
