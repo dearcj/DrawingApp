@@ -91,8 +91,7 @@ jQuery(document).ready(function($) {
 		$('.paintings').css('display', 'none');
 
 		$('.museum-painting').css({width: 285 + 'px', height: 196 + 'px', top: -90 + 'px'});
-		$('.painting-info').css({width: 350 + 'px', top: -70 + 'px'});
-		$('.museum-button.at-the-backyard').css({width: 100 + 'px', height: 55 + 'px', top: 60 + 'px'});
+		$('.museum-button.at-the-backyard').css({width: 100 + 'px', height: 55 + 'px', 'margin-top': 60 + 'px'});
 		$('.social-buttons').css({right: 5 + '%', top: -52 + '%'});
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
@@ -504,8 +503,10 @@ jQuery(document).ready(function($) {
 
 		if ($(window).width() < 700) {
 			$('#museum-wrapper').delay(500).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+			$('.painting-info').css('width', 350 + 'px').delay(500).animate({'top': -70 + 'px'}, 500);
 		} else {
 			$('#museum-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			$('.painting-info').delay(500).animate({'top': -20 + 'px'}, 500);
 		}
 
 		$('#museum-wrapper').each(function(){
@@ -521,7 +522,6 @@ jQuery(document).ready(function($) {
 		}
 
 		$('.museum-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
-		$('.painting-info').delay(500).animate({'top': -20 + 'px'}, 500);
 		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
 	}
 
