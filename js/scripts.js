@@ -314,7 +314,7 @@ jQuery(document).ready(function($) {
 		if (!$('#in-label').val()) {
 			console.log('im a blackstar');
 		} else {
-			console.log('im your doll');
+			console.log($('#in-label').val());
 		}
 
 		if (hash.indexOf(pageName) > 0) {
