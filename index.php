@@ -124,7 +124,7 @@
 
           <ul id="buttons">
             <div class="left-block">
-              <li id="button-1" class="hor"><span class="up">Раздел в разработке</span></li>
+              <li id="button-1" class="hor"><span class="up"><a href="">Раздел в разработке</a></span></li>
               <li id="button-2" class="hor clear"><span class="down">Раздел в разработке</span></li>
             </div>
             <div class="middle-block">
