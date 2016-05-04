@@ -525,7 +525,7 @@ jQuery(document).ready(function($) {
 		openPage('publication');
 
 		if ($('#in-label').val() != '' && $('#in-label').val() != 'Напишите название работы') {
-			var newVal = 'Напишите название работы';
+			var newVal = 'Привет';
 			$('#in-label').val(newVal);
 		}
 
