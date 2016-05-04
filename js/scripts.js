@@ -24,6 +24,8 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
+	$('#in-label').val('Hi');
+
 	/////check device type
 	/////set canvas W and H
 
