@@ -40,6 +40,7 @@ jQuery(document).ready(function($) {
 	document.getElementById('filters-canvas').height = GLOB_CANV_H;
 
 	if ($(window).width() < 700) {
+		$('#wrapper').css('overflow', 'visible');
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
 
@@ -89,7 +90,7 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').css('width', 226 + 'px');
 		$('li.its-done').css('width', 226 + 'px');
 
-		$('img#painting-img').css({width: 285 + 'px', height: 196 + 'px'});
+		$('#painting-img').css({width: 285 + 'px', height: 196 + 'px'});
 	}
 
 	// Free from resize
