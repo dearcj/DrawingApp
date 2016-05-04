@@ -261,7 +261,8 @@ var getImagesByTags = function (tags) {
 	}
 
 	if (res.length < 6) {
-		console.log('hi');
+		console.log(picTags.length);
+		var rand = min + Math.floor(Math.random() * (max + 1 - min));
 	}
 
 	return shuffle(res);
