@@ -311,12 +311,6 @@ jQuery(document).ready(function($) {
 	function openPage(pageName) {
 		event.preventDefault();
 
-		if (!$('#in-label').val()) {
-			console.log('im a blackstar');
-		} else {
-			console.log($('#in-label').val());
-		}
-
 		if (hash.indexOf(pageName) > 0) {
 			var stateObj = { hash: hashBeforeReload.hash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
@@ -529,6 +523,11 @@ jQuery(document).ready(function($) {
 		setRandomImgs();
 
 		openPage('publication');
+
+		if ($('#in-label').val()) {
+			$('#in-author').val('');
+			$('#in-label').val('');
+		}
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
 		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
