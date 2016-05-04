@@ -8,7 +8,7 @@ extend(DenimBrush, Brush);
 
 function DenimBrush(color) {
 	Brush.apply(this, color);
-	this.name = 'деним';
+	this.name = 'джинса';
 }
 
 DenimBrush.prototype.onSelect = function () {

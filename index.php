@@ -169,7 +169,7 @@
             <li class="board"><p>Доска</p></li>
             <li class="canvas"><p>Холст</p></li>
             <li class="brick"><p>Кирпич</p></li>
-            <li class="cardboard"><p>Коробка</p></li>
+            <li class="cardboard"><p>Картон</p></li>
             <li class="wall"><p>Обои</p></li>
             <li class="metal"><p>Металл</p></li>
           </ul>

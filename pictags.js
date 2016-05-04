@@ -120,7 +120,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/denim-1.jpg',
-		tag: 'деним',
+		tag: 'джинса',
 		fulltags: '',
 		title: '«Утро, день, вечер, ночь»',
 		author: 'Виктор Пивоваров',
@@ -128,7 +128,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/denim-2.jpg',
-		tag: 'деним',
+		tag: 'джинса',
 		fulltags: '',
 		title: '«Бассейн»',
 		author: 'Александр Дашевский',
@@ -136,7 +136,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/denim-3.jpg',
-		tag: 'деним',
+		tag: 'джинса',
 		fulltags: '',
 		title: '«Валик - оружие маляра»',
 		author: 'Дамир Муратов',
