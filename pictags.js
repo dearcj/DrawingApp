@@ -252,17 +252,18 @@ var picTags = [
 
 var getImagesByTags = function (tags) {
 	var res = [];
+
 	for (var i = 0; i < tags.length; ++i) {
-		for (var j = 0; j < picTags.length; j++) {
+		for (var j = 0; j < picTags.length; ++j) {
 			if (tags[i] == picTags[j].tag) {
 				res.push(picTags[j]);
+
+				var rand = Math.floor(Math.random() * picTags.length);
+				if (tags.length < 6 && rand != j) {
+					res.push(picTags[rand]);
+				}
 			}
 		}
-	}
-
-	if (res.length < 6) {
-		console.log(picTags.length);
-		var rand = min + Math.floor(Math.random() * (max + 1 - min));
 	}
 
 	return shuffle(res);
