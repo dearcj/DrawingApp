@@ -524,7 +524,7 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
-		if ($('#in-label').val() == '') {
+		if ($('#in-label').val() == 'undefined' || $('#in-label').val() == undefined) {
 			console.log('bye');
 		} else {
 			console.log($('#in-label').val());
