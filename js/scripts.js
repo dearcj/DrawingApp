@@ -582,10 +582,8 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
-	//if ($('#in-label').val()) {
-	//	$('#in-author').val('');
-	//	$('#in-label').val('');
-	//}
+		$('#in-author').val('');
+		$('#in-label').val('');
 
 		publicationAnimation();
 	});
