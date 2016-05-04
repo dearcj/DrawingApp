@@ -524,8 +524,10 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
-		if (localStorage.getItem('imageId')) {
+		if ($('#in-label').val() != '') {
 			console.log('hi');
+		} else {
+			console.log('bye');
 		}
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
