@@ -371,7 +371,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function paintingAnimation() {
-		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
+		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.4 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
 		$('#surface-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#filters-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');

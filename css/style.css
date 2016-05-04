@@ -86,6 +86,7 @@ ul {
 
 #wrapper {
 	background-color: #300F06;
+	overflow: hidden;
 }
 
 .header {
@@ -2122,7 +2123,7 @@ ul.logotypes li a {
 		width: 300px;
 	}
 	.logotypes li:first-child a img {
-	    width: 5px !important;
+	    width: 55px !important;
 	    height: 55px !important;
 	}
 	.logotypes li:last-child a img {
@@ -2142,6 +2143,7 @@ ul.logotypes li a {
 		position: absolute;
 	    margin: 0;
 	    padding: 0;
+		bottom: 5%;
 	    right: 1%;
 	    width: 200px;
 	}
