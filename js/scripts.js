@@ -311,6 +311,12 @@ jQuery(document).ready(function($) {
 	function openPage(pageName) {
 		event.preventDefault();
 
+		if (!$('#in-label').val()) {
+			console.log('im a blackstar');
+		} else {
+			console.log('im your doll');
+		}
+
 		if (hash.indexOf(pageName) > 0) {
 			var stateObj = { hash: hashBeforeReload.hash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
@@ -515,12 +521,6 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-publication').on(window.eventType, function(event) {
-		if (!$('#in-label').val()) {
-			console.log('im a blackstar');
-		} else {
-			console.log('im your doll');
-		}
-
 		ZSound.Play('stage');
 		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
