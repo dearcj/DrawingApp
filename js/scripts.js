@@ -285,7 +285,7 @@ jQuery(document).ready(function($) {
 			rightImgMats = imgs[j-i].materials;
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').innerText = leftImgTitle;
-			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').innerText = 'Привет';
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').innerText = leftImgAuthor;
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.materials').innerText = leftImgMats;
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftAbsPath + ') no-repeat');
@@ -566,7 +566,7 @@ jQuery(document).ready(function($) {
 			$('#in-label').val('');
 		}*/
 
-
+		publicationAnimation();
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
