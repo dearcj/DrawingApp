@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').css('width', 226 + 'px');
 		$('li.its-done').css('width', 226 + 'px');
 
-		$('#painting-img').css({width: 285 + 'px', height: 196 + 'px'});
+
 	}
 
 	// Free from resize
