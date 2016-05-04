@@ -526,11 +526,7 @@ jQuery(document).ready(function($) {
 
 		var titleVal = $('#in-label').val();
 
-		if (titleVal) {
-			console.log($('#in-label').val());
-		} else {
-			console.log('bye');
-		}
+		console.log(titleVal);
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
 		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
