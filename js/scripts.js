@@ -524,7 +524,11 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
-		console.log($('#in-label').val());
+		if ($('#in-label').val()) {
+			console.log('hi');
+		} else {
+			console.log('bye');
+		}
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
 		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
