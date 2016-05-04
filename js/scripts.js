@@ -524,10 +524,10 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
-		if ($('#in-label').val()) {
+/*		if ($('#in-label').val()) {
 			$('#in-author').val('');
 			$('#in-label').val('');
-		}
+		}*/
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
 		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
