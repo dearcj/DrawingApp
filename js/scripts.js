@@ -291,16 +291,16 @@ jQuery(document).ready(function($) {
 			leftImgMats = imgs[i].materials;
 			rightImgMats = imgs[j-i].materials;
 
-			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').innerText = leftImgTitle;
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').text(leftImgTitle);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').text(leftImgAuthor);
-			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.materials').innerText = imgs[i].materials;
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.materials').text(leftImgMats);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftAbsPath + ') no-repeat');
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + leftAbsPath + ') no-repeat');
 
-			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.title').textContent = rightImgTitle;
-			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.author').textContent = rightImgAuthor;
-			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.materials').textContent = rightImgMats;
+			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.title').text(rightImgTitle);
+			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.author').text(rightImgAuthor);
+			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.materials').text(rightImgMats);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ')').attr('href', rightAbsPath);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightAbsPath + ') no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + rightAbsPath + ') no-repeat');
