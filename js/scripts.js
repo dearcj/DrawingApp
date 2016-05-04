@@ -89,6 +89,8 @@ jQuery(document).ready(function($) {
 		$('#main-image').css({width: 285 + 'px', height: 196 + 'px'});
 		$('#painting-img').css({width: 285 + 'px', height: 196 + 'px'});
 		$('.paintings').css('display', 'none');
+
+		$('.museum-painting').css({width: 285 + 'px', height: 196 + 'px'});
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
 		$('li.its-done').css('width', 226 + 'px');
@@ -490,6 +492,30 @@ jQuery(document).ready(function($) {
 		$('form.sending-form').delay(2000).animate({'top': 0}, 1000);
 	}
 
+	function museumAnimation() {
+		$('#index-wrapper').fadeOut(500).addClass('hidden');
+		$('#publication-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
+		$('#publication-wrapper').each(function(){
+			$(this).children().css('z-index', '100');
+		});
+		$('#museum-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+		$('#museum-wrapper').each(function(){
+			$(this).children().css({'opacity': 1, 'z-index': '200'});
+		});
+
+		$('ul#helpers').css('z-index', '300');
+
+		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+			$('.podval_new').css('top', 0);
+		} else {
+			$('.podval_new').css('top', 660 + 'px');
+		}
+
+		$('.museum-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
+		$('.painting-info').delay(500).animate({'top': -20 + 'px'}, 500);
+		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
+	}
+
 	$('.go-to-surface').on(window.eventType, function(event) {
 		ZSound.stopMusic('street');
 		ZSound.Play('stage');
@@ -513,27 +539,7 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('museum');
 
-		$('#index-wrapper').fadeOut(500).addClass('hidden');
-		$('#publication-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
-		$('#publication-wrapper').each(function(){
-			$(this).children().css('z-index', '100');
-		});
-		$('#museum-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-		$('#museum-wrapper').each(function(){
-			$(this).children().css({'opacity': 1, 'z-index': '200'});
-		});
-
-		$('ul#helpers').css('z-index', '300');
-
-		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
-			$('.podval_new').css('top', 0);
-		} else {
-			$('.podval_new').css('top', 660 + 'px');
-		}
-
-		$('.museum-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
-		$('.painting-info').delay(500).animate({'top': -20 + 'px'}, 500);
-		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
+		museumAnimation();
 	});
 
 	$('.go-to-tools').on(window.eventType, function(event) {
@@ -1302,6 +1308,8 @@ jQuery(document).ready(function($) {
 			filtersAnimation();
 		} else if (window.location.href.indexOf('publication') > 0) {
 			publicationAnimation();
+		} else if (window.location.href.indexOf('museum') > 0) {
+			museumAnimation();
 		}
 		setBgImageSize();
 		museumResponsive();
