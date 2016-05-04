@@ -8,194 +8,245 @@ var picTags = [
 	{
 		pic: 'pictags/canvas/board.jpg',
 		tag: 'доска',
-		fulltags: ''
+		fulltags: '',
+		title: 'Из серии «Школьные доски»',
+		author: 'Сергей Волков',
+		materials: '(школьная доска, мел, лак)'
 	},
 	{
 		pic: 'pictags/canvas/brick.jpg',
 		tag: 'кирпич',
-		fulltags: ''
+		fulltags: '',
+		title: '«Окно LXIV»',
+		author: 'Иван Чуйков',
+		materials: '(дерево, акрил)'
 	},
 	{
 		pic: 'pictags/canvas/canvas.jpg',
 		tag: 'полотно',
-		fulltags: ''
+		fulltags: '',
+		title: '«Птица»',
+		author: 'Олег Ланг',
+		materials: '(тик матрацный, мешковина, масло, коллаж)'
 	},
 	{
 		pic: 'pictags/canvas/cardboard.jpg',
 		tag: 'картон',
-		fulltags: ''
+		fulltags: '',
+		title: 'Из серии «Головы героев»',
+		author: 'Валерий Кошляков',
+		materials: '(гофрокартон, темпера)'
 	},
 	{
 		pic: 'pictags/canvas/metal.jpg',
 		tag: 'метал',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Луна и на солнце пятна»',
+		author: 'Ирина Затуловская',
+		materials: '(металл, масло)'
 	},
 	{
 		pic: 'pictags/canvas/wallpaper.jpg',
 		tag: 'обои',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Балет»',
+		author: 'Лариса Резун-Звездочетова',
+		materials: '(оргалит, акрил, золотая фольга)'
 	},
 	{
 		pic: 'pictags/canvas/wood.jpg',
 		tag: 'дерево',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Дверь в мастерскую»',
+		author: 'Инал Савченков',
+		materials: '(дерево, металл, масло)'
 	},
 	{
 		pic: 'pictags/tools/scotch-1.jpg',
 		tag: 'скотч',
-		fulltags: ''
-
+		fulltags: '',
+		title: 'Группа «Кино»',
+		author: 'Тимур Новиков',
+		materials: '(бумага, акрил)'
 	},
 	{
 		pic: 'pictags/tools/scotch-2.jpg',
 		tag: 'скотч',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Аварийная машина»',
+		author: 'Леонид Семейко',
+		materials: '(холст, масло)'
 	},
 	{
 		pic: 'pictags/tools/scotch-3.jpg',
 		tag: 'скотч',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Аполлон, вдохновляющий эпического поэта»',
+		author: 'Группа АЕС',
+		materials: '(бумага, шелкография, пастель, сусальное золото, лак)'
 	},
 	{
 		pic: 'pictags/tools/chalk-1.jpg',
 		tag: 'мел',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Фонарик»',
+		author: 'Никита Алексеев',
+		materials: '(холст, акрил, пастель)'
 	},
 	{
 		pic: 'pictags/tools/chalk-2.jpg',
 		tag: 'мел',
-		fulltags: ''
-
+		fulltags: '',
+		title: 'Из серии «Женская сборная Чечни по прыжкам с парашютом»',
+		author: 'Алексей Каллима',
+		materials: '(холст, сангина, уголь, мел)'
 	},
 	{
 		pic: 'pictags/tools/grass.jpg',
 		tag: 'трава',
-		fulltags: ''
+		fulltags: '',
+		title: '«Трава»',
+		author: 'Александр Якут',
+		materials: '(холст, масло)'
 
 	},
 	{
 		pic: 'pictags/tools/orange.jpg',
 		tag: 'апельсин',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Мячи Spalding»',
+		author: 'Александр Виноградов, Владимир Дубосарский',
+		materials: '(холст, масло)'
 	},
 	{
 		pic: 'pictags/tools/denim-1.jpg',
 		tag: 'деним',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Утро, день, вечер, ночь»',
+		author: 'Виктор Пивоваров',
+		materials: '(холст на оргалите, масло)'
 	},
 	{
 		pic: 'pictags/tools/denim-2.jpg',
 		tag: 'деним',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Бассейн»',
+		author: 'Александр Дашевский',
+		materials: '(холст, масло)'
 	},
 	{
 		pic: 'pictags/tools/denim-3.jpg',
 		tag: 'деним',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Валик - оружие маляра»',
+		author: 'Дамир Муратов',
+		materials: '(холст, масло)'
 	},
 	{
 		pic: 'pictags/tools/ketchup.jpg',
 		tag: 'кетчуп',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Буги-Вуги Е-Е»',
+		author: 'Олег Котельников',
+		materials: '(холст, масло)'
 	},
 	{
 		pic: 'pictags/tools/needle-1.jpg',
 		tag: 'нитки',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Песни дикой косатки»',
+		author: 'Татьяна Ахметгалиева',
+		materials: '(ткань, нити, вышивка)'
 	},
 	{
 		pic: 'pictags/tools/needle-2.jpg',
 		tag: 'нитки',
-		fulltags: ''
-
+		fulltags: '',
+		title: 'Clan Rmmbrnce, из серии «Sub»',
+		author: 'Влад Кульков',
+		materials: '(холст, акрил, маркер, тушь)'
 	},
 	{
 		pic: 'pictags/tools/pistol.jpg',
 		tag: 'пистолет',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Самба»',
+		author: 'Евгений Вахтангов',
+		materials: '(дерево, картон, масло, оберточная бумага, коллаж)'
 	},
 	{
 		pic: 'pictags/filters/bubble.jpg',
 		tag: 'пузырек',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«I wonder who this artist is» из серии «I am not»',
+		author: 'Юрий Альберт',
+		materials: '(холст, акрил)'
 	},
 	{
-		pic: 'pictags/filters/diptih-1.jpg',
+		pic: 'pictags/filters/diptih.jpg',
 		tag: 'диптих',
-		fulltags: ''
-
-	},
-	{
-		pic: 'pictags/filters/diptih-2.jpg',
-		tag: 'диптих',
-		fulltags: ''
-
-	},
-	{
-		pic: 'pictags/filters/diptih-3.jpg',
-		tag: 'диптих',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Urban Angels»',
+		author: 'Виталий Комар, Александр Меламид',
+		materials: '(металл, масло)'
 	},
 	{
 		pic: 'pictags/filters/distortion.jpg',
 		tag: 'искажение',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Русско-американская картина»',
+		author: 'Евгений Гороховский',
+		materials: '(холст, масло)'
 	},
 	{
-		pic: 'pictags/filters/inversion-1.jpg',
+		pic: 'pictags/filters/inversion.jpg',
 		tag: 'инверсия',
-		fulltags: ''
-
-	},
-	{
-		pic: 'pictags/filters/inversion-2.jpg',
-		tag: 'инверсия',
-		fulltags: ''
-
-	},
-	{
-		pic: 'pictags/filters/inversion-3.jpg',
-		tag: 'инверсия',
-		fulltags: ''
-
+		fulltags: '',
+		title: '«Энди Уорхол»',
+		author: 'Игорь Макаревич',
+		materials: '(фанера, папье-маше, акрил, бронзовая краска, позолота)'
 	},
 	{
 		pic: 'pictags/filters/pattern.jpg',
 		tag: 'паттерн',
-		fulltags: ''
+		fulltags: '',
+		title: '«Голубая икра»',
+		author: 'Александр Косолапов',
+		materials: '(холст, акрил)'
 	},
 	{
 		pic: 'pictags/filters/pixelization.jpg',
 		tag: 'пикселизация',
-		fulltags: ''
+		fulltags: '',
+		title: 'Из серии «Futurussia»',
+		author: 'Наталья Стручкова',
+		materials: '(холст, акрил)'
 	}
 	,
 	{
 		pic: 'pictags/filters/rama-1.jpg',
 		tag: 'рамка',
-		fulltags: ''
+		fulltags: '',
+		title: '«Иллюзия исчезновения заполненности»',
+		author: 'Иван Плющ, Ирина Дрозд',
+		materials: '(дерево, металл, пластик, эмаль)'
 	}
 	,
 	{
 		pic: 'pictags/filters/rama-2.jpg',
 		tag: 'рамка',
-		fulltags: ''
+		fulltags: '',
+		title: '«Big Black Pixel»',
+		author: 'Георгий Пузенков',
+		materials: '(холст, акрил)'
+	},
+	{
+		pic: 'pictags/filters/polyptih.jpg',
+		tag: 'полиптих',
+		fulltags: '',
+		title: '«Человеческое, слишком человеческое»',
+		author: 'Григорий Майофис',
+		materials: '(холст, масло)'
 	}
 ];
 

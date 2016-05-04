@@ -269,16 +269,28 @@ jQuery(document).ready(function($) {
 
 	function setRandomImgs() {
 
-		var leftAbsPath = '', rightAbsPath = '', j = imgs.length - 1;
+		var leftAbsPath = '', rightAbsPath = '', leftImgTitle = '', rightImgTitle = '', leftImgAuthor = '', rightImgAuthor = '', leftImgMats = '', rightImgMats = '', j = imgs.length - 1;
 
 		for (var i = 0; i < 3; i++) {
 			leftAbsPath = relPath + imgs[i].pic;
 			rightAbsPath = relPath + imgs[j-i].pic;
+			leftImgTitle = imgs[i].title;
+			rightImgTitle = imgs[j-i].title;
+			leftImgAuthor = imgs[i].author;
+			rightImgAuthor = imgs[j-i].author;
+			leftImgMats = imgs[i].materials;
+			rightImgMats = imgs[j-i].materials;
 
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').textContent = leftImgTitle;
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').textContent = leftImgAuthor;
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.materials').textContent = leftImgMats;
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftAbsPath + ') no-repeat');
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + leftAbsPath + ') no-repeat');
 
+			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.title').textContent = rightImgTitle;
+			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.author').textContent = rightImgAuthor;
+			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.materials').textContent = rightImgMats;
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ')').attr('href', rightAbsPath);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightAbsPath + ') no-repeat');
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + rightAbsPath + ') no-repeat');
