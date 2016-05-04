@@ -281,6 +281,10 @@ jQuery(document).ready(function($) {
 			leftImgMats = imgs[i].materials;
 			rightImgMats = imgs[j-i].materials;
 
+			console.log(leftImgAuthor);
+			console.log(leftImgTitle);
+			console.log(leftImgMats);
+
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').textContent = leftImgTitle;
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').textContent = leftImgAuthor;
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.materials').textContent = leftImgMats;
