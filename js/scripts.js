@@ -24,8 +24,6 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
-	$('#in-label').val('Hi');
-
 	/////check device type
 	/////set canvas W and H
 
@@ -526,9 +524,7 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
-		var titleVal = $('#in-label').val();
-
-		console.log(titleVal);
+		console.log($('#in-label').val());
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
 		$('#painting-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
