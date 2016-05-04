@@ -525,9 +525,8 @@ jQuery(document).ready(function($) {
 		openPage('publication');
 
 		if ($('#in-label').val() != '' && $('#in-label').val() != 'Напишите название работы') {
-			$('#in-label').val('Напишите название работы');
-			var test = $('#in-label').val();
-			console.log(test);
+			var newVal = 'Напишите название работы';
+			$('#in-label').val(newVal);
 		}
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
