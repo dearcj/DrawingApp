@@ -524,9 +524,8 @@ jQuery(document).ready(function($) {
 
 		openPage('publication');
 
-		if ($('#in-label').val() != '' && $('#in-label').val() != 'Напишите название работы') {
-			var newVal = 'Привет';
-			$('#in-label').val(newVal);
+		if (imgs) {
+			console.log('hi');
 		}
 
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
