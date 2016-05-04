@@ -525,7 +525,7 @@ jQuery(document).ready(function($) {
 		openPage('publication');
 
 		if ($('#in-label').val() != '') {
-			console.log($('#in-label').val());
+			console.log('hi');
 		} else {
 			console.log('bye');
 		}
