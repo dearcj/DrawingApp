@@ -92,7 +92,7 @@ jQuery(document).ready(function($) {
 
 		$('.museum-painting').css({width: 285 + 'px', height: 196 + 'px', top: -90 + 'px'});
 		$('.museum-button.at-the-backyard').css({width: 100 + 'px', height: 55 + 'px', 'margin-top': 60 + 'px'});
-		$('.social-buttons').css({right: 5 + '%', top: -52 + '%'});
+		$('.social-buttons').css({right: 6 + '%', top: -52 + '%'});
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
 		$('li.its-done').css('width', 226 + 'px');
