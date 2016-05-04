@@ -86,11 +86,10 @@ jQuery(document).ready(function($) {
 		$('li.its-done').css('width', 150 + 'px');
 		$('ul.tools-buttons.filters-tb').css({width: 205 + 'px', height: 65 + 'px'});
 		$('ul.tools-buttons.filters-tb li').css({'margin-top': 0 + 'px'});
+		$('#painting-img').css({width: 285 + 'px', height: 196 + 'px'});
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
 		$('li.its-done').css('width', 226 + 'px');
-
-		$('#painting-img').css({width: 285 + 'px', height: 196 + 'px'});
 	}
 
 	// Free from resize
