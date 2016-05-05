@@ -269,27 +269,46 @@ function applyFilter(canvId, imgData, filterNumber) {
   var cb;
   window.filterTag = '';
   ZSound.Play('filter');
+
+  var saveImgCBTricky = function (canvas, dx, dy) {
+    window.savedImage = canvas.toDataURL("image/png", 0.8);
+    var ctx = canvas.getContext('2d');
+
+    var img = new Image();
+    img.src = window.trickySrc;
+
+    if (!dx) dx = 0;
+    if (!dy) dy = 0;
+    img.onload = function () {
+      ctx.drawImage(img, 0, 0);
+    }
+  }
+
   var saveImgCB = function (canvas) {
     window.savedImage = canvas.toDataURL("image/png", 0.8);
   }
   if (filterNumber == 1) {
-   var src = relPath + 'filters/diptih.png';
-   cb = applyOverFilter(saveImgCB, src, canvId, imgData, 0, 0, true);
+    window.trickySrc = relPath + 'filters/diptih.png';
+    var src = relPath + 'filters/diptih2.png';
+   cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true);
     window.filterTag = 'диптих';
    }
   if (filterNumber == 2) {
+    window.trickySrc = relPath + 'filters/modern.png';
     var src = relPath + 'filters/modern.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData);
+    cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData);
     window.filterTag = 'рамка';
   }
   if (filterNumber == 3) {
-    var src = relPath + 'filters/poliptih.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, 0, 0, true);
+    window.trickySrc = relPath + 'filters/poliptih.png';
+    var src = relPath + 'filters/poliptih2.png';
+    cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true);
     window.filterTag = 'диптих';
   }
   if (filterNumber == 4) {
-    var src = relPath + 'filters/vintage.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData);
+    window.trickySrc = relPath + 'filters/vintage.png';
+    var src = relPath + 'filters/vintage2.png';
+    cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData);
     window.filterTag = 'рамка';
   }
   if (filterNumber == 5) {
@@ -318,17 +337,17 @@ function applyFilter(canvId, imgData, filterNumber) {
 
   if (filterNumber == 10) {
     var src = relPath + 'filters/bubble1.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*200, Math.random()*200);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*400, Math.random()*300);
     window.filterTag = 'пузырек';
   }
   if (filterNumber == 11) {
     var src = relPath + 'filters/bubble2.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*200, Math.random()*200);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*400, Math.random()*300);
     window.filterTag = 'пузырек';
   }
   if (filterNumber == 12) {
     var src = relPath + 'filters/bubble3.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*200, Math.random()*200);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*400, Math.random()*300);
     window.filterTag = 'пузырек';
   }
   var dw = 1;

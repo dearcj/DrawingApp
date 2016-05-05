@@ -39,7 +39,7 @@ DenimBrush.prototype.onFinish = function () {
 
 DenimBrush.prototype.onDown = function (ctx, x, y) {
 	this.rotation = 1;
-	this.scale = 0.2;
+	this.scale = 0.1;
 	this.use({x2: x, y2: y}, ctx);
 
 	ZSound.Play('jeans');
