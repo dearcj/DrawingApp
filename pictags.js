@@ -257,10 +257,11 @@ var getImagesByTags = function (tags) {
 		for (var j = 0; j < picTags.length; ++j) {
 			if (tags[i] == picTags[j].tag) {
 				res.push(picTags[j]);
+				console.log(j);
 
 				var rand = Math.floor(Math.random() * picTags.length);
 				if (tags.length < 6 && rand != j) {
-					console.log(picTags[rand].tag);
+					console.log(rand);
 					res.push(picTags[rand]);
 				}
 			}
