@@ -446,7 +446,7 @@ jQuery(document).ready(function($) {
 		$('#painting-wrapper').each(function(){
 			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
-		$('#filters-wrapper').delay(1000).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+		$('#filters-wrapper').delay(500).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		$('#filters-wrapper').each(function(){
 			$(this).children().css({'z-index': '200', 'opacity': 1});
 		});
