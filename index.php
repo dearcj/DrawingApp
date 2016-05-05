@@ -16,6 +16,11 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+	    <link rel="stylesheet" href="./wp-content/themes/mmoma/css/style.css">
+	    <link rel="stylesheet" href="/css/style.css">
+
+
     <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/style.css">
     <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/colorbox.css">
     <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/mmoma.css">
