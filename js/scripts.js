@@ -628,7 +628,6 @@ jQuery(document).ready(function($) {
 	window.addEventListener("popstate", function(e) {
 		console.log(currentHash.hash);
 		if (currentHash.hash == 'surface') {
-			console.log('hi');
 			openPage('surface');
 		}
 	}, false);
@@ -837,7 +836,7 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ', ') + ')';
 
-			if (localStorage.getItem('imageId')) {
+			if (imageId) {
 				$('.new-painting').css('display', 'none');
 				$('.painting-info').css('display', 'block');
 				$('#museum-wrapper > p').css('opacity', 0);
