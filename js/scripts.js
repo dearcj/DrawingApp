@@ -834,19 +834,19 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-title').textContent = res.description;
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ', ') + ')';
-
-			if (imageId === null) {
-				console.log('hi');
-				$('.new-painting').css('display', 'none');
-				$('.painting-info').css('display', 'block');
-				$('#museum-wrapper > p').css('opacity', 0);
-			} else {
-				console.log('bye');
-				$('.new-painting').css('display', 'block');
-				$('.painting-info').css('display', 'none');
-				$('#museum-wrapper > p').css('opacity', 1);
-			}
 		});
+
+		if (imageId === null) {
+			console.log('hi');
+			$('.new-painting').css('display', 'none');
+			$('.painting-info').css('display', 'block');
+			$('#museum-wrapper > p').css('opacity', 0);
+		} else {
+			console.log('bye');
+			$('.new-painting').css('display', 'block');
+			$('.painting-info').css('display', 'none');
+			$('#museum-wrapper > p').css('opacity', 1);
+		}
 	}
 
 	$('li.add-filter').click(function(event) {
