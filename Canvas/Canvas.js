@@ -208,7 +208,7 @@ Canvas.prototype.sendPic = function(cbbbb, img) {
 
 	$.ajax({
 		type: "POST",
-		url: "./api/index.php",
+		url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
 		data: data,
 		success: function cb(res) {
 			localStorage.setItem('imageId', res.imageId);
