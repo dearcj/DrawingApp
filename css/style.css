@@ -910,9 +910,9 @@ ul.tools-buttons li:hover {
 }
 
 ul.tools {
-	position: absolute;
+	position: relative;
+	margin-left: -360px;
 	top: 35px;
-	left: 50%;
 	padding-left: 0;
 	margin: 0;
 }
