@@ -420,9 +420,10 @@ jQuery(document).ready(function($) {
 		}
 
 		var toolsWidth = $(window).width()/12.88;
+		var toolsHeight = $(window).width()/3.34;
 
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
-		$('ul.tools').delay(500).animate({'margin-left': toolsWidth*2/3 + 'px'}, 1000);
+		$('ul.tools').css({width: toolsWidth + 'px', height: toolsHeight + 'px'}).delay(500).animate({'margin-left': toolsWidth*2/3 + 'px'}, 1000);
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
