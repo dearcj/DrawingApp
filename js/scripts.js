@@ -93,6 +93,7 @@ jQuery(document).ready(function($) {
 		$('.paintings').css('display', 'none');
 
 		$('.museum-painting').css({width: 285 + 'px', height: 196 + 'px', top: -90 + 'px'});
+		$('#main-image p').css({'opacity': 0, height: 0});
 		$('.museum-button.at-the-backyard').css({width: 100 + 'px', height: 55 + 'px', 'margin-top': 60 + 'px'});
 		$('.social-buttons').css({right: 6 + '%', top: -52 + '%'});
 	} else {
@@ -427,7 +428,7 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
-		$('#tools-canvas p').fadeIn(2000).removeClass('hidden');
+		$('#tools-canvas p').css('display', 'block').fadeIn(2000).removeClass('hidden');
 	}
 
 	function filtersAnimation() {
@@ -500,6 +501,8 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.right-side').delay(1500).animate({'margin-right': 6 + '%'}, 1000);
 		}
 		$('form.sending-form').delay(2000).animate({'top': 0}, 1000);
+
+		$('#main-image p').fadeIn(2000).removeClass('hidden');
 	}
 
 	function museumAnimation() {
@@ -1169,7 +1172,7 @@ jQuery(document).ready(function($) {
 
 		sendingCanvasText.css({width: sendingTextWidth + 'px', 'border-radius': sendingTextBorderRadius + 'px', 'font-size': 530/3.5 + '%', 'padding': 6 * sendingTextPadding/7 + 'px ' + '0 ' + sendingTextPadding + 'px', top: 3 * 530/8 + 'px'});
 
-		hidingHelpers('.main-painting p');
+		hidingHelpers('#main-image p');
 	}
 
 	// ---------HOUSE MENU PLACE CHANGING---------
