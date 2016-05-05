@@ -126,8 +126,6 @@ jQuery(document).ready(function($) {
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
-
-
 	$('#helper-8').on(window.eventType, function(event) {
 		window.mainCanvasObject.makeUndo();
 	});
@@ -423,7 +421,8 @@ jQuery(document).ready(function($) {
 		var toolsHeight = $(window).width()/3.34;
 
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
-		$('ul.tools').css({width: toolsWidth*2 + 'px', height: toolsHeight*4 + 'px'}).delay(500).animate({'margin-left': toolsWidth*4/3 + 'px'}, 1000);
+		$('ul.tools').css({width: toolsWidth*2 + 'px', height: toolsHeight + 'px'}).delay(500).animate({'margin-left': toolsWidth*4/3 + 'px'}, 1000);
+		$('ul.tools > li').css({width: toolsWidth + 'px', height: toolsHeight/4 + 'px'});
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
