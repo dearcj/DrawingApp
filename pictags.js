@@ -260,6 +260,7 @@ var getImagesByTags = function (tags) {
 
 				var rand = Math.floor(Math.random() * picTags.length);
 				if (tags.length < 6 && rand != j) {
+					console.log(picTags[rand].tag);
 					res.push(picTags[rand]);
 				}
 			}
