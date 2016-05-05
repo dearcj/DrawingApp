@@ -515,6 +515,12 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
+		if ($(window).width() < 700) {
+			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': -70 + 'px'}, 1000);
+		} else {
+			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': -35 + 'px'}, 1000);
+		}
+
 		$('ul#helpers').css('z-index', '300');
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
@@ -926,10 +932,6 @@ jQuery(document).ready(function($) {
 			},
 			paintingRatio = paintingRatio(750, 530),
 			darkSideMuseum = $('.dark-side.museum'),
-			newPaintingButton = $('.new-painting'),
-			newPaintingButtonRatio = function(width, height) {
-				return width/height;
-			},
 			newPaintingButtonRatio = newPaintingButtonRatio(247, 90),
 			paintingInfo = $('.painting-info'),
 			socialButtons = $('.social-buttons');
@@ -952,18 +954,13 @@ jQuery(document).ready(function($) {
 
 		darkSideMuseum.css({height: 530/15 + 'px', top: -530/15 + 'px'});
 
-		var newPaintingButtonWidth = 750/4.5;
-
-		newPaintingButton.css({width: newPaintingButtonWidth + 'px', height: newPaintingButtonWidth/newPaintingButtonRatio + 'px', 'top': -newPaintingButtonWidth/newPaintingButtonRatio + 'px'});
-
 		var museumText = $('#museum-wrapper p'),
 			museumTextWidth = 750/2,
 			museumTextPadding = museumTextWidth/12;
 
 		museumText.css({width: museumTextWidth + 'px', 'font-size': 100 + '%', 'padding': 6 * museumTextPadding/7 + 'px ' + '0 ' + museumTextPadding + 'px', top: 0 + 'px'});
 
-		var newPaintingButtonHeight = parseInt(newPaintingButton.css('height')),
-			darkSideMuseumHeight = parseInt(darkSideMuseum.css('height'));
+		var darkSideMuseumHeight = parseInt(darkSideMuseum.css('height'));
 	}
 
 
