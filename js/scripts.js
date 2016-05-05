@@ -494,7 +494,7 @@ jQuery(document).ready(function($) {
 			$('#main-image p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
 			$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
-			$('#main-image p').css({width: 300 + 'px', 'font-size': 230 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: -350 + 'px'});
+			$('#main-image p').css({width: 350 + 'px', 'font-size': 150 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: 105 + 'px'});
 		}
 
 		if ($(window).width() > 1535) {
@@ -1166,7 +1166,7 @@ jQuery(document).ready(function($) {
 
 
 		darkSideSending.css({height: 530/15 + 'px', top: 530 - 530/15 + width/12.5 + 'px'});
-		
+
 		hidingHelpers('#main-image p');
 	}
 
