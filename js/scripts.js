@@ -116,6 +116,7 @@ jQuery(document).ready(function($) {
 	$('ul.paintings.right-side').css('margin-right', -15 + '%');
 	$('form.sending-form').css('top', 200 + 'px');
 	$('.painting-info').css('top', 200 + 'px');
+	$('#main-image').css('top', -500 + 'px');
 
 	//
 
@@ -487,7 +488,8 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('top', 660 + 'px');
 		}
 
-		$('#main-image p').css('display', 'block').delay(500).animate({'opacity': 1}, 1000).removeClass('hidden');
+		$('#main-image').delay(500).animate({top: 0}, 1000);
+		$('#main-image p').css('display', 'block').delay(1000).animate({'opacity': 1}, 2000).removeClass('hidden');
 
 		if ($(window).width() < 700) {
 			$('#main-image').delay(500).animate({'opacity': 1, 'width': 285 + 'px', 'height': 196 + 'px'}, 1000);

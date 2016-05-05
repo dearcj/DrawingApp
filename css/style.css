@@ -697,6 +697,7 @@ ul.paintings a:hover li div {
 }
 
 #main-image {
+	position: relative;
 	opacity: 0;
 	width: 750px;
 	height: 530px;
