@@ -2311,10 +2311,10 @@ ul.logotypes li a {
 
 @media only screen and (max-width: 1200px) {
 	ul.paintings.left-side {
-		margin-left: 3%;
+		margin-left: 3% !important;
 	}
 	ul.paintings.right-side {
-		margin-right: 3%;
+		margin-right: 3% !important;
 	}
 }
 
@@ -2324,10 +2324,10 @@ ul.logotypes li a {
 		height: 95px !important;
 	}
 	ul.paintings.left-side {
-		margin-left: 4%;
+		margin-left: 4% !important;
 	}
 	ul.paintings.right-side {
-		margin-right: 4%;
+		margin-right: 4% !important;
 	}
 }
 
