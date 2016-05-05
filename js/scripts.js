@@ -835,7 +835,7 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ', ') + ')';
 
-			if (window.imageId) {
+			if (typeof imageId !== "undefined") {
 				console.log('hi');
 				$('.new-painting').css('display', 'none');
 				$('.painting-info').css('display', 'block');
