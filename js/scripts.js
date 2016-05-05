@@ -856,7 +856,7 @@ jQuery(document).ready(function($) {
 		if (imageId === null) {
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
-			$('#museum-wrapper > p').delay(5000).animate({opacity: 1}, 2500);
+			$('#museum-wrapper > p').delay(5000).animate({opacity: 0.5}, 2500);
 		} else {
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');
