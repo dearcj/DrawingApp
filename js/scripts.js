@@ -449,6 +449,8 @@ jQuery(document).ready(function($) {
 
 		$('ul#helpers').css('z-index', '300');
 
+		$('ul#helpers li#helper-9').delay(2000).animate({'opacity': 1}, 500);
+
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
 		} else {
