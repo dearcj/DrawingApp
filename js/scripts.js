@@ -1263,13 +1263,7 @@ jQuery(document).ready(function($) {
 		coordinate(3, 91, 52);
 		coordinate(4, 74.25, 52);
 		coordinate(5, 18.5, 55);
-		coordinate(9, 1, 60);
 		coordinate(10, -1.7, 10.7);
-		//coordinate(11, 86.75, 5);
-		//coordinate(12, 10, 23);
-		//coordinate(13, 10, 35);
-		//coordinate(14, 94.5, 41);
-		//coordinate(15, 75.8, 47.7);
 
 		$('#index-wrapper').css({height: artHeight - artHeight/6.48 + 'px', 'top': -artHeight/6.48 + 'px'});
 

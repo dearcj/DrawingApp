@@ -298,11 +298,17 @@ ul#helpers {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	width: 65px;
 	top: 12px;
 	left: 50%;
 	margin-left: -405px;
-	height: 66px !important;
+}
+
+#filters-wrapper ul#helpers {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 495px;
+	margin-left: 10px;
 }
 
 #painting-wrapper ul#helpers li {
@@ -333,12 +339,6 @@ li#helper-6s {
 #helper-7,
 #helper-8 {
 	opacity: 0;
-}
-
-li#helper-9 {
-    position: relative;
-    top: 450px;
-    left: -15px;
 }
 
 ul#helpers li span {
@@ -427,9 +427,10 @@ ul#helpers li:focus span {
 	display: inline-block;
 }
 
-ul#helpers li#helper-8 {
-	width: 65px !important;
-	height: 66px !important;
+ul#helpers li#helper-8,
+ul#helpers li#helper-9 {
+	width: 65px;
+	height: 65px;
 }
 
 ul#helpers li#helper-8:hover span,
@@ -2122,6 +2123,12 @@ ul.logotypes li a {
 		margin-right: 2px;
 	}
 
+	ul.tools li#btn-orange {
+		width: 96px;
+		margin-right: 10px;
+		height: 130px;
+	}
+
 	ul.tools li#denim ul {
 		width: 152px;
 		height: 142px;
@@ -2189,6 +2196,7 @@ ul.logotypes li a {
 	}
 
 	ul.tools > li {
+		width: 100px;
 		height: 115px;
 	}
 
@@ -2210,7 +2218,12 @@ ul.logotypes li a {
 		margin-right: 12px;
 	}
 
-	ul.tools > li#coal > ul {
+	ul.tools li#coal {
+		width: 90px;
+		margin-right: 10px;
+	}
+
+	ul.tools li#coal ul {
 		margin: 30px auto 0;
 		width: 72px;
 		height: 85px;
@@ -2278,8 +2291,8 @@ ul.logotypes li a {
 	}
 
 	ul.tools li.needle-color {
-		width: 18px;
-		height: 18px;
+		width: 18px !important;
+		height: 18px !important;
 	}
 
 	ul.tools li#btn-pistol {
