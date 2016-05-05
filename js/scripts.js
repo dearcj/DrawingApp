@@ -342,6 +342,14 @@ jQuery(document).ready(function($) {
 	function surfaceAnimation() {
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
+		$('#museum-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
+
+		$('#painting-wrapper').each(function(){
+			$(this).children().css({'z-index': '100', 'opacity': 0});
+		});
+		$('#museum-wrapper').each(function(){
+			$(this).children().css({'z-index': '100', 'opacity': 0});
+		});
 
 		var surfaceWidth = $(window).width()/10.666;
 		var surfaceHeight = $(window).width()/16.134;
@@ -516,9 +524,9 @@ jQuery(document).ready(function($) {
 		});
 
 		if ($(window).width() < 700) {
-			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': -70 + 'px'}, 1000);
+			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': -70 + 'px'}, 500);
 		} else {
-			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': -35 + 'px'}, 1000);
+			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': -35 + 'px'}, 500);
 		}
 
 		$('ul#helpers').css('z-index', '300');
