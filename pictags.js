@@ -257,20 +257,25 @@ var getImagesByTags = function (tags) {
 		for (var j = 0; j < picTags.length; ++j) {
 			if (tags[i] == picTags[j].tag) {
 				res.push(picTags[j]);
-				console.log(j);
-				console.log(picTags[j].tag);
-
-				var rand = Math.floor(Math.random() * picTags.length);
-				if (tags.length < 6 && rand != j) {
-					console.log(rand);
-					console.log(picTags[rand].tag);
-					res.push(picTags[rand]);
-				}
 			}
 		}
 	}
 
-	console.log(res);
+	while (res.length < 6) {
+		var rand = Math.floor(Math.random() * picTags.length);
+
+		for (var k = 0; k < res.length; k++) {
+			if (picTags[rand].tag != res[k].tag) {
+				if (k == res.length - 1) {
+					res.push(picTags[rand]);
+				} else {
+					console.log(k);
+				}
+			} else {
+				break;
+			}
+		}
+	}
 
 	return shuffle(res);
 }
