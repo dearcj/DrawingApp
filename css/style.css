@@ -1620,7 +1620,7 @@ div.at-the-backyard {
 	height: auto;
 	position: absolute;
 	color: white;
-	display: none;
+	display: block;
 }
 
 #surface-canvas.wood-texture {
