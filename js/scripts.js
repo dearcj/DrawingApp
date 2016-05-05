@@ -817,6 +817,8 @@ jQuery(document).ready(function($) {
 
 
 	function openMyMuseum() {
+		var imageId = localStorage.getItem('imageId');
+
 		getLastImage(imageId, function (res) {
 			var message  = res.name + ': ' + res.description + ' ' +  "Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты создай свою картину!";
 			document.getElementById('post-vk').addEventListener('click', function() {
@@ -832,8 +834,6 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-title').textContent = res.description;
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ', ') + ')';
-
-			var imageId = localStorage.getItem('imageId');
 
 			if (imageId != undefined) {
 				console.log('hi');
