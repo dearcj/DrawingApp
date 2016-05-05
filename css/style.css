@@ -2105,7 +2105,188 @@ ul.logotypes li a {
 @media only screen and (max-width: 1495px) {
 	ul.tools {
 		width: 250px;
-		height: 500px;
+		height: 550px;
+		margin-left: 50px !important;
+	}
+
+	ul.tools > li {
+		width: 125px;
+	}
+
+	ul.tools li#scotch ul {
+		width: 130px;
+	}
+
+	ul.tools li#btn-scotch-1,
+	ul.tools li#btn-scotch-2 {
+		margin-right: 2px;
+	}
+
+	ul.tools li#denim ul {
+		width: 152px;
+		height: 142px;
+		margin-left: -6px;
+	}
+
+	ul.tools li#denim li {
+		width: 65px;
+		height: 65px;
+	}
+
+	ul.tools li#btn-denim-1 {
+		margin-left: 10px;
+	}
+
+	ul.tools li#btn-denim-2 {
+		margin-right: 10px;
+	}
+
+	ul.tools li#btn-catchup {
+		width: 112px;
+		height: 56px;
+		margin-right: 2px;
+	}
+
+	ul.tools li#btn-needle {
+		width: 115px;
+		height: 100px;
+		margin: -15px auto 0;
+	}
+
+	ul.tools li#needle ul {
+		width: 140px;
+	}
+
+	ul.tools li#btn-thread-1 {
+		margin-left: 0;
+	}
+
+	ul.tools li#btn-pistol {
+		width: 88px;
+		height: 70px;
+		margin-right: 15px;
+		margin-top: 15px;
+	}
+}
+
+@media only screen and (max-width: 1365px) {
+	ul.tools {
+		margin-left: 20px !important;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	ul.tools {
+		margin-left: 5px !important;
+	}
+}
+
+@media only screen and (max-width: 1265px) {
+	ul.tools {
+		width: 225px;
+		height: 460px;
+		margin-top: 35px;
+	}
+
+	ul.tools > li {
+		height: 115px;
+	}
+
+	ul.tools li#btn-scotch {
+		width: 100px;
+		height: 70px;
+	}
+
+	ul.tools > li#scotch > ul {
+		width: 125px;
+		height: 122px;
+	}
+
+	ul.tools li#btn-scotch-1,
+	ul.tools li#btn-scotch-2 {
+		width: 85px;
+		height: 20px;
+		margin-top: 5px;
+		margin-right: 12px;
+	}
+
+	ul.tools > li#coal > ul {
+		margin: 30px auto 0;
+		width: 72px;
+		height: 85px;
+	}
+
+	ul.tools li#btn-coal-1,
+	ul.tools li#btn-coal-2 {
+		width: 36px;
+		height: 85px;
+	}
+
+	ul.tools li#btn-grass {
+		width: 90px;
+		height: 115px;
+		margin-left: 22px;
+	}
+
+	ul.tools li#btn-orange {
+		width: 83px;
+		height: 115px;
+		margin-right: 10px;
+	}
+
+	ul.tools li#denim ul {
+		width: 128px;
+		height: 110px;
+		margin-top: 2px;
+		margin-left: 2px;
+	}
+
+	ul.tools li#denim li {
+		width: 58px;
+		height: 58px;
+	}
+
+	ul.tools li#btn-denim-1 {
+		margin-left: 6px;
+		margin-top: 0;
+	}
+
+	ul.tools li#btn-denim-2 {
+		margin-right: 6px;
+		margin-top: 0;
+	}
+
+	ul.tools li#btn-denim-3 {
+		top: -8px;
+	}
+
+	ul.tools li#btn-catchup {
+		width: 102px;
+		height: 50px;
+		margin-top: 32px;
+		margin-right: 0;
+	}
+	ul.tools li#needle ul {
+		width: 126px;
+		height: 110px;
+	}
+
+	ul.tools li#btn-needle {
+		width: 105px;
+		height: 90px;
+		margin: -6px auto 0;
+	}
+
+	ul.tools li.needle-color {
+		width: 18px;
+		height: 18px;
+	}
+
+	ul.tools li#btn-pistol {
+		width: 82px;
+		height: 64px;
+		margin-right: 10px;
+		margin-top: 18px;
 	}
 }
 
