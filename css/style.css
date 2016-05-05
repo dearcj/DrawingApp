@@ -1628,6 +1628,18 @@ div.at-the-backyard {
 	opacity: 0;
 }
 
+#main-image p {
+	background-color: #31b2ee;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 120%;
+	height: auto;
+	position: relative;
+	color: white;
+	display: block;
+	opacity: 0;
+}
+
 #surface-canvas.wood-texture {
 	background: url(../img/textures/wood.jpg) no-repeat;
 }
@@ -1861,23 +1873,6 @@ ul.surfaces li.metal:focus {
 }
 
 .filters-canvas p {
-	background-color: #31b2ee;
-	text-align: center;
-	margin: 0 auto;
-	line-height: 120%;
-	height: auto;
-	position: absolute;
-	color: white;
-	left: 50%;
-	margin-left: -188px;
-	top: 200px;
-	width: 376px;
-	border-radius: 20px;
-	font-size: 240%;
-	padding: 25px 0 30px;
-}
-
-#main-image p {
 	background-color: #31b2ee;
 	text-align: center;
 	margin: 0 auto;
