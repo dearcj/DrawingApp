@@ -1,6 +1,6 @@
-window.relPath = 'http://188.227.16.35/wp-content/themes/mmoma/Assets/';
-window.imgPath = 'http://188.227.16.35/wp-content/themes/mmoma/imgs/';
-window.basePath = 'http://188.227.16.35/wp-content/themes/mmoma/';
+window.relPath = './Assets/';
+window.imgPath = './imgs/';
+window.basePath = './';
 window.selectedSurface = 1;
 
 ZSound.Init([

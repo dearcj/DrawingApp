@@ -115,7 +115,7 @@ Canvas.prototype.resetCanvas = function () {
 
 	this.tags = [];
 
-	var pathToSurfaces = 'http://188.227.16.35/wp-content/themes/mmoma/img/textures/';
+	var pathToSurfaces = './img/textures/';
 	switch (this.canvasType) {
 		case 1:
 			var imageObj = new Image();
@@ -208,7 +208,7 @@ Canvas.prototype.sendPic = function(cbbbb, img) {
 
 	$.ajax({
 		type: "POST",
-		url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
+		url: "./api/index.php",
 		data: data,
 		success: function cb(res) {
 			localStorage.setItem('imageId', res.imageId);
