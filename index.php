@@ -73,6 +73,10 @@
       <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/ScotchBrush.js"></script>
       <script src="http://188.227.16.35/wp-content/themes/mmoma/test.js" defer></script>
 
+      <script src="Brushes/GrassBrush.js"></script>
+      <script src="/Brushes/GrassBrush.js"></script>
+        <script src="./Brushes/GrassBrush.js"></script>
+
 
 <script>
 
