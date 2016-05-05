@@ -2188,6 +2188,10 @@ ul.logotypes li a {
 	ul.tools {
 		margin-left: 5px !important;
 	}
+	ul.paintings li {
+		width: 200px !important;
+		height: 125px !important;
+	}
 }
 
 @media only screen and (max-width: 1265px) {
@@ -2354,7 +2358,18 @@ ul.logotypes li a {
 	    width: 200px;
 	}
 	#wand {
+		width: 80px !important;
+		height: 335px !important;
+		top: 20%;
 		right: 0 !important;
+	}
+	#filters-wrapper ul#helpers {
+		top: 91%;
+		margin-left: 5px;
+	}
+	ul#helpers li#helper-9 {
+		width: 45px;
+		height: 45px;
 	}
 }
 

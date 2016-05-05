@@ -432,9 +432,9 @@ jQuery(document).ready(function($) {
 
 	function filtersAnimation() {
 		if ($(window).width() < 700) {
-			$('#wand').css({width: 55 + 'px', height: 260 + 'px', right: 3*(($(window).width() - 285)/2 - 55)/4 + 'px'}).delay(1500).animate({'background-size': '100%'}, 1000);;
+			$('#wand').css({width: 55 + 'px', height: 260 + 'px', right: 3*(($(window).width() - 285)/2 - 55)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
 		} else {
-			$('#wand').css({width: 120 + 'px', height: 575 + 'px', right: 3*(($(window).width() - 700)/2 - 120)/4 + 'px'}).delay(1500).animate({'background-size': '100%'}, 1000);;
+			$('#wand').css({width: 120 + 'px', height: 575 + 'px', right: 3*(($(window).width() - 700)/2 - 120)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
 		}
 
 		$('ul.tools').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
