@@ -115,7 +115,7 @@ Canvas.prototype.resetCanvas = function () {
 
 	this.tags = [];
 
-	var pathToSurfaces = './img/textures/';
+	var pathToSurfaces = window.basePath + 'img/textures/';
 	switch (this.canvasType) {
 		case 1:
 			var imageObj = new Image();
