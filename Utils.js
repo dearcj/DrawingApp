@@ -29,7 +29,7 @@ function getLastImage(iid, cb) {
 
   $.ajax({
     type: "GET",
-    url: "./api/index.php",
+    url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
     data: data,
     success: function callback(res) {
       cb(res);
@@ -186,7 +186,7 @@ filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 function fbpost(t, im, imPath) {
   FB.ui(
     {  method: 'feed',
-      picture: './api/' + imPath,
+      picture: 'http://188.227.16.35/wp-content/themes/mmoma/api/' + imPath,
       name: '',//"���� ������ � ����: ��-�-�-������ �����������",
       caption: "asdasd",
       description: '' //"����� � ����, ��������� ���������� �������� � ������ ���� �������� ������ ����� �� ���������� ����������� ������ � ����: ��-�-�-������ �����������",
@@ -220,7 +220,7 @@ function vkpost(t, im, imPath) {
 
           $.ajax({
             type: "post",
-            url: "./api/index.php",
+            url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
             data: {
               api_method: 'uploadpic',
 
