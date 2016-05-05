@@ -932,7 +932,6 @@ jQuery(document).ready(function($) {
 			},
 			paintingRatio = paintingRatio(750, 530),
 			darkSideMuseum = $('.dark-side.museum'),
-			newPaintingButtonRatio = newPaintingButtonRatio(247, 90),
 			paintingInfo = $('.painting-info'),
 			socialButtons = $('.social-buttons');
 
