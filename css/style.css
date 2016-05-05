@@ -704,6 +704,7 @@ ul.paintings a:hover li div {
 	display: block;
 	margin: 35px auto 0;
 	background-color: transparent;
+	opacity: 0;
 }
 
 #painting-img {

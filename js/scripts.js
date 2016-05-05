@@ -475,6 +475,8 @@ jQuery(document).ready(function($) {
 		$('#filters-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
+
+		$('#main-image').delay(500).animate({'opacity': 1, top: 0 + 'px'}, 1000);
 		$('#publication-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 		$('#publication-wrapper').each(function(){
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
