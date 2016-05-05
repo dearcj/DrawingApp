@@ -487,10 +487,14 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('top', 660 + 'px');
 		}
 
+		$('#main-image p').css('display', 'block').fadeIn(2000).removeClass('hidden');
+
 		if ($(window).width() < 700) {
 			$('#main-image').delay(500).animate({'opacity': 1, 'width': 285 + 'px', 'height': 196 + 'px'}, 1000);
+			$('#main-image p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
 			$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
+			$('#main-image p').css({width: 300 + 'px', 'font-size': 230 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: -350 + 'px'});
 		}
 
 		if ($(window).width() > 1535) {
@@ -501,8 +505,6 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.right-side').delay(1500).animate({'margin-right': 6 + '%'}, 1000);
 		}
 		$('form.sending-form').delay(2000).animate({'top': 0}, 1000);
-
-		$('#main-image p').fadeIn(2000).removeClass('hidden');
 	}
 
 	function museumAnimation() {
