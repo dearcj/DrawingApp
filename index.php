@@ -21,9 +21,9 @@
 	    <link rel="stylesheet" href="/css/style.css">
 
 
-    <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/style.css">
-    <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/colorbox.css">
-    <link rel="stylesheet" href="http://188.227.16.35/wp-content/themes/mmoma/css/mmoma.css">
+    <link rel="stylesheet" href="./wp-content/themes/mmoma/css/style.css">
+    <link rel="stylesheet" href="./wp-content/themes/mmoma/css/colorbox.css">
+    <link rel="stylesheet" href="./wp-content/themes/mmoma/css/mmoma.css">
 
     <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
       <script>
@@ -51,32 +51,32 @@
         });
     </script>
 
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/js/soundjs-NEXT.min.js"></script>
-   <script src="http://188.227.16.35/wp-content/themes/mmoma/js/ZSound.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/pictags.js"></script>
+      <script src="./wp-content/themes/mmoma/js/soundjs-NEXT.min.js"></script>
+   <script src="./wp-content/themes/mmoma/js/ZSound.js"></script>
+      <script src="./wp-content/themes/mmoma/pictags.js"></script>
 
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-          <script src="http://188.227.16.35/wp-content/themes/mmoma/js/jsmanipulate.min.js"></script>
+          <script src="./wp-content/themes/mmoma/js/jsmanipulate.min.js"></script>
 
-    <script src="http://188.227.16.35/wp-content/themes/mmoma/js/jquery.colorbox-min.js"></script>
-    <script src="http://188.227.16.35/wp-content/themes/mmoma/js/scripts.js"></script>
-   <script src="http://188.227.16.35/wp-content/themes/mmoma/Utils.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Canvas/Action.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Canvas/Canvas.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/Brush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/OrangeBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/js/jquery.colorbox-min.js"></script>
+    <script src="./wp-content/themes/mmoma/js/scripts.js"></script>
+   <script src="./wp-content/themes/mmoma/Utils.js"></script>
+      <script src="./wp-content/themes/mmoma/Canvas/Action.js"></script>
+      <script src="./wp-content/themes/mmoma/Canvas/Canvas.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/Brush.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/OrangeBrush.js"></script>
 
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/Pencil.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/DenimBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/CoalBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/ThreadBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/SmoothBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/PatternBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/PistolBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/CatchupBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/GrassBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/Brushes/ScotchBrush.js"></script>
-      <script src="http://188.227.16.35/wp-content/themes/mmoma/test.js" defer></script>
+      <script src="./wp-content/themes/mmoma/Brushes/Pencil.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/DenimBrush.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/CoalBrush.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/ThreadBrush.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/SmoothBrush.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/PatternBrush.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/PistolBrush.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/CatchupBrush.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/GrassBrush.js"></script>
+      <script src="./wp-content/themes/mmoma/Brushes/ScotchBrush.js"></script>
+      <script src="./wp-content/themes/mmoma/test.js" defer></script>
 
       <script src="Brushes/GrassBrush.js"></script>
       <script src="/Brushes/GrassBrush.js"></script>
@@ -122,7 +122,7 @@
   </div>
 
   <div class="header">
-    <a href="/"><img src="http://188.227.16.35/wp-content/themes/mmoma/img/logo_mmoma.gif"></a>
+    <a href="/"><img src="./wp-content/themes/mmoma/img/logo_mmoma.gif"></a>
   </div>
 
   <div id="wrapper">
@@ -376,21 +376,21 @@
     <ul class="logotypes">
       <li>
         <span>Официальный партнёр:</span>
-        <a href="http://museum.fondpotanin.ru/ " target="_blank"><img src="http://188.227.16.35/wp-content/themes/mmoma/img/potanin.png" width="70" height="70" border="0"></a>
+        <a href="http://museum.fondpotanin.ru/ " target="_blank"><img src="./wp-content/themes/mmoma/img/potanin.png" width="70" height="70" border="0"></a>
       </li>
       <li>
         <span>Разработано:</span>
-        <a href="http://bobaka.ru/" target="_blank"><img src="http://188.227.16.35/wp-content/themes/mmoma/img/bobaka-logo.jpg" width="140" height="26" border="0"></a>
+        <a href="http://bobaka.ru/" target="_blank"><img src="./wp-content/themes/mmoma/img/bobaka-logo.jpg" width="140" height="26" border="0"></a>
       </li>
     </ul>
 
     <ul class="social-icons">
-      <li><a href="https://www.facebook.com/MoscowMoMA" target="_blank"><img style="margin-right:17px" border="0" src="http://188.227.16.35/wp-content/themes/mmoma/img/fb.gif"></a></li>
-      <li><a href="http://vk.com/id77591204" target="_blank"><img style="margin-right:17px" border="0" src="http://188.227.16.35/wp-content/themes/mmoma/img/vk.gif"></a></li>
-      <li><a href="https://twitter.com/MMOMA" target="_blank"><img style="margin-right:17px" border="0" src="http://188.227.16.35/wp-content/themes/mmoma/img/tw.gif"></a></li>
-      <li><a href="http://instagram.com/mmoma/" target="_blank"><img style="margin-right:17px" border="0" src="http://188.227.16.35/wp-content/themes/mmoma/img/insg.gif"></a></li>
-      <li><a href="http://www.youtube.com/user/tvmmoma" target="_blank"><img style="margin-right:17px" border="0" src="http://188.227.16.35/wp-content/themes/mmoma/img/youtube.gif"></a></li>
-      <li><a href="#"><img style="margin-right:12px" border="0" src="http://188.227.16.35/wp-content/themes/mmoma/img/mail.gif"></a></li>
+      <li><a href="https://www.facebook.com/MoscowMoMA" target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/fb.gif"></a></li>
+      <li><a href="http://vk.com/id77591204" target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/vk.gif"></a></li>
+      <li><a href="https://twitter.com/MMOMA" target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/tw.gif"></a></li>
+      <li><a href="http://instagram.com/mmoma/" target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/insg.gif"></a></li>
+      <li><a href="http://www.youtube.com/user/tvmmoma" target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/youtube.gif"></a></li>
+      <li><a href="#"><img style="margin-right:12px" border="0" src="./wp-content/themes/mmoma/img/mail.gif"></a></li>
     </ul>
     
     <div class="footer_secodn_block">

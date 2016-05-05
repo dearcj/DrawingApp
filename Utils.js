@@ -186,7 +186,7 @@ filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 function fbpost(t, im, imPath) {
   FB.ui(
     {  method: 'feed',
-      picture: 'http://188.227.16.35/wp-content/themes/mmoma/api/' + imPath,
+      picture: './wp-content/themes/mmoma/api/' + imPath,
       name: '',//"���� ������ � ����: ��-�-�-������ �����������",
       caption: "asdasd",
       description: '' //"����� � ����, ��������� ���������� �������� � ������ ���� �������� ������ ����� �� ���������� ����������� ������ � ����: ��-�-�-������ �����������",
@@ -220,7 +220,7 @@ function vkpost(t, im, imPath) {
 
           $.ajax({
             type: "post",
-            url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
+            url: "./wp-content/themes/mmoma/api/index.php",
             data: {
               api_method: 'uploadpic',
 
