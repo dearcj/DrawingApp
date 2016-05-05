@@ -268,8 +268,6 @@ var getImagesByTags = function (tags) {
 			if (picTags[rand].tag != res[k].tag) {
 				if (k == res.length - 1) {
 					res.push(picTags[rand]);
-				} else {
-					console.log(k);
 				}
 			} else {
 				break;
