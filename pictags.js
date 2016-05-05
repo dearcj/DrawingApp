@@ -270,6 +270,8 @@ var getImagesByTags = function (tags) {
 		}
 	}
 
+	console.log(res);
+
 	return shuffle(res);
 }
 
