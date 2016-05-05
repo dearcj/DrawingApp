@@ -525,8 +525,11 @@ jQuery(document).ready(function($) {
 
 		if ($(window).width() < 700) {
 			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': -70 + 'px'}, 500);
+			$('#museum-wrapper > p').css({width: 300 + 'px', 'font-size': 230 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: -350 + 'px'});
+
 		} else {
 			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': -35 + 'px'}, 500);
+			$('#museum-wrapper > p').css({width: 300 + 'px', 'font-size': 230 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: -350 + 'px'});
 		}
 
 		$('ul#helpers').css('z-index', '300');
@@ -853,7 +856,7 @@ jQuery(document).ready(function($) {
 		if (imageId === null) {
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
-			$('#museum-wrapper > p').css('opacity', 1);
+			$('#museum-wrapper > p').delay(500).animate({opacity: 1}, 1000);
 		} else {
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');
@@ -960,12 +963,6 @@ jQuery(document).ready(function($) {
 		darkSideMuseum.css('width', 750 + 'px');
 
 		darkSideMuseum.css({height: 530/15 + 'px', top: -530/15 + 'px'});
-
-		var museumText = $('#museum-wrapper p'),
-			museumTextWidth = 750/2,
-			museumTextPadding = museumTextWidth/12;
-
-		museumText.css({width: museumTextWidth + 'px', 'font-size': 100 + '%', 'padding': 6 * museumTextPadding/7 + 'px ' + '0 ' + museumTextPadding + 'px', top: 0 + 'px'});
 
 		var darkSideMuseumHeight = parseInt(darkSideMuseum.css('height'));
 	}
