@@ -398,10 +398,15 @@ jQuery(document).ready(function($) {
 		$('#filters-wrapper').each(function(){
 			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
+
+		var toolsWidth = $('ul.tools').css('width');
+
 		if ($(window).width() < 700) {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
 		} else {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 285)/2 - toolsWidth)/4 + 'px'}, 1000);
 		}
 		$('#painting-wrapper').each(function(){
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
@@ -417,11 +422,7 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('top', 660 + 'px');
 		}
 
-		var toolsWidth = $(window).width()/12.88;
-		var toolsHeight = $(window).width()/3.34;
-
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
-		$('ul.tools').css({width: toolsWidth*2 + 'px', height: toolsHeight + 'px'}).delay(500).animate({'margin-left': toolsWidth*4/3 + 'px'}, 1000);
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
