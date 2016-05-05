@@ -1877,6 +1877,23 @@ ul.surfaces li.metal:focus {
 	padding: 25px 0 30px;
 }
 
+#main-image p {
+	background-color: #31b2ee;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 120%;
+	height: auto;
+	position: absolute;
+	color: white;
+	left: 50%;
+	margin-left: -188px;
+	top: 200px;
+	width: 376px;
+	border-radius: 20px;
+	font-size: 240%;
+	padding: 25px 0 30px;
+}
+
 ul.tools-buttons.filters-tb {
     position: relative;
     padding: 0;
