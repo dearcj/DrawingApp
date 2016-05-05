@@ -837,15 +837,13 @@ jQuery(document).ready(function($) {
 		});
 
 		if (imageId === null) {
-			console.log('hi');
-			$('.new-painting').css('display', 'none');
-			$('.painting-info').css('display', 'block');
-			$('#museum-wrapper > p').css('opacity', 0);
-		} else {
-			console.log('bye');
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
 			$('#museum-wrapper > p').css('opacity', 1);
+		} else {
+			$('.new-painting').css('display', 'none');
+			$('.painting-info').css('display', 'block');
+			$('#museum-wrapper > p').css('opacity', 0);
 		}
 	}
 
