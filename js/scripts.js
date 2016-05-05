@@ -399,8 +399,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
 
-		var toolsWidth = $('ul.tools').css('width');
-		console.log(toolsWidth);
+		var toolsWidth = parseInt($('ul.tools').css('width'));
 
 		if ($(window).width() < 700) {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
