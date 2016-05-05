@@ -1857,7 +1857,7 @@ ul.surfaces li.metal:focus {
 }
 
 #filters-canvas {
-	position: relative;
+	position: absolute;
 }
 
 .filters-canvas p {
@@ -1883,6 +1883,7 @@ ul.tools-buttons.filters-tb {
 	margin: 0 auto;
     float: none;
 	width: 326px;
+	top: 525px;
 }
 
 #wand {
@@ -2351,6 +2352,9 @@ ul.logotypes li a {
 		bottom: 5%;
 	    right: 1%;
 	    width: 200px;
+	}
+	#wand {
+		right: 0 !important;
 	}
 }
 
