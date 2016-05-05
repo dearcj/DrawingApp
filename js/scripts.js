@@ -309,7 +309,7 @@ jQuery(document).ready(function($) {
 
 	//--------------ROUTING---------------
 
-	var mainUrl = 'http://188.227.16.35/';
+	var mainUrl = '/';
 	var hash = window.location.hash;
 
 	function addURL(pageName) {
@@ -820,8 +820,6 @@ jQuery(document).ready(function($) {
 	function openMyMuseum() {
 		var imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
-
-
 			var message  = res.name + ': ' + res.description + ' ' +  "Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты создай свою картину!";
 			document.getElementById('post-vk').addEventListener('click', function() {
 				vkpost(message, res.image, res.file);

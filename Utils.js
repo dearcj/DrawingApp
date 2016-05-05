@@ -290,25 +290,25 @@ function applyFilter(canvId, imgData, filterNumber) {
   if (filterNumber == 1) {
     window.trickySrc = relPath + 'filters/diptih.png';
     var src = relPath + 'filters/diptih2.png';
-   cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true);
+   cb = applyOverFilter(saveImgCB, src, canvId, imgData, 0, 0, true);
     window.filterTag = 'диптих';
    }
   if (filterNumber == 2) {
     window.trickySrc = relPath + 'filters/modern.png';
     var src = relPath + 'filters/modern.png';
-    cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData);
     window.filterTag = 'рамка';
   }
   if (filterNumber == 3) {
     window.trickySrc = relPath + 'filters/poliptih.png';
     var src = relPath + 'filters/poliptih2.png';
-    cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, 0, 0, true);
     window.filterTag = 'диптих';
   }
   if (filterNumber == 4) {
     window.trickySrc = relPath + 'filters/vintage.png';
     var src = relPath + 'filters/vintage2.png';
-    cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData);
     window.filterTag = 'рамка';
   }
   if (filterNumber == 5) {
