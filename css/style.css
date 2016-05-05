@@ -2309,6 +2309,37 @@ ul.logotypes li a {
 	}
 }
 
+@media only screen and (max-width: 1200px) {
+	ul.paintings.left-side {
+		margin-left: 3%;
+	}
+	ul.paintings.right-side {
+		margin-right: 3%;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	ul.paintings li {
+		width: 150px !important;
+		height: 95px !important;
+	}
+	ul.paintings.left-side {
+		margin-left: 4%;
+	}
+	ul.paintings.right-side {
+		margin-right: 4%;
+	}
+}
+
+@media only screen and (max-width: 1035px) {
+	ul.paintings.left-side {
+		margin-left: 2%;
+	}
+	ul.paintings.right-side {
+		margin-right: 2%;
+	}
+}
+
 @media only screen and (max-width : 1110px) {
 	#painting-wrapper,
 	#filters-wrapper,
