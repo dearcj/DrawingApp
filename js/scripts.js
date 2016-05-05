@@ -1166,14 +1166,7 @@ jQuery(document).ready(function($) {
 
 
 		darkSideSending.css({height: 530/15 + 'px', top: 530 - 530/15 + width/12.5 + 'px'});
-
-		var sendingCanvasText = sendingCanvas.find('p');
-		sendingTextWidth = 65*750/100,
-			sendingTextBorderRadius = sendingTextWidth/20,
-			sendingTextPadding = sendingTextWidth/12;
-
-		sendingCanvasText.css({width: sendingTextWidth + 'px', 'border-radius': sendingTextBorderRadius + 'px', 'font-size': 530/3.5 + '%', 'padding': 6 * sendingTextPadding/7 + 'px ' + '0 ' + sendingTextPadding + 'px', top: 3 * 530/8 + 'px'});
-
+		
 		hidingHelpers('#main-image p');
 	}
 
