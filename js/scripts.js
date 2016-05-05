@@ -400,14 +400,16 @@ jQuery(document).ready(function($) {
 		});
 
 		var toolsWidth = $('ul.tools').css('width');
+		console.log(toolsWidth);
 
 		if ($(window).width() < 700) {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
+			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 285)/2 - toolsWidth)/4 + 'px'}, 1000);
 		} else {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 285)/2 - toolsWidth)/4 + 'px'}, 1000);
+			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
 		}
+
 		$('#painting-wrapper').each(function(){
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
