@@ -1036,61 +1036,18 @@ jQuery(document).ready(function($) {
 
 	function toolsResponsive () {
 		var width = $(window).width(),
-			height = $(window).height(),
 			toolsCanvas = $('.main-canvas'),
-			toolsWrapper = $('#painting-wrapper'),
 			darkSideTools = $('.dark-side.tools'),
-			toolsLiP = $('ul.tools li p'),
-			toolsBackgroundHeight = width/wrapperRatio,
-			interfaceButtons = $('ul.interface'),
-			interfaceButtonLiBack = $('ul.interface li.back'),
-			interfaceButtonLiRefresh = $('ul.interface li.refresh'),
-			interfaceButtonsRatio = function (width, height) {
-				return width/height;
-			},
-			interfaceButtonsRatio = interfaceButtonsRatio(22, 30);
-		toolsButtons = $('ul.tools-buttons.tools-tb'),
 			toolsRatio = function (width, height) {
 				return width/height;
 			},
-			toolsRatio = toolsRatio(200, 175),
-			prevNextButtons = $('ul.tools-buttons.tools-tb li'),
-			sendToMuseum = $('.send-to-museum');
-
-
+			toolsRatio = toolsRatio(200, 175);
 
 		toolsCanvas.css({width: width/2.5 + 'px', 'margin-top': width/18 + 'px'});
 
 		var toolsCanvasWidth = toolsCanvas.width();
 
 		objHeight(toolsCanvas, toolsCanvasWidth/surfaceRatio);
-
-		darkSideTools.css('width', toolsCanvasWidth + 'px');
-
-		var toolsCanvasHeight = toolsCanvas.height(),
-			toolsCanvasMarginTop = parseInt(toolsCanvas.css('margin-top'));
-
-		darkSideTools.css({height: toolsCanvasHeight/15 + 'px', top: toolsCanvasHeight + toolsCanvasMarginTop + 'px'});
-
-		var interfaceButtonLiWidth = toolsCanvasWidth/34.6;
-
-		interfaceButtonLiBack.css({width: interfaceButtonLiWidth + 'px', height: interfaceButtonLiWidth + 'px', 'margin-right': interfaceButtonLiWidth + 'px'});
-
-		interfaceButtonLiRefresh.css({width: interfaceButtonLiWidth + 'px', height: interfaceButtonLiWidth/interfaceButtonsRatio + 'px'});
-
-		interfaceButtons.css('top', toolsCanvasHeight + interfaceButtonLiWidth + 'px');
-
-		var mainCanvas = $('#main-canvas');
-		var mainCanvasTop = toolsWrapper.height()/100 * 10;
-
-		var toolsCanvasText = toolsCanvas.find('p');
-		toolsTextWidth = toolsCanvasWidth/2,
-			toolsTextBorderRadius = toolsTextWidth/20,
-			toolsTextPadding = toolsTextWidth/12;
-
-		toolsCanvasText.css({width: toolsTextWidth + 'px', 'border-radius': toolsTextBorderRadius + 'px', 'font-size': toolsCanvasHeight/2.5 + '%', 'padding': 6 * toolsTextPadding/7 + 'px ' + '0 ' + toolsTextPadding + 'px', top: 3 * toolsCanvasHeight/8 + 'px'});
-
-		var toolsCanvasTextHeight = toolsCanvasText.innerHeight();
 
 		hidingHelpers('#painting-wrapper p');
 	}

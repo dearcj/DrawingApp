@@ -92,6 +92,12 @@ ul {
 ul#undo-refresh {
 	margin: 0;
 	padding: 0;
+	position: absolute;
+	top: 540px;
+}
+
+ul#undo-refresh li {
+	float: left;
 }
 
 ul#undo-refresh li#undo {
@@ -99,6 +105,8 @@ ul#undo-refresh li#undo {
 	background-size: 100%;
 	width: 22px;
 	height: 22px;
+	margin-right: 15px;
+	margin-top: 4px;
 }
 
 ul#undo-refresh li#refresh {
@@ -540,33 +548,6 @@ ul#helpers li span p {
     float: right;
     height: 400px;
 	display: none;
-}
-
-ul.interface {
-	padding: 0;
-	margin: 0;
-	position: relative;
-}
-
-ul.interface > li {
-	position: relative;
-	float: left;
-	border: none;
-}
-
-ul.interface > li.back {
-	background: url(../img/back-button.png) no-repeat;
-	background-size: 100%;
-}
-
-ul.interface > li.refresh {	
-	background: url(../img/refresh-button.png) no-repeat;
-	background-size: 100%;
-}
-
-ul.interface > li:hover,
-ul.interface > li:focus {
-	cursor: pointer;
 }
 
 ul.paintings {

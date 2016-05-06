@@ -190,12 +190,12 @@
             </ul>
 
             <p class="hidden">Выбери, на чём ты хочешь рисовать!</p>
-          </div>
 
-          <ul id="undo-refresh">
-            <li id="undo"></li>
-            <li id="refresh"></li>
-          </ul>
+            <ul id="undo-refresh">
+              <li id="undo"></li>
+              <li id="refresh"></li>
+            </ul>
+          </div>
 
           <ul class="tools-buttons surface-tb">
             <li class="hidden go-to-tools" id="go-to-tools"><a href="#"></a></li>
@@ -226,9 +226,9 @@
           <canvas id="main-canvas" width="750" height="530"></canvas>
           <canvas style='pointer-events: none;' z-index='-122' id="cursor-canvas" width="750" height="530"></canvas>
           <div class="main-canvas" id="tools-canvas">
-            <ul class="interface">
-              <li class="back"></li>
-              <li class="refresh"></li>
+            <ul id="undo-refresh">
+              <li id="undo"></li>
+              <li id="refresh"></li>
             </ul>
           </div>
 
