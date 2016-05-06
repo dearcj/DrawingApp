@@ -61,6 +61,7 @@ jQuery(document).ready(function($) {
 		$('#back-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px'});
 		$('#main-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px'});
 		$('#cursor-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px'});
+		$('ul.tools').css({width: 144 + 'px', height: 288 + 'px', top: 0});
 		$('ul.tools > li').css({width: 72 + 'px', height: 72 + 'px'});
 		$('ul.tools > li#coal > ul').css({width: 50 + 'px', height: 80 + 'px'});
 		$('ul.tools > li#coal > ul li').css({width: 25 + 'px', height: 80 + 'px'});
@@ -413,7 +414,7 @@ jQuery(document).ready(function($) {
 
 		if ($(window).width() < 700) {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 240)/2 - toolsWidth)/2 + 'px'}, 1000);
+			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 240)/2 - 144)/2 + 'px'}, 1000);
 		} else {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
