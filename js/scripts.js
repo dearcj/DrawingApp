@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
 		$('.podval_new').css('display', 'none');
 
 		$('#surface-wrapper').animate('height', 100 + '%');
-		$('#surface-canvas').css({width: 240 + 'px', height: 196 + 'px', 'margin': '20px auto 0'});
+		$('#surface-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin': '20px auto 0'});
 		$('#surface-wrapper p').css({'opacity': 0, height: 0});
 		$('.surface-button.at-the-backyard').css('display', 'none');
 		$('ul#helpers li').css('display', 'none');
