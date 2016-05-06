@@ -94,6 +94,8 @@ ul#undo-refresh {
 	padding: 0;
 	position: absolute;
 	top: 540px;
+	left: 50%;
+	margin-left: -370px;
 }
 
 ul#undo-refresh li {

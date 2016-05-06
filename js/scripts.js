@@ -131,8 +131,12 @@ jQuery(document).ready(function($) {
 
 
 
-	$('#helper-8').on(window.eventType, function(event) {
+	$('#undo').on(window.eventType, function(event) {
 		window.mainCanvasObject.makeUndo();
+	});
+
+	$('#refresh').on(window.eventType, function(event) {
+		window.mainCanvasObject.resetCanvas();
 	});
 
 	$('#btn-sound').on(window.eventType, function(event) {
