@@ -16,6 +16,14 @@ var initApplication = function() {
 
   window.mainCanvasObject = canvas;
 
+  $('#undo').on(window.eventType, function(event) {
+    window.mainCanvasObject.makeUndo();
+  });
+
+  $('#refresh').on(window.eventType, function(event) {
+    window.mainCanvasObject.resetCanvas();
+  });
+
   var brushScotch = new ScotchBrush();
   var brushCoal = new CoalBrush();
   var brushOrange = new OrangeBrush();
