@@ -364,12 +364,14 @@ jQuery(document).ready(function($) {
 				'opacity': 1,
 				'height': 100 + '%'
 			}, 200).css('z-index', '200');
+			$('#go-to-tools').delay(1500).animate({'top': -20 + 'px'}, 500);
 			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 285) /3.8 - surfaceWidth + 'px', 'margin-top': (196 - surfaceHeight*4)/2 + 'px'}, 1500);
 		} else {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({
 				'opacity': 1,
 				'height': 660 + 'px'
 			}, 200).css('z-index', '200');
+			$('#go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
 			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 700)/3.8 - surfaceWidth + 'px', 'margin-top': (495 - surfaceHeight*4)/2 + 'px'}, 1500);
 		}
 
@@ -392,14 +394,13 @@ jQuery(document).ready(function($) {
 		$('ul.surfaces li').css({width: surfaceWidth + 'px', height: surfaceHeight + 'px'});
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
-		$('#go-to-tools').delay(1500).animate({'top': -20 + 'px'}, 500);
 		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width() / 100 + 'px'}, 500);
 		$('#surface-canvas p').delay(2500).fadeIn(1000);
 	}
 
 	function paintingAnimation() {
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
-		$('.go-to-tools').animate({'top': forwardButtonHeight + 'px'}, 500);
+		$('.go-to-tools').animate({'top': 100 + 'px'}, 500);
 		$('#surface-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#filters-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#surface-wrapper').each(function(){

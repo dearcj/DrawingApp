@@ -899,6 +899,10 @@ ul.tools-buttons li {
 	height: 100px;
 }
 
+ul.tools-buttons.surface-tb {
+	width: 100px;
+}
+
 ul.tools-buttons.surface-tb li,
 ul.tools-buttons.filters-tb li {
 	margin: 0;
