@@ -820,28 +820,11 @@ jQuery(document).ready(function($) {
 
 	$('ul.tools-buttons li').fadeIn(1500).removeClass('hidden');
 
-	$('ul#buttons li#button-3 a').mouseover(function() {
-		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6 span').css({'display': 'inline-block', 'margin-left': -(homeSpanWidth + spanPadding*2)/2 + 'px'});
-	});
-
-	$('ul#buttons li#button-3 a').mouseout(function() {
-		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6 span').css('display', 'none');
-	});
-
-	$('ul#buttons li#button-4 a').mouseover(function() {
-		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6s span').css({'display': 'inline-block', 'margin-left': -(homeSpanWidth + spanPadding*2)/2 + 'px'});
-	});
-
-	$('ul#buttons li#button-4 a').mouseout(function() {
-		$(this).parents('ul#buttons').siblings('#helpers').find('li#helper-6s span').css('display', 'none');
-	});
 
 	$('ul#buttons li#button-4 a').click(function(event) {
 		event.preventDefault();
 
 		//LOAD IMAGE FROM SERVER
-
-
 	});
 
 	$('li.send-to-museum').click(function(event) {
