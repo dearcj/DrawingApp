@@ -432,7 +432,7 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
-		$('#painting-wrapper > p').css('display', 'block').fadeIn(2000).removeClass('hidden');
+		$('#painting-wrapper > p').css('z-index', 250).fadeIn(2000).removeClass('hidden');
 	}
 
 	function filtersAnimation() {
@@ -1092,7 +1092,7 @@ jQuery(document).ready(function($) {
 
 		var toolsCanvasTextHeight = toolsCanvasText.innerHeight();
 
-		hidingHelpers('.main-canvas p');
+		hidingHelpers('#painting-wrapper p');
 	}
 
 	document.getElementById("wand").addEventListener(window.eventType, function () {
