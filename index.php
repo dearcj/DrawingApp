@@ -216,6 +216,7 @@
               <span>Современные художники постоянно экспериментируют! Создавая свои картины, они используют яркие синтетические краски, а также самые неожиданные инструменты и материалы. Но такой удивительной «палитры» точно нет ни у одного из них!</span>
             </li>
           </ul>
+          <p class="hidden">Выбери, чем ты хочешь рисовать!</p>
           <canvas style='pointer-events: none;' id="back-canvas" width="750" height="530"></canvas>
           <canvas id="main-canvas" width="750" height="530"></canvas>
           <canvas style='pointer-events: none;' z-index='-122' id="cursor-canvas" width="750" height="530"></canvas>
@@ -224,8 +225,6 @@
               <li class="back"></li>
               <li class="refresh"></li>
             </ul>
-
-            <p class="hidden">Выбери, чем ты хочешь рисовать!</p>
           </div>
 
           <ul class="tools">
