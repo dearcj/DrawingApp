@@ -62,8 +62,6 @@ Canvas.prototype.makeUndo = function(e) {
 		var ctx = this.state.backCtx;
 		i.onload = function() {
 
-
-
 			var el = document.getElementById('back-canvas');
 			var ctx = el.getContext('2d');
 			ctx.clearRect(0, 0, w, h);

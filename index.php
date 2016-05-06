@@ -190,11 +190,6 @@
             </ul>
 
             <p class="hidden">Выбери, на чём ты хочешь рисовать!</p>
-
-            <ul id="undo-refresh">
-              <li id="undo"></li>
-              <li id="refresh"></li>
-            </ul>
           </div>
 
           <ul class="tools-buttons surface-tb">
