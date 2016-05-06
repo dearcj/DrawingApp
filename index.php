@@ -222,14 +222,14 @@
             </li>
           </ul>
           <p class="hidden">Выбери, чем ты хочешь рисовать!</p>
+          <ul id="undo-refresh">
+            <li id="undo"></li>
+            <li id="refresh"></li>
+          </ul>
           <canvas style='pointer-events: none;' id="back-canvas" width="750" height="530"></canvas>
           <canvas id="main-canvas" width="750" height="530"></canvas>
           <canvas style='pointer-events: none;' z-index='-122' id="cursor-canvas" width="750" height="530"></canvas>
           <div class="main-canvas" id="tools-canvas">
-            <ul id="undo-refresh">
-              <li id="undo"></li>
-              <li id="refresh"></li>
-            </ul>
           </div>
 
           <ul class="tools">

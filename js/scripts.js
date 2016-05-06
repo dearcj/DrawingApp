@@ -129,14 +129,12 @@ jQuery(document).ready(function($) {
 
 	$('ul.tools > li#btn-orange').addClass('active orange-active');
 
-
-
 	$('#undo').on(window.eventType, function(event) {
-		mainCanvasObject.makeUndo();
+		window.mainCanvasObject.makeUndo();
 	});
 
 	$('#refresh').on(window.eventType, function(event) {
-		mainCanvasObject.resetCanvas();
+		window.mainCanvasObject.resetCanvas();
 	});
 
 	$('#btn-sound').on(window.eventType, function(event) {
