@@ -2365,7 +2365,7 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-width: 1035px) {
+@media only screen and (max-width: 1035px) and (min-width: 700px) {
 	ul.paintings.left-side {
 		margin-left: 1.5% !important;
 	}
@@ -2374,13 +2374,13 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-width: 985px) {
+@media only screen and (max-width: 985px) and (min-width: 700px) {
 	ul.paintings {
 		display: none;
 	}
 }
 
-@media only screen and (max-width : 1110px) {
+@media only screen and (max-width : 1110px) and (min-width: 700px) {
 	#painting-wrapper,
 	#filters-wrapper,
 	#publication-wrapper {
