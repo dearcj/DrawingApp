@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
 		$('.podval_new').css('display', 'none');
 
 		$('#surface-wrapper').animate('height', 100 + '%');
-		$('#surface-canvas').css({width: 285 + 'px', height: 196 + 'px'});
+		$('#surface-canvas').css({width: 240 + 'px', height: 196 + 'px', 'margin': '20px auto 0'});
 		$('#surface-wrapper p').css({'opacity': 0, height: 0});
 		$('.surface-button.at-the-backyard').css('display', 'none');
 		$('ul#helpers li').css('display', 'none');
@@ -391,7 +391,7 @@ jQuery(document).ready(function($) {
 		$('ul.surfaces li').css({width: surfaceWidth + 'px', height: surfaceHeight + 'px'});
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
-		$('#go-to-tools').delay(1500).animate({'top': -10 + 'px'}, 500);
+		$('#go-to-tools').delay(1500).animate({'top': -20 + 'px'}, 500);
 		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width() / 100 + 'px'}, 500);
 		$('#surface-canvas p').delay(2500).fadeIn(1000);
 	}
