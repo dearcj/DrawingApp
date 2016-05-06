@@ -49,6 +49,7 @@ jQuery(document).ready(function($) {
 		$('#surface-wrapper').animate('height', 100 + '%');
 		$('#surface-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin': '20px auto 0'});
 		$('#surface-wrapper p').css({'opacity': 0, height: 0});
+		$('ul.tools-buttons.surface-tb').css('width', 65 + 'px');
 		$('.surface-button.at-the-backyard').css('display', 'none');
 		$('ul#helpers li').css('display', 'none');
 		$('ul.surfaces li').css({width: 75 + 'px', height: 50 + 'px', 'margin-top': 0 + 'px'});
@@ -57,9 +58,9 @@ jQuery(document).ready(function($) {
 
 		$('ul.tools-buttons li').css({width: 65 + 'px', height: 65 + 'px', 'margin-top': 15 + 'px'});
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
-		$('#back-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
-		$('#main-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
-		$('#cursor-canvas').css({width: 286 + 'px', height: 196 + 'px', 'margin-left': -80 + 'px'});
+		$('#back-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px'});
+		$('#main-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px'});
+		$('#cursor-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px'});
 		$('ul.tools').css({width: 144 + 'px', height: 288 + 'px', left: 44 + '%', top: 0});
 		$('ul.tools > li').css({width: 72 + 'px', height: 72 + 'px'});
 		$('ul.tools > li#coal > ul').css({width: 50 + 'px', height: 80 + 'px'});
@@ -976,7 +977,7 @@ jQuery(document).ready(function($) {
 			surfaceWrapper = $('#surface-wrapper'),
 			surfaceBackyard = $('.surface-button.at-the-backyard');
 		forwardButton = $('ul.tools-buttons.surface-tb li'),
-			surfacesLi = $('ul.surfaces li'),
+			surfacesLi = $('ul.surfachttps://www.youtube.com/watch?v=dwUWTut1bh4es li'),
 			surfacesLiP = $('ul.surfaces li p'),
 			surfaceLiRatio = function (width, height) {
 				return width/height;
@@ -1009,10 +1010,7 @@ jQuery(document).ready(function($) {
 
 		surfacesLiP.css({'font-size': 180/1.333 + '%', bottom: 25 + 'px'});
 
-		var forwardButtonWidth = 100;
 		window.forwardButtonHeight = 100;
-
-		$('ul.tools-buttons.surface-tb').css('width', forwardButtonWidth + 'px');
 
 		$('ul#helpers.surface').css('top', 0);
 
