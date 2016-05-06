@@ -410,7 +410,7 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('top', 660 + 'px');
 		}
 
-		var toolsWidth = parseInt($('ul.tools').css('width'));
+		var toolsWidth = $('ul.tools').css('width');
 
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
 		$('ul.tools').delay(500).animate({'margin-left': -toolsWidth*5 + 'px'}, 1000);
