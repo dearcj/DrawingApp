@@ -133,16 +133,16 @@
 
           <ul id="buttons">
             <div class="left-block">
-              <li id="button-1" class="hor"><span class="up">Раздел в разработке</span></li>
-              <li id="button-2" class="hor clear"><span class="down">Раздел в разработке</span></li>
+              <li id="button-1" class="hor"><span class="up"></span></li>
+              <li id="button-2" class="hor clear"><span class="down"></span></li>
             </div>
             <div class="middle-block">
               <li id="button-3" class="vert mintop go-to-surface"><a href="#"></a></li>
               <li id="button-4" class="vert mintop go-to-museum"><a href="#"></a></li>
             </div>
             <div class="right-block">
-              <li id="button-5" class="hor mintop"><span class="up">Раздел в разработке</span></li>
-              <li id="button-6" class="hor mintop"><span class="down">Раздел в разработке</span></li>
+              <li id="button-5" class="hor mintop"><span class="up"></span></li>
+              <li id="button-6" class="hor mintop"><span class="down"></span></li>
             </div>
           </ul>
 
