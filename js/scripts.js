@@ -432,7 +432,7 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
-		$('#tools-canvas p').css('display', 'block').fadeIn(2000).removeClass('hidden');
+		$('#painting-wrapper > p').css('display', 'block').fadeIn(2000).removeClass('hidden');
 	}
 
 	function filtersAnimation() {

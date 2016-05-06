@@ -523,7 +523,7 @@ ul#helpers li span p {
 	display: none;
 }
 
-#painting-wrapper p {
+#painting-wrapper > p {
 	background-color: #31b2ee;
     text-align: center;
     margin: 0 auto;
