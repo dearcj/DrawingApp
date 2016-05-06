@@ -523,16 +523,6 @@ ul#helpers li span p {
 	display: none;
 }
 
-#painting-wrapper > p {
-	background-color: #31b2ee;
-    text-align: center;
-    margin: 0 auto;
-    line-height: 120%;
-    height: auto;
-    position: relative;
-    color: white;
-}
-
 ul.interface {
 	padding: 0;
 	margin: 0;
@@ -1875,6 +1865,23 @@ ul.surfaces li.metal:focus {
 }
 
 .filters-canvas p {
+	background-color: #31b2ee;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 120%;
+	height: auto;
+	position: absolute;
+	color: white;
+	left: 50%;
+	margin-left: -188px;
+	top: 200px;
+	width: 376px;
+	border-radius: 20px;
+	font-size: 240%;
+	padding: 25px 0 30px;
+}
+
+#painting-wrapper > p {
 	background-color: #31b2ee;
 	text-align: center;
 	margin: 0 auto;
