@@ -82,7 +82,6 @@ jQuery(document).ready(function($) {
 		$('ul.tools li#btn-pistol').css({width: 56 + 'px', height: 84 + 'px', 'margin-right': 2 + 'px'});
 		$('li.send-to-museum').css('width', 150 + 'px');
 		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 225 + 'px', 'margin-left': -90 + 'px'});
-		$('#painting-wrapper > p').css({'opacity': 0, height: 0});
 
 		$('.filters-canvas').css({width: 240 + 'px', height: 165 + 'px'});
 		$('#filters-canvas').css({width: 240 + 'px', height: 165 + 'px'});
@@ -416,9 +415,11 @@ jQuery(document).ready(function($) {
 		if ($(window).width() < 700) {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
 			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 240)/2 - 144)/2 + 'px'}, 1000);
+			$('#painting-wrapper > p').css('z-index', 250).fadeIn(2000).removeClass('hidden');
 		} else {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
+			$('#painting-wrapper > p').css({'opacity': 0, height: 0});
 		}
 
 		$('#painting-wrapper').each(function(){
@@ -439,7 +440,6 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
-		$('#painting-wrapper > p').css('z-index', 250).fadeIn(2000).removeClass('hidden');
 	}
 
 	function filtersAnimation() {
