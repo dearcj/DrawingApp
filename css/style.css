@@ -98,6 +98,12 @@ ul#undo-refresh {
 
 ul#undo-refresh li {
 	float: left;
+	opacity: 0;
+}
+
+ul#undo-refresh li:hover,
+ul#undo-refresh li:focus {
+	cursor: pointer;
 }
 
 ul#undo-refresh li#undo {

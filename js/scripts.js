@@ -370,6 +370,8 @@ jQuery(document).ready(function($) {
 			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 700)/3.8 - surfaceWidth + 'px', 'margin-top': (495 - surfaceHeight*4)/2 + 'px'}, 1500);
 		}
 
+		$('ul#undo-refresh li').delay(500).animate({'opacity', 1}, 1000);
+
 		$('.surface-button.at-the-backyard').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'});
 
 		$('#surface-wrapper').each(function () {
