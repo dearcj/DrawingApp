@@ -132,11 +132,11 @@ jQuery(document).ready(function($) {
 
 
 	$('#undo').on(window.eventType, function(event) {
-		window.mainCanvasObject.css('display', 'none');
+		mainCanvasObject.makeUndo();
 	});
 
 	$('#refresh').on(window.eventType, function(event) {
-		window.mainCanvasObject.resetCanvas();
+		mainCanvasObject.resetCanvas();
 	});
 
 	$('#btn-sound').on(window.eventType, function(event) {
