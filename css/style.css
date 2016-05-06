@@ -95,6 +95,11 @@ ul#undo-refresh {
 	position: absolute;
 	top: 540px;
 	left: 50%;
+	margin-left: -350px;
+}
+
+#painting-wrapper ul#undo-refresh {
+	top: 580px;
 	margin-left: -370px;
 }
 
