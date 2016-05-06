@@ -970,6 +970,7 @@ jQuery(document).ready(function($) {
 
 	// ------------------MUSEUM PAGE-------------------
 
+
 	function surfaceResponsive () {
 		var width = $(window).width(),
 			height = $(window).height(),
@@ -977,7 +978,7 @@ jQuery(document).ready(function($) {
 			surfaceWrapper = $('#surface-wrapper'),
 			surfaceBackyard = $('.surface-button.at-the-backyard');
 		forwardButton = $('ul.tools-buttons.surface-tb li'),
-			surfacesLi = $('ul.surfachttps://www.youtube.com/watch?v=dwUWTut1bh4es li'),
+			surfacesLi = $('ul.surfaces li'),
 			surfacesLiP = $('ul.surfaces li p'),
 			surfaceLiRatio = function (width, height) {
 				return width/height;
