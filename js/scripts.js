@@ -132,7 +132,7 @@ jQuery(document).ready(function($) {
 
 
 	$('#undo').on(window.eventType, function(event) {
-		window.mainCanvasObject.makeUndo();
+		window.mainCanvasObject.css('display', 'none');
 	});
 
 	$('#refresh').on(window.eventType, function(event) {
