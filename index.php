@@ -192,6 +192,11 @@
             <p class="hidden">Выбери, на чём ты хочешь рисовать!</p>
           </div>
 
+          <ul id="undo-refresh">
+            <li id="undo"></li>
+            <li id="refresh"></li>
+          </ul>
+
           <ul class="tools-buttons surface-tb">
             <li class="hidden go-to-tools" id="go-to-tools"><a href="#"></a></li>
           </ul>
@@ -281,7 +286,7 @@
           <div class="filters-canvas">
             <canvas id="filters-canvas" width="750px" height="530px"></canvas>
 
-            <p class="hidden">Добавь немного Волшебства!</p>
+            <p class="hidden">Добавь немного волшебства!</p>
 
             <ul class="tools-buttons filters-tb">
               <li class="go-to-tools back-to-tools"><a href="#"></a></li>

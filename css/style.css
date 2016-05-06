@@ -96,12 +96,14 @@ ul#undo-refresh {
 
 ul#undo-refresh li#undo {
 	background: url(../img/back-button.png) no-repeat;
+	background-size: 100%;
 	width: 22px;
 	height: 22px;
 }
 
 ul#undo-refresh li#refresh {
 	background: url(../img/refresh-button.png) no-repeat;
+	background-size: 100%;
 	width: 22px;
 	height: 30px;
 }
