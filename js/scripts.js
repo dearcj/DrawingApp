@@ -83,17 +83,17 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').css('width', 150 + 'px');
 		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 225 + 'px', 'margin-left': -90 + 'px'});
 
-		$('.filters-canvas').css({width: 285 + 'px', height: 196 + 'px'});
-		$('#filters-canvas').css({width: 285 + 'px', height: 196 + 'px'});
+		$('.filters-canvas').css({width: 240 + 'px', height: 165 + 'px'});
+		$('#filters-canvas').css({width: 240 + 'px', height: 165 + 'px'});
 		$('.filters-canvas p').css({'opacity': 0, height: 0});
 		$('li.its-done').css('width', 150 + 'px');
 		$('ul.tools-buttons.filters-tb').css({width: 205 + 'px', height: 65 + 'px'});
 		$('ul.tools-buttons.filters-tb li').css({'margin-top': 0 + 'px'});
-		$('#main-image').css({width: 285 + 'px', height: 196 + 'px'});
-		$('#painting-img').css({width: 285 + 'px', height: 196 + 'px'});
+		$('#main-image').css({width: 240 + 'px', height: 165 + 'px'});
+		$('#painting-img').css({width: 240 + 'px', height: 165 + 'px'});
 		$('.paintings').css('display', 'none');
 
-		$('.museum-painting').css({width: 285 + 'px', height: 196 + 'px', top: -90 + 'px'});
+		$('.museum-painting').css({width: 240 + 'px', height: 165 + 'px', top: -90 + 'px'});
 		$('#main-image p').css({'opacity': 0, height: 0});
 		$('.museum-button.at-the-backyard').css({width: 100 + 'px', height: 55 + 'px', 'margin-top': 60 + 'px'});
 		$('.social-buttons').css({right: 6 + '%', top: -52 + '%'});
@@ -365,7 +365,7 @@ jQuery(document).ready(function($) {
 				'height': 100 + '%'
 			}, 200).css('z-index', '200');
 			$('#go-to-tools').delay(1500).animate({'top': -20 + 'px'}, 500);
-			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 285) /3.8 - surfaceWidth + 'px', 'margin-top': (196 - surfaceHeight*4)/2 + 'px'}, 1500);
+			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 240) /3.8 - surfaceWidth + 'px', 'margin-top': (165 - surfaceHeight*4)/2 + 'px'}, 1500);
 		} else {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({
 				'opacity': 1,
@@ -414,7 +414,7 @@ jQuery(document).ready(function($) {
 
 		if ($(window).width() < 700) {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 285)/2 - toolsWidth)/4 + 'px'}, 1000);
+			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 240)/2 - toolsWidth)/2 + 'px'}, 1000);
 		} else {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
@@ -443,7 +443,7 @@ jQuery(document).ready(function($) {
 
 	function filtersAnimation() {
 		if ($(window).width() < 700) {
-			$('#wand').css({width: 55 + 'px', height: 260 + 'px', right: 3*(($(window).width() - 285)/2 - 55)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
+			$('#wand').css({width: 55 + 'px', height: 260 + 'px', right: 3*(($(window).width() - 240)/2 - 55)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
 		} else {
 			$('#wand').css({width: 120 + 'px', height: 575 + 'px', right: 3*(($(window).width() - 700)/2 - 120)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
 		}
@@ -503,7 +503,7 @@ jQuery(document).ready(function($) {
 		$('#main-image p').css('display', 'block').delay(1000).animate({'opacity': 1}, 2000).removeClass('hidden');
 
 		if ($(window).width() < 700) {
-			$('#main-image').delay(500).animate({'opacity': 1, 'width': 285 + 'px', 'height': 196 + 'px'}, 1000);
+			$('#main-image').delay(500).animate({'opacity': 1, 'width': 240 + 'px', 'height': 165 + 'px'}, 1000);
 			$('#main-image p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
 			$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
