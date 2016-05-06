@@ -1238,9 +1238,7 @@ jQuery(document).ready(function($) {
 	// ---------HELPERS TEXT PROPERTIES CHANGING---------
 
 	function buttonHelpersPosition() {
-		var spanup = $('ul#buttons li span.up'),
-			spandown = $('ul#buttons li span.down'),
-			buttonHeight = parseInt($('ul#buttons li.hor').css('height')),
+		var buttonHeight = parseInt($('ul#buttons li.hor').css('height')),
 			bothSpanWidth = $('ul#buttons li span').width(),
 			bothSpanHeight = $('ul#buttons li span').height(),
 			paddingTopRatio = 214/15,
@@ -1249,9 +1247,6 @@ jQuery(document).ready(function($) {
 			paddingBottom = bothSpanWidth/paddingBottomRatio;
 
 		$('ul#buttons li span').css({'font-size': bothSpanWidth/1.5 + '%', 'padding': paddingTop + 'px ' + '0 ' + paddingBottom + 'px'});
-
-		spanup.css('top', -(bothSpanHeight + paddingTop * 1.65 + paddingBottom) + 'px');
-		spandown.css('top', buttonHeight + 'px');
 	}
 
 
