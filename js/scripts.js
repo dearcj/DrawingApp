@@ -82,7 +82,7 @@ jQuery(document).ready(function($) {
 		$('ul.tools li#btn-pistol').css({width: 56 + 'px', height: 84 + 'px', 'margin-right': 2 + 'px'});
 		$('li.send-to-museum').css('width', 150 + 'px');
 		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 225 + 'px', 'margin-left': -90 + 'px'});
-		$('#painting-wrapper p').css({'opacity': 0, height: 0});
+		$('#painting-wrapper > p').css({'opacity': 0, height: 0});
 
 		$('.filters-canvas').css({width: 240 + 'px', height: 165 + 'px'});
 		$('#filters-canvas').css({width: 240 + 'px', height: 165 + 'px'});
