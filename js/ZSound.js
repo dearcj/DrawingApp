@@ -76,6 +76,7 @@ ZSound.UnMute = function () {
     if (ZSound.available) return;
     ZSound.available = true;
     ZSound.playSounds = true;
+    ZSound.playMusic = true;
 
    // createjs.Sound.setMute(false);
 
@@ -88,6 +89,7 @@ ZSound.UnMute = function () {
 ZSound.Mute = function () {
     ZSound.available = false;
     ZSound.playSounds = false;
+    ZSound.playMusic = false;
   //  createjs.Sound.setMute(true);
     /*if (this.musicInstance)
      {
