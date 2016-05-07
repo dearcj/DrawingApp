@@ -47,11 +47,8 @@ jQuery(document).ready(function($) {
 	}
 
 	$('#mute').on(window.eventType, function(event) {
-		if (ZSound.musicInstance != null) {
-			ZSound.stopMusic();
-		} else {
-			ZSound.PlayMusic('street');
-		}
+		ZSound.available = !ZSound.available;
+		ZSound.playSounds = !ZSound.playSounds;
 	});
 
 	$('#fullscreen').on(window.eventType, function(event) {
@@ -178,11 +175,6 @@ jQuery(document).ready(function($) {
 
 	$('#refresh').on(window.eventType, function(event) {
 		window.mainCanvasObject.resetCanvas();
-	});
-
-	$('#btn-sound').on(window.eventType, function(event) {
-		ZSound.available = !ZSound.available;
-		ZSound.playSounds = !ZSound.playSounds;
 	});
 
 	$('ul.tools li#btn-scotch').on(window.eventType, function(event) {
