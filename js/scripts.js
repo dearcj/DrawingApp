@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('#fullscreen').on(window.eventType, function(event) {
-		var html = document.documentElement;
+		var html = document.$('body');
 		launchFullScreen(html);
 	});
 
