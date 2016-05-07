@@ -47,6 +47,10 @@ jQuery(document).ready(function($) {
 		$('.podval_new').css('display', 'none');
 
 		$('#surface-wrapper').animate('height', 100 + '%');
+		$('#painting-wrapper').animate('height', 100 + '%');
+		$('#filters-wrapper').animate('height', 100 + '%');
+		$('#publication-wrapper').animate('height', 100 + '%');
+		$('#museum-wrapper').animate('height', 100 + '%');
 		$('#surface-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin': '20px auto 0'});
 		$('#surface-wrapper p').css({'opacity': 0, height: 0});
 		$('ul.tools-buttons.surface-tb').css('width', 65 + 'px');
@@ -98,7 +102,7 @@ jQuery(document).ready(function($) {
 		$('.museum-painting').css({width: 240 + 'px', height: 165 + 'px', top: -90 + 'px'});
 		$('#main-image p').css({'opacity': 0, height: 0});
 		$('.museum-button.at-the-backyard').css({width: 100 + 'px', height: 55 + 'px', 'margin-top': 60 + 'px'});
-		$('.social-buttons').css({right: 6 + '%', top: -52 + '%'});
+		$('.social-buttons').css({right: 6 + '%', top: -89 + '%'});
 
 		$('form.sending-form').css({width: 40 + '%', height: 165 + 'px', 'margin-right': -250 + 'px', 'float': 'right'});
 		$('form.sending-form button').css({width: 100 + '%'});
@@ -540,7 +544,7 @@ jQuery(document).ready(function($) {
 
 		if ($(window).width() < 700) {
 			$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-			$('.painting-info').css('width', 350 + 'px').delay(500).animate({'top': -70 + 'px'}, 500);
+			$('.painting-info').css('width', 300 + 'px').delay(500).animate({'top': -140 + 'px'}, 500);
 		} else {
 			$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			$('.painting-info').delay(500).animate({'top': -180 + 'px'}, 500);
@@ -962,15 +966,17 @@ jQuery(document).ready(function($) {
 
 		var paintingInfoWidth = parseInt(paintingInfo.css('width'));
 
-		paintingInfo.find('span.title').css('font-size', paintingInfoWidth/2.25 + '%');
-
-		paintingInfo.find('span.author').css('font-size', paintingInfoWidth/2.75 + '%');
-
-		paintingInfo.find('span.materials').css('font-size', paintingInfoWidth/3.25 + '%');
+		if (width > 700) {
+			paintingInfo.find('span.title').css('font-size', paintingInfoWidth/2.25 + '%');
+			paintingInfo.find('span.author').css('font-size', paintingInfoWidth/2.75 + '%');
+			paintingInfo.find('span.materials').css('font-size', paintingInfoWidth/3.25 + '%');
+			socialButtons.find('span').css('font-size', paintingInfoWidth/3.75 + '%');
+		} else {
+			paintingInfo.find('span').css('font-size', 125 + '%');
+			socialButtons.find('span').css('font-size', 110 + '%');
+		}
 
 		paintingInfo.find('span').css('padding-bottom', paintingInfo.height()/36.27 + 'px');
-
-		socialButtons.find('span').css('font-size', paintingInfoWidth/3.75 + '%');
 
 		darkSideMuseum.css('width', 750 + 'px');
 
