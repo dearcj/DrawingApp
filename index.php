@@ -122,7 +122,7 @@
   </div>
 
   <div class="header">
-    <a href="/"><img src="./wp-content/themes/mmoma/img/logo_mmoma.gif"></a>
+    <a href="/"><img src="./wp-content/themes/mmoma/img/logo_mmoma.jpg"></a>
   </div>
 
   <div id="wrapper">
