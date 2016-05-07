@@ -104,7 +104,7 @@ jQuery(document).ready(function($) {
 		$('form.sending-form button').css({width: 100 + '%'});
 		$('form.sending-form .work-author').css({width: 100 + '%', height: 125 + 'px'});
 		$('form.sending-form .work-author p').css({width: 100 + '%', 'float': 'none', 'text-align': 'center', 'font-size': 100 + '%'});
-		$('form.sending-form .work-author input').css({width: 90 + '%', height: 25 + 'px', 'float': 'none', 'margin': '10px auto 0', 'font-size': 100 + '%'});
+		$('form.sending-form .work-author input').css({width: 90 + '%', height: 25 + 'px', 'float': 'none', 'margin': '5px auto 0', 'font-size': 100 + '%'});
 		$('.dark-side.sending').css('height', 35 + 'px');
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
@@ -1106,11 +1106,11 @@ jQuery(document).ready(function($) {
 			var sendingFormHeight = sendingForm.height();
 			sendingFormButton.css({height: 40 + 'px', 'font-size': 100 + '%', 'padding-top': 4 + 'px', 'border-radius': '0 0 10px 10px'});
 			sendingFormP.css('font-size', 100 + '%');
-			sendingFormInput.css({height: 30 + 'px', 'font-size': 100 + '%'});
+			sendingFormInput.css({height: 25 + 'px', 'font-size': 100 + '%'});
 			var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
 					itemFieldSecondMarginTop = sendingFormHeight/9.13;
 			$('form.sending-form .work-author .item-field').css('margin-top', 10 + 'px');
-			$('form.sending-form .work-author .item-field:last-child').css('margin-top', itemFieldSecondMarginTop + 'px');
+			$('form.sending-form .work-author .item-field:last-child').css('margin-top', 10 + 'px');
 		}
 
 		$('form.sending-form .work-author .item-field').css('height', sendingFormHeight/3.65 + 'px');
