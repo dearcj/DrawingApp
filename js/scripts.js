@@ -42,7 +42,7 @@ jQuery(document).ready(function($) {
 		} else if(document.mozCancelFullScreen) {
 			document.mozCancelFullScreen();
 		} else if(document.webkitCancelFullscreen) {
-			document.webkitCancelFullScreen();
+			document.webkitCancelFullscreen();
 		}
 	}
 
