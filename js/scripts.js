@@ -47,7 +47,11 @@ jQuery(document).ready(function($) {
 	}
 
 	$('#mute').on(window.eventType, function(event) {
-		ZSound.stopMusic();
+		if (ZSound.musicInstance != null) {
+			ZSound.stopMusic();
+		} else {
+			ZSound.playMusic('street');
+		}
 	});
 
 	$('#fullscreen').on(window.eventType, function(event) {
