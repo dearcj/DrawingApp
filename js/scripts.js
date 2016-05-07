@@ -49,12 +49,11 @@ jQuery(document).ready(function($) {
 	$('#mute').on(window.eventType, function(event) {
 		if (ZSound.musicInstance != null) {
 			ZSound.stopMusic();
+			ZSound.Mute();
 		} else {
 			ZSound.PlayMusic('street');
+			ZSound.UnMute();
 		}
-
-		ZSound.available = !ZSound.available;
-		ZSound.playSounds = !ZSound.playSounds;
 	});
 
 	$('#fullscreen').on(window.eventType, function(event) {
