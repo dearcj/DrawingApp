@@ -1071,12 +1071,39 @@ jQuery(document).ready(function($) {
 	function sendingResponsive () {
 		var width = $(window).width(),
 				height = $(window).height(),
+				sendingCanvas = $('#main-image'),
 				sendingWrapper = $('#publication-wrapper'),
+				sendingForm = $('form.sending-form'),
+				sendingFormButton = $('form.sending-form button'),
+				sendingFormInput = $('form.sending-form input'),
+				sendingFormP = $('form.sending-form .work-author p'),
 				paintingsLi = $('ul.paintings li'),
 				paintingsLiText = $('ul.paintings a li div'),
-				darkSideSending = $('.dark-side.sending');
+				darkSideSending = $('.dark-side.sending'),
+				sendingBackgroundHeight = width/wrapperRatio;
 
 		sendingWrapper.css({'background-size': '100% auto'});
+
+		sendingForm.css('height', sendingForm.width()/5.907 + 'px');
+
+		var sendingFormHeight = sendingForm.height();
+
+		sendingFormButton.css({height: sendingFormHeight + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'})
+
+		sendingFormInput.css({height: sendingFormHeight/4.35 + 'px', 'font-size': sendingFormHeight + '%'});
+
+		$('form.sending-form .work-author .item-field').css('height', sendingFormHeight/3.65 + 'px');
+
+		var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
+				itemFieldSecondMarginTop = sendingFormHeight/9.13;
+
+		$('form.sending-form .work-author .item-field').css('margin-top', (sendingFormHeight - itemFieldHeight*2 - itemFieldSecondMarginTop)/2 + 'px');
+
+		$('form.sending-form .work-author .item-field:last-child').css('margin-top', itemFieldSecondMarginTop + 'px');
+
+		sendingFormP.css('font-size', sendingFormHeight + '%');
+
+		sendingForm.css('border-radius', 10*sendingFormHeight/100 + 'px');
 
 		paintingsLi.css({width: 750/3 + 'px', 'margin-bottom': 5.66*530/100 + 'px'});
 
