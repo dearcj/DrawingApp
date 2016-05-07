@@ -48,7 +48,7 @@ jQuery(document).ready(function($) {
 
 	$('#mute').on(window.eventType, function(event) {
 		if (ZSound.musicInstance != null) {
-			ZSound.stopMusic();
+			ZSound.stopMusic('street');
 			ZSound.Mute();
 		} else {
 			ZSound.PlayMusic('street');
