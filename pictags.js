@@ -176,7 +176,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/filters/bubble.jpg',
-		tag: 'пузырек',
+		tag: 'баббл',
 		fulltags: '',
 		title: '«I wonder who this artist is» из серии «I am not»',
 		author: 'Юрий Альберт',

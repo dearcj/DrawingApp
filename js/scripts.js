@@ -26,6 +26,35 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
+	function launchFullScreen(element) {
+		if(element.requestFullScreen) {
+			element.requestFullScreen();
+		} else if(element.mozRequestFullScreen) {
+			element.mozRequestFullScreen();
+		} else if(element.webkitRequestFullScreen) {
+			element.webkitRequestFullScreen();
+		}
+	}
+
+	function cancelFullscreen() {
+		if(document.cancelFullScreen) {
+			document.cancelFullScreen();
+		} else if(document.mozCancelFullScreen) {
+			document.mozCancelFullScreen();
+		} else if(document.webkitCancelFullScreen) {
+			document.webkitCancelFullScreen();
+		}
+	}
+
+	$('#mute').on(window.eventType, function(event) {
+		ZSound.Mute('street');
+	});
+
+	$('#fullscreen').on(window.eventType, function(event) {
+		var html = document.documentElement;
+		launchFullScreen(html);
+	});
+
 	/////check device type
 	/////set canvas W and H
 
