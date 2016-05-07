@@ -85,13 +85,13 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').css('width', 150 + 'px');
 		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 165 + 'px', 'margin-left': -91 + 'px'});
 
-		$('.filters-canvas').css({width: 240 + 'px', height: 165 + 'px'});
+		$('.filters-canvas').css({width: 240 + 'px', height: 165 + 'px', top: 20 + 'px'});
 		$('#filters-canvas').css({width: 240 + 'px', height: 165 + 'px'});
 		$('.filters-canvas p').css({'opacity': 0, height: 0});
 		$('li.its-done').css('width', 150 + 'px');
-		$('ul.tools-buttons.filters-tb').css({width: 205 + 'px', height: 65 + 'px'});
+		$('ul.tools-buttons.filters-tb').css({width: 205 + 'px', height: 65 + 'px', top: 160 + 'px'});
 		$('ul.tools-buttons.filters-tb li').css({'margin-top': 0 + 'px'});
-		$('#main-image').css({width: 240 + 'px', height: 165 + 'px'});
+		$('#main-image').css({width: 240 + 'px', height: 165 + 'px', 'margin-top': 20 + 'px'});
 		$('#painting-img').css({width: 240 + 'px', height: 165 + 'px'});
 		$('.paintings').css('display', 'none');
 
@@ -446,7 +446,7 @@ jQuery(document).ready(function($) {
 
 	function filtersAnimation() {
 		if ($(window).width() < 700) {
-			$('#wand').css({width: 55 + 'px', height: 260 + 'px', right: 3*(($(window).width() - 240)/2 - 55)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
+			$('#wand').css({width: 40 + 'px', height: 200 + 'px', right: 3*(($(window).width() - 240)/2 - 40)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
 		} else {
 			$('#wand').css({width: 120 + 'px', height: 575 + 'px', right: 3*(($(window).width() - 700)/2 - 120)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
 		}
@@ -1073,7 +1073,6 @@ jQuery(document).ready(function($) {
 				height = $(window).height(),
 				sendingCanvas = $('#main-image'),
 				sendingWrapper = $('#publication-wrapper'),
-				sendingForm = $('form.sending-form'),
 				sendingFormButton = $('form.sending-form button'),
 				sendingFormInput = $('form.sending-form input'),
 				sendingFormP = $('form.sending-form .work-author p'),
@@ -1084,14 +1083,6 @@ jQuery(document).ready(function($) {
 
 		sendingWrapper.css({'background-size': '100% auto'});
 
-		sendingForm.css('height', sendingForm.width()/5.907 + 'px');
-
-		var sendingFormHeight = sendingForm.height();
-
-		sendingFormButton.css({height: sendingFormHeight + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'})
-
-		sendingFormInput.css({height: sendingFormHeight/4.35 + 'px', 'font-size': sendingFormHeight + '%'});
-
 		$('form.sending-form .work-author .item-field').css('height', sendingFormHeight/3.65 + 'px');
 
 		var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
@@ -1100,10 +1091,6 @@ jQuery(document).ready(function($) {
 		$('form.sending-form .work-author .item-field').css('margin-top', (sendingFormHeight - itemFieldHeight*2 - itemFieldSecondMarginTop)/2 + 'px');
 
 		$('form.sending-form .work-author .item-field:last-child').css('margin-top', itemFieldSecondMarginTop + 'px');
-
-		sendingFormP.css('font-size', sendingFormHeight + '%');
-
-		sendingForm.css('border-radius', 10*sendingFormHeight/100 + 'px');
 
 		paintingsLi.css({width: 750/3 + 'px', 'margin-bottom': 5.66*530/100 + 'px'});
 
