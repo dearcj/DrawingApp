@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
 		$('ul.tools > li').css({width: 55 + 'px', height: 55 + 'px'});
 		$('ul.tools > li#coal > ul').css({width: 55 + 'px', height: 55 + 'px', 'margin': '0 auto'});
 		$('ul.tools > li#coal > ul li').css({width: 22 + 'px', height: 70 + 'px'});
-		$('ul.tools > li#scotch > ul').css('margin-top', -6 + 'px');
+		$('ul.tools > li#scotch').css('margin-top', -6 + 'px');
 		$('ul.tools > li#scotch > ul').css({width: 55 + 'px', height: 55 + 'px'});
 		$('ul.tools li#btn-scotch').css({width: 55 + 'px', height: 35 + 'px'});
 		$('ul.tools li#btn-scotch-1').css({width: 50 + 'px', height: 10 + 'px', 'margin-top': 4 + 'px', 'margin-right': 0 + 'px'});
