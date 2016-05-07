@@ -197,8 +197,8 @@
           </ul>
 
           <ul class="ux-buttons">
-            <li></li>
-            <li></li>
+            <li id="mute"></li>
+            <li id="fullscreen"></li>
           </ul>
         </div>
 
@@ -266,8 +266,8 @@
             <li id="btn-pistol"><p>Пистолет</p></li>
           </ul>
           <ul class="ux-buttons">
-            <li></li>
-            <li></li>
+            <li id="mute"></li>
+            <li id="fullscreen"></li>
           </ul>
         </div>
 
@@ -292,8 +292,8 @@
           </div>
 
           <ul class="ux-buttons">
-            <li></li>
-            <li></li>
+            <li id="mute"></li>
+            <li id="fullscreen"></li>
           </ul>
         </div>
 
@@ -326,8 +326,8 @@
           </form>
 
           <ul class="ux-buttons">
-            <li></li>
-            <li></li>
+            <li id="mute"></li>
+            <li id="fullscreen"></li>
           </ul>
         </div>
 
@@ -365,8 +365,8 @@
           </div>
 
           <ul class="ux-buttons">
-            <li id="btn-sound"></li>
-            <li id="btn-full"></li>
+            <li id="mute"></li>
+            <li id="fullscreen"></li>
           </ul>
         </div>
   </div>
