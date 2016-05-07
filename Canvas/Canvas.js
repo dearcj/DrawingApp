@@ -226,7 +226,8 @@ Canvas.prototype.finishAction = function (e) {
 	this.state.drawState = null;
 	this.actions[this.actions.length - 1].brush.onFinish();
 	var t = this;
-	setTimeout(function(){t.saveState();}, 200);
+	t.saveState();
+//	setTimeout(function(){}, 200);
 
 };
 
