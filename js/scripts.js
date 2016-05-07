@@ -102,7 +102,7 @@ jQuery(document).ready(function($) {
 
 		$('form.sending-form').css({width: 40 + '%', height: 165 + 'px', 'margin-right': 35 + 'px', 'float': 'right'});
 		$('form.sending-form button').css({width: 100 + '%'});
-		$('form.sending-form .work-author').css({width: 100 + '%', height: 125 + 'px'});
+		$('form.sending-form .work-author').css({width: 100 + '%', height: 115 + 'px'});
 		$('form.sending-form .work-author p').css({width: 100 + '%', 'float': 'none', 'text-align': 'center', 'font-size': 100 + '%'});
 		$('form.sending-form .work-author input').css({width: 90 + '%', height: 25 + 'px', 'float': 'none', 'margin': '5px auto 0', 'font-size': 100 + '%'});
 		$('.dark-side.sending').css('height', 35 + 'px');
@@ -1094,6 +1094,7 @@ jQuery(document).ready(function($) {
 		if (width > 700) {
 			sendingForm.css('height', sendingForm.width()/5.907 + 'px');
 			var sendingFormHeight = sendingForm.height();
+			sendingForm.css('border-radius', 10*sendingFormHeight/100 + 'px');
 			sendingFormButton.css({height: sendingFormHeight + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'});
 			sendingFormP.css('font-size', sendingFormHeight + '%');
 			sendingFormInput.css({height: sendingFormHeight/4.35 + 'px', 'font-size': sendingFormHeight + '%'});
@@ -1104,18 +1105,17 @@ jQuery(document).ready(function($) {
 		} else {
 			sendingForm.css('height', 165 + 'px');
 			var sendingFormHeight = sendingForm.height();
-			sendingFormButton.css({height: 40 + 'px', 'font-size': 100 + '%', 'padding-top': 4 + 'px', 'border-radius': '0 0 10px 10px'});
-			sendingFormP.css('font-size', 100 + '%');
+			sendingForm.css('border-radius', 10 + 'px');
+			sendingFormButton.css({height: 50 + 'px', 'font-size': 100 + '%', 'padding-top': 4 + 'px', 'border-radius': '0 0 10px 10px'});
+			sendingFormP.css('font-size', 90 + '%');
 			sendingFormInput.css({height: 25 + 'px', 'font-size': 100 + '%'});
 			var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
 					itemFieldSecondMarginTop = sendingFormHeight/9.13;
-			$('form.sending-form .work-author .item-field').css('margin-top', 10 + 'px');
-			$('form.sending-form .work-author .item-field:last-child').css('margin-top', 10 + 'px');
+			$('form.sending-form .work-author .item-field').css('margin-top', 7 + 'px');
+			$('form.sending-form .work-author .item-field:last-child').css('margin-top', 7 + 'px');
 		}
 
 		$('form.sending-form .work-author .item-field').css('height', sendingFormHeight/3.65 + 'px');
-
-		sendingForm.css('border-radius', 10*sendingFormHeight/100 + 'px');
 
 		paintingsLi.css({width: 750/3 + 'px', 'margin-bottom': 5.66*530/100 + 'px'});
 
