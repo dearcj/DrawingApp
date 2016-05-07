@@ -47,11 +47,6 @@ jQuery(document).ready(function($) {
 	}
 
 	$('#mute').on(window.eventType, function(event) {
-		if (ZSound.musicInstance != null) {
-			ZSound.stopMusic('street');
-		} else {
-			ZSound.PlayMusic('street');
-		}
 
 		ZSound.available = !ZSound.available;
 		ZSound.playSounds = !ZSound.playSounds;
