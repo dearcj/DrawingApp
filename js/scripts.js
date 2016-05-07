@@ -1071,26 +1071,12 @@ jQuery(document).ready(function($) {
 	function sendingResponsive () {
 		var width = $(window).width(),
 				height = $(window).height(),
-				sendingCanvas = $('#main-image'),
 				sendingWrapper = $('#publication-wrapper'),
-				sendingFormButton = $('form.sending-form button'),
-				sendingFormInput = $('form.sending-form input'),
-				sendingFormP = $('form.sending-form .work-author p'),
 				paintingsLi = $('ul.paintings li'),
 				paintingsLiText = $('ul.paintings a li div'),
-				darkSideSending = $('.dark-side.sending'),
-				sendingBackgroundHeight = width/wrapperRatio;
+				darkSideSending = $('.dark-side.sending');
 
 		sendingWrapper.css({'background-size': '100% auto'});
-
-		$('form.sending-form .work-author .item-field').css('height', sendingFormHeight/3.65 + 'px');
-
-		var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
-				itemFieldSecondMarginTop = sendingFormHeight/9.13;
-
-		$('form.sending-form .work-author .item-field').css('margin-top', (sendingFormHeight - itemFieldHeight*2 - itemFieldSecondMarginTop)/2 + 'px');
-
-		$('form.sending-form .work-author .item-field:last-child').css('margin-top', itemFieldSecondMarginTop + 'px');
 
 		paintingsLi.css({width: 750/3 + 'px', 'margin-bottom': 5.66*530/100 + 'px'});
 
