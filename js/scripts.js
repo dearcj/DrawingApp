@@ -47,7 +47,7 @@ jQuery(document).ready(function($) {
 	}
 
 	$('#mute').on(window.eventType, function(event) {
-		ZSound.Mute('street');
+		ZSound.Mute();
 	});
 
 	$('#fullscreen').on(window.eventType, function(event) {
