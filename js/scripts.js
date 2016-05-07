@@ -47,9 +47,8 @@ jQuery(document).ready(function($) {
 	}
 
 	$('#mute').on(window.eventType, function(event) {
-
-		ZSound.available = !ZSound.available;
-		ZSound.playSounds = !ZSound.playSounds;
+		ZSound.available = true;
+		ZSound.playSounds = false;
 	});
 
 	$('#fullscreen').on(window.eventType, function(event) {
