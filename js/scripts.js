@@ -101,6 +101,10 @@ jQuery(document).ready(function($) {
 		$('.social-buttons').css({right: 6 + '%', top: -52 + '%'});
 
 		$('form.sending-form').css({width: 40 + '%', height: 165 + 'px', 'margin-right': 35 + 'px', 'float': 'right'});
+		$('form.sending-form button').css({width: 100 + '%'});
+		$('form.sending-form .work-author').css({width: 100 + '%', height: 125 + 'px'});
+		$('form.sending-form .work-author p').css({width: 100 + '%', 'float': 'none', 'text-align': 'center', 'font-size': 100 + '%'});
+		$('form.sending-form .work-author input').css({width: 90 + '%', height: 25 + 'px', 'float': 'none', 'margin': '10px auto 0', 'font-size': 100 + '%'});
 		$('.dark-side.sending').css('height', 35 + 'px');
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
@@ -1087,11 +1091,15 @@ jQuery(document).ready(function($) {
 
 		sendingWrapper.css({'background-size': '100% auto'});
 
-		sendingForm.css('height', sendingForm.width()/5.907 + 'px');
-
-		var sendingFormHeight = sendingForm.height();
-
-		sendingFormButton.css({height: sendingFormHeight + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'})
+		if (width > 700) {
+			sendingForm.css('height', sendingForm.width()/5.907 + 'px');
+			var sendingFormHeight = sendingForm.height();
+			sendingFormButton.css({height: 40 + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'})
+		} else {
+			sendingForm.css('height', 165 + 'px');
+			var sendingFormHeight = sendingForm.height();
+			sendingFormButton.css({height: sendingFormHeight + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'})
+		}
 
 		sendingFormInput.css({height: sendingFormHeight/4.35 + 'px', 'font-size': sendingFormHeight + '%'});
 
