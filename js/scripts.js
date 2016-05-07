@@ -1095,25 +1095,25 @@ jQuery(document).ready(function($) {
 			sendingForm.css('height', sendingForm.width()/5.907 + 'px');
 			var sendingFormHeight = sendingForm.height();
 			sendingFormButton.css({height: sendingFormHeight + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'});
-
+			sendingFormP.css('font-size', sendingFormHeight + '%');
+			sendingFormInput.css({height: sendingFormHeight/4.35 + 'px', 'font-size': sendingFormHeight + '%'});
+			var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
+					itemFieldSecondMarginTop = sendingFormHeight/9.13;
+			$('form.sending-form .work-author .item-field').css('margin-top', (sendingFormHeight - itemFieldHeight*2 - itemFieldSecondMarginTop)/2 + 'px');
+			$('form.sending-form .work-author .item-field:last-child').css('margin-top', itemFieldSecondMarginTop + 'px');
 		} else {
 			sendingForm.css('height', 165 + 'px');
 			var sendingFormHeight = sendingForm.height();
-			sendingFormButton.css({height: 40 + 'px', 'font-size': 100 + '%', 'padding-top': 4 + 'px', 'border-radius': 10 + 'px'});
+			sendingFormButton.css({height: 40 + 'px', 'font-size': 100 + '%', 'padding-top': 4 + 'px', 'border-radius': '0 0 10px 10px'});
+			sendingFormP.css('font-size', 100 + '%');
+			sendingFormInput.css({height: 30 + 'px', 'font-size': 100 + '%'});
+			var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
+					itemFieldSecondMarginTop = sendingFormHeight/9.13;
+			$('form.sending-form .work-author .item-field').css('margin-top', 10 + 'px');
+			$('form.sending-form .work-author .item-field:last-child').css('margin-top', itemFieldSecondMarginTop + 'px');
 		}
 
-		sendingFormInput.css({height: sendingFormHeight/4.35 + 'px', 'font-size': sendingFormHeight + '%'});
-
 		$('form.sending-form .work-author .item-field').css('height', sendingFormHeight/3.65 + 'px');
-
-		var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
-				itemFieldSecondMarginTop = sendingFormHeight/9.13;
-
-		$('form.sending-form .work-author .item-field').css('margin-top', (sendingFormHeight - itemFieldHeight*2 - itemFieldSecondMarginTop)/2 + 'px');
-
-		$('form.sending-form .work-author .item-field:last-child').css('margin-top', itemFieldSecondMarginTop + 'px');
-
-		sendingFormP.css('font-size', sendingFormHeight + '%');
 
 		sendingForm.css('border-radius', 10*sendingFormHeight/100 + 'px');
 
