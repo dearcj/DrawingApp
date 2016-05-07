@@ -31,8 +31,8 @@ jQuery(document).ready(function($) {
 			element.requestFullScreen();
 		} else if(element.mozRequestFullScreen) {
 			element.mozRequestFullScreen();
-		} else if(element.webkitRequestFullScreen) {
-			element.webkitRequestFullScreen();
+		} else if(element.webkitRequestFullscreen) {
+			element.webkitRequestFullscreen();
 		}
 	}
 
