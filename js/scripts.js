@@ -100,7 +100,7 @@ jQuery(document).ready(function($) {
 		$('.museum-button.at-the-backyard').css({width: 100 + 'px', height: 55 + 'px', 'margin-top': 60 + 'px'});
 		$('.social-buttons').css({right: 6 + '%', top: -52 + '%'});
 
-		$('form.sending-form').css({width: 40 + '%', height: 165 + 'px', 'margin-right': 35 + 'px', 'float': 'right'});
+		$('form.sending-form').css({width: 40 + '%', height: 165 + 'px', 'margin-right': -250 + 'px', 'float': 'right'});
 		$('form.sending-form button').css({width: 100 + '%'});
 		$('form.sending-form .work-author').css({width: 100 + '%', height: 115 + 'px'});
 		$('form.sending-form .work-author p').css({width: 100 + '%', 'float': 'none', 'text-align': 'center', 'font-size': 100 + '%'});
@@ -513,6 +513,7 @@ jQuery(document).ready(function($) {
 		$('#main-image p').css('display', 'block').delay(1000).animate({'opacity': 1}, 2000).removeClass('hidden');
 
 		if ($(window).width() < 700) {
+			$('form.sending-form').delay(500).animate({'margin-right': 35 + 'px'}, 500);
 			$('#main-image').delay(500).animate({'opacity': 1, 'width': 240 + 'px', 'height': 165 + 'px'}, 1000);
 			$('#main-image p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
