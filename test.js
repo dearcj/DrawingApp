@@ -215,6 +215,15 @@ var initApplication = function() {
     if (canvas.state.drawState)
     canvas.finishAction(e);
   };
+
+  document.body.touchmove = function(e) {
+    canvas.mouseMoveAction(e);
+  };
+
+  document.body.touchend = function(e) {
+    if (canvas.state.drawState)
+      canvas.finishAction(e);
+  };
 };
 
 var goToTools = document.getElementById('go-to-tools');
