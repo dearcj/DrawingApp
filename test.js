@@ -216,11 +216,11 @@ var initApplication = function() {
     canvas.finishAction(e);
   };
 
-  document.body.touchmove = function(e) {
+  document.body.ontouchmove = function(e) {
     canvas.mouseMoveAction(e);
   };
 
-  document.body.touchend = function(e) {
+  document.body.ontouchend = function(e) {
     if (canvas.state.drawState)
       canvas.finishAction(e);
   };
