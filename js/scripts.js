@@ -58,7 +58,8 @@ jQuery(document).ready(function($) {
 	});
 
 	$('#fullscreen').on(window.eventType, function(event) {
-		document.getElementById('body').requestFullScreen();
+		var html = document.getElementById('body');
+		launchFullScreen(html);
 	});
 
 	/////check device type
