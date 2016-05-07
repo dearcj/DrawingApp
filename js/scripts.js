@@ -1227,6 +1227,7 @@ jQuery(document).ready(function($) {
 		coordinate(10, -1.7, 10.7);
 
 		$('#index-wrapper').css({height: artHeight - artHeight/6.48 + 'px', 'top': -artHeight/6.48 + 'px'});
+		$('ul.ux-buttons.home').css('top', artHeight/7.07 + 'px');
 
 		var helper = $('ul.index li'),
 			dog = $('#dog'),

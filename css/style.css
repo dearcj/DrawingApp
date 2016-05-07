@@ -761,8 +761,7 @@ ul.ux-buttons {
 }
 
 ul.ux-buttons.home {
-	position: relative;
-	bottom: 65px;
+	position: absolute;
 }
 
 ul.ux-buttons.home li:last-child {
