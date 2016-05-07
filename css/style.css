@@ -145,10 +145,6 @@ ul#undo-refresh li#refresh {
 	padding-left: 20px;
 }
 
-.header a img {
-	height: 5rem;
-}
-
 #sky {
 	position: absolute;
 	background: url(../img/sky.jpg) no-repeat;
