@@ -112,7 +112,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body id="body">
   
   <div class="langs">
     <ul>
