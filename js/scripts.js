@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
 			document.cancelFullScreen();
 		} else if(document.mozCancelFullScreen) {
 			document.mozCancelFullScreen();
-		} else if(document.webkitCancelFullScreen) {
+		} else if(document.webkitCancelFullscreen) {
 			document.webkitCancelFullScreen();
 		}
 	}
