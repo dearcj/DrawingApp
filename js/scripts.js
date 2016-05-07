@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
 		if (ZSound.musicInstance != null) {
 			ZSound.stopMusic();
 		} else {
-			ZSound.playMusic('street');
+			ZSound.PlayMusic('street');
 		}
 	});
 
