@@ -58,9 +58,9 @@ jQuery(document).ready(function($) {
 
 		$('ul.tools-buttons li').css({width: 65 + 'px', height: 65 + 'px', 'margin-top': 15 + 'px'});
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
-		$('#back-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 0});
-		$('#main-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 0});
-		$('#cursor-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 0});
+		$('#back-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});
+		$('#main-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});
+		$('#cursor-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});
 		$('ul.tools').css({width: 144 + 'px', height: 288 + 'px', top: 0});
 		$('ul.tools > li').css({width: 72 + 'px', height: 72 + 'px'});
 		$('ul.tools > li#coal > ul').css({width: 50 + 'px', height: 80 + 'px'});
