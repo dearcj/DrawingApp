@@ -1094,11 +1094,12 @@ jQuery(document).ready(function($) {
 		if (width > 700) {
 			sendingForm.css('height', sendingForm.width()/5.907 + 'px');
 			var sendingFormHeight = sendingForm.height();
-			sendingFormButton.css({height: 40 + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'})
+			sendingFormButton.css({height: sendingFormHeight + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'});
+
 		} else {
 			sendingForm.css('height', 165 + 'px');
 			var sendingFormHeight = sendingForm.height();
-			sendingFormButton.css({height: sendingFormHeight + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'})
+			sendingFormButton.css({height: 40 + 'px', 'font-size': 100 + '%', 'padding-top': 4 + 'px', 'border-radius': 10 + 'px'});
 		}
 
 		sendingFormInput.css({height: sendingFormHeight/4.35 + 'px', 'font-size': sendingFormHeight + '%'});
