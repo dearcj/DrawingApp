@@ -571,7 +571,7 @@ jQuery(document).ready(function($) {
 			$('.painting-info').css('width', 300 + 'px').delay(500).animate({'top': -140 + 'px'}, 500);
 		} else {
 			$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-			$('.painting-info').delay(500).animate({'top': -180 + 'px'}, 500);
+			$('.painting-info').delay(500).animate({'top': -190 + 'px'}, 500);
 		}
 
 		$('#museum-wrapper').each(function(){
