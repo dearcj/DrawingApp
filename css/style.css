@@ -1681,15 +1681,27 @@ div.at-the-backyard {
 }
 
 .generic {
-	background-color: white;
+	background-color: #300F06;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .generic-img {
 	float: left;
+	width: 45%;
+	margin-top: 6.5%;
 }
 
 .generic-text {
 	float: right;
+	width: 40%;
+	padding: 6.5% 0 0 4%;
+	font-size: 1.4rem;
+	color: white;
+}
+
+.generic-text p {
+	margin-top: 0;
 }
 
 .invisible {
