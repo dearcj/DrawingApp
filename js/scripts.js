@@ -71,7 +71,7 @@ jQuery(document).ready(function($) {
 		var html = document.getElementById('body');
 
 		if ($(this).hasClass('on')) {
-			$('.mute').addClass('off').removeClass('on');
+			$('.fullscreen').addClass('off').removeClass('on');
 			cancelFullscreen();
 			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
@@ -80,7 +80,7 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('display', 'block');
 			$('#wrapper').css({'position': 'relative', 'top': 0});
 		} else {
-			$('.mute').addClass('on').removeClass('off');
+			$('.fullscreen').addClass('on').removeClass('off');
 			launchFullScreen(html);
 			$('html').css('height', 'auto');
 			$('body').css('height', 'auto');
