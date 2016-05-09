@@ -1705,6 +1705,18 @@ div.at-the-backyard {
 	margin-top: 0;
 }
 
+#mediaart-wrapper {
+	width: 65%;
+}
+
+#mediaart-wrapper .generic-img {
+	width: 54%;
+}
+
+#mediaart-wrapper .generic-text {
+	padding: 8% 0 0 4%;
+}
+
 .invisible {
 	opacity: 0;
 }
