@@ -1317,7 +1317,6 @@ jQuery(document).ready(function($) {
 		coordinate(3, 91, 52);
 		coordinate(4, 74.25, 52);
 		coordinate(5, 18.5, 55);
-		coordinate(10, -1.7, 10.7);
 
 		$('#index-wrapper').css({height: artHeight - artHeight/6.48 + 'px', 'top': -artHeight/6.48 + 'px'});
 		$('ul.ux-buttons.home').css('bottom', -artHeight/7.07 + 'px');

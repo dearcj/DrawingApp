@@ -481,10 +481,6 @@ ul#helpers li#helper-10:focus span {
 	display: inline-block;
 }
 
-li#helper-10 {
-	top: 70px !important;
-}
-
 ul#helpers li span p {
 	display: inline;
 	color: #FFF;
