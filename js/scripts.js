@@ -36,13 +36,13 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-	function cancelFullscreen() {
-		if(document.cancelFullScreen) {
-			document.cancelFullScreen();
+	function exitFullscreen() {
+		if(document.exitFullscreen) {
+			document.exitFullscreen();
 		} else if(document.mozCancelFullScreen) {
 			document.mozCancelFullScreen();
-		} else if(document.webkitCancelFullscreen) {
-			document.webkitCancelFullscreen();
+		} else if(document.webkitExitFullscreen) {
+			document.webkitExitFullscreen();
 		}
 	}
 
@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
 
 		if ($(this).hasClass('on')) {
 			$('.fullscreen').addClass('off').removeClass('on');
-			cancelFullscreen();
+			exitFullscreen();
 			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
 			$('.header').css('display', 'block');
