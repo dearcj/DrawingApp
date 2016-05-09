@@ -52,9 +52,6 @@ jQuery(document).ready(function($) {
 		} else {
 			ZSound.PlayMusic('street');
 		}
-
-		ZSound.available = !ZSound.available;
-		ZSound.playSounds = !ZSound.playSounds;
 	});
 
 	$('.mute').on(window.eventType, function(event) {
