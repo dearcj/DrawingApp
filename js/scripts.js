@@ -57,6 +57,12 @@ jQuery(document).ready(function($) {
 	$('.mute').on(window.eventType, function(event) {
 		ZSound.available = !ZSound.available;
 		ZSound.playSounds = !ZSound.playSounds;
+
+		if ($(this).hasClass('on')) {
+			$(this).addClass('off').removeClass('on');
+		} else {
+			$(this).addClass('on').removeClass('off');
+		}
 	});
 
 	$('.fullscreen').on(window.eventType, function(event) {
@@ -680,7 +686,6 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-home').on(window.eventType, function(event) {
 		ZSound.Play('stage');
-		ZSound.PlayMusic('street');
 
 		window.currentHash = history.state;
 		openPage('index');
