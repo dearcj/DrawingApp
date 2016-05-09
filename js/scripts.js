@@ -761,13 +761,13 @@ jQuery(document).ready(function($) {
 		openPage('performance');
 	});
 
-	$('#button-3').on(window.eventType, function(event) {
+	$('#button-5').on(window.eventType, function(event) {
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#interpretation-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
 		openPage('interpretation');
 	});
 
-	$('#button-4').on(window.eventType, function(event) {
+	$('#button-6').on(window.eventType, function(event) {
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#mediaart-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
 		openPage('mediaart');

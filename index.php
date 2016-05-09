@@ -168,7 +168,7 @@
           </ul>
         </div>
 
-        <div id="intsallaion-wrapper" class="hidden screens inside">
+        <div id="installation-wrapper" class="hidden screens inside">
           <p>Installation</p>
         </div>
 
