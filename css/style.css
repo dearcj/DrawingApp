@@ -1481,7 +1481,7 @@ ul.tools > li:nth-child(2n+2) {
 }
 
 ul.tools li p {
-	display: none !important;
+	display: block;
 	color: white;
 	position: relative;
 	text-align: center;
