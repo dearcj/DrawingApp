@@ -36,16 +36,14 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-	function cancelFullscreen(el) {
-		if(el.cancelFullScreen) {
-			el.cancelFullScreen();
-		} else if(el.mozCancelFullScreen) {
-			el.mozCancelFullScreen();
-		} else if(el.webkitCancelFullscreen) {
-			el.webkitCancelFullscreen();
+	function cancelFullscreen() {
+		if(document.cancelFullScreen) {
+			document.cancelFullScreen();
+		} else if(document.mozCancelFullScreen) {
+			document.mozCancelFullScreen();
+		} else if(document.webkitCancelFullscreen) {
+			document.webkitCancelFullscreen();
 		}
-
-		console.log('radiohead');
 	}
 
 	$('#mute').on(window.eventType, function(event) {
@@ -74,7 +72,7 @@ jQuery(document).ready(function($) {
 
 		if ($(this).hasClass('on')) {
 			$('.fullscreen').addClass('off').removeClass('on');
-			cancelFullscreen(html);
+			cancelFullscreen();
 			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
 			$('.header').css('display', 'block');
