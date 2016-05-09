@@ -163,7 +163,7 @@
           </ul>
 
           <ul class="ux-buttons home">
-            <li class="mute"></li>
+            <li id="mute"></li>
             <li class="fullscreen"></li>
           </ul>
         </div>
