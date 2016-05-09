@@ -449,11 +449,11 @@ jQuery(document).ready(function($) {
 		if ($(window).width() < 700) {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
 			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 240)/2 - 144)/2 + 'px'}, 1000);
-			$('#painting-wrapper > p').css('z-index', 250).fadeIn(2000).removeClass('hidden');
+			$('#painting-wrapper > p').css({'opacity': 0, height: 0});
 		} else {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
-			$('#painting-wrapper > p').css({'opacity': 0, height: 0});
+			$('#painting-wrapper > p').css('z-index', 250).fadeIn(2000).removeClass('hidden');
 		}
 
 		$('#painting-wrapper').each(function(){
@@ -485,14 +485,17 @@ jQuery(document).ready(function($) {
 
 		if ($(window).width() < 700) {
 			$('#filters-wrapper').delay(200).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+			$('#filters-wrapper').each(function(){
+				$(this).children().css({'opacity': 1, 'z-index': '200'});
+			});
 			$('#wand').css({width: 40 + 'px', height: 200 + 'px', right: 3*(($(window).width() - 240)/2 - 40)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
 		} else {
 			$('#filters-wrapper').delay(200).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			$('#filters-wrapper').each(function(){
+				$(this).children().css({'opacity': 1, 'z-index': '200'});
+			});
 			$('#wand').css({width: 120 + 'px', height: 575 + 'px', right: 3*(($(window).width() - 700)/2 - 120)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
 		}
-		$('#filters-wrapper').each(function(){
-			$(this).children().css({'opacity': 1, 'z-index': '200'});
-		});
 
 		$('ul#helpers li#helper-9').delay(2000).animate({'opacity': 1}, 500);
 
@@ -1269,7 +1272,7 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-6 span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-6s span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-7 span').css({left: -spanWidth/2 + 'px', top: -spanTopPos * 0.9 + 'px'});
-		$('ul#helpers li#helper-8 span').css({left: -width/200 * 15 + 'px', top: -spanTopPos + 'px', width: width/100 * 20 + 'px'});
+		$('ul#helpers li#helper-8 span').css({left: -width/200 * 20 + 'px', top: -spanTopPos + 'px', width: width/100 * 20 + 'px'});
 		$('ul#helpers li#helper-9 span').css({left: -width/200 * 15 + 'px', top: spanTopPos * 2 + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-10 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 3.4 + 'px'});
 		$('ul#helpers li#helper-11 span').css({left: -spanWidth + 'px', top: -spanTopPos + 'px'});
