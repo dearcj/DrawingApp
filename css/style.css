@@ -1680,6 +1680,10 @@ div.at-the-backyard {
 	display: none;
 }
 
+.generic {
+	background-color: white;
+}
+
 .invisible {
 	opacity: 0;
 }
