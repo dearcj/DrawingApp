@@ -211,8 +211,12 @@ var initApplication = function() {
     canvas.startAction(e);
   };
 
+  elDraw.ontouchmove = function(e) {
+    canvas.mouseMoveAction(e);
+  }
 
-  document.body.onmousemove = function(e) {
+
+    document.body.onmousemove = function(e) {
   //  if (canvas.state.drawState)
     canvas.mouseMoveAction(e);
   };
