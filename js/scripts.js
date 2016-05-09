@@ -59,9 +59,9 @@ jQuery(document).ready(function($) {
 		ZSound.playSounds = !ZSound.playSounds;
 
 		if ($(this).hasClass('on')) {
-			$(this).addClass('off').removeClass('on');
+			$('.mute').addClass('off').removeClass('on');
 		} else {
-			$(this).addClass('on').removeClass('off');
+			$('.mute').addClass('on').removeClass('off');
 		}
 	});
 
@@ -687,10 +687,10 @@ jQuery(document).ready(function($) {
 	$('.go-to-home').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
-		if ($('.mute').hasClass('on')) {
-			ZSound.PlayMusic('street');
-		} else {
+		if ($('.mute').hasClass('off')) {
 			ZSound.stopMusic('street');
+		} else {
+			ZSound.PlayMusic('street');
 		}
 
 		window.currentHash = history.state;
