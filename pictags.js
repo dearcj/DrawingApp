@@ -7,6 +7,7 @@
 var picTags = [
 	{
 		pic: 'pictags/canvas/board.jpg',
+		thumb: 'pictags/thumbs/canvas/board.jpg',
 		tag: 'доска',
 		fulltags: '',
 		title: 'Из серии «Школьные доски»',
@@ -15,6 +16,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/canvas/brick.jpg',
+		thumb: 'pictags/thumbs/canvas/brick.jpg',
 		tag: 'кирпич',
 		fulltags: '',
 		title: '«Окно LXIV»',
@@ -23,6 +25,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/canvas/canvas.jpg',
+		thumb: 'pictags/thumbs/canvas/canvas.jpg',
 		tag: 'полотно',
 		fulltags: '',
 		title: '«Птица»',
@@ -31,6 +34,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/canvas/cardboard.jpg',
+		thumb: 'pictags/thumbs/canvas/cardboard.jpg',
 		tag: 'картон',
 		fulltags: '',
 		title: 'Из серии «Головы героев»',
@@ -39,6 +43,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/canvas/metal.jpg',
+		thumb: 'pictags/thumbs/canvas/metal.jpg',
 		tag: 'метал',
 		fulltags: '',
 		title: '«Луна и на солнце пятна»',
@@ -47,6 +52,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/canvas/wallpaper.jpg',
+		thumb: 'pictags/thumbs/canvas/wallpaper.jpg',
 		tag: 'обои',
 		fulltags: '',
 		title: '«Балет»',
@@ -55,6 +61,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/canvas/wood.jpg',
+		thumb: 'pictags/thumbs/canvas/wood.jpg',
 		tag: 'дерево',
 		fulltags: '',
 		title: '«Дверь в мастерскую»',
@@ -63,6 +70,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/scotch-1.jpg',
+		thumb: 'pictags/thumbs/canvas/scotch-1.jpg',
 		tag: 'скотч',
 		fulltags: '',
 		title: 'Группа «Кино»',
@@ -71,6 +79,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/scotch-2.jpg',
+		thumb: 'pictags/thumbs/canvas/scotch-2.jpg',
 		tag: 'скотч',
 		fulltags: '',
 		title: '«Аварийная машина»',
@@ -79,6 +88,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/scotch-3.jpg',
+		thumb: 'pictags/thumbs/canvas/scotch-3.jpg',
 		tag: 'скотч',
 		fulltags: '',
 		title: '«Аполлон, вдохновляющий эпического поэта»',
@@ -87,6 +97,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/chalk-1.jpg',
+		thumb: 'pictags/thumbs/canvas/chalk-1.jpg',
 		tag: 'мел',
 		fulltags: '',
 		title: '«Фонарик»',
@@ -95,6 +106,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/chalk-2.jpg',
+		thumb: 'pictags/thumbs/canvas/chalk-2.jpg',
 		tag: 'мел',
 		fulltags: '',
 		title: 'Из серии «Женская сборная Чечни по прыжкам с парашютом»',
@@ -103,6 +115,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/grass.jpg',
+		thumb: 'pictags/thumbs/canvas/grass.jpg',
 		tag: 'трава',
 		fulltags: '',
 		title: '«Трава»',
@@ -112,6 +125,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/orange.jpg',
+		thumb: 'pictags/thumbs/canvas/orange.jpg',
 		tag: 'апельсин',
 		fulltags: '',
 		title: '«Мячи Spalding»',
@@ -120,6 +134,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/denim-1.jpg',
+		thumb: 'pictags/thumbs/canvas/denim-1.jpg',
 		tag: 'джинса',
 		fulltags: '',
 		title: '«Утро, день, вечер, ночь»',
@@ -128,6 +143,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/denim-2.jpg',
+		thumb: 'pictags/thumbs/canvas/denim-2.jpg',
 		tag: 'джинса',
 		fulltags: '',
 		title: '«Бассейн»',
@@ -136,6 +152,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/denim-3.jpg',
+		thumb: 'pictags/thumbs/canvas/denim-3.jpg',
 		tag: 'джинса',
 		fulltags: '',
 		title: '«Валик - оружие маляра»',
@@ -144,6 +161,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/ketchup.jpg',
+		thumb: 'pictags/thumbs/canvas/ketchup.jpg',
 		tag: 'кетчуп',
 		fulltags: '',
 		title: '«Буги-Вуги Е-Е»',
@@ -152,6 +170,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/needle-1.jpg',
+		thumb: 'pictags/thumbs/canvas/needle-1.jpg',
 		tag: 'нитки',
 		fulltags: '',
 		title: '«Песни дикой косатки»',
@@ -160,6 +179,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/needle-2.jpg',
+		thumb: 'pictags/thumbs/canvas/needle-2.jpg',
 		tag: 'нитки',
 		fulltags: '',
 		title: 'Clan Rmmbrnce, из серии «Sub»',
@@ -168,6 +188,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/tools/pistol.jpg',
+		thumb: 'pictags/thumbs/canvas/pistol.jpg',
 		tag: 'пистолет',
 		fulltags: '',
 		title: '«Самба»',
@@ -176,6 +197,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/filters/bubble.jpg',
+		thumb: 'pictags/thumbs/canvas/bubble.jpg',
 		tag: 'баббл',
 		fulltags: '',
 		title: '«I wonder who this artist is» из серии «I am not»',
@@ -184,6 +206,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/filters/diptih.jpg',
+		thumb: 'pictags/thumbs/canvas/diptih.jpg',
 		tag: 'диптих',
 		fulltags: '',
 		title: '«Urban Angels»',
@@ -192,6 +215,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/filters/distortion.jpg',
+		thumb: 'pictags/thumbs/canvas/distortion.jpg',
 		tag: 'искажение',
 		fulltags: '',
 		title: '«Русско-американская картина»',
@@ -200,6 +224,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/filters/inversion.jpg',
+		thumb: 'pictags/thumbs/canvas/inversion.jpg',
 		tag: 'инверсия',
 		fulltags: '',
 		title: '«Энди Уорхол»',
@@ -208,6 +233,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/filters/pattern.jpg',
+		thumb: 'pictags/thumbs/canvas/pattern.jpg',
 		tag: 'паттерн',
 		fulltags: '',
 		title: '«Голубая икра»',
@@ -216,6 +242,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/filters/pixelization.jpg',
+		thumb: 'pictags/thumbs/canvas/pixelization.jpg',
 		tag: 'пикселизация',
 		fulltags: '',
 		title: 'Из серии «Futurussia»',
@@ -225,6 +252,7 @@ var picTags = [
 	,
 	{
 		pic: 'pictags/filters/rama-1.jpg',
+		thumb: 'pictags/thumbs/canvas/rama-1.jpg',
 		tag: 'рамка',
 		fulltags: '',
 		title: '«Иллюзия исчезновения заполненности»',
@@ -234,6 +262,7 @@ var picTags = [
 	,
 	{
 		pic: 'pictags/filters/rama-2.jpg',
+		thumb: 'pictags/thumbs/canvas/rama-2.jpg',
 		tag: 'рамка',
 		fulltags: '',
 		title: '«Big Black Pixel»',
@@ -242,6 +271,7 @@ var picTags = [
 	},
 	{
 		pic: 'pictags/filters/polyptih.jpg',
+		thumb: 'pictags/thumbs/canvas/polyptih.jpg',
 		tag: 'полиптих',
 		fulltags: '',
 		title: '«Человеческое, слишком человеческое»',
