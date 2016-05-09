@@ -383,7 +383,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function isItHome(pageName) {
-		if (window.location.hash == '') {
+		if (window.location.hash == '' || window.location.hash.indexOf('index') > 0) {
 			ZSound.PlayMusic('street');
 			var stateObj = { hash: 'index' };
 			history.pushState(stateObj, "redirect", "#index");
@@ -775,6 +775,7 @@ jQuery(document).ready(function($) {
 
 	$('#button-1').on(window.eventType, function(event) {
 		ZSound.Play('click');
+		ZSound.stopMusic('street');
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
 		$('#installation-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('installation');
@@ -782,6 +783,7 @@ jQuery(document).ready(function($) {
 
 	$('#button-2').on(window.eventType, function(event) {
 		ZSound.Play('click');
+		ZSound.stopMusic('street');
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
 		$('#performance-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('performance');
@@ -789,6 +791,7 @@ jQuery(document).ready(function($) {
 
 	$('#button-5').on(window.eventType, function(event) {
 		ZSound.Play('click');
+		ZSound.stopMusic('street');
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
 		$('#interpretation-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('interpretation');
@@ -796,6 +799,7 @@ jQuery(document).ready(function($) {
 
 	$('#button-6').on(window.eventType, function(event) {
 		ZSound.Play('click');
+		ZSound.stopMusic('street');
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
 		$('#mediaart-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('media-art');
