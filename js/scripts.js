@@ -384,7 +384,6 @@ jQuery(document).ready(function($) {
 
 	function isItHome(pageName) {
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
-			console.log('radiohead');
 			ZSound.PlayMusic('street');
 			var stateObj = { hash: 'index' };
 			history.pushState(stateObj, "redirect", "#index");
