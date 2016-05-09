@@ -961,7 +961,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li').mouseout(function() {
-		$(this).find('p').css('display', 'none');
+		$(this).find('p').css('display', 'block');
 	});
 
 	$('ul.tools li').mouseover(function() {
