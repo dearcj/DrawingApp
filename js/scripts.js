@@ -341,7 +341,9 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.materials').text(leftImgMats);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftAbsPath + ') no-repeat');
-			$('ul.paintings.left-side a:nth-child(' + (i + 1) + '):hover li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7))');
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').mouseover(function() {
+				$(this).css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7))');
+			});
 
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.title').text(rightImgTitle);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.author').text(rightImgAuthor);
