@@ -26,13 +26,13 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
-	function launchFullScreen(element) {
-		if(element.requestFullScreen) {
-			element.requestFullScreen();
-		} else if(element.mozRequestFullScreen) {
-			element.mozRequestFullScreen();
-		} else if(element.webkitRequestFullscreen) {
-			element.webkitRequestFullscreen();
+	function launchFullScreen(el) {
+		if(el.requestFullScreen) {
+			el.requestFullScreen();
+		} else if(el.mozRequestFullScreen) {
+			el.mozRequestFullScreen();
+		} else if(el.webkitRequestFullscreen) {
+			el.webkitRequestFullscreen();
 		}
 	}
 
