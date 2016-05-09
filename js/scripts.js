@@ -36,13 +36,13 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-	function cancelFullscreen() {
-		if(document.cancelFullScreen) {
-			document.cancelFullScreen();
-		} else if(document.mozCancelFullScreen) {
-			document.mozCancelFullScreen();
-		} else if(document.webkitCancelFullscreen) {
-			document.webkitCancelFullscreen();
+	function cancelFullscreen(el) {
+		if(el.cancelFullScreen) {
+			el.cancelFullScreen();
+		} else if(el.mozCancelFullScreen) {
+			el.mozCancelFullScreen();
+		} else if(el.webkitCancelFullscreen) {
+			el.webkitCancelFullscreen();
 		}
 	}
 
@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
 
 		if ($(this).hasClass('on')) {
 			$('.fullscreen').addClass('off').removeClass('on');
-			cancelFullscreen();
+			cancelFullscreen(html);
 			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
 			$('.header').css('display', 'block');
