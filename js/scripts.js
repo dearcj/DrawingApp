@@ -1190,7 +1190,7 @@ jQuery(document).ready(function($) {
 
 		var toolsCanvasWidth = toolsCanvas.width();
 
-		$('ul.tools li p').css('font-size', width/15 + '%');
+		//$('ul.tools li p').css('font-size', width/15 + '%');
 
 		objHeight(toolsCanvas, toolsCanvasWidth/surfaceRatio);
 

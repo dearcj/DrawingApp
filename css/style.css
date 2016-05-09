@@ -1028,7 +1028,7 @@ ul.tools li#btn-grass {
 	height: 130px;
 	margin-left: 25px;
 	position: relative;
-	top: 4px;
+	top: 8px;
 }
 
 ul.tools li#btn-orange {
@@ -1048,7 +1048,7 @@ ul.tools li#btn-denim-1 {
 	height: 72px;
 	float: left;
 	margin-left: 5px;
-	margin-top: 7px;
+	margin-top: 10px;
 }
 
 ul.tools li#btn-denim-2 {
@@ -1059,7 +1059,7 @@ ul.tools li#btn-denim-2 {
 	height: 72px;
 	float: right;
 	margin-right: 5px;
-	margin-top: 7px;
+	margin-top: 10px;
 }
 
 ul.tools li#btn-denim-3 {
@@ -1241,7 +1241,7 @@ ul.tools li#btn-denim-1.denim-1-active.active {
 	height: 72px;
 	float: left;
 	margin-left: 5px;
-	margin-top: 7px;
+	margin-top: 10px;
 }
 
 ul.tools li#btn-denim-2.denim-2-active.active {
@@ -1252,7 +1252,7 @@ ul.tools li#btn-denim-2.denim-2-active.active {
 	height: 72px;
 	float: right;
 	margin-right: 5px;
-	margin-top: 7px;
+	margin-top: 10px;
 }
 
 ul.tools li#btn-denim-3.denim-3-active.active {
@@ -1485,9 +1485,38 @@ ul.tools li p {
 	color: white;
 	position: relative;
 	text-align: center;
+	font-size: 16px;
 	height: 0;
 	margin: 0;
 	top: -10px;
+}
+
+li#scotch p {
+	top: -20px;
+}
+
+li#coal p {
+	top: 0;
+}
+
+li#btn-catchup {
+	top: -30px;
+}
+
+li#btn-grass p {
+	top: -5px;
+}
+
+li#denim {
+	top: -8px;
+}
+
+li#needle p {
+	top: -8px;
+}
+
+li#btn-pistol {
+	top: -15px;
 }
 
 ul.tools li:hover,
