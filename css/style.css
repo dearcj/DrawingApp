@@ -993,15 +993,6 @@ ul.tools li#btn-scotch-2 {
 	float: right;
 }
 
-/*ul.tools li#btn-scotch-3 {*/
-	/*background: url(../img/tools/scotch-3.png) no-repeat;*/
-	/*background-size: 100%;*/
-	/*background-position: 50% 50%;*/
-	/*width: 90px;*/
-	/*height: 13px;*/
-	/*margin: 4px auto 0;*/
-/*}*/
-
 ul.tools li#btn-coal-1 {
 	background: url(../img/tools/chalk-1.png) no-repeat;
 	background-size: 100%;
@@ -1168,60 +1159,36 @@ ul.tools li#btn-scotch.scotch-active.active {
 	background: url(../img/tools/scotch-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 127px;
-	height: 84px;
-	margin: 0 auto;
 }
 
 ul.tools li#btn-scotch-1.scotch-1-active.active {
 	background: url(../img/tools/scotch-1-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 105px;
-	height: 27px;
-	margin-top: 10px;
-	margin-right: 12px;
-	float: right;
 }
 
 ul.tools li#btn-scotch-2.scotch-2-active.active {
 	background: url(../img/tools/scotch-2-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 105px;
-	height: 27px;
-	margin-top: 6px;
-	margin-right: 12px;
-	float: right;
 }
 
 ul.tools li#btn-coal-1.coal-1-active.active {
 	background: url(../img/tools/chalk-1-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 43px;
-	height: 120px;
-	float: left;
 }
 
 ul.tools li#btn-coal-2.coal-2-active.active {
 	background: url(../img/tools/chalk-2-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 43px;
-	height: 120px;
-	float: left;
 }
 
 ul.tools li#btn-grass.grass-active.active {
 	background: url(../img/tools/grass-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 106px;
-	height: 130px;
-	margin-left: 25px;
-	position: relative;
-	top: 4px;
 }
 
 ul.tools li#btn-orange.orange-active.active {
@@ -1234,34 +1201,18 @@ ul.tools li#btn-denim-1.denim-1-active.active {
 	background: url(../img/tools/denim-1-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 72px;
-	height: 72px;
-	float: left;
-	margin-left: 5px;
-	margin-top: 10px;
 }
 
 ul.tools li#btn-denim-2.denim-2-active.active {
 	background: url(../img/tools/denim-2-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 72px;
-	height: 72px;
-	float: right;
-	margin-right: 5px;
-	margin-top: 10px;
 }
 
 ul.tools li#btn-denim-3.denim-3-active.active {
 	background: url(../img/tools/denim-3-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 72px;
-	height: 72px;
-	clear: both;
-	margin: 0 auto;
-	position: relative;
-	top: -9px;
 }
 
 ul.tools li#btn-catchup.catchup-active.active {
@@ -1278,14 +1229,10 @@ ul.tools li#btn-needle.needle-active.active {
 	background: url(../img/tools/needle-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 127px;
-	height: 101px;
-	margin: 5px auto;
 }
 
 ul.tools li#btn-thread-1.thread-1-active.active {
 	background: url(../img/tools/thread-1-hover.png) no-repeat;
-	margin-left: 5px;
 }
 
 ul.tools li#btn-thread-2.thread-2-active.active {
@@ -1316,9 +1263,6 @@ ul.tools li#btn-pistol.pistol-active.active {
 	background: url(../img/tools/gun-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 103px;
-	height: 112px;
-	margin-right: 25px;
 }
 
 ul.tools li#btn-scotch:hover,
