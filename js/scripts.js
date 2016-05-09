@@ -459,7 +459,7 @@ jQuery(document).ready(function($) {
 			$('#painting-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
 			});
-			$('#painting-wrapper > p').css({'z-index': 250, 'display': 'block', 'opacity': 1}).fadeIn(2000).removeClass('hidden');
+			$('#painting-wrapper > p').css({'z-index': 250, 'display': 'block'}).animate({'opacity': 1}, 1000).fadeIn(2000).removeClass('hidden');
 		}
 
 		$('ul#helpers li#helper-8').delay(2000).animate({'opacity': 1}, 500);
