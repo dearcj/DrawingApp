@@ -961,7 +961,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li').mouseout(function() {
-		$(this).find('p').css('display', 'block');
+		$(this).find('p').css('display', 'none');
 	});
 
 	$('ul.tools li').mouseover(function() {
@@ -969,7 +969,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.tools li').mouseout(function() {
-		$(this).find('p').css('display', 'none');
+		$(this).find('p').css('display', 'block');
 	});
 
 	$('ul.surfaces li').fadeIn(1500).removeClass('hidden');
