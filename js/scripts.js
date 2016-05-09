@@ -46,7 +46,7 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-	$('#mute').on(window.eventType, function(event) {
+	$('.mute').on(window.eventType, function(event) {
 		if (ZSound.musicInstance != null) {
 			ZSound.stopMusic('street');
 		} else {
@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
 		ZSound.playSounds = !ZSound.playSounds;
 	});
 
-	$('#fullscreen').on(window.eventType, function(event) {
+	$('.fullscreen').on(window.eventType, function(event) {
 		var html = document.getElementById('body');
 		launchFullScreen(html);
 	});
@@ -673,11 +673,11 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
-		if (ZSound.musicInstance != null) {
+/*		if (ZSound.musicInstance != null) {
 			ZSound.stopMusic('street');
 		} else {
 			ZSound.PlayMusic('street');
-		}
+		}*/
 		ZSound.Play('stage');
 
 		window.currentHash = history.state;
