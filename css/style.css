@@ -2218,7 +2218,7 @@ ul.logotypes li a {
 	background: transparent;
 }
 
-@media only screen and (max-width: 1550px) and (min-width: 700px) {
+@media only screen and (max-width: 1550px) {
 	.generic-img {
 		margin-top: 12%;
 	}
@@ -2227,7 +2227,7 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-width: 1250px) and (min-width: 700px) {
+@media only screen and (max-width: 1250px) {
 	.generic-img {
 		margin-top: 18%;
 	}
@@ -2236,7 +2236,7 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-width: 1050px) and (min-width: 700px) {
+@media only screen and (max-width: 1050px) {
 	.generic-img {
 		float: none;
 		width: 100%;
