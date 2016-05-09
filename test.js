@@ -205,6 +205,12 @@ var initApplication = function() {
     canvas.startAction(e);
   };
 
+  elDraw.ontouchstart = function(e) {
+    console.log('start action');
+
+    canvas.startAction(e);
+  };
+
 
   document.body.onmousemove = function(e) {
   //  if (canvas.state.drawState)

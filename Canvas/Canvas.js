@@ -218,6 +218,8 @@ Canvas.prototype.sendPic = function(cbbbb, img) {
 
 
 Canvas.prototype.finishAction = function (e) {
+	t.saveState();
+
 	var el = document.getElementById('main-canvas');
 
 	this.state.backCtx.drawImage(el, 0, 0);
@@ -226,7 +228,6 @@ Canvas.prototype.finishAction = function (e) {
 	this.state.drawState = null;
 	this.actions[this.actions.length - 1].brush.onFinish();
 	var t = this;
-	t.saveState();
 //	setTimeout(function(){}, 200);
 
 };
