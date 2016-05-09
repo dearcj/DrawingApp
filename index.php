@@ -347,7 +347,7 @@
 
         <div id="publication-wrapper" class="screens inside">
           <ul class="paintings left-side">
-            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><span class="fake-hov"></span><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
             <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
             <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
           </ul>

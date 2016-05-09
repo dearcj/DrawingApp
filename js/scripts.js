@@ -347,12 +347,6 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.materials').text(rightImgMats);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ')').attr('href', rightAbsPath);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightAbsPath + ') no-repeat');
-			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').mouseover(function() {
-				$(this).css('background', 'linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(' + rightAbsPath + ') no-repeat');
-			});
-			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').mouseout(function() {
-				$(this).css('background', 'linear-gradient(0deg, rgba(0,0,0,0.0), rgba(0,0,0,0.0)), url(' + rightAbsPath + ') no-repeat');
-			});
 		}
 	}
 
