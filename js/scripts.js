@@ -679,8 +679,8 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
-		ZSound.PlayMusic('street');
 		ZSound.Play('stage');
+		ZSound.PlayMusic('street');
 
 		window.currentHash = history.state;
 		openPage('index');
