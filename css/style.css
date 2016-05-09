@@ -1684,6 +1684,14 @@ div.at-the-backyard {
 	background-color: white;
 }
 
+.generic-img {
+	float: left;
+}
+
+.generic-text {
+	float: right;
+}
+
 .invisible {
 	opacity: 0;
 }
