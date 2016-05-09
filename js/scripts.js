@@ -618,8 +618,8 @@ jQuery(document).ready(function($) {
 	}
 
 	$('.go-to-surface').on(window.eventType, function(event) {
-		ZSound.Play('click');
 		ZSound.stopMusic('street');
+		ZSound.Play('click');
 		window.currentHash = history.state;
 		openPage('surface');
 		surfaceAnimation();
