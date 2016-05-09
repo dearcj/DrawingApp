@@ -673,7 +673,11 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
-		ZSound.PlayMusic('street');
+		if (ZSound.musicInstance != null) {
+			ZSound.stopMusic('street');
+		} else {
+			ZSound.PlayMusic('street');
+		}
 		ZSound.Play('stage');
 
 		window.currentHash = history.state;
