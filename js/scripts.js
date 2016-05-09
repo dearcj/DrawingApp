@@ -72,8 +72,9 @@ jQuery(document).ready(function($) {
 		$('html').css('height', 'auto');
 		$('body').css('height', 'auto');
 		$('.header').css('display', 'none');
+		$('.langs').css('display', 'none');
 		$('.podval_new').css('display', 'none');
-		$('#wrapper').css({position: absolute, top: 0});
+		$('#wrapper').css({'position': 'absolute', 'top': 0});
 	});
 
 	/////check device type
