@@ -685,7 +685,11 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-home').on(window.eventType, function(event) {
-		ZSound.Play('stage');
+		ZSound.Play('click');
+
+		if ($('.mute').hasClass('on')) {
+			ZSound.PlayMusic('street');
+		}
 
 		window.currentHash = history.state;
 		openPage('index');
