@@ -68,6 +68,12 @@ jQuery(document).ready(function($) {
 	$('.fullscreen').on(window.eventType, function(event) {
 		var html = document.getElementById('body');
 		launchFullScreen(html);
+
+		$('html').css('height', 'auto');
+		$('body').css('height', 'auto');
+		$('.header').css('display', 'none');
+		$('.podval_new').css('display', 'none');
+		$('#wrapper').css({position: absolute, top: 0});
 	});
 
 	/////check device type
