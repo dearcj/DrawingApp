@@ -335,17 +335,17 @@ ul#helpers {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	top: 12px;
+	top: 15px;
 	left: 50%;
-	margin-left: -405px;
+	margin-left: -400px;
 }
 
 #filters-wrapper ul#helpers {
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	top: 495px;
-	margin-left: 10px;
+	top: 505px;
+	margin-left: 15px;
 }
 
 #painting-wrapper ul#helpers li {
@@ -465,11 +465,11 @@ ul#helpers li:focus span {
 	display: inline-block;
 }
 
-ul#helpers li#helper-8,
+/*ul#helpers li#helper-8,
 ul#helpers li#helper-9 {
 	width: 65px;
 	height: 65px;
-}
+}*/
 
 ul#helpers li#helper-8:hover span,
 ul#helpers li#helper-8:focus span,
