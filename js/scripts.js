@@ -44,6 +44,8 @@ jQuery(document).ready(function($) {
 		} else if(el.webkitCancelFullscreen) {
 			el.webkitCancelFullscreen();
 		}
+
+		console.log('radiohead');
 	}
 
 	$('#mute').on(window.eventType, function(event) {
