@@ -78,7 +78,7 @@ jQuery(document).ready(function($) {
 			$('.header').css('display', 'block');
 			$('.langs').css('display', 'block');
 			$('.podval_new').css('display', 'block');
-			$('#wrapper').css({'position': 'relative', 'top': 0});
+			$('#wrapper').css({'position': 'inherit', 'top': 0});
 		} else {
 			$('.fullscreen').addClass('on').removeClass('off');
 			launchFullScreen(html);
