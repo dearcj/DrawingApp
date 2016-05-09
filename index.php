@@ -164,7 +164,7 @@
 
           <ul class="ux-buttons home">
             <li id="mute"></li>
-            <li class="fullscreen"></li>
+            <li class="fullscreen off"></li>
           </ul>
         </div>
 
@@ -246,7 +246,7 @@
 
           <ul class="ux-buttons">
             <li class="mute on"></li>
-            <li class="fullscreen"></li>
+            <li class="fullscreen off"></li>
           </ul>
         </div>
 
@@ -315,7 +315,7 @@
           </ul>
           <ul class="ux-buttons">
             <li class="mute on"></li>
-            <li class="fullscreen"></li>
+            <li class="fullscreen off"></li>
           </ul>
         </div>
 
@@ -341,7 +341,7 @@
 
           <ul class="ux-buttons">
             <li class="mute on"></li>
-            <li class="fullscreen"></li>
+            <li class="fullscreen off"></li>
           </ul>
         </div>
 
@@ -375,7 +375,7 @@
 
           <ul class="ux-buttons">
             <li class="mute on"></li>
-            <li class="fullscreen"></li>
+            <li class="fullscreen off"></li>
           </ul>
         </div>
 
@@ -414,7 +414,7 @@
 
           <ul class="ux-buttons">
             <li class="mute on"></li>
-            <li class="fullscreen"></li>
+            <li class="fullscreen off"></li>
           </ul>
         </div>
   </div>

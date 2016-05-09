@@ -66,15 +66,29 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.fullscreen').on(window.eventType, function(event) {
-		var html = document.getElementById('body');
-		launchFullScreen(html);
+		ZSound.Play('click');
 
-		$('html').css('height', 'auto');
-		$('body').css('height', 'auto');
-		$('.header').css('display', 'none');
-		$('.langs').css('display', 'none');
-		$('.podval_new').css('display', 'none');
-		$('#wrapper').css({'position': 'absolute', 'top': 0});
+		var html = document.getElementById('body');
+
+		if ($(this).hasClass('on')) {
+			$('.mute').addClass('off').removeClass('on');
+			cancelFullscreen();
+			$('html').css('height', 100 + '%');
+			$('body').css('height', 100 + '%');
+			$('.header').css('display', 'block');
+			$('.langs').css('display', 'block');
+			$('.podval_new').css('display', 'block');
+			$('#wrapper').css({'position': 'relative', 'top': 0});
+		} else {
+			$('.mute').addClass('on').removeClass('off');
+			launchFullScreen(html);
+			$('html').css('height', 'auto');
+			$('body').css('height', 'auto');
+			$('.header').css('display', 'none');
+			$('.langs').css('display', 'none');
+			$('.podval_new').css('display', 'none');
+			$('#wrapper').css({'position': 'absolute', 'top': 0});
+		}
 	});
 
 	/////check device type
