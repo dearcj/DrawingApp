@@ -118,7 +118,7 @@ function distortion(saveImgCB, canvId, imgData) {
     var ctx = myCanvas.getContext('2d');
     var data = ctx.getImageData(0,0,myCanvas.width, myCanvas.height)
 
-    JSManipulate.sineripple.filter(data,{xAmplitude:6,yAmplitude:6,xWavelength:44,yWavelength:44});
+    JSManipulate.sineripple.filter(data,{xAmplitude:9,yAmplitude:9,xWavelength:60,yWavelength:60});
     ctx.putImageData(data,0,0);
     saveImgCB(myCanvas);
 
@@ -182,6 +182,7 @@ function getPixelate(saveImgCB, canvId, imgData) {
 }
 
 filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+filterOrder = [5, 3, 7, 2, 8, 1, 4, 12, 9, 11, 6, 10];
 
 function fbpost(t, im, imPath) {
   FB.ui(
@@ -337,17 +338,17 @@ function applyFilter(canvId, imgData, filterNumber) {
 
   if (filterNumber == 10) {
     var src = relPath + 'filters/bubble1.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*400, Math.random()*300);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*550, Math.random()*450);
     window.filterTag = 'баббл';
   }
   if (filterNumber == 11) {
     var src = relPath + 'filters/bubble2.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*400, Math.random()*300);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*550, Math.random()*450);
     window.filterTag = 'баббл';
   }
   if (filterNumber == 12) {
     var src = relPath + 'filters/bubble3.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*400, Math.random()*300);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*550, Math.random()*450);
     window.filterTag = 'баббл';
   }
   var dw = 1;
