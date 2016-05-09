@@ -456,10 +456,11 @@ jQuery(document).ready(function($) {
 		} else {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
+			$('#painting-wrapper > p').animate({'opacity': 1}, 1000).fadeIn(2000).removeClass('hidden');
 			$('#painting-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
 			});
-			$('#painting-wrapper > p').css({'z-index': 250}).animate({'opacity': 1}, 1000).fadeIn(2000).removeClass('hidden');
+			$('#painting-wrapper > p').css({'z-index': 250})
 		}
 
 		$('ul#helpers li#helper-8').delay(2000).animate({'opacity': 1}, 500);
