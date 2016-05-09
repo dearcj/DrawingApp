@@ -750,54 +750,54 @@ jQuery(document).ready(function($) {
 	// GENERIC PAGES
 
 	$('#button-1').on(window.eventType, function(event) {
-		$('#index-wrapper').fadeOut(50).addClass('hidden');
+		$('#index-wrapper').fadeOut(10).addClass('hidden');
 		$('#installation-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('installation');
 	});
 
 	$('#button-2').on(window.eventType, function(event) {
-		$('#index-wrapper').fadeOut(50).addClass('hidden');
+		$('#index-wrapper').fadeOut(10).addClass('hidden');
 		$('#performance-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('performance');
 	});
 
 	$('#button-5').on(window.eventType, function(event) {
-		$('#index-wrapper').fadeOut(50).addClass('hidden');
+		$('#index-wrapper').fadeOut(10).addClass('hidden');
 		$('#interpretation-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('interpretation');
 	});
 
 	$('#button-6').on(window.eventType, function(event) {
-		$('#index-wrapper').fadeOut(50).addClass('hidden');
+		$('#index-wrapper').fadeOut(10).addClass('hidden');
 		$('#mediaart-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('media-art');
 	});
 
 	$('li.installation').on(window.eventType, function(event) {
-		$('#mediaart-wrapper').fadeOut(50).addClass('hidden');
+		$('#mediaart-wrapper').fadeOut(10).addClass('hidden');
 		$('#performance-wrapper').fadeOut(50).addClass('hidden');
 		$('#installation-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('installation');
 	});
 
 	$('li.performance').on(window.eventType, function(event) {
-		$('#installation-wrapper').fadeOut(50).addClass('hidden');
-		$('#interpretation-wrapper').fadeOut(50).addClass('hidden');
+		$('#installation-wrapper').fadeOut(10).addClass('hidden');
+		$('#interpretation-wrapper').fadeOut(10).addClass('hidden');
 		$('#performance-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('performance');
 	});
 
 
 	$('li.interpretation').on(window.eventType, function(event) {
-		$('#performance-wrapper').fadeOut(50).addClass('hidden');
-		$('#mediaart-wrapper').fadeOut(50).addClass('hidden');
+		$('#performance-wrapper').fadeOut(10).addClass('hidden');
+		$('#mediaart-wrapper').fadeOut(10).addClass('hidden');
 		$('#interpretation-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('interpretation');
 	});
 
 	$('li.media-art').on(window.eventType, function(event) {
-		$('#interpretation-wrapper').fadeOut(50).addClass('hidden');
-		$('#installation-wrapper').fadeOut(50).addClass('hidden');
+		$('#interpretation-wrapper').fadeOut(10).addClass('hidden');
+		$('#installation-wrapper').fadeOut(10).addClass('hidden');
 		$('#mediaart-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('media-art');
 	});
