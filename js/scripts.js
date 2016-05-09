@@ -689,6 +689,8 @@ jQuery(document).ready(function($) {
 
 		if ($('.mute').hasClass('on')) {
 			ZSound.PlayMusic('street');
+		} else {
+			ZSound.stopMusic('street');
 		}
 
 		window.currentHash = history.state;
