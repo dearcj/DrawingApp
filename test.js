@@ -201,29 +201,33 @@ var initApplication = function() {
   canvas.redraw(backCtx);
   elDraw.onmousedown = function(e) {
     console.log('start action');
-
+    e.preventDefault();
     canvas.startAction(e);
   };
 
   elDraw.ontouchstart = function(e) {
     console.log('start action');
-
+    e.preventDefault();
     canvas.startAction(e);
   };
 
   elDraw.ontouchmove = function(e) {
     canvas.mouseMoveAction(e);
-  }
+  };
 
-
-    document.body.onmousemove = function(e) {
-  //  if (canvas.state.drawState)
+  document.body.onmousemove = function(e) {
     canvas.mouseMoveAction(e);
   };
 
   document.body.onmouseup = function(e) {
     if (canvas.state.drawState)
     canvas.finishAction(e);
+  };
+
+  document.body.ontouchstart = function(e) {
+    e.preventDefault();
+
+    canvas.mouseMoveAction(e);
   };
 
   document.body.ontouchmove = function(e) {
