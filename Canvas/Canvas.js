@@ -218,7 +218,7 @@ Canvas.prototype.sendPic = function(cbbbb, img) {
 
 
 Canvas.prototype.finishAction = function (e) {
-	t.saveState();
+	this.saveState();
 
 	var el = document.getElementById('main-canvas');
 
