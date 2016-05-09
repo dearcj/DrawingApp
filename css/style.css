@@ -1485,8 +1485,9 @@ ul.tools li p {
 	color: white;
 	position: relative;
 	text-align: center;
-	margin-top: 125px;
-	font-size: 16px;
+	height: 0;
+	margin: 0;
+	top: -10px;
 }
 
 ul.tools li:hover,

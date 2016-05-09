@@ -1181,7 +1181,6 @@ jQuery(document).ready(function($) {
 	function toolsResponsive () {
 		var width = $(window).width(),
 			toolsCanvas = $('.main-canvas'),
-			darkSideTools = $('.dark-side.tools'),
 			toolsRatio = function (width, height) {
 				return width/height;
 			},
@@ -1190,6 +1189,8 @@ jQuery(document).ready(function($) {
 		toolsCanvas.css({width: width/2.5 + 'px', 'margin-top': width/18 + 'px'});
 
 		var toolsCanvasWidth = toolsCanvas.width();
+
+		$('ul.tools li p').css('font-size', width/15 + 'px');
 
 		objHeight(toolsCanvas, toolsCanvasWidth/surfaceRatio);
 
