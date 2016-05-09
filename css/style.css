@@ -1722,11 +1722,13 @@ ul.generic-nav li {
 li.generic-prev {
 	left: 0;
 	background: url(../img/generic-prev.jpg) no-repeat;
+	background-size: 100%;
 }
 
 li.generic-next {
 	right: 0;
 	background: url(../img/generic-next.jpg) no-repeat;
+	background-size: 100%;
 }
 
 ul.generic-nav li:hover,
@@ -1737,11 +1739,13 @@ ul.generic-nav li:focus {
 ul.generic-nav li.generic-prev:hover,
 ul.generic-nav li.generic-prev:focus {
 	background: url(../img/generic-prev-hover.jpg) no-repeat;
+	background-size: 100%;
 }
 
 ul.generic-nav li.generic-next:hover,
 ul.generic-nav li.generic-next:focus {
 	background: url(../img/generic-next-hover.jpg) no-repeat;
+	background-size: 100%;
 }
 
 #mediaart-wrapper {
@@ -2251,6 +2255,24 @@ ul.logotypes li a {
 		padding: 4% 0 0 0;
 		color: white;
 		font-size: 100% !important;
+	}
+	ul.generic-nav li {
+		width: 55px;
+		height: 55px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	ul.generic-nav li {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	ul.generic-nav li {
+		width: 35px;
+		height: 35px;
 	}
 }
 
