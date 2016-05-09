@@ -434,7 +434,7 @@ jQuery(document).ready(function($) {
 
 	function paintingAnimation() {
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
-		$('.go-to-tools').animate({'top': 100 + 'px'}, 500);
+		$('.go-to-tools').animate({'top': 150 + 'px'}, 500);
 		$('#surface-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#filters-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#surface-wrapper').each(function(){
@@ -459,7 +459,7 @@ jQuery(document).ready(function($) {
 			$('#painting-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
 			});
-			$('#painting-wrapper > p').css({'z-index': 250, 'display': 'block'}).animate({'opacity': 1}, 1000).fadeIn(2000).removeClass('hidden');
+			$('#painting-wrapper > p').css({'z-index': 250}).animate({'opacity': 1}, 1000).fadeIn(2000).removeClass('hidden');
 		}
 
 		$('ul#helpers li#helper-8').delay(2000).animate({'opacity': 1}, 500);
