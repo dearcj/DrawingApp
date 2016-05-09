@@ -1499,23 +1499,23 @@ li#coal p {
 	top: 0;
 }
 
-li#btn-catchup {
-	top: -30px;
-}
-
 li#btn-grass p {
 	top: -5px;
 }
 
-li#denim {
+li#denim p {
 	top: -8px;
+}
+
+li#btn-catchup p {
+	top: -30px;
 }
 
 li#needle p {
 	top: -8px;
 }
 
-li#btn-pistol {
+li#btn-pistol p {
 	top: -15px;
 }
 
