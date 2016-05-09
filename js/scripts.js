@@ -1280,7 +1280,7 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-11 span').css({left: -spanWidth/2 + 'px', top: -spanTopPos * 0.9 + 'px'});
 		$('ul#helpers li#helper-12 span').css({left: -spanWidth/2 + 'px', top: -spanTopPos * 0.9 + 'px'});
 		$('ul#helpers li#helper-13 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 2.4 + 'px'});
-		$('ul#helpers li#helper-14 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 1.8 + 'px'});
+		$('ul#helpers li#helper-14 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 1.9 + 'px'});
 		$('ul#helpers li#helper-15 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 2.4 + 'px'});
 
 		window.homeSpanWidth = parseInt($('ul#helpers li#helper-6 span').css('width'));
