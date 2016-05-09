@@ -332,8 +332,6 @@ ul#helpers {
 }
 
 #painting-wrapper ul#helpers {
-	margin: 0;
-	padding: 0;
 	position: absolute;
 	top: 15px;
 	left: 50%;
@@ -341,11 +339,16 @@ ul#helpers {
 }
 
 #filters-wrapper ul#helpers {
-	margin: 0;
-	padding: 0;
 	position: absolute;
 	top: 505px;
 	margin-left: 15px;
+}
+
+#publication-wrapper ul#helpers {
+	position: absolute;
+	top: 565px;
+	left: 50%;
+	margin-left: -320px;
 }
 
 #painting-wrapper ul#helpers li {
