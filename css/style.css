@@ -2269,8 +2269,7 @@ ul.logotypes li a {
 		margin-right: 2px;
 	}
 
-	ul.tools li#btn-orange,
-	ul.tools li#btn-orange.orange-active.active {
+	ul.tools li#btn-orange {
 		width: 96px;
 		margin-right: 10px;
 		height: 130px;
@@ -2330,9 +2329,6 @@ ul.logotypes li a {
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 700px) {
-	ul.tools {
-		margin-left: 5px !important;
-	}
 	ul.paintings li {
 		width: 200px !important;
 		height: 125px !important;
@@ -2341,104 +2337,111 @@ ul.logotypes li a {
 
 @media only screen and (max-width: 1265px) and (min-width: 700px) {
 	ul.tools {
-		width: 225px;
-		height: 460px;
-		margin-top: 35px;
+		width: 170px;
+		height: 370px;
+		margin-top: 80px;
+		margin-left: 15px;
 	}
 
 	ul.tools > li {
-		width: 100px;
-		height: 115px;
+		width: 80px;
+		height: 90px;
 	}
 
 	ul.tools li#btn-scotch {
-		width: 100px;
-		height: 70px;
+		width: 80px;
+		height: 55px;
+		float: right;
+	}
+
+	ul.tools > li#scotch {
+		padding-top: 0 !important;
 	}
 
 	ul.tools > li#scotch > ul {
-		width: 125px;
-		height: 122px;
+		width: 80px;
+		height: 92px;
 	}
 
 	ul.tools li#btn-scotch-1,
 	ul.tools li#btn-scotch-2 {
-		width: 85px;
-		height: 20px;
-		margin-top: 5px;
-		margin-right: 12px;
+		width: 65px;
+		height: 12px;
+		margin-top: 6px;
+		margin-right: 0;
 	}
 
 	ul.tools li#coal {
-		width: 90px;
-		margin-right: 10px;
+		width: 52px;
+		margin-right: 12px;
 	}
 
 	ul.tools li#coal ul {
-		margin: 30px auto 0;
-		width: 72px;
-		height: 85px;
+		margin: 0 auto;
+		width: 52px;
+		height: 90px;
 	}
 
 	ul.tools li#btn-coal-1,
 	ul.tools li#btn-coal-2 {
-		width: 36px;
-		height: 85px;
+		width: 26px;
+		height: 90px;
 	}
 
 	ul.tools li#btn-grass {
-		width: 90px;
-		height: 115px;
-		margin-left: 22px;
+		width: 70px;
+		height: 80px;
+		margin-left: 10px;
 	}
 
 	ul.tools li#btn-orange {
-		width: 83px;
-		height: 115px;
+		width: 62px;
+		height: 85px;
 		margin-right: 10px;
 	}
 
 	ul.tools li#denim ul {
-		width: 128px;
-		height: 110px;
-		margin-top: 2px;
-		margin-left: 2px;
+		width: 80px;
+		height: 76px;
+		margin-top: 12px;
+		margin-left: 0;
 	}
 
 	ul.tools li#denim li {
-		width: 58px;
-		height: 58px;
+		width: 40px;
+		height: 40px;
 	}
 
 	ul.tools li#btn-denim-1 {
-		margin-left: 6px;
+		margin-left: 0;
 		margin-top: 0;
 	}
 
 	ul.tools li#btn-denim-2 {
-		margin-right: 6px;
+		margin-right: 0;
 		margin-top: 0;
 	}
 
 	ul.tools li#btn-denim-3 {
-		top: -8px;
+		top: -5px;
 	}
 
 	ul.tools li#btn-catchup {
-		width: 102px;
-		height: 50px;
-		margin-top: 32px;
+		width: 78px;
+		height: 30px;
+		margin-top: 34px;
 		margin-right: 0;
 	}
 	ul.tools li#needle ul {
-		width: 126px;
-		height: 110px;
+		width: 72px;
+		height: 106px;
+		margin: 0 auto;
 	}
 
 	ul.tools li#btn-needle {
-		width: 105px;
-		height: 90px;
-		margin: -6px auto 0;
+		width: 80px;
+		height: 70px;
+		margin: 0 auto;
 	}
 
 	ul.tools li.needle-color {
@@ -2446,11 +2449,15 @@ ul.logotypes li a {
 		height: 18px !important;
 	}
 
+	ul.tools li#btn-thread-5 {
+		margin-left: 9px;
+	}
+
 	ul.tools li#btn-pistol {
-		width: 82px;
+		width: 64px;
 		height: 64px;
-		margin-right: 10px;
-		margin-top: 18px;
+		margin-top: 26px;
+		margin-right: 8px;
 	}
 }
 
