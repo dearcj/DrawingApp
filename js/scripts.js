@@ -633,7 +633,7 @@ jQuery(document).ready(function($) {
 			window.hideHint = true;
 			window.mainCanvasObject.sendPic(openMyMuseum, window.savedImage)
 		} else {
-			ZSound.Play('stage');
+			ZSound.Play('click');
 			openMyMuseum();
 		}
 
