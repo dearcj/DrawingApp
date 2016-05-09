@@ -1705,6 +1705,26 @@ div.at-the-backyard {
 	margin-top: 0;
 }
 
+ul.generic-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.generic-nav li {
+	position: absolute;
+}
+
+li.generic-prev {
+	float: left;
+	background: url(../img/generic-prev.jpg) no-repeat;
+}
+
+li.generic-next {
+	float: right;
+	background: url(../img/generic-next.jpg) no-repeat;
+}
+
 #mediaart-wrapper {
 	width: 65%;
 }
