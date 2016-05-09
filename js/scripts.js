@@ -680,7 +680,7 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-home').on(window.eventType, function(event) {
 		ZSound.Play('stage');
-		ZSound.delay(5000).PlayMusic('street');
+		ZSound.PlayMusic('street');
 
 		window.currentHash = history.state;
 		openPage('index');
