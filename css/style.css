@@ -2107,10 +2107,6 @@ ul.logotypes li a {
     float: right;
 }
 
-ul.paintings.left-side a:nth-child(1):hover {
-	background: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
-}
-
 .social-buttons span {
     padding-bottom: 10%;
     display: block;
