@@ -36,14 +36,14 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-scotch-1').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/c_scotch.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_scotch-1.png';
     brushScotch.mode = 1;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
   })
 
   document.getElementById('btn-scotch-2').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/c_scotch.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_scotch-2.png';
     brushScotch.mode = 2;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
