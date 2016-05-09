@@ -638,7 +638,11 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.go-to-tools').on(window.eventType, function(event) {
-		ZSound.Play('stage');
+		if (window.location.href.indexOf('filters') > 0) {
+			ZSound.Play('click');
+		} else {
+			ZSound.Play('stage');
+		}
 		window.currentHash = history.state;
 		openPage('painting');
 		paintingAnimation();
