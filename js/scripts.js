@@ -1028,6 +1028,8 @@ jQuery(document).ready(function($) {
 		uxButtonsLiWidth = $('ul.ux-buttons li').width();
 
 		$('ul.ux-buttons').css('width', uxButtonsLiWidth*2 + 5 + 'px');
+
+		$('.generic-text').css('font-size', width/12 + 'px');
 	}
 
 
