@@ -131,10 +131,10 @@ jQuery(document).ready(function($) {
 		$('#painting-img').css({width: 240 + 'px', height: 165 + 'px'});
 		$('.paintings').css('display', 'none');
 
-		$('.museum-painting').css({width: 240 + 'px', height: 165 + 'px', top: -90 + 'px'});
+		$('.museum-painting').css({width: 200 + 'px', height: 138 + 'px', top: -100 + 'px'});
 		$('#main-image p').css({'opacity': 0, height: 0});
 		$('.museum-button.at-the-backyard').css({width: 100 + 'px', height: 55 + 'px', 'margin-top': 60 + 'px'});
-		$('.social-buttons').css({right: 6 + '%', top: -89 + '%'});
+		$('.social-buttons').css({right: 10 + '%', top: -80 + '%'});
 
 		$('form.sending-form').css({width: 40 + '%', height: 165 + 'px', 'margin-right': -250 + 'px', 'float': 'right'});
 		$('form.sending-form button').css({width: 100 + '%'});
@@ -568,7 +568,9 @@ jQuery(document).ready(function($) {
 
 		if ($(window).width() < 700) {
 			$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-			$('.painting-info').css('width', 300 + 'px').delay(500).animate({'top': -140 + 'px'}, 500);
+			$('.painting-info').css('width', 300 + 'px').delay(500).animate({'top': -155 + 'px'}, 500);
+			$('.social-buttons ul').css('width', 75 + 'px');
+			$('.social-buttons ul li').css({width: 35 + 'px', height: 35 + 'px'});
 		} else {
 			$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			$('.painting-info').delay(500).animate({'top': -190 + 'px'}, 500);
@@ -745,6 +747,29 @@ jQuery(document).ready(function($) {
 		isItHome('publication');
 	});
 
+	// GENERIC PAGES
+
+	$('#button-1').on(window.eventType, function(event) {
+		$('#index-wrapper').fadeOut(500).addClass('hidden');
+		$('#installation-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
+	});
+
+	$('#button-2').on(window.eventType, function(event) {
+		$('#index-wrapper').fadeOut(500).addClass('hidden');
+		$('#performance-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
+	});
+
+	$('#button-3').on(window.eventType, function(event) {
+		$('#index-wrapper').fadeOut(500).addClass('hidden');
+		$('#interpretation-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
+	});
+
+	$('#button-4').on(window.eventType, function(event) {
+		$('#index-wrapper').fadeOut(500).addClass('hidden');
+		$('#mediaart-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
+	});
+
+	//
 
 	$('.save-and-send').click(function(event) {
 
@@ -986,18 +1011,17 @@ jQuery(document).ready(function($) {
 				paintingInfo = $('.painting-info'),
 				socialButtons = $('.social-buttons');
 
-		paintingInfo.css('width', 750/100 * 65 + 'px');
-
-		var paintingInfoWidth = parseInt(paintingInfo.css('width'));
-
 		if (width > 700) {
+			paintingInfo.css('width', 750/100 * 65 + 'px');
+			var paintingInfoWidth = parseInt(paintingInfo.css('width'));
 			paintingInfo.find('span.title').css('font-size', paintingInfoWidth/2.25 + '%');
 			paintingInfo.find('span.author').css('font-size', paintingInfoWidth/2.75 + '%');
 			paintingInfo.find('span.materials').css('font-size', paintingInfoWidth/3.25 + '%');
 			socialButtons.find('span').css('font-size', paintingInfoWidth/3.75 + '%');
 		} else {
+			paintingInfo.css('width', 300 + 'px');
 			paintingInfo.find('span').css('font-size', 125 + '%');
-			socialButtons.find('span').css('font-size', 110 + '%');
+			socialButtons.find('span').css({'font-size': 100 + '%', 'padding-bottom': 7 + '%'});
 		}
 
 		paintingInfo.find('span').css('padding-bottom', paintingInfo.height()/36.27 + 'px');

@@ -8,7 +8,7 @@
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8) ]><!-->
-<html <?php language_attributes(); ?> id="html">
+<html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -166,6 +166,22 @@
             <li id="mute"></li>
             <li id="fullscreen"></li>
           </ul>
+        </div>
+
+        <div id="intsallaion-wrapper" class="hidden screens inside">
+          <p>Installation</p>
+        </div>
+
+        <div id="performance-wrapper" class="hidden screens inside">
+          <p>Perfromance</p>
+        </div>
+
+        <div id="interpretation-wrapper" class="hidden screens inside">
+          <p>Interpretation</p>
+        </div>
+
+        <div id="mediaart-wrapper" class="hidden screens inside">
+          <p>Media-art</p>
         </div>
 
         <div id="surface-wrapper" class="hidden screens inside">
