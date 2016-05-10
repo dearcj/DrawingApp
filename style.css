@@ -1,0 +1,2695 @@
+/*
+Theme Name: MMOMA
+Author: Yuriy Dorogoy
+Description: Theme for special project of Moscow Museum Of Modern Arts
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: art, web-app
+Text Domain: mmoma
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+    margin: 0;
+	width: 100%;
+}
+
+body #wrapper {
+	width: 100%;
+	font-family: 'DINRoundPro-Bold', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+@font-face {
+  font-family: 'Shadow-Regular';
+  src: url('Shadow-Regular.woff') format('woff'),
+       url('Shadow-Regular.ttf') format('truetype'),
+       url('Shadow-Regular.svg#Shadow-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Shadow_regular';
+  src: url('Shadow_regular.eot');
+  src: url('Shadow_regular.eot?#iefix') format('embedded-opentype'),
+       url('Shadow_regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINRoundPro-Bold';
+  src: url('DINRoundPro-Bold.eot');
+  src: url('DINRoundPro-Bold.eot?#iefix') format('embedded-opentype'),
+       url('DINRoundPro-Bold.woff2') format('woff2'),
+       url('DINRoundPro-Bold.woff') format('woff'),
+       url('DINRoundPro-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.langs {
+	height: 0;
+}
+
+.langs ul {
+	float: right;
+	margin: 0;
+	margin-right: 16px;
+}
+
+.langs ul li {
+	float: left;
+	margin-right: 15px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.langs ul li a {
+	text-decoration: none;
+	color: #333;
+}
+
+.podval_new {
+	position: relative;
+	top: 660px;
+	background-color: white;
+	margin: 0;
+	padding: 25px 20px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+#wrapper {
+	background-color: #300F06;
+	overflow: hidden;
+}
+
+ul#undo-refresh {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 540px;
+	left: 50%;
+	margin-left: -350px;
+}
+
+#painting-wrapper ul#undo-refresh {
+	top: 580px;
+	margin-left: -370px;
+}
+
+ul#undo-refresh li {
+	float: left;
+	opacity: 0;
+}
+
+ul#undo-refresh li:hover,
+ul#undo-refresh li:focus {
+	cursor: pointer;
+}
+
+ul#undo-refresh li#undo {
+	background: url(../img/back-button.png) no-repeat;
+	background-size: 100%;
+	width: 22px;
+	height: 22px;
+	margin-right: 15px;
+	margin-top: 4px;
+}
+
+ul#undo-refresh li#refresh {
+	background: url(../img/refresh-button.png) no-repeat;
+	background-size: 100%;
+	width: 22px;
+	height: 30px;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	z-index: 1000;
+	background: url(../img/bg_mmoma.jpg) repeat-x;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #333333;
+	text-transform: uppercase;
+}
+
+.header a {
+	padding-left: 20px;
+}
+
+#sky {
+	position: absolute;
+	background: url(../img/sky.jpg) no-repeat;
+	background-size: 100% 100%;
+	background-position: 50% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#art {
+	position: absolute;
+	background: url(../img/art.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: 50% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#dog {
+	background: url(../img/dog.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+#momandson {
+	background: url(../img/momandson.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+#couple {
+	background: url(../img/couple.png) no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+#bottom-elements {
+	height: 0;
+}
+
+#bottom-elements div:hover {
+	cursor: pointer;
+}
+
+ul#buttons {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	list-style: none;
+}
+
+ul#buttons div {
+	float: left;
+	width: 22.8%;
+}
+
+ul#buttons div.middle-block {
+	float:left;
+	width: 51%;
+	margin: 0;
+	text-align: center;
+}
+
+ul#buttons li {
+	position: relative;
+}
+
+ul#buttons li.hor {
+	width: 100%;
+}
+
+ul#buttons li.vert {
+	display: inline-block;
+	width: 50%;
+}
+
+ul#buttons li#button-1 {
+	background: url(../img/button-1.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-2 {
+	background: url(../img/button-2.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-3 {
+	background: url(../img/button-3.png) no-repeat;
+	background-size: 100%;
+	float: left;
+}
+
+ul#buttons li#button-4 {
+	background: url(../img/button-4.png) no-repeat;
+	background-size: 100%;
+	float: right;
+}
+
+ul#buttons li#button-5 {
+	background: url(../img/button-5.png) no-repeat;
+	background-size: 100%;
+	margin-right: 0;
+}
+
+ul#buttons li#button-6 {
+	background: url(../img/button-6.png) no-repeat;
+	background-size: 100%;
+	margin-right: 0;
+}
+
+ul#buttons li:hover,
+ul#buttons li:focus {
+	cursor: pointer;
+}
+
+ul#buttons li#button-1:hover {
+	background: url(../img/button-1-hover.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-2:hover {
+	background: url(../img/button-2-hover.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-3:hover {
+	background: url(../img/button-3-hover.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-4:hover {
+	background: url(../img/button-4-hover.png) no-repeat;
+	background-size: 100%;
+}
+
+ul#buttons li#button-5:hover {
+	background: url(../img/button-5-hover.png) no-repeat;
+	background-size: 100%;
+	margin-right: 0;
+}
+
+ul#buttons li#button-6:hover {
+	background: url(../img/button-6-hover.png) no-repeat;
+	background-size: 100%;
+	margin-right: 0;
+}
+
+ul#buttons li span {
+	position: relative;
+	display: block;
+	opacity: 0;
+	z-index: 10;
+	width: auto;
+	color: white;
+	text-align: center;;
+	background-color: #31b2ee;
+	border-radius: 8px;
+	height: auto;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+    -moz-box-shadow:    0 0 5px 0 rgba(0,0,0,0.3);
+    box-shadow:         0 0 5px 0 rgba(0,0,0,0.3);
+}
+
+ul#buttons li:hover span {
+	opacity: 1;
+}
+
+ul#buttons li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.save-and-send:active {
+	outline: none;
+}
+
+ul#helpers {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 0;
+}
+
+#painting-wrapper ul#helpers {
+	position: absolute;
+	top: 15px;
+	left: 50%;
+	margin-left: -400px;
+}
+
+#filters-wrapper ul#helpers {
+	position: absolute;
+	top: 505px;
+	margin-left: 15px;
+}
+
+#publication-wrapper ul#helpers {
+	position: absolute;
+	top: 565px;
+	left: 50%;
+	margin-left: -320px;
+}
+
+#painting-wrapper ul#helpers li {
+	z-index: 100;
+}
+
+ul#helpers li {
+	position: relative;
+	list-style: none;
+	background: url(../img/help.png) no-repeat;
+	background-size: 100%;
+	width: 50px;
+	height: 50px;
+}
+
+ul#helpers li:hover {
+	background: url(../img/help-hover.png) no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+li#helper-6,
+li#helper-6s {
+	width: 100% !important;
+	height: 0 !important;
+}
+
+#helper-7,
+#helper-8,
+#helper-9 {
+	opacity: 0;
+}
+
+ul#helpers li span {
+	position: relative;
+	display: none;
+	text-align: left;
+	z-index: 100;
+	background-color: #31b2ee;
+	color: white;
+	border-radius: 20px;
+	height: auto;
+	padding: 30px 35px 35px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow:         0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+#helper-11 {
+	right: 50%;
+	margin-right: -29rem;
+	top: 5px;
+}
+
+#helper-12 {
+	left: 50%;
+	margin-left: -33.5rem;
+	top: 210px;
+}
+
+#helper-13 {
+	left: 50%;
+	margin-left: -34.2rem;
+	top: 375px;
+}
+
+#helper-14 {
+	right: 50%;
+	margin-right: -40.3rem;
+	top: 515px;
+}
+
+#helper-15 {
+	right: 50%;
+	margin-right: -27rem;
+	top: 517px;
+}
+
+#helper-11,
+#helper-12,
+#helper-13,
+#helper-14,
+#helper-15 {
+	position: absolute !important;
+}
+
+div.special span {
+	position: relative;
+	text-align: center;
+	z-index: 100;
+	background-color: white;
+	color: #31b2ee;
+	display: none;
+	border-radius: 20px;
+	height: auto;
+	padding: 30px 35px 35px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(0,0,0,0.3);
+    box-shadow:         0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+div.special span p {
+	display: inline;
+    margin: 0;
+	color: #31b2ee;
+}
+
+ul#helpers li#helper-6 span,
+ul#helpers li#helper-6s span {
+	position: absolute;
+	left: 50%;
+}
+
+
+ul#helpers li:hover span,
+ul#helpers li:focus span {
+	display: inline-block;
+}
+
+/*ul#helpers li#helper-8,
+ul#helpers li#helper-9 {
+	width: 65px;
+	height: 65px;
+}*/
+
+ul#helpers li#helper-8:hover span,
+ul#helpers li#helper-8:focus span,
+ul#helpers li#helper-10:hover span,
+ul#helpers li#helper-10:focus span {
+	display: inline-block;
+}
+
+ul#helpers li span p {
+	display: inline;
+	color: #FFF;
+    margin: 0;
+}
+
+#publication-wrapper {
+	opacity: 0;
+	height: 0;
+	background: url(../img/sending-back.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#painting-wrapper {
+	opacity: 0;
+	z-index: 100;
+	background: url(../img/background.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
+    width: 100%;
+    position: absolute;
+	height: 0;
+    overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+#main-canvas {
+	cursor: none;
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	margin-left: -375px;
+}
+
+#back-canvas {
+	cursor: none;
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	margin-left: -375px;
+	background-color: white;
+}
+
+#cursor-canvas {
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	margin-left: -375px;
+}
+
+.dark-side.tools {
+	display: none;
+}
+
+.dark-side.museum {
+	height: 0 !important;
+}
+
+/*canvas {*/
+	/*border: 1px solid #ccc;*/
+/*}*/
+
+.main-canvas {
+	background: url(../img/main-canvas.jpg) no-repeat;
+    background-size: 100%;
+    margin: 0;
+    width: 650px;
+    float: right;
+    height: 400px;
+	display: none;
+}
+
+ul.paintings {
+	margin: 0;
+	margin-top: 35px;
+	padding: 0;
+	list-style: none;
+}
+
+ul.paintings.left-side {
+	float: left;
+}
+
+ul.paintings.right-side {
+	float: right;
+}
+
+ul.paintings li {
+	background-size: 100% auto !important;
+	height: 150px;
+	margin-bottom: 30px;
+	display: table !important;
+}
+
+ul.paintings li:hover {
+	cursor: pointer;
+}
+
+/*ul.paintings.left-side a:nth-child(1) li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-1.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.left-side a:nth-child(1):hover li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/painting-1.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.left-side a:nth-child(2) li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-2.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.left-side a:nth-child(2):hover li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-2.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.left-side a:nth-child(3) li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-3.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.left-side a:nth-child(3):hover li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-3.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.right-side a:nth-child(1) li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-4.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.right-side a:nth-child(1):hover li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-4.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.right-side a:nth-child(2) li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-5.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.right-side a:nth-child(2):hover li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-5.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.right-side a:nth-child(3) li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-6.jpg) no-repeat;*/
+/*}*/
+
+/*ul.paintings.right-side a:nth-child(3):hover li {*/
+	/*background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-6.jpg) no-repeat;*/
+/*}*/
+
+ul.paintings li div {
+	text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 0;
+    margin: 0 auto;
+}
+
+ul.paintings li div span {
+	display: block;
+	padding-bottom: 6px;
+}
+
+ul.paintings li div span.title {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+ul.paintings li div span.author {
+	text-transform: capitalize;
+    font-size: 14px;
+}
+
+ul.paintings li div span.materials {
+	font-size: 12px;
+	text-transform: none;
+}
+
+a.group-1:hover div span,
+a.group-1:focus div span {
+	text-decoration: none;
+}
+
+ul.paintings a {
+	outline: none;
+	color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+ul.paintings a:hover li div {
+	opacity: 0;
+}
+
+ul.paintings a:hover li div {
+	opacity: 1;
+}
+
+.main-painting {
+	background: url(../img/main-painting.jpg) no-repeat;
+	background-size: auto 100%;
+	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow:    0px 0px 10px 2px rgba(0,0,0,0.2);
+    box-shadow:         0px 0px 10px 2px rgba(0,0,0,0.2);
+}
+
+#main-image {
+	position: relative;
+	opacity: 0;
+	width: 750px;
+	height: 530px;
+	display: block;
+	margin: 35px auto 0;
+	background-color: transparent;
+	opacity: 0;
+}
+
+#painting-img {
+	position: absolute;
+	width: 600px;
+	height: 424px;
+}
+
+.main-painting p {
+	position: relative;
+	background-color: #31b2ee;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 150%;
+    height: auto;
+    color: white;
+}
+
+.museum-painting {
+	background-color: white;
+	margin: 0 auto;
+	display: block;
+	clear: both;
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow:    0px 0px 10px 2px rgba(0,0,0,0.2);
+    box-shadow:         0px 0px 10px 2px rgba(0,0,0,0.2);
+	width: 500px;
+	height: 354px;
+	position: relative;
+	top: -50px;
+}
+
+.museum-painting p {
+	position: relative;
+	background-color: #31b2ee;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 150%;
+    height: auto;
+    color: white;
+}
+
+ul.ux-buttons {
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.ux-buttons.home {
+	position: absolute;
+}
+
+ul.ux-buttons.home li:last-child {
+	margin-left: 5px;
+}
+
+ul.ux-buttons li {
+	width: 50px;
+	height: 50px;
+	float: left;
+	opacity: 1;
+}
+
+ul.ux-buttons li:hover,
+ul.ux-buttons li:focus {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+ul.ux-buttons li:first-child {
+	background: url(../img/sound-button.png) no-repeat;
+	background-size: 100%;
+}
+
+ul.ux-buttons li:last-child {
+	background: url(../img/fullscreen-button.png) no-repeat;
+	background-size: 100%;
+	margin-left: 5px;
+}
+
+form.sending-form {
+	background-color: white;
+	margin: 0 auto;
+	width: 600px;
+}
+
+form.sending-form input {
+	width: 85%;
+    background-color: #e8e8e8;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    display: block;
+    border-radius: 2px;
+    padding-left: 10px;
+    color: #888;
+}
+
+form.sending-form input:focus {
+	outline: none;
+}
+
+form.sending-form button {
+	width: 35%;
+    float: right;
+    border-radius: 0 10px 10px 0;
+    background-color: rgba(136, 200, 12, 1);
+    height: 100px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    font-family: 'Shadow-Regular', sans-serif;
+    line-height: 110%;
+    padding-top: 8px;
+}
+
+form.sending-form button:hover,
+form.sending-form button:focus {
+	background-color: rgba(123, 179, 11, 1);
+	cursor: pointer;
+}
+
+form.sending-form .work-author {
+	float: left;
+	width: 65%;
+}
+
+form.sending-form .work-author p {
+    font-size: 14px;
+    font-family: 'Helvetica', sans-serif;
+    color: #666;
+    padding: 0;
+    margin: 0 auto;
+    width: 22%;
+	float: left;
+	text-align: right;
+}
+
+form.sending-form .work-author span {
+    text-align: center;
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: -5px;
+}
+
+form.sending-form .work-author .item-field {
+	width: 90%;
+	margin: 18px auto 0;
+}
+
+form.sending-form .work-author .item-field:last-child {
+	margin-top: 10px;
+}
+
+form.sending-form .work-author input {
+	width: 70%;
+	float: right;
+}
+
+form.sending-form .work-author p a {
+	color: black;
+	text-decoration: none;
+	font-size: inherit;
+}
+
+ul.tools-buttons {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    float: left;
+}
+
+ul.tools-buttons.tools-tb {
+	position: absolute;
+	left: 50%;
+	margin-left: -213px;
+	width: 426px;
+	top: 565px;
+}
+
+ul.tools-buttons li {
+	position: relative;
+    float: left;
+    margin: 0 5px;
+    opacity: 1;
+	width: 100px;
+	height: 100px;
+}
+
+ul.tools-buttons.surface-tb {
+	width: 100px;
+}
+
+ul.tools-buttons.surface-tb li,
+ul.tools-buttons.filters-tb li {
+	margin: 0;
+}
+
+ul.tools-buttons.tools-tb li {
+	margin: 0;
+	float: left;
+	width: 100px;
+	height: 87px;
+}
+
+ul.tools-buttons li:hover {
+	opacity: 0.85;
+	cursor: pointer;
+}
+
+ul.tools {
+	position: relative;
+	width: 300px;
+	height: 575px;
+	top: 35px;
+	padding-left: 0;
+	margin: 0;
+	margin-left: -300px;
+}
+
+ul.tools > li {
+	position: relative;
+	width: 149px;
+	height: 149px;
+}
+
+ul.tools > li#scotch > ul,
+ul.tools > li#needle > ul {
+	margin: 0;
+	padding: 0;
+	width: 149px;
+	height: 132px;
+}
+
+ul.tools > li#denim > ul {
+	margin: 0;
+	padding: 0;
+	width: 156px;
+	height: 156px;
+}
+
+ul.tools > li#coal > ul {
+	margin: 22px auto 0;
+	padding: 0;
+	width: 86px;
+	height: 106px;
+}
+
+ul.tools > li#scotch {
+	padding-top: 9px !important;
+}
+
+ul.tools li#btn-scotch {
+	background: url(../img/tools/scotch.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 127px;
+	height: 84px;
+	margin: 0 auto;
+}
+
+ul.tools li#btn-scotch-1 {
+	background: url(../img/tools/scotch-1.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 105px;
+	height: 27px;
+	margin-top: 10px;
+	margin-right: 12px;
+	float: right;
+}
+
+ul.tools li#btn-scotch-2 {
+	background: url(../img/tools/scotch-2.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 105px;
+	height: 27px;
+	margin-top: 6px;
+	margin-right: 12px;
+	float: right;
+}
+
+ul.tools li#btn-coal-1 {
+	background: url(../img/tools/chalk-1.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 43px;
+	height: 120px;
+	float: left;
+}
+
+ul.tools li#btn-coal-2 {
+	background: url(../img/tools/chalk-2.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 43px;
+	height: 120px;
+	float: left;
+}
+
+ul.tools li#btn-grass {
+	background: url(../img/tools/grass.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 106px;
+	height: 130px;
+	margin-left: 25px;
+	position: relative;
+	top: 8px;
+}
+
+ul.tools li#btn-orange {
+	background: url(../img/tools/orange.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+	width: 111px;
+	margin-right: 21px;
+	height: 130px;
+}
+
+ul.tools li#btn-denim-1 {
+	background: url(../img/tools/denim-1.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 72px;
+	height: 72px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+ul.tools li#btn-denim-2 {
+	background: url(../img/tools/denim-2.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 72px;
+	height: 72px;
+	float: right;
+	margin-right: 5px;
+	margin-top: 10px;
+}
+
+ul.tools li#btn-denim-3 {
+	background: url(../img/tools/denim-3.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 72px;
+	height: 72px;
+	clear: both;
+	margin: 0 auto;
+	position: relative;
+	top: -9px;
+}
+
+ul.tools li#btn-catchup {
+	background: url(../img/tools/ketchup.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 128px;
+	height: 64px;
+	margin-top: 40px;
+	margin-right: 5px;
+}
+
+ul.tools li#btn-needle {
+	background: url(../img/tools/needle.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 127px;
+	height: 101px;
+	margin: 5px auto;
+}
+
+ul.tools li#btn-thread-1 {
+	background: url(../img/tools/thread-1.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 20px;
+	height: 20px;
+	margin-left: 5px;
+	clear: both;
+}
+
+ul.tools li#btn-thread-2 {
+	background: url(../img/tools/thread-2.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 20px;
+	height: 20px;
+}
+
+ul.tools li#btn-thread-3 {
+	background: url(../img/tools/thread-3.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 20px;
+	height: 20px;
+}
+
+ul.tools li#btn-thread-4 {
+	background: url(../img/tools/thread-4.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 20px;
+	height: 20px;
+}
+
+ul.tools li#btn-thread-5 {
+	background: url(../img/tools/thread-5.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 20px;
+	height: 20px;
+}
+
+ul.tools li#btn-thread-6 {
+	background: url(../img/tools/thread-6.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 20px;
+	height: 20px;
+}
+
+ul.tools li#btn-thread-7 {
+	background: url(../img/tools/thread-7.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 20px;
+	height: 20px;
+}
+
+ul.tools li.needle-color {
+	float: left;
+}
+
+ul.tools li#btn-pistol {
+	background: url(../img/tools/gun.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 103px;
+	height: 112px;
+	margin-right: 25px;
+}
+
+ul.tools li#btn-scotch.scotch-active.active {
+	background: url(../img/tools/scotch-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-scotch-1.scotch-1-active.active {
+	background: url(../img/tools/scotch-1-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-scotch-2.scotch-2-active.active {
+	background: url(../img/tools/scotch-2-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-coal-1.coal-1-active.active {
+	background: url(../img/tools/chalk-1-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-coal-2.coal-2-active.active {
+	background: url(../img/tools/chalk-2-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-grass.grass-active.active {
+	background: url(../img/tools/grass-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-orange.orange-active.active {
+	background: url(../img/tools/orange-hover.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-denim-1.denim-1-active.active {
+	background: url(../img/tools/denim-1-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-denim-2.denim-2-active.active {
+	background: url(../img/tools/denim-2-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-denim-3.denim-3-active.active {
+	background: url(../img/tools/denim-3-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-catchup.catchup-active.active {
+	background: url(../img/tools/ketchup-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	width: 128px;
+	height: 64px;
+	margin-top: 40px;
+	margin-right: 5px;
+}
+
+ul.tools li#btn-needle.needle-active.active {
+	background: url(../img/tools/needle-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-1.thread-1-active.active {
+	background: url(../img/tools/thread-1-hover.png) no-repeat;
+}
+
+ul.tools li#btn-thread-2.thread-2-active.active {
+	background: url(../img/tools/thread-2-hover.png) no-repeat;
+}
+
+ul.tools li#btn-thread-3.thread-3-active.active {
+	background: url(../img/tools/thread-3-hover.png) no-repeat;
+}
+
+ul.tools li#btn-thread-4.thread-4-active.active {
+	background: url(../img/tools/thread-4-hover.png) no-repeat;
+}
+
+ul.tools li#btn-thread-5.thread-5-active.active {
+	background: url(../img/tools/thread-5-hover.png) no-repeat;
+}
+
+ul.tools li#btn-thread-6.thread-6-active.active {
+	background: url(../img/tools/thread-6-hover.png) no-repeat;
+}
+
+ul.tools li#btn-thread-7.thread-7-active.active {
+	background: url(../img/tools/thread-7-hover.png) no-repeat;
+}
+
+ul.tools li#btn-pistol.pistol-active.active {
+	background: url(../img/tools/gun-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-scotch:hover,
+ul.tools li#btn-scotch:focus {
+	background: url(../img/tools/scotch.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-scotch-1:hover,
+ul.tools li#btn-scotch-1:focus {
+	background: url(../img/tools/scotch-1.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-scotch-2:hover,
+ul.tools li#btn-scotch-2:focus {
+	background: url(../img/tools/scotch-2.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-coal-1:hover,
+ul.tools li#btn-coal-1:focus {
+	background: url(../img/tools/chalk-1.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-coal-2:hover,
+ul.tools li#btn-coal-2:focus {
+	background: url(../img/tools/chalk-2.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-grass:hover,
+ul.tools li#btn-grass:focus {
+	background: url(../img/tools/grass.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-orange:hover,
+ul.tools li#btn-orange:focus {
+	background: url(../img/tools/orange.png) no-repeat;
+	background-size: 94%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-denim-1:hover,
+ul.tools li#btn-denim-1:focus {
+	background: url(../img/tools/denim-1.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-denim-2:hover,
+ul.tools li#btn-denim-2:focus {
+	background: url(../img/tools/denim-2.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-denim-3:hover,
+ul.tools li#btn-denim-3:focus {
+	background: url(../img/tools/denim-3.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-catchup:hover,
+ul.tools li#btn-catchup:focus {
+	background: url(../img/tools/ketchup.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-needle:hover,
+ul.tools li#btn-needle:focus {
+	background: url(../img/tools/needle.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-1:hover,
+ul.tools li#btn-thread-1:focus {
+	background: url(../img/tools/thread-1.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-2:hover,
+ul.tools li#btn-thread-2:focus {
+	background: url(../img/tools/thread-2.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-3:hover,
+ul.tools li#btn-thread-3:focus {
+	background: url(../img/tools/thread-3.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-4:hover,
+ul.tools li#btn-thread-4:focus {
+	background: url(../img/tools/thread-4.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-5:hover,
+ul.tools li#btn-thread-5:focus {
+	background: url(../img/tools/thread-5.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-6:hover,
+ul.tools li#btn-thread-6:focus {
+	background: url(../img/tools/thread-6.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-thread-7:hover,
+ul.tools li#btn-thread-7:focus {
+	background: url(../img/tools/thread-7.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools li#btn-pistol:hover,
+ul.tools li#btn-pistol:focus {
+	background: url(../img/tools/gun.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+ul.tools > li:nth-child(2n+1) {
+	float: left;
+	clear: both;
+}
+
+ul.tools > li:nth-child(2n+2) {
+	float: right;
+}
+
+ul.tools li p {
+	display: block;
+	color: white;
+	position: relative;
+	text-align: center;
+	font-size: 16px;
+	height: 0;
+	margin: 0;
+	top: -10px;
+}
+
+li#scotch p {
+	top: -20px;
+}
+
+li#coal p {
+	top: 0;
+}
+
+li#btn-grass p {
+	top: -5px;
+}
+
+li#denim p {
+	top: -8px;
+}
+
+li#btn-catchup p {
+	top: -30px;
+}
+
+li#needle p {
+	top: -8px;
+}
+
+li#btn-pistol p {
+	top: -15px;
+}
+
+ul.tools li:hover,
+ul.tools li:focus {
+	cursor: pointer;
+}
+
+li.back-to-tools,
+li.back-to-surface {
+	background: url(../img/tools-buttons-prev.png) no-repeat;
+	background-size: 80%;
+	background-position: 50% 50%;
+}
+
+li.back-to-surface {
+	margin-right: -25px !important;
+}
+
+li.add-filter {
+	margin-left: -25px !important;
+}
+
+li#go-to-tools,
+li.add-filter {
+	background: url(../img/tools-buttons-next.png) no-repeat;
+	background-size: 80%;
+	background-position: 50% 50%;
+}
+
+li#go-to-tools {
+	position: relative;
+	top: 0;
+}
+
+li.its-done,
+li.send-to-museum {
+	background: url(../img/filters-done.png) no-repeat;
+	background-size: 80%;
+	background-position: 50% 50%;
+}
+
+li.its-done {
+	margin-left: -10px !important;
+}
+
+li.its-done:hover,
+li.its-done:focus  {
+	cursor: pointer;
+}
+
+li.send-to-museum:hover,
+li.send-to-museum:focus {
+	cursor: pointer;
+}
+
+.go-to-home {
+	top: 18px !important;
+}
+
+.new-painting {
+	background: url(../img/new-painting.png) no-repeat;
+	background-size: 100%;
+	max-width: 247px;
+	margin: 0 auto;
+	display: none;
+}
+
+div.at-the-backyard {
+	background: url(../img/at-the-backyard.png) no-repeat;
+	background-size: 100%;
+	float: left;
+	width: 148px;
+	height: 81px;
+}
+
+.surface-button.at-the-backyard {
+	position: relative;
+}
+
+#index-wrapper {
+	position: relative;
+}
+
+#surface-wrapper {
+	z-index: 200;
+	background: url(../img/background.png) no-repeat;
+    background-position: 50% 0;
+    background-size: 100% auto;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+	height: 0;
+}
+
+.dark-side {
+	background-color: rgba(126,86,7,0.4);
+    position: relative;
+    margin: 0 auto;
+}
+
+.dark-side.surface {
+	background-color: rgba(0,0,0,0.35);
+	opacity: 0;
+	display: none;
+}
+
+.dark-side.filters {
+	margin: 0;
+	float: right;
+}
+
+.dark-side.museum {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.dark-side.sending {
+	background-color: rgba(0,0,0,0.5);
+}
+
+#surface-canvas {
+	background: url(../img/textures/wood.jpg) no-repeat;
+	background-size: 0;
+	background-position: 50% 50%;
+	margin: 35px auto 0;
+	width: 700px;
+	height: 495px;
+}
+
+#surface-canvas p {
+	background-color: #31b2ee;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 120%;
+    height: auto;
+    position: relative;
+    color: white;
+}
+
+#museum-wrapper > p {
+	background-color: #31b2ee;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 120%;
+	height: auto;
+	position: relative;
+	color: white;
+	display: block;
+	opacity: 0;
+}
+
+#main-image p {
+	background-color: #31b2ee;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 120%;
+	height: auto;
+	position: relative;
+	color: white;
+	display: block;
+	opacity: 0;
+}
+
+#surface-canvas.wood-texture {
+	background: url(../img/textures/wood.jpg) no-repeat;
+}
+
+#surface-canvas.board-texture {
+	background: url(../img/textures/board.jpg) no-repeat;
+}
+
+#surface-canvas.canvas-texture {
+	background: url(../img/textures/canvas.jpg) no-repeat;
+}
+
+#surface-canvas.brick-texture {
+	background: url(../img/textures/brick.jpg) no-repeat;
+}
+
+#surface-canvas.cardboard-texture {
+	background: url(../img/textures/cardboard.jpg) no-repeat;
+}
+
+#surface-canvas.wall-texture {
+	background: url(../img/textures/wallpaper.jpg) no-repeat;
+}
+
+#surface-canvas.metal-texture {
+	background: url(../img/textures/metal.jpg) no-repeat;
+}
+
+.hidden {
+	display: none;
+}
+
+.generic {
+	background-color: #300F06;
+	width: 70%;
+	margin: 0 auto;
+	height: 660px;
+}
+
+.generic-img {
+	float: left;
+	width: 55%;
+	border-radius: 30px;
+	margin-top: 6%;
+}
+
+.generic-text {
+	float: right;
+	width: 40%;
+	padding: 9% 0 0 4%;
+	color: white;
+}
+
+.generic-text h1 {
+	margin-top: 0;
+}
+
+ul.generic-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul.generic-nav li {
+	position: absolute;
+	top: 436px;
+	margin-top: -40px;
+	width: 80px;
+	height: 80px;
+}
+
+li.generic-prev {
+	left: 0;
+	background: url(../img/generic-prev.jpg) no-repeat;
+	background-size: 100%;
+}
+
+li.generic-next {
+	right: 0;
+	background: url(../img/generic-next.jpg) no-repeat;
+	background-size: 100%;
+}
+
+ul.generic-nav li:hover,
+ul.generic-nav li:focus {
+	cursor: pointer;
+}
+
+ul.generic-nav li.generic-prev:hover,
+ul.generic-nav li.generic-prev:focus {
+	background: url(../img/generic-prev-hover.jpg) no-repeat;
+	background-size: 100%;
+}
+
+ul.generic-nav li.generic-next:hover,
+ul.generic-nav li.generic-next:focus {
+	background: url(../img/generic-next-hover.jpg) no-repeat;
+	background-size: 100%;
+}
+
+#mediaart-wrapper {
+	width: 65%;
+}
+
+#mediaart-wrapper .generic-img {
+	width: 54%;
+}
+
+#mediaart-wrapper .generic-text {
+	padding: 8% 0 0 4%;
+}
+
+.invisible {
+	opacity: 0;
+}
+
+ul.tools-buttons.surface-tb {
+	float: none;
+	display: block;
+}
+
+ul.surfaces {
+	position: relative;
+	float: left;
+	padding: 0;
+	clear: both;
+	margin-top: 30px;
+}
+
+ul.surfaces li {
+	position: relative;
+	float: left;
+	margin-top: -5px;
+}
+
+ul.surfaces li p {
+	display: none;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    bottom: 30px;
+    color: white;
+}
+
+ul.surfaces li:hover,
+ul.surfaces li:focus {
+	cursor: pointer;
+}
+
+ul.surfaces li:nth-child(2n+2) {
+	margin-left: -15px;
+}
+
+ul.surfaces li.wood {
+	background: url(../img/surfaces/wood.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.wood.wood-active.active {
+	background: url(../img/surfaces/wood-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.board {
+	background: url(../img/surfaces/board.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.board.board-active.active {
+	background: url(../img/surfaces/board-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.canvas {
+	background: url(../img/surfaces/canvas.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.canvas.canvas-active.active {
+	background: url(../img/surfaces/canvas-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.brick {
+	background: url(../img/surfaces/brick.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.brick.brick-active.active {
+	background: url(../img/surfaces/brick-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.cardboard {
+	background: url(../img/surfaces/cardboard.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	clear: both;
+}
+
+ul.surfaces li.cardboard.cardboard-active.active {
+	background: url(../img/surfaces/cardboard-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.wall {
+	background: url(../img/surfaces/wall.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.wall.wall-active.active {
+	background: url(../img/surfaces/wall-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.metal {
+	background: url(../img/surfaces/metal.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.metal.metal-active.active {
+	background: url(../img/surfaces/metal-hover.png) no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.wood:hover,
+ul.surfaces li.wood:focus {
+	background: url(../img/surfaces/wood.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.board:hover,
+ul.surfaces li.board:focus {
+	background: url(../img/surfaces/board.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.canvas:hover,
+ul.surfaces li.canvas:focus {
+	background: url(../img/surfaces/canvas.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.brick:hover,
+ul.surfaces li.brick:focus {
+	background: url(../img/surfaces/brick.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.cardboard:hover,
+ul.surfaces li.cardboard:focus {
+	background: url(../img/surfaces/cardboard.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+	clear: both;
+}
+
+ul.surfaces li.wall:hover,
+ul.surfaces li.wall:focus {
+	background: url(../img/surfaces/wall.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+ul.surfaces li.metal:hover,
+ul.surfaces li.metal:focus {
+	background: url(../img/surfaces/metal.png) no-repeat;
+	background-size: 95%;
+	background-position: 50% 50%;
+}
+
+#filters-wrapper {
+	background: url(../img/background.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+	opacity: 0;
+	height: 0;
+}
+
+.filters-canvas {
+	position: relative;
+	top: 35px;
+	width: 750px;
+	height: 530px;
+    margin: 0 auto;
+	background-color: white;
+}
+
+#filters-canvas {
+	position: absolute;
+}
+
+.filters-canvas p {
+	background-color: #31b2ee;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 120%;
+	height: auto;
+	position: absolute;
+	color: white;
+	left: 50%;
+	margin-left: -188px;
+	top: 200px;
+	width: 376px;
+	border-radius: 20px;
+	font-size: 240%;
+	padding: 25px 0 30px;
+}
+
+#painting-wrapper > p {
+	background-color: #31b2ee;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 120%;
+	height: auto;
+	position: absolute;
+	color: white;
+	left: 50%;
+	margin-left: -188px;
+	top: 235px;
+	width: 376px;
+	border-radius: 20px;
+	font-size: 240%;
+	padding: 25px 0 30px;
+}
+
+ul.tools-buttons.filters-tb {
+    position: relative;
+    padding: 0;
+	margin: 0 auto;
+    float: none;
+	width: 326px;
+	top: 525px;
+}
+
+#wand {
+	background: url(../img/wand.png) no-repeat;
+	background-size: 0;
+	background-position: 50% 50%;
+	float: right;
+	position: relative;
+}
+
+#wand:hover,
+#wand:focus {
+	cursor: pointer;
+	background: url(../img/wand.png) no-repeat;
+	background-size: 98%;
+	background-position: 50% 50%;
+}
+
+#museum-wrapper {
+	opacity: 0;
+	height: 0;
+	background: url(../img/museum-back.jpg) no-repeat;
+    background-size: 100% auto;
+    background-position: 50% 0;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+ul.social-icons {
+	float: right;
+	margin: -30px 0 0;
+}
+
+ul.social-icons li {
+	float: left;
+}
+
+ul.logotypes {
+	margin: 0 auto;
+	width: 350px;
+	height: 65px;
+	padding: 0;
+}
+
+ul.logotypes li:first-child {
+	float: left;
+}
+
+ul.logotypes li:last-child {
+	float: right;
+}
+
+ul.logotypes li span {
+	display: block;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
+ul.logotypes li:last-child span {
+	margin-bottom: 12px;
+}
+
+ul.logotypes li a {
+	display: block;
+	text-align: center;
+}
+
+.painting-info {
+	position: relative;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 0 12px;
+    -webkit-box-shadow: 0px 0px 3px 1px #dedede;
+    -moz-box-shadow:    0px 0px 3px 1px #dedede;
+    box-shadow:         0px 0px 3px 1px #dedede;
+}
+
+.painting-info span {
+	display: block;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+.painting-info span.title {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.painting-info span.author {
+	font-size: 16px;	
+}
+
+.painting-info span.materials {
+	font-size: 14px;
+}
+
+.social-buttons {
+	opacity: 0;
+	width: 100px;
+    position: relative;
+	right: 28%;
+	top: -66%;
+    float: right;
+}
+
+.fake-hov {
+	opacity: 1;
+	background-color: rgba(0,0,0,0.5);
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.social-buttons span {
+    padding-bottom: 10%;
+    display: block;
+    text-align: center;
+}
+
+.social-buttons ul {
+	margin: 0 auto;
+	padding: 0;
+	width: 100px;
+}
+
+.social-buttons ul li {
+	width: 45px;
+	height: 45px;
+}
+
+.social-buttons ul li.vk {
+	background: url(../img/vk.png) no-repeat;
+	background-size: 100%;
+	float: left;
+}
+
+.social-buttons ul li.fb {
+	background: url(../img/fb.png) no-repeat;
+	background-size: 100%;
+	float: right;
+}
+
+.social-buttons ul li.vk:hover,
+.social-buttons ul li.vk:focus,
+.social-buttons ul li.fb:hover,
+.social-buttons ul li.vk:focus {
+	cursor: pointer;
+}
+
+.museum-button {
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	opacity: 1;
+}
+
+.museum-button:hover,
+.museum-button:focus {
+	cursor: pointer;
+	opacity: 0.85;
+}
+
+.surface-button:hover,
+.surface-button:focus {
+	cursor: pointer;
+	opacity: 0.85;
+}
+
+.social-icons li a img {
+	margin-right: 8px!important;
+}
+
+#cboxWrapper {
+	background-color: white;
+	border-radius: 8px;
+}
+
+#cboxOverlay {
+	background: black !important;
+	opacity: 0.75 !important;
+}
+
+#cboxPrevious,
+#cboxNext,
+#cboxClose,
+#cboxCurrent {
+	display: none !important;
+}
+
+#cboxMiddleLeft,
+#cboxMiddleRight {
+	width: 10px !important;
+}
+
+#cboxTopLeft,
+#cboxTopRight {
+	width: 10px !important;
+	height: 10px !important;
+}
+
+#cboxTopCenter {
+	height: 10px !important;
+}
+
+#cboxTitle {
+    bottom: 0 !important;
+    line-height: 20px;
+    font-size: 15px;
+    color: black !important;
+    background-color: rgba(255,255,255,1);
+    padding: 15px 0 0;
+	margin-bottom: -5px !important;
+}
+
+#cboxTitle span {
+	position: relative;
+	top: 5px;
+	font-size: 12px;
+	display: block;
+	width: 95%;
+	margin: 0 auto;
+}
+
+#cboxMiddleLeft,
+#cboxMiddleRight,
+#cboxTopCenter,
+#cboxTopLeft,
+#cboxTopRight,
+#cboxBottomCenter,
+#cboxBottomLeft,
+#cboxBottomRight {
+	background: none !important;
+}
+
+#cboxContent {
+	background: transparent;
+}
+
+@media only screen and (max-width: 1550px) {
+	.generic-img {
+		margin-top: 12%;
+	}
+	.generic-text {
+		padding: 16% 0 0 4%;
+	}
+}
+
+@media only screen and (max-width: 1250px) {
+	.generic-img {
+		margin-top: 18%;
+	}
+	.generic-text {
+		padding: 22% 0 0 4%;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.generic-img {
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+		display: block;
+		border-radius: 20px;
+		margin-top: 9%;
+	}
+	.generic-text {
+		float: none;
+		width: 100%;
+		padding: 4% 0 0 0;
+		color: white;
+		font-size: 100% !important;
+	}
+	ul.generic-nav li {
+		width: 55px;
+		height: 55px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	ul.generic-nav li {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	ul.generic-nav li {
+		width: 35px;
+		height: 35px;
+	}
+}
+
+@media only screen and (max-width: 1495px) and (min-width: 700px) {
+	ul.tools {
+		width: 250px;
+		height: 550px;
+		margin-left: 50px !important;
+	}
+
+	ul.tools > li {
+		width: 125px;
+	}
+
+	ul.tools li#scotch ul {
+		width: 130px;
+	}
+
+	ul.tools li#btn-scotch-1,
+	ul.tools li#btn-scotch-2 {
+		margin-right: 2px;
+	}
+
+	ul.tools li#btn-orange {
+		width: 96px;
+		margin-right: 10px;
+		height: 130px;
+	}
+
+	ul.tools li#denim ul {
+		width: 152px;
+		height: 142px;
+		margin-left: -6px;
+	}
+
+	ul.tools li#denim li {
+		width: 65px;
+		height: 65px;
+	}
+
+	ul.tools li#btn-denim-1 {
+		margin-left: 10px;
+	}
+
+	ul.tools li#btn-denim-2 {
+		margin-right: 10px;
+	}
+
+	ul.tools li#btn-catchup {
+		width: 112px;
+		height: 56px;
+		margin-right: 2px;
+	}
+
+	ul.tools li#btn-needle {
+		width: 115px;
+		height: 100px;
+		margin: -15px auto 0;
+	}
+
+	ul.tools li#needle ul {
+		width: 140px;
+	}
+
+	ul.tools li#btn-thread-1 {
+		margin-left: 0;
+	}
+
+	ul.tools li#btn-pistol {
+		width: 88px;
+		height: 70px;
+		margin-right: 15px;
+		margin-top: 15px;
+	}
+}
+
+@media only screen and (max-width: 1365px) and (min-width: 700px) {
+	ul.tools {
+		margin-left: 20px !important;
+	}
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 700px) {
+	ul.paintings li {
+		width: 200px !important;
+		height: 125px !important;
+	}
+}
+
+@media only screen and (max-width: 1265px) and (min-width: 700px) {
+	ul.tools {
+		width: 170px;
+		height: 370px;
+		margin-top: 80px;
+		margin-left: 15px;
+	}
+
+	ul.tools > li {
+		width: 80px;
+		height: 90px;
+	}
+
+	ul.tools li#btn-scotch {
+		width: 80px;
+		height: 55px;
+		float: right;
+	}
+
+	ul.tools > li#scotch {
+		padding-top: 0 !important;
+	}
+
+	ul.tools > li#scotch > ul {
+		width: 80px;
+		height: 92px;
+	}
+
+	ul.tools li#btn-scotch-1,
+	ul.tools li#btn-scotch-2 {
+		width: 65px;
+		height: 12px;
+		margin-top: 6px;
+		margin-right: 0;
+	}
+
+	ul.tools li#coal {
+		width: 52px;
+		margin-right: 12px;
+	}
+
+	ul.tools li#coal ul {
+		margin: 0 auto;
+		width: 52px;
+		height: 90px;
+	}
+
+	ul.tools li#btn-coal-1,
+	ul.tools li#btn-coal-2 {
+		width: 26px;
+		height: 90px;
+	}
+
+	ul.tools li#btn-grass {
+		width: 70px;
+		height: 85px;
+		margin-left: 10px;
+	}
+
+	ul.tools li#btn-orange {
+		width: 62px;
+		height: 85px;
+		top: 5px;
+		margin-right: 10px;
+	}
+
+	ul.tools li#denim ul {
+		width: 80px;
+		height: 76px;
+		margin-top: 12px;
+		margin-left: 0;
+	}
+
+	ul.tools li#denim li {
+		width: 40px;
+		height: 40px;
+	}
+
+	ul.tools li#btn-denim-1 {
+		margin-left: 0;
+		margin-top: 0;
+	}
+
+	ul.tools li#btn-denim-2 {
+		margin-right: 0;
+		margin-top: 0;
+	}
+
+	ul.tools li#btn-denim-3 {
+		top: -5px;
+	}
+
+	ul.tools li#btn-catchup {
+		width: 78px;
+		height: 30px;
+		margin-top: 34px;
+		margin-right: 0;
+	}
+	ul.tools li#needle ul {
+		width: 72px;
+		height: 106px;
+		margin: 0 auto;
+	}
+
+	ul.tools li#btn-needle {
+		width: 80px;
+		height: 70px;
+		margin: 0 auto;
+	}
+
+	ul.tools li.needle-color {
+		width: 18px !important;
+		height: 18px !important;
+	}
+
+	ul.tools li#btn-thread-5 {
+		margin-left: 9px;
+	}
+
+	ul.tools li#btn-pistol {
+		width: 64px;
+		height: 64px;
+		margin-top: 26px;
+		margin-right: 8px;
+	}
+
+	ul.tools li p {
+		font-size: 12px;
+	}
+
+	li#scotch p {
+		top: -15px;
+	}
+
+	li#coal p {
+		top: -15px;
+	}
+
+	li#btn-grass p {
+		top: -3px;
+	}
+
+	li#btn-orange {
+		top: -5px;
+	}
+
+	li#denim p {
+		top: -3px;
+	}
+
+	li#needle p {
+		top: -6px;
+	}
+
+	li#btn-pistol p {
+		top: -20px;
+	}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 700px) {
+	ul.paintings.left-side {
+		margin-left: 3% !important;
+	}
+	ul.paintings.right-side {
+		margin-right: 3% !important;
+	}
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 700px) {
+	ul.paintings li {
+		width: 150px !important;
+		height: 95px !important;
+	}
+	ul.paintings.left-side {
+		margin-left: 4% !important;
+	}
+	ul.paintings.right-side {
+		margin-right: 4% !important;
+	}
+}
+
+@media only screen and (max-width: 1035px) and (min-width: 700px) {
+	ul.paintings.left-side {
+		margin-left: 1.5% !important;
+	}
+	ul.paintings.right-side {
+		margin-right: 1.5% !important;
+	}
+}
+
+@media only screen and (max-width: 985px) and (min-width: 700px) {
+	ul.paintings {
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 1110px) and (min-width: 700px) {
+	#painting-wrapper,
+	#filters-wrapper,
+	#publication-wrapper {
+		background-size: auto 100%;
+	}
+	.main-canvas {
+		width: 550px;
+	}
+	ul.tools li {
+		background-size: 100% !important;
+		background-position: 50% 50% !important;
+	}
+	form.sending-form {
+		width: 60%;
+	}
+	.museum-button {
+		height: 40px;
+		line-height: 40px;
+	}
+	ul.logotypes {
+		width: 300px;
+	}
+	.logotypes li:first-child a img {
+	    width: 55px !important;
+	    height: 55px !important;
+	}
+	.logotypes li:last-child a img {
+	    width: 110px !important;
+	    height: 21px !important;
+	}
+	.footer_secodn_block,
+	.footer_secodn_block a {
+		font-size: 10px;
+		text-align: left !important;
+		width: 65%;
+	}
+	a.cont_link:hover {
+		font-size: 10px;
+	}
+	ul.social-icons {
+		position: absolute;
+	    margin: 0;
+	    padding: 0;
+		bottom: 5%;
+	    right: 1%;
+	    width: 200px;
+	}
+	#wand {
+		width: 80px !important;
+		height: 335px !important;
+		top: 20%;
+		right: 0 !important;
+	}
+	#filters-wrapper ul#helpers {
+		top: 91%;
+		margin-left: 5px;
+	}
+	ul#helpers li#helper-9 {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	ul.social-icons li {
+		margin-bottom: 5px;
+	}
+	.footer_secodn_block {
+		width: 50%;
+		bottom: -5px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	ul.social-icons {
+	    position: relative;
+	    margin: 0 auto;
+	    float: none;
+	    right: 0;
+	    width: 200px;
+	    height: 25px;
+	    padding: 0;
+	    display: block;
+	}
+	.social-icons li a img {
+		margin: 4px !important;
+	}
+	.footer_secodn_block {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	ul.ux-buttons li {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	ul.ux-buttons li {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	ul.ux-buttons li {
+		width: 35px;
+		height: 35px;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	ul.ux-buttons li {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	form.sending-form .work-author input {
+		width: 65%;
+	}
+}
+
+@media only screen and (max-width: 395px) {
+	form.sending-form .work-author input {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 1535px) {
+	ul.paintings.left-side {
+		margin-left: 8%;
+	}
+	ul.paintings.right-side {
+		margin-right: 8%;
+	}
+	.social-buttons {
+		right: 18%;
+	}
+}
