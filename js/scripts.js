@@ -378,15 +378,31 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.materials').text(rightImgMats);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ')').attr('href', rightAbsPath);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightThumbPath + ') no-repeat');
-
-			var title = leftImgAuthor + '. ' + leftImgTitle + ' ' + leftImgMats;
-			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').colorbox({title: function() {
-				console.log(i);
-				console.log(title);
-				return title;
-			}
-			});
 		}
+
+		$('ul.paintings.left-side a:nth-child(1)').colorbox({title: function() {
+			var author = $(this).find("span.author").text();
+			var title = $(this).find("span.title").text();
+			var desc = $(this).find("span.materials").text();
+			return author + '. ' + title + ' ' + desc;
+		}
+		});
+
+		$('ul.paintings.left-side a:nth-child(2)').colorbox({title: function() {
+			var author = $(this).find("span.author").text();
+			var title = $(this).find("span.title").text();
+			var desc = $(this).find("span.materials").text();
+			return author + '. ' + title + ' ' + desc;
+		}
+		});
+
+		$('ul.paintings.left-side a:nth-child(3)').colorbox({title: function() {
+			var author = $(this).find("span.author").text();
+			var title = $(this).find("span.title").text();
+			var desc = $(this).find("span.materials").text();
+			return author + '. ' + title + ' ' + desc;
+		}
+		});
 	}
 
 	//--------------ROUTING---------------
