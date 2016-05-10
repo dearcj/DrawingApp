@@ -229,29 +229,17 @@ var initApplication = function() {
 */
 
   document.body.addEventListener( 'touchstart', function( e ) {
-    console.log( e.touches ? 'TouchEvent' : 'MouseEvent' );
+    canvas.mouseMoveAction(e);
   }, false );
 
   document.body.addEventListener( 'touchmove', function( e ) {
-    console.log( e.touches ? 'TouchEvent' : 'MouseEvent' );
+    canvas.mouseMoveAction(e);
   }, false );
 
-  document.body.ontouchstart = function(e) {
-    e.preventDefault();
-    console.log('touchstart');
-
-    canvas.mouseMoveAction(e);
-  };
-
-  document.body.ontouchmove = function(e) {
-    console.log('touchmove');
-    canvas.mouseMoveAction(e);
-  };
-
-  document.body.ontouchend = function(e) {
+  document.body.addEventListener( 'touchend', function( e ) {
     if (canvas.state.drawState)
-      canvas.finishAction(e);
-  };
+      canvas.finishAction(e);  }, false );
+
 };
 
 var goToTools = document.getElementById('go-to-tools');
