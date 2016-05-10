@@ -1040,7 +1040,8 @@ jQuery(document).ready(function($) {
 	function openMyMuseum() {
 		var imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
-			var message  = res.name + ': ' + res.description + ' ' +  "Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты создай свою картину!";
+			var link = "<a href='http://play.mmoma.ru' target='_blank'>http://play.mmoma.ru</a>";
+			var message  = res.name + ': ' + res.description + ' ' +  "Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты и создай свою картину! "  + link;
 			document.getElementById('post-vk').addEventListener('click', function() {
 				vkpost(message, res.image, res.file);
 			});
