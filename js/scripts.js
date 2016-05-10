@@ -699,7 +699,7 @@ jQuery(document).ready(function($) {
 			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
 			$('#wrapper').css('height', 100 + '%');
-			$('#surface-wrapper').css('height', 100 + '%');
+			$('#surface-wrapper').addClass('test');
 		}
 		surfaceAnimation();
 	});
