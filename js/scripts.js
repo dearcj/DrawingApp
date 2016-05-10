@@ -695,7 +695,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		window.currentHash = history.state;
 		openPage('surface');
-		if ($(this).hasClass('on')) {
+		if ($('.fullscreen').hasClass('on')) {
 			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
 			$('#wrapper').css('height', 100 + '%');
