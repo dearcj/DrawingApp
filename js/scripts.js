@@ -379,7 +379,7 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ')').attr('href', rightAbsPath);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightThumbPath + ') no-repeat');
 
-			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').colorbox({rel:'group1', title: function() {
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').colorbox({title: function() {
 				return leftImgAuthor + '. ' + leftImgTitle + ' ' + leftImgMats;
 			}
 			});
