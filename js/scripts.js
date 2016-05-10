@@ -82,8 +82,12 @@ jQuery(document).ready(function($) {
 		} else {
 			$('.fullscreen').addClass('on').removeClass('off');
 			launchFullScreen(html);
-			$('html').css('height', 'auto');
-			$('body').css('height', 'auto');
+			if ($(this).parents('.ux-buttons').hasClass('home')) {
+				$('html').css('height', 'auto');
+				$('body').css('height', 'auto');
+			} else {
+				$('#wrapper').css({'height': 100 + '%'});
+			}
 			$('.header').css('display', 'none');
 			$('.langs').css('display', 'none');
 			$('.podval_new').css('display', 'none');
@@ -691,6 +695,12 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		window.currentHash = history.state;
 		openPage('surface');
+		if ($(this).hasClass('on')) {
+			$('html').css('height', 100 + '%');
+			$('body').css('height', 100 + '%');
+			$('#wrapper').css('height', 100 + '%');
+			$('#surface-wrapper').css('height', 100 + '%');
+		}
 		surfaceAnimation();
 	});
 
