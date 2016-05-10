@@ -212,12 +212,12 @@ var initApplication = function() {
     canvas.startAction(e);
   };
 
-  elDraw.ontouchmove = function(e) {
+/*  elDraw.ontouchmove = function(e) {
     console.log('touchmove eldraw');
     canvas.mouseMoveAction(e);
-  };
+  };*/
 
- /* document.body.onmousemove = function(e) {
+  document.body.onmousemove = function(e) {
     console.log('mousemove');
     canvas.mouseMoveAction(e);
   };
@@ -226,7 +226,7 @@ var initApplication = function() {
     if (canvas.state.drawState)
     canvas.finishAction(e);
   };
-*/
+
 
   document.body.addEventListener( 'touchstart', function( e ) {
     canvas.startAction(e);
