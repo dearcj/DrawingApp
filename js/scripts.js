@@ -487,7 +487,7 @@ jQuery(document).ready(function($) {
 		} else {
 			if ($('.fullscreen').hasClass('on')) {
 				$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%', 'background-size': 'auto ' + 100 + '%'}, 200).css('z-index', '200');
-				$('.screens').css('background-size', 'auto 100%');
+				//$('.screens').css('background-size', 'auto 100%');
 			} else {
 				$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
 			}
