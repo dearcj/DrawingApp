@@ -199,11 +199,12 @@ var initApplication = function() {
   btnPistol.addEventListener(window.eventType, function () {canvas.currentBrush = brushPistol;});
   btnThread.addEventListener(window.eventType, function () {canvas.currentBrush = brushThread;});*/
   canvas.redraw(backCtx);
-  elDraw.onmousedown = function(e) {
+  /*elDraw.onmousedown = function(e) {
     console.log('start action');
     e.preventDefault();
     canvas.startAction(e);
   };
+  */
 
   elDraw.ontouchstart = function(e) {
     console.log('start action');
@@ -216,7 +217,7 @@ var initApplication = function() {
     canvas.mouseMoveAction(e);
   };
 
-  document.body.onmousemove = function(e) {
+ /* document.body.onmousemove = function(e) {
     console.log('mousemove');
     canvas.mouseMoveAction(e);
   };
@@ -225,7 +226,7 @@ var initApplication = function() {
     if (canvas.state.drawState)
     canvas.finishAction(e);
   };
-
+*/
   document.body.ontouchstart = function(e) {
     e.preventDefault();
     console.log('touchstart');
