@@ -227,6 +227,15 @@ var initApplication = function() {
     canvas.finishAction(e);
   };
 */
+
+  document.addEventListener( 'touchstart', function( e ) {
+    console.log( e.touches ? 'TouchEvent' : 'MouseEvent' );
+  }, false );
+
+  document.addEventListener( 'touchmove', function( e ) {
+    console.log( e.touches ? 'TouchEvent' : 'MouseEvent' );
+  }, false );
+
   document.body.ontouchstart = function(e) {
     e.preventDefault();
     console.log('touchstart');
