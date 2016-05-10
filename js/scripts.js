@@ -378,6 +378,11 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.materials').text(rightImgMats);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ')').attr('href', rightAbsPath);
 			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightThumbPath + ') no-repeat');
+
+			$(".group1").colorbox({rel:'group1', title: function() {
+				return leftImgAuthor + '. ' + leftImgTitle + ' ' + leftImgMats;
+			}
+			});
 		}
 	}
 
@@ -1031,12 +1036,6 @@ jQuery(document).ready(function($) {
 
 	$('ul#buttons li a').click(function(event) {
 		$(this).parents('#wrapper').prev().css('position', 'relative');
-	});
-
-
-	$(".group1").colorbox({rel:'group1', title: function() {
-		return 'Никита Алексеев. «Фонарик». 1991. Холст, акрил, пастель<br><span>В темноте ярко светит фонарик. Он настолько маленький, что освещает совсем немного – видно только как вокруг него идёт снег или дождь. Фонарик висит где-то на улице, и не смотря на свои размеры наверняка будет хорошо виден издалека.';
-	}
 	});
 
 	// ---------FRONT PAGE BACKGROUND HEIGHT---------
