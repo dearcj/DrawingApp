@@ -387,7 +387,7 @@ li#helper-6s {
 ul#helpers li span {
 	position: relative;
 	display: none;
-	text-align: center;
+	text-align: left;
 	z-index: 100;
 	background-color: #31b2ee;
 	color: white;
