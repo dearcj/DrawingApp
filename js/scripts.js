@@ -487,7 +487,6 @@ jQuery(document).ready(function($) {
 		} else {
 			if ($('.fullscreen').hasClass('on')) {
 				$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%', 'background-size': 'auto ' + 100 + '%'}, 200).css('z-index', '200');
-				$('.screens').css('background-size', 'auto 100%');
 			} else {
 				$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
 			}
@@ -540,7 +539,11 @@ jQuery(document).ready(function($) {
 			});
 			$('#painting-wrapper > p').css({'opacity': 0, height: 0});
 		} else {
-			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			if ($('.fullscreen').hasClass('on')) {
+				$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+			} else {
+				$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			}
 			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
 			$('#painting-wrapper > p').animate({'opacity': 1}, 1000).fadeIn(2500);
 			$('#painting-wrapper').each(function(){
@@ -579,7 +582,11 @@ jQuery(document).ready(function($) {
 			});
 			$('#wand').css({width: 40 + 'px', height: 200 + 'px', right: 3*(($(window).width() - 240)/2 - 40)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);;
 		} else {
-			$('#filters-wrapper').delay(200).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			if ($('.fullscreen').hasClass('on')) {
+				$('#filters-wrapper').delay(200).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+			} else {
+				$('#filters-wrapper').delay(200).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			}
 			$('#filters-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
 			});
@@ -632,7 +639,11 @@ jQuery(document).ready(function($) {
 			$('#main-image').delay(500).animate({'opacity': 1, 'width': 240 + 'px', 'height': 165 + 'px'}, 1000);
 			$('#main-image p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
-			$('#publication-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			if ($('.fullscreen').hasClass('on')) {
+				$('#publication-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+			} else {
+				$('#publication-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			}
 			$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
 			$('#main-image p').css({width: 350 + 'px', 'font-size': 150 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: 105 + 'px'});
 		}
@@ -664,7 +675,11 @@ jQuery(document).ready(function($) {
 			$('.social-buttons ul').css('width', 75 + 'px');
 			$('.social-buttons ul li').css({width: 35 + 'px', height: 35 + 'px'});
 		} else {
-			$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			if ($('.fullscreen').hasClass('on')) {
+				$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+			} else {
+				$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			}
 			$('.painting-info').delay(500).animate({'top': -190 + 'px'}, 500);
 		}
 
@@ -705,6 +720,7 @@ jQuery(document).ready(function($) {
 			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
 			$('#wrapper').css('height', 100 + '%');
+			$('.screens').css('background-size', 'auto 100%');
 		}
 	});
 
