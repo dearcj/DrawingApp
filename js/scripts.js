@@ -695,13 +695,13 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		window.currentHash = history.state;
 		openPage('surface');
+		surfaceAnimation();
 		if ($('.fullscreen').hasClass('on')) {
 			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
 			$('#wrapper').css('height', 100 + '%');
 			$('#surface-wrapper').css('height', 900 + 'px');
 		}
-		surfaceAnimation();
 	});
 
 	$('.go-to-museum').on(window.eventType, function(event) {
