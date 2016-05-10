@@ -486,7 +486,7 @@ jQuery(document).ready(function($) {
 			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 240) /3.8 - surfaceWidth + 'px', 'margin-top': (165 - surfaceHeight*4)/2 + 'px'}, 1500);
 		} else {
 			if ($('.fullscreen').hasClass('on')) {
-				$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%', 'background-size': 'auto 100%'}, 200).css('z-index', '200');
+				$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%', 'background-size': 'auto 90%'}, 200).css('z-index', '200');
 			} else {
 				$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
 			}
