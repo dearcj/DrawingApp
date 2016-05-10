@@ -40,14 +40,14 @@ var initApplication = function() {
     brushScotch.mode = 1;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
-  })
+  });
 
   document.getElementById('btn-scotch-2').addEventListener(window.eventType, function() {
     canvas.cursorSrc = window.relPath + 'cursors/c_scotch-2.png';
     brushScotch.mode = 2;
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
-  })
+  });
 
 /*  document.getElementById('btn-scotch-3').addEventListener(window.eventType, function() {
     brushScotch.mode = 3;
@@ -60,14 +60,14 @@ var initApplication = function() {
     brushCoal.mode = 1;
     canvas.currentBrush = brushCoal;
     brushCoal.onSelect();
-  })
+  });
 
   document.getElementById('btn-coal-2').addEventListener(window.eventType, function() {
     canvas.cursorSrc = window.relPath + 'cursors/c_chalk-2.png';
     brushCoal.mode = 2;
     canvas.currentBrush = brushCoal;
     brushCoal.onSelect();
-  })
+  });
 
   document.getElementById('btn-grass').addEventListener(window.eventType, function() {
     canvas.cursorSrc = window.relPath + 'cursors/c_grass.png';
@@ -75,7 +75,7 @@ var initApplication = function() {
     canvas.currentBrush = brushGrass;
     brushGrass.onSelect();
 
-  })
+  });
 
   document.getElementById('btn-orange').addEventListener(window.eventType, function() {
     canvas.cursorSrc = window.relPath + 'cursors/c_orange.png';
