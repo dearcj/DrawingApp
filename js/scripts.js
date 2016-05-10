@@ -1041,7 +1041,7 @@ jQuery(document).ready(function($) {
 		var imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
 			var link = "<h1>" + "http://play.mmoma.ru" + "</h1>";
-			var message  = res.name + '<br>' + res.description + res.tags + "Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты и создай свою картину! "  + link;
+			var message  = res.name + '<br></br>' + res.description + res.tags + "Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты и создай свою картину! "  + link;
 			document.getElementById('post-vk').addEventListener('click', function() {
 				vkpost(message, res.image, res.file);
 			});
