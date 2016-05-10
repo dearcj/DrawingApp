@@ -2151,8 +2151,9 @@ ul.logotypes li a {
 	margin-right: 8px!important;
 }
 
-#cboxContent {
-	border-radius: 20px;
+#cboxWrapper {
+	background-color: white;
+	border-radius: 8px;
 }
 
 #cboxOverlay {
@@ -2167,13 +2168,28 @@ ul.logotypes li a {
 	display: none !important;
 }
 
+#cboxMiddleLeft,
+#cboxMiddleRight {
+	width: 10px !important;
+}
+
+#cboxTopLeft,
+#cboxTopRight {
+	width: 10px !important;
+	height: 10px !important;
+}
+
+#cboxTopCenter {
+	height: 10px !important;
+}
+
 #cboxTitle {
     bottom: 0 !important;
     line-height: 20px;
     font-size: 15px;
     color: black !important;
-    background-color: rgba(255,255,255,0.9);
-    padding: 20px 0 25px;
+    background-color: rgba(255,255,255,1);
+    padding: 15px 0 2px;
 }
 
 #cboxTitle span {
