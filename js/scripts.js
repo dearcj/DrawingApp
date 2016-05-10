@@ -487,6 +487,7 @@ jQuery(document).ready(function($) {
 		} else {
 			if ($('.fullscreen').hasClass('on')) {
 				$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%', 'background-size': 'auto ' + 100 + '%'}, 200).css('z-index', '200');
+				$('.screens').css('background-size', 'auto 100%');
 			} else {
 				$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 200).css('z-index', '200');
 			}
@@ -1186,16 +1187,11 @@ jQuery(document).ready(function($) {
 
 	function surfaceResponsive () {
 		var width = $(window).width(),
-			height = $(window).height(),
 			surfaceCanvas = $('#surface-canvas'),
-			surfaceWrapper = $('#surface-wrapper'),
 			surfaceBackyard = $('.surface-button.at-the-backyard');
 		forwardButton = $('ul.tools-buttons.surface-tb li'),
 			surfacesLi = $('ul.surfaces li'),
 			surfacesLiP = $('ul.surfaces li p'),
-			surfaceLiRatio = function (width, height) {
-				return width/height;
-			},
 			surfaceLiRatio = surfaceLiRatio(180, 119),
 			darkSideSurface = $('.dark-side.surface'),
 			coordinate = function (helperNum, leftPercent, topPercent) {
