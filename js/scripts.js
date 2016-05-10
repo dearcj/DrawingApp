@@ -403,6 +403,30 @@ jQuery(document).ready(function($) {
 			return author + '. ' + title + ' ' + desc;
 		}
 		});
+
+		$('ul.paintings.right-side a:nth-child(1)').colorbox({title: function() {
+			var author = $(this).find("span.author").text();
+			var title = $(this).find("span.title").text();
+			var desc = $(this).find("span.materials").text();
+			return author + '. ' + title + ' ' + desc;
+		}
+		});
+
+		$('ul.paintings.right-side a:nth-child(2)').colorbox({title: function() {
+			var author = $(this).find("span.author").text();
+			var title = $(this).find("span.title").text();
+			var desc = $(this).find("span.materials").text();
+			return author + '. ' + title + ' ' + desc;
+		}
+		});
+
+		$('ul.paintings.right-side a:nth-child(3)').colorbox({title: function() {
+			var author = $(this).find("span.author").text();
+			var title = $(this).find("span.title").text();
+			var desc = $(this).find("span.materials").text();
+			return author + '. ' + title + ' ' + desc;
+		}
+		});
 	}
 
 	//--------------ROUTING---------------
