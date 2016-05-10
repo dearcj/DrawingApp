@@ -229,7 +229,7 @@ var initApplication = function() {
 */
 
   document.body.addEventListener( 'touchstart', function( e ) {
-    canvas.mouseMoveAction(e);
+    canvas.startAction(e);
   }, false );
 
   document.body.addEventListener( 'touchmove', function( e ) {
