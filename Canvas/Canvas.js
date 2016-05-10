@@ -37,9 +37,14 @@ Canvas.prototype.GetMousePositionInElement = function(ev, element)
 
 	var bottom = offset.top + element.height();
 
-	var x = ev.pageX - offset.left;
-	var y = bottom - ev.pageY;
 
+	if (ev.touches) {
+		var x = ev.touches[0].clientX - offset.left;
+		var y = bottom - ev.touches[0].clientY;
+	} else {
+		var x = ev.pageX - offset.left;
+		var y = bottom - ev.pageY;
+	}
 	return { x: x, y: y, y_fromTop: element.height() - y };
 }
 
