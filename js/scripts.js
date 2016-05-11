@@ -1163,6 +1163,7 @@ jQuery(document).ready(function($) {
 			$('.generic-desc').css('font-size', width/13.24 + '%');
 		} else {
 			$('.generic-desc').css('font-size', width/10.87 + '%');
+			console.log('less');
 		}
 	}
 
