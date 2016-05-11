@@ -9,7 +9,7 @@ if (window.location.href.indexOf('onlinegame') >= 0) {
 }
 
 window.selectedSurface = 1;
-
+//
 ZSound.Init([
 	{id: 'scotch', src: "scotch.ogg"},
 	{id: 'click', src: "click.ogg"},
