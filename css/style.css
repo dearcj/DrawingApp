@@ -1993,7 +1993,7 @@ ul.tools-buttons.filters-tb {
 	opacity: 0;
 	height: 0;
 	background: url(../img/museum-back.jpg) no-repeat;
-    background-size: 100% auto;
+    background-size: auto 100% !important;
     background-position: 50% 0;
     width: 100%;
     position: absolute;
@@ -2054,7 +2054,6 @@ ul.logotypes li a {
 .painting-info span {
 	display: block;
     text-align: center;
-    padding-bottom: 6px;
 }
 
 .painting-info span.title {

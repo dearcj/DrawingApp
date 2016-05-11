@@ -718,12 +718,12 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('surface');
 		surfaceAnimation();
-		if ($('.fullscreen').hasClass('on')) {
+/*		if ($('.fullscreen').hasClass('on')) {
 			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
 			$('#wrapper').css('height', 100 + '%');
 			$('.screens').css('background-size', 'auto 100%');
-		}
+		}*/
 	});
 
 	$('.go-to-museum').on(window.eventType, function(event) {
@@ -949,7 +949,6 @@ jQuery(document).ready(function($) {
 			$(this).prev().find("input").css("border", "1px solid #FF0000");
 			return false;
 		} else {
-
 			//	$('#museum-wrapper .painting-info span.title').html($(this).prev().find('input').val());
 		}
 	});
