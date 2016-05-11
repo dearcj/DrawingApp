@@ -211,6 +211,7 @@ jQuery(document).ready(function($) {
 	$('form.sending-form').css('top', 200 + 'px');
 	$('.painting-info').css('top', 200 + 'px');
 	$('#main-image').css('top', -500 + 'px');
+	$('ul#undo-refresh').css('top', 530 + 'px');
 
 	//
 
@@ -575,6 +576,7 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').delay(750).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(500).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
+		$('#painting-wrapper ul#undo-refresh').delay(3000).animate({top: 580 + 'px'});
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
