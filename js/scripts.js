@@ -814,9 +814,11 @@ jQuery(document).ready(function($) {
 		} else {
 			ZSound.PlayMusic('street');
 		}
-//
+
 		window.currentHash = history.state;
 		openPage('index');
+
+		$('.generic').css('display', 'none');
 
 		$('.inside').animate({'opacity': 0, 'height': 0}, 200).css('z-index', '100');
 		$('.inside').each(function(){
