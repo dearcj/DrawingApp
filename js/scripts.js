@@ -703,7 +703,7 @@ jQuery(document).ready(function($) {
 			$(this).children().not('.first-exp').css({'opacity': 1, 'z-index': '200'});
 		});
 
-		$('#installation-wrapper .mute').delay(1500).animate({'opacity': 1}, 500);
+		$('#museum-wrapper .mute').delay(1500).animate({'opacity': 1}, 500);
 		$('ul#heplers').css('z-index', 300);
 		$('ul#helpers li').css('opacity', 0);
 		$('ul#helpers li#helper-11').delay(1000).animate({'opacity': 1}, 250);
