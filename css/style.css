@@ -101,13 +101,11 @@ ul#undo-refresh {
 }
 
 #painting-wrapper ul#undo-refresh {
-	top: 580px;
 	margin-left: -370px;
 }
 
 ul#undo-refresh li {
 	float: left;
-	opacity: 0;
 }
 
 ul#undo-refresh li:hover,
@@ -518,7 +516,7 @@ ul#helpers li span p {
 #main-canvas {
 	cursor: none;
 	position: absolute;
-	top: 35px;
+	top: -550px;
 	left: 50%;
 	margin-left: -375px;
 }
@@ -526,7 +524,7 @@ ul#helpers li span p {
 #back-canvas {
 	cursor: none;
 	position: absolute;
-	top: 35px;
+	top: -550px;
 	left: 50%;
 	margin-left: -375px;
 	background-color: white;
@@ -534,7 +532,7 @@ ul#helpers li span p {
 
 #cursor-canvas {
 	position: absolute;
-	top: 35px;
+	top: -550px;
 	left: 50%;
 	margin-left: -375px;
 }
@@ -700,11 +698,21 @@ ul.paintings a:hover li div {
 #main-image {
 	position: relative;
 	opacity: 0;
-	width: 750px;
-	height: 530px;
 	display: block;
-	margin: 35px auto 0;
+	margin: 35px auto;
 	background-color: transparent;
+	opacity: 0;
+}
+
+#main-image p {
+	background-color: #31b2ee;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 120%;
+	height: auto;
+	position: relative;
+	color: white;
+	display: block;
 	opacity: 0;
 }
 
@@ -735,7 +743,6 @@ ul.paintings a:hover li div {
 	width: 500px;
 	height: 354px;
 	position: relative;
-	top: -50px;
 }
 
 .museum-painting p {
@@ -769,7 +776,7 @@ ul.ux-buttons.home li:last-child {
 ul.ux-buttons li {
 	width: 50px;
 	height: 50px;
-	float: left;
+	float: right;
 	opacity: 1;
 }
 
@@ -788,9 +795,11 @@ ul.ux-buttons li:last-child {
 	background: url(../img/fullscreen-button.png) no-repeat;
 	background-size: 100%;
 	margin-left: 5px;
+	display: none;
 }
 
 form.sending-form {
+	position: relative;
 	background-color: white;
 	margin: 0 auto;
 	width: 600px;
@@ -1091,7 +1100,6 @@ ul.tools li#btn-thread-1 {
 	width: 20px;
 	height: 20px;
 	margin-left: 5px;
-	clear: both;
 }
 
 ul.tools li#btn-thread-2 {
@@ -1219,10 +1227,6 @@ ul.tools li#btn-catchup.catchup-active.active {
 	background: url(../img/tools/ketchup-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 128px;
-	height: 64px;
-	margin-top: 40px;
-	margin-right: 5px;
 }
 
 ul.tools li#btn-needle.needle-active.active {
@@ -1586,22 +1590,11 @@ div.at-the-backyard {
     line-height: 120%;
     height: auto;
     position: relative;
+	top: 180px;
     color: white;
 }
 
 #museum-wrapper > p {
-	background-color: #31b2ee;
-	text-align: center;
-	margin: 0 auto;
-	line-height: 120%;
-	height: auto;
-	position: relative;
-	color: white;
-	display: block;
-	opacity: 0;
-}
-
-#main-image p {
 	background-color: #31b2ee;
 	text-align: center;
 	margin: 0 auto;
@@ -1652,17 +1645,43 @@ div.at-the-backyard {
 	height: 660px;
 }
 
-.generic-img {
+.generic ul.ux-buttons {
+	bottom: 210px;
+}
+
+.generic-art {
 	float: left;
 	width: 55%;
-	border-radius: 30px;
-	margin-top: 6%;
+	margin-top: 5%;
+}
+
+.generic-button {
+	position: absolute;
+	top: 118px !important;
+}
+
+.generic-button:hover,
+.generic-button:focus {
+	cursor: pointer;
+}
+
+span.generic-desc {
+	color: white;
+	display: block;
+	clear: both;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.generic-img {
+	width: 100%;
+	border-radius: 15px;
 }
 
 .generic-text {
 	float: right;
 	width: 40%;
-	padding: 9% 0 0 4%;
+	padding: 100px 0 0 0;
 	color: white;
 }
 
@@ -1715,14 +1734,6 @@ ul.generic-nav li.generic-next:focus {
 
 #mediaart-wrapper {
 	width: 65%;
-}
-
-#mediaart-wrapper .generic-img {
-	width: 54%;
-}
-
-#mediaart-wrapper .generic-text {
-	padding: 8% 0 0 4%;
 }
 
 .invisible {
@@ -1908,7 +1919,7 @@ ul.surfaces li.metal:focus {
     width: 100%;
     position: absolute;
     overflow: hidden;
-	opacity: 0;
+	opacity: 1;
 	height: 0;
 }
 
@@ -1918,7 +1929,6 @@ ul.surfaces li.metal:focus {
 	width: 750px;
 	height: 530px;
     margin: 0 auto;
-	background-color: white;
 }
 
 #filters-canvas {
@@ -1985,10 +1995,11 @@ ul.tools-buttons.filters-tb {
 }
 
 #museum-wrapper {
+	display: none;
 	opacity: 0;
-	height: 0;
+	height: 660px;
 	background: url(../img/museum-back.jpg) no-repeat;
-    background-size: 100% auto;
+    background-size: auto 100% !important;
     background-position: 50% 0;
     width: 100%;
     position: absolute;
@@ -2036,19 +2047,20 @@ ul.logotypes li a {
 
 .painting-info {
 	position: relative;
+	width: 500px;
+	height: 100px;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;
-    padding: 8px 0 12px;
-    -webkit-box-shadow: 0px 0px 3px 1px #dedede;
-    -moz-box-shadow:    0px 0px 3px 1px #dedede;
-    box-shadow:         0px 0px 3px 1px #dedede;
+    padding: 4px 0 0;
+    -webkit-box-shadow: 0 0 3px 1px #dedede;
+    -moz-box-shadow:    0 0 3px 1px #dedede;
+    box-shadow:         0 0 3px 1px #dedede;
 }
 
 .painting-info span {
 	display: block;
     text-align: center;
-    padding-bottom: 6px;
 }
 
 .painting-info span.title {
@@ -2068,8 +2080,7 @@ ul.logotypes li a {
 	opacity: 0;
 	width: 100px;
     position: relative;
-	right: 28%;
-	top: -66%;
+	top: -60%;
     float: right;
 }
 
@@ -2185,7 +2196,6 @@ ul.logotypes li a {
     color: black !important;
     background-color: rgba(255,255,255,1);
     padding: 15px 0 0;
-	margin-bottom: -5px !important;
 }
 
 #cboxTitle span {
@@ -2213,35 +2223,33 @@ ul.logotypes li a {
 }
 
 @media only screen and (max-width: 1550px) {
-	.generic-img {
+	.generic-art {
 		margin-top: 12%;
 	}
 	.generic-text {
-		padding: 16% 0 0 4%;
+		padding: 150px 0 0;
 	}
 }
 
 @media only screen and (max-width: 1250px) {
-	.generic-img {
+	.generic-art {
 		margin-top: 18%;
 	}
 	.generic-text {
-		padding: 22% 0 0 4%;
+		padding: 175px 0 0 0;
 	}
 }
 
 @media only screen and (max-width: 1050px) {
-	.generic-img {
+	.generic-art {
 		float: none;
-		width: 100%;
-		margin: 0 auto;
-		display: block;
-		border-radius: 20px;
-		margin-top: 9%;
+		width: 75%;
+		margin: 9% auto 0;
 	}
 	.generic-text {
 		float: none;
-		width: 100%;
+		margin: 0 auto;
+		width: 75%;
 		padding: 4% 0 0 0;
 		color: white;
 		font-size: 100% !important;
