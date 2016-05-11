@@ -697,9 +697,7 @@ jQuery(document).ready(function($) {
 		});
 
 		if (imageId !== null) {
-			console.log('hi');
-		} else {
-			console.log('bye');
+			$('#museum-wrapper > p').css('opacity', 0);
 		}
 
 		$('ul#heplers').css('z-index', 300);
