@@ -36,6 +36,9 @@ jQuery(document).ready(function($) {
 			ZSound.PlayMusic('street');
 			$('ul.ux-buttons li:first-child').css('background', 'url(/wp-content/themes/mmoma/img/sound-button.png) no-repeat');
 		}
+
+		ZSound.available = !ZSound.available;
+		ZSound.playSounds = !ZSound.playSounds;
 	});
 
 	$('.mute').on(window.eventType, function(event) {
