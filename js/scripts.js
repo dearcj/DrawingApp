@@ -5,11 +5,13 @@ window.selectedSurface = 1;
 
 ZSound.Init([
 	{id: 'scotch', src: "scotch.ogg"},
-
 	{id: 'click', src: "click.ogg"},
 	{id: 'filter', src: "filter.ogg"},
 	{id: 'complete', src: "complete.ogg"},
 	{id: 'stage', src: "stage.ogg"},
+	{id: 'interact', src: "interact.ogg"},
+	{id: 'dog', src: "dog.ogg"},
+	{id: 'surface', src: "surface.ogg"},
 	{id: 'street', src: "street.ogg"},
 	{id: 'coal', src: "coal chalk.ogg"},
 	{id: 'grass', src: "grass.ogg"},
@@ -45,9 +47,16 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	$('ul#helpers li').mouseover(function() {
+	$('.interact').mouseover(function() {
 		ZSound.Play('interact');
-		console.log('музей');
+	});
+
+	$('ul.surfaces li').on(window.eventType, function(event) {
+		ZSound.Play('surface');
+	});
+
+	$('#dog').mouseover(function() {
+		ZSound.Play('dog');
 	});
 
 /*	function launchFullScreen(el) {
