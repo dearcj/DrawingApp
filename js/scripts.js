@@ -953,7 +953,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		$('#installation-wrapper').css('display', 'none').addClass('hidden');
 		$('#interpretation-wrapper').css('display', 'none').addClass('hidden');
-		$('#performance-wrapper').css('opacity', 1).fadeIn(1000).removeClass('hidden');
+		$('#performance-wrapper').css('display', 'none').fadeIn(1000).removeClass('hidden');
 		openPage('performance');
 	});
 
