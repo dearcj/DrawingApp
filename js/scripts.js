@@ -812,7 +812,7 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').each(function(){
 			$(this).children().css('z-index', '200');
 		});
-		$('#museum-wrapper').css({'height': 660 + 'px', 'display': 'none'});
+		$('#museum-wrapper').css('display', 'none');
 
 		$('ul#helpers').css('z-index', '300');
 
