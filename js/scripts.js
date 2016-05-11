@@ -360,15 +360,18 @@ jQuery(document).ready(function($) {
 
 		for (var i = 0; i < imgs.length; i++) {
 			leftAbsPath = relPath + imgs[i].pic;
-			rightAbsPath = relPath + imgs[j-i].pic;
 			leftThumbPath = relPath + imgs[i].thumb;
-			rightThumbPath = relPath + imgs[j-i].thumb;
 			leftImgTitle = imgs[i].title;
-			rightImgTitle = imgs[j-i].title;
 			leftImgAuthor = imgs[i].author;
-			rightImgAuthor = imgs[j-i].author;
 			leftImgMats = imgs[i].materials;
-			rightImgMats = imgs[j-i].materials;
+
+			if (imgs.length > 1) {
+				rightAbsPath = relPath + imgs[j-i].pic;
+				rightThumbPath = relPath + imgs[j-i].thumb;
+				rightImgTitle = imgs[j-i].title;
+				rightImgAuthor = imgs[j-i].author;
+				rightImgMats = imgs[j-i].materials;
+			}
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').text(leftImgTitle);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').text(leftImgAuthor);
