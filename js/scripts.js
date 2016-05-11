@@ -583,7 +583,7 @@ jQuery(document).ready(function($) {
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
 		$('li.send-to-museum').delay(500).animate({'top': 0}, 1000);
 		$('li.back-to-surface').delay(750).animate({'top': 0}, 750);
-		$('li.add-filter').delay(100).animate({'top': 0}, 500);
+		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
 	}
 
 	function filtersAnimation() {
