@@ -1992,7 +1992,7 @@ ul.tools-buttons.filters-tb {
 
 #museum-wrapper {
 	opacity: 0;
-	height: 0;
+	height: 660px;
 	background: url(../img/museum-back.jpg) no-repeat;
     background-size: auto 100% !important;
     background-position: 50% 0;
