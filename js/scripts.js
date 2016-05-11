@@ -1113,13 +1113,14 @@ jQuery(document).ready(function($) {
 	function openMyMuseum() {
 		window.imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
-			var message  = res.name + ': ' + res.description + " Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты и создай свою картину! "  + "<a href='http://play.mmoma.ru' target='_blank'>http://play.mmoma.ru</a>";
+			var message  = res.name + ': ' + res.description + " Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты и создай свою картину! "  + " http://play.mmoma.ru/";
+			var link = "http://play.mmoma.ru/";
 			document.getElementById('post-vk').addEventListener('click', function() {
 				vkpost(message, res.image, res.file);
 			});
 
 			document.getElementById('post-fb').addEventListener('click', function() {
-				fbpost('asdasd', res.image, res.file);
+				fbpost(message, res.image, res.file, link);
 			});
 
 			window.currentImgPic = res.file;
