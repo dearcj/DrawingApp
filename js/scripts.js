@@ -931,7 +931,7 @@ jQuery(document).ready(function($) {
 
 	$('li.installation').on(window.eventType, function(event) {
 		ZSound.Play('click');
-		$('#mediaart-wrapper').addClass('hidden');
+		$('#mediaart-wrapper').css('display', 'none').addClass('hidden');
 		$('#performance-wrapper').addClass('hidden');
 		$('#installation-wrapper').fadeIn(1000).removeClass('hidden').css('opacity', 1);
 		openPage('installation');
