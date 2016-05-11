@@ -610,8 +610,8 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-9').delay(2500).animate({'opacity': 1}, 500);
 		$('ul#helpers').css('z-index', '300');
 		$('#filters-wrapper ul#helpers').css('z-index', '250');
-		$('li.back-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
-		$('li.its-done').delay(1500).animate({'top': 0 + 'px'}, 500);
+		$('li.back-to-tools').delay(500).animate({'top': 0 + 'px'}, 500);
+		$('li.its-done').delay(750).animate({'top': 0 + 'px'}, 500);
 		$('.filters-canvas p').delay(2500).fadeIn(1000);
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
