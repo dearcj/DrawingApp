@@ -701,7 +701,7 @@ ul.paintings a:hover li div {
 	position: relative;
 	opacity: 0;
 	display: block;
-	margin: 35px auto 20px;
+	margin: 35px auto;
 	background-color: transparent;
 	opacity: 0;
 }
