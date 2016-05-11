@@ -85,6 +85,8 @@ Canvas.prototype.makeUndo = function(e) {
 
 
 Canvas.prototype.mouseMoveAction = function(e) {
+	if (!this.currentBrush) return;
+
 	var cursCanv =  $('#main-canvas');
 	var mp = this.GetMousePositionInElement(e, cursCanv);
 	this.state.mouseX = mp.x;
@@ -223,6 +225,7 @@ Canvas.prototype.sendPic = function(cbbbb, img) {
 
 
 Canvas.prototype.finishAction = function (e) {
+	if (!this.currentBrush) return;
 	this.saveState();
 
 	var el = document.getElementById('main-canvas');
@@ -238,7 +241,8 @@ Canvas.prototype.finishAction = function (e) {
 };
 
 Canvas.prototype.startAction = function (e) {
-	var cursCanv =  $('#main-canvas');
+	if (!this.currentBrush) return;
+ 	var cursCanv =  $('#main-canvas');
 
 	var mp = this.GetMousePositionInElement(e, cursCanv);
 	this.state.prevMouseX = mp.x;
