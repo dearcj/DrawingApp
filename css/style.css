@@ -1991,6 +1991,7 @@ ul.tools-buttons.filters-tb {
 }
 
 #museum-wrapper {
+	display: none;
 	opacity: 0;
 	height: 660px;
 	background: url(../img/museum-back.jpg) no-repeat;
