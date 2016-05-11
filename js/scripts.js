@@ -211,7 +211,7 @@ jQuery(document).ready(function($) {
 	$('form.sending-form').css('top', 200 + 'px');
 	$('.painting-info').css('top', 200 + 'px');
 	$('#main-image').css('top', -500 + 'px');
-	$('ul#undo-refresh').css('top', 530 + 'px');
+	$('ul#undo-refresh').css({top: 530 + 'px', 'opacity': 0});
 
 	//
 
@@ -507,8 +507,6 @@ jQuery(document).ready(function($) {
 			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 700)/3.8 - surfaceWidth + 'px', 'margin-top': (495 - surfaceHeight*4)/2 + 'px'}, 1500);
 		}
 
-		$('ul#undo-refresh li').delay(500).animate({'opacity': 1}, 2000);
-
 		$('.surface-button').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'}).delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 
 		$('#surface-wrapper').each(function () {
@@ -576,7 +574,7 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').delay(750).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(500).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
-		$('#painting-wrapper ul#undo-refresh').delay(3000).animate({top: 580 + 'px'});
+		$('#painting-wrapper ul#undo-refresh').delay(3000).animate({top: 580 + 'px', 'opacity': 1});
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
