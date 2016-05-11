@@ -535,6 +535,10 @@ jQuery(document).ready(function($) {
 		var surfaceHeight = $(window).width()/16.134;
 
 		$('.generic-button').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'}).delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
+		$('#installation-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
+		$('#performance-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
+		$('#interpretation-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
+		$('#mediaart-wrapper-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
 	}
 
 	function paintingAnimation() {
@@ -615,6 +619,7 @@ jQuery(document).ready(function($) {
 		$('li.back-to-tools').delay(750).animate({'top': 0 + 'px'}, 500);
 		$('li.its-done').delay(1000).animate({'top': 0 + 'px'}, 500);
 		$('.filters-canvas p').delay(2500).fadeIn(1000);
+		$('#filters-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
@@ -658,6 +663,7 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
+		$('#publication-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
 
 		if ($(window).width() > 1535) {
 			$('ul.paintings.left-side').delay(1500).animate({'margin-left': 12 + '%'}, 1000);
@@ -697,6 +703,7 @@ jQuery(document).ready(function($) {
 			$(this).children().not('.first-exp').css({'opacity': 1, 'z-index': '200'});
 		});
 
+		$('#installation-wrapper .mute').delay(1500).animate({'opacity': 1}, 500);
 		$('ul#heplers').css('z-index', 300);
 		$('ul#helpers li').css('opacity', 0);
 		$('ul#helpers li#helper-11').delay(1000).animate({'opacity': 1}, 250);
