@@ -25,8 +25,8 @@ var initApplication = function() {
   var brushPistol = new PistolBrush();
   var brushCatchup = new CatchupBrush();
 
-  canvas.currentBrush = brushOrange;
-  brushOrange.mode = 1;
+  //canvas.currentBrush = brushOrange;
+  //brushOrange.mode = 1;
 
   document.getElementById('btn-scotch').addEventListener(window.eventType, function() {
     canvas.cursorSrc = window.relPath + 'cursors/c_scotch.png';
