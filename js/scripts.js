@@ -676,8 +676,6 @@ jQuery(document).ready(function($) {
 			$(this).children().css('z-index', '100');
 		});
 
-		$('#museum-wrapper > p').css('opacity', 0);
-
 		if ($(window).width() < 700) {
 			$('#museum-wrapper').animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
 			$('.social-buttons ul').css('width', 75 + 'px');
@@ -688,7 +686,7 @@ jQuery(document).ready(function($) {
 		} else {
 			$('#museum-wrapper').animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': -195 + 'px'}, 500);
-			$('#museum-wrapper > p').css({width: 300 + 'px', 'font-size': 230 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: -350 + 'px'});
+			$('#museum-wrapper > p').css({width: 300 + 'px', 'font-size': 200 + '%', 'padding': '20px 20px 25px', 'border-radius': 20 + 'px', top: -285 + 'px'});
 			$('.museum-painting').delay(500).animate({top: -55 + 'px'}, 500);
 			$('.painting-info').delay(1000).animate({top: -200 + 'px'}, 500);
 			$('.social-buttons').delay(1500).animate({right: 28 + '%'}, 500);
@@ -700,11 +698,11 @@ jQuery(document).ready(function($) {
 
 		$('ul#heplers').css('z-index', 300);
 		$('ul#helpers li').css('opacity', 0);
-		$('ul#helpers li#helper-11').delay(250).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-12').delay(500).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-13').delay(750).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-14').delay(1000).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-15').delay(1250).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-11').delay(500).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-12').delay(750).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-13').delay(1000).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-14').delay(1250).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-15').delay(1500).animate({'opacity': 1}, 250);
 
 			if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
