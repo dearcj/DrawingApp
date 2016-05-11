@@ -212,6 +212,7 @@ jQuery(document).ready(function($) {
 	$('.painting-info').css('top', 200 + 'px');
 	$('#main-image').css('top', -500 + 'px');
 	$('ul#undo-refresh').css({top: 530 + 'px', 'opacity': 0});
+	$('#painting-wrapper .mute').css('opacity', 0);
 
 	//
 
