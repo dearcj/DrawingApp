@@ -698,7 +698,8 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
-		$('ul#helpers li').css({'opacity': 0, 'z-index': '300'});
+		$('ul#heplers').css('z-index', 300);
+		$('ul#helpers li').css('opacity', 0);
 		$('ul#helpers li#helper-11').delay(250).animate({'opacity': 1}, 250);
 		$('ul#helpers li#helper-12').delay(500).animate({'opacity': 1}, 250);
 		$('ul#helpers li#helper-13').delay(750).animate({'opacity': 1}, 250);
