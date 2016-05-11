@@ -576,7 +576,7 @@ jQuery(document).ready(function($) {
 		$('li.send-to-museum').delay(750).animate({'top': 0}, 500);
 		$('li.back-to-surface').delay(500).animate({'top': 0}, 500);
 		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
-		$('#painting-wrapper ul#undo-refresh').delay(3000).animate({top: 580 + 'px', 'opacity': 1});
+		$('#painting-wrapper ul#undo-refresh').delay(2000).animate({top: 580 + 'px', 'opacity': 1});
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
