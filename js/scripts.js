@@ -47,6 +47,7 @@ jQuery(document).ready(function($) {
 
 	$('ul.helpers li').mouseover(function() {
 		ZSound.Play('interact');
+		console.log('музей');
 	});
 
 /*	function launchFullScreen(el) {
