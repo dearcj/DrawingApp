@@ -2216,12 +2216,18 @@ ul.logotypes li a {
 }
 
 @media only screen and (max-width: 1550px) {
+	.generic-art {
+		margin-top: 12%;
+	}
 	.generic-text {
 		padding: 150px 0 0;
 	}
 }
 
 @media only screen and (max-width: 1250px) {
+	.generic-art {
+		margin-top: 18%;
+	}
 	.generic-text {
 		padding: 175px 0 0 0;
 	}
