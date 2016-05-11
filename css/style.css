@@ -1916,7 +1916,7 @@ ul.surfaces li.metal:focus {
     position: absolute;
     overflow: hidden;
 	opacity: 1;
-	height: 660px;
+	height: 0;
 }
 
 .filters-canvas {
