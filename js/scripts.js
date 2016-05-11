@@ -697,10 +697,6 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'z-index': '200'});
 		});
 
-		if (imageId !== null) {
-			$('#museum-wrapper > p').css('opacity', 0);
-		}
-
 		$('ul#heplers').css('z-index', 300);
 		$('ul#helpers li').css('opacity', 0);
 		$('ul#helpers li#helper-11').delay(1000).animate({'opacity': 1}, 250);
