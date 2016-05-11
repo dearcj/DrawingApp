@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
 	$('#mute').on(window.eventType, function(event) {
 		if (ZSound.musicInstance != null) {
 			ZSound.stopMusic('street');
-			$('ul.ux-buttons li:first-child').css('background', 'url(../img/sound-button-1.png) no-repeat');
+			$('ul.ux-buttons li:first-child').css('background', 'url(./wp-content/themes/mmoma/img/sound-button-1.png) no-repeat');
 		} else {
 			ZSound.PlayMusic('street');
 			$('ul.ux-buttons li:first-child').css('background', 'url(../img/sound-button.png) no-repeat');
