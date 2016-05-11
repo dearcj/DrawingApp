@@ -217,6 +217,12 @@ var initApplication = function() {
     canvas.mouseMoveAction(e);
   };*/
 
+
+  document.body.onmousedown = function(e) {
+    console.log('mousemove');
+    canvas.startAction(e);
+  };
+
   document.body.onmousemove = function(e) {
     console.log('mousemove');
     canvas.mouseMoveAction(e);
