@@ -212,7 +212,7 @@ jQuery(document).ready(function($) {
 	$('.painting-info').css('top', 200 + 'px');
 	$('#main-image').css('top', -500 + 'px');
 	$('ul#undo-refresh').css({top: 530 + 'px', 'opacity': 0});
-	$('#painting-wrapper .mute').css('opacity', 0);
+	$('.mute').css('opacity', 0);
 
 	//
 
@@ -571,7 +571,7 @@ jQuery(document).ready(function($) {
 		$('#back-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
 		$('#main-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
 		$('#cursor-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
-		$('#painting-wrapper .mute').delay(500).animate({'opacity': 1}, 500);
+		$('#painting-wrapper .mute').delay(1500).animate({'opacity': 1}, 500);
 		$('ul#helpers li#helper-8').delay(2000).animate({'opacity': 1}, 500);
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
 		$('li.send-to-museum').delay(750).animate({'top': 0}, 500);
