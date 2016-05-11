@@ -814,7 +814,7 @@ jQuery(document).ready(function($) {
 		} else {
 			ZSound.PlayMusic('street');
 		}
-
+//
 		window.currentHash = history.state;
 		openPage('index');
 

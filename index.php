@@ -168,7 +168,7 @@
           </ul>
         </div>
 
-        <div id="installation-wrapper" class="hidden screens inside generic">
+        <div id="installation-wrapper" class="hidden screens generic">
           <div class="generic-button go-to-home at-the-backyard interact"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/installation.jpg" class="generic-img">
@@ -188,7 +188,7 @@
           </ul>
         </div>
 
-        <div id="performance-wrapper" class="hidden screens inside generic">
+        <div id="performance-wrapper" class="hidden screens generic">
           <div class="generic-button go-to-home at-the-backyard interact"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/performance.jpg" class="generic-img">
@@ -208,7 +208,7 @@
           </ul>
         </div>
 
-        <div id="interpretation-wrapper" class="hidden screens inside generic">
+        <div id="interpretation-wrapper" class="hidden screens generic">
           <div class="generic-button go-to-home at-the-backyard interact"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/interpretation.jpg" class="generic-img">
@@ -228,7 +228,7 @@
           </ul>
         </div>
 
-        <div id="mediaart-wrapper" class="hidden screens inside generic">
+        <div id="mediaart-wrapper" class="hidden screens generic">
           <div class="generic-button go-to-home at-the-backyard interact"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/media.gif" class="generic-img">
