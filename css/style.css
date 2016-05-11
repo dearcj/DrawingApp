@@ -1092,7 +1092,6 @@ ul.tools li#btn-thread-1 {
 	width: 20px;
 	height: 20px;
 	margin-left: 5px;
-	clear: both;
 }
 
 ul.tools li#btn-thread-2 {
@@ -1220,10 +1219,6 @@ ul.tools li#btn-catchup.catchup-active.active {
 	background: url(../img/tools/ketchup-hover.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
-	width: 128px;
-	height: 64px;
-	margin-top: 40px;
-	margin-right: 5px;
 }
 
 ul.tools li#btn-needle.needle-active.active {
