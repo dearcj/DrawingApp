@@ -1,6 +1,13 @@
-window.relPath = './wp-content/themes/mmoma/Assets/';
-window.imgPath = './wp-content/themes/mmoma/imgs/';
-window.basePath = './wp-content/themes/mmoma/';
+if (window.location.href.indexOf('onlinegame') >= 0) {
+	window.relPath = './onlinegame/wp-content/themes/mmoma/Assets/';
+	window.imgPath = './onlinegame/wp-content/themes/mmoma/imgs/';
+	window.basePath = './onlinegame/wp-content/themes/mmoma/';
+} else {
+	window.relPath = './wp-content/themes/mmoma/Assets/';
+	window.imgPath = './wp-content/themes/mmoma/imgs/';
+	window.basePath = './wp-content/themes/mmoma/';
+}
+
 window.selectedSurface = 1;
 
 ZSound.Init([
