@@ -1655,14 +1655,14 @@ div.at-the-backyard {
 .generic-img {
 	float: left;
 	width: 55%;
-	border-radius: 30px;
+	border-radius: 15px;
 	margin-top: 6%;
 }
 
 .generic-text {
 	float: right;
 	width: 40%;
-	padding: 9% 0 0 4%;
+	padding: 100px 0 0 0;
 	color: white;
 }
 
@@ -2185,7 +2185,6 @@ ul.logotypes li a {
     color: black !important;
     background-color: rgba(255,255,255,1);
     padding: 15px 0 0;
-	margin-bottom: -5px !important;
 }
 
 #cboxTitle span {
@@ -2217,7 +2216,7 @@ ul.logotypes li a {
 		margin-top: 12%;
 	}
 	.generic-text {
-		padding: 16% 0 0 4%;
+		padding: 150px 0 0;
 	}
 }
 
@@ -2226,22 +2225,20 @@ ul.logotypes li a {
 		margin-top: 18%;
 	}
 	.generic-text {
-		padding: 22% 0 0 4%;
+		padding: 175px 0 0 0;
 	}
 }
 
 @media only screen and (max-width: 1050px) {
 	.generic-img {
 		float: none;
-		width: 100%;
-		margin: 0 auto;
-		display: block;
-		border-radius: 20px;
-		margin-top: 9%;
+		width: 75%;
+		margin: 9% auto 0;
 	}
 	.generic-text {
 		float: none;
-		width: 100%;
+		margin: 0 auto;
+		width: 75%;
 		padding: 4% 0 0 0;
 		color: white;
 		font-size: 100% !important;
