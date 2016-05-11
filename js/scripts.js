@@ -358,7 +358,7 @@ jQuery(document).ready(function($) {
 	function setRandomImgs() {
 		var leftAbsPath = '', rightAbsPath = '', leftThumbPath = '', rightThumbPath = '', leftImgTitle = '', rightImgTitle = '', leftImgAuthor = '', rightImgAuthor = '', leftImgMats = '', rightImgMats = '', j = imgs.length - 1;
 
-		for (var i = 0; i < 3; i++) {
+		for (var i = 0; i < imgs.length; i++) {
 			leftAbsPath = relPath + imgs[i].pic;
 			rightAbsPath = relPath + imgs[j-i].pic;
 			leftThumbPath = relPath + imgs[i].thumb;
