@@ -939,7 +939,7 @@ jQuery(document).ready(function($) {
 
 	$('li.performance').on(window.eventType, function(event) {
 		ZSound.Play('click');
-		$('#installation-wrapper').addClass('hidden');
+		$('#installation-wrapper').css('display', 'none').addClass('hidden');
 		$('#interpretation-wrapper').addClass('hidden');
 		$('#performance-wrapper').fadeIn(1000).removeClass('hidden').css('opacity', 1);
 		openPage('performance');
