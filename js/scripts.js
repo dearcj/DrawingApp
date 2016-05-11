@@ -716,7 +716,7 @@ jQuery(document).ready(function($) {
 
 		$('#museum-wrapper .mute').delay(1500).animate({'opacity': 1}, 500);
 		$('ul#heplers').css('z-index', 300);
-		$('ul#helpers li').css('opacity', 0);
+		$('#museum-wrapper ul#helpers li').css('opacity', 0);
 		$('ul#helpers li#helper-11').delay(1000).animate({'opacity': 1}, 250);
 		$('ul#helpers li#helper-12').delay(3000).animate({'opacity': 1}, 250);
 		$('ul#helpers li#helper-13').delay(1500).animate({'opacity': 1}, 250);
