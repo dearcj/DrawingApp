@@ -631,8 +631,6 @@ jQuery(document).ready(function($) {
 			$(this).children().css('z-index', '100');
 		});
 
-		$('#main-image').delay(500).animate({'opacity': 1, top: 0 + 'px'}, 1000);
-
 		$('ul#helpers').css('z-index', '300');
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
@@ -641,7 +639,6 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('top', 660 + 'px');
 		}
 
-		$('#main-image').delay(500).animate({top: 0}, 1000);
 		$('#main-image p').css('display', 'block').delay(1000).animate({'opacity': 1}, 2000).removeClass('hidden');
 
 		if ($(window).width() < 700) {
@@ -651,7 +648,7 @@ jQuery(document).ready(function($) {
 			$('#main-image p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
 			$('#publication-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-			$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px'}, 1000);
+			$('#main-image').delay(500).animate({'opacity': 1, 'width': 600 + 'px', 'height': 424 + 'px', top: 0}, 1000);
 			$('#main-image p').css({width: 350 + 'px', 'font-size': 150 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: 105 + 'px'});
 		}
 
@@ -1293,16 +1290,13 @@ jQuery(document).ready(function($) {
 	function sendingResponsive () {
 		var width = $(window).width(),
 				height = $(window).height(),
-				sendingCanvas = $('#main-image'),
 				sendingWrapper = $('#publication-wrapper'),
 				sendingForm = $('form.sending-form'),
 				sendingFormButton = $('form.sending-form button'),
 				sendingFormInput = $('form.sending-form input'),
 				sendingFormP = $('form.sending-form .work-author p'),
 				paintingsLi = $('ul.paintings li'),
-				paintingsLiText = $('ul.paintings a li div'),
-				darkSideSending = $('.dark-side.sending'),
-				sendingBackgroundHeight = width/wrapperRatio;
+				paintingsLiText = $('ul.paintings a li div');
 
 		sendingWrapper.css({'background-size': '100% auto'});
 
@@ -1332,9 +1326,7 @@ jQuery(document).ready(function($) {
 
 		paintingsLi.css({width: 750/3 + 'px', 'margin-bottom': 5.66*530/100 + 'px'});
 
-		var paintingsLiMarginBot = parseInt(paintingsLi.css('margin-bottom')),
-				paintingsLiLeft = $('ul.paintings.left-side li'),
-				paintingsLiRight = $('ul.paintings.right-side li');
+		var paintingsLiMarginBot = parseInt(paintingsLi.css('margin-bottom'));
 
 		paintingsLi.css('height', (530 - paintingsLiMarginBot*2)/3 + 'px');
 
@@ -1342,8 +1334,6 @@ jQuery(document).ready(function($) {
 		paintingsLiText.find('span.author').css({'font-size': paintingsLi.height()/1.3 + '%'});
 		paintingsLiText.find('span.materials').css({'font-size': paintingsLi.height()/1.4 + '%'});
 		paintingsLiText.find('span').css({'padding-bottom': paintingsLi.width()/42.66 + 'px'});
-
-		darkSideSending.css({height: 530/15 + 'px', top: 530 - 530/15 + width/12.5 + 'px'});
 
 		hidingHelpers('#main-image p');
 	}
