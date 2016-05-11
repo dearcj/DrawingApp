@@ -539,7 +539,7 @@ jQuery(document).ready(function($) {
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': 150 + 'px'}, 500);
 		$('#surface-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
-		$('#filters-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
+		$('#filters-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
 		$('#surface-wrapper').each(function(){
 			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
@@ -624,7 +624,7 @@ jQuery(document).ready(function($) {
 	function publicationAnimation() {
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
 		$('#painting-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
-		$('#filters-wrapper').delay(500).animate({'opacity': 1}, 100).css('z-index', '100');
+		$('#filters-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#painting-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
