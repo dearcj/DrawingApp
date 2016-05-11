@@ -407,7 +407,7 @@
 
           <img id="your-painting" class="museum-painting" src="">
 
-          <p>Здесь может появиться твоя новая картина</p>
+          <p class="first-exp">Здесь может появиться твоя новая картина</p>
 
           <div class="museum-button new-painting go-to-surface interact"></div>
 

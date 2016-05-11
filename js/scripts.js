@@ -694,7 +694,7 @@ jQuery(document).ready(function($) {
 		}
 
 		$('#museum-wrapper').each(function(){
-			$(this).children().css({'z-index': '200'});
+			$(this).children().not('.first-exp').css({'opacity': 1, 'z-index': '200'});
 		});
 
 		$('ul#heplers').css('z-index', 300);
@@ -705,7 +705,7 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-14').delay(2000).animate({'opacity': 1}, 250);
 		$('ul#helpers li#helper-15').delay(2500).animate({'opacity': 1}, 250);
 
-			if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
 		} else {
 			$('.podval_new').css('top', 660 + 'px');
