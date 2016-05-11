@@ -675,6 +675,7 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
+		$('.screens').animate({'opacity': 0}, 100).css('z-index', '100');
 
 		if ($(window).width() < 700) {
 			$('#museum-wrapper').animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
@@ -702,11 +703,11 @@ jQuery(document).ready(function($) {
 
 		$('ul#heplers').css('z-index', 300);
 		$('ul#helpers li').css('opacity', 0);
-		$('ul#helpers li#helper-11').delay(500).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-12').delay(750).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-13').delay(1000).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-14').delay(1250).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-15').delay(1500).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-11').delay(1000).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-12').delay(1250).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-13').delay(1500).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-14').delay(1750).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-15').delay(2000).animate({'opacity': 1}, 250);
 
 			if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
