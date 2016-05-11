@@ -2043,13 +2043,14 @@ ul.logotypes li a {
 .painting-info {
 	position: relative;
 	width: 500px;
+	height: 100px;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;
-    padding: 4px 0 10px;
-    -webkit-box-shadow: 0px 0px 3px 1px #dedede;
-    -moz-box-shadow:    0px 0px 3px 1px #dedede;
-    box-shadow:         0px 0px 3px 1px #dedede;
+    padding: 4px 0 0;
+    -webkit-box-shadow: 0 0 3px 1px #dedede;
+    -moz-box-shadow:    0 0 3px 1px #dedede;
+    box-shadow:         0 0 3px 1px #dedede;
 }
 
 .painting-info span {
