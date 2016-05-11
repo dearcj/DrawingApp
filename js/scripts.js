@@ -214,6 +214,8 @@ jQuery(document).ready(function($) {
 	$('ul#undo-refresh').css({top: 530 + 'px', 'opacity': 0});
 	$('.mute').css('opacity', 0);
 	$('#filters-canvas').css('top', -575 + 'px');
+	$('.museum-painting').css('top', -450 + 'px');
+	$('.social-buttons').css('right', -6 + '%');
 
 	//
 
@@ -610,8 +612,8 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-9').delay(2500).animate({'opacity': 1}, 500);
 		$('ul#helpers').css('z-index', '300');
 		$('#filters-wrapper ul#helpers').css('z-index', '250');
-		$('li.back-to-tools').delay(500).animate({'top': 0 + 'px'}, 500);
-		$('li.its-done').delay(750).animate({'top': 0 + 'px'}, 500);
+		$('li.back-to-tools').delay(750).animate({'top': 0 + 'px'}, 500);
+		$('li.its-done').delay(1000).animate({'top': 0 + 'px'}, 500);
 		$('.filters-canvas p').delay(2500).fadeIn(1000);
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
@@ -669,39 +671,41 @@ jQuery(document).ready(function($) {
 
 	function museumAnimation() {
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
-		$('#publication-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
+		$('#publication-wrapper').animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
 
+		$('#museum-wrapper > p').css('opacity', 0);
+
 		if ($(window).width() < 700) {
-			$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-			$('.painting-info').css('width', 300 + 'px').delay(500).animate({'top': -155 + 'px'}, 500);
+			$('#museum-wrapper').animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
 			$('.social-buttons ul').css('width', 75 + 'px');
 			$('.social-buttons ul li').css({width: 35 + 'px', height: 35 + 'px'});
+			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': -140 + 'px'}, 500);
+			$('#museum-wrapper > p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
+			$('.painting-info').css('width', 300 + 'px').delay(500).animate({'top': -155 + 'px'}, 500);
 		} else {
-			$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-			$('.painting-info').delay(500).animate({'top': -200 + 'px'}, 500);
+			$('#museum-wrapper').animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': -195 + 'px'}, 500);
+			$('#museum-wrapper > p').css({width: 300 + 'px', 'font-size': 230 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: -350 + 'px'});
+			$('.museum-painting').delay(500).animate({top: -55 + 'px'}, 500);
+			$('.painting-info').delay(1000).animate({top: -200 + 'px'}, 500);
+			$('.social-buttons').delay(1500).animate({right: 28 + '%'}, 500);
 		}
 
 		$('#museum-wrapper').each(function(){
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
-		$('#museum-wrapper > p').css('opacity', 0);
+		$('ul#helpers li').css({'opacity': 0, 'z-index': '300'});
+		$('ul#helpers li#helper-11').delay(250).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-12').delay(500).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-13').delay(750).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-14').delay(1000).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-15').delay(1250).animate({'opacity': 1}, 250);
 
-		if ($(window).width() < 700) {
-			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': -140 + 'px'}, 500);
-			$('#museum-wrapper > p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
-
-		} else {
-			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': -195 + 'px'}, 500);
-			$('#museum-wrapper > p').css({width: 300 + 'px', 'font-size': 230 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: -350 + 'px'});
-		}
-
-		$('ul#helpers').css('z-index', '300');
-
-		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
+			if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
 		} else {
 			$('.podval_new').css('top', 660 + 'px');

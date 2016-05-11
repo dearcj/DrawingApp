@@ -743,7 +743,6 @@ ul.paintings a:hover li div {
 	width: 500px;
 	height: 354px;
 	position: relative;
-	top: -55px;
 }
 
 .museum-painting p {
@@ -2075,7 +2074,6 @@ ul.logotypes li a {
 	opacity: 0;
 	width: 100px;
     position: relative;
-	right: 28%;
 	top: -66%;
     float: right;
 }
