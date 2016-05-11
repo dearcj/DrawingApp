@@ -769,7 +769,7 @@ ul.ux-buttons.home li:last-child {
 ul.ux-buttons li {
 	width: 50px;
 	height: 50px;
-	float: left;
+	float: right;
 	opacity: 1;
 }
 
@@ -788,6 +788,7 @@ ul.ux-buttons li:last-child {
 	background: url(../img/fullscreen-button.png) no-repeat;
 	background-size: 100%;
 	margin-left: 5px;
+	display: none;
 }
 
 form.sending-form {
