@@ -675,7 +675,7 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
-		$('.screens').css({'opacity': 0, 'z-index': 100});
+		//$('.screens').css({'opacity': 0, 'z-index': 100});
 
 		if ($(window).width() < 700) {
 			$('#museum-wrapper').animate({'opacity': 1, 'height': 100 + '%'}, 500).css('z-index', '200');
