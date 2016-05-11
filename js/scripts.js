@@ -569,21 +569,18 @@ jQuery(document).ready(function($) {
 		$('#back-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
 		$('#main-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
 		$('#cursor-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
-
+		$('#painting-wrapper .mute').delay(500).animate({'opacity': 1}, 500);
 		$('ul#helpers li#helper-8').delay(2000).animate({'opacity': 1}, 500);
-
-		$('ul#helpers').css('z-index', '300');
+		$('#painting-wrapper ul#helpers').css('z-index', '250');
+		$('li.send-to-museum').delay(750).animate({'top': 0}, 500);
+		$('li.back-to-surface').delay(500).animate({'top': 0}, 500);
+		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
 		} else {
 			$('.podval_new').css('top', 660 + 'px');
 		}
-
-		$('#painting-wrapper ul#helpers').css('z-index', '250');
-		$('li.send-to-museum').delay(500).animate({'top': 0}, 500);
-		$('li.back-to-surface').delay(750).animate({'top': 0}, 500);
-		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
 	}
 
 	function filtersAnimation() {
