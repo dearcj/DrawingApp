@@ -1159,11 +1159,11 @@ jQuery(document).ready(function($) {
 		$('ul.ux-buttons').css('width', uxButtonsLiWidth*2 + 5 + 'px');
 
 		$('.generic-text').css('font-size', width/12 + '%');
-		if (width > 1250) {
-			$('.generic-desc').css('font-size', width/13.24 + '%');
-		} else {
+		if (width < 1250) {
 			$('.generic-desc').css('font-size', width/10.87 + '%');
 			console.log('less');
+		} else {
+			$('.generic-desc').css('font-size', width/13.24 + '%');
 		}
 	}
 
