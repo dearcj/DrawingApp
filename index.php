@@ -169,6 +169,7 @@
         </div>
 
         <div id="installation-wrapper" class="hidden screens inside generic">
+          <div class="generic-button go-to-home at-the-backyard"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/installation.jpg" class="generic-img">
             <span class="generic-desc">Антон Литвин. Осторожно, дети. 2000</span>
@@ -184,6 +185,7 @@
         </div>
 
         <div id="performance-wrapper" class="hidden screens inside generic">
+          <div class="generic-button go-to-home at-the-backyard"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/performance.jpg" class="generic-img">
             <span class="generic-desc">Андрей Бартенев. Инопланетяне. 2004</span>
@@ -199,6 +201,7 @@
         </div>
 
         <div id="interpretation-wrapper" class="hidden screens inside generic">
+          <div class="generic-button go-to-home at-the-backyard"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/interpretation.jpg" class="generic-img">
             <span class="generic-desc">Ринат Волигамси. На прогулке. Из проекта «Снег». 2013</span>
@@ -214,6 +217,7 @@
         </div>
 
         <div id="mediaart-wrapper" class="hidden screens inside generic">
+          <div class="generic-button go-to-home at-the-backyard"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/media.gif" class="generic-img">
             <span class="generic-desc">Анастасия Митлянская. Поговори с ней. 2005</span>

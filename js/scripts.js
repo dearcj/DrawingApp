@@ -185,8 +185,7 @@ jQuery(document).ready(function($) {
 	$('ul.surfaces').css('margin-left', -350 + 'px');
 	$('ul.tools').css('margin-left', -1500 + 'px');
 	$('#go-to-tools').css('top', 150 + 'px');
-	$('.surface-button.at-the-backyard').css('left', -150 + 'px');
-	$('.museum-button.at-the-backyard').css('left', -150 + 'px');
+	$('.at-the-backyard').css('left', -150 + 'px');
 	$('li.send-to-museum').css('top', 100 + 'px');
 	$('li.back-to-surface').css('top', -75 + 'px');
 	$('li.add-filter').css('top', -75 + 'px');
@@ -494,7 +493,7 @@ jQuery(document).ready(function($) {
 
 		$('ul#undo-refresh li').delay(500).animate({'opacity': 1}, 2000);
 
-		$('.surface-button.at-the-backyard').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'});
+		$('.surface-button').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'}).delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 
 		$('#surface-wrapper').each(function () {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
@@ -511,8 +510,14 @@ jQuery(document).ready(function($) {
 		$('ul.surfaces li').css({width: surfaceWidth + 'px', height: surfaceHeight + 'px'});
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
 		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
-		$('.surface-button.at-the-backyard').delay(1500).animate({'left': $(window).width() / 100 + 'px'}, 500);
 		$('#surface-canvas p').delay(2500).fadeIn(1000);
+	}
+
+	function genericAnimation() {
+		var surfaceWidth = $(window).width()/10.666;
+		var surfaceHeight = $(window).width()/16.134;
+
+		$('.generic-button').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'}).delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 	}
 
 	function paintingAnimation() {
