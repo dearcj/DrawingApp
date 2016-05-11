@@ -182,8 +182,10 @@
         </div>
 
         <div id="performance-wrapper" class="hidden screens inside generic">
-          <img src="./wp-content/themes/mmoma/img/performance.jpg" class="generic-img">
-          <span class="generic-desc">Андрей Бартенев. Инопланетяне. 2004</span>
+          <div class="generic-art">
+            <img src="./wp-content/themes/mmoma/img/performance.jpg" class="generic-img">
+            <span class="generic-desc">Андрей Бартенев. Инопланетяне. 2004</span>
+          </div>
           <div class="generic-text">
             <h1>Перформанс</h1>
             <p>Как ты думаешь, для чего современному художнику может понадобиться необычный костюм – например, светящийся «комбинезон» инопланетянина? Можно ли в нём танцевать, или он предназначен для того, чтобы пугать зрителей в темноте?</p><p>В этой игре ты сможешь примерить на себя самые разные роли и образы, и даже более того – сочинить и исполнить собственный перформанс!</p><p>Сейчас этот раздел находится в разработке…</p>

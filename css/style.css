@@ -1652,6 +1652,14 @@ div.at-the-backyard {
 	height: 660px;
 }
 
+.generic-art {
+
+}
+
+span.generic-desc {
+	text-align: left;
+}
+
 .generic-img {
 	float: left;
 	width: 55%;
