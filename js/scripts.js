@@ -807,7 +807,7 @@ jQuery(document).ready(function($) {
 	$('.go-to-home').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
-		if ($('.mute').hasClass('off')) {
+		if ($('#mute').hasClass('off') || $('.mute').hasClass('off')) {
 			ZSound.stopMusic('street');
 		} else {
 			ZSound.PlayMusic('street');
