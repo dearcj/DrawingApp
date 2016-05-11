@@ -566,6 +566,10 @@ jQuery(document).ready(function($) {
 			$('#painting-wrapper > p').css({'z-index': 250})
 		}
 
+		$('#back-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
+		$('#main-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
+		$('#cursor-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
+
 		$('ul#helpers li#helper-8').delay(2000).animate({'opacity': 1}, 500);
 
 		$('ul#helpers').css('z-index', '300');
@@ -1202,10 +1206,9 @@ jQuery(document).ready(function($) {
 		var width = $(window).width(),
 			surfaceCanvas = $('#surface-canvas'),
 			surfaceBackyard = $('.surface-button.at-the-backyard');
-		forwardButton = $('ul.tools-buttons.surface-tb li'),
+			forwardButton = $('ul.tools-buttons.surface-tb li'),
 			surfacesLi = $('ul.surfaces li'),
 			surfacesLiP = $('ul.surfaces li p'),
-			darkSideSurface = $('.dark-side.surface'),
 			coordinate = function (helperNum, leftPercent, topPercent) {
 				return $('ul#helpers #helper-' + helperNum).css({left: width/100 * leftPercent + 'px', top: 530/100 * topPercent + 'px'});
 			},
@@ -1219,8 +1222,6 @@ jQuery(document).ready(function($) {
 			$('.screens').css('background-size', '100% auto');
 		}
 
-		var surfaceBackyardLeft = parseInt(surfaceBackyard.css('left'));
-
 		$('ul.surfaces li:nth-child(7)').css('margin-left', 90 + 'px');
 
 		var surfaceCanvasText = surfaceCanvas.find('p'),
@@ -1228,7 +1229,7 @@ jQuery(document).ready(function($) {
 			surfaceTextBorderRadius = surfaceTextWidth/20,
 			surfaceTextPadding = surfaceTextWidth/12;
 
-		surfaceCanvasText.css({width: surfaceTextWidth + 'px', 'border-radius': surfaceTextBorderRadius + 'px', 'font-size': 530/2.2 + '%', 'padding': 6 * surfaceTextPadding/7 + 'px ' + '0 ' + surfaceTextPadding + 'px', top: 3 * 530/8 + 'px'});
+		surfaceCanvasText.css({width: surfaceTextWidth + 'px', 'border-radius': surfaceTextBorderRadius + 'px', 'font-size': 530/2.2 + '%', 'padding': 6 * surfaceTextPadding/7 + 'px ' + '0 ' + surfaceTextPadding + 'px'});
 
 		surfacesLiP.css({'font-size': 180/1.333 + '%', bottom: 25 + 'px'});
 

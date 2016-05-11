@@ -518,7 +518,7 @@ ul#helpers li span p {
 #main-canvas {
 	cursor: none;
 	position: absolute;
-	top: 35px;
+	top: -550px;
 	left: 50%;
 	margin-left: -375px;
 }
@@ -526,7 +526,7 @@ ul#helpers li span p {
 #back-canvas {
 	cursor: none;
 	position: absolute;
-	top: 35px;
+	top: -550px;
 	left: 50%;
 	margin-left: -375px;
 	background-color: white;
@@ -534,7 +534,7 @@ ul#helpers li span p {
 
 #cursor-canvas {
 	position: absolute;
-	top: 35px;
+	top: -550px;
 	left: 50%;
 	margin-left: -375px;
 }
@@ -1593,6 +1593,7 @@ div.at-the-backyard {
     line-height: 120%;
     height: auto;
     position: relative;
+	top: 180px;
     color: white;
 }
 
