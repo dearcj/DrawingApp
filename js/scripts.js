@@ -542,7 +542,7 @@ jQuery(document).ready(function($) {
 		$('#installation-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
 		$('#performance-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
 		$('#interpretation-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
-		$('#mediaart-wrapper-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
+		$('#mediaart-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
 	}
 
 	function paintingAnimation() {

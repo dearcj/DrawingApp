@@ -202,6 +202,10 @@
             <li class="installation generic-prev interact"></li>
             <li class="interpretation generic-next interact"></li>
           </ul>
+          <ul class="ux-buttons">
+            <li class="mute on interact"></li>
+            <li class="fullscreen off"></li>
+          </ul>
         </div>
 
         <div id="interpretation-wrapper" class="hidden screens inside generic">
