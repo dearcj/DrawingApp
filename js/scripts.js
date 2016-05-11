@@ -202,8 +202,8 @@ jQuery(document).ready(function($) {
 	$('#go-to-tools').css('top', 150 + 'px');
 	$('.at-the-backyard').css('left', -150 + 'px');
 	$('li.send-to-museum').css('top', 100 + 'px');
-	$('li.back-to-surface').css('top', -75 + 'px');
-	$('li.add-filter').css('top', -75 + 'px');
+	$('li.back-to-surface').css('top', 100 + 'px');
+	$('li.add-filter').css('top', 100 + 'px');
 	$('li.back-to-tools').css('top', 100 + 'px');
 	$('li.its-done').css('top', 100 + 'px');
 	$('ul.paintings.left-side').css('margin-left', -15 + '%');
@@ -581,9 +581,9 @@ jQuery(document).ready(function($) {
 		}
 
 		$('#painting-wrapper ul#helpers').css('z-index', '250');
-		$('li.send-to-museum').delay(1000).animate({'top': 0}, 500);
-		$('li.back-to-surface').delay(1000).animate({'top': 0}, 500);
-		$('li.add-filter').delay(1000).animate({'top': 0}, 500);
+		$('li.send-to-museum').delay(500).animate({'top': 0}, 1000);
+		$('li.back-to-surface').delay(750).animate({'top': 0}, 750);
+		$('li.add-filter').delay(100).animate({'top': 0}, 500);
 	}
 
 	function filtersAnimation() {
