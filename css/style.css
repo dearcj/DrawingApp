@@ -1659,6 +1659,11 @@ div.at-the-backyard {
 	top: 118px !important;
 }
 
+.generic-button:hover,
+.generic-button:focus {
+	cursor: pointer;
+}
+
 span.generic-desc {
 	color: white;
 	display: block;
