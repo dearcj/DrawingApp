@@ -722,15 +722,14 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-13').delay(1500).animate({'opacity': 1}, 250);
 		$('ul#helpers li#helper-14').delay(2000).animate({'opacity': 1}, 250);
 		$('ul#helpers li#helper-15').delay(2500).animate({'opacity': 1}, 250);
+		$('.museum-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
+		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
 		} else {
 			$('.podval_new').css('top', 660 + 'px');
 		}
-
-		$('.museum-button.at-the-backyard').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
-		$('.social-buttons').delay(1000).animate({'opacity': 1}, 1000);
 	}
 
 	$('.go-to-surface').on(window.eventType, function(event) {
@@ -946,7 +945,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		$('#mediaart-wrapper').css('display', 'none').addClass('hidden');
 		$('#performance-wrapper').css('display', 'none').addClass('hidden');
-		$('#installation-wrapper').fadeIn(1000).removeClass('hidden');
+		$('#installation-wrapper').css('opacity', 1).fadeIn(1000).removeClass('hidden');
 		openPage('installation');
 	});
 
@@ -954,7 +953,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		$('#installation-wrapper').css('display', 'none').addClass('hidden');
 		$('#interpretation-wrapper').css('display', 'none').addClass('hidden');
-		$('#performance-wrapper').fadeIn(1000).removeClass('hidden');
+		$('#performance-wrapper').css('opacity', 1).fadeIn(1000).removeClass('hidden');
 		openPage('performance');
 	});
 
@@ -963,7 +962,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		$('#performance-wrapper').css('display', 'none').addClass('hidden');
 		$('#mediaart-wrapper').css('display', 'none').addClass('hidden');
-		$('#interpretation-wrapper').fadeIn(1000).removeClass('hidden');
+		$('#interpretation-wrapper').css('opacity', 1).fadeIn(1000).removeClass('hidden');
 		openPage('interpretation');
 	});
 
@@ -971,7 +970,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		$('#interpretation-wrapper').css('display', 'none').addClass('hidden');
 		$('#installation-wrapper').css('display', 'none').addClass('hidden');
-		$('#mediaart-wrapper').fadeIn(1000).removeClass('hidden');
+		$('#mediaart-wrapper').css('opacity', 1).fadeIn(1000).removeClass('hidden');
 		openPage('media-art');
 	});
 
