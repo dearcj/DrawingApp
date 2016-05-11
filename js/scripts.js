@@ -518,7 +518,7 @@ jQuery(document).ready(function($) {
 		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1000);
 		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
 		$('#surface-canvas p').delay(2500).fadeIn(1000);
-		$('#surface-wrapper .mute').delay(1500).animate({'opacity', 0}, 500);
+		$('#surface-wrapper .mute').delay(1500).animate({'opacity': 0}, 500);
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
