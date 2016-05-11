@@ -523,14 +523,12 @@ jQuery(document).ready(function($) {
 		}
 
 		$('ul.surfaces li').css({width: surfaceWidth + 'px', height: surfaceHeight + 'px'});
-		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 500);
+		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1000);
 		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
 		$('#surface-canvas p').delay(2500).fadeIn(1000);
 	}
 
 	function genericAnimation() {
-
-		console.log('музей');
 		var surfaceWidth = $(window).width()/10.666;
 		var surfaceHeight = $(window).width()/16.134;
 
