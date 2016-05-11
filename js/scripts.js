@@ -26,26 +26,6 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 
-/*	function launchFullScreen(el) {
-		if(el.requestFullScreen) {
-			el.requestFullScreen();
-		} else if(el.mozRequestFullScreen) {
-			el.mozRequestFullScreen();
-		} else if(el.webkitRequestFullscreen) {
-			el.webkitRequestFullscreen();
-		}
-	}
-
-	function exitFullscreen() {
-		if(document.exitFullscreen) {
-			document.exitFullscreen();
-		} else if(document.mozCancelFullScreen) {
-			document.mozCancelFullScreen();
-		} else if(document.webkitExitFullscreen) {
-			document.webkitExitFullscreen();
-		}
-	}*/
-
 	$('#mute').on(window.eventType, function(event) {
 		if (ZSound.musicInstance != null) {
 			ZSound.stopMusic('street');
@@ -65,7 +45,31 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-/*	$('.fullscreen').on(window.eventType, function(event) {
+	$('ul.helpers li').mouseover(function() {
+		ZSound.Play('interact');
+	});
+
+/*	function launchFullScreen(el) {
+	 if(el.requestFullScreen) {
+	 el.requestFullScreen();
+	 } else if(el.mozRequestFullScreen) {
+	 el.mozRequestFullScreen();
+	 } else if(el.webkitRequestFullscreen) {
+	 el.webkitRequestFullscreen();
+	 }
+	 }
+
+	 function exitFullscreen() {
+	 if(document.exitFullscreen) {
+	 document.exitFullscreen();
+	 } else if(document.mozCancelFullScreen) {
+	 document.mozCancelFullScreen();
+	 } else if(document.webkitExitFullscreen) {
+	 document.webkitExitFullscreen();
+	 }
+	 }
+
+	 $('.fullscreen').on(window.eventType, function(event) {
 		ZSound.Play('click');
 
 		var html = document.getElementById('body');
@@ -1062,7 +1066,7 @@ jQuery(document).ready(function($) {
 	function openMyMuseum() {
 		var imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
-			var message  = res.name + ': ' + res.description + ' (' + res.tags + ')' + "Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты и создай свою картину! "  + "<a href='http://play.mmoma.ru' target='_blank'>http://play.mmoma.ru</a>";
+			var message  = res.name + ': ' + res.description + " Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты и создай свою картину! "  + "<a href='http://play.mmoma.ru' target='_blank'>http://play.mmoma.ru</a>";
 			document.getElementById('post-vk').addEventListener('click', function() {
 				vkpost(message, res.image, res.file);
 			});
