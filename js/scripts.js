@@ -513,19 +513,18 @@ jQuery(document).ready(function($) {
 		$('#surface-wrapper').each(function () {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
-
 		$('ul#helpers').css('z-index', '300');
+		$('ul.surfaces li').css({width: surfaceWidth + 'px', height: surfaceHeight + 'px'});
+		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1000);
+		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
+		$('#surface-canvas p').delay(2500).fadeIn(1000);
+		$('#surface-wrapper .mute').delay(1500).animate({'opacity', 0}, 500);
 
 		if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
 		} else {
 			$('.podval_new').css('top', 660 + 'px');
 		}
-
-		$('ul.surfaces li').css({width: surfaceWidth + 'px', height: surfaceHeight + 'px'});
-		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1000);
-		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
-		$('#surface-canvas p').delay(2500).fadeIn(1000);
 	}
 
 	function genericAnimation() {
