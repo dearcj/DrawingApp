@@ -688,7 +688,7 @@ jQuery(document).ready(function($) {
 			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': -195 + 'px'}, 500);
 			$('#museum-wrapper > p').css({width: 300 + 'px', 'font-size': 200 + '%', 'padding': '20px 20px 25px', 'border-radius': 20 + 'px', top: -285 + 'px'});
 			$('.museum-painting').delay(500).animate({top: -55 + 'px'}, 500);
-			$('.painting-info').delay(1000).animate({top: -200 + 'px'}, 500);
+			$('.painting-info').delay(1000).animate({top: -150 + 'px'}, 500);
 			$('.social-buttons').delay(1500).animate({right: 28 + '%'}, 500);
 		}
 
