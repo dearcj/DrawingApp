@@ -1729,10 +1729,6 @@ ul.generic-nav li.generic-next:focus {
 	width: 65%;
 }
 
-#mediaart-wrapper .generic-img {
-	width: 54%;
-}
-
 .invisible {
 	opacity: 0;
 }
@@ -2220,25 +2216,19 @@ ul.logotypes li a {
 }
 
 @media only screen and (max-width: 1550px) {
-	.generic-img {
-		margin-top: 12%;
-	}
 	.generic-text {
 		padding: 150px 0 0;
 	}
 }
 
 @media only screen and (max-width: 1250px) {
-	.generic-img {
-		margin-top: 18%;
-	}
 	.generic-text {
 		padding: 175px 0 0 0;
 	}
 }
 
 @media only screen and (max-width: 1050px) {
-	.generic-img {
+	.generic-art {
 		float: none;
 		width: 75%;
 		margin: 9% auto 0;
