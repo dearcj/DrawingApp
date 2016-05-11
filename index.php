@@ -182,6 +182,10 @@
             <li class="media-art generic-prev interact"></li>
             <li class="performance generic-next interact"></li>
           </ul>
+          <ul class="ux-buttons">
+            <li class="mute on interact"></li>
+            <li class="fullscreen off"></li>
+          </ul>
         </div>
 
         <div id="performance-wrapper" class="hidden screens inside generic">
@@ -214,6 +218,10 @@
             <li class="performance generic-prev interact"></li>
             <li class="media-art generic-next interact"></li>
           </ul>
+          <ul class="ux-buttons">
+            <li class="mute on interact"></li>
+            <li class="fullscreen off"></li>
+          </ul>
         </div>
 
         <div id="mediaart-wrapper" class="hidden screens inside generic">
@@ -229,6 +237,10 @@
           <ul class="generic-nav">
             <li class="interpretation generic-prev interact"></li>
             <li class="installation generic-next interact"></li>
+          </ul>
+          <ul class="ux-buttons">
+            <li class="mute on interact"></li>
+            <li class="fullscreen off"></li>
           </ul>
         </div>
 

@@ -31,8 +31,10 @@ jQuery(document).ready(function($) {
 	$('#mute').on(window.eventType, function(event) {
 		if (ZSound.musicInstance != null) {
 			ZSound.stopMusic('street');
+			$('ul.ux-buttons li:first-child').css('background', 'url(../img/sound-button-1.png) no-repeat');
 		} else {
 			ZSound.PlayMusic('street');
+			$('ul.ux-buttons li:first-child').css('background', 'url(../img/sound-button.png) no-repeat');
 		}
 	});
 
@@ -42,8 +44,10 @@ jQuery(document).ready(function($) {
 
 		if ($(this).hasClass('on')) {
 			$('.mute').addClass('off').removeClass('on');
+			$('ul.ux-buttons li:first-child').css('background', 'url(../img/sound-button-1.png) no-repeat');
 		} else {
 			$('.mute').addClass('on').removeClass('off');
+			$('ul.ux-buttons li:first-child').css('background', 'url(../img/sound-button.png) no-repeat');
 		}
 	});
 
