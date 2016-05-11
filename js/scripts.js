@@ -31,10 +31,12 @@ jQuery(document).ready(function($) {
 	$('#mute').on(window.eventType, function(event) {
 		if ($(this).hasClass('on')) {
 			$(this).addClass('off').removeClass('on');
+			$('.mute').addClass('off').removeClass('on');
 			ZSound.stopMusic('street');
 			$('ul.ux-buttons li:first-child').css('background', 'url(/wp-content/themes/mmoma/img/sound-button-1.png) no-repeat');
 		} else {
 			$(this).addClass('on').removeClass('off');
+			$('.mute').addClass('off').removeClass('on');
 			ZSound.PlayMusic('street');
 			$('ul.ux-buttons li:first-child').css('background', 'url(/wp-content/themes/mmoma/img/sound-button.png) no-repeat');
 		}
