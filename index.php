@@ -51,32 +51,32 @@
         });
     </script>
 
-    <script src="./onlinegame/wp-content/themes/mmoma/js/soundjs-NEXT.min.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/js/ZSound.js"></script>
+    <script src="./wp-content/themes/mmoma/js/soundjs-NEXT.min.js"></script>
+    <script src="./wp-content/themes/mmoma/js/ZSound.js"></script>
     <script src="./wp-content/themes/mmoma/pictags.js"></script>
 
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
-          <script src="./onlinegame/wp-content/themes/mmoma/js/jsmanipulate.min.js"></script>
+    <script src="./wp-content/themes/mmoma/js/jsmanipulate.min.js"></script>
 
-    <script src="./onlinegame/wp-content/themes/mmoma/js/jquery.colorbox-min.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/js/scripts.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Utils.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Canvas/Action.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Canvas/Canvas.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/Brush.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/OrangeBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/js/jquery.colorbox-min.js"></script>
+    <script src="./wp-content/themes/mmoma/js/scripts.js"></script>
+    <script src="./wp-content/themes/mmoma/Utils.js"></script>
+    <script src="./wp-content/themes/mmoma/Canvas/Action.js"></script>
+    <script src="./wp-content/themes/mmoma/Canvas/Canvas.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/Brush.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/OrangeBrush.js"></script>
 
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/Pencil.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/DenimBrush.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/CoalBrush.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/ThreadBrush.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/SmoothBrush.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/PatternBrush.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/PistolBrush.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/CatchupBrush.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/GrassBrush.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/Brushes/ScotchBrush.js"></script>
-    <script src="./onlinegame/wp-content/themes/mmoma/test.js" defer></script>
+    <script src="./wp-content/themes/mmoma/Brushes/Pencil.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/DenimBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/CoalBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/ThreadBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/SmoothBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/PatternBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/PistolBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/CatchupBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/GrassBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/Brushes/ScotchBrush.js"></script>
+    <script src="./wp-content/themes/mmoma/test.js" defer></script>
 
     <script>
         window.fbAsyncInit = function() {
@@ -95,6 +95,9 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+
+
+
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
