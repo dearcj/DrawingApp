@@ -218,7 +218,7 @@ var initApplication = function() {
   };*/
 
 
-  document.body.onmousedown = function(e) {
+  elDraw.onmousedown = function(e) {
     console.log('mousemove');
     canvas.startAction(e);
   };
