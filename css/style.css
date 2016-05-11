@@ -1654,6 +1654,11 @@ div.at-the-backyard {
 	margin-top: 5%;
 }
 
+.generic-button {
+	position: absolute;
+	top: 118px !important;
+}
+
 span.generic-desc {
 	color: white;
 	display: block;
