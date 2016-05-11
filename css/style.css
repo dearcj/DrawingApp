@@ -1645,6 +1645,10 @@ div.at-the-backyard {
 	height: 660px;
 }
 
+.generic ul.ux-buttons {
+	bottom: 210px;
+}
+
 .generic-art {
 	float: left;
 	width: 55%;
