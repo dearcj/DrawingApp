@@ -599,7 +599,7 @@ jQuery(document).ready(function($) {
 			});
 			$('#wand').css({width: 40 + 'px', height: 200 + 'px', right: 3*(($(window).width() - 240)/2 - 40)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);
 		} else {
-			$('#filters-wrapper').delay(300).animate({'opacity': 1}, 100).css('z-index', '200');
+			$('#filters-wrapper').animate({'opacity': 1}, 100).css('z-index', '200');
 			$('#filters-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
 			});
