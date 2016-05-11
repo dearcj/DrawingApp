@@ -513,8 +513,12 @@ ul#helpers li span p {
 	-ms-user-select: none;
 }
 
-#main-canvas {
+.no-cursor {
 	cursor: none;
+}
+
+#main-canvas {
+	cursor: pointer;
 	position: absolute;
 	top: -550px;
 	left: 50%;
