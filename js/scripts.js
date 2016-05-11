@@ -696,7 +696,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
-		if (imageId === null) {
+		if (imageId !== null) {
 			console.log('hi');
 		} else {
 			console.log('bye');
