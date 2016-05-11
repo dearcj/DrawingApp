@@ -931,16 +931,16 @@ jQuery(document).ready(function($) {
 
 	$('li.installation').on(window.eventType, function(event) {
 		ZSound.Play('click');
-		$('#mediaart-wrapper').fadeOut(100).addClass('hidden');
-		$('#performance-wrapper').fadeOut(100).addClass('hidden');
+		$('#mediaart-wrapper').addClass('hidden');
+		$('#performance-wrapper').addClass('hidden');
 		$('#installation-wrapper').fadeIn(1000).removeClass('hidden').css('opacity', 1);
 		openPage('installation');
 	});
 
 	$('li.performance').on(window.eventType, function(event) {
 		ZSound.Play('click');
-		$('#installation-wrapper').fadeOut(100).addClass('hidden');
-		$('#interpretation-wrapper').fadeOut(100).addClass('hidden');
+		$('#installation-wrapper').addClass('hidden');
+		$('#interpretation-wrapper').addClass('hidden');
 		$('#performance-wrapper').fadeIn(1000).removeClass('hidden').css('opacity', 1);
 		openPage('performance');
 	});
@@ -948,16 +948,16 @@ jQuery(document).ready(function($) {
 
 	$('li.interpretation').on(window.eventType, function(event) {
 		ZSound.Play('click');
-		$('#performance-wrapper').fadeOut(100).addClass('hidden');
-		$('#mediaart-wrapper').fadeOut(100).addClass('hidden');
+		$('#performance-wrapper').addClass('hidden');
+		$('#mediaart-wrapper').addClass('hidden');
 		$('#interpretation-wrapper').fadeIn(1000).removeClass('hidden').css('opacity', 1);
 		openPage('interpretation');
 	});
 
 	$('li.media-art').on(window.eventType, function(event) {
 		ZSound.Play('click');
-		$('#interpretation-wrapper').fadeOut(100).addClass('hidden');
-		$('#installation-wrapper').fadeOut(100).addClass('hidden');
+		$('#interpretation-wrapper').addClass('hidden');
+		$('#installation-wrapper').addClass('hidden');
 		$('#mediaart-wrapper').fadeIn(1000).removeClass('hidden').css('opacity', 1);
 		openPage('media-art');
 	});
