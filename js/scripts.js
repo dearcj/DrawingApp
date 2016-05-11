@@ -523,7 +523,7 @@ jQuery(document).ready(function($) {
 		}
 
 		$('ul.surfaces li').css({width: surfaceWidth + 'px', height: surfaceHeight + 'px'});
-		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 1500);
+		$('#surface-canvas').delay(500).animate({'background-size': '100%'}, 500);
 		$('ul#helpers li#helper-7').delay(2000).animate({'opacity': 1}, 500);
 		$('#surface-canvas p').delay(2500).fadeIn(1000);
 	}
