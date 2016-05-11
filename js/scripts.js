@@ -593,13 +593,13 @@ jQuery(document).ready(function($) {
 		});
 
 		if ($(window).width() < 700) {
-			$('#filters-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+			$('#filters-wrapper').animate({'opacity': 1, height: 100 + '%'}, 100).css('z-index', '200');
 			$('#filters-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
 			});
 			$('#wand').css({width: 40 + 'px', height: 200 + 'px', right: 3*(($(window).width() - 240)/2 - 40)/4 + 'px', 'z-index': 250}).delay(1500).animate({'background-size': '100%'}, 1000);
 		} else {
-			$('#filters-wrapper').animate({'opacity': 1}, 100).css('z-index', '200');
+			$('#filters-wrapper').animate({'opacity': 1, height: 660 + 'px'}, 100).css('z-index', '200');
 			$('#filters-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
 			});
@@ -623,8 +623,8 @@ jQuery(document).ready(function($) {
 
 	function publicationAnimation() {
 		$('#wand').animate({'margin-left': -1000 + 'px'}, 500);
-		$('#painting-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
-		$('#filters-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
+		$('#painting-wrapper').animate({'opacity': 0}, 100).css('z-index', '100');
+		$('#filters-wrapper').animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#painting-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
@@ -648,7 +648,7 @@ jQuery(document).ready(function($) {
 			$('#main-image').delay(500).animate({'opacity': 1}, 1000);
 			$('#main-image p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
-			$('#publication-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			$('#publication-wrapper').animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			$('#main-image').delay(500).animate({'opacity': 1, top: 0}, 1000);
 			$('#main-image p').css({width: 350 + 'px', 'font-size': 150 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: 105 + 'px'});
 		}
