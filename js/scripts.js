@@ -889,7 +889,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		ZSound.stopMusic('street');
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
-		$('#installation-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
+		$('#installation-wrapper').css('height', 660 + 'px').animate({'opacity': 1}, 200);
 		openPage('installation');
 		genericAnimation();
 	});
