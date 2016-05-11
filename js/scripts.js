@@ -555,6 +555,7 @@ jQuery(document).ready(function($) {
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
 			});
 			$('#painting-wrapper > p').css({'opacity': 0, height: 0});
+			$('#painting-wrapper ul#undo-refresh').css('opacity', 0);
 		} else {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
@@ -562,7 +563,8 @@ jQuery(document).ready(function($) {
 			$('#painting-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
 			});
-			$('#painting-wrapper > p').css({'z-index': 250})
+			$('#painting-wrapper > p').css({'z-index': 250});
+			$('#painting-wrapper ul#undo-refresh').css('opacity', 0);
 		}
 
 		$('#back-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
