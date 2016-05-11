@@ -696,10 +696,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
-		var test = $('#museum-wrapper > p').css('opacity');
-		console.log(test);
-
-		if ($('#museum-wrapper > p').css('opacity') == '0') {
+		if (imageId === null) {
 			console.log('hi');
 		} else {
 			console.log('bye');
@@ -1084,7 +1081,7 @@ jQuery(document).ready(function($) {
 
 
 	function openMyMuseum() {
-		var imageId = localStorage.getItem('imageId');
+		window.imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
 			var message  = res.name + ': ' + res.description + " Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты и создай свою картину! "  + "<a href='http://play.mmoma.ru' target='_blank'>http://play.mmoma.ru</a>";
 			document.getElementById('post-vk').addEventListener('click', function() {
