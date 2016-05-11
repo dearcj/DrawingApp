@@ -587,8 +587,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function filtersAnimation() {
-		$('ul.tools').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 100);
-		$('#painting-wrapper').delay(100).animate({'opacity': 0}, 100).css('z-index', '100');
+		$('#painting-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#painting-wrapper').each(function(){
 			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
