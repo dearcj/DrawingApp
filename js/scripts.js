@@ -694,7 +694,7 @@ jQuery(document).ready(function($) {
 		}
 
 		$('#museum-wrapper').each(function(){
-			$(this).children().css({'opacity': 1, 'z-index': '200'});
+			$(this).children().css({'z-index': '200'});
 		});
 
 		if (imageId !== null) {
@@ -703,11 +703,11 @@ jQuery(document).ready(function($) {
 
 		$('ul#heplers').css('z-index', 300);
 		$('ul#helpers li').css('opacity', 0);
-		$('ul#helpers li#helper-11').delay(1500).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-12').delay(3500).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-13').delay(2000).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-14').delay(2500).animate({'opacity': 1}, 250);
-		$('ul#helpers li#helper-15').delay(3000).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-11').delay(1000).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-12').delay(3000).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-13').delay(1500).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-14').delay(2000).animate({'opacity': 1}, 250);
+		$('ul#helpers li#helper-15').delay(2500).animate({'opacity': 1}, 250);
 
 			if (window.location.href.indexOf('#') < 0 || window.location.href.indexOf('index') > 0) {
 			$('.podval_new').css('top', 0);
