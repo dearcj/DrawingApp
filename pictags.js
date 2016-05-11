@@ -291,7 +291,7 @@ var getImagesByTags = function (tags) {
 		}
 	}
 
-	while (res.length < 6) {
+/*	while (res.length < 6) {
 		var rand = Math.floor(Math.random() * picTags.length);
 
 		for (var k = 0; k < res.length; k++) {
@@ -303,7 +303,7 @@ var getImagesByTags = function (tags) {
 				break;
 			}
 		}
-	}
+	}*/
 
 	return shuffle(res);
 }

@@ -356,7 +356,6 @@ jQuery(document).ready(function($) {
 	});
 
 	function setRandomImgs() {
-
 		var leftAbsPath = '', rightAbsPath = '', leftThumbPath = '', rightThumbPath = '', leftImgTitle = '', rightImgTitle = '', leftImgAuthor = '', rightImgAuthor = '', leftImgMats = '', rightImgMats = '', j = imgs.length - 1;
 
 		for (var i = 0; i < 3; i++) {
@@ -1161,7 +1160,6 @@ jQuery(document).ready(function($) {
 		$('.generic-text').css('font-size', width/12 + '%');
 		if (width < 1250) {
 			$('.generic-desc').css('font-size', width/10.87 + '%');
-			console.log('less');
 		} else {
 			$('.generic-desc').css('font-size', width/13.24 + '%');
 		}
