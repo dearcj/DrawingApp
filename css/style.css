@@ -1916,7 +1916,7 @@ ul.surfaces li.metal:focus {
     width: 100%;
     position: absolute;
     overflow: hidden;
-	opacity: 0;
+	opacity: 1;
 	height: 0;
 }
 
