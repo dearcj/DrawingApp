@@ -501,7 +501,7 @@ jQuery(document).ready(function($) {
 			$('#go-to-tools').delay(1500).animate({'top': -20 + 'px'}, 500);
 			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 240) /3.8 - surfaceWidth + 'px', 'margin-top': (165 - surfaceHeight*4)/2 + 'px'}, 1500);
 		} else {
-			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 1000).css('z-index', '200');
+			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'height': 660 + 'px'}, 100).delay(100).animate({'opacity': 1}, 500).css('z-index', '200');
 			$('#go-to-tools').delay(1500).animate({'top': 0 + 'px'}, 500);
 			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 700)/3.8 - surfaceWidth + 'px', 'margin-top': (495 - surfaceHeight*4)/2 + 'px'}, 1500);
 		}
