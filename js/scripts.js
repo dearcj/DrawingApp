@@ -514,6 +514,8 @@ jQuery(document).ready(function($) {
 	}
 
 	function genericAnimation() {
+
+		console.log('музей');
 		var surfaceWidth = $(window).width()/10.666;
 		var surfaceHeight = $(window).width()/16.134;
 
@@ -865,6 +867,7 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
 		$('#installation-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('installation');
+		genericAnimation();
 	});
 
 	$('#button-2').on(window.eventType, function(event) {
@@ -873,6 +876,7 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
 		$('#performance-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('performance');
+		genericAnimation();
 	});
 
 	$('#button-5').on(window.eventType, function(event) {
@@ -881,6 +885,7 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
 		$('#interpretation-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('interpretation');
+		genericAnimation();
 	});
 
 	$('#button-6').on(window.eventType, function(event) {
@@ -889,6 +894,7 @@ jQuery(document).ready(function($) {
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
 		$('#mediaart-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('media-art');
+		genericAnimation();
 	});
 
 	$('li.installation').on(window.eventType, function(event) {
