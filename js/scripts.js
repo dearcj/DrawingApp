@@ -696,7 +696,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
 
-		if ($('#museum-wrapper > p').css('opacity') == 0) {
+		if ($('#museum-wrapper > p').css('opacity') == '0') {
 			console.log('hi');
 		} else {
 			console.log('bye');
