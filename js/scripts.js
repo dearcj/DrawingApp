@@ -889,6 +889,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		ZSound.stopMusic('street');
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
+		$('#museum-wrapper').css('display', 'none');
 		$('#installation-wrapper').css('height', 660 + 'px').removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('installation');
 		genericAnimation();
@@ -898,6 +899,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		ZSound.stopMusic('street');
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
+		$('#museum-wrapper').css('display', 'none');
 		$('#performance-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('performance');
 		genericAnimation();
@@ -907,6 +909,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		ZSound.stopMusic('street');
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
+		$('#museum-wrapper').css('display', 'none');
 		$('#interpretation-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('interpretation');
 		genericAnimation();
@@ -916,6 +919,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		ZSound.stopMusic('street');
 		$('#index-wrapper').fadeOut(100).addClass('hidden');
+		$('#museum-wrapper').css('display', 'none');
 		$('#mediaart-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1, height: 660 + 'px'}, 200);
 		openPage('media-art');
 		genericAnimation();
