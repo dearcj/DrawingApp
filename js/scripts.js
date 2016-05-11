@@ -692,7 +692,7 @@ jQuery(document).ready(function($) {
 		$('#publication-wrapper').each(function(){
 			$(this).children().css('z-index', '100');
 		});
-		$('.screens').css({'opacity': 0, 'z-index': 100});
+		$('.screens').not('.generic').css({'opacity': 0, 'z-index': 100});
 
 		if ($(window).width() < 700) {
 			$('#museum-wrapper').animate({'opacity': 1, 'height': 100 + '%'}, 500).css('z-index', '200');
@@ -953,7 +953,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		$('#installation-wrapper').css('display', 'none').addClass('hidden');
 		$('#interpretation-wrapper').css('display', 'none').addClass('hidden');
-		$('#performance-wrapper').css('display', 'none').fadeIn(1000).removeClass('hidden');
+		$('#performance-wrapper').fadeIn(1000).removeClass('hidden');
 		openPage('performance');
 	});
 
