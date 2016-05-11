@@ -1159,6 +1159,7 @@ jQuery(document).ready(function($) {
 		$('ul.ux-buttons').css('width', uxButtonsLiWidth*2 + 5 + 'px');
 
 		$('.generic-text').css('font-size', width/12 + '%');
+		$('.generic-desc').css('font-size', width/13.24 + '%');
 	}
 
 

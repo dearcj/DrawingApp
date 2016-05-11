@@ -169,8 +169,10 @@
         </div>
 
         <div id="installation-wrapper" class="hidden screens inside generic">
-          <img src="./wp-content/themes/mmoma/img/installation.jpg" class="generic-img">
-          <span class="generic-desc">Антон Литвин. Осторожно, дети. 2000</span>
+          <div class="generic-art">
+            <img src="./wp-content/themes/mmoma/img/installation.jpg" class="generic-img">
+            <span class="generic-desc">Антон Литвин. Осторожно, дети. 2000</span>
+          </div>
           <div class="generic-text">
             <h1>Инсталляция и объект</h1>
             <p>Пробовал ли ты искать произведения искусства среди самых обычных, повседневных, предметов – на природе, в городе или же в своей собственной комнате?</p><p>Эта игра поможет тебе взглянуть на привычные вещи по-новому, глазами художника. Ведь если хорошенько порыться в ящике с игрушками, а затем немного пофантазировать, можно собрать целую инсталляцию!</p><p>Сейчас этот раздел находится в разработке…</p>
@@ -197,8 +199,10 @@
         </div>
 
         <div id="interpretation-wrapper" class="hidden screens inside generic">
-          <img src="./wp-content/themes/mmoma/img/interpretation.jpg" class="generic-img">
-          <span class="generic-desc">Ринат Волигамси. На прогулке. Из проекта «Снег». 2013</span>
+          <div class="generic-art">
+            <img src="./wp-content/themes/mmoma/img/interpretation.jpg" class="generic-img">
+            <span class="generic-desc">Ринат Волигамси. На прогулке. Из проекта «Снег». 2013</span>
+          </div>
           <div class="generic-text">
             <h1>Интерпретация</h1>
             <p>Можешь ли ты описать, что происходит на этой картине? На первый взгляд всё просто – семья на прогулке кормит голубей. Но присмотрись повнимательнее, и вместо голубей на снегу ты увидишь маленьких динозавриков! Чем же объяснить такую странную подмену?</p><p>Эта игра научит тебя расшифровывать загадочные послания художников, а также придумывать свои истории!</p><p>Сейчас этот раздел находится в разработке…</p>
@@ -210,8 +214,10 @@
         </div>
 
         <div id="mediaart-wrapper" class="hidden screens inside generic">
-          <img src="./wp-content/themes/mmoma/img/media.gif" class="generic-img">
-          <span class="generic-desc">Анастасия Митлянская. Поговори с ней. 2005</span>
+          <div class="generic-art">
+            <img src="./wp-content/themes/mmoma/img/media.gif" class="generic-img">
+            <span class="generic-desc">Анастасия Митлянская. Поговори с ней. 2005</span>
+          </div>
           <div class="generic-text">
             <h1>Медиа-арт</h1>
             <p>Знаешь ли ты, что некоторые из твоих фотографий и видеороликов, заснятых на самый обыкновенный телефон, могут оказаться настоящими произведениями цифрового искусства? Что бы это ни было – портрет твоего лучшего друга, удачный снимок домашнего животного, городской или дачный пейзаж – важно выбрать интересный ракурс!</p><p>В этой игре ты сможешь опубликовать свой ролик на «стене» с видеоработами из коллекции музея и посоревноваться с современными художниками!</p><p>Сейчас этот раздел находится в разработке…</p>

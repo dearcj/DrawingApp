@@ -1653,18 +1653,22 @@ div.at-the-backyard {
 }
 
 .generic-art {
-
+	float: left;
+	width: 55%;
+	margin-top: 5%;
 }
 
 span.generic-desc {
-	text-align: left;
+	color: white;
+	display: block;
+	clear: both;
+	padding-top: 15px;
+	text-align: center;
 }
 
 .generic-img {
-	float: left;
-	width: 55%;
+	width: 100%;
 	border-radius: 15px;
-	margin-top: 6%;
 }
 
 .generic-text {
