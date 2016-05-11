@@ -682,7 +682,7 @@ jQuery(document).ready(function($) {
 			} else {
 				$('#museum-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
 			}
-			$('.painting-info').delay(500).animate({'top': -190 + 'px'}, 500);
+			$('.painting-info').delay(500).animate({'top': -200 + 'px'}, 500);
 		}
 
 		$('#museum-wrapper').each(function(){
@@ -1178,30 +1178,20 @@ jQuery(document).ready(function($) {
 					return width/height;
 				},
 				paintingRatio = paintingRatio(750, 530),
-				darkSideMuseum = $('.dark-side.museum'),
 				paintingInfo = $('.painting-info'),
 				socialButtons = $('.social-buttons');
 
 		if (width > 700) {
-			paintingInfo.css('width', 750/100 * 65 + 'px');
 			var paintingInfoWidth = parseInt(paintingInfo.css('width'));
-			paintingInfo.find('span.title').css('font-size', paintingInfoWidth/2.25 + '%');
-			paintingInfo.find('span.author').css('font-size', paintingInfoWidth/2.75 + '%');
+			paintingInfo.find('span.title').css('font-size', paintingInfoWidth/2.63 + '%');
+			paintingInfo.find('span.author').css('font-size', paintingInfoWidth/2.94 + '%');
 			paintingInfo.find('span.materials').css('font-size', paintingInfoWidth/3.25 + '%');
-			socialButtons.find('span').css('font-size', paintingInfoWidth/3.75 + '%');
+			socialButtons.find('span').css('font-size', paintingInfoWidth/3.57 + '%');
 		} else {
 			paintingInfo.css('width', 300 + 'px');
 			paintingInfo.find('span').css('font-size', 125 + '%');
 			socialButtons.find('span').css({'font-size': 100 + '%', 'padding-bottom': 7 + '%'});
 		}
-
-		paintingInfo.find('span').css('padding-bottom', paintingInfo.height()/36.27 + 'px');
-
-		darkSideMuseum.css('width', 750 + 'px');
-
-		darkSideMuseum.css({height: 530/15 + 'px', top: -530/15 + 'px'});
-
-		var darkSideMuseumHeight = parseInt(darkSideMuseum.css('height'));
 	}
 
 
