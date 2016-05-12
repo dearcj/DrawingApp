@@ -63,6 +63,14 @@ jQuery(document).ready(function($) {
 		ZSound.Play('interact');
 	});
 
+	$('ul.surfaces').mouseover(function() {
+		if (!$(this).hasClass('interact')) {
+			$(this).addClass('interact');
+		} else {
+			$(this).removeClass('interact');
+		}
+	});
+
 	$('ul.surfaces li').on(window.eventType, function(event) {
 		ZSound.Play('surface');
 	});
