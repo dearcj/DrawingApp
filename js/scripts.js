@@ -28,7 +28,7 @@ ZSound.soundLoadedFunction = function() {
 }
 
 jQuery(document).ready(function($) {
-	$('#wrapper').animate({'opacity': 1}, 5000);
+	$('#wrapper').animate({'opacity': 1}, 4000);
 
 	$('#mute').on(window.eventType, function(event) {
 		if ($(this).hasClass('on')) {
