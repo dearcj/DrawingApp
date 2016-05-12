@@ -807,6 +807,7 @@ jQuery(document).ready(function($) {
 
 	$('.go-to-publication').on(window.eventType, function(event) {
 		ZSound.Play('stage');
+		window.mainCanvasObject.currentBrush = null;
 		window.currentHash = history.state;
 		document.getElementById('painting-img').src = window.savedImage;
 		window.imgs = getImagesByTags(window.mainCanvasObject.tags);
@@ -1112,6 +1113,8 @@ jQuery(document).ready(function($) {
 	});
 
 	$('li.send-to-museum').click(function(event) {
+		window.mainCanvasObject.currentBrush = null;
+
 		window.savedImage = window.mainCanvasObject.saveImage();
 		document.getElementById('painting-img').src = window.savedImage;
 	});
