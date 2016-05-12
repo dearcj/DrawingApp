@@ -1126,7 +1126,7 @@ jQuery(document).ready(function($) {
 			});
 
 			document.getElementById('post-fb').addEventListener('click', function() {
-				fbpost('asdasd', res.image, res.file);
+				fbpost(message, res.image, res.file, link);
 			});
 
 			window.currentImgPic = res.file;
@@ -1146,6 +1146,8 @@ jQuery(document).ready(function($) {
 			$('#museum-wrapper > p').css('opacity', 0);
 		}
 	}
+
+	//
 
 	$('li.add-filter').click(function(event) {
 		event.preventDefault();
