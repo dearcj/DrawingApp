@@ -249,6 +249,10 @@ jQuery(document).ready(function($) {
 		window.mainCanvasObject.resetCanvas();
 	});
 
+	$('ul.tools li').on(window.eventType, function(event) {
+		$('#main-canvas').addClass('no-cursor');
+	});
+
 	$('ul.tools li#btn-scotch').on(window.eventType, function(event) {
 		ZSound.Play('click');
 		$('ul.tools li').removeClass('active');
