@@ -237,8 +237,6 @@ jQuery(document).ready(function($) {
 		$('.podval_new').css('top', 660 + 'px');
 	}
 
-	$('ul.tools > li#btn-orange').addClass('active orange-active');
-
 	$('#undo').on(window.eventType, function(event) {
 		event.stopImmediatePropagation();
 		window.mainCanvasObject.makeUndo();
@@ -560,6 +558,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function paintingAnimation() {
+		$('#main-canvas').removeClass('no-cursor');
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': 150 + 'px'}, 500);
 		$('#surface-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
