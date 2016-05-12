@@ -3,7 +3,7 @@ window.imgPath = './wp-content/themes/mmoma/imgs/';
 window.basePath = './wp-content/themes/mmoma/';
 
 window.selectedSurface = 1;
-//
+
 ZSound.Init([
 	{id: 'scotch', src: "scotch.ogg"},
 	{id: 'click', src: "click.ogg"},
