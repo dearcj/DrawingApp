@@ -2236,6 +2236,12 @@ ul.logotypes li a {
 	}
 }
 
+@media only screen and (max-width: 1375px) {
+	.museum-button.at-the-backyard {
+		top: 115px !important;
+	}
+}
+
 @media only screen and (max-width: 1250px) {
 	.generic-art {
 		margin-top: 18%;
