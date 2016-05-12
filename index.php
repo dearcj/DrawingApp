@@ -123,18 +123,18 @@
 
           <div id="art"></div>
 
-          <ul id="buttons">
+          <ul id="buttons interact">
             <div class="left-block">
-              <li id="button-1" class="hor interact"></li>
-              <li id="button-2" class="hor clear interact"></li>
+              <li id="button-1" class="hor"></li>
+              <li id="button-2" class="hor clear"></li>
             </div>
             <div class="middle-block">
-              <li id="button-3" class="vert mintop go-to-surface interact"><a href="#"></a></li>
-              <li id="button-4" class="vert mintop go-to-museum interact"><a href="#"></a></li>
+              <li id="button-3" class="vert mintop go-to-surface"><a href="#"></a></li>
+              <li id="button-4" class="vert mintop go-to-museum"><a href="#"></a></li>
             </div>
             <div class="right-block">
-              <li id="button-5" class="hor mintop interact"></li>
-              <li id="button-6" class="hor mintop interact"></li>
+              <li id="button-5" class="hor mintop"></li>
+              <li id="button-6" class="hor mintop"></li>
             </div>
           </ul>
 
@@ -245,14 +245,14 @@
 
           <div class="dark-side surface"></div>
 
-          <ul class="surfaces">
-            <li class="wood interact"><p>Дерево</p></li>
-            <li class="board interact"><p>Доска</p></li>
-            <li class="canvas interact"><p>Холст</p></li>
-            <li class="brick interact"><p>Кирпич</p></li>
-            <li class="cardboard interact"><p>Картон</p></li>
-            <li class="wall interact"><p>Обои</p></li>
-            <li class="metal interact"><p>Металл</p></li>
+          <ul class="surfaces interact">
+            <li class="wood"><p>Дерево</p></li>
+            <li class="board"><p>Доска</p></li>
+            <li class="canvas"><p>Холст</p></li>
+            <li class="brick"><p>Кирпич</p></li>
+            <li class="cardboard"><p>Картон</p></li>
+            <li class="wall"><p>Обои</p></li>
+            <li class="metal"><p>Металл</p></li>
           </ul>
 
           <div id="surface-canvas">
@@ -298,31 +298,31 @@
           <div class="main-canvas" id="tools-canvas">
           </div>
 
-          <ul class="tools">
-            <li id="scotch" class="interact"><p>Скотч</p>
+          <ul class="tools interact">
+            <li id="scotch"><p>Скотч</p>
               <ul>
                 <li id="btn-scotch"></li>
                 <li id="btn-scotch-1"></li>
                 <li id="btn-scotch-2"></li>
               </ul>
             </li>
-            <li id="coal" class="interact"><p>Мел</p>
+            <li id="coal"><p>Мел</p>
               <ul>
                 <li id="btn-coal-1"></li>
                 <li id="btn-coal-2"></li>
               </ul>
             </li>
-            <li id="btn-grass" class="interact"><p>Трава</p></li>
-            <li id="btn-orange" class="interact"><p>Апельсин</p></li>
-            <li id="denim" class="interact"><p>Джинсы</p>
+            <li id="btn-grass"><p>Трава</p></li>
+            <li id="btn-orange"><p>Апельсин</p></li>
+            <li id="denim"><p>Джинсы</p>
               <ul>
                 <li id="btn-denim-1"></li>
                 <li id="btn-denim-2"></li>
                 <li id="btn-denim-3"></li>
               </ul>
             </li>
-            <li id="btn-catchup" class="interact"><p>Кетчуп</p></li>
-            <li id="needle" class="interact"><p>Нитка</p>
+            <li id="btn-catchup"><p>Кетчуп</p></li>
+            <li id="needle"><p>Нитка</p>
               <ul>
                 <li id="btn-needle"></li>
                 <li id="btn-thread-1" class="needle-color"></li>
@@ -334,7 +334,7 @@
                 <li id="btn-thread-7" class="needle-color"></li>
               </ul>
             </li>
-            <li id="btn-pistol" class="interact"><p>Пистолет</p></li>
+            <li id="btn-pistol"><p>Пистолет</p></li>
           </ul>
           <ul class="ux-buttons">
             <li class="mute on interact"></li>

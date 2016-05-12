@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
 	});
 
 	$('.interact').mouseover(function() {
-		setTimeout("ZSound.Play('interact');", 500);
+		ZSound.Play('interact');
 	});
 
 	$('ul.surfaces li').on(window.eventType, function(event) {
