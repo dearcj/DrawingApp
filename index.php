@@ -245,7 +245,7 @@
 
           <div class="dark-side surface"></div>
 
-          <ul class="surfaces interact">
+          <ul class="surfaces">
             <li class="wood"><p>Дерево</p></li>
             <li class="board"><p>Доска</p></li>
             <li class="canvas"><p>Холст</p></li>
