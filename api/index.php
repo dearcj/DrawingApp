@@ -13,8 +13,8 @@ class mMomaAPI extends Rest {
 		
 		$this->_dbhost = "localhost";
 		$this->_dbname = "onlinegame";
-		$this->_dbuser = "onlinegame";
-		$this->_dbpass = "onl23G85";
+		$this->_dbuser = "root";
+		$this->_dbpass = "jizn1945";
 		
 		$this->_databaseConnect();
 	}

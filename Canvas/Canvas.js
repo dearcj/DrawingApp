@@ -199,8 +199,6 @@ Canvas.prototype.redraw = function (ctx){
 	}
 };
 
-//
-
 Canvas.prototype.sendPic = function(cbbbb, img) {
 	data = {
 		api_method: 'applyimagetogallery',
