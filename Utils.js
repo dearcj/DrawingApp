@@ -341,17 +341,17 @@ function applyFilter(canvId, imgData, filterNumber) {
 
   if (filterNumber == 10) {
     var src = relPath + 'filters/bubble1.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*350, Math.random()*400);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*380, Math.random()*300);
     window.filterTag = 'баббл';
   }
   if (filterNumber == 11) {
     var src = relPath + 'filters/bubble2.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*350, Math.random()*400);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*380, Math.random()*300);
     window.filterTag = 'баббл';
   }
   if (filterNumber == 12) {
     var src = relPath + 'filters/bubble3.png';
-    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*350, Math.random()*400);
+    cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*380, Math.random()*300);
     window.filterTag = 'баббл';
   }
   var dw = 1;
