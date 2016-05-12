@@ -114,7 +114,7 @@
   </div>
 
   <div class="header">
-    <a href="http://play.mmoma.ru/onlinegame"><img src="./wp-content/themes/mmoma/img/logo_mmoma.jpg"></a>
+    <a href="#"><img src="./wp-content/themes/mmoma/img/logo_mmoma.jpg"></a>
   </div>
 
   <div id="wrapper">
