@@ -817,7 +817,7 @@ form.sending-form input {
     display: block;
     border-radius: 2px;
     padding-left: 10px;
-    color: #888;
+    color: #333;
 }
 
 form.sending-form input:focus {
