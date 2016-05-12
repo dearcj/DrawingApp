@@ -29,7 +29,7 @@ function getLastImage(iid, cb) {
 
   $.ajax({
     type: "GET",
-    url: "http://play.mmoma.ru/onlinegame/wp-content/themes/mmoma/api/index.php",
+    url: "http://188.227.16.35/wp-content/themes/mmoma/api/index.php",
     data: data,
     success: function callback(res) {
       cb(res);
