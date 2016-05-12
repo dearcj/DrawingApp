@@ -2116,22 +2116,22 @@ ul.logotypes li a {
 	height: 45px;
 }
 
-.social-buttons ul li.vk {
+.social-buttons ul li#post-vk {
 	background: url(../img/vk.png) no-repeat;
 	background-size: 100%;
 	float: left;
 }
 
-.social-buttons ul li.fb {
+.social-buttons ul li#post-fb {
 	background: url(../img/fb.png) no-repeat;
 	background-size: 100%;
 	float: right;
 }
 
-.social-buttons ul li.vk:hover,
-.social-buttons ul li.vk:focus,
-.social-buttons ul li.fb:hover,
-.social-buttons ul li.vk:focus {
+.social-buttons ul li#post-vk:hover,
+.social-buttons ul li#post-vk:focus,
+.social-buttons ul li#post-fb:hover,
+.social-buttons ul li#post-fb:focus {
 	cursor: pointer;
 }
 
