@@ -27,10 +27,9 @@ ZSound.soundLoadedFunction = function() {
 	ZSound.PlayMusic('street');
 }
 
+$('#wrapper').animate({'opacity': 1}, 6000);
+
 jQuery(document).ready(function($) {
-	$('#wrapper').delay(500).animate({'opacity': 1}, 6000);
-
-
 	$('#mute').on(window.eventType, function(event) {
 		if ($(this).hasClass('on')) {
 			$(this).addClass('off').removeClass('on');
