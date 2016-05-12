@@ -2083,9 +2083,10 @@ ul.logotypes li a {
 .social-buttons {
 	opacity: 0;
 	width: 100px;
-    position: relative;
-	top: -60%;
-    float: right;
+    position: absolute;
+	top: 22%;
+	right: 0;
+	margin-right: -450px;
 }
 
 .fake-hov {
