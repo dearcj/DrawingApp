@@ -12,7 +12,7 @@ class mMomaAPI extends Rest {
 		parent::__construct();
 		
 		$this->_dbhost = "localhost";
-		$this->_dbname = "onlinegame";
+		$this->_dbname = "mmoma";
 		$this->_dbuser = "root";
 		$this->_dbpass = "jizn1945";
 		
