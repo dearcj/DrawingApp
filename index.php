@@ -114,7 +114,7 @@
   </div>
 
   <div class="header">
-    <a href="/"><img src="./wp-content/themes/mmoma/img/logo_mmoma.jpg"></a>
+    <a href="http://play.mmoma.ru/onlinegame"><img src="./wp-content/themes/mmoma/img/logo_mmoma.jpg"></a>
   </div>
 
   <div id="wrapper">
@@ -123,7 +123,7 @@
 
           <div id="art"></div>
 
-          <ul id="buttons" class="interact">
+          <ul id="buttons">
             <div class="left-block">
               <li id="button-1" class="hor"></li>
               <li id="button-2" class="hor clear"></li>
@@ -155,13 +155,13 @@
           </ul>
 
           <ul class="ux-buttons home">
-            <li id="mute" class="on interact"></li>
+            <li id="mute" class="on"></li>
             <li class="fullscreen off"></li>
           </ul>
         </div>
 
         <div id="installation-wrapper" class="hidden screens generic">
-          <div class="generic-button go-to-home at-the-backyard interact"></div>
+          <div class="generic-button go-to-home at-the-backyard"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/installation.jpg" class="generic-img">
             <span class="generic-desc">Антон Литвин. Осторожно, дети. 2000</span>
@@ -171,17 +171,17 @@
             <p>Пробовал ли ты искать произведения искусства среди самых обычных, повседневных, предметов – на природе, в городе или же в своей собственной комнате?</p><p>Эта игра поможет тебе взглянуть на привычные вещи по-новому, глазами художника. Ведь если хорошенько порыться в ящике с игрушками, а затем немного пофантазировать, можно собрать целую инсталляцию!</p><p>Сейчас этот раздел находится в разработке…</p>
           </div>
           <ul class="generic-nav">
-            <li class="media-art generic-prev interact"></li>
-            <li class="performance generic-next interact"></li>
+            <li class="media-art generic-prev"></li>
+            <li class="performance generic-next"></li>
           </ul>
           <ul class="ux-buttons">
-            <li class="mute on interact"></li>
+            <li class="mute on"></li>
             <li class="fullscreen off"></li>
           </ul>
         </div>
 
         <div id="performance-wrapper" class="hidden screens generic">
-          <div class="generic-button go-to-home at-the-backyard interact"></div>
+          <div class="generic-button go-to-home at-the-backyard"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/performance.jpg" class="generic-img">
             <span class="generic-desc">Андрей Бартенев. Инопланетяне. 2004</span>
@@ -191,17 +191,17 @@
             <p>Как ты думаешь, для чего современному художнику может понадобиться необычный костюм – например, светящийся «комбинезон» инопланетянина? Можно ли в нём танцевать, или он предназначен для того, чтобы пугать зрителей в темноте?</p><p>В этой игре ты сможешь примерить на себя самые разные роли и образы, и даже более того – сочинить и исполнить собственный перформанс!</p><p>Сейчас этот раздел находится в разработке…</p>
           </div>
           <ul class="generic-nav">
-            <li class="installation generic-prev interact"></li>
-            <li class="interpretation generic-next interact"></li>
+            <li class="installation generic-prev"></li>
+            <li class="interpretation generic-next"></li>
           </ul>
           <ul class="ux-buttons">
-            <li class="mute on interact"></li>
+            <li class="mute on"></li>
             <li class="fullscreen off"></li>
           </ul>
         </div>
 
         <div id="interpretation-wrapper" class="hidden screens generic">
-          <div class="generic-button go-to-home at-the-backyard interact"></div>
+          <div class="generic-button go-to-home at-the-backyard"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/interpretation.jpg" class="generic-img">
             <span class="generic-desc">Ринат Волигамси. На прогулке. Из проекта «Снег». 2013</span>
@@ -211,17 +211,17 @@
             <p>Можешь ли ты описать, что происходит на этой картине? На первый взгляд всё просто – семья на прогулке кормит голубей. Но присмотрись повнимательнее, и вместо голубей на снегу ты увидишь маленьких динозавриков! Чем же объяснить такую странную подмену?</p><p>Эта игра научит тебя расшифровывать загадочные послания художников, а также придумывать свои истории!</p><p>Сейчас этот раздел находится в разработке…</p>
           </div>
           <ul class="generic-nav">
-            <li class="performance generic-prev interact"></li>
-            <li class="media-art generic-next interact"></li>
+            <li class="performance generic-prev"></li>
+            <li class="media-art generic-next"></li>
           </ul>
           <ul class="ux-buttons">
-            <li class="mute on interact"></li>
+            <li class="mute on"></li>
             <li class="fullscreen off"></li>
           </ul>
         </div>
 
         <div id="mediaart-wrapper" class="hidden screens generic">
-          <div class="generic-button go-to-home at-the-backyard interact"></div>
+          <div class="generic-button go-to-home at-the-backyard"></div>
           <div class="generic-art">
             <img src="./wp-content/themes/mmoma/img/media.gif" class="generic-img">
             <span class="generic-desc">Александра Митлянская. Поговори с ней. 2005</span>
@@ -231,17 +231,17 @@
             <p>Знаешь ли ты, что некоторые из твоих фотографий и видеороликов, заснятых на самый обыкновенный телефон, могут оказаться настоящими произведениями цифрового искусства? Что бы это ни было – портрет твоего лучшего друга, удачный снимок домашнего животного, городской или дачный пейзаж – важно выбрать интересный ракурс!</p><p>В этой игре ты сможешь опубликовать свой ролик на «стене» с видеоработами из коллекции музея и посоревноваться с современными художниками!</p><p>Сейчас этот раздел находится в разработке…</p>
           </div>
           <ul class="generic-nav">
-            <li class="interpretation generic-prev interact"></li>
-            <li class="installation generic-next interact"></li>
+            <li class="interpretation generic-prev"></li>
+            <li class="installation generic-next"></li>
           </ul>
           <ul class="ux-buttons">
-            <li class="mute on interact"></li>
+            <li class="mute on"></li>
             <li class="fullscreen off"></li>
           </ul>
         </div>
 
         <div id="surface-wrapper" class="hidden screens inside">
-          <div class="surface-button go-to-home at-the-backyard interact"></div>
+          <div class="surface-button go-to-home at-the-backyard"></div>
 
           <div class="dark-side surface"></div>
 
@@ -264,20 +264,20 @@
           </div>
 
           <ul class="tools-buttons surface-tb">
-            <li class="hidden go-to-tools interact" id="go-to-tools"><a href="#"></a></li>
+            <li class="hidden go-to-tools" id="go-to-tools"><a href="#"></a></li>
           </ul>
 
           <ul class="ux-buttons">
-            <li class="mute on interact"></li>
+            <li class="mute on"></li>
             <li class="fullscreen off"></li>
           </ul>
         </div>
 
         <div id="painting-wrapper" class="screens inside">
           <ul class="tools-buttons tools-tb">
-            <li class="back-to-surface go-to-surface interact"><a href="#"></a></li>
-            <li class="send-to-museum go-to-publication interact"><a href="#"></a></li>
-            <li class="add-filter go-to-filters interact"><a href="#"></a></li>
+            <li class="back-to-surface go-to-surface"><a href="#"></a></li>
+            <li class="send-to-museum go-to-publication"><a href="#"></a></li>
+            <li class="add-filter go-to-filters"><a href="#"></a></li>
           </ul>
 
           <div class="dark-side tools"></div>
@@ -289,8 +289,8 @@
           </ul>
           <p class="hidden">Выбери, чем ты хочешь рисовать!</p>
           <ul id="undo-refresh">
-            <li id="undo" class="interact"></li>
-            <li id="refresh" class="interact"></li>
+            <li id="undo"></li>
+            <li id="refresh"></li>
           </ul>
           <canvas style='pointer-events: none;' id="back-canvas" width="750" height="530"></canvas>
           <canvas id="main-canvas" width="750" height="530"></canvas>
@@ -298,7 +298,7 @@
           <div class="main-canvas" id="tools-canvas">
           </div>
 
-          <ul class="tools interact">
+          <ul class="tools">
             <li id="scotch"><p>Скотч</p>
               <ul>
                 <li id="btn-scotch"></li>
@@ -306,7 +306,7 @@
                 <li id="btn-scotch-2"></li>
               </ul>
             </li>
-            <li id="coal"><p>Мел</p>
+            <li id="coal"><p>Мел/уголь</p>
               <ul>
                 <li id="btn-coal-1"></li>
                 <li id="btn-coal-2"></li>
@@ -322,7 +322,7 @@
               </ul>
             </li>
             <li id="btn-catchup"><p>Кетчуп</p></li>
-            <li id="needle"><p>Нитка</p>
+            <li id="needle"><p>Нитки</p>
               <ul>
                 <li id="btn-needle"></li>
                 <li id="btn-thread-1" class="needle-color"></li>
@@ -334,16 +334,16 @@
                 <li id="btn-thread-7" class="needle-color"></li>
               </ul>
             </li>
-            <li id="btn-pistol"><p>Пистолет</p></li>
+            <li id="btn-pistol"><p>Пистолетик</p></li>
           </ul>
           <ul class="ux-buttons">
-            <li class="mute on interact"></li>
+            <li class="mute on"></li>
             <li class="fullscreen off"></li>
           </ul>
         </div>
 
         <div id="filters-wrapper" class="screens inside">
-          <div id="wand" class="interact">
+          <div id="wand">
             <ul id="helpers">
                 <li id="helper-9" class="interact"><span>В таком деле как творчество не обходится без волшебства – это подтвердит любой художник. Главное, вовремя остановиться!</span></li>
             </ul>
@@ -355,30 +355,30 @@
             <p class="hidden">Добавь немного волшебства!</p>
 
             <ul class="tools-buttons filters-tb">
-              <li class="go-to-tools back-to-tools interact"><a href="#"></a></li>
-              <li class="its-done go-to-publication interact"><a href="#"></a></li>
+              <li class="go-to-tools back-to-tools"><a href="#"></a></li>
+              <li class="its-done go-to-publication"><a href="#"></a></li>
             </ul>
 
             <div class="dark-side filters"></div>
           </div>
 
           <ul class="ux-buttons">
-            <li class="mute on interact"></li>
+            <li class="mute on"></li>
             <li class="fullscreen off"></li>
           </ul>
         </div>
 
         <div id="publication-wrapper" class="screens inside">
           <ul class="paintings left-side">
-            <a href="#" class="group1"><li class="interact"><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
-            <a href="#" class="group1"><li class="interact"><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
-            <a href="#" class="group1"><li class="interact"><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
           </ul>
 
           <ul class="paintings right-side">
-            <a href="#" class="group1"><li class="interact"><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
-            <a href="#" class="group1"><li class="interact"><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
-            <a href="#" class="group1"><li class="interact"><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
+            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span></div></li></a>
           </ul>
 
           <div id="main-image"><img id="painting-img"><p class="hidden">Мы в виртуальном «фонде живописи». Здесь твоя картина встречает соседей – работы самых разных художников из музейной коллекции. Может быть, они чем-то похожи на твою? Осмотрись хорошенько, не стесняйся!</p></div>
@@ -387,17 +387,17 @@
 
           <form class="sending-form">
             <div class="work-author">
-              <div class="item-field"><p class="input-label">Автор:</p><input id='in-author' type="text" placeholder="Укажите ваше имя"></div>
-              <div class="item-field"><p class="input-label">Название картины:</p><input id='in-label' type="text" placeholder="Напишите название работы"></div>
+              <div class="item-field"><p class="input-label">Автор:</p><input id='in-author' type="text" placeholder="Укажи свое имя"></div>
+              <div class="item-field"><p class="input-label">Название картины:</p><input id='in-label' type="text" placeholder="Напиши название работы"></div>
             </div>
-            <button name="send" value="Отправить картину в мой музей" type="submit" class="save-and-send go-to-museum interact">Отправить<br>картину в<br>мой музей</button>
+            <button name="send" value="Отправить картину в мой музей" type="submit" class="save-and-send go-to-museum">Отправить<br>картину в<br>мой музей</button>
             <ul id="helpers">
               <li id="helper-10" class="interact"><span>У каждого произведения искусства есть автор и название. Подумай, как ты назовёшь свою картину? Кстати, название «Без названия» тоже подойдет – оно оставляет простор для фантазии, поэтому современные художники его очень любят.</span></li>
             </ul>
           </form>
 
           <ul class="ux-buttons">
-            <li class="mute on interact"></li>
+            <li class="mute on"></li>
             <li class="fullscreen off"></li>
           </ul>
         </div>
@@ -411,19 +411,19 @@
             <li id="helper-15" class="interact"><span class="up"><p>Скульптуры и трехмерные объекты часто размещают на специальных подставках разной высоты. Они называются «подиумами» и предназначены для того, чтобы было удобно всё разглядывать.</p></span></li>
           </ul>
 
-          <div class="museum-button go-to-home at-the-backyard interact"><a href="#"></a></div>
+          <div class="museum-button go-to-home at-the-backyard"><a href="#"></a></div>
 
           <img id="your-painting" class="museum-painting" src="">
 
           <p class="first-exp">Здесь может появиться твоя новая картина</p>
 
-          <div class="museum-button new-painting go-to-surface interact"></div>
+          <div class="museum-button new-painting go-to-surface"></div>
 
           <div class="social-buttons">
             <span>Рассказать друзьям</span>
               <ul>
-                <li id='post-vk' class="vk interact"></li>
-                <li id='post-fb' class="fb interact"></li>
+                <li id="post-vk"></li>
+                <li id="post-fb"></li>
               </ul>
           </div>
 
@@ -436,7 +436,7 @@
           </div>
 
           <ul class="ux-buttons">
-            <li class="mute on interact"></li>
+            <li class="mute on"></li>
             <li class="fullscreen off"></li>
           </ul>
         </div>
@@ -445,7 +445,6 @@
   <div class="podval_new">
     <ul class="logotypes">
       <li>
-        <span>Официальный партнёр:</span>
         <a href="http://museum.fondpotanin.ru/ " target="_blank"><img src="./wp-content/themes/mmoma/img/potanin.png" width="70" height="70" border="0"></a>
       </li>
       <li>
@@ -468,5 +467,48 @@
     </div>
   </div>
   <?php wp_footer(); ?>
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-77661219-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <!-- /Google Analytics -->
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter37305165 = new Ya.Metrika({
+                      id:37305165,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true,
+                      webvisor:true
+                  });
+              } catch(e) { }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/37305165" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 </body>
 </html>
