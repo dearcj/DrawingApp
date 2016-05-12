@@ -1121,6 +1121,7 @@ jQuery(document).ready(function($) {
 		var imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
 			var message  = res.name + ': «' + res.description + "» Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую #PLAYMMOMA, используй необычные инструменты и создай свою картину! "  + " http://play.mmoma.ru/";
+			var link = "http://play.mmoma.ru/";
 			document.getElementById('post-vk').addEventListener('click', function() {
 				vkpost(message, res.image, res.file);
 			});
