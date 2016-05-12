@@ -2236,9 +2236,35 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-width: 1375px) {
+@media only screen and (max-width: 1450px) {
 	.museum-button.at-the-backyard {
 		top: 115px !important;
+	}
+
+	#museum-wrapper {
+		height: 600px;
+	}
+
+	.museum-painting {
+		width: 400px;
+		height: 283px;
+	}
+}
+
+@media only screen and (max-width: 1275px) {
+	#museum-wrapper {
+		height: 550px;
+	}
+}
+
+@media only screen and (max-width: 1150px) {
+	#museum-wrapper {
+		height: 500px;
+	}
+
+	.museum-painting {
+		width: 325px;
+		height: 230px;
 	}
 }
 
