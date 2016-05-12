@@ -123,7 +123,7 @@
 
           <div id="art"></div>
 
-          <ul id="buttons interact">
+          <ul id="buttons" class="interact">
             <div class="left-block">
               <li id="button-1" class="hor"></li>
               <li id="button-2" class="hor clear"></li>
