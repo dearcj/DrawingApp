@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('interact');
 	});
 
-	$('ul.surfaces').mouseover(function() {
+/*	$('ul.surfaces').mouseover(function() {
 		if (!$(this).hasClass('interact')) {
 			$(this).addClass('interact');
 		} else {
@@ -71,7 +71,7 @@ jQuery(document).ready(function($) {
 			ZSound.Play('interact');
 
 		}
-	});
+	});*/
 
 	$('ul.surfaces li').on(window.eventType, function(event) {
 		ZSound.Play('surface');
@@ -410,7 +410,7 @@ jQuery(document).ready(function($) {
 			leftImgAuthor = imgs[i].author;
 			leftImgMats = imgs[i].materials;
 
-			if (imgs.length > 1) {
+			if (imgs.length > 3) {
 				rightAbsPath = relPath + imgs[j-i].pic;
 				rightThumbPath = relPath + imgs[j-i].thumb;
 				rightImgTitle = imgs[j-i].title;
