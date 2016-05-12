@@ -68,6 +68,8 @@ jQuery(document).ready(function($) {
 			$(this).addClass('interact');
 		} else {
 			$(this).removeClass('interact');
+			ZSound.Play('interact');
+
 		}
 	});
 
