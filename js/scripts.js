@@ -1,12 +1,6 @@
-if (window.location.href.indexOf('onlinegame') >= 0) {
-	window.relPath = './wp-content/themes/mmoma/Assets/';
-	window.imgPath = './wp-content/themes/mmoma/imgs/';
-	window.basePath = './wp-content/themes/mmoma/';
-} else {
-	window.relPath = './wp-content/themes/mmoma/Assets/';
-	window.imgPath = './wp-content/themes/mmoma/imgs/';
-	window.basePath = './wp-content/themes/mmoma/';
-}
+window.relPath = './wp-content/themes/mmoma/Assets/';
+window.imgPath = './wp-content/themes/mmoma/imgs/';
+window.basePath = './wp-content/themes/mmoma/';
 
 window.selectedSurface = 1;
 //
@@ -1114,7 +1108,6 @@ jQuery(document).ready(function($) {
 		window.imageId = localStorage.getItem('imageId');
 		getLastImage(imageId, function (res) {
 			var message  = res.name + ': ' + res.description + " Я экспериментирую вместе с Московским музеем современного искусства. Заходи в мастерскую PLAYMMOMA, используй необычные инструменты и создай свою картину! "  + " http://play.mmoma.ru/";
-			var link = "http://play.mmoma.ru/";
 			document.getElementById('post-vk').addEventListener('click', function() {
 				vkpost(message, res.image, res.file);
 			});
