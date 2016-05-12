@@ -237,7 +237,7 @@ jQuery(document).ready(function($) {
 	$('.mute').css('opacity', 0);
 	$('#filters-canvas').css('top', -575 + 'px');
 	$('.museum-painting').css('top', -450 + 'px');
-	$('.social-buttons').css('right', -6 + '%');
+	$('.social-buttons').css('right', -100 + 'px');
 
 	//
 
@@ -723,7 +723,7 @@ jQuery(document).ready(function($) {
 			$('#museum-wrapper > p').css({width: 300 + 'px', 'font-size': 200 + '%', 'padding': '20px 20px 25px', 'border-radius': 20 + 'px', top: -285 + 'px'});
 			$('.museum-painting').delay(1000).animate({top: -55 + 'px'}, 1000);
 			$('.painting-info').delay(1000).animate({top: -150 + 'px'}, 1500);
-			$('.social-buttons').delay(2500).animate({right: 28 + '%'}, 500);
+			$('.social-buttons').delay(2500).animate({right: 500 + 'px'}, 500);
 		}
 
 		$('#museum-wrapper').each(function(){
