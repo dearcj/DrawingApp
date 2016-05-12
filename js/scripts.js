@@ -1127,7 +1127,7 @@ jQuery(document).ready(function($) {
 			});
 
 			document.getElementById('post-fb').addEventListener('click', function() {
-				fbpost(message, res.image, res.file, link);
+				fbpost(message, res.image, res.file);
 			});
 
 			window.currentImgPic = res.file;
