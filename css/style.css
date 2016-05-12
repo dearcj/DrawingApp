@@ -18,6 +18,7 @@ body {
 }
 
 body #wrapper {
+	opacity: 0;
 	width: 100%;
 	font-family: 'DINRoundPro-Bold', sans-serif;
 }
