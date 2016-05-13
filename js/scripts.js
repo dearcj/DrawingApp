@@ -1247,6 +1247,8 @@ jQuery(document).ready(function($) {
 			paintingInfo.find('span').css('font-size', 125 + '%');
 			socialButtons.find('span').css({'font-size': 100 + '%', 'padding-bottom': 7 + '%'});
 		}
+		
+		hidingHelpers('.first-exp');
 	}
 
 
