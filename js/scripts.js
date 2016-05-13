@@ -485,7 +485,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function openPage(pageName) {
-		event.preventDefault();
+		//event.preventDefault();
 
 		if (hash.indexOf(pageName) > 0) {
 			var stateObj = { hash: hashBeforeReload.hash };
