@@ -446,11 +446,11 @@
   <div class="podval_new">
     <ul class="logotypes">
       <li>
-        <a href="http://museum.fondpotanin.ru/ " target="_blank"><img src="./wp-content/themes/mmoma/img/potanin.png" width="70" height="70" border="0"></a>
+        <a target="_blank"><img src="./wp-content/themes/mmoma/img/potanin.png" width="70" height="70" border="0"></a>
       </li>
       <li>
         <span>Разработано:</span>
-        <a href="http://bobaka.ru/" target="_blank"><img src="./wp-content/themes/mmoma/img/bobaka-logo.jpg" width="140" height="26" border="0"></a>
+        <a target="_blank"><img src="./wp-content/themes/mmoma/img/bobaka-logo.jpg" width="140" height="26" border="0"></a>
       </li>
     </ul>
 
