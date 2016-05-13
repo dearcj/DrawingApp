@@ -2078,7 +2078,8 @@ ul.logotypes li a {
 }
 
 .painting-info span.materials {
-	font-size: 14px;
+	font-size: 113%;
+	padding-top: 5px;
 }
 
 .social-buttons {
