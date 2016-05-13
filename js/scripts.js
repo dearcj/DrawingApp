@@ -1248,7 +1248,7 @@ jQuery(document).ready(function($) {
 			socialButtons.find('span').css({'font-size': 100 + '%', 'padding-bottom': 7 + '%'});
 		}
 
-		hidingHelpers('p.first-exp');
+		hidingHelpers('#museum-wrapper p');
 	}
 
 
