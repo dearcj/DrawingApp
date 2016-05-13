@@ -715,7 +715,7 @@ jQuery(document).ready(function($) {
 			$('.painting-info').css('width', 300 + 'px').delay(500).animate({'top': -155 + 'px'}, 1000);
 		} else {
 			$('#museum-wrapper').css('display', 'block').animate({'opacity': 1}, 1000).css('z-index', '200');
-			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': -195 + 'px'}, 1000);
+			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': -120 + 'px'}, 1000);
 			$('#museum-wrapper > p').css({width: 300 + 'px', 'font-size': 200 + '%', 'padding': '20px 20px 25px', 'border-radius': 20 + 'px', top: -285 + 'px'});
 			$('.museum-painting').delay(1000).animate({top: -55 + 'px'}, 1000);
 			$('.painting-info').delay(1000).animate({top: -150 + 'px'}, 1500);
@@ -1137,12 +1137,18 @@ jQuery(document).ready(function($) {
 		});
 
 		if (imageId === null) {
+			$('.museum-painting').css('display', 'none');
+			$('.first-exp-canvas').css('display', 'block');
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
-			$('#museum-wrapper > p').delay(500).animate({opacity: 1}, 1000);
+			$('.social-buttons').css('display', 'none');
+			$('#museum-wrapper > p').css('z-index', 250).delay(500).animate({opacity: 1}, 1000);
 		} else {
+			$('.museum-painting').css('display', 'block');
+			$('.first-exp-canvas').css('display', 'none');
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');
+			$('.social-buttons').css('display', 'block');
 			$('#museum-wrapper > p').css('opacity', 0);
 		}
 	}
