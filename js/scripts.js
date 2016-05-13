@@ -569,6 +569,7 @@ jQuery(document).ready(function($) {
 
 	function paintingAnimation() {
 		$('#main-canvas').removeClass('no-cursor');
+		$('.its-done').css('top', 150 + 'px');
 		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
 		$('.go-to-tools').animate({'top': 150 + 'px'}, 500);
 		$('#surface-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
