@@ -1011,7 +1011,7 @@ jQuery(document).ready(function($) {
 
 			if (!container.is(e.target) && container.has(e.target).length === 0)
 			{
-				container.animate({'opacity': 0}, 100);
+				container.fadeOut(200);
 			}
 		});
 	}
@@ -1247,8 +1247,6 @@ jQuery(document).ready(function($) {
 			paintingInfo.find('span').css('font-size', 125 + '%');
 			socialButtons.find('span').css({'font-size': 100 + '%', 'padding-bottom': 7 + '%'});
 		}
-
-		hidingHelpers('#museum-wrapper p');
 	}
 
 
