@@ -115,6 +115,12 @@ Canvas.prototype.mouseMoveAction = function(e) {
 
 
 Canvas.prototype.resetCanvas = function () {
+
+	var cursCanv =   document.getElementById('cursor-canvas');
+	var ctx = cursCanv.getContext('2d');
+	ctx.clearRect(0, 0, this.state.width, this.state.height);
+
+
 	this.state.backCtx.clearRect(0, 0, this.state.width, this.state.height);
 	var ctx = this.state.backCtx;
 
