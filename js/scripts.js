@@ -1246,7 +1246,6 @@ jQuery(document).ready(function($) {
 			var paintingInfoWidth = parseInt(paintingInfo.css('width'));
 			paintingInfo.find('span.title').css('font-size', paintingInfoWidth/2.63 + '%');
 			paintingInfo.find('span.author').css('font-size', paintingInfoWidth/2.94 + '%');
-			paintingInfo.find('span.materials').css('font-size', paintingInfoWidth/3.25 + '%');
 			socialButtons.find('span').css('font-size', paintingInfoWidth/3.57 + '%');
 		} else {
 			paintingInfo.css('width', 300 + 'px');
