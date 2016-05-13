@@ -259,7 +259,7 @@ jQuery(document).ready(function($) {
 
 	$('ul.tools li').on(window.eventType, function(event) {
 		$('#main-canvas').addClass('no-cursor');
-		hidingHelpers('#painting-wrapper p');
+		$('#painting-wrapper p').css('display', 'none');
 	});
 
 	$('ul.tools li#btn-scotch').on(window.eventType, function(event) {
