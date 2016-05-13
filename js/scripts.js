@@ -403,6 +403,7 @@ jQuery(document).ready(function($) {
 
 	function setRandomImgs() {
 		var leftAbsPath = '', rightAbsPath = '', leftThumbPath = '', rightThumbPath = '', leftImgTitle = '', rightImgTitle = '', leftImgAuthor = '', rightImgAuthor = '', leftImgMats = '', rightImgMats = '', j = imgs.length - 1;
+		var rightColumnLength = imgs.length - 3;
 
 		for (var i = 0; i < imgs.length; i++) {
 			leftAbsPath = relPath + imgs[i].pic;
@@ -411,13 +412,14 @@ jQuery(document).ready(function($) {
 			leftImgAuthor = imgs[i].author;
 			leftImgMats = imgs[i].materials;
 
-			if (imgs.length > 3) {
+			if (imgs.length > 3 && rightColumnLength > 0) {
 				rightAbsPath = relPath + imgs[j-i].pic;
 				rightThumbPath = relPath + imgs[j-i].thumb;
 				rightImgTitle = imgs[j-i].title;
 				rightImgAuthor = imgs[j-i].author;
 				rightImgMats = imgs[j-i].materials;
 			}
+			rightColumnLength = rightColumnLength - 1;
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').text(leftImgTitle);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').text(leftImgAuthor);
