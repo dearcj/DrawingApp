@@ -259,6 +259,7 @@ jQuery(document).ready(function($) {
 
 	$('ul.tools li').on(window.eventType, function(event) {
 		$('#main-canvas').addClass('no-cursor');
+		hidingHelpers('#painting-wrapper p');
 	});
 
 	$('ul.tools li#btn-scotch').on(window.eventType, function(event) {
@@ -1016,7 +1017,7 @@ jQuery(document).ready(function($) {
 
 			if (!container.is(e.target) && container.has(e.target).length === 0)
 			{
-				container.fadeOut(10);
+				container.fadeOut(100);
 			}
 		});
 	}
