@@ -1860,6 +1860,8 @@ ul.surfaces li.metal {
 	background: url(../img/surfaces/metal.png) no-repeat;
 	background-size: 100%;
 	background-position: 50% 50%;
+	float: none;
+	margin: 0 auto;
 }
 
 ul.surfaces li.metal.metal-active.active {

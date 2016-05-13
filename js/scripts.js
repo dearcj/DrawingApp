@@ -533,6 +533,7 @@ jQuery(document).ready(function($) {
 		}
 
 		$('.surface-button').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'}).delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
+		$('ul.surfaces li.metal').css('margin-top', surfaceHeight*4 + 'px');
 
 		$('#surface-wrapper').each(function () {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
@@ -1272,8 +1273,6 @@ jQuery(document).ready(function($) {
 		} else {
 			$('.screens').css('background-size', '100% auto');
 		}
-
-		$('ul.surfaces li:nth-child(7)').css('margin-left', 90 + 'px');
 
 		var surfaceCanvasText = surfaceCanvas.find('p'),
 			surfaceTextWidth = 375,
