@@ -177,7 +177,7 @@ function getPixelate(saveImgCB, canvId, imgData) {
     ctx.imageSmoothingEnabled = true;
 
     saveImgCB(myCanvas);
-
+//
   }
 }
 
