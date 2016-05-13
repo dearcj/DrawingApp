@@ -533,7 +533,7 @@ jQuery(document).ready(function($) {
 		}
 
 		$('.surface-button').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'}).delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
-		$('ul.surfaces li.metal').css('margin-top', surfaceHeight*3 + 'px');
+		$('ul.surfaces li.metal').css('margin-top', surfaceHeight*2.78 + 'px');
 
 		$('#surface-wrapper').each(function () {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
