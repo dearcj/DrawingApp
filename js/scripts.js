@@ -1013,6 +1013,12 @@ jQuery(document).ready(function($) {
 			{
 				container.fadeOut(100);
 			}
+
+			var firstexp = $('p.first-exp');
+
+			if (!firstexp.is(e.target) && firstexp.has(e.target).length === 0) {
+				firstexp.animate({'opacity': 1}, 100);
+			}
 		});
 	}
 
@@ -1247,8 +1253,6 @@ jQuery(document).ready(function($) {
 			paintingInfo.find('span').css('font-size', 125 + '%');
 			socialButtons.find('span').css({'font-size': 100 + '%', 'padding-bottom': 7 + '%'});
 		}
-
-		hidingHelpers('p.first-exp');
 	}
 
 
