@@ -455,12 +455,12 @@
     </ul>
 
     <ul class="social-icons">
-      <li><a href="https://www.facebook.com/MoscowMoMA" target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/fb.gif"></a></li>
-      <li><a href="http://vk.com/id77591204" target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/vk.gif"></a></li>
-      <li><a href="https://twitter.com/MMOMA" target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/tw.gif"></a></li>
-      <li><a href="http://instagram.com/mmoma/" target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/insg.gif"></a></li>
-      <li><a href="http://www.youtube.com/user/tvmmoma" target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/youtube.gif"></a></li>
-      <li><a href="#"><img style="margin-right:12px" border="0" src="./wp-content/themes/mmoma/img/mail.gif"></a></li>
+      <li><a target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/fb.gif"></a></li>
+      <li><a target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/vk.gif"></a></li>
+      <li><a target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/tw.gif"></a></li>
+      <li><a target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/insg.gif"></a></li>
+      <li><a target="_blank"><img style="margin-right:17px" border="0" src="./wp-content/themes/mmoma/img/youtube.gif"></a></li>
+      <li><a><img style="margin-right:12px" border="0" src="./wp-content/themes/mmoma/img/mail.gif"></a></li>
     </ul>
     
     <div class="footer_secodn_block">
