@@ -412,14 +412,21 @@ jQuery(document).ready(function($) {
 			leftImgAuthor = imgs[i].author;
 			leftImgMats = imgs[i].materials;
 
+			console.log(rightColumnLength);
 			if (imgs.length > 3 && rightColumnLength > 0) {
 				rightAbsPath = relPath + imgs[j-i].pic;
 				rightThumbPath = relPath + imgs[j-i].thumb;
 				rightImgTitle = imgs[j-i].title;
 				rightImgAuthor = imgs[j-i].author;
 				rightImgMats = imgs[j-i].materials;
+			} else {
+				rightAbsPath = '';
+				rightThumbPath = '';
+				rightImgTitle = '';
+				rightImgAuthor = '';
+				rightImgMats = '';
 			}
-			console.log(rightColumnLength);
+
 			rightColumnLength = rightColumnLength - 1;
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').text(leftImgTitle);
