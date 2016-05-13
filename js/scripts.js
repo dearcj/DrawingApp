@@ -10,7 +10,6 @@ ZSound.Init([
 	{id: 'filter', src: "filter.ogg"},
 	{id: 'complete', src: "complete.ogg"},
 	{id: 'stage', src: "stage.ogg"},
-	{id: 'interact', src: "interact.ogg"},
 	{id: 'dog', src: "dog.ogg"},
 	{id: 'surface', src: "surface.ogg"},
 	{id: 'street', src: "street.ogg"},
@@ -60,18 +59,8 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	$('.interact').mouseover(function() {
+/*	$('.interact').mouseover(function() {
 		ZSound.Play('interact');
-	});
-
-/*	$('ul.surfaces').mouseover(function() {
-		if (!$(this).hasClass('interact')) {
-			$(this).addClass('interact');
-		} else {
-			$(this).removeClass('interact');
-			ZSound.Play('interact');
-
-		}
 	});*/
 
 	$('ul.surfaces li').on(window.eventType, function(event) {
