@@ -513,6 +513,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function surfaceAnimation() {
+		$('ul.tools-buttons.tools-tb li').css('top', 100 + 'px');
 		$('#index-wrapper').fadeOut(500).addClass('hidden');
 		$('#painting-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#museum-wrapper').delay(1000).animate({'opacity': 0}, 100).css('z-index', '100');
@@ -621,6 +622,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function filtersAnimation() {
+		$('ul.tools-buttons.tools-tb li').css('top', 100 + 'px');
 		$('#painting-wrapper').animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#painting-wrapper').each(function(){
 			$(this).children().css({'z-index': '100', 'opacity': 0});
