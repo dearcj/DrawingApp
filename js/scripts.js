@@ -419,6 +419,7 @@ jQuery(document).ready(function($) {
 				rightImgAuthor = imgs[j-i].author;
 				rightImgMats = imgs[j-i].materials;
 			}
+			console.log(rightColumnLength);
 			rightColumnLength = rightColumnLength - 1;
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').text(leftImgTitle);
