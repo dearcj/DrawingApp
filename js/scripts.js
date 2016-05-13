@@ -1148,7 +1148,6 @@ jQuery(document).ready(function($) {
 			$('#museum-wrapper > p').css('z-index', 250).delay(3000).animate({opacity: 1}, 1500);
 		} else {
 			$('.museum-painting').css('display', 'block');
-			$('.first-exp-canvas').css('display', 'none');
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');
 			$('.social-buttons').css('display', 'block');
