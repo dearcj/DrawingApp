@@ -412,34 +412,27 @@ jQuery(document).ready(function($) {
 			leftImgAuthor = imgs[i].author;
 			leftImgMats = imgs[i].materials;
 
-			console.log(rightColumnLength);
 			if (imgs.length > 3 && rightColumnLength > 0) {
 				rightAbsPath = relPath + imgs[j-i].pic;
 				rightThumbPath = relPath + imgs[j-i].thumb;
 				rightImgTitle = imgs[j-i].title;
 				rightImgAuthor = imgs[j-i].author;
 				rightImgMats = imgs[j-i].materials;
-			} else {
-				rightAbsPath = '';
-				rightThumbPath = '';
-				rightImgTitle = '';
-				rightImgAuthor = '';
-				rightImgMats = '';
-			}
 
-			rightColumnLength = rightColumnLength - 1;
+				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.title').text(rightImgTitle);
+				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.author').text(rightImgAuthor);
+				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.materials').text(rightImgMats);
+				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ')').attr('href', rightAbsPath);
+				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightThumbPath + ') no-repeat');
+
+				rightColumnLength = rightColumnLength - 1;
+			}
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').text(leftImgTitle);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').text(leftImgAuthor);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.materials').text(leftImgMats);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftThumbPath + ') no-repeat');
-
-			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.title').text(rightImgTitle);
-			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.author').text(rightImgAuthor);
-			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.materials').text(rightImgMats);
-			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ')').attr('href', rightAbsPath);
-			$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightThumbPath + ') no-repeat');
 		}
 
 		$('ul.paintings.left-side a:nth-child(1)').colorbox({title: function() {
