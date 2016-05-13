@@ -1144,7 +1144,7 @@ jQuery(document).ready(function($) {
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
 			$('.social-buttons').css('display', 'none');
-			$('#museum-wrapper > p').css('z-index', 250).delay(1000).animate({opacity: 1}, 1500);
+			$('#museum-wrapper > p').css('z-index', 250).delay(2000).animate({opacity: 1}, 1000);
 		} else {
 			$('.museum-painting').css('display', 'block');
 			$('.first-exp-canvas').css('display', 'none');
@@ -1154,8 +1154,6 @@ jQuery(document).ready(function($) {
 			$('#museum-wrapper > p').css('opacity', 0);
 		}
 	}
-
-	//
 
 	$('li.add-filter').click(function(event) {
 		event.preventDefault();
