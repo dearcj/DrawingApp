@@ -2119,13 +2119,14 @@ ul.logotypes li a {
 .social-buttons ul li#post-vk {
 	background: url(../img/vk.png) no-repeat;
 	background-size: 100%;
-	float: left;
+	margin: 0 auto;
 }
 
 .social-buttons ul li#post-fb {
 	background: url(../img/fb.png) no-repeat;
 	background-size: 100%;
 	float: right;
+	display: none;
 }
 
 .social-buttons ul li#post-vk:hover,
