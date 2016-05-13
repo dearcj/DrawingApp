@@ -2140,6 +2140,7 @@ ul.logotypes li a {
 .museum-button {
 	position: relative;
 	height: 50px;
+	top: 150px;
 	line-height: 50px;
 	color: white;
 	font-size: 14px;
