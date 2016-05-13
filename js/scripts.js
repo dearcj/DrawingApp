@@ -1137,14 +1137,14 @@ jQuery(document).ready(function($) {
 		});
 
 		if (imageId === null) {
-			$('.museum-painting').css('display', 'none');
+			$('.museum-painting').css('opacity', 0);
 			$('.first-exp-canvas').css('display', 'block');
 			$('.new-painting').css('display', 'block');
 			$('.painting-info').css('display', 'none');
 			$('.social-buttons').css('display', 'none');
 			$('#museum-wrapper > p').css('z-index', 250).delay(500).animate({opacity: 1}, 1000);
 		} else {
-			$('.museum-painting').css('display', 'block');
+			$('.museum-painting').css('opacity', 1);
 			$('.first-exp-canvas').css('display', 'none');
 			$('.new-painting').css('display', 'none');
 			$('.painting-info').css('display', 'block');

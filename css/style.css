@@ -736,7 +736,8 @@ ul.paintings a:hover li div {
     color: white;
 }
 
-.museum-painting {
+.museum-painting,
+.first-exp-canvas {
 	background-color: white;
 	margin: 0 auto;
 	display: block;
