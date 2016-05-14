@@ -666,6 +666,10 @@ ul.paintings li div span.materials {
 	text-transform: none;
 }
 
+ul.paintings li div span.description {
+	display: none;
+}
+
 a.group-1:hover div span,
 a.group-1:focus div span {
 	text-decoration: none;
