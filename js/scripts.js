@@ -392,7 +392,7 @@ jQuery(document).ready(function($) {
 	});
 
 	function setRandomImgs() {
-		var leftAbsPath = '', rightAbsPath = '', leftThumbPath = '', rightThumbPath = '', leftImgTitle = '', rightImgTitle = '', leftImgAuthor = '', rightImgAuthor = '', leftImgMats = '', rightImgMats = '', j = imgs.length - 1;
+		var leftAbsPath = '', rightAbsPath = '', leftThumbPath = '', rightThumbPath = '', leftImgTitle = '', rightImgTitle = '', leftImgAuthor = '', rightImgAuthor = '', leftImgMats = '', rightImgMats = '', leftImgDesc = '', rightImgDesc = '', j = imgs.length - 1;
 		var rightColumnLength = imgs.length - 3;
 
 		for (var i = 0; i < imgs.length; i++) {
@@ -401,6 +401,7 @@ jQuery(document).ready(function($) {
 			leftImgTitle = imgs[i].title;
 			leftImgAuthor = imgs[i].author;
 			leftImgMats = imgs[i].materials;
+			leftImgDesc = imgs[i].description;
 
 			if (imgs.length > 3 && rightColumnLength > 0) {
 				rightAbsPath = relPath + imgs[j-i].pic;
@@ -408,10 +409,12 @@ jQuery(document).ready(function($) {
 				rightImgTitle = imgs[j-i].title;
 				rightImgAuthor = imgs[j-i].author;
 				rightImgMats = imgs[j-i].materials;
+				rightImgDesc = imgs[i].description;
 
 				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.title').text(rightImgTitle);
 				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.author').text(rightImgAuthor);
 				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.materials').text(rightImgMats);
+				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.description').text(rightImgDesc);
 				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ')').attr('href', rightAbsPath);
 				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightThumbPath + ') no-repeat');
 
@@ -421,6 +424,7 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.title').text(leftImgTitle);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.author').text(leftImgAuthor);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.materials').text(leftImgMats);
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.description').text(leftImgDesc);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftThumbPath + ') no-repeat');
 		}
