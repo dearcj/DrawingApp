@@ -434,7 +434,7 @@ jQuery(document).ready(function($) {
 			var title = $(this).find("span.title").text();
 			var mats = $(this).find("span.materials").text();
 			var desc = $(this).find("span.description").text();
-			return author + '. ' + title + ' ' + mats + '<br></br>' + desc;
+			return author + '. <b>' + title + '</b> ' + mats + '<br><span class="link-desc">' + desc + '</span>';
 		}
 		});
 
