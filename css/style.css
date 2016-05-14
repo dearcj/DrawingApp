@@ -2214,17 +2214,20 @@ ul.logotypes li a {
     line-height: 20px;
     font-size: 15px;
     color: black !important;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255,255,255,0.9);
     padding: 15px 0 0;
 }
 
 #cboxTitle span {
 	position: relative;
 	top: 5px;
-	font-size: 12px;
+	font-size: 13px;
 	display: block;
-	width: 95%;
+	width: 90%;
+	font-style: italic;
+	text-align: left;
 	margin: 0 auto;
+	line-height: 18px;
 }
 
 #cboxMiddleLeft,
