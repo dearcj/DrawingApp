@@ -443,39 +443,43 @@ jQuery(document).ready(function($) {
 			var title = $(this).find("span.title").text();
 			var mats = $(this).find("span.materials").text();
 			var desc = $(this).find("span.description").text();
-			return author + '. ' + title + ' ' + mats + desc;
+			return author + '. <b>' + title + '</b> ' + mats + '<br><span class="link-desc">' + desc + '</span>';
 		}
 		});
 
 		$('ul.paintings.left-side a:nth-child(3)').colorbox({title: function() {
 			var author = $(this).find("span.author").text();
 			var title = $(this).find("span.title").text();
-			var desc = $(this).find("span.materials").text();
-			return author + '. ' + title + ' ' + desc;
+			var mats = $(this).find("span.materials").text();
+			var desc = $(this).find("span.description").text();
+			return author + '. <b>' + title + '</b> ' + mats + '<br><span class="link-desc">' + desc + '</span>';
 		}
 		});
 
 		$('ul.paintings.right-side a:nth-child(1)').colorbox({title: function() {
 			var author = $(this).find("span.author").text();
 			var title = $(this).find("span.title").text();
-			var desc = $(this).find("span.materials").text();
-			return author + '. ' + title + ' ' + desc;
+			var mats = $(this).find("span.materials").text();
+			var desc = $(this).find("span.description").text();
+			return author + '. <b>' + title + '</b> ' + mats + '<br><span class="link-desc">' + desc + '</span>';
 		}
 		});
 
 		$('ul.paintings.right-side a:nth-child(2)').colorbox({title: function() {
 			var author = $(this).find("span.author").text();
 			var title = $(this).find("span.title").text();
-			var desc = $(this).find("span.materials").text();
-			return author + '. ' + title + ' ' + desc;
+			var mats = $(this).find("span.materials").text();
+			var desc = $(this).find("span.description").text();
+			return author + '. <b>' + title + '</b> ' + mats + '<br><span class="link-desc">' + desc + '</span>';
 		}
 		});
 
 		$('ul.paintings.right-side a:nth-child(3)').colorbox({title: function() {
 			var author = $(this).find("span.author").text();
 			var title = $(this).find("span.title").text();
-			var desc = $(this).find("span.materials").text();
-			return author + '. ' + title + ' ' + desc;
+			var mats = $(this).find("span.materials").text();
+			var desc = $(this).find("span.description").text();
+			return author + '. <b>' + title + '</b> ' + mats + '<br><span class="link-desc">' + desc + '</span>';
 		}
 		});
 	}
