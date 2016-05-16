@@ -45,7 +45,7 @@ function getRandomInt(min, max) {
 
 
 
-function applyOverFilter(saveImgCB, src, canvId, imgData, dx, dy, remove, img) {
+function applyOverFilter(saveImgCB, src, canvId, imgData, dx, dy, remove, iimg) {
   cb = function () {
     var myCanvas = document.getElementById(canvId);
     var ctx = myCanvas.getContext('2d');
@@ -62,7 +62,7 @@ function applyOverFilter(saveImgCB, src, canvId, imgData, dx, dy, remove, img) {
       ctx.drawImage(img, dx, dy);
 
       //if (remove) ctx.globalCompositeOperation = null;
-      saveImgCB(myCanvas, img);
+      saveImgCB(myCanvas, iimg);
       //  ctx.canvas.width = ctx.canvas.width;
     }
 
