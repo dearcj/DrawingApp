@@ -300,21 +300,21 @@ function applyFilter(canvId, imgData, filterNumber) {
   if (filterNumber == 1) {
     window.trickySrc = relPath + 'filters/diptih.png';
     var src = relPath + 'filters/diptih2.png';
-    var img = window.temporaryFilterImages[src];
+    var img = window.temporaryFilterImages[window.trickySrc];
    cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
     window.filterTag = 'диптих';
    }
   if (filterNumber == 2) {
     window.trickySrc = relPath + 'filters/modern.png';
     var src = relPath + 'filters/modern.png';
-    var img = window.temporaryFilterImages[src];
+    var img = window.temporaryFilterImages[window.trickySrc];
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, false, img);
     window.filterTag = 'рамка';
   }
   if (filterNumber == 3) {
     window.trickySrc = relPath + 'filters/poliptih.png';
     var src = relPath + 'filters/poliptih2.png';
-    var img = window.temporaryFilterImages[src];
+    var img = window.temporaryFilterImages[window.trickySrc];
 
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
     window.filterTag = 'диптих';
@@ -322,7 +322,7 @@ function applyFilter(canvId, imgData, filterNumber) {
   if (filterNumber == 4) {
     window.trickySrc = relPath + 'filters/vintage.png';
     var src = relPath + 'filters/vintage2.png';
-    var img = window.temporaryFilterImages[src];
+    var img = window.temporaryFilterImages[window.trickySrc];
 
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
     window.filterTag = 'рамка';
