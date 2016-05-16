@@ -246,6 +246,21 @@ var initApplication = function() {
     if (canvas.state.drawState)
       canvas.finishAction(e);  }, false );
 
+
+  window.temporaryFilterImages = [];
+  var src = relPath + 'filters/diptih2.png';
+  window.temporaryFilterImages[src] = new Image();
+  window.temporaryFilterImages[src].src = src;
+  var src = relPath + 'filters/modern.png';
+  window.temporaryFilterImages[src] = new Image();
+  window.temporaryFilterImages[src].src = src;
+  var src = relPath + 'filters/poliptih2.png';
+  window.temporaryFilterImages[src] = new Image();
+  window.temporaryFilterImages[src].src = src;
+  var src = relPath + 'filters/vintage2.png';
+  window.temporaryFilterImages[src] = new Image();
+  window.temporaryFilterImages[src].src = src;
+
 };
 
 var goToTools = document.getElementById('go-to-tools');
