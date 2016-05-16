@@ -248,16 +248,16 @@ var initApplication = function() {
 
 
   window.temporaryFilterImages = [];
-  var src = relPath + 'filters/diptih.png';
+  var src = relPath + 'filters/diptih2.png';
   window.temporaryFilterImages[src] = new Image();
   window.temporaryFilterImages[src].src = src;
   var src = relPath + 'filters/modern.png';
   window.temporaryFilterImages[src] = new Image();
   window.temporaryFilterImages[src].src = src;
-  var src = relPath + 'filters/poliptih.png';
+  var src = relPath + 'filters/poliptih2.png';
   window.temporaryFilterImages[src] = new Image();
   window.temporaryFilterImages[src].src = src;
-  var src = relPath + 'filters/vintage.png';
+  var src = relPath + 'filters/vintage2.png';
   window.temporaryFilterImages[src] = new Image();
   window.temporaryFilterImages[src].src = src;
 

@@ -298,8 +298,8 @@ function applyFilter(canvId, imgData, filterNumber) {
 
 
   if (filterNumber == 1) {
-    window.trickySrc = relPath + 'filters/diptih2.png';
-    var src = relPath + 'filters/diptih.png';
+    window.trickySrc = relPath + 'filters/diptih.png';
+    var src = relPath + 'filters/diptih2.png';
     var img = window.temporaryFilterImages[src];
    cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
     window.filterTag = 'диптих';
@@ -312,16 +312,16 @@ function applyFilter(canvId, imgData, filterNumber) {
     window.filterTag = 'рамка';
   }
   if (filterNumber == 3) {
-    window.trickySrc = relPath + 'filters/poliptih2.png';
-    var src = relPath + 'filters/poliptih.png';
+    window.trickySrc = relPath + 'filters/poliptih.png';
+    var src = relPath + 'filters/poliptih2.png';
     var img = window.temporaryFilterImages[src];
 
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
     window.filterTag = 'диптих';
   }
   if (filterNumber == 4) {
-    window.trickySrc = relPath + 'filters/vintage2.png';
-    var src = relPath + 'filters/vintage.png';
+    window.trickySrc = relPath + 'filters/vintage.png';
+    var src = relPath + 'filters/vintage2.png';
     var img = window.temporaryFilterImages[src];
 
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
