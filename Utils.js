@@ -62,7 +62,7 @@ function applyOverFilter(saveImgCB, src, canvId, imgData, dx, dy, remove, iimg) 
       ctx.drawImage(img, dx, dy);
 
       //if (remove) ctx.globalCompositeOperation = null;
-      saveImgCB(myCanvas, iimg);
+      saveImgCB(myCanvas, dx, dy, iimg);
       //  ctx.canvas.width = ctx.canvas.width;
     }
 
