@@ -818,7 +818,12 @@ jQuery(document).ready(function($) {
 		ZSound.Play('stage');
 		window.mainCanvasObject.currentBrush = null;
 		window.currentHash = history.state;
-		document.getElementById('painting-img').src = window.savedImage;
+
+		if (window.trickyImage)
+		{
+			document.getElementById('painting-img').src = window.trickyImage;
+			window.trickyImage = null;
+		} else document.getElementById('painting-img').src = window.savedImage;
 		window.imgs = getImagesByTags(window.mainCanvasObject.tags);
 
 		setRandomImgs();
