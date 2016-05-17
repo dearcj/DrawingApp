@@ -117,7 +117,7 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-needle').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/c_needle.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_needle_1.png';
     brushThread.mode = 1;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -125,7 +125,7 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-1').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/c_needle.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_needle_1.png';
     brushThread.mode = 1;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -133,7 +133,7 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-2').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/c_needle.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_needle_2.png';
     brushThread.mode = 2;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -141,7 +141,7 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-3').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/c_needle.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_needle_3.png';
     brushThread.mode = 3;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -149,7 +149,7 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-4').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/c_needle.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_needle_4.png';
     brushThread.mode = 4;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -157,7 +157,7 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-5').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/c_needle.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_needle_5.png';
     brushThread.mode = 5;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -165,7 +165,7 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-6').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/c_needle.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_needle_6.png';
     brushThread.mode = 6;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
@@ -173,7 +173,7 @@ var initApplication = function() {
   });
 
   document.getElementById('btn-thread-7').addEventListener(window.eventType, function() {
-    canvas.cursorSrc = window.relPath + 'cursors/c_needle.png';
+    canvas.cursorSrc = window.relPath + 'cursors/c_needle_7.png';
     brushThread.mode = 7;
     canvas.currentBrush = brushThread;
     brushThread.onSelect();
