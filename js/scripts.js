@@ -972,39 +972,6 @@ jQuery(document).ready(function($) {
 		genericAnimation();
 	});
 
-	$('li.installation').on(window.eventType, function(event) {
-		ZSound.Play('click');
-		$('#mediaart-wrapper').css('display', 'none').addClass('hidden');
-		$('#performance-wrapper').css('display', 'none').addClass('hidden');
-		$('#installation-wrapper').css('opacity', 1).fadeIn(1000).removeClass('hidden');
-		openPage('installation');
-	});
-
-	$('li.performance').on(window.eventType, function(event) {
-		ZSound.Play('click');
-		$('#installation-wrapper').css('display', 'none').addClass('hidden');
-		$('#interpretation-wrapper').css('display', 'none').addClass('hidden');
-		$('#performance-wrapper').fadeIn(1000).removeClass('hidden');
-		openPage('performance');
-	});
-
-
-	$('li.interpretation').on(window.eventType, function(event) {
-		ZSound.Play('click');
-		$('#performance-wrapper').css('display', 'none').addClass('hidden');
-		$('#mediaart-wrapper').css('display', 'none').addClass('hidden');
-		$('#interpretation-wrapper').css('opacity', 1).fadeIn(1000).removeClass('hidden');
-		openPage('interpretation');
-	});
-
-	$('li.media-art').on(window.eventType, function(event) {
-		ZSound.Play('click');
-		$('#interpretation-wrapper').css('display', 'none').addClass('hidden');
-		$('#installation-wrapper').css('display', 'none').addClass('hidden');
-		$('#mediaart-wrapper').css('opacity', 1).fadeIn(1000).removeClass('hidden');
-		openPage('media-art');
-	});
-
 	$('.save-and-send').click(function(event) {
 
 		event.preventDefault();

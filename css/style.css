@@ -1703,49 +1703,6 @@ span.generic-desc {
 	margin-top: 0;
 }
 
-ul.generic-nav {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-ul.generic-nav li {
-	position: absolute;
-	top: 436px;
-	margin-top: -40px;
-	width: 80px;
-	height: 80px;
-}
-
-li.generic-prev {
-	left: 0;
-	background: url(../img/generic-prev.jpg) no-repeat;
-	background-size: 100%;
-}
-
-li.generic-next {
-	right: 0;
-	background: url(../img/generic-next.jpg) no-repeat;
-	background-size: 100%;
-}
-
-ul.generic-nav li:hover,
-ul.generic-nav li:focus {
-	cursor: pointer;
-}
-
-ul.generic-nav li.generic-prev:hover,
-ul.generic-nav li.generic-prev:focus {
-	background: url(../img/generic-prev-hover.jpg) no-repeat;
-	background-size: 100%;
-}
-
-ul.generic-nav li.generic-next:hover,
-ul.generic-nav li.generic-next:focus {
-	background: url(../img/generic-next-hover.jpg) no-repeat;
-	background-size: 100%;
-}
-
 #mediaart-wrapper {
 	width: 65%;
 }
