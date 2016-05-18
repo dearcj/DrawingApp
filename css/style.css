@@ -2037,7 +2037,7 @@ ul.logotypes li a {
 	opacity: 0;
 	width: 100px;
     position: absolute;
-	top: 22%;
+	top: 20%;
 	right: 0;
 	margin-right: -450px;
 }
@@ -2057,7 +2057,7 @@ ul.logotypes li a {
 }
 
 .social-buttons span#save {
-	padding-top: 5%;
+	padding-top: 75px;
 }
 
 .social-buttons ul {
