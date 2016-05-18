@@ -410,6 +410,11 @@
                 <li id="post-vk"></li>
                 <li id="post-fb"></li>
               </ul>
+            <span>Сохранить</span>
+              <ul>
+                <li id="download"></li>
+                <li id="mail-send"></li>
+              </ul>
           </div>
 
           <div class="dark-side museum"></div>

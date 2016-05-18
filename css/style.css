@@ -2079,10 +2079,24 @@ ul.logotypes li a {
 	float: right;
 }
 
+.social-buttons ul li#download {
+	background: url(../img/download.png) no-repeat;
+	background-size: 100%;
+	margin: 0 auto;
+	width: 55px;
+	height: 60px;
+}
+
+.social-buttons ul li#mail-send {
+	display: none;
+}
+
 .social-buttons ul li#post-vk:hover,
 .social-buttons ul li#post-vk:focus,
 .social-buttons ul li#post-fb:hover,
-.social-buttons ul li#post-fb:focus {
+.social-buttons ul li#post-fb:focus,
+.social-buttons ul li#download:hover,
+.social-buttons ul li#download:focus {
 	cursor: pointer;
 }
 
