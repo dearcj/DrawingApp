@@ -2056,6 +2056,10 @@ ul.logotypes li a {
     text-align: center;
 }
 
+.social-buttons span#save {
+	padding-top: 5%;
+}
+
 .social-buttons ul {
 	margin: 0 auto;
 	padding: 0;

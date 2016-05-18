@@ -410,7 +410,7 @@
                 <li id="post-vk"></li>
                 <li id="post-fb"></li>
               </ul>
-            <span>Сохранить</span>
+            <span id="save">Сохранить</span>
               <ul>
                 <li id="download"></li>
                 <li id="mail-send"></li>
