@@ -1121,6 +1121,9 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ', ') + ')';
 		});
 
+		var imgHref = 'http://play.mmoma.ru/onlinegame/wp-content/themes/mmoma/api/' + res.file;
+		$('#download a').attr('href', imgHref);
+
 		if (imageId === null) {
 			$('.museum-painting').css('display', 'none');
 			$('.first-exp-canvas').css('display', 'block');

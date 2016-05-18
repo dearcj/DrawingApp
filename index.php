@@ -412,7 +412,7 @@
               </ul>
             <span id="save">Сохранить</span>
               <ul>
-                <li id="download"><a href="http://play.mmoma.ru/onlinegame/wp-content/themes/mmoma/api/' + res.file" download></a></li>
+                <li id="download"><a href="" download></a></li>
                 <li id="mail-send"></li>
               </ul>
           </div>
