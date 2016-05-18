@@ -400,7 +400,7 @@
           <img id="your-painting" class="museum-painting" src="">
           <div class="first-exp-canvas"></div>
 
-          <p class="first-exp">Здесь может появиться твоя новая картина</p>
+          <p class="first-exp">Здесь может появиться твоя новая картина!</p>
 
           <div class="museum-button new-painting go-to-surface"></div>
 
