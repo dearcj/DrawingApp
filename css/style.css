@@ -2206,11 +2206,64 @@ ul.logotypes li a {
 		width: 400px;
 		height: 283px;
 	}
+
+	#helper-11 {
+		margin-right: -26.45rem;
+		top: 2px;
+	}
+
+	#helper-12 {
+		margin-left: -30.5rem;
+		top: 185px;
+	}
+
+	#helper-13 {
+		margin-left: -31.35rem;
+		top: 340px;
+	}
+
+	#helper-14 {
+		margin-right: -36.85rem;
+		top: 470px;
+	}
+
+	#helper-15 {
+		margin-right: -24.5rem;
+		top: 470px;
+	}
 }
 
 @media only screen and (max-width: 1275px) {
 	#museum-wrapper {
 		height: 550px;
+	}
+
+	ul#helpers li {
+		width: 45px;
+		height: 45px;
+	}
+
+	#helper-11 {
+		margin-right: -24.3rem;
+	}
+
+	#helper-12 {
+		margin-left: -28rem;
+	}
+
+	#helper-13 {
+		margin-left: -28.6rem;
+		top: 310px;
+	}
+
+	#helper-14 {
+		margin-right: -33.65rem;
+		top: 430px;
+	}
+
+	#helper-15 {
+		margin-right: -22.6rem;
+		top: 430px;
 	}
 }
 
@@ -2222,6 +2275,243 @@ ul.logotypes li a {
 	.museum-painting {
 		width: 325px;
 		height: 230px;
+	}
+
+	ul#helpers li {
+		width: 40px;
+		height: 40px;
+	}
+
+	#helper-11 {
+		margin-right: -22rem;
+	}
+
+	#helper-12 {
+		margin-left: -25.5rem;
+		top: 165px;
+	}
+
+	#helper-13 {
+		margin-left: -26.1rem;
+		top: 285px;
+	}
+
+	#helper-14 {
+		margin-right: -30.6rem;
+		top: 388px;
+	}
+
+	#helper-15 {
+		margin-right: -20.5rem;
+		top: 395px;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	#museum-wrapper {
+		height: 450px;
+	}
+
+	ul#helpers li {
+		width: 40px;
+		height: 40px;
+	}
+
+	#helper-11 {
+		margin-right: -19.95rem;
+		top: 1px;
+	}
+
+	#helper-12 {
+		margin-left: -23rem;
+		top: 145px;
+	}
+
+	#helper-13 {
+		margin-left: -23.5rem;
+		top: 255px;
+	}
+
+	#helper-14 {
+		margin-right: -27.7rem;
+		top: 350px;
+	}
+
+	#helper-15 {
+		margin-right: -18.6rem;
+		top: 350px;
+	}
+}
+
+@media only screen and (max-width: 950px) {
+	#museum-wrapper {
+		height: 400px;
+	}
+
+	ul#helpers li {
+		width: 35px;
+		height: 35px;
+	}
+
+	#helper-11 {
+		margin-right: -17.7rem;
+	}
+
+	#helper-12 {
+		margin-left: -20.5rem;
+		top: 130px;
+	}
+
+	#helper-13 {
+		margin-left: -21rem;
+		top: 225px;
+	}
+
+	#helper-14 {
+		margin-right: -24.5rem;
+		top: 310px;
+	}
+
+	#helper-15 {
+		margin-right: -16.5rem;
+		top: 312px;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#museum-wrapper {
+		height: 350px;
+	}
+
+	ul#helpers li {
+		width: 30px;
+		height: 30px;
+	}
+
+	#helper-11 {
+		margin-right: -15.4rem;
+	}
+
+	#helper-12 {
+		margin-left: -18rem;
+		top: 115px;
+	}
+
+	#helper-13 {
+		margin-left: -18.35rem;
+		top: 197px;
+	}
+
+	#helper-14 {
+		margin-right: -21.45rem;
+		top: 270px;
+	}
+
+	#helper-15 {
+		margin-right: -14.5rem;
+		top: 275px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	#museum-wrapper {
+		height: 300px;
+	}
+
+	ul#helpers li {
+		width: 25px;
+		height: 25px;
+	}
+
+	#helper-11 {
+		margin-right: -13.2rem;
+		top: 0;
+	}
+
+	#helper-12 {
+		margin-left: -15.3rem;
+		top: 100px;
+	}
+
+	#helper-13 {
+		margin-left: -15.65rem;
+		top: 168px;
+	}
+
+	#helper-14 {
+		margin-right: -18.3rem;
+		top: 235px;
+	}
+
+	#helper-15 {
+		margin-right: -12.4rem;
+		top: 235px;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	#museum-wrapper {
+		height: 250px;
+	}
+
+	#helper-11 {
+		margin-right: -11.15rem;
+		top: -1px;
+	}
+
+	#helper-12 {
+		margin-left: -12.7rem;
+		top: 80px;
+	}
+
+	#helper-13 {
+		margin-left: -13.15rem;
+		top: 138px;
+	}
+
+	#helper-14 {
+		margin-right: -15.5rem;
+		top: 192px;
+	}
+
+	#helper-15 {
+		margin-right: -10.5rem;
+		top: 195px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	#museum-wrapper {
+		height: 200px;
+	}
+
+	ul#helpers li {
+		width: 20px;
+		height: 20px;
+	}
+
+	#helper-11 {
+		margin-right: -8.9rem;
+	}
+
+	#helper-12 {
+		margin-left: -10.3rem;
+		top: 60px;
+	}
+
+	#helper-13 {
+		margin-left: -10.55rem;
+		top: 112px;
+	}
+
+	#helper-14 {
+		margin-right: -12.4rem;
+		top: 155px;
+	}
+
+	#helper-15 {
+		margin-right: -8.3rem;
+		top: 155px;
 	}
 }
 
