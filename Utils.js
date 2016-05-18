@@ -182,7 +182,7 @@ function getPixelate(saveImgCB, canvId, imgData) {
 }
 
 filterOrder = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
-filterOrder = [5, 3, 7, 2, 8, 1, 4, 12, 9, 11, 6, 10];
+filterOrder = [5, 3, 2, 8, 1, 4, 12, 9, 11, 6, 10];
 
 //w/o 1 3 4 diptih poly vintage
 //filterOrder = [5,  7, 2, 8,  12, 9, 11, 6, 10];
@@ -336,14 +336,14 @@ function applyFilter(canvId, imgData, filterNumber) {
     window.filterTag = 'инверсия';
   }
 
-  if (filterNumber == 7) {
+ /* if (filterNumber == 7) {
     cb = distortion(saveImgCB, canvId, imgData);
     window.filterTag = 'искажение';
-  }
+  }*/
 
   if (filterNumber == 8) {
     cb = kaleidoscope(saveImgCB, canvId, imgData);
-    window.filterTag = 'калейдоскоп';
+    window.filterTag = 'искажение';
   }
 
   if (filterNumber == 9) {
