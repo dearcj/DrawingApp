@@ -1119,10 +1119,10 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-title').textContent = res.description;
 			document.getElementById('painting-author').textContent = res.name;
 			document.getElementById('painting-materials').textContent = '(' + res.tags.replace(/;/g, ', ') + ')';
-		});
 
-		var imgHref = 'http://play.mmoma.ru/onlinegame/wp-content/themes/mmoma/api/' + res.file;
-		$('#download a').attr('href', imgHref);
+			var imgHref = 'http://play.mmoma.ru/onlinegame/wp-content/themes/mmoma/api/' + res.file;
+			$('#download a').attr('href', imgHref);
+		});
 
 		if (imageId === null) {
 			$('.museum-painting').css('display', 'none');
