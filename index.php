@@ -371,8 +371,8 @@
 
           <form class="sending-form">
             <div class="work-author">
-              <div class="item-field"><p class="input-label">Автор:</p><input id='in-author' type="text" placeholder="Укажи свое имя"></div>
-              <div class="item-field"><p class="input-label">Название картины:</p><input id='in-label' type="text" placeholder="Напиши название работы"></div>
+              <div class="item-field"><input id='in-author' type="text" placeholder="Укажи свое имя"></div>
+              <div class="item-field"><input id='in-label' type="text" placeholder="Напиши название работы"></div>
             </div>
             <button name="send" value="Отправить картину в мой музей" type="submit" class="save-and-send go-to-museum">Отправить<br>картину в<br>мой музей</button>
             <ul id="helpers">

@@ -858,17 +858,6 @@ form.sending-form .work-author {
 	width: 65%;
 }
 
-form.sending-form .work-author p {
-    font-size: 14px;
-    font-family: 'Helvetica', sans-serif;
-    color: #666;
-    padding: 0;
-    margin: 0 auto;
-    width: 22%;
-	float: left;
-	text-align: right;
-}
-
 form.sending-form .work-author span {
     text-align: center;
     display: block;
@@ -887,14 +876,8 @@ form.sending-form .work-author .item-field:last-child {
 }
 
 form.sending-form .work-author input {
-	width: 70%;
-	float: right;
-}
-
-form.sending-form .work-author p a {
-	color: black;
-	text-decoration: none;
-	font-size: inherit;
+	width: 92%;
+	float: none;
 }
 
 ul.tools-buttons {
