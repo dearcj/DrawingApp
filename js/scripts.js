@@ -733,12 +733,9 @@ jQuery(document).ready(function($) {
 			$('.social-buttons').delay(2500).animate({right: 50 + '%'}, 500);
 		}
 
-		if ($(window).width() > 1150) {
+		if ($(window).width() > 700) {
 			$('.museum-painting').delay(1000).animate({top: -55 + 'px'}, 1000);
 			$('.painting-info').delay(1000).animate({top: -150 + 'px'}, 1500);
-		} else {
-			$('.museum-painting').delay(1000).animate({top: -35 + 'px'}, 1000);
-			$('.painting-info').delay(1000).animate({top: -125 + 'px'}, 1500);
 		}
 
 		$('#museum-wrapper').each(function(){
