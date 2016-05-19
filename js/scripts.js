@@ -734,9 +734,9 @@ jQuery(document).ready(function($) {
 			$('.social-buttons').delay(2500).animate({right: 50 + '%'}, 500);
 		}
 
-		if ($(window).width > 950) {
+		if ($(window).width() > 950) {
 			$('.museum-painting').delay(1000).animate({top: -55 + 'px'}, 1000);
-		} else if ($(window).width > 700 && $(window).width < 950) {
+		} else if ($(window).width() > 700 && $(window).width() < 950) {
 			$('.museum-painting').delay(1000).animate({top: -35 + 'px'}, 1000);
 		}
 
