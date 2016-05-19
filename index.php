@@ -400,6 +400,12 @@
           <img id="your-painting" class="museum-painting" src="">
           <div class="first-exp-canvas"></div>
 
+          <div class="painting-info">
+            <span id="painting-title" class="title"></span>
+            <span id="painting-author" class="author"></span>
+            <span id="painting-materials" class="materials"></span>
+          </div>
+
           <p class="first-exp">Здесь может появиться твоя новая картина!</p>
 
           <div class="museum-button new-painting go-to-surface"></div>
@@ -418,12 +424,6 @@
           </div>
 
           <div class="dark-side museum"></div>
-
-          <div class="painting-info">
-            <span id="painting-title" class="title"></span>
-            <span id="painting-author" class="author"></span>
-            <span id="painting-materials" class="materials"></span>
-          </div>
 
           <ul class="ux-buttons">
             <li class="mute on"></li>
