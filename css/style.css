@@ -2311,6 +2311,12 @@ ul.logotypes li a {
 		height: 65px;
 	}
 
+	.painting-info span.materials {
+		font-size: 100%;
+		padding-top: 2px;
+		padding-bottom: 10px;
+	}
+
 	.social-buttons {
 		margin-right: -285px;
 	}
