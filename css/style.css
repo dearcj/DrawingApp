@@ -2429,8 +2429,7 @@ ul.logotypes li a {
 	}
 
 	.social-buttons {
-		top: 13%;
-		margin-right: -240px;
+		margin-right: -230px;
 	}
 
 	.social-buttons ul {
@@ -2443,11 +2442,12 @@ ul.logotypes li a {
 	}
 
 	.social-buttons span {
-		font-size: 95%;
+		font-size: 95% !important;
+		padding-bottom: 5%;
 	}
 
 	.social-buttons span#save {
-		padding-top: 40px;
+		padding-top: 35px;
 	}
 
 	ul#helpers li {
