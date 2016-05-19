@@ -736,7 +736,7 @@ jQuery(document).ready(function($) {
 
 		if ($(window).width > 950) {
 			$('.museum-painting').delay(1000).animate({top: -55 + 'px'}, 1000);
-		} else if ($(window).width > 700) {
+		} else if ($(window).width > 700 && $(window).width < 950) {
 			$('.museum-painting').delay(1000).animate({top: -35 + 'px'}, 1000);
 		}
 
