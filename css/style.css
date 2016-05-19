@@ -2005,6 +2005,7 @@ ul.logotypes li a {
 .painting-info {
 	position: relative;
 	width: 500px;
+	top: 400px;
 	margin: 0 auto;
     background-color: white;
     border-radius: 10px;
