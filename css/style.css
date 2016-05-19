@@ -2213,7 +2213,14 @@ ul.logotypes li a {
 
 @media only screen and (max-width: 1450px) {
 	.museum-button.at-the-backyard {
-		top: 115px !important;
+		top: 100px !important;
+		width: 130px;
+		height: 72px;
+	}
+
+	.social-buttons {
+		top: 15%;
+		margin-right: -350px;
 	}
 
 	#museum-wrapper {
@@ -2288,6 +2295,10 @@ ul.logotypes li a {
 @media only screen and (max-width: 1150px) {
 	#museum-wrapper {
 		height: 500px;
+	}
+
+	.painting-info {
+		width: 400px;
 	}
 
 	.museum-painting {
@@ -2525,6 +2536,37 @@ ul.logotypes li a {
 	#helper-14 {
 		margin-right: -12.4rem;
 		top: 155px;
+	}
+
+	#helper-15 {
+		margin-right: -8.3rem;
+		top: 155px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#museum-wrapper {
+		height: 150px;
+	}
+
+	#helper-11 {
+		margin-right: -6.8rem;
+		top: -3px;
+	}
+
+	#helper-12 {
+		margin-left: -7.95rem;
+		top: 45px;
+	}
+
+	#helper-13 {
+		margin-left: -8rem;
+		top: 79px;
+	}
+
+	#helper-14 {
+		margin-right: -9.4rem;
+		top: 114px;
 	}
 
 	#helper-15 {

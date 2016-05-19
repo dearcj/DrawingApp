@@ -1222,8 +1222,9 @@ jQuery(document).ready(function($) {
 				paintingInfo = $('.painting-info'),
 				socialButtons = $('.social-buttons');
 
+		var paintingInfoWidth = parseInt(paintingInfo.css('width'));
+
 		if (width > 700) {
-			var paintingInfoWidth = parseInt(paintingInfo.css('width'));
 			paintingInfo.find('span.title').css('font-size', paintingInfoWidth/2.63 + '%');
 			paintingInfo.find('span.author').css('font-size', paintingInfoWidth/2.94 + '%');
 			socialButtons.find('span').css('font-size', paintingInfoWidth/3.57 + '%');
