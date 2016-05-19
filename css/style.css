@@ -2223,6 +2223,10 @@ ul.logotypes li a {
 		margin-right: -350px;
 	}
 
+	.social-buttons span#save {
+		padding-top: 65px;
+	}
+
 	#museum-wrapper {
 		height: 600px;
 	}
@@ -2301,6 +2305,34 @@ ul.logotypes li a {
 		width: 400px;
 	}
 
+	.museum-button.at-the-backyard {
+		top: 80px !important;
+		width: 115px;
+		height: 65px;
+	}
+
+	.social-buttons {
+		margin-right: -285px;
+	}
+
+	.social-buttons ul {
+		width: 80px;
+	}
+
+	.social-buttons ul li {
+		width: 35px;
+		height: 35px;
+	}
+
+	.social-buttons ul li#download {
+		width: 37px;
+		height: 37px;
+	}
+
+	.social-buttons span#save {
+		padding-top: 50px;
+	}
+
 	.museum-painting {
 		width: 325px;
 		height: 230px;
@@ -2341,6 +2373,11 @@ ul.logotypes li a {
 		height: 450px;
 	}
 
+	ul.ux-buttons li {
+		width: 45px;
+		height: 45px;
+	}
+
 	ul#helpers li {
 		width: 40px;
 		height: 40px;
@@ -2375,6 +2412,42 @@ ul.logotypes li a {
 @media only screen and (max-width: 950px) {
 	#museum-wrapper {
 		height: 400px;
+	}
+
+	.museum-painting {
+		width: 275px;
+		height: 195px;
+	}
+
+	.painting-info {
+		width: 350px;
+	}
+
+	.museum-button.at-the-backyard {
+		width: 100px;
+		height: 55px;
+	}
+
+	.social-buttons {
+		top: 13%;
+		margin-right: -240px;
+	}
+
+	.social-buttons ul {
+		width: 65px;
+	}
+
+	.social-buttons ul li {
+		width: 30px;
+		height: 30px;
+	}
+
+	.social-buttons span {
+		font-size: 95%;
+	}
+
+	.social-buttons span#save {
+		padding-top: 40px;
 	}
 
 	ul#helpers li {
