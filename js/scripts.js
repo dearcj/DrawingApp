@@ -737,12 +737,9 @@ jQuery(document).ready(function($) {
 		if ($(window).width() > 1150) {
 			$('.museum-painting').delay(1000).animate({top: -55 + 'px'}, 1000);
 			$('.painting-info').delay(1000).animate({top: -150 + 'px'}, 1500);
-		} else if ($(window).width() > 1050 && $(window).width() < 1150) {
+		} else {
 			$('.museum-painting').delay(1000).animate({top: -35 + 'px'}, 1000);
 			$('.painting-info').delay(1000).animate({top: -125 + 'px'}, 1500);
-		} else if ($(window).width() > 700 && $(window).width() < 1050) {
-			$('.museum-painting').delay(1000).animate({top: -50 + 'px'}, 1000);
-			$('.painting-info').delay(1000).animate({top: -145 + 'px'}, 1500);
 		}
 
 		$('#museum-wrapper').each(function(){
