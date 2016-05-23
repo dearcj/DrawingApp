@@ -53,11 +53,15 @@ Canvas.prototype.saveState = function(e) {
 	var dataURL = canvas.toDataURL("image/jpg", 0.85);
 	this.backups.push(dataURL);
 	if (this.backups.length > 10) this.backups.splice(0, 1);
+
+	$('#undo').alpha = 1;
 }
 
 
 Canvas.prototype.makeUndo = function(e) {
 	if (this.backups.length > 0) {
+
+
 		var b = this.backups[this.backups.length - 1];
 		this.backups.splice(this.backups.length - 1, 1);
 		var i = new Image();
@@ -80,6 +84,8 @@ Canvas.prototype.makeUndo = function(e) {
 			//ctx.canvas.width = ctx.canvas.width;
 
 		};
+	} else {
+			$('#undo').alpha = 0.5;
 	}
 }
 
