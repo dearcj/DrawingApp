@@ -54,7 +54,7 @@ Canvas.prototype.saveState = function(e) {
 	this.backups.push(dataURL);
 	if (this.backups.length > 10) this.backups.splice(0, 1);
 
-	$('#undo').alpha = 1;
+	$('#undo')[0].style.opacity = "1";
 }
 
 
@@ -84,9 +84,10 @@ Canvas.prototype.makeUndo = function(e) {
 			//ctx.canvas.width = ctx.canvas.width;
 
 		};
-	} else {
-			$('#undo').alpha = 0.5;
 	}
+		if (this.backups.length <= 1)
+		$('#undo')[0].style.opacity = "1";
+
 }
 
 
