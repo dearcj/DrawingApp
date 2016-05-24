@@ -333,9 +333,9 @@ ul#helpers {
 
 #painting-wrapper ul#helpers {
 	position: absolute;
-	top: 15px;
-	left: 50%;
-	margin-left: -400px;
+	top: 30px;
+	right: 50%;
+	margin-right: -435px;
 }
 
 #filters-wrapper ul#helpers {
