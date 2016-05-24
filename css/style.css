@@ -2220,6 +2220,10 @@ ul.logotypes li a {
 		height: 72px;
 	}
 
+	.painting-info {
+		top: 325px;
+	}
+
 	.social-buttons {
 		top: 15%;
 		margin-right: -350px;
@@ -2306,7 +2310,7 @@ ul.logotypes li a {
 
 	.painting-info {
 		width: 400px;
-		margin-left: -200px;
+		top: 275px;
 	}
 
 	.museum-button.at-the-backyard {
@@ -2384,6 +2388,10 @@ ul.logotypes li a {
 		height: 450px;
 	}
 
+	.painting-info {
+		top: 265px;
+	}
+
 	ul.ux-buttons li {
 		width: 45px;
 		height: 45px;
@@ -2433,7 +2441,7 @@ ul.logotypes li a {
 
 	.painting-info {
 		width: 300px;
-		margin-left: -150px;
+		top: 215px;
 	}
 
 	.museum-button.at-the-backyard {
@@ -2496,6 +2504,15 @@ ul.logotypes li a {
 @media only screen and (max-width: 850px) {
 	#museum-wrapper {
 		height: 350px;
+	}
+
+	.museum-painting {
+		width: 235px;
+		height: 166px;
+	}
+
+	.painting-info {
+		top: 200px;
 	}
 
 	ul#helpers li {
