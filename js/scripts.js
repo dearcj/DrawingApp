@@ -1001,14 +1001,18 @@ jQuery(document).ready(function($) {
 
 	// ------------SURFACES-----------
 
-	$('div.special').mouseover(function() {
-		$(this).find('span').css('display', 'inline-block');
-	});
 
-	$('div.special').mouseout(function() {
-		$(this).find('span').css('display', 'none');
-	});
 
+	if (window.eventType == 'click') {
+
+		$('div.special').mouseover(function () {
+			$(this).find('span').css('display', 'inline-block');
+		});
+
+		$('div.special').mouseout(function () {
+			$(this).find('span').css('display', 'none');
+		});
+	}
 	$('ul.surfaces li.wood').on(window.eventType, function(event) {
 		ZSound.Play('click');///
 		$('ul.surfaces li').removeClass('active');
@@ -1066,21 +1070,25 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 7;
 	});
 
-	$('ul.surfaces li').mouseover(function() {
-		$(this).find('p').css('display', 'block');
-	});
 
-	$('ul.surfaces li').mouseout(function() {
-		$(this).find('p').css('display', 'none');
-	});
+	if (window.eventType == 'click') {
 
-	$('ul.tools li').mouseover(function() {
-		$(this).find('p').css('display', 'block');
-	});
+		$('ul.surfaces li').mouseover(function () {
+			$(this).find('p').css('display', 'block');
+		});
 
-	$('ul.tools li').mouseout(function() {
-		$(this).find('p').css('display', 'none');
-	});
+		$('ul.surfaces li').mouseout(function () {
+			$(this).find('p').css('display', 'none');
+		});
+
+		$('ul.tools li').mouseover(function () {
+			$(this).find('p').css('display', 'block');
+		});
+
+		$('ul.tools li').mouseout(function () {
+			$(this).find('p').css('display', 'none');
+		});
+	}
 
 	$('ul.surfaces li').fadeIn(1500).removeClass('hidden');
 
