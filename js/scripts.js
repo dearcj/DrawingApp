@@ -1012,8 +1012,6 @@ jQuery(document).ready(function($) {
 		$('div.special').mouseout(function () {
 			$(this).find('span').css('display', 'none');
 		});
-
-
 	}
 
 	document.getElementById('wood').addEventListener(window.eventType, function () {
@@ -1024,7 +1022,7 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 1;
 	});
 
-/*	$('ul.surfaces li.board').on(window.eventType, function(event) {
+	$('ul.surfaces li.board').on(window.eventType, function(event) {
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active board-active');
@@ -1032,6 +1030,7 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 2;
 	});
 
+/*
 	$('ul.surfaces li.canvas').on(window.eventType, function(event) {
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
@@ -1071,7 +1070,8 @@ jQuery(document).ready(function($) {
 		$(this).addClass('active metal-active');
 		$('#surface-canvas').removeAttr('class').addClass('metal-texture');
 		window.selectedSurface = 7;
-	});*/
+	});
+*/
 
 
 	if (window.eventType == 'click') {
