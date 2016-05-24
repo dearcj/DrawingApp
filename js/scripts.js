@@ -1066,21 +1066,25 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 7;
 	});
 
-	$('ul.surfaces li').mouseover(function() {
-		$(this).find('p').css('display', 'block');
-	});
 
-	$('ul.surfaces li').mouseout(function() {
-		$(this).find('p').css('display', 'none');
-	});
+	if (window.eventType == 'click') {
 
-	$('ul.tools li').mouseover(function() {
-		$(this).find('p').css('display', 'block');
-	});
+		$('ul.surfaces li').mouseover(function () {
+			$(this).find('p').css('display', 'block');
+		});
 
-	$('ul.tools li').mouseout(function() {
-		$(this).find('p').css('display', 'none');
-	});
+		$('ul.surfaces li').mouseout(function () {
+			$(this).find('p').css('display', 'none');
+		});
+
+		$('ul.tools li').mouseover(function () {
+			$(this).find('p').css('display', 'block');
+		});
+
+		$('ul.tools li').mouseout(function () {
+			$(this).find('p').css('display', 'none');
+		});
+	}
 
 	$('ul.surfaces li').fadeIn(1500).removeClass('hidden');
 
