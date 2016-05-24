@@ -1013,7 +1013,8 @@ jQuery(document).ready(function($) {
 			$(this).find('span').css('display', 'none');
 		});
 	}
-	$('ul.surfaces li.wood').on(window.eventType, function(event) {
+
+	document.getElementById('wood').addEventListener(window.eventType, function () {
 		ZSound.Play('click');///
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active wood-active');
