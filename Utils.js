@@ -273,7 +273,7 @@ function applyFilter(canvId, imgData, filterNumber) {
   var cb;
   window.filterTag = '';
   ZSound.Play('filter');
-
+  window.trickyImage = '';
   var saveImgCBTricky = function (canvas, dx, dy, img) {
     window.savedImage = canvas.toDataURL("image/png", 0.8);
     var ctx = canvas.getContext('2d');
