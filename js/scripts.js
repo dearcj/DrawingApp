@@ -535,7 +535,7 @@ jQuery(document).ready(function($) {
 		if ($(window).width() < 700) {
 			$('#surface-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%'}, 200).css('z-index', '200');
 			$('#go-to-tools').delay(1000).animate({'top': -20 + 'px'}, 500);
-			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 240) /3.8 - surfaceWidth + 'px', 'margin-top': (165 - surfaceHeight*4)/2 + 'px'}, 1500);
+			$('ul.surfaces').css({width: surfaceWidth*2 + 'px', height: surfaceHeight*4 + 'px'}).delay(500).animate({'margin-left': ($(window).width() - 240) /3.8 - surfaceWidth + 'px', 'margin-top': (165 - surfaceHeight*4)/2 + 20 + 'px'}, 1500);
 		} else {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 500).css('z-index', '200');
 			$('#go-to-tools').delay(1000).animate({'top': 0 + 'px'}, 500);
@@ -719,7 +719,7 @@ jQuery(document).ready(function($) {
 		$('.screens').not('.generic').css({'opacity': 0, 'z-index': 100});
 
 		if ($(window).width() < 700) {
-			$('#museum-wrapper').animate({'opacity': 1, 'height': 100 + '%'}, 500).css('z-index', '200');
+			$('#museum-wrapper').css('display', 'block').animate({'opacity': 1, height: 100 + '%'}, 1000).css('z-index', '200');
 			$('.social-buttons ul').css('width', 75 + 'px');
 			$('.social-buttons ul li').css({width: 35 + 'px', height: 35 + 'px'});
 			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': -140 + 'px'}, 500);
