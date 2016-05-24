@@ -1012,8 +1012,11 @@ jQuery(document).ready(function($) {
 		$('div.special').mouseout(function () {
 			$(this).find('span').css('display', 'none');
 		});
+
+
 	}
 
+	document.getElementById('wood').addEventListener(window.eventType, function () {
 	document.getElementById('wood').addEventListener(window.eventType, function () {
 		ZSound.Play('click');///
 		$('ul.surfaces li').removeClass('active');
