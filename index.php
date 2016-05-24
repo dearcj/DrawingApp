@@ -10,7 +10,14 @@
 <!--[if !(IE 7) | !(IE 8) ]><!-->
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
-<head>
+<head >
+<head profile="http://www.w3.org/2005/10/profile">
+
+<link rel="icon"
+      type="image/png"
+      href="http://example.com/myicon.png">
+
+
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width">
 
