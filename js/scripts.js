@@ -1266,8 +1266,6 @@ jQuery(document).ready(function($) {
 
 		surfaceCanvasText.css({width: surfaceTextWidth + 'px', 'border-radius': surfaceTextBorderRadius + 'px', 'font-size': 530/2.2 + '%', 'padding': 6 * surfaceTextPadding/7 + 'px ' + '0 ' + surfaceTextPadding + 'px'});
 
-		surfacesLiP.css({'font-size': 180/1.333 + '%'});
-
 		window.forwardButtonHeight = 100;
 
 		$('ul#helpers.surface').css('top', 0);

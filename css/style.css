@@ -1718,9 +1718,13 @@ ul.surfaces li p {
 	display: none;
     text-align: center;
     position: relative;
-    font-size: 18px;
-    bottom: 30px;
+    font-size: 125%;
+    bottom: 20px;
     color: white;
+}
+
+ul.surfaces li.metal p {
+	bottom: 12px;
 }
 
 ul.surfaces li:hover,
