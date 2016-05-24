@@ -1099,7 +1099,7 @@ jQuery(document).ready(function($) {
 
 
 	$('ul#buttons li#button-4 a').click(function(event) {
-		
+
 		//LOAD IMAGE FROM SERVER
 	});
 
