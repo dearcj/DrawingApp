@@ -1001,14 +1001,18 @@ jQuery(document).ready(function($) {
 
 	// ------------SURFACES-----------
 
-	$('div.special').mouseover(function() {
-		$(this).find('span').css('display', 'inline-block');
-	});
 
-	$('div.special').mouseout(function() {
-		$(this).find('span').css('display', 'none');
-	});
 
+	if (window.eventType == 'click') {
+
+		$('div.special').mouseover(function () {
+			$(this).find('span').css('display', 'inline-block');
+		});
+
+		$('div.special').mouseout(function () {
+			$(this).find('span').css('display', 'none');
+		});
+	}
 	$('ul.surfaces li.wood').on(window.eventType, function(event) {
 		ZSound.Play('click');///
 		$('ul.surfaces li').removeClass('active');
