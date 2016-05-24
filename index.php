@@ -13,6 +13,13 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width">
+
+  <meta property="og:title" content="PLAYMMOMA"/>
+  <meta property="og:description" content=" Заходи в мастерскую #PLAYMMOMA, используй необычные инструменты и создай свою картину!"/>
+  <meta property="og:image" content="http://play.mmoma.ru/onlinegame/wp-content/themes/mmoma/api/imgs/1463742286561723507--1.jpg"/>
+  <meta property="og:url" content="http://play.mmoma.ru/onlinegame/"/>
+
+
   <title><?php wp_title( '|', true, 'right' ); ?></title>
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">

@@ -63,7 +63,7 @@ class mMomaAPI extends Rest {
 			$bin =  base64_decode($image);
 			$link = 'imgs/i' .  $imgfilename .'--'. $user_id . '.jpg';
 			file_put_contents($link, $bin);
-
+			chmod($link, 777);
 
 			$db = $this->_db->prepare("INSERT INTO tb_gallery (user_id, image, name, description, tags, file) VALUES (:user_id, :image, :name, :description, :tags, :file)");
 			$db->bindParam(":tags", $this->request["tags"]);
