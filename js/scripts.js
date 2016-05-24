@@ -1017,14 +1017,14 @@ jQuery(document).ready(function($) {
 	}
 
 	document.getElementById('wood').addEventListener(window.eventType, function () {
-		ZSound.Play('click');///
+		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active wood-active');
 		$('#surface-canvas').removeAttr('class').addClass('wood-texture').fadeIn(1000);
 		window.selectedSurface = 1;
 	});
 
-/*	$('ul.surfaces li.board').on(window.eventType, function(event) {
+	$('ul.surfaces li.board').on(window.eventType, function(event) {
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active board-active');
@@ -1071,7 +1071,7 @@ jQuery(document).ready(function($) {
 		$(this).addClass('active metal-active');
 		$('#surface-canvas').removeAttr('class').addClass('metal-texture');
 		window.selectedSurface = 7;
-	});*/
+	});
 
 
 	if (window.eventType == 'click') {
@@ -1099,6 +1099,7 @@ jQuery(document).ready(function($) {
 
 
 	$('ul#buttons li#button-4 a').click(function(event) {
+		event.preventDefault();
 
 		//LOAD IMAGE FROM SERVER
 	});
