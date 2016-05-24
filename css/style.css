@@ -514,7 +514,7 @@ ul#helpers li span p {
 }
 
 .no-cursor {
-	cursor: none;
+	cursor: none !important;
 }
 
 #main-canvas {
