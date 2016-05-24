@@ -1017,7 +1017,6 @@ jQuery(document).ready(function($) {
 	}
 
 	document.getElementById('wood').addEventListener(window.eventType, function () {
-	document.getElementById('wood').addEventListener(window.eventType, function () {
 		ZSound.Play('click');///
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active wood-active');
@@ -1100,8 +1099,7 @@ jQuery(document).ready(function($) {
 
 
 	$('ul#buttons li#button-4 a').click(function(event) {
-		event.preventDefault();
-
+		
 		//LOAD IMAGE FROM SERVER
 	});
 
