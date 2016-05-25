@@ -93,9 +93,22 @@ jQuery(document).ready(function($) {
 		$('li#helper-8c span').css('opacity', 1);
 	});
 
-/*	$('.interact').mouseover(function() {
-		ZSound.Play('interact');
-	});*/
+	$('#scotch').mouseout(function() {
+		$('ul.comments li span').css('opacity', 0);
+	});
+
+	$('#denim').mouseout(function() {
+		$('ul.comments li span').css('opacity', 0);
+	});
+
+	$('#needle').mouseout(function() {
+		$('ul.comments li span').css('opacity', 0);
+	});
+
+
+	/*	$('.interact').mouseover(function() {
+            ZSound.Play('interact');
+        });*/
 
 	$('ul.surfaces li').on(window.eventType, function(event) {
 		ZSound.Play('surface');
