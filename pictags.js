@@ -78,7 +78,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/scotch-1.jpg',
 		thumb: 'pictags/thumbs/tools/scotch-1.jpg',
-		tag: 'скотч',
+		tag: 'скотч-1',
 		title: '«Аварийная машина»',
 		author: 'Леонид Семейко',
 		year: '2001',
@@ -88,7 +88,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/scotch-2.jpg',
 		thumb: 'pictags/thumbs/tools/scotch-2.jpg',
-		tag: 'скотч',
+		tag: 'скотч-2',
 		title: '«Асса»',
 		author: 'Тимур Новиков',
 		year: '1987',
@@ -98,7 +98,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/scotch-3.jpg',
 		thumb: 'pictags/thumbs/tools/scotch-3.jpg',
-		tag: 'скотч',
+		tag: 'скотч-3',
 		title: '«Аполлон, вдохновляющий эпического поэта»',
 		author: 'Группа АЕС',
 		year: '1989',
@@ -108,7 +108,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/chalk-1.jpg',
 		thumb: 'pictags/thumbs/tools/chalk-1.jpg',
-		tag: 'мел',
+		tag: 'мел-1',
 		title: '«Фонарик»',
 		author: 'Никита Алексеев',
 		year: '1991',
@@ -118,7 +118,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/chalk-2.jpg',
 		thumb: 'pictags/thumbs/tools/chalk-2.jpg',
-		tag: 'мел',
+		tag: 'мел-2',
 		title: 'Из серии «Женская сборная Чечни по прыжкам с парашютом»',
 		author: 'Алексей Каллима',
 		year: '2008',
@@ -148,7 +148,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/denim-1.jpg',
 		thumb: 'pictags/thumbs/tools/denim-1.jpg',
-		tag: 'джинса',
+		tag: 'джинса-1',
 		title: '«Бассейн»',
 		author: 'Александр Дашевский',
 		year: '2009',
@@ -158,7 +158,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/denim-2.jpg',
 		thumb: 'pictags/thumbs/tools/denim-2.jpg',
-		tag: 'джинса',
+		tag: 'джинса-2',
 		title: '«Утро, день, вечер, ночь»',
 		author: 'Виктор Пивоваров',
 		year: '2002',
@@ -168,7 +168,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/denim-3.jpg',
 		thumb: 'pictags/thumbs/tools/denim-3.jpg',
-		tag: 'джинса',
+		tag: 'джинса-3',
 		title: '«Валик - оружие маляра»',
 		author: 'Дамир Муратов',
 		year: '2004',
@@ -188,7 +188,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/needle-1.jpg',
 		thumb: 'pictags/thumbs/tools/needle-1.jpg',
-		tag: 'нитки',
+		tag: 'нитки-1',
 		title: 'Clan Rmmbrnce, из серии «Sub»',
 		author: 'Влад Кульков',
 		year: '2008',
@@ -198,7 +198,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/needle-2.jpg',
 		thumb: 'pictags/thumbs/tools/needle-2.jpg',
-		tag: 'нитки',
+		tag: 'нитки-2',
 		title: '«Песни дикой косатки»',
 		author: 'Татьяна Ахметгалиева',
 		year: '2010',
@@ -279,7 +279,7 @@ var picTags = [
 	{
 		pic: 'pictags/filters/rama-1.jpg',
 		thumb: 'pictags/thumbs/filters/rama-1.jpg',
-		tag: 'рамка',
+		tag: 'рамка-1',
 		title: '«Иллюзия исчезновения заполненности»',
 		author: 'Иван Плющ, Ирина Дрозд',
 		year: '2011',
@@ -290,7 +290,7 @@ var picTags = [
 	{
 		pic: 'pictags/filters/rama-2.jpg',
 		thumb: 'pictags/thumbs/filters/rama-2.jpg',
-		tag: 'рамка',
+		tag: 'рамка-2',
 		title: '«Big Black Pixel»',
 		author: 'Георгий Пузенков',
 		year: '2001',
