@@ -1069,7 +1069,23 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 1;
 	});
 
+	document.getElementById('wood').addEventListener('touchend', function () {
+		ZSound.Play('click');
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active wood-active');
+		$('#surface-canvas').removeAttr('class').addClass('wood-texture').fadeIn(1000);
+		window.selectedSurface = 1;
+	});
+
 	$('ul.surfaces li.board').on(window.eventType, function(event) {
+		ZSound.Play('click');
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active board-active');
+		$('#surface-canvas').removeAttr('class').addClass('board-texture').fadeIn(1000);
+		window.selectedSurface = 2;
+	});
+
+	$('ul.surfaces li.board').on('touchend', function(event) {
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active board-active');
@@ -1085,7 +1101,23 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 3;
 	});
 
+	$('ul.surfaces li.canvas').on('touchend', function(event) {
+		ZSound.Play('click');
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active canvas-active');
+		$('#surface-canvas').removeAttr('class').addClass('canvas-texture');
+		window.selectedSurface = 3;
+	});
+
 	$('ul.surfaces li.brick').on(window.eventType, function(event) {
+		ZSound.Play('click');
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active brick-active');
+		$('#surface-canvas').removeAttr('class').addClass('brick-texture');
+		window.selectedSurface = 4;
+	});
+
+	$('ul.surfaces li.brick').on('touchend', function(event) {
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active brick-active');
@@ -1101,6 +1133,14 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 5;
 	});
 
+	$('ul.surfaces li.cardboard').on('touchend', function(event) {
+		ZSound.Play('click');
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active cardboard-active');
+		$('#surface-canvas').removeAttr('class').addClass('cardboard-texture');
+		window.selectedSurface = 5;
+	});
+
 	$('ul.surfaces li.wall').on(window.eventType, function(event) {
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
@@ -1109,7 +1149,24 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 6;
 	});
 
+	$('ul.surfaces li.wall').on('touchend', function(event) {
+		ZSound.Play('click');
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active wall-active');
+		$('#surface-canvas').removeAttr('class').addClass('wall-texture');
+		window.selectedSurface = 6;
+	});
+
 	$('ul.surfaces li.metal').on(window.eventType, function(event) {
+
+		ZSound.Play('click');
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active metal-active');
+		$('#surface-canvas').removeAttr('class').addClass('metal-texture');
+		window.selectedSurface = 7;
+	});
+
+	$('ul.surfaces li.metal').on('touchend', function(event) {
 
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
