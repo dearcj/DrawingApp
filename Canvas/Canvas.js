@@ -132,7 +132,7 @@ Canvas.prototype.resetCanvas = function () {
 	var ctx = this.state.backCtx;
 
 	this.tags = [];
-
+	this.innerTags = [];
 	var pathToSurfaces = window.basePath + 'img/textures/';
 	switch (this.canvasType) {
 		case 1:
@@ -141,6 +141,8 @@ Canvas.prototype.resetCanvas = function () {
 				ctx.drawImage(this, 0, 0);
 			};
 			this.tags.push('дерево');
+			this.innerTags.push('дерево');
+
 			imageObj.src = pathToSurfaces + 'wood.jpg';
 			break;
 		case 2:
@@ -150,6 +152,8 @@ Canvas.prototype.resetCanvas = function () {
 			};
 			imageObj.src = pathToSurfaces + 'board.jpg';
 			this.tags.push('доска');
+			this.innerTags.push('доска');
+
 			break;
 		case 3:
 			var imageObj = new Image();
@@ -158,6 +162,8 @@ Canvas.prototype.resetCanvas = function () {
 			};
 			imageObj.src = pathToSurfaces + 'canvas.jpg';
 			this.tags.push('полотно');
+			this.innerTags.push('полотно');
+
 
 			break;
 		case 4:
@@ -167,6 +173,7 @@ Canvas.prototype.resetCanvas = function () {
 			};
 			imageObj.src = pathToSurfaces + 'brick.jpg';
 			this.tags.push('кирпич');
+			this.innerTags.push('кирпич');
 
 			break;
 		case 5:
@@ -176,6 +183,7 @@ Canvas.prototype.resetCanvas = function () {
 			};
 			imageObj.src = pathToSurfaces + 'cardboard.jpg';
 			this.tags.push('картон');
+			this.innerTags.push('картон');
 
 			break;
 		case 6:
@@ -185,6 +193,7 @@ Canvas.prototype.resetCanvas = function () {
 			};
 			imageObj.src = pathToSurfaces + 'wallpaper.jpg';
 			this.tags.push('обои');
+			this.innerTags.push('обои');
 
 			break;
 		case 7:
@@ -193,6 +202,7 @@ Canvas.prototype.resetCanvas = function () {
 				ctx.drawImage(this, 0, 0);
 			};
 			this.tags.push('металл');
+			this.innerTags.push('металл');
 
 			imageObj.src = pathToSurfaces + 'metal.jpg';
 			break;

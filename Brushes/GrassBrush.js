@@ -8,7 +8,8 @@ extend(GrassBrush, Brush);
 
 function GrassBrush(color) {
 	Brush.apply(this, color);
-	this.name = 'трава';
+	this.name = ['трава'];
+	this.innerName = ['трава'];
 
 	var self = this;
 

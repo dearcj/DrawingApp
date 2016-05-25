@@ -831,6 +831,11 @@ jQuery(document).ready(function($) {
 		if (window.filterTag && window.filterTag != '') {
 			window.mainCanvasObject.tags.push(window.filterTag);
 		}
+
+		if (window.filterInnerTag && window.filterInnerTag != '') {
+			window.mainCanvasObject.innerTags.push(window.filterInnerTag);
+		}
+
 	});
 
 	$('.go-to-publication').on(window.eventType, function(event) {
@@ -843,7 +848,7 @@ jQuery(document).ready(function($) {
 			document.getElementById('painting-img').src = window.trickyImage;
 			window.trickyImage = null;
 		} else document.getElementById('painting-img').src = window.savedImage;
-		window.imgs = getImagesByTags(window.mainCanvasObject.tags);
+		window.imgs = getImagesByTags(window.mainCanvasObject.innerTags);
 
 		setRandomImgs();
 
