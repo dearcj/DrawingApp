@@ -886,6 +886,10 @@ ul.comments li {
 	opacity: 0;
 }
 
+ul.comments li span {
+	display: block;
+}
+
 ul.tools-buttons {
     position: relative;
     padding: 0;
