@@ -262,8 +262,8 @@ var picTags = [
 	{
 		pic: 'pictags/filters/distortion.jpg',
 		thumb: 'pictags/thumbs/filters/distortion.jpg',
-		tag: 'калейдоскоп',
-		innertag: 'калейдоскоп',
+		tag: 'искажение',
+		innertag: 'искажение',
 		title: '«Русско-американская картина»',
 		author: 'Евгений Гороховский',
 		year: '1991',
@@ -345,7 +345,7 @@ var getImagesByTags = function (tags) {
 
 	for (var i = 0; i < tags.length; ++i) {
 		for (var j = 0; j < picTags.length; ++j) {
-			if (tags[i] == picTags[j].tag) {
+			if (tags[i] == picTags[j].innertag) {
 				res.push(picTags[j]);
 			}
 		}
