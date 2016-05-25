@@ -609,8 +609,8 @@ jQuery(document).ready(function($) {
 		}
 	}
 
-	window.uxTop = $('.header').height() + $('#wrapper').height() - $('ul.ux-buttons li').height() - 15;
-	
+	window.uxTop = $('.header').height() + $('.generic').height() - $('ul.ux-buttons li').height() - 15;
+
 	function genericAnimation() {
 		$('.generic ul.ux-buttons').css('top', uxTop + 'px');
 		console.log(uxTop);
