@@ -8,7 +8,9 @@ extend(DenimBrush, Brush);
 
 function DenimBrush(color) {
 	Brush.apply(this, color);
-	this.name = 'джинса';
+	this.name = ['джинсы', 'джинсы', 'джинсы' ];
+	this.innerName = ['джинсы-1', 'джинсы-2', 'джинсы-3'];
+
 }
 
 DenimBrush.prototype.onSelect = function () {

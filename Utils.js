@@ -272,6 +272,8 @@ function vkpost(t, im, imPath) {
 function applyFilter(canvId, imgData, filterNumber) {
   var cb;
   window.filterTag = '';
+  window.filterInnerTag = '';
+
   ZSound.Play('filter');
   window.trickyImage = '';
   var saveImgCBTricky = function (canvas, dx, dy, img) {
@@ -303,13 +305,16 @@ function applyFilter(canvId, imgData, filterNumber) {
     var img = window.temporaryFilterImages[window.trickySrc];
    cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
     window.filterTag = 'диптих';
+    window.filterInnerTag = 'диптих';
+
    }
   if (filterNumber == 2) {
     window.trickySrc = relPath + 'filters/modern.png';
     var src = relPath + 'filters/modern.png';
     var img = window.temporaryFilterImages[window.trickySrc];
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, false, img);
-    window.filterTag = 'рамка';
+    window.filterTag = 'рама';
+    window.filterInnerTag = 'рама';
   }
   if (filterNumber == 3) {
     window.trickySrc = relPath + 'filters/poliptih.png';
@@ -318,6 +323,7 @@ function applyFilter(canvId, imgData, filterNumber) {
 
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
     window.filterTag = 'диптих';
+    window.filterInnerTag = 'диптих';
   }
   if (filterNumber == 4) {
     window.trickySrc = relPath + 'filters/vintage.png';
@@ -325,15 +331,19 @@ function applyFilter(canvId, imgData, filterNumber) {
     var img = window.temporaryFilterImages[window.trickySrc];
 
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
-    window.filterTag = 'рамка';
+    window.filterTag = 'рама';
+    window.filterInnerTag = 'рама';
   }
   if (filterNumber == 5) {
     cb = getPixelate(saveImgCB, canvId, imgData);
     window.filterTag = 'пикселизация';
+    window.filterInnerTag = 'пикселизация';
   }
   if (filterNumber == 6) {
     cb = getInv(saveImgCB, canvId, imgData);
-    window.filterTag = 'инверсия';
+    window.filterTag = 'цветовая инверсия';
+    window.filterInnerTag = 'цветовая инверсия';
+
   }
 
  /* if (filterNumber == 7) {
@@ -344,27 +354,38 @@ function applyFilter(canvId, imgData, filterNumber) {
   if (filterNumber == 8) {
     cb = kaleidoscope(saveImgCB, canvId, imgData);
     window.filterTag = 'искажение';
+    window.filterInnerTag = 'искажение';
+
   }
 
   if (filterNumber == 9) {
     cb = getPattern(saveImgCB, canvId, imgData);
-    window.filterTag = 'паттерн';
+    window.filterTag = 'орнамент';
+    window.filterInnerTag = 'орнамент';
+
   }
 
   if (filterNumber == 10) {
     var src = relPath + 'filters/bubble1.png';
     cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*380, Math.random()*300);
-    window.filterTag = 'баббл';
+    window.filterTag = 'облачко мыслей';
+    window.filterInnerTag = 'облачко мыслей';
+
   }
   if (filterNumber == 11) {
     var src = relPath + 'filters/bubble2.png';
     cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*380, Math.random()*300);
-    window.filterTag = 'баббл';
+    window.filterTag = 'облачко мыслей';
+    window.filterInnerTag = 'облачко мыслей';
+
   }
+
   if (filterNumber == 12) {
     var src = relPath + 'filters/bubble3.png';
     cb = applyOverFilter(saveImgCB, src, canvId, imgData, Math.random()*380, Math.random()*300);
-    window.filterTag = 'баббл';
+    window.filterTag = 'облачко мыслей';
+    window.filterInnerTag = 'облачко мыслей';
+
   }
   var dw = 1;
   var dh = 1;

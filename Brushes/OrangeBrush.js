@@ -5,7 +5,8 @@ extend(OrangeBrush, Brush);
 
 function OrangeBrush(color) {
 	Brush.apply(this, color);
-	this.name = 'апельсин';
+	this.name = ['апельсин'];
+	this.innerName = ['апельсин'];
 
 	this.imgs = [];
 	for (var i = 1; i <= 6; ++i) {

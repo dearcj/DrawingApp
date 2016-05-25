@@ -9,7 +9,8 @@ extend(ThreadBrush, Brush);
 function ThreadBrush(color) {
 	Brush.apply(this, color);
 
-	this.name = 'нитки';
+	this.name = ['нитки', 'нитки', 'нитки', 'нитки', 'нитки', 'нитки', 'нитки', 'нитки'];
+	this.innerName = ['нитки-1', 'нитки-2', 'нитки-1', 'нитки-2', 'нитки-1', 'нитки-2', 'нитки-1', 'нитки-2', 'нитки-1', 'нитки-2'];
 
 }
 
