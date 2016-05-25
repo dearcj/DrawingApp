@@ -610,8 +610,8 @@ jQuery(document).ready(function($) {
 	}
 
 	function genericAnimation() {
-		var surfaceWidth = $(window).width()/10.666;
-		var surfaceHeight = $(window).width()/16.134;
+		var uxTop = $('.header').height() + $('#wrapper').height();
+		$('.generic ul.ux-buttons').css('top', uxTop + 'px');
 
 		$('.generic-button').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 		$('#installation-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
