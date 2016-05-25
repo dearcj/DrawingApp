@@ -322,8 +322,8 @@ function applyFilter(canvId, imgData, filterNumber) {
     var img = window.temporaryFilterImages[window.trickySrc];
 
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
-    window.filterTag = 'диптих';
-    window.filterInnerTag = 'диптих';
+    window.filterTag = 'полиптих';
+    window.filterInnerTag = 'полиптих';
   }
   if (filterNumber == 4) {
     window.trickySrc = relPath + 'filters/vintage.png';
