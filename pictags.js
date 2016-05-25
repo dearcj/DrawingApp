@@ -52,7 +52,7 @@ var picTags = [
 	{
 		pic: 'pictags/canvas/metal.jpg',
 		thumb: 'pictags/thumbs/canvas/metal.jpg',
-		tag: 'метал',
+		tag: 'металл',
 		fulltags: '',
 		title: '«Луна и на солнце пятна»',
 		author: 'Ирина Затуловская',
