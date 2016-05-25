@@ -1070,6 +1070,14 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 1;
 	});
 
+	document.getElementById('wood').addEventListener('touchend', function () {
+		ZSound.Play('click');
+		$('ul.surfaces li').removeClass('active');
+		$(this).addClass('active wood-active');
+		$('#surface-canvas').removeAttr('class').addClass('wood-texture').fadeIn(1000);
+		window.selectedSurface = 1;
+	});
+
 	$('ul.surfaces li.board').on(window.eventType, function(event) {
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
