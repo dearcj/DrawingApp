@@ -13,13 +13,10 @@ body {
 
 a {
 	font-size: 13px;
-	font-family: Arial, Helvetica, sans-serif;
 	color: #265CA6;
 }
 
 a:hover {
-	font-size: 13px;
-	font-family: Arial, Helvetica, sans-serif;
 	color: #0B84DD;
 }
 #apDiv1 {
