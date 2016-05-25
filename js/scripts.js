@@ -1061,6 +1061,7 @@ jQuery(document).ready(function($) {
 		});
 	}
 
+	console.log('init buttons');
 	document.getElementById('wood').addEventListener(window.eventType, function () {
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
