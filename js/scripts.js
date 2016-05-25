@@ -898,29 +898,24 @@ jQuery(document).ready(function($) {
 	});
 
 	window.addEventListener("popstate", function(e) {
-		console.log(currentHash.hash);
 		if (currentHash.hash.indexOf('index') > 0) {
 			openPage('index');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		console.log(currentHash.hash);
 		if (currentHash.hash == 'surface') {
-			console.log('hi');
 			openPage('surface');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		console.log(currentHash.hash);
 		if (currentHash.hash.indexOf('painting') > 0) {
 			openPage('painting');
 		}
 	}, false);
 
 	window.addEventListener("popstate", function(e) {
-		console.log(currentHash.hash);
 		if (currentHash.hash.indexOf('filters') > 0) {
 			openPage('filters');
 		}
