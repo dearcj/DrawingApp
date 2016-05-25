@@ -22,8 +22,8 @@ function msieversion() {
 	return false;
 }
 
-
-/*ZSound.Init([
+if (msieversion() == false) {
+	ZSound.Init([
 	{id: 'scotch', src: "scotch.ogg"},
 	{id: 'click', src: "click.ogg"},
 	{id: 'filter', src: "filter.ogg"},
@@ -39,7 +39,8 @@ function msieversion() {
 	{id: 'needle', src: "needle.ogg"},
 	{id: 'orange', src: "orange.ogg"},
 ]);
-*/
+}
+
 window.eventType = $.support.touch ? "tap" : "click";
 
 ZSound.soundLoadedFunction = function() {
