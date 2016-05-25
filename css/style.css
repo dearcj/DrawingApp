@@ -2415,6 +2415,12 @@ ul.logotypes li a {
 	}
 }
 
+@media only screen and (max-width: 1024px) {
+	.generic ul.ux-buttons {
+		bottom: -45px;
+	}
+}
+
 @media only screen and (max-width: 1050px) {
 	#museum-wrapper {
 		height: 450px;
@@ -2723,7 +2729,7 @@ ul.logotypes li a {
 	.generic-art {
 		float: none;
 		width: 75%;
-		margin: 9% auto 0;
+		margin: 8% auto 0;
 	}
 	.generic-text {
 		float: none;

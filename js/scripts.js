@@ -613,7 +613,7 @@ jQuery(document).ready(function($) {
 		var surfaceWidth = $(window).width()/10.666;
 		var surfaceHeight = $(window).width()/16.134;
 
-		$('.generic-button').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'}).delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
+		$('.generic-button').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 		$('#installation-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
 		$('#performance-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
 		$('#interpretation-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
