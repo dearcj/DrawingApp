@@ -314,7 +314,7 @@ function applyFilter(canvId, imgData, filterNumber) {
     var img = window.temporaryFilterImages[window.trickySrc];
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, false, img);
     window.filterTag = 'рама';
-    window.filterInnerTag = 'рама';
+    window.filterInnerTag = 'рама-2';
   }
   if (filterNumber == 3) {
     window.trickySrc = relPath + 'filters/poliptih.png';
@@ -332,7 +332,7 @@ function applyFilter(canvId, imgData, filterNumber) {
 
     cb = applyOverFilter(saveImgCBTricky, src, canvId, imgData, 0, 0, true, img);
     window.filterTag = 'рама';
-    window.filterInnerTag = 'рама';
+    window.filterInnerTag = 'рама-1';
   }
   if (filterNumber == 5) {
     cb = getPixelate(saveImgCB, canvId, imgData);
