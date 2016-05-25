@@ -8,7 +8,7 @@ var picTags = [
 	{
 		pic: 'pictags/canvas/board.jpg',
 		thumb: 'pictags/thumbs/canvas/board.jpg',
-		tag: 'доска',
+		tag: 'школьная доска',
 		title: 'Из серии «Школьные доски»',
 		author: 'Сергей Волков',
 		year: '2007',
@@ -28,7 +28,7 @@ var picTags = [
 	{
 		pic: 'pictags/canvas/canvas.jpg',
 		thumb: 'pictags/thumbs/canvas/canvas.jpg',
-		tag: 'полотно',
+		tag: 'холст',
 		title: '«Птица»',
 		author: 'Олег Ланг',
 		year: '2003',
@@ -78,7 +78,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/scotch-1.jpg',
 		thumb: 'pictags/thumbs/tools/scotch-1.jpg',
-		tag: 'скотч-1',
+		tag: 'скотч',
 		title: '«Аварийная машина»',
 		author: 'Леонид Семейко',
 		year: '2001',
@@ -88,7 +88,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/scotch-2.jpg',
 		thumb: 'pictags/thumbs/tools/scotch-2.jpg',
-		tag: 'скотч-2',
+		tag: 'скотч',
 		title: '«Асса»',
 		author: 'Тимур Новиков',
 		year: '1987',
@@ -98,7 +98,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/scotch-3.jpg',
 		thumb: 'pictags/thumbs/tools/scotch-3.jpg',
-		tag: 'скотч-3',
+		tag: 'скотч',
 		title: '«Аполлон, вдохновляющий эпического поэта»',
 		author: 'Группа АЕС',
 		year: '1989',
@@ -108,7 +108,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/chalk-1.jpg',
 		thumb: 'pictags/thumbs/tools/chalk-1.jpg',
-		tag: 'мел-1',
+		tag: 'мел',
 		title: '«Фонарик»',
 		author: 'Никита Алексеев',
 		year: '1991',
@@ -118,7 +118,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/chalk-2.jpg',
 		thumb: 'pictags/thumbs/tools/chalk-2.jpg',
-		tag: 'мел-2',
+		tag: 'уголь',
 		title: 'Из серии «Женская сборная Чечни по прыжкам с парашютом»',
 		author: 'Алексей Каллима',
 		year: '2008',
@@ -148,7 +148,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/denim-1.jpg',
 		thumb: 'pictags/thumbs/tools/denim-1.jpg',
-		tag: 'джинса-1',
+		tag: 'джинсы',
 		title: '«Бассейн»',
 		author: 'Александр Дашевский',
 		year: '2009',
@@ -158,7 +158,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/denim-2.jpg',
 		thumb: 'pictags/thumbs/tools/denim-2.jpg',
-		tag: 'джинса-2',
+		tag: 'джинсы',
 		title: '«Утро, день, вечер, ночь»',
 		author: 'Виктор Пивоваров',
 		year: '2002',
@@ -168,7 +168,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/denim-3.jpg',
 		thumb: 'pictags/thumbs/tools/denim-3.jpg',
-		tag: 'джинса-3',
+		tag: 'джинсы',
 		title: '«Валик - оружие маляра»',
 		author: 'Дамир Муратов',
 		year: '2004',
@@ -188,7 +188,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/needle-1.jpg',
 		thumb: 'pictags/thumbs/tools/needle-1.jpg',
-		tag: 'нитки-1',
+		tag: 'нитки',
 		title: 'Clan Rmmbrnce, из серии «Sub»',
 		author: 'Влад Кульков',
 		year: '2008',
@@ -198,7 +198,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/needle-2.jpg',
 		thumb: 'pictags/thumbs/tools/needle-2.jpg',
-		tag: 'нитки-2',
+		tag: 'нитки',
 		title: '«Песни дикой косатки»',
 		author: 'Татьяна Ахметгалиева',
 		year: '2010',
@@ -208,7 +208,7 @@ var picTags = [
 	{
 		pic: 'pictags/tools/pistol.jpg',
 		thumb: 'pictags/thumbs/tools/pistol.jpg',
-		tag: 'пистолет',
+		tag: 'пистолетик',
 		title: '«Самба»',
 		author: 'Евгений Вахтангов',
 		year: '2003',
@@ -218,7 +218,7 @@ var picTags = [
 	{
 		pic: 'pictags/filters/bubble.jpg',
 		thumb: 'pictags/thumbs/filters/bubble.jpg',
-		tag: 'баббл',
+		tag: 'облачко мыслей',
 		title: '«I wonder who this artist is» из серии «I am not»',
 		author: 'Юрий Альберт',
 		year: '2005',
@@ -238,7 +238,7 @@ var picTags = [
 	{
 		pic: 'pictags/filters/distortion.jpg',
 		thumb: 'pictags/thumbs/filters/distortion.jpg',
-		tag: 'искажение',
+		tag: 'калейдоскоп',
 		title: '«Русско-американская картина»',
 		author: 'Евгений Гороховский',
 		year: '1991',
@@ -248,7 +248,7 @@ var picTags = [
 	{
 		pic: 'pictags/filters/inversion.jpg',
 		thumb: 'pictags/thumbs/filters/inversion.jpg',
-		tag: 'инверсия',
+		tag: 'цветовая инверсия',
 		title: '«Энди Уорхол»',
 		author: 'Игорь Макаревич',
 		year: '2001',
@@ -258,7 +258,7 @@ var picTags = [
 	{
 		pic: 'pictags/filters/pattern.jpg',
 		thumb: 'pictags/thumbs/filters/pattern.jpg',
-		tag: 'паттерн',
+		tag: 'орнамент',
 		title: '«Голубая икра»',
 		author: 'Александр Косолапов',
 		year: '1991',
@@ -279,7 +279,7 @@ var picTags = [
 	{
 		pic: 'pictags/filters/rama-1.jpg',
 		thumb: 'pictags/thumbs/filters/rama-1.jpg',
-		tag: 'рамка-1',
+		tag: 'рама',
 		title: '«Иллюзия исчезновения заполненности»',
 		author: 'Иван Плющ, Ирина Дрозд',
 		year: '2011',
@@ -290,7 +290,7 @@ var picTags = [
 	{
 		pic: 'pictags/filters/rama-2.jpg',
 		thumb: 'pictags/thumbs/filters/rama-2.jpg',
-		tag: 'рамка-2',
+		tag: 'рама',
 		title: '«Big Black Pixel»',
 		author: 'Георгий Пузенков',
 		year: '2001',
