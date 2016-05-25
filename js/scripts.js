@@ -517,7 +517,7 @@ jQuery(document).ready(function($) {
 	function openPage(pageName) {
 		//event.preventDefault();
 
-		if (hash.indexOf(pageName) > 0) {
+		if (hash.indexOf(pageName) > 0 && hashBeforeReload != null) {
 			var stateObj = { hash: hashBeforeReload.hash };
 			history.pushState(stateObj, pageName, mainUrl + '#' + pageName);
 		} else {
