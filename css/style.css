@@ -887,7 +887,7 @@ ul.comments li {
 }
 
 ul.comments li span {
-	display: block;
+	display: block !important;
 }
 
 ul.tools-buttons {
