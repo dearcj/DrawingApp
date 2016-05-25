@@ -882,6 +882,10 @@ form.sending-form .work-author input {
 	font-family: 'DINRoundPro-Bold', sans-serif !important;
 }
 
+ul#comments li {
+	opacity: 0;
+}
+
 ul.tools-buttons {
     position: relative;
     padding: 0;

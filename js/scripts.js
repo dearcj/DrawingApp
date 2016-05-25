@@ -78,6 +78,21 @@ jQuery(document).ready(function($) {
 		}
 	});
 
+	$('#scotch').mouseover(function() {
+		$('ul#comments li').css('opacity', 0);
+		$('#helper-8a').css('opacity', 1);
+	});
+
+	$('#denim').mouseover(function() {
+		$('ul#comments li').css('opacity', 0);
+		$('#helper-8b').css('opacity', 1);
+	});
+
+	$('#needle').mouseover(function() {
+		$('ul#comments li').css('opacity', 0);
+		$('#helper-8c').css('opacity', 1);
+	});
+
 /*	$('.interact').mouseover(function() {
 		ZSound.Play('interact');
 	});*/
