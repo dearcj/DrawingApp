@@ -882,7 +882,7 @@ form.sending-form .work-author input {
 	font-family: 'DINRoundPro-Bold', sans-serif !important;
 }
 
-ul#comments li {
+ul.comments li {
 	opacity: 0;
 }
 
