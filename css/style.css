@@ -15,12 +15,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body {
     margin: 0;
 	width: 100%;
+	font-family: 'DINRoundPro-Bold', sans-serif;
 }
 
 body #wrapper {
 	opacity: 0;
 	width: 100%;
-	font-family: 'DINRoundPro-Bold', sans-serif;
 }
 
 ul {
