@@ -884,6 +884,9 @@ form.sending-form .work-author input {
 
 ul.comments li {
 	background: none !important;
+	position: absolute;
+	left: 25px;
+	top: 130px;
 }
 
 ul.comments li span {
