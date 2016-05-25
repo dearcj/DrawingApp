@@ -345,7 +345,7 @@ var getImagesByTags = function (tags) {
 
 	for (var i = 0; i < tags.length; ++i) {
 		for (var j = 0; j < picTags.length; ++j) {
-			if (tags[i] == picTags[j].tag) {
+			if (tags[i] == picTags[j].innertag) {
 				res.push(picTags[j]);
 			}
 		}
