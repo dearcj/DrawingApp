@@ -612,6 +612,7 @@ jQuery(document).ready(function($) {
 	function genericAnimation() {
 		var uxTop = $('.header').height() + $('#wrapper').height() - $('ul.ux-buttons li').height() - 15;
 		$('.generic ul.ux-buttons').css('top', uxTop + 'px');
+		console.log(uxTop);
 
 		$('.generic-button').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 		$('#installation-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
