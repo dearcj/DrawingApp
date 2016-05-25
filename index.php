@@ -10,7 +10,7 @@
 <!--[if !(IE 7) | !(IE 8) ]><!-->
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
-<head >
+
 <head profile="http://www.w3.org/2005/10/profile">
 
 <link rel="icon"
@@ -85,8 +85,6 @@
     <script src="./wp-content/themes/mmoma/test.js" defer></script>
 
 
-    <!--[if lt IE 9]>
-    <![endif]-->
 
     <?php wp_head(); ?>
 </head>
