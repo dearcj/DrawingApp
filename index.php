@@ -37,7 +37,6 @@
     <link rel="stylesheet" href="./wp-content/themes/mmoma/css/colorbox.css">
     <link rel="stylesheet" href="./wp-content/themes/mmoma/css/mmoma.css">
 
-    <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
       <script>
 
             window.fbAsyncInit = function() {
@@ -57,11 +56,6 @@
             }(document, 'script', 'facebook-jssdk'));
         </script>
 
-    <script type="text/javascript">
-        VK.init({
-            apiId: 5413948
-        });
-    </script>
 
     <script src="./wp-content/themes/mmoma/js/soundjs-NEXT.min.js"></script>
     <script src="./wp-content/themes/mmoma/js/ZSound.js"></script>
@@ -90,26 +84,6 @@
     <script src="./wp-content/themes/mmoma/Brushes/ScotchBrush.js"></script>
     <script src="./wp-content/themes/mmoma/test.js" defer></script>
 
-    <script>
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId      : '590705137751335',
-                xfbml      : true,
-                version    : 'v2.5'
-            });
-        };
-
-        (function(d, s, id){
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) {return;}
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
-
-
-
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -119,7 +93,13 @@
 </head>
 
 <body id="body">
-  
+     <script src="//vk.com/js/api/openapi.js" type="text/javascript"></script>
+
+      <script type="text/javascript">
+          VK.init({
+              apiId: 5413948
+          });
+      </script>
   <div class="langs">
     <ul>
       <li><a href="/">Ru</a></li>
