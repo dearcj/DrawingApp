@@ -207,7 +207,6 @@ var initApplication = function() {
   */
 
   elDraw.ontouchstart = function(e) {
-    console.log('start action');
     e.preventDefault();
     canvas.startAction(e);
   };
@@ -223,12 +222,10 @@ var initApplication = function() {
   };
 
   elDraw.onmousedown = function(e) {
-    console.log('mousedown');
     canvas.startAction(e);
   };
 
   document.body.onmousemove = function(e) {
-    console.log('mousemove');
     canvas.mouseMoveAction(e);
   };
 
