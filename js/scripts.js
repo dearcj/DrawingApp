@@ -1030,7 +1030,6 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 2;
 	});
 
-/*
 	$('ul.surfaces li.canvas').on(window.eventType, function(event) {
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
@@ -1071,8 +1070,6 @@ jQuery(document).ready(function($) {
 		$('#surface-canvas').removeAttr('class').addClass('metal-texture');
 		window.selectedSurface = 7;
 	});
-*/
-
 
 	if (window.eventType == 'click') {
 
