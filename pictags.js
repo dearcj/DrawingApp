@@ -262,8 +262,8 @@ var picTags = [
 	{
 		pic: 'pictags/filters/distortion.jpg',
 		thumb: 'pictags/thumbs/filters/distortion.jpg',
-		tag: 'калейдоскоп',
-		innertag: 'калейдоскоп',
+		tag: 'искажение',
+		innertag: 'искажение',
 		title: '«Русско-американская картина»',
 		author: 'Евгений Гороховский',
 		year: '1991',
