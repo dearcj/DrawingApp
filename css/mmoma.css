@@ -19,6 +19,7 @@ a {
 a:hover {
 	color: #0B84DD;
 }
+
 #apDiv1 {
 	position:absolute;
 	width:100%;
@@ -28,6 +29,7 @@ a:hover {
 	top: 100px;
 	overflow: visible;
 }
+
 img.highqual { -ms-interpolation-mode:bicubic }
 
 .menu {
