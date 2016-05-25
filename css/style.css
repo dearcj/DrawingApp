@@ -883,6 +883,10 @@ form.sending-form .work-author input {
 }
 
 ul.comments li {
+	display: none;
+}
+
+ul.comments li span {
 	opacity: 0;
 }
 

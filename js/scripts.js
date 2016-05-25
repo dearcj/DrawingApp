@@ -79,18 +79,18 @@ jQuery(document).ready(function($) {
 	});
 
 	$('#scotch').mouseover(function() {
-		$('ul.comments li').css('opacity', 0);
-		$('#helper-8a').css('opacity', 1);
+		$('ul.comments li span').css('opacity', 0);
+		$('li#helper-8a span').css('opacity', 1);
 	});
 
 	$('#denim').mouseover(function() {
-		$('ul.comments li').css('opacity', 0);
-		$('#helper-8b').css('opacity', 1);
+		$('ul.comments li span').css('opacity', 0);
+		$('li#helper-8b span').css('opacity', 1);
 	});
 
 	$('#needle').mouseover(function() {
-		$('ul.comments li').css('opacity', 0);
-		$('#helper-8c').css('opacity', 1);
+		$('ul.comments li span').css('opacity', 0);
+		$('li#helper-8c span').css('opacity', 1);
 	});
 
 /*	$('.interact').mouseover(function() {
