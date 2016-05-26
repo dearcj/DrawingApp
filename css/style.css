@@ -27,6 +27,11 @@ ul {
 	list-style: none;
 }
 
+#cboxPrevious,
+#cboxNext {
+	display: block !important;
+}
+
 @font-face {
   font-family: 'Shadow-Regular';
   src: url('Shadow-Regular.woff') format('woff'),
