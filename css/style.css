@@ -2850,13 +2850,36 @@ ul.logotypes li a {
 	#back-canvas,
 	#main-canvas,
 	#cursor-canvas {
-		width: 360px;
-		height: 255px;
-		margin-left: -180px;
+		width: 550px;
+		height: 389px;
+		margin-left: -275px;
+		margin-top: 75px;
+	}
+
+	li.send-to-museum {
+		width: 186px !important;
+	}
+
+	ul.tools-buttons.tools-tb {
+		margin-left: -148px;
+		width: 296px;
+		top: 505px;
+	}
+
+	ul.tools-buttons.tools-tb li {
+		width: 80px;
+	}
+
+	ul.tools > li:nth-child(2n+1) {
+		margin-left: -375px !important;
+	}
+
+	ul.tools > li:nth-child(2n+2) {
+		margin-left: 315px !important;
 	}
 
 	ul.tools {
-		margin-top: 35px;
+		margin-top: 165px;
 		margin-left: 0;
 		top: 0;
 	}
@@ -2887,16 +2910,8 @@ ul.logotypes li a {
 	}
 
 	ul#undo-refresh {
-		top: 300px;
-		margin-left: 0;
-	}
-
-	ul#undo-refresh li#refresh {
-		margin-left: 150px;
-	}
-
-	ul#undo-refresh li#undo {
-		margin-left: -175px;
+		top: 515px !important;
+		margin-left: -275px;
 	}
 }
 
