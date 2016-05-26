@@ -2937,7 +2937,7 @@ ul.logotypes li a {
 
 	form.sending-form .work-author .item-field {
 		margin-top: 25px;
-		height: 35px;
+		height: 35px !important;
 	}
 
 	form.sending-form .work-author .item-field:last-child {
