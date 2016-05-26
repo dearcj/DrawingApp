@@ -2647,6 +2647,13 @@ ul.logotypes li a {
 	}
 }
 
+@media only screen and (max-device-width: 875px) {
+	#surface-canvas {
+		width: 500px;
+		height: 354px;
+	}
+}
+
 @media only screen and (max-width: 850px) {
 	#museum-wrapper {
 		height: 350px;
