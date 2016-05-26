@@ -458,7 +458,8 @@ jQuery(document).ready(function($) {
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').mouseover(function() {
 				var thumb = $(this).css('background');
-				console.log(thumb);
+				var thumbHover = thumb.replace('rgba(0,0,0,0)', 'rgba(0,0,0,0.4)');
+				$(this).css('background', thumbHover);
 			});
 		}
 
