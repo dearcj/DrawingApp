@@ -614,22 +614,13 @@ jQuery(document).ready(function($) {
 
 		var toolsWidth = parseInt($('ul.tools').css('width'));
 
-		if ($(window).width() < 1025) {
-			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-			$('#painting-wrapper').each(function(){
-				$(this).children().css({'opacity': 1, 'z-index': '200'});
-			});
-			$('#painting-wrapper > p').css({'opacity': 0, height: 0});
-			$('#painting-wrapper ul#undo-refresh').css('opacity', 0);
-		} else {
-			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-			$('#painting-wrapper > p').animate({'opacity': 1}, 1000).fadeIn(2500);
-			$('#painting-wrapper').each(function(){
-				$(this).children().css({'opacity': 1, 'z-index': '200'});
-			});
-			$('#painting-wrapper > p').css({'z-index': 250});
-			$('#painting-wrapper ul#undo-refresh').css('opacity', 0);
-		}
+		$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+		$('#painting-wrapper > p').animate({'opacity': 1}, 1000).fadeIn(2500);
+		$('#painting-wrapper').each(function(){
+			$(this).children().css({'opacity': 1, 'z-index': '200'});
+		});
+		$('#painting-wrapper > p').css({'z-index': 250});
+		$('#painting-wrapper ul#undo-refresh').css('opacity', 0);
 
 		$('ul.tools').delay(500).animate({'left': 50 + '%'}, 1000);
 
