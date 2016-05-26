@@ -356,7 +356,7 @@
 
         <div id="publication-wrapper" class="screens inside">
           <ul class="paintings left-side">
-            <a href="#"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
+            <a href="#"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div><div class="overlay"></div></li></a>
             <a href="#"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
             <a href="#"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
           </ul>
