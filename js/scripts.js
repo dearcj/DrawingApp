@@ -457,7 +457,8 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftThumbPath + ') no-repeat');
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').mouseover(function() {
-				$(this).css('background', 'linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(' + leftThumbPath + ') no-repeat');
+				var thumb = $(this).css('background');
+				console.log(thumb);
 			});
 		}
 
