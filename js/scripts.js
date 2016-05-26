@@ -184,10 +184,6 @@ jQuery(document).ready(function($) {
 	document.getElementById('filters-canvas').height = GLOB_CANV_H;
 
 	if ($(window).width() < 1025) {
-		$('#wrapper').css('overflow', 'visible');
-		$('.header').css('display', 'none');
-		$('.podval_new').css('display', 'none');
-
 		$('ul#helpers li').css('display', 'none');
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
 		$('ul.tools > li').css({width: 55 + 'px', height: 55 + 'px'});

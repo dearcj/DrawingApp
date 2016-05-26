@@ -2913,6 +2913,18 @@ ul.logotypes li a {
 		top: 515px !important;
 		margin-left: -275px !important;
 	}
+
+	#wrapper {
+		overflow: visible;
+	}
+
+	.header {
+		display: none;
+	}
+
+	.podval_new {
+		display: none;
+	}
 }
 
 @media only screen and (max-device-width: 736px) {
