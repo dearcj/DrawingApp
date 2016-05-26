@@ -457,10 +457,7 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftThumbPath + ') no-repeat');
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').mouseover(function() {
-				var thumb = $(this).css('background');
-				var reg = /\".+\"/i;
-				var thumbUrl = thumb.match(reg);
-				console.log(thumbUrl);
+				console.log(leftThumbPath);
 			});
 		}
 
