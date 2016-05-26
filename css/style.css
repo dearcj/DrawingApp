@@ -2997,7 +2997,7 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-width: 1495px) and (min-width: 700px) {
+/*@media only screen and (max-width: 1495px) and (min-width: 700px) {
 	ul.tools {
 		width: 250px;
 		height: 550px;
@@ -3067,7 +3067,7 @@ ul.logotypes li a {
 		margin-right: 15px;
 		margin-top: 15px;
 	}
-}
+}*/
 
 @media only screen and (max-width: 1300px) and (min-width: 700px) {
 	ul.paintings li {
