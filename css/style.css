@@ -40,9 +40,17 @@ ul {
 	background: url(../img/prev.png) no-repeat !important;
 }
 
+#cboxPrevious:hover {
+	background: url(../img/prev-hover.png) no-repeat !important;
+}
+
 #cboxNext {
 	right: -100px !important;
 	background: url(../img/next.png) no-repeat !important;
+}
+
+#cboxNext:hover {
+	background: url(../img/next-hover.png) no-repeat !important;
 }
 
 @font-face {
