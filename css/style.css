@@ -1591,6 +1591,7 @@ div.at-the-backyard {
 
 .dark-side.sending {
 	background-color: rgba(0,0,0,0.5);
+	opacity: 0;
 }
 
 #surface-canvas {
@@ -2934,6 +2935,15 @@ ul.logotypes li a {
 		margin-left: -275px !important;
 	}
 
+	form.sending-form .work-author .item-field {
+		margin-top: 25px;
+		height: 35px;
+	}
+
+	form.sending-form .work-author .item-field:last-child {
+		margin-top: 5px;
+	}
+
 	#wrapper {
 		overflow: visible;
 	}
@@ -3348,7 +3358,7 @@ ul.logotypes li a {
 	#painting-wrapper,
 	#filters-wrapper,
 	#publication-wrapper {
-		background-size: auto 100%;
+		background-size: auto 100% !important;
 	}
 	.main-canvas {
 		width: 550px;

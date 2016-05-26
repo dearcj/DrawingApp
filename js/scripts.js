@@ -614,13 +614,20 @@ jQuery(document).ready(function($) {
 
 		var toolsWidth = parseInt($('ul.tools').css('width'));
 
-		$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-		$('#painting-wrapper > p').animate({'opacity': 1}, 1000).fadeIn(2500);
-		$('#painting-wrapper').each(function(){
-			$(this).children().css({'opacity': 1, 'z-index': '200'});
-		});
-		$('#painting-wrapper > p').css({'z-index': 250});
-		$('#painting-wrapper ul#undo-refresh').css('opacity', 0);
+		if ($(window).width() < 1025) {
+			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
+			$('#painting-wrapper').each(function(){
+				$(this).children().css({'opacity': 1, 'z-index': '200'});
+			});
+		} else {
+			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
+			$('#painting-wrapper > p').animate({'opacity': 1}, 1000).fadeIn(2500);
+			$('#painting-wrapper').each(function(){
+				$(this).children().css({'opacity': 1, 'z-index': '200'});
+			});
+			$('#painting-wrapper > p').css({'z-index': 250});
+			$('#painting-wrapper ul#undo-refresh').css('opacity', 0);
+		}
 
 		$('ul.tools').delay(500).animate({'left': 50 + '%'}, 1000);
 
@@ -1408,7 +1415,7 @@ jQuery(document).ready(function($) {
 
 		sendingWrapper.css({'background-size': '100% auto'});
 
-		if (width > 700) {
+		if (width > 1025) {
 			sendingForm.css('height', sendingForm.width()/5.907 + 'px');
 			var sendingFormHeight = sendingForm.height();
 			sendingForm.css('border-radius', 10*sendingFormHeight/100 + 'px');
@@ -1418,16 +1425,12 @@ jQuery(document).ready(function($) {
 			var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
 				itemFieldSecondMarginTop = sendingFormHeight/9.13;
 		} else {
-			sendingForm.css('height', 165 + 'px');
+			sendingForm.css({height: 165 + 'px', top: 50 + '%', 'margin-top': -83 + 'px'});
 			var sendingFormHeight = sendingForm.height();
 			sendingForm.css('border-radius', 10 + 'px');
 			sendingFormButton.css({height: 50 + 'px', 'font-size': 100 + '%', 'padding-top': 4 + 'px', 'border-radius': '0 0 10px 10px'});
 			sendingFormP.css('font-size', 90 + '%');
 			sendingFormInput.css({height: 25 + 'px', 'font-size': 100 + '%'});
-			var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
-					itemFieldSecondMarginTop = sendingFormHeight/9.13;
-			$('form.sending-form .work-author .item-field').css('margin-top', 7 + 'px');
-			$('form.sending-form .work-author .item-field:last-child').css('margin-top', 7 + 'px');
 		}
 
 		$('form.sending-form .work-author .item-field').css('height', sendingFormHeight/3.65 + 'px');
