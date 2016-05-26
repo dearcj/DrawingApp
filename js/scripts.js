@@ -453,13 +453,7 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftThumbPath + ') no-repeat');
 		}
 
-		$('ul.paintings a').colorbox({arrowKey: true, title: function() {
-			var author = $(this).find("span.author").text();
-			var title = $(this).find("span.title").text();
-			var mats = $(this).find("span.materials").text();
-			var desc = $(this).find("span.description").text();
-			return author + '. <b>' + title + '</b> ' + mats + '<br><span class="link-desc">' + desc + '</span>';
-		}
+		$('ul.paintings a').colorbox({arrowKey: true
 		});
 
 /*		$('ul.paintings.left-side a:nth-child(2)').colorbox({title: function() {
