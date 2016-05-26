@@ -690,11 +690,14 @@ ul.paintings li div {
 ul.paintings li div span {
 	display: block;
 	padding-bottom: 6px;
+	background: rgba(0,0,0,0.4);
+	opacity: 0;
 }
 
 ul.paintings li div span.title {
 	font-size: 18px;
 	font-weight: 300;
+	padding-top: 15px;
 }
 
 ul.paintings li div span.author {
@@ -705,6 +708,7 @@ ul.paintings li div span.author {
 ul.paintings li div span.materials {
 	font-size: 12px;
 	text-transform: none;
+	padding-bottom: 15px;
 }
 
 ul.paintings li div span.description {

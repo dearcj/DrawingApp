@@ -456,8 +456,8 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').addClass('fond').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftThumbPath + ') no-repeat');
 
-			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').mouseover(function() {
-				console.log(leftThumbPath);
+			$('ul.paintings a li').mouseover(function() {
+				$('ul.paintings a li span').css('opacity', 1);
 			});
 		}
 
