@@ -810,7 +810,6 @@ ul.ux-buttons li:last-child {
 	background: url(../img/fullscreen-button.png) no-repeat;
 	background-size: 100%;
 	margin-left: 5px;
-	display: none;
 }
 
 form.sending-form {
