@@ -630,54 +630,6 @@ ul.paintings li:hover {
 	cursor: pointer;
 }
 
-/*ul.paintings.left-side a:nth-child(1) li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-1.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.left-side a:nth-child(1):hover li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(../img/painting-1.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.left-side a:nth-child(2) li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-2.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.left-side a:nth-child(2):hover li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-2.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.left-side a:nth-child(3) li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-3.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.left-side a:nth-child(3):hover li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-3.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.right-side a:nth-child(1) li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-4.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.right-side a:nth-child(1):hover li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-4.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.right-side a:nth-child(2) li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-5.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.right-side a:nth-child(2):hover li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-5.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.right-side a:nth-child(3) li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(../img/painting-6.jpg) no-repeat;*/
-/*}*/
-
-/*ul.paintings.right-side a:nth-child(3):hover li {*/
-	/*background: linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/painting-6.jpg) no-repeat;*/
-/*}*/
-
 ul.paintings li div {
 	text-align: center;
     color: white;
