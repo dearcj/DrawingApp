@@ -162,8 +162,7 @@ jQuery(document).ready(function($) {
 			$('.fullscreen').addClass('on').removeClass('off');
 			launchFullScreen(html);
 			if ($(this).parents('.ux-buttons').hasClass('home')) {
-				$('.header').css('height', 0);
-				$('.header img').css('height', 0);
+				$('.header').css('display', 'none');
 			}
 /*			$('.header').css('display', 'none');
 			$('.langs').css('display', 'none');
@@ -891,6 +890,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('click');
 		window.currentHash = history.state;
 		openPage('surface');
+		$('.header').css('display', 'block');
 		surfaceAnimation();
 /*		if ($('.fullscreen').hasClass('on')) {
 			$('html').css('height', 100 + '%');
@@ -915,6 +915,7 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('museum');
 
+		$('.header').css('display', 'block');
 		museumAnimation();
 	});
 
@@ -1065,6 +1066,7 @@ jQuery(document).ready(function($) {
 		$('#museum-wrapper').css('display', 'none');
 		$('#installation-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('installation');
+		$('.header').css('display', 'block');
 		genericAnimation();
 	});
 
@@ -1076,6 +1078,7 @@ jQuery(document).ready(function($) {
 		$('#museum-wrapper').css('display', 'none');
 		$('#performance-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('performance');
+		$('.header').css('display', 'block');
 		genericAnimation();
 	});
 
@@ -1087,6 +1090,7 @@ jQuery(document).ready(function($) {
 		$('#museum-wrapper').css('display', 'none');
 		$('#interpretation-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('interpretation');
+		$('.header').css('display', 'block');
 		genericAnimation();
 	});
 
@@ -1098,6 +1102,7 @@ jQuery(document).ready(function($) {
 		$('#museum-wrapper').css('display', 'none');
 		$('#mediaart-wrapper').fadeIn(1000).removeClass('hidden').animate({'opacity': 1}, 200);
 		openPage('media-art');
+		$('.header').css('display', 'block');
 		genericAnimation();
 	});
 
