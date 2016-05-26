@@ -2898,6 +2898,17 @@ ul.logotypes li a {
 	ul#undo-refresh li#undo {
 		margin-left: -175px;
 	}
+
+	ul.tools-buttons.surface-tb li,
+	ul.tools-buttons.tools-tb li {
+		width: 70px;
+		height: 70px;
+		margin-top: 20px !important;
+	}
+
+	ul.tools-buttons li.send-to-museum {
+		width: 165px;
+	}
 }
 
 @media only screen and (max-device-width: 736px) {
@@ -2928,17 +2939,6 @@ ul.logotypes li a {
 		width: 255px;
 		top: 275px;
 		margin-left: -128px;
-	}
-
-	ul.tools-buttons.surface-tb li,
-	ul.tools-buttons.tools-tb li {
-		width: 70px;
-		height: 70px;
-		margin-top: 20px !important;
-	}
-
-	ul.tools-buttons li.send-to-museum {
-		width: 165px;
 	}
 
 	ul.surfaces {
