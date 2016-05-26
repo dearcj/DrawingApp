@@ -1733,7 +1733,7 @@ ul.surfaces {
 	float: left;
 	padding: 0;
 	clear: both;
-	margin-top: 30px;
+	margin-top: 60px;
 	margin-left: -750px;
 	width: 360px;
 	height: 450px;
@@ -2258,6 +2258,7 @@ ul.logotypes li a {
 	ul.surfaces {
 		width: 300px;
 		height: 400px;
+		margin-top: 100px;
 		margin-left: -700px;
 	}
 
@@ -2275,6 +2276,7 @@ ul.logotypes li a {
 	ul.surfaces {
 		width: 270px;
 		height: 320px;
+		margin-top: 150px;
 		margin-left: -675px;
 	}
 
@@ -2292,6 +2294,7 @@ ul.logotypes li a {
 	ul.surfaces {
 		width: 220px;
 		height: 260px;
+		margin-top: 175px;
 		margin-left: -625px;
 	}
 
@@ -2308,6 +2311,28 @@ ul.logotypes li a {
 @media only screen and (max-width: 1400px) {
 	ul.surfaces {
 		margin-left: -575px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	ul.surfaces {
+		width: 110px;
+		margin-top: 110px;
+		margin-left: -475px;
+	}
+
+	ul.surfaces li {
+		float: right;
+	}
+
+	ul.surfaces li.metal {
+		float: right;
+		margin-top: 0;
+	}
+
+	div.at-the-backyard {
+		width: 125px;
+		height: 68px;
 	}
 }
 
@@ -2496,13 +2521,6 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-width: 1024px) {
-	div.at-the-backyard {
-		width: 125px;
-		height: 68px;
-	}
-}
-
 @media only screen and (max-width: 1050px) {
 	#museum-wrapper {
 		height: 450px;
@@ -2546,9 +2564,27 @@ ul.logotypes li a {
 		margin-right: -18.6rem;
 		top: 350px;
 	}
+
+	.go-to-home {
+		top: 575px !important;
+	}
+
+	ul.surfaces {
+		margin-top: 70px;
+	}
 }
 
 @media only screen and (max-width: 950px) {
+	ul.surfaces {
+		margin-top: 85px;
+		margin-left: -465px;
+	}
+
+	ul.surfaces li {
+		width: 80px;
+		height: 60px;
+	}
+
 	#museum-wrapper {
 		height: 400px;
 	}
