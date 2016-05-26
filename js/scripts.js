@@ -508,6 +508,8 @@ jQuery(document).ready(function($) {
 		});
 	}
 
+	$('.group1').colorbox({arrowKey: true});
+
 	//--------------ROUTING---------------
 
 	var mainUrl = '/';
