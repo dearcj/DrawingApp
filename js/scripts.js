@@ -240,7 +240,6 @@ jQuery(document).ready(function($) {
 
 	// Free from resize
 
-	$('ul.tools').css('margin-left', -1500 + 'px');
 	$('#go-to-tools').css('top', 150 + 'px');
 	$('.at-the-backyard').css('left', -150 + 'px');
 	$('li.send-to-museum').css('top', 100 + 'px');

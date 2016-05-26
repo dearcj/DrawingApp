@@ -2698,7 +2698,8 @@ ul.logotypes li a {
 	#painting-wrapper p {
 		width: 270px !important;
 		border-radius: 12px !important;
-		top: 85px;
+		top: 130px;
+		margin-left: -135px !important;
 		font-size: 140% !important;
 		padding: 20px 0 25px !important;
 	}
@@ -2751,7 +2752,7 @@ ul.logotypes li a {
 		width: 360px;
 		height: 255px;
 		margin-top: 10px;
-		margin-left: -90px;
+		margin-left: -180px;
 	}
 
 	ul.tools {
@@ -3000,7 +3001,6 @@ ul.logotypes li a {
 	ul.tools {
 		width: 250px;
 		height: 550px;
-		margin-left: 50px !important;
 	}
 
 	ul.tools > li {
@@ -3069,12 +3069,6 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-width: 1365px) and (min-width: 700px) {
-	ul.tools {
-		margin-left: 20px !important;
-	}
-}
-
 @media only screen and (max-width: 1300px) and (min-width: 700px) {
 	ul.paintings li {
 		width: 200px !important;
@@ -3083,13 +3077,6 @@ ul.logotypes li a {
 }
 
 @media only screen and (max-width: 1265px) and (min-width: 700px) {
-	ul.tools {
-		width: 170px;
-		height: 370px;
-		margin-top: 80px;
-		margin-left: 15px;
-	}
-
 	ul.tools > li {
 		width: 80px;
 		height: 90px;
