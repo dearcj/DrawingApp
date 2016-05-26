@@ -161,13 +161,10 @@ jQuery(document).ready(function($) {
 		} else {
 			$('.fullscreen').addClass('on').removeClass('off');
 			launchFullScreen(html);
-/*			if ($(this).parents('.ux-buttons').hasClass('home')) {
-				$('html').css('height', 'auto');
-				$('body').css('height', 'auto');
-			} else {
-				$('#wrapper').css({'height': 100 + '%'});
+			if ($(this).parents('.ux-buttons').hasClass('home')) {
+				$('.header').css('height', 0);
 			}
-			$('.header').css('display', 'none');
+/*			$('.header').css('display', 'none');
 			$('.langs').css('display', 'none');
 			$('.podval_new').css('display', 'none');
 			$('#wrapper').css({'position': 'absolute', 'top': 0});*/
