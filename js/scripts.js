@@ -610,6 +610,9 @@ jQuery(document).ready(function($) {
 	}
 
 	function genericAnimation() {
+		var genArtTop = parseInt($('.generic-art').css('margin-top'));
+		console.log(genArtTop);
+
 		if ($(window).width() > 1050) {
 			var uxTop = $('.header').height() + $('.generic').height() - $('ul.ux-buttons li').height() - 15;
 		} else {
