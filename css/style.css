@@ -37,12 +37,12 @@ ul {
 
 #cboxPrevious {
 	left: -100px !important;
-	background: url(../img/prev.png) no-repeat;
+	background: url(../img/prev.png) no-repeat !important;
 }
 
 #cboxNext {
 	right: -100px !important;
-	background: url(../img/next.png) no-repeat;
+	background: url(../img/next.png) no-repeat !important;
 }
 
 @font-face {
