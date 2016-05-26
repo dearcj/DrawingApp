@@ -124,7 +124,7 @@ jQuery(document).ready(function($) {
 		ZSound.Play('dog');
 	});
 
-/*	function launchFullScreen(el) {
+	function launchFullScreen(el) {
 	 if(el.requestFullScreen) {
 	 el.requestFullScreen();
 	 } else if(el.mozRequestFullScreen) {
@@ -172,7 +172,7 @@ jQuery(document).ready(function($) {
 			$('.podval_new').css('display', 'none');
 			$('#wrapper').css({'position': 'absolute', 'top': 0});
 		}
-	});*/
+	});
 
 	/////check device type
 	/////set canvas W and H
@@ -894,12 +894,12 @@ jQuery(document).ready(function($) {
 		window.currentHash = history.state;
 		openPage('surface');
 		surfaceAnimation();
-/*		if ($('.fullscreen').hasClass('on')) {
+		if ($('.fullscreen').hasClass('on')) {
 			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
 			$('#wrapper').css('height', 100 + '%');
 			$('.screens').css('background-size', 'auto 100%');
-		}*/
+		}
 	});
 
 	$('.go-to-museum').on(window.eventType, function(event) {
