@@ -458,10 +458,12 @@ jQuery(document).ready(function($) {
 
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').mouseover(function() {
 				var thumb = $(this).css('background');
-				console.log(thumb);
-				//var thumbHover = thumb.replace('rgba(0,0,0,0)', 'rgba(0,0,0,0.4)');
-				$(this).css('background', thumb);
+				var reg = /\".+\"/i;
+				var thumbUrl = thumb.match(reg);
+				console.log(thumbUrl);
 			});
+
+			linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)) repeat scroll 0% 0% / 100% padding-box border-box, rgba(0, 0, 0, 0) url("http://188.227.16.35/wp-content/themes/mmoma/Assets/pictags/thumbs/tools/ketchup.jpg") no-repeat scroll 0% 0% / 100% padding-box border-box
 		}
 
 		$('ul.paintings a.fond').colorbox({rel: "group1", arrowKey: "true", title: function() {
