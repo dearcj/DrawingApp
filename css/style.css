@@ -2949,6 +2949,10 @@ ul.logotypes li a {
 		margin-left: 65px !important;
 	}
 
+	#main-image p {
+		opacity: 0 !important;
+	}
+
 	#wrapper {
 		overflow: visible;
 	}
