@@ -1616,7 +1616,7 @@ jQuery(document).ready(function($) {
 	}
 
 	$(window).resize(function(){
-		if (window.location.href.indexOf('surface') > 0) {
+		if ($('#surface-wrapper').css('opacity') == 1) {
 			surfaceAnimation();
 		} else if (window.location.href.indexOf('painting') > 0) {
 			paintingAnimation();

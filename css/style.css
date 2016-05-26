@@ -142,6 +142,10 @@ ul#undo-refresh li#refresh {
 	text-transform: uppercase;
 }
 
+.header img {
+	position: absolute;
+}
+
 .header a {
 	padding-left: 20px;
 }
@@ -2695,6 +2699,11 @@ ul.logotypes li a {
 		margin-right: -8.3rem;
 		top: 155px;
 	}
+
+	div.at-the-backyard {
+		width: 80px;
+		height: 44px;
+	}
 }
 
 @media only screen and (max-width: 450px) {
@@ -2725,6 +2734,13 @@ ul.logotypes li a {
 	#helper-15 {
 		margin-right: -8.3rem;
 		top: 155px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	div.at-the-backyard {
+		width: 60px;
+		height: 32px;
 	}
 }
 
