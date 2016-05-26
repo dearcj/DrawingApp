@@ -2647,10 +2647,21 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-device-width: 875px) {
+@media only screen and (max-device-width: 1024px) {
 	#surface-canvas {
-		width: 500px;
-		height: 354px;
+		width: 550px;
+		height: 389px;
+		margin-top: 165px;
+		margin-left: -480px;
+	}
+
+	ul.surfaces {
+		width: 200px;
+	}
+
+	ul.surfaces li.metal {
+		float: none;
+		margin-top: 175px;
 	}
 }
 
