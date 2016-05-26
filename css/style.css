@@ -2277,6 +2277,12 @@ ul.logotypes li a {
 	ul.surfaces {
 		margin-left: -675px;
 	}
+
+	#painting-wrapper ul#comments {
+		top: 15px !important;
+		margin-right: 160px !important;
+		font-size: 125%;
+	}
 }
 
 @media only screen and (max-width: 1400px) {
