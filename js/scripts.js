@@ -1616,9 +1616,7 @@ jQuery(document).ready(function($) {
 	}
 
 	$(window).resize(function(){
-		if ($('#surface-wrapper').css('opacity') == 1) {
-			surfaceAnimation();
-		} else if (window.location.href.indexOf('painting') > 0) {
+		if (window.location.href.indexOf('painting') > 0) {
 			paintingAnimation();
 		} else if (window.location.href.indexOf('filters') > 0) {
 			filtersAnimation();
