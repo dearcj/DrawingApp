@@ -589,6 +589,8 @@ jQuery(document).ready(function($) {
 
 		$('ul.surfaces').css('margin-top', (canvasHeight - surfacesHeight)/2 + canvasTop + 'px').delay(500).animate({'left': 50 + '%'}, 1500);
 
+		$('.surface-button').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
+
 		$('#surface-wrapper').each(function () {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});
