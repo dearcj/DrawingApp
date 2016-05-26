@@ -610,7 +610,7 @@ jQuery(document).ready(function($) {
 	}
 
 	function genericAnimation() {
-		var uxTop = $('.header').height() + $('.generic').height() - $('ul.ux-buttons li').height() - 15;
+		var uxTop = $('.header').height() + $('#wrapper').height() - $('ul.ux-buttons li').height() - 15;
 		$('.generic ul.ux-buttons').css('top', uxTop + 'px');
 
 		$('.generic-button').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
