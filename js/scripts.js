@@ -188,9 +188,7 @@ jQuery(document).ready(function($) {
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
 
-		$('.surface-button.at-the-backyard').css('display', 'none');
 		$('ul#helpers li').css('display', 'none');
-
 		$('ul.tools-buttons li').css('margin-top', 15 + 'px');
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
 		$('#back-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});
@@ -1349,11 +1347,9 @@ jQuery(document).ready(function($) {
 		var width = $(window).width(),
 			surfaceCanvas = $('#surface-canvas'),
 			surfaceBackyard = $('.surface-button.at-the-backyard'),
-			surfacesLiP = $('ul.surfaces li p'),
 			coordinate = function (helperNum, leftPercent, topPercent) {
 				return $('ul#helpers #helper-' + helperNum).css({left: width/100 * leftPercent + 'px', top: 530/100 * topPercent + 'px'});
-			},
-			surfaceBackgroundHeight = width/wrapperRatio;
+			};
 
 		surfaceBackyard.css({top: width/75 + 'px'});
 
