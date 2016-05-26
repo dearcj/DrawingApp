@@ -189,7 +189,6 @@ jQuery(document).ready(function($) {
 		$('.podval_new').css('display', 'none');
 
 		$('ul#helpers li').css('display', 'none');
-		$('ul.tools-buttons li').css('margin-top', 15 + 'px');
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
 		$('#back-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});
 		$('#main-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});

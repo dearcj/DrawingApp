@@ -2694,9 +2694,18 @@ ul.logotypes li a {
 		padding: 20px 0px 25px !important;
 	}
 
+	#painting-wrapper p {
+		width: 270px !important;
+		border-radius: 12px !important;
+		top: 85px;
+		font-size: 140% !important;
+		padding: 20px 0px 25px !important;
+	}
+
 	ul.tools-buttons li {
 		width: 70px;
 		height: 70px;
+		margin-top: 20px;
 	}
 
 	ul.surfaces {
