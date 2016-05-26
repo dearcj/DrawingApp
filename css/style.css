@@ -2939,6 +2939,10 @@ ul.logotypes li a {
 		padding: 20px 0 25px !important;
 	}
 
+	ul.tools {
+		margin-top: 40px;
+	}
+
 	ul.tools-buttons.tools-tb {
 		width: 255px;
 		top: 275px;
@@ -2987,6 +2991,43 @@ ul.logotypes li a {
 		width: 360px;
 		height: 255px;
 		margin-left: -180px;
+		margin-top: 0;
+	}
+
+	ul.tools > li:nth-child(2n+1) {
+		margin-left: -265px !important;
+	}
+
+	ul.tools > li:nth-child(2n+2) {
+		margin-left: 210px !important;
+	}
+
+	li.send-to-museum {
+		width: 165px !important;
+	}
+}
+
+@media only screen and (max-device-width: 568px) {
+	ul.tools-buttons.tools-tb {
+		top: 272px;
+	}
+
+	#back-canvas,
+	#main-canvas,
+	#cursor-canvas {
+		margin-top: -25px;
+	}
+
+	ul.tools {
+		margin-top: 20px;
+	}
+
+	ul.tools > li:nth-child(2n+1) {
+		margin-left: -255px !important;
+	}
+
+	ul.tools > li:nth-child(2n+2) {
+		margin-left: 197px !important;
 	}
 }
 
