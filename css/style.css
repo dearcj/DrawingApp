@@ -678,9 +678,13 @@ ul.paintings a {
     text-align: center;
     font-size: 12px;
     font-weight: 600;
-    display: block;
+    display: none;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+ul.paintings a.fond {
+	display: block;
 }
 
 ul.paintings a:hover li div {
