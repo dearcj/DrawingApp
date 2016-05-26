@@ -163,6 +163,7 @@ jQuery(document).ready(function($) {
 			launchFullScreen(html);
 			if ($(this).parents('.ux-buttons').hasClass('home')) {
 				$('.header').css('height', 0);
+				$('.header img').css('height', 0);
 			}
 /*			$('.header').css('display', 'none');
 			$('.langs').css('display', 'none');
