@@ -3067,6 +3067,11 @@ ul.logotypes li a {
 		top: 272px;
 	}
 
+	#main-image {
+		margin-top: 80px !important;
+		margin-left: 35px !important;
+	}
+
 	#back-canvas,
 	#main-canvas,
 	#cursor-canvas {
