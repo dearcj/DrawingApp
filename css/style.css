@@ -1596,7 +1596,8 @@ div.at-the-backyard {
 	background: url(../img/textures/wood.jpg) no-repeat;
 	background-size: 0;
 	background-position: 50% 50%;
-	margin: 35px auto 0;
+	margin: 0 auto;
+	margin-top: 35px;
 	width: 700px;
 	height: 495px;
 }
