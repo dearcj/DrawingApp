@@ -575,8 +575,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
 
-		var surfaceWidth = parseInt($('ul.surfaces li').css('width'));
-		var surfaceHeight = parseInt($('ul.surfaces li').css('height'));
+		var surfacesHeight = parseInt($('ul.surfaces').css('height'));
 		var canvasHeight = parseInt($('#surface-canvas').css('height'));
 		var canvasTop = parseInt($('#surface-canvas').css('margin-top'));
 
@@ -588,9 +587,7 @@ jQuery(document).ready(function($) {
 			$('#go-to-tools').delay(1000).animate({'top': 0 + 'px'}, 500);
 		}
 
-		$('ul.surfaces').css('margin-top', (canvasHeight - surfaceHeight*4)/2 + canvasTop + 100 + 'px').delay(500).animate({'left': 50 + '%'}, 1500);
-
-		$('.surface-button').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'}).delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
+		$('ul.surfaces').css('margin-top', (canvasHeight - surfacesHeight)/2 + canvasTop + 'px').delay(500).animate({'left': 50 + '%'}, 1500);
 
 		$('#surface-wrapper').each(function () {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
