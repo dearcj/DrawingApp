@@ -2656,7 +2656,7 @@ ul.logotypes li a {
 
 	#surface-canvas p {
 		top: 200px;
-		font-size: 175%;
+		font-size: 175% !important;
 	}
 
 	ul.surfaces {
@@ -2678,6 +2678,8 @@ ul.logotypes li a {
 		top: 18px !important;
 	}
 }
+
+@media only screen and (max-device-width: 736px)
 
 @media only screen and (max-width: 850px) {
 	#museum-wrapper {
