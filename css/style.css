@@ -2325,6 +2325,19 @@ ul.logotypes li a {
 		width: 125px;
 		height: 68px;
 	}
+
+	ul.tools {
+		margin-left: 0;
+	}
+
+	ul.tools > li:nth-child(2n+1) {
+		margin-left: -475px !important;
+	}
+
+	ul.tools > li:nth-child(2n+2) {
+		float: left;
+		margin-left: 390px !important;
+	}
 }
 
 @media only screen and (max-width: 1550px) {
@@ -2333,6 +2346,12 @@ ul.logotypes li a {
 	}
 	.generic-text {
 		padding: 150px 0 0;
+	}
+
+	ul.tools {
+		width: 175px;
+		top: 115px;
+		margin-left: -600px;
 	}
 
 	ul.tools > li {
@@ -2425,8 +2444,9 @@ ul.logotypes li a {
 		margin-top: 34px;
 		margin-right: 0;
 	}
+
 	ul.tools li#needle ul {
-		width: 72px;
+		width: 77px;
 		height: 106px;
 		margin: 0 auto;
 	}
@@ -2543,6 +2563,10 @@ ul.logotypes li a {
 }
 
 @media only screen and (max-width: 1275px) {
+	ul.tools {
+		margin-left: -575px;
+	}
+
 	#museum-wrapper {
 		height: 550px;
 	}
