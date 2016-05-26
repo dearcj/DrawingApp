@@ -356,15 +356,15 @@
 
         <div id="publication-wrapper" class="screens inside">
           <ul class="paintings left-side">
-            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
-            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
-            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
+            <a href="#"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
+            <a href="#"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
+            <a href="#"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
           </ul>
 
           <ul class="paintings right-side">
-            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
-            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
-            <a href="#" class="group1"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
+            <a href="#"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
+            <a href="#"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
+            <a href="#"><li><div><span class="title"></span><span class="author"></span><span class="materials"></span><span class="description"></span></div></li></a>
           </ul>
 
           <div id="main-image"><img id="painting-img"><p class="hidden">Мы в виртуальном «фонде живописи». Здесь твоя картина встречает соседей – работы самых разных художников из музейной коллекции. Может быть, они чем-то похожи на твою? Осмотрись хорошенько, не стесняйся!</p></div>

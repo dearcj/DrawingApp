@@ -33,6 +33,7 @@ ul {
 	bottom: 50% !important;
 	width: 60px !important;
 	height: 60px;
+	outline: none;
 }
 
 #cboxPrevious {
