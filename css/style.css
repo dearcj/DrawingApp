@@ -2681,9 +2681,9 @@ ul.logotypes li a {
 
 @media only screen and (max-device-width: 736px) {
 	#surface-canvas {
-		width: 400px;
-		height: 283px;
-		margin-top: 40px;
+		width: 385px;
+		height: 272px;
+		margin-top: 50px;
 	}
 
 	#surface-canvas p {
@@ -2700,14 +2700,19 @@ ul.logotypes li a {
 
 	ul.surfaces {
 		width: 145px;
-		margin-top: 90px;
+		margin-top: 95px;
 		margin-left: -355px;
 	}
 
 	ul.surfaces li {
 		float: left;
 		width: 75px;
-		height: 55px;
+		height: 60px;
+	}
+
+	ul.surfaces li p {
+		font-size: 90%;
+		bottom: 16px;
 	}
 
 	ul.surfaces li:nth-child(2n+2) {
@@ -2715,7 +2720,7 @@ ul.logotypes li a {
 	}
 
 	ul.surfaces li.metal {
-		margin-top: 145px;
+		margin-top: 155px;
 	}
 }
 

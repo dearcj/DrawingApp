@@ -566,10 +566,6 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
 
-		var surfacesHeight = parseInt($('ul.surfaces').css('height'));
-		var canvasHeight = parseInt($('#surface-canvas').css('height'));
-		var canvasTop = parseInt($('#surface-canvas').css('margin-top'));
-
 		if ($(window).width() < 737) {
 			$('#surface-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%'}, 200).css('z-index', '200');
 			$('#go-to-tools').delay(1000).animate({'top': -20 + 'px'}, 500);
