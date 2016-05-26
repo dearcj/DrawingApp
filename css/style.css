@@ -590,10 +590,6 @@ ul#helpers li span p {
 	height: 0 !important;
 }
 
-/*canvas {*/
-	/*border: 1px solid #ccc;*/
-/*}*/
-
 .main-canvas {
 	background: url(../img/main-canvas.jpg) no-repeat;
     background-size: 100%;
