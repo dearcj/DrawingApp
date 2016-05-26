@@ -710,7 +710,7 @@ jQuery(document).ready(function($) {
 		if ($(window).width() < 700) {
 			$('#publication-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
 			$('form.sending-form').delay(500).animate({'margin-right': 35 + 'px'}, 500);
-			$('#main-image').delay(500).animate({'opacity': 1}, 1000);
+			$('#main-image').delay(500).animate({'opacity': 1, top: 0}, 1000);
 			$('#main-image p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
 			$('#publication-wrapper').animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');

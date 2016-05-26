@@ -2944,6 +2944,11 @@ ul.logotypes li a {
 		margin-top: 5px;
 	}
 
+	#main-image {
+		margin-top: 105px !important;
+		margin-left: 65px !important;
+	}
+
 	#wrapper {
 		overflow: visible;
 	}
