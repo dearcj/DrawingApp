@@ -2691,7 +2691,7 @@ ul.logotypes li a {
 		border-radius: 12px !important;
 		top: 85px;
 		font-size: 140% !important;
-		padding: 20px 0px 25px !important;
+		padding: 20px 0 25px !important;
 	}
 
 	#painting-wrapper p {
@@ -2699,13 +2699,13 @@ ul.logotypes li a {
 		border-radius: 12px !important;
 		top: 85px;
 		font-size: 140% !important;
-		padding: 20px 0px 25px !important;
+		padding: 20px 0 25px !important;
 	}
 
 	ul.tools-buttons li {
 		width: 70px;
 		height: 70px;
-		margin-top: 20px;
+		margin-top: 20px !important;
 	}
 
 	ul.surfaces {
@@ -2731,6 +2731,14 @@ ul.logotypes li a {
 
 	ul.surfaces li.metal {
 		margin-top: 155px;
+	}
+
+	#back-canvas,
+	#main-canvas,
+	#cursor-canvas {
+		width: 360px;
+		height: 255px;
+		margin-top: 45px;
 	}
 }
 

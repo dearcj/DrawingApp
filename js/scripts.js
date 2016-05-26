@@ -190,9 +190,6 @@ jQuery(document).ready(function($) {
 
 		$('ul#helpers li').css('display', 'none');
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
-		$('#back-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});
-		$('#main-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});
-		$('#cursor-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});
 		$('ul.tools').css({width: 144 + 'px', height: 288 + 'px', top: 0});
 		$('ul.tools > li').css({width: 55 + 'px', height: 55 + 'px'});
 		$('ul.tools > li#coal > ul').css({width: 55 + 'px', height: 55 + 'px', 'margin': '0 auto'});
