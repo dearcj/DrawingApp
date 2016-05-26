@@ -187,9 +187,7 @@ jQuery(document).ready(function($) {
 		$('#wrapper').css('overflow', 'visible');
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
-
-		$('#surface-wrapper').animate('height', 100 + '%');
-		$('#surface-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin': '20px auto 0'});
+		
 		$('#surface-wrapper p').css({'opacity': 0, height: 0});
 		$('ul.tools-buttons.surface-tb').css('width', 65 + 'px');
 		$('.surface-button.at-the-backyard').css('display', 'none');
