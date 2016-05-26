@@ -576,8 +576,8 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
 
-		var surfaceWidth = $('ul.surfaces li').css('width');
-		var surfaceHeight = $('ul.surfaces li').css('height');
+		var surfaceWidth = parseInt($('ul.surfaces li').css('width'));
+		var surfaceHeight = parseInt($('ul.surfaces li').css('height'));
 
 		if ($(window).width() < 700) {
 			$('#surface-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%'}, 200).css('z-index', '200');
