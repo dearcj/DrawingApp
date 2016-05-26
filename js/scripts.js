@@ -183,7 +183,7 @@ jQuery(document).ready(function($) {
 	document.getElementById('filters-canvas').width = GLOB_CANV_W;
 	document.getElementById('filters-canvas').height = GLOB_CANV_H;
 
-	if ($(window).width() < 700) {
+	if ($(window).width() < 737) {
 		$('#wrapper').css('overflow', 'visible');
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
