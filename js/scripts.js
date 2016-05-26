@@ -187,14 +187,10 @@ jQuery(document).ready(function($) {
 		$('#wrapper').css('overflow', 'visible');
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
-		
-		$('#surface-wrapper p').css({'opacity': 0, height: 0});
+
 		$('ul.tools-buttons.surface-tb').css('width', 65 + 'px');
 		$('.surface-button.at-the-backyard').css('display', 'none');
 		$('ul#helpers li').css('display', 'none');
-		$('ul.surfaces li').css({width: 75 + 'px', height: 50 + 'px', 'margin-top': 0 + 'px'});
-		$('ul.surfaces li:nth-child(2n+2)').css('margin-left', -8 + 'px');
-		$('ul.surfaces li.metal').css('left', -55 + 'px');
 
 		$('ul.tools-buttons li').css({width: 65 + 'px', height: 65 + 'px', 'margin-top': 15 + 'px'});
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
@@ -1160,7 +1156,6 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li.metal').on(window.eventType, function(event) {
-
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active metal-active');
@@ -1169,7 +1164,6 @@ jQuery(document).ready(function($) {
 	});
 
 	$('ul.surfaces li.metal').on('touchend', function(event) {
-
 		ZSound.Play('click');
 		$('ul.surfaces li').removeClass('active');
 		$(this).addClass('active metal-active');
@@ -1178,7 +1172,6 @@ jQuery(document).ready(function($) {
 	});
 
 	if (window.eventType == 'click') {
-
 		$('ul.surfaces li').mouseover(function () {
 			$(this).find('p').css('display', 'block');
 		});
@@ -1358,7 +1351,6 @@ jQuery(document).ready(function($) {
 			surfaceCanvas = $('#surface-canvas'),
 			surfaceBackyard = $('.surface-button.at-the-backyard');
 			forwardButton = $('ul.tools-buttons.surface-tb li'),
-			surfacesLi = $('ul.surfaces li'),
 			surfacesLiP = $('ul.surfaces li p'),
 			coordinate = function (helperNum, leftPercent, topPercent) {
 				return $('ul#helpers #helper-' + helperNum).css({left: width/100 * leftPercent + 'px', top: 530/100 * topPercent + 'px'});

@@ -2679,7 +2679,13 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-device-width: 736px)
+@media only screen and (max-device-width: 736px) {
+	#surface-canvas {
+		width: 400px;
+		height: 283px;
+		margin-top: 40px;
+	}
+}
 
 @media only screen and (max-width: 850px) {
 	#museum-wrapper {
