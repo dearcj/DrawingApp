@@ -2954,7 +2954,7 @@ ul.logotypes li a {
 	}
 
 	form.sending-form {
-		top: 50%;
+		top: 50% !important;
 	}
 
 	#wrapper {

@@ -227,7 +227,6 @@ jQuery(document).ready(function($) {
 		$('form.sending-form .work-author').css({width: 100 + '%', height: 115 + 'px'});
 		$('form.sending-form .work-author p').css({width: 100 + '%', 'float': 'none', 'text-align': 'center', 'font-size': 100 + '%'});
 		$('form.sending-form .work-author input').css({width: 90 + '%', height: 25 + 'px', 'float': 'none', 'margin': '5px auto 0', 'font-size': 100 + '%'});
-		$('.dark-side.sending').css('height', 35 + 'px');
 	} else {
 		$('li.send-to-museum').css('width', 226 + 'px');
 		$('li.its-done').css('width', 226 + 'px');
