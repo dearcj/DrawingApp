@@ -453,7 +453,7 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftThumbPath + ') no-repeat');
 		}
 
-		$('.group1').colorbox({arrowKey: "true"});
+		$('.group1').colorbox({rel: "group1", arrowKey: "true"});
 
 /*		$('ul.paintings.left-side a:nth-child(2)').colorbox({title: function() {
 			var author = $(this).find("span.author").text();
