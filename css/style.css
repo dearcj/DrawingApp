@@ -2605,6 +2605,13 @@ ul.logotypes li a {
 		height: 500px;
 	}
 
+	#wand {
+		width: 100px !important;
+		height: 440px !important;
+		top: 11%;
+		right: 2% !important;
+	}
+
 	.painting-info {
 		width: 400px;
 		top: 275px;
@@ -2685,6 +2692,13 @@ ul.logotypes li a {
 		height: 450px;
 	}
 
+	#wand {
+		width: 85px !important;
+		height: 365px !important;
+		top: 17%;
+		right: 0 !important;
+	}
+
 	.painting-info {
 		top: 265px;
 	}
@@ -2737,6 +2751,12 @@ ul.logotypes li a {
 	ul.surfaces {
 		margin-top: 85px;
 		margin-left: -465px;
+	}
+
+	#wand {
+		left: 50%;
+		position: absolute;
+		margin-left: 375px;
 	}
 
 	ul.surfaces li {
@@ -3324,7 +3344,7 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-width : 1110px) and (min-width: 700px) {
+@media only screen and (max-width: 1110px) and (min-width: 700px) {
 	#painting-wrapper,
 	#filters-wrapper,
 	#publication-wrapper {
@@ -3371,12 +3391,6 @@ ul.logotypes li a {
 		bottom: 5%;
 	    right: 1%;
 	    width: 200px;
-	}
-	#wand {
-		width: 80px !important;
-		height: 335px !important;
-		top: 20%;
-		right: 0 !important;
 	}
 	#filters-wrapper ul#helpers {
 		top: 91%;
