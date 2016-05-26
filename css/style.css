@@ -2416,8 +2416,9 @@ ul.logotypes li a {
 }
 
 @media only screen and (max-width: 1024px) {
-	.generic ul.ux-buttons {
-		bottom: -45px;
+	div.at-the-backyard {
+		width: 125px;
+		height: 68px;
 	}
 }
 
