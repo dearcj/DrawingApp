@@ -30,6 +30,19 @@ ul {
 #cboxPrevious,
 #cboxNext {
 	display: block !important;
+	bottom: 50% !important;
+	width: 60px;
+	height: 60px;
+}
+
+#cboxPrevious {
+	left: -100px !important;
+	background: url(../img/prev.png) no-repeat;
+}
+
+#cboxNext {
+	right: -100px !important;
+	background: url(../img/next.png) no-repeat;
 }
 
 @font-face {
@@ -2197,11 +2210,13 @@ ul.logotypes li a {
 	opacity: 0.75 !important;
 }
 
-#cboxPrevious,
-#cboxNext,
 #cboxClose,
 #cboxCurrent {
 	display: none !important;
+}
+
+#colorbox, #cboxOverlay, #cboxWrapper, #cboxContent {
+	overflow: visible;
 }
 
 #cboxMiddleLeft,
