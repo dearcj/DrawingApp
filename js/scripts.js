@@ -81,28 +81,34 @@ jQuery(document).ready(function($) {
 	$('#scotch').mouseover(function() {
 		$('ul.comments li span').css('opacity', 0);
 		$('li#helper-8a span').css('opacity', 1);
+		$('#painting-wrapper > p').css('display', 'none');
 	});
 
 	$('#denim').mouseover(function() {
 		$('ul.comments li span').css('opacity', 0);
 		$('li#helper-8b span').css('opacity', 1);
+		$('#painting-wrapper > p').css('display', 'none');
 	});
 
 	$('#needle').mouseover(function() {
 		$('ul.comments li span').css('opacity', 0);
 		$('li#helper-8c span').css('opacity', 1);
+		$('#painting-wrapper > p').css('display', 'none');
 	});
 
 	$('#scotch').mouseout(function() {
 		$('ul.comments li span').css('opacity', 0);
+		$('#painting-wrapper > p').css('display', 'block');
 	});
 
 	$('#denim').mouseout(function() {
 		$('ul.comments li span').css('opacity', 0);
+		$('#painting-wrapper > p').css('display', 'block');
 	});
 
 	$('#needle').mouseout(function() {
 		$('ul.comments li span').css('opacity', 0);
+		$('#painting-wrapper > p').css('display', 'block');
 	});
 
 
