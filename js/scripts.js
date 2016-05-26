@@ -442,6 +442,10 @@ jQuery(document).ready(function($) {
 				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ')').addClass('fond').attr('href', rightAbsPath);
 				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + rightThumbPath + ') no-repeat');
 
+				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') li').mouseover(function() {
+					$(this).css('background', 'linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(' + rightThumbPath + ') no-repeat');
+				});
+
 				rightColumnLength = rightColumnLength - 1;
 			}
 
@@ -451,6 +455,10 @@ jQuery(document).ready(function($) {
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') span.description').text(leftImgDesc);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ')').addClass('fond').attr('href', leftAbsPath);
 			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').css('background', 'linear-gradient(0deg, rgba(0,0,0,0), rgba(0,0,0,0)), url(' + leftThumbPath + ') no-repeat');
+
+			$('ul.paintings.left-side a:nth-child(' + (i + 1) + ') li').mouseover(function() {
+				$(this).css('background', 'linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(' + leftThumbPath + ') no-repeat');
+			});
 		}
 
 		$('ul.paintings a.fond').colorbox({rel: "group1", arrowKey: "true", title: function() {
