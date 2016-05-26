@@ -610,13 +610,11 @@ jQuery(document).ready(function($) {
 	}
 
 	function genericAnimation() {
-		var genArtTop = parseInt($('.generic-art').css('margin-top'));
-		console.log(genArtTop);
-
 		if ($(window).width() > 1050) {
 			var uxTop = $('.header').height() + $('.generic').height() - $('ul.ux-buttons li').height() - 15;
 		} else {
-			var uxTop = $('.header').height() + $('.generic').height() - $('ul.ux-buttons li').height() + 55;
+			var genArtTop = parseInt($('.generic-art').css('margin-top'));
+			var uxTop = $('.header').height() + $('.generic').height() + genArtTop - $('ul.ux-buttons li').height() - 15;
 		}
 		$('.generic ul.ux-buttons').css('top', uxTop + 'px');
 
