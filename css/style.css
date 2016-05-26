@@ -2874,7 +2874,7 @@ ul.logotypes li a {
 
 	ul.tools-buttons.tools-tb {
 		width: 255px;
-		top: 285px;
+		top: 275px;
 		margin-left: -128px;
 	}
 
@@ -2919,12 +2919,11 @@ ul.logotypes li a {
 	#cursor-canvas {
 		width: 360px;
 		height: 255px;
-		margin-top: 10px;
 		margin-left: -180px;
 	}
 
 	ul.tools {
-		margin-top: 45px;
+		margin-top: 35px;
 		margin-left: 0;
 		top: 0;
 	}
@@ -2952,6 +2951,19 @@ ul.logotypes li a {
 
 	ul.tools > li:nth-child(2n+2) {
 		margin-left: 200px !important;
+	}
+
+	ul#undo-refresh {
+		top: 300px;
+		margin-left: 0;
+	}
+
+	ul#undo-refresh li#refresh {
+		margin-left: 150px;
+	}
+
+	ul#undo-refresh li#undo {
+		margin-left: -175px;
 	}
 }
 

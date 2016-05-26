@@ -618,7 +618,7 @@ jQuery(document).ready(function($) {
 
 		var toolsWidth = parseInt($('ul.tools').css('width'));
 
-		if ($(window).width() < 737) {
+		if ($(window).width() < 1025) {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
 			$('#painting-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
