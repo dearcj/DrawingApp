@@ -256,7 +256,6 @@ jQuery(document).ready(function($) {
 
 	// Free from resize
 
-	$('ul.surfaces').css('margin-left', -350 + 'px');
 	$('ul.tools').css('margin-left', -1500 + 'px');
 	$('#go-to-tools').css('top', 150 + 'px');
 	$('.at-the-backyard').css('left', -150 + 'px');
@@ -582,12 +581,12 @@ jQuery(document).ready(function($) {
 		if ($(window).width() < 700) {
 			$('#surface-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%'}, 200).css('z-index', '200');
 			$('#go-to-tools').delay(1000).animate({'top': -20 + 'px'}, 500);
-			$('ul.surfaces').delay(500).animate({'margin-left': ($(window).width() - 240) /3.8 - surfaceWidth + 'px', 'margin-top': (165 - surfaceHeight*4)/2 + 20 + 'px'}, 1500);
 		} else {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 500).css('z-index', '200');
 			$('#go-to-tools').delay(1000).animate({'top': 0 + 'px'}, 500);
-			$('ul.surfaces').delay(500).animate({'margin-left': ($(window).width() - 700)/3.8 - surfaceWidth + 'px', 'margin-top': (495 - surfaceHeight*4)/2 + 'px'}, 1500);
 		}
+
+		$('ul.surfaces').delay(500).animate({'left': 50 + '%'}, 1500);
 
 		$('.surface-button').css({width: surfaceWidth/1.216 + 'px', height: surfaceHeight/1.469 + 'px'}).delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 
@@ -626,7 +625,7 @@ jQuery(document).ready(function($) {
 	function paintingAnimation() {
 		$('#main-canvas').removeClass('no-cursor');
 		$('.its-done').css('top', 150 + 'px');
-		$('ul.surfaces').animate({'margin-left': -$(window).width()/5.28 + 'px'}, 500);
+		$('ul.surfaces').animate({'left': 0 + '%'}, 500);
 		$('.go-to-tools').animate({'top': 150 + 'px'}, 500);
 		$('#surface-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
 		$('#filters-wrapper').delay(500).animate({'opacity': 0}, 100).css('z-index', '100');
