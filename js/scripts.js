@@ -152,16 +152,16 @@ jQuery(document).ready(function($) {
 	if ($(this).hasClass('on')) {
 			$('.fullscreen').addClass('off').removeClass('on');
 			exitFullscreen();
-			$('html').css('height', 100 + '%');
+/*			$('html').css('height', 100 + '%');
 			$('body').css('height', 100 + '%');
 			$('.header').css('display', 'block');
 			$('.langs').css('display', 'block');
 			$('.podval_new').css('display', 'block');
-			$('#wrapper').css({'position': 'inherit', 'top': 0});
+			$('#wrapper').css({'position': 'inherit', 'top': 0});*/
 		} else {
 			$('.fullscreen').addClass('on').removeClass('off');
 			launchFullScreen(html);
-			if ($(this).parents('.ux-buttons').hasClass('home')) {
+/*			if ($(this).parents('.ux-buttons').hasClass('home')) {
 				$('html').css('height', 'auto');
 				$('body').css('height', 'auto');
 			} else {
@@ -170,7 +170,7 @@ jQuery(document).ready(function($) {
 			$('.header').css('display', 'none');
 			$('.langs').css('display', 'none');
 			$('.podval_new').css('display', 'none');
-			$('#wrapper').css({'position': 'absolute', 'top': 0});
+			$('#wrapper').css({'position': 'absolute', 'top': 0});*/
 		}
 	});
 
