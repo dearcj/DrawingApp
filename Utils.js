@@ -345,7 +345,7 @@ function applyFilter(canvId, imgData, filterNumber) {
     window.filterInnerTag = 'цветовая инверсия';
 
   }
-//
+
  /* if (filterNumber == 7) {
     cb = distortion(saveImgCB, canvId, imgData);
     window.filterTag = 'искажение';

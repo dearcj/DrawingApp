@@ -23,7 +23,7 @@
 
   <meta property="og:title" content="PLAYMMOMA"/>
   <meta property="og:description" content=" Заходи в мастерскую #PLAYMMOMA, используй необычные инструменты и создай свою картину!"/>
-  <meta property="og:image" content="http://play.mmoma.ru/onlinegame/wp-content/themes/mmoma/api/imgs/1463742286561723507--1.jpg"/>
+  <meta property="og:image" content="http://play.mmoma.ru/onlinegame/wp-content/themes/mmoma/img/playmmoma-og-image.png"/>
   <meta property="og:url" content="http://play.mmoma.ru/onlinegame/"/>
 
 

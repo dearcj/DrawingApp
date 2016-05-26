@@ -421,6 +421,145 @@ jQuery(document).ready(function($) {
 		$(this).addClass('active pistol-active');
 	});
 
+	$('ul.tools li#btn-scotch').on('touchend', function(event) {
+		ZSound.Play('click');
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active scotch-active');
+	});
+
+	$('ul.tools li#btn-scotch-1').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active scotch-1-active');
+	});
+
+	$('ul.tools li#btn-scotch-2').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active scotch-2-active');
+	});
+
+	$('ul.tools li#btn-coal-1').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active coal-1-active');
+	});
+
+	$('ul.tools li#btn-coal-2').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active coal-2-active');
+	});
+
+	$('ul.tools li#btn-grass').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active grass-active');
+	});
+
+	$('ul.tools li#btn-orange').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active orange-active');
+	});
+
+	$('ul.tools li#btn-denim-1').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active denim-1-active');
+	});
+
+	$('ul.tools li#btn-denim-2').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active denim-2-active');
+	});
+
+	$('ul.tools li#btn-denim-3').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active denim-3-active');
+	});
+
+	$('ul.tools li#btn-catchup').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active catchup-active');
+	});
+
+	$('ul.tools li#btn-needle').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active needle-active');
+	});
+
+	$('ul.tools li#btn-thread-1').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active thread-1-active');
+	});
+
+	$('ul.tools li#btn-thread-2').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active thread-2-active');
+	});
+
+	$('ul.tools li#btn-thread-3').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active thread-3-active');
+	});
+
+	$('ul.tools li#btn-thread-4').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active thread-4-active');
+	});
+
+	$('ul.tools li#btn-thread-5').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active thread-5-active');
+	});
+
+	$('ul.tools li#btn-thread-6').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active thread-6-active');
+	});
+
+	$('ul.tools li#btn-thread-7').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active thread-7-active');
+	});
+
+	$('ul.tools li#btn-pistol').on('touchend', function(event) {
+		ZSound.Play('click');
+
+		$('ul.tools li').removeClass('active');
+		$(this).addClass('active pistol-active');
+	});
+
 	function setRandomImgs() {
 		var leftAbsPath = '', rightAbsPath = '', leftThumbPath = '', rightThumbPath = '', leftImgTitle = '', rightImgTitle = '', leftImgAuthor = '', rightImgAuthor = '', leftImgMats = '', rightImgMats = '', leftImgDesc = '', rightImgDesc = '', leftImgYear = '', rightImgYear = '', j = imgs.length - 1;
 		var rightColumnLength = imgs.length - 3;
@@ -870,7 +1009,7 @@ jQuery(document).ready(function($) {
 		}
 	});
 
-	window.addEventListener("popstate", function(e) {
+/*	window.addEventListener("popstate", function(e) {
 		if (currentHash.hash.indexOf('index') > 0) {
 			openPage('index');
 		}
@@ -904,7 +1043,7 @@ jQuery(document).ready(function($) {
 		if (currentHash.hash.indexOf('museum') > 0) {
 			openPage('museum');
 		}
-	}, false);
+	}, false);*/
 
 	$(window).load(function() {
 		if (location.hash != '') {
