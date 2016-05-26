@@ -1692,6 +1692,12 @@ span.generic-desc {
 	border-radius: 15px;
 }
 
+#interpretation-wrapper .generic-img,
+#interpretation-wrapper span.generic-desc {
+	width: 90%;
+	float: right;
+}
+
 .generic-text {
 	float: right;
 	width: 40%;
