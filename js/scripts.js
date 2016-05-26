@@ -587,7 +587,7 @@ jQuery(document).ready(function($) {
 			$('#go-to-tools').delay(1000).animate({'top': 0 + 'px'}, 500);
 		}
 
-		$('ul.surfaces').css('margin-top', (canvasHeight - surfacesHeight)/2 + canvasTop + 'px').delay(500).animate({'left': 50 + '%'}, 1500);
+		$('ul.surfaces').delay(500).animate({'left': 50 + '%'}, 1500);
 
 		$('.surface-button').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 
