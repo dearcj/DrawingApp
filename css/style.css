@@ -2699,14 +2699,19 @@ ul.logotypes li a {
 	}
 
 	ul.surfaces {
-		width: 150px;
+		width: 145px;
 		margin-top: 90px;
 		margin-left: -355px;
 	}
 
 	ul.surfaces li {
+		float: left;
 		width: 75px;
 		height: 55px;
+	}
+
+	ul.surfaces li:nth-child(2n+2) {
+		margin-left: -5px;
 	}
 
 	ul.surfaces li.metal {
