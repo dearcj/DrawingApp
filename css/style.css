@@ -947,13 +947,14 @@ ul.tools-buttons li:hover {
 }
 
 ul.tools {
-	position: relative;
+	position: absolute;
 	width: 300px;
 	height: 575px;
 	top: 35px;
 	padding-left: 0;
 	margin: 0;
 	margin-left: -300px;
+	left: 0;
 }
 
 ul.tools > li {
@@ -2702,10 +2703,20 @@ ul.logotypes li a {
 		padding: 20px 0 25px !important;
 	}
 
-	ul.tools-buttons li {
+	ul.tools-buttons.tools-tb {
+		width: 255px;
+		top: 285px;
+		margin-left: -128px;
+	}
+
+	ul.tools-buttons.tools-tb li {
 		width: 70px;
 		height: 70px;
 		margin-top: 20px !important;
+	}
+
+	ul.tools-buttons li.send-to-museum {
+		width: 165px;
 	}
 
 	ul.surfaces {
@@ -2738,7 +2749,12 @@ ul.logotypes li a {
 	#cursor-canvas {
 		width: 360px;
 		height: 255px;
-		margin-top: 45px;
+		margin-top: 10px;
+		margin-left: -90px;
+	}
+
+	ul.tools {
+		margin-top: 50px;
 	}
 }
 

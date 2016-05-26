@@ -190,7 +190,6 @@ jQuery(document).ready(function($) {
 
 		$('ul#helpers li').css('display', 'none');
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
-		$('ul.tools').css({width: 144 + 'px', height: 288 + 'px', top: 0});
 		$('ul.tools > li').css({width: 55 + 'px', height: 55 + 'px'});
 		$('ul.tools > li#coal > ul').css({width: 55 + 'px', height: 55 + 'px', 'margin': '0 auto'});
 		$('ul.tools > li#coal > ul li').css({width: 22 + 'px', height: 70 + 'px'});
@@ -211,8 +210,6 @@ jQuery(document).ready(function($) {
 		$('ul.tools > li > ul > li#btn-needle').css({width: 55 + 'px', height: 48 + 'px', 'margin': '8px + auto + 2px'});
 		$('ul.tools li.needle-color').css({width: 13 + 'px', height: 13 + 'px', 'margin-left': -2 + 'px'});
 		$('ul.tools li#btn-pistol').css({width: 48 + 'px', height: 78 + 'px', 'margin-right': 8 + 'px'});
-		$('li.send-to-museum').css('width', 150 + 'px');
-		$('ul.tools-buttons.tools-tb').css({width: 232 + 'px', top: 165 + 'px', 'margin-left': -91 + 'px'});
 
 		$('.filters-canvas').css({width: 240 + 'px', height: 165 + 'px', top: 20 + 'px'});
 		$('#filters-canvas').css({width: 240 + 'px', height: 165 + 'px'});
@@ -624,7 +621,6 @@ jQuery(document).ready(function($) {
 
 		if ($(window).width() < 700) {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 240)/2 - 144)/2 + 'px'}, 1000);
 			$('#painting-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
 			});
@@ -632,7 +628,6 @@ jQuery(document).ready(function($) {
 			$('#painting-wrapper ul#undo-refresh').css('opacity', 0);
 		} else {
 			$('#painting-wrapper').delay(300).animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-			$('ul.tools').delay(500).animate({'margin-left': 3*(($(window).width() - 700)/2 - toolsWidth)/4 + 'px'}, 1000);
 			$('#painting-wrapper > p').animate({'opacity': 1}, 1000).fadeIn(2500);
 			$('#painting-wrapper').each(function(){
 				$(this).children().css({'opacity': 1, 'z-index': '200'});
@@ -640,6 +635,8 @@ jQuery(document).ready(function($) {
 			$('#painting-wrapper > p').css({'z-index': 250});
 			$('#painting-wrapper ul#undo-refresh').css('opacity', 0);
 		}
+
+		$('ul.tools').delay(500).animate({'left': 50 + '%'}, 1000);
 
 		$('#back-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
 		$('#main-canvas').delay(1000).animate({top: 35 + 'px'}, 500);
