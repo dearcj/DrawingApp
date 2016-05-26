@@ -188,11 +188,10 @@ jQuery(document).ready(function($) {
 		$('.header').css('display', 'none');
 		$('.podval_new').css('display', 'none');
 
-		$('ul.tools-buttons.surface-tb').css('width', 65 + 'px');
 		$('.surface-button.at-the-backyard').css('display', 'none');
 		$('ul#helpers li').css('display', 'none');
 
-		$('ul.tools-buttons li').css({width: 65 + 'px', height: 65 + 'px', 'margin-top': 15 + 'px'});
+		$('ul.tools-buttons li').css('margin-top', 15 + 'px');
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
 		$('#back-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});
 		$('#main-canvas').css({width: 240 + 'px', height: 165 + 'px', 'margin-left': -80 + 'px', top: 20 + 'px'});
@@ -1349,8 +1348,7 @@ jQuery(document).ready(function($) {
 	function surfaceResponsive () {
 		var width = $(window).width(),
 			surfaceCanvas = $('#surface-canvas'),
-			surfaceBackyard = $('.surface-button.at-the-backyard');
-			forwardButton = $('ul.tools-buttons.surface-tb li'),
+			surfaceBackyard = $('.surface-button.at-the-backyard'),
 			surfacesLiP = $('ul.surfaces li p'),
 			coordinate = function (helperNum, leftPercent, topPercent) {
 				return $('ul#helpers #helper-' + helperNum).css({left: width/100 * leftPercent + 'px', top: 530/100 * topPercent + 'px'});

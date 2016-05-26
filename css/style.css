@@ -2685,6 +2685,33 @@ ul.logotypes li a {
 		height: 283px;
 		margin-top: 40px;
 	}
+
+	#surface-canvas p {
+		width: 300px !important;
+		border-radius: 12px !important;
+		top: 150px;
+		padding: 20px 0px 25px !important;
+	}
+
+	ul.tools-buttons li {
+		width: 70px;
+		height: 70px;
+	}
+
+	ul.surfaces {
+		width: 150px;
+		margin-top: 90px;
+		margin-left: -355px;
+	}
+
+	ul.surfaces li {
+		width: 75px;
+		height: 55px;
+	}
+
+	ul.surfaces li.metal {
+		margin-top: 145px;
+	}
 }
 
 @media only screen and (max-width: 850px) {
