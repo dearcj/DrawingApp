@@ -2248,10 +2248,17 @@ ul.logotypes li a {
 	background: transparent;
 }
 
+@media only screen and (max-width: 1800px) {
+	ul.surfaces {
+		margin-left: -725px;
+	}
+}
+
 @media only screen and (max-width: 1700px) {
 	ul.surfaces {
 		width: 300px;
 		height: 400px;
+		margin-left: -700px;
 	}
 
 	ul.surfaces li {
@@ -2268,6 +2275,7 @@ ul.logotypes li a {
 	ul.surfaces {
 		width: 270px;
 		height: 320px;
+		margin-left: -675px;
 	}
 
 	ul.surfaces li {
@@ -2284,6 +2292,7 @@ ul.logotypes li a {
 	ul.surfaces {
 		width: 220px;
 		height: 260px;
+		margin-left: -625px;
 	}
 
 	ul.surfaces li {
@@ -2298,17 +2307,7 @@ ul.logotypes li a {
 
 @media only screen and (max-width: 1400px) {
 	ul.surfaces {
-		width: 220px;
-		height: 260px;
-	}
-
-	ul.surfaces li {
-		width: 110px;
-		height: 65px;
-	}
-
-	ul.surfaces li.metal {
-		margin-top: 175px;
+		margin-left: -575px;
 	}
 }
 
