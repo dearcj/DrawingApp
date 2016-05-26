@@ -1591,7 +1591,7 @@ div.at-the-backyard {
 
 .dark-side.sending {
 	background-color: rgba(0,0,0,0.5);
-	opacity: 0;
+	height: 0;
 }
 
 #surface-canvas {
@@ -2951,6 +2951,10 @@ ul.logotypes li a {
 
 	#main-image p {
 		opacity: 0 !important;
+	}
+
+	form.sending-form {
+		top: 50%;
 	}
 
 	#wrapper {
