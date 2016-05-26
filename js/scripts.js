@@ -612,7 +612,6 @@ jQuery(document).ready(function($) {
 	function genericAnimation() {
 		var uxTop = $('.header').height() + $('.generic').height() - $('ul.ux-buttons li').height() - 15;
 		$('.generic ul.ux-buttons').css('top', uxTop + 'px');
-		console.log(uxTop);
 
 		$('.generic-button').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
 		$('#installation-wrapper .mute').delay(1000).animate({'opacity': 1}, 500);
@@ -1622,6 +1621,8 @@ jQuery(document).ready(function($) {
 			publicationAnimation();
 		} else if (window.location.href.indexOf('museum') > 0) {
 			museumAnimation();
+		} else if (window.location.href.indexOf('inst') > 0 || window.location.href.indexOf('inter') > 0 || window.location.href.indexOf('perf') > 0 || window.location.href.indexOf('media') > 0) {
+			genericAnimation();
 		}
 		setBgImageSize();
 		museumResponsive();
