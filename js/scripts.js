@@ -610,7 +610,11 @@ jQuery(document).ready(function($) {
 	}
 
 	function genericAnimation() {
-		var uxTop = $('.header').height() + $('.generic').height() - $('ul.ux-buttons li').height() - 15;
+		if ($(window).width() > 1050) {
+			var uxTop = $('.header').height() + $('.generic').height() - $('ul.ux-buttons li').height() - 15;
+		} else {
+			var uxTop = $('.header').height() + $('.generic').height() - $('ul.ux-buttons li').height() + 55;
+		}
 		$('.generic ul.ux-buttons').css('top', uxTop + 'px');
 
 		$('.generic-button').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
