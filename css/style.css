@@ -3077,6 +3077,10 @@ ul.logotypes li a {
 		margin-right: 10px;
 	}
 
+	ul.tools {
+		height: 0;
+	}
+
 	ul#undo-refresh li#refresh {
 		width: 19px;
 		height: 25px;
@@ -3101,6 +3105,22 @@ ul.logotypes li a {
 
 	li.send-to-museum {
 		width: 165px !important;
+	}
+
+	#filters-canvas {
+		width: 360px !important;
+		height: 255px !important;
+		left: 50%;
+		margin-left: -180px;
+	}
+
+	#wand {
+		width: 55px !important;
+		height: 235px !important;
+		top: 8%;
+		position: absolute;
+		margin-left: -130px;
+		left: 100%;
 	}
 }
 
