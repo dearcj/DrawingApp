@@ -2881,12 +2881,33 @@ ul.logotypes li a {
 		height: 65px !important;
 	}
 
+	#wand {
+		top: 14%;
+		right: 25px !important;
+	}
+
 	#painting-wrapper ul#helpers {
-		top: 35px !important;
+		top: 15px !important;
 		margin-right: -395px !important;
 	}
 
+	#helper-7 span {
+		width: 350px !important;
+		font-size: 125% !important;
+		padding: 15px 18px 18px !important;
+		left: -350px !important;
+		top: 55px !important;
+	}
+
 	#helper-8 span {
+		width: 350px !important;
+		font-size: 125% !important;
+		padding: 15px 18px 18px !important;
+		left: -350px !important;
+		top: 55px !important;
+	}
+
+	#helper-10 span {
 		width: 350px !important;
 		font-size: 125% !important;
 		padding: 15px 18px 18px !important;
@@ -2910,7 +2931,7 @@ ul.logotypes li a {
 	#back-canvas,
 	#main-canvas,
 	#cursor-canvas {
-		margin-top: 20px;
+		margin-top: 0;
 	}
 
 	ul#helpers li {
@@ -2925,7 +2946,7 @@ ul.logotypes li a {
 	ul.tools-buttons.tools-tb {
 		margin-left: -168px;
 		width: 336px;
-		top: 590px;
+		top: 580px;
 	}
 
 	ul.tools-buttons.tools-tb li {
@@ -2963,7 +2984,7 @@ ul.logotypes li a {
 
 	ul.ux-buttons {
 		bottom: 0 !important;
-		top: 545px;
+		top: 525px;
 	}
 
 	ul.tools {
@@ -2995,7 +3016,7 @@ ul.logotypes li a {
 	}
 
 	ul#undo-refresh {
-		top: 605px !important;
+		top: 585px !important;
 		margin-left: -375px !important;
 	}
 
