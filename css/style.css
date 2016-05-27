@@ -3068,6 +3068,20 @@ ul.logotypes li a {
 		top: 35px !important;
 	}
 
+	ul#undo-refresh {
+		top: 300px !important;
+		margin-left: -180px !important;
+	}
+
+	ul#undo-refresh li#undo {
+		margin-right: 10px;
+	}
+
+	ul#undo-refresh li#refresh {
+		width: 19px;
+		height: 25px;
+	}
+
 	#back-canvas,
 	#main-canvas,
 	#cursor-canvas {
