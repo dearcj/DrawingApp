@@ -3487,7 +3487,7 @@ ul.logotypes li a {
 	#filters-canvas {
 		width: 240px !important;
 		height: 170px !important;
-		margin-left: -120px;
+		margin-left: -120px !important;
 	}
 
 	.its-done {
