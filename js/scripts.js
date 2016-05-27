@@ -1259,7 +1259,7 @@ jQuery(document).ready(function($) {
 		window.selectedSurface = 7;
 	});
 
-	if (window.eventType == 'click') {
+	if (window.eventType == 'click' && $(window).width() > 1025) {
 		$('ul.surfaces li').mouseover(function () {
 			$(this).find('p').css('display', 'block');
 		});
