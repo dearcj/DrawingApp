@@ -3046,7 +3046,7 @@ ul.logotypes li a {
 	}
 
 	form.sending-form .work-author .item-field {
-		margin-top: 16px;
+		margin-top: 23px;
 		height: 35px !important;
 	}
 
@@ -3353,6 +3353,10 @@ ul.logotypes li a {
 	#museum-wrapper ul#helpers {
 		display: none;
 	}
+
+	#museum-wrapper {
+		height: 100% !important;
+	}
 }
 
 /*iPhone5*/
@@ -3552,6 +3556,7 @@ ul.logotypes li a {
 		top: 0 !important;
 		right: 50% !important;
 		margin-right: -250px !important;
+		height: 165px !important;
 	}
 
 	form.sending-form button {
