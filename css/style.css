@@ -2954,14 +2954,6 @@ ul.logotypes li a {
 		margin-top: -10px;
 	}
 
-	ul.tools > li:nth-child(2n+1) {
-		margin-left: -375px !important;
-	}
-
-	ul.tools > li:nth-child(2n+2) {
-		margin-left: 315px !important;
-	}
-
 	ul#undo-refresh {
 		top: 515px !important;
 		margin-left: -275px !important;
