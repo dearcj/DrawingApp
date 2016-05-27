@@ -2982,6 +2982,8 @@ ul.logotypes li a {
 	}
 }
 
+/*iPhone6&6+*/
+
 @media only screen and (max-device-width: 736px) {
 	#surface-canvas {
 		width: 360px;
@@ -3176,6 +3178,7 @@ ul.logotypes li a {
 	.museum-painting {
 		width: 240px;
 		height: 165px;
+		margin-left: -117px !important;
 	}
 
 	.painting-info {
@@ -3196,14 +3199,25 @@ ul.logotypes li a {
 	}
 
 	.social-buttons {
-		right: 15%;
-		margin-right: -225px;
+		right: 15% !important;
+		margin-right: -225px !important;
 	}
 
 	.museum-button.at-the-backyard {
 		top: -42px !important;
 	}
+
+	#museum-wrapper ul#helpers {
+		display: none;
+	}
+
+	.social-buttons ul li#download,
+	.social-buttons span#save {
+		display: none;
+	}
 }
+
+/*iPhone5*/
 
 @media only screen and (max-device-width: 568px) {
 	ul.tools-buttons.tools-tb {
@@ -3211,14 +3225,36 @@ ul.logotypes li a {
 	}
 
 	#main-image {
-		margin-top: 80px !important;
-		margin-left: 35px !important;
+		margin-left: -250px !important;
+	}
+
+	form.sending-form {
+		margin-right: -250px !important;
 	}
 
 	#back-canvas,
 	#main-canvas,
 	#cursor-canvas {
-		margin-top: -25px;
+		width: 285px;
+		height: 202px;
+		margin-left: -142px;
+	}
+
+	ul.tools-buttons.tools-tb {
+		top: 240px;
+		width: 210px;
+		margin-left: -105px;
+	}
+
+	ul.tools-buttons.surface-tb li,
+	ul.tools-buttons.tools-tb li,
+	ul.tools-buttons.filters-tb li {
+		width: 60px;
+		height: 60px;
+	}
+
+	li.send-to-museum {
+		width: 140px !important;
 	}
 
 	ul.tools {
@@ -3226,11 +3262,117 @@ ul.logotypes li a {
 	}
 
 	ul.tools > li:nth-child(2n+1) {
-		margin-left: -255px !important;
+		margin-left: -230px !important;
 	}
 
 	ul.tools > li:nth-child(2n+2) {
-		margin-left: 197px !important;
+		margin-left: 170px !important;
+	}
+
+	ul.tools li#needle {
+		margin-top: 16px;
+	}
+
+	ul#undo-refresh {
+		width: 285px;
+		top: 250px !important;
+		margin-left: -142px !important;
+	}
+
+	ul#undo-refresh li#refresh {
+		float: right;
+	}
+
+	#filters-canvas {
+		width: 285px;
+		height: 202px;
+		margin-left: -142px;
+	}
+
+	.its-done {
+		width: 145px !important;
+	}
+
+	ul.tools-buttons.filters-tb {
+		width: 195px !important;
+		top: 205px !important;
+	}
+
+	#wand {
+		width: 45px !important;
+		height: 200px !important;
+		top: 11%;
+		margin-left: -120px;
+	}
+
+	#surface-canvas {
+		width: 285px;
+		height: 202px;
+		margin-top: 35px;
+	}
+
+	#surface-canvas p {
+		width: 215px !important;
+		border-radius: 8px !important;
+		top: 68px;
+		font-size: 110% !important;
+		padding: 15px 0 20px !important;
+	}
+
+	div.at-the-backyard {
+		width: 85px;
+		height: 45px;
+	}
+
+	.go-to-home {
+		top: 260px !important;
+	}
+
+	ul.surfaces {
+		width: 140px;
+		margin-top: 40px;
+		margin-left: -280px;
+	}
+
+	ul.surfaces li {
+		width: 70px;
+		height: 55px;
+	}
+
+	ul.surfaces li.metal {
+		margin-top: 145px;
+	}
+
+	#helper-7 span {
+		font-size: 95% !important;
+		top: 40px !important;
+	}
+
+	#helper-10 span {
+		font-size: 95% !important;
+		top: -120px !important;
+	}
+
+	.museum-painting {
+		width: 215px;
+		height: 152px;
+		margin-left: -107px !important;
+		margin-top: -10px;
+	}
+
+	.social-buttons {
+		top: 18% !important;
+		margin-right: -215px !important;
+	}
+
+	.painting-info {
+		width: 300px;
+		top: 175px;
+		padding: 2px 0 0;
+	}
+
+	#painting-materials {
+		padding-bottom: 6px;
 	}
 }
 
