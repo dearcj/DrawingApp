@@ -633,16 +633,16 @@ jQuery(document).ready(function($) {
 
 		$('#main-image p').css('display', 'block').delay(1000).animate({'opacity': 1}, 2000).removeClass('hidden');
 
-		if ($(window).width() < 1024) {
+		if ($(window).width() < 1025) {
 			$('#publication-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-			$('#main-image').delay(500).animate({'opacity': 1, top: 0}, 1000);
 			$('#main-image p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
 			$('#publication-wrapper').animate({'opacity': 1, 'height': 660 + 'px'}, 100).css('z-index', '200');
-			$('#main-image').delay(500).animate({'opacity': 1, top: 0}, 1000);
 			$('#main-image p').css({width: 350 + 'px', 'font-size': 150 + '%', 'padding': '25px 25px 30px', 'border-radius': 25 + 'px', top: 105 + 'px'});
 		}
 
+		$('#main-image').delay(500).animate({left: 50 + '%'}, 1000);
+		$('#main-image').delay(500).animate({right: 50 + '%'}, 1000);
 		$('#publication-wrapper').each(function(){
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});

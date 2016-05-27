@@ -3138,7 +3138,7 @@ ul.logotypes li a {
 
 	#main-image {
 		position: absolute;
-		left: 50%;
+		left: 0;
 		margin-left: -260px !important;
 		top: 50% !important;
 		margin-top: -83px !important;
@@ -3146,7 +3146,7 @@ ul.logotypes li a {
 
 	form.sending-form {
 		top: 50% !important;
-		right: 50%;
+		right: 0;
 		margin-right: -260px !important;
 		border-radius: 10px;
 		width: 240px;
