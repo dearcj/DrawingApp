@@ -3021,17 +3021,20 @@ ul.logotypes li a {
 
 	ul.paintings.left-side {
 		position: absolute;
-		margin-left: 4% !important;
+		display: block !important;
+		left: 2.5% !important;
 	}
 
 	ul.paintings.right-side {
 		position: absolute;
-		margin-right: 4% !important;
+		display: block !important;
+		right: 2.5% !important;
 	}
 
 	ul.paintings li {
 		width: 170px !important;
 		height: 108px !important;
+		margin-bottom: 21px !important;
 	}
 
 	form.sending-form {
