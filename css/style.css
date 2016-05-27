@@ -3019,6 +3019,21 @@ ul.logotypes li a {
 		margin-left: -375px !important;
 	}
 
+	ul.paintings.left-side {
+		position: absolute;
+		margin-left: 4% !important;
+	}
+
+	ul.paintings.right-side {
+		position: absolute;
+		margin-right: 4% !important;
+	}
+
+	ul.paintings li {
+		width: 170px !important;
+		height: 108px !important;
+	}
+
 	form.sending-form {
 		width: 500px !important;
 		right: 0 !important;
