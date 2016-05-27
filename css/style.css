@@ -3495,6 +3495,12 @@ ul.logotypes li a {
 		height: 170px !important;
 	}
 
+	form.sending-form button {
+		width: 100% !important;
+		height: 60px !important;
+		font-size: 100% !important;
+	}
+
 	.its-done {
 		width: 145px !important;
 	}
@@ -3539,6 +3545,33 @@ ul.logotypes li a {
 
 	#museum-wrapper ul.ux-buttons {
 		top: 180px !important;
+	}
+
+	form.sending-form {
+		margin-top: 25px !important;
+		top: 0 !important;
+		right: 50% !important;
+		margin-right: -250px !important;
+	}
+
+	form.sending-form button {
+		width: 100% !important;
+		height: 60px !important;
+		font-size: 100% !important;
+	}
+
+	#publication-wrapper ul#helpers {
+		top: 142px !important;
+		margin-left: -130px !important;
+	}
+
+	form.sending-form .work-author input {
+		width: 94% !important;
+		margin-left: 0 !important;
+	}
+
+	form.sending-form .work-author {
+		height: 105px;
 	}
 
 	ul.surfaces {
