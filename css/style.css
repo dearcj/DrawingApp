@@ -3219,7 +3219,7 @@ ul.logotypes li a {
 
 /*iPhone5*/
 
-@media only screen and (max-device-width: 568px) {
+@media only screen and (max-device-width: 568px) and (orientation: landscape) {
 	ul.tools-buttons.tools-tb {
 		top: 272px;
 	}
