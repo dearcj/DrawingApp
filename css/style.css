@@ -2892,27 +2892,24 @@ ul.logotypes li a {
 	}
 
 	#helper-7 span {
-		width: 350px !important;
-		font-size: 125% !important;
-		padding: 15px 18px 18px !important;
-		left: -350px !important;
+		left: 0 !important;
 		top: 55px !important;
 	}
 
 	#helper-8 span {
-		width: 350px !important;
-		font-size: 125% !important;
-		padding: 15px 18px 18px !important;
 		left: -350px !important;
 		top: 55px !important;
 	}
 
-	#helper-10 span {
+	#helper-9 span {
+		top: -110px !important;
+	}
+
+	#helper-7 span,
+	#helper-8 span {
 		width: 350px !important;
 		font-size: 125% !important;
 		padding: 15px 18px 18px !important;
-		left: -350px !important;
-		top: 55px !important;
 	}
 
 	ul.surfaces li p {
@@ -2946,7 +2943,7 @@ ul.logotypes li a {
 	ul.tools-buttons.tools-tb {
 		margin-left: -168px;
 		width: 336px;
-		top: 580px;
+		top: 575px;
 	}
 
 	ul.tools-buttons.tools-tb li {
