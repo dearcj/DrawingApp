@@ -3525,6 +3525,19 @@ ul.logotypes li a {
 		width: 100% !important;
 	}
 
+	#painting-title {
+		font-size: 100%;
+	}
+
+	#painting-author {
+		font-size: 90%;
+	}
+
+	#painting-materials {
+		padding-top: 0 !important;
+		font-size: 85% !important;
+	}
+
 	.its-done {
 		width: 145px !important;
 	}
@@ -3638,7 +3651,7 @@ ul.logotypes li a {
 	}
 
 	.painting-info {
-		width: 300px;
+		width: 275px;
 		top: 160px !important;
 		padding: 2px 0 0;
 	}
