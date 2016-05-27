@@ -3238,17 +3238,68 @@ ul.logotypes li a {
 		width: 240px !important;
 		height: 170px !important;
 		margin-left: -120px;
+		top: 20px !important;
 	}
 
 	ul.ux-buttons {
 		bottom: 0 !important;
-		top: 200px;
+		top: 195px;
+	}
+
+	ul.tools {
+		margin-top: 35px;
+	}
+
+	ul.tools > li:nth-child(2n+1) {
+		margin-left: -230px !important;
+	}
+
+	ul.tools > li:nth-child(2n+2) {
+		margin-left: 170px !important;
 	}
 
 	ul.tools-buttons.tools-tb {
-		top: 240px;
-		width: 210px;
-		margin-left: -105px;
+		top: 190px;
+		width: 190px;
+		margin-left: -95px;
+	}
+
+
+	ul.tools > li#scotch {
+		left: -35px !important;
+	}
+	ul.tools li#btn-grass {
+		top: 2px !important;
+		left: 35px;
+	}
+
+	ul.tools li#denim {
+		left: -35px;
+		margin-top: -60px;
+	}
+
+	ul.tools li#needle {
+		margin-top: -120px;
+		left: 30px;
+	}
+
+	ul.tools li#btn-pistol {
+		top: -112px;
+		right: -38px;
+	}
+
+	ul.tools li#btn-catchup {
+		right: 32px;
+		top: -55px;
+	}
+
+	ul.tools li#btn-orange {
+		top: -55px;
+		left: 35px;
+	}
+
+	ul.tools li#coal {
+		right: 25px;
 	}
 
 	ul.tools-buttons.surface-tb {
@@ -3263,23 +3314,7 @@ ul.logotypes li a {
 	}
 
 	li.send-to-museum {
-		width: 140px !important;
-	}
-
-	ul.tools {
-		margin-top: 20px;
-	}
-
-	ul.tools > li:nth-child(2n+1) {
-		margin-left: -230px !important;
-	}
-
-	ul.tools > li:nth-child(2n+2) {
-		margin-left: 170px !important;
-	}
-
-	ul.tools li#needle {
-		margin-top: 16px;
+		width: 130px !important;
 	}
 
 	ul#undo-refresh {
