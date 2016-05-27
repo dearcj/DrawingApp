@@ -2858,6 +2858,11 @@ ul.logotypes li a {
 		font-size: 175% !important;
 	}
 
+	#painting-img {
+		width: 550px !important;
+		height: 363px !important;
+	}
+
 	ul.surfaces {
 		width: 200px;
 		margin-top: 135px;
@@ -3021,7 +3026,7 @@ ul.logotypes li a {
 	}
 
 	form.sending-form {
-		width: 500px;
+		width: 500px !important;
 		right: 0 !important;
 		height: 100px !important;
 		top: 425px !important;
@@ -3031,13 +3036,13 @@ ul.logotypes li a {
 	form.sending-form button {
 		width: 35% !important;
 		height: 100px !important;
-		border-radius: 0 10px 10px 0;
+		border-radius: 0 10px 10px 0 !important;
 		font-size: 140% !important;
 	}
 
 	form.sending-form .work-author {
-		width: 60%;
-		height: 100px;
+		width: 60% !important;
+		height: 100px !important;
 	}
 
 	form.sending-form .work-author input {
@@ -3046,12 +3051,12 @@ ul.logotypes li a {
 	}
 
 	form.sending-form .work-author .item-field {
-		margin-top: 23px;
+		margin-top: 23px !important;
 		height: 35px !important;
 	}
 
 	form.sending-form .work-author .item-field:last-child {
-		margin-top: 5px;
+		margin-top: 5px !important;
 	}
 
 	#publication-wrapper ul#helpers {
@@ -3576,7 +3581,7 @@ ul.logotypes li a {
 	}
 
 	form.sending-form .work-author {
-		height: 105px;
+		height: 105px !important;
 	}
 
 	ul.surfaces {
@@ -3614,13 +3619,17 @@ ul.logotypes li a {
 
 	.social-buttons {
 		top: 19% !important;
-		margin-right: -235px !important;
+		margin-right: -225px !important;
 	}
 
 	.painting-info {
 		width: 300px;
 		top: 160px !important;
 		padding: 2px 0 0;
+	}
+
+	ul.ux-buttons.home {
+		top: 72px !important;
 	}
 
 	#painting-materials {
