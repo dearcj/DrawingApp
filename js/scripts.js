@@ -190,7 +190,6 @@ jQuery(document).ready(function($) {
 		$('.museum-button.at-the-backyard').css({width: 100 + 'px', height: 55 + 'px', 'margin-top': 60 + 'px'});
 		$('.social-buttons').css({'margin-right': -200 + 'px'});
 
-		$('form.sending-form').css({width: 40 + '%', height: 165 + 'px', 'margin-right': -250 + 'px', 'float': 'right'});
 		$('form.sending-form button').css({width: 100 + '%'});
 		$('form.sending-form .work-author').css({width: 100 + '%', height: 115 + 'px'});
 		$('form.sending-form .work-author p').css({width: 100 + '%', 'float': 'none', 'text-align': 'center', 'font-size': 100 + '%'});
@@ -634,9 +633,8 @@ jQuery(document).ready(function($) {
 
 		$('#main-image p').css('display', 'block').delay(1000).animate({'opacity': 1}, 2000).removeClass('hidden');
 
-		if ($(window).width() < 700) {
+		if ($(window).width() < 1024) {
 			$('#publication-wrapper').delay(300).animate({'opacity': 1, 'height': 100 + '%'}, 100).css('z-index', '200');
-			$('form.sending-form').delay(500).animate({'margin-right': 50 + 'px'}, 500);
 			$('#main-image').delay(500).animate({'opacity': 1, top: 0}, 1000);
 			$('#main-image p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
@@ -1387,8 +1385,6 @@ jQuery(document).ready(function($) {
 			sendingFormButton.css({height: sendingFormHeight + 'px', 'font-size': sendingFormHeight*1.6 + '%', 'padding-top': 8*sendingFormHeight/100 + 'px', 'border-radius': '0 ' + 10*sendingFormHeight/100 + 'px ' + 10*sendingFormHeight/100 + 'px 0'});
 			sendingFormP.css('font-size', sendingFormHeight + '%');
 			sendingFormInput.css({height: sendingFormHeight/4.35 + 'px', 'font-size': sendingFormHeight + '%'});
-			var itemFieldHeight = parseInt($('form.sending-form .work-author .item-field').css('height')),
-				itemFieldSecondMarginTop = sendingFormHeight/9.13;
 		} else {
 			sendingForm.css({height: 165 + 'px', 'top': 50 + '%', 'margin-top': -83 + 'px'});
 			var sendingFormHeight = sendingForm.height();

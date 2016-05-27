@@ -3130,10 +3130,27 @@ ul.logotypes li a {
 	#wand {
 		width: 55px !important;
 		height: 235px !important;
-		top: 8%;
+		top: 12%;
 		position: absolute;
 		margin-left: -130px;
 		left: 100%;
+	}
+
+	#main-image {
+		position: absolute;
+		left: 50%;
+		margin-left: -260px !important;
+		top: 50% !important;
+		margin-top: -83px !important;
+	}
+
+	form.sending-form {
+		top: 50% !important;
+		right: 50%;
+		margin-right: -260px !important;
+		border-radius: 10px;
+		width: 240px;
+		height: 165px;
 	}
 }
 
