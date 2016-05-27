@@ -642,7 +642,6 @@ ul.paintings li div {
 ul.paintings li div span {
 	display: block;
 	padding-bottom: 6px;
-	background: rgba(0,0,0,0.7);
 	opacity: 0;
 }
 
@@ -664,10 +663,6 @@ ul.paintings li div span.materials {
 }
 
 ul.paintings li div span.description {
-	display: none;
-}
-
-ul.paintings li div span.year {
 	display: none;
 }
 
@@ -2232,7 +2227,6 @@ ul.logotypes li a {
 	font-size: 13px;
 	display: block;
 	width: 90%;
-	font-style: italic;
 	text-align: left;
 	margin: 0 auto;
 	line-height: 18px;
