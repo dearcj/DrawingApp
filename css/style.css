@@ -648,7 +648,7 @@ ul.paintings li div span {
 ul.paintings li div span.title {
 	font-size: 18px;
 	font-weight: 300;
-	padding-top: 15px;
+	padding-top: 6px;
 }
 
 ul.paintings li div span.author {
@@ -659,7 +659,7 @@ ul.paintings li div span.author {
 ul.paintings li div span.materials {
 	font-size: 12px;
 	text-transform: none;
-	padding-bottom: 18px !important;
+	padding-bottom: 8px !important;
 }
 
 ul.paintings li div span.description {

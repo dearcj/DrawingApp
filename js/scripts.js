@@ -1116,17 +1116,14 @@ jQuery(document).ready(function($) {
 
 		$('#scotch').mouseout(function() {
 			$('ul.comments li span').css('opacity', 0);
-			$('#painting-wrapper > p').css('display', 'block');
 		});
 
 		$('#denim').mouseout(function() {
 			$('ul.comments li span').css('opacity', 0);
-			$('#painting-wrapper > p').css('display', 'block');
 		});
 
 		$('#needle').mouseout(function() {
 			$('ul.comments li span').css('opacity', 0);
-			$('#painting-wrapper > p').css('display', 'block');
 		});
 	}
 
