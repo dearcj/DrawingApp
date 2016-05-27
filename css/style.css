@@ -3078,8 +3078,8 @@ ul.logotypes li a {
 	}
 
 	#helper-10 {
-		width: 32px;
-		height: 32px;
+		width: 32px !important;
+		height: 32px !important;
 	}
 
 
@@ -3171,6 +3171,37 @@ ul.logotypes li a {
 		border-radius: 10px;
 		width: 240px;
 		height: 165px;
+	}
+
+	.museum-painting {
+		width: 240px;
+		height: 165px;
+	}
+
+	.painting-info {
+		width: 350px;
+		top: 205px;
+	}
+
+	#painting-title {
+		font-size: 110%;
+	}
+
+	#painting-author {
+		font-size: 100%;
+	}
+
+	#painting-materials {
+		font-size: 95%;
+	}
+
+	.social-buttons {
+		right: 15%;
+		margin-right: -225px;
+	}
+
+	.museum-button.at-the-backyard {
+		top: -42px !important;
 	}
 }
 
