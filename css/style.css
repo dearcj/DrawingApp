@@ -3318,20 +3318,31 @@ ul.logotypes li a {
 	}
 
 	ul#undo-refresh {
-		width: 285px;
-		top: 250px !important;
-		margin-left: -142px !important;
+		width: 240px;
+		top: 200px !important;
+		margin-left: -120px !important;
 		z-index: 175 !important;
 	}
 
+	ul#undo-refresh li#undo {
+		width: 18px;
+		height: 18px;
+	}
+
 	ul#undo-refresh li#refresh {
+		width: 17px;
+		height: 23px;
 		float: right;
 	}
 
+	.filters-canvas {
+		top: 20px !important;
+	}
+
 	#filters-canvas {
-		width: 285px !important;
-		height: 202px !important;
-		margin-left: -142px;
+		width: 240px !important;
+		height: 170px !important;
+		margin-left: -120px;
 	}
 
 	.its-done {
