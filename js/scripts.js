@@ -486,16 +486,13 @@ jQuery(document).ready(function($) {
 
 		if ($(window).width() < 737) {
 			$('#surface-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%'}, 200).css('z-index', '200');
-			$('#go-to-tools').delay(1000).animate({'top': -20 + 'px'}, 500);
 		} else {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 500).css('z-index', '200');
-			$('#go-to-tools').delay(1000).animate({'top': 0 + 'px'}, 500);
 		}
 
+		$('#go-to-tools').delay(1000).animate({'top': 0 + 'px'}, 500);
 		$('ul.surfaces').delay(500).animate({'left': 50 + '%'}, 1500);
-
 		$('.surface-button').delay(1500).animate({'left': $(window).width()/100 + 'px'}, 500);
-
 		$('#surface-wrapper').each(function () {
 			$(this).children().css({'opacity': 1, 'z-index': '200'});
 		});

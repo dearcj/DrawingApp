@@ -3012,15 +3012,24 @@ ul.logotypes li a {
 
 	ul.tools-buttons.tools-tb {
 		width: 255px;
-		top: 275px;
+		top: 295px;
 		margin-left: -128px;
 	}
 
+	ul.tools-buttons.filters-tb {
+		width: 222px !important;
+		top: 255px !important;
+	}
+
+	.its-done {
+		width: 162px !important;
+	}
+
 	ul.tools-buttons.surface-tb li,
-	ul.tools-buttons.tools-tb li {
+	ul.tools-buttons.tools-tb li,
+	ul.tools-buttons.filters-tb li {
 		width: 70px;
 		height: 70px;
-		margin-top: 20px !important;
 	}
 
 	ul.tools-buttons li.send-to-museum {
@@ -3105,6 +3114,10 @@ ul.logotypes li a {
 
 	li.send-to-museum {
 		width: 165px !important;
+	}
+
+	.filters-canvas {
+		top: 35px !important;
 	}
 
 	#filters-canvas {
