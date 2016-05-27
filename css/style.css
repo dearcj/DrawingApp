@@ -2845,7 +2845,7 @@ ul.logotypes li a {
 	}
 }
 
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1024px) and (orientation: landscape) {
 	#surface-canvas {
 		width: 550px;
 		height: 389px;
@@ -2853,7 +2853,7 @@ ul.logotypes li a {
 	}
 
 	#surface-canvas p {
-		top: 200px;
+		top: 140px;
 		font-size: 175% !important;
 	}
 
@@ -2861,6 +2861,23 @@ ul.logotypes li a {
 		width: 200px;
 		margin-top: 175px;
 		margin-left: -485px;
+	}
+	
+	ul.surfaces li {
+		float: left;
+	}
+
+	#painting-wrapper ul#helpers {
+		top: 95px !important;
+		margin-right: -290px !important;
+	}
+
+	#helper-8 {
+		width: 300px !important;
+		font-size: 120% !important;
+		padding: 15px 18px 18px !important;
+		left: -300px !important;
+		top: 50px !important;
 	}
 
 	ul.surfaces li p {
@@ -2879,10 +2896,7 @@ ul.logotypes li a {
 	#back-canvas,
 	#main-canvas,
 	#cursor-canvas {
-		width: 550px;
-		height: 389px;
-		margin-left: -275px;
-		margin-top: 75px;
+		margin-top: 35px;
 	}
 
 	li.send-to-museum {
@@ -3250,6 +3264,10 @@ ul.logotypes li a {
 		top: 195px;
 	}
 
+	#publication-wrapper ul#helpers {
+		top: 118px !important;
+	}
+
 	ul.tools {
 		margin-top: 35px;
 	}
@@ -3259,7 +3277,7 @@ ul.logotypes li a {
 	}
 
 	ul.tools > li:nth-child(2n+2) {
-		margin-left: 170px !important;
+		margin-left: 165px !important;
 	}
 
 	ul.tools-buttons.tools-tb {
@@ -3385,6 +3403,15 @@ ul.logotypes li a {
 		position: absolute !important;
 	}
 
+	#museum-wrapper div.at-the-backyard {
+		margin-top: 100px !important;
+		left: 3% !important;
+	}
+
+	#museum-wrapper ul.ux-buttons {
+		top: 180px !important;
+	}
+
 	ul.surfaces {
 		width: 140px !important;
 		height: 0;
@@ -3412,9 +3439,9 @@ ul.logotypes li a {
 	}
 
 	.museum-painting {
-		width: 215px !important;
-		height: 152px !important;
-		margin-left: -107px !important;
+		width: 195px !important;
+		height: 138px !important;
+		margin-left: -97px !important;
 		margin-top: -10px;
 	}
 
@@ -3425,7 +3452,7 @@ ul.logotypes li a {
 
 	.painting-info {
 		width: 300px;
-		top: 175px !important;
+		top: 160px !important;
 		padding: 2px 0 0;
 	}
 
@@ -3462,14 +3489,6 @@ ul.logotypes li a {
 		width: 195px !important;
 		top: 50px;
 		font-size: 100% !important;
-	}
-
-	ul.tools > li:nth-child(2n+1) {
-		margin-left: -215px !important;
-	}
-
-	ul.tools > li:nth-child(2n+2) {
-		margin-left: 160px !important;
 	}
 
 	ul#undo-refresh {
