@@ -3268,42 +3268,41 @@ ul.logotypes li a {
 		margin-left: -95px;
 	}
 
-
 	ul.tools > li#scotch {
 		left: -35px !important;
 	}
 	ul.tools li#btn-grass {
 		top: -60px !important;
-		left: 35px;
+		left: 35px !important;
 	}
 
 	ul.tools li#denim {
-		left: -35px;
-		margin-top: -60px;
+		left: -35px !important;
+		margin-top: -60px !important;
 	}
 
 	ul.tools li#needle {
-		margin-top: -120px;
-		left: 30px;
+		margin-top: -120px !important;
+		left: 30px !important;
 	}
 
 	ul.tools li#btn-pistol {
-		top: -112px;
-		right: -38px;
+		top: -112px !important;
+		right: -38px !important;
 	}
 
 	ul.tools li#btn-catchup {
-		right: 32px;
-		top: -55px;
+		right: 32px !important;
+		top: -55px !important;
 	}
 
 	ul.tools li#btn-orange {
-		top: -55px;
-		left: 35px;
+		top: -55px !important;
+		left: 35px !important;
 	}
 
 	ul.tools li#coal {
-		right: 25px;
+		right: 25px !important;
 	}
 
 	ul.tools-buttons.surface-tb {
