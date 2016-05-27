@@ -3350,15 +3350,15 @@ ul.logotypes li a {
 	}
 
 	ul.tools-buttons.filters-tb {
-		width: 195px !important;
-		top: 205px !important;
+		width: 190px !important;
+		top: 170px !important;
 	}
 
 	#wand {
-		width: 45px !important;
-		height: 200px !important;
-		top: 11%;
-		margin-left: -120px;
+		width: 40px !important;
+		height: 180px !important;
+		top: 4%;
+		margin-left: -140px;
 	}
 
 	#surface-canvas {
