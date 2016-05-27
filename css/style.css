@@ -2849,7 +2849,7 @@ ul.logotypes li a {
 	#surface-canvas {
 		width: 550px;
 		height: 389px;
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 
 	#surface-canvas p {
@@ -2859,16 +2859,30 @@ ul.logotypes li a {
 
 	ul.surfaces {
 		width: 200px;
-		margin-top: 175px;
-		margin-left: -485px;
+		margin-top: 135px;
+		margin-left: -480px;
+	}
+
+	#surface-canvas ul#helpers {
+		left: -10px;
 	}
 	
 	ul.surfaces li {
 		float: left;
 	}
 
+	ul.tools-buttons li {
+		width: 90px;
+		height: 90px;
+	}
+
+	div.at-the-backyard {
+		width: 120px !important;
+		height: 65px !important;
+	}
+
 	#painting-wrapper ul#helpers {
-		top: 55px !important;
+		top: 35px !important;
 		margin-right: -395px !important;
 	}
 
@@ -2896,7 +2910,7 @@ ul.logotypes li a {
 	#back-canvas,
 	#main-canvas,
 	#cursor-canvas {
-		margin-top: 35px;
+		margin-top: 20px;
 	}
 
 	ul#helpers li {
@@ -2905,17 +2919,23 @@ ul.logotypes li a {
 	}
 
 	li.send-to-museum {
-		width: 186px !important;
+		width: 205px !important;
 	}
 
 	ul.tools-buttons.tools-tb {
-		margin-left: -148px;
-		width: 296px;
-		top: 505px;
+		margin-left: -168px;
+		width: 336px;
+		top: 590px;
 	}
 
 	ul.tools-buttons.tools-tb li {
-		width: 80px;
+		width: 90px;
+	}
+
+	ul.tools-buttons.tools-tb {
+		width: 285px !important;
+		height: 90px !important;
+		top: 495px !important;
 	}
 
 	ul.tools > li:nth-child(2n+1) {
@@ -2923,18 +2943,34 @@ ul.logotypes li a {
 	}
 
 	ul.tools > li:nth-child(2n+2) {
-		margin-left: 405px !important;
+		margin-left: 402px !important;
+	}
+
+	.filters-canvas {
+		width: 750px !important;
+		height: 495px !important;
+		top: 35px !important;
+	}
+
+	#filters-canvas {
+		width: 750px !important;
+		height: 495px !important;
+	}
+
+	.its-done {
+		width: 205px !important;
 	}
 
 	ul.ux-buttons {
 		bottom: 0 !important;
-		top: 560px;
+		top: 545px;
 	}
 
 	ul.tools {
 		margin-top: 165px;
 		margin-left: 0;
 		top: 0;
+		height: 0;
 	}
 
 	ul.tools li#denim ul {
@@ -2954,9 +2990,13 @@ ul.logotypes li a {
 		margin-top: -10px;
 	}
 
+	ul.comments {
+		display: none;
+	}
+
 	ul#undo-refresh {
-		top: 515px !important;
-		margin-left: -275px !important;
+		top: 605px !important;
+		margin-left: -375px !important;
 	}
 
 	form.sending-form .work-author .item-field {
