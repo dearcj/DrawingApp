@@ -3490,6 +3490,11 @@ ul.logotypes li a {
 		margin-left: -120px !important;
 	}
 
+	.filters-canvas {
+		width: 240px !important;
+		height: 170px !important;
+	}
+
 	.its-done {
 		width: 145px !important;
 	}
