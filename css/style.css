@@ -3323,11 +3323,8 @@ ul.logotypes li a {
 	div.at-the-backyard {
 		width: 85px !important;
 		height: 45px !important;
-		margin-left: 10px;
-	}
-
-	.go-to-home {
-		top: 260px !important;
+		left: 82% !important;
+		position: absolute !important;
 	}
 
 	ul.surfaces {
