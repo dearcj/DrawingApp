@@ -3999,10 +3999,10 @@ ul.logotypes li a {
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 700px) {
-	ul.paintings li {
+/*	ul.paintings li {
 		width: 200px !important;
 		height: 125px !important;
-	}
+	}*/
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 700px) {
@@ -4015,10 +4015,10 @@ ul.logotypes li a {
 }
 
 @media only screen and (max-width: 1150px) and (min-width: 700px) {
-	ul.paintings li {
+/*	ul.paintings li {
 		width: 150px !important;
 		height: 95px !important;
-	}
+	}*/
 	ul.paintings.left-side {
 		margin-left: 4% !important;
 	}
