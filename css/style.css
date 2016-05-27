@@ -2970,10 +2970,14 @@ ul.logotypes li a {
 	}
 
 	.header {
-		display: none;
+		display: none !important;
 	}
 
 	.podval_new {
+		display: none;
+	}
+
+	.fullscreen {
 		display: none;
 	}
 }
@@ -3026,7 +3030,7 @@ ul.logotypes li a {
 	ul.surfaces {
 		width: 145px;
 		margin-top: 90px;
-		margin-left: -335px;
+		margin-left: -330px;
 	}
 
 	ul.surfaces li {
@@ -3046,6 +3050,22 @@ ul.logotypes li a {
 
 	ul.surfaces li.metal {
 		margin-top: 155px;
+	}
+
+	#helper-7 {
+		width: 32px;
+		height: 32px;
+		top: -10px !important;
+		left: -10px !important;
+	}
+
+	#helper-7 span {
+		width: 300px !important;
+		font-size: 100% !important;
+		padding: 15px 15px 20px 20px !important;
+		border-radius: 10px !important;
+		left: 0 !important;
+		top: 35px !important;
 	}
 
 	#back-canvas,

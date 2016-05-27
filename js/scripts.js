@@ -187,7 +187,6 @@ jQuery(document).ready(function($) {
 	document.getElementById('filters-canvas').height = GLOB_CANV_H;
 
 	if ($(window).width() < 1025) {
-		$('ul#helpers li').css('display', 'none');
 		$('ul.tools-buttons li p').css({'font-size': 8 + 'pt', bottom: 20 + 'px'});
 		$('ul.tools > li').css({width: 55 + 'px', height: 55 + 'px'});
 		$('ul.tools > li#coal > ul').css({width: 55 + 'px', height: 55 + 'px', 'margin': '0 auto'});
@@ -287,7 +286,6 @@ jQuery(document).ready(function($) {
 
 	$('ul.tools li#btn-scotch-1').on(window.eventType, function(event) {
 		ZSound.Play('click');
-
 		$('ul.tools li').removeClass('active');
 		$(this).addClass('active scotch-1-active');
 	});
