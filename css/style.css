@@ -2868,16 +2868,16 @@ ul.logotypes li a {
 	}
 
 	#painting-wrapper ul#helpers {
-		top: 95px !important;
-		margin-right: -290px !important;
+		top: 55px !important;
+		margin-right: -395px !important;
 	}
 
 	#helper-8 span {
-		width: 300px !important;
-		font-size: 120% !important;
+		width: 350px !important;
+		font-size: 125% !important;
 		padding: 15px 18px 18px !important;
-		left: -300px !important;
-		top: 50px !important;
+		left: -350px !important;
+		top: 55px !important;
 	}
 
 	ul.surfaces li p {
@@ -2897,6 +2897,11 @@ ul.logotypes li a {
 	#main-canvas,
 	#cursor-canvas {
 		margin-top: 35px;
+	}
+
+	ul#helpers li {
+		width: 45px;
+		height: 45px;
 	}
 
 	li.send-to-museum {
