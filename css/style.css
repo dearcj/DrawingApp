@@ -3199,7 +3199,7 @@ ul.logotypes li a {
 	}
 
 	.social-buttons {
-		right: 15% !important;
+		right: 15%;
 		margin-right: -225px !important;
 	}
 
@@ -3440,14 +3440,19 @@ ul.logotypes li a {
 	form.sending-form {
 		width: 200px;
 		height: 138px !important;
+		margin-right: -210px !important;
 	}
 
 	form.sending-form .work-author {
-		height: 88px;
+		height: 88px !important;
 	}
 
 	form.sending-form .work-author .item-field {
-		margin-top: 10px !important;
+		margin-top: 12px !important;
+	}
+
+	form.sending-form .work-author .item-field:last-child {
+		margin-top: 0 !important;
 	}
 
 	#publication-wrapper ul#helpers {
