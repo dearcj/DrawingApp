@@ -3307,9 +3307,9 @@ ul.logotypes li a {
 	}
 
 	#surface-canvas {
-		width: 285px;
-		height: 202px;
-		margin-top: 20px;
+		width: 285px !important;;
+		height: 202px !important;;
+		margin-top: 35px !important;;
 	}
 
 	#surface-canvas p {
@@ -3331,19 +3331,19 @@ ul.logotypes li a {
 	}
 
 	ul.surfaces {
-		width: 140px;
+		width: 140px !important;
 		height: 0;
-		margin-top: 40px;
-		margin-left: -280px;
+		margin-top: 40px !important;
+		margin-left: -280px !important;
 	}
 
 	ul.surfaces li {
-		width: 70px;
-		height: 55px;
+		width: 70px !important;
+		height: 55px !important;
 	}
 
 	ul.surfaces li.metal {
-		margin-top: 145px;
+		margin-top: 145px !important;
 	}
 
 	#helper-7 span {
