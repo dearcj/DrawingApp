@@ -3381,7 +3381,7 @@ ul.logotypes li a {
 
 /*iPhone4*/
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) and (orientation: landscape) {
 	ul.surfaces {
 		width: 120px;
 		margin-top: 70px;
