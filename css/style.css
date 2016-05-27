@@ -3381,6 +3381,7 @@ ul.logotypes li a {
 		margin-right: -250px !important;
 		margin-top: 20px !important;
 		top: 0 !important;
+		width: 240px !important;
 	}
 
 	#back-canvas,
@@ -3390,6 +3391,11 @@ ul.logotypes li a {
 		height: 170px !important;
 		margin-left: -120px;
 		top: 20px !important;
+	}
+
+	#painting-img {
+		width: 240px !important;
+		height: 165px !important;
 	}
 
 	ul.ux-buttons {
@@ -3508,6 +3514,15 @@ ul.logotypes li a {
 		width: 100% !important;
 		height: 60px !important;
 		font-size: 100% !important;
+		border-radius: 0 0 10px 10px !important;
+	}
+
+	form.sending-form .work-author .item-field {
+		margin-top: 18px !important;
+	}
+
+	form.sending-form .work-author {
+		width: 100% !important;
 	}
 
 	.its-done {
