@@ -955,6 +955,7 @@ ul.tools {
 	margin: 0;
 	margin-left: -725px;
 	left: 0;
+	height: 0;
 }
 
 ul.tools > li {
