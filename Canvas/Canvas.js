@@ -36,11 +36,11 @@ Canvas.prototype.GetMousePositionInElement = function(ev, element)
 	var offset = element.offset();
 
 	var bottom = offset.top + element.height();
-
-
+	var r = (750 / element[0].clientWidth);
+	console.log(r);
 	if (ev.touches) {
-		var x = 3.125*(ev.touches[0].clientX - offset.left);
-		var y = (bottom - 3.125*ev.touches[0].clientY);
+		var x = r*(ev.touches[0].clientX - offset.left);
+		var y = (bottom - r*ev.touches[0].clientY);
 	} else {
 		var x = ev.pageX - offset.left;
 		var y = bottom - ev.pageY;
