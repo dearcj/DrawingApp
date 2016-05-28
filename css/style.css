@@ -2857,7 +2857,7 @@ ul.logotypes li a {
 	}
 
 	#colorbox {
-		top: 20px !important;
+		top: 10px !important;
 	}
 
 	#cboxWrapper {
@@ -2869,7 +2869,6 @@ ul.logotypes li a {
 	}
 
 	#cboxLoadedContent {
-		/*max-width: 750px !important;*/
 		height: auto !important;
 		margin: 0 auto !important;
 		background-color: black;
@@ -2882,30 +2881,30 @@ ul.logotypes li a {
 
 	#cboxTitle {
 		padding: 15px 0 20px !important;
-		/*width: 750px !important;*/
 		margin: 0 auto !important;
 		float: none !important;
 		position: relative !important;
 	}
 
 	#cboxTitle span {
-		width: 95% !important;
+		width: 92% !important;
 	}
 
 	#cboxPrevious, #cboxNext {
+		position: fixed !important;
 		bottom: 0 !important;
 		width: 50px !important;
 		top: 50%;
-		margin-top: -70px !important;
+		margin-top: -25px !important;
 		height: 50px;
 	}
 
 	#cboxPrevious {
-		left: 25px !important;
+		left: 50px !important;
 	}
 
 	#cboxNext {
-		right: 25px !important;
+		right: 50px !important;
 	}
 
 	#painting-img {
