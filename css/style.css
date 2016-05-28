@@ -889,11 +889,7 @@ ul.comments li {
 }
 
 ul.comments li span {
-	opacity: 0;
-}
-
-ul.comments li span {
-	display: block !important;
+	display: none;
 }
 
 ul.tools-buttons {

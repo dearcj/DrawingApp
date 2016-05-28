@@ -1097,33 +1097,30 @@ jQuery(document).ready(function($) {
 		});
 
 		$('#scotch').mouseover(function() {
-			$('ul.comments li span').css('opacity', 0);
-			$('li#helper-8a span').css('opacity', 1);
+			$('li#helper-8a span').css('display', 'block');
 			$('#painting-wrapper > p').css('display', 'none');
 		});
 
 		$('#denim').mouseover(function() {
-			$('ul.comments li span').css('opacity', 0);
-			$('li#helper-8b span').css('opacity', 1);
+			$('li#helper-8b span').css('display', 'block');
 			$('#painting-wrapper > p').css('display', 'none');
 		});
 
 		$('#needle').mouseover(function() {
-			$('ul.comments li span').css('opacity', 0);
-			$('li#helper-8c span').css('opacity', 1);
+			$('li#helper-8c span').css('display', 'block');
 			$('#painting-wrapper > p').css('display', 'none');
 		});
 
 		$('#scotch').mouseout(function() {
-			$('ul.comments li span').css('opacity', 0);
+			$('li#helper-8a span').css('display', 'none');
 		});
 
 		$('#denim').mouseout(function() {
-			$('ul.comments li span').css('opacity', 0);
+			$('li#helper-8b span').css('display', 'none');
 		});
 
 		$('#needle').mouseout(function() {
-			$('ul.comments li span').css('opacity', 0);
+			$('li#helper-8c span').css('display', 'none');
 		});
 	}
 
