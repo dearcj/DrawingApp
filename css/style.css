@@ -53,19 +53,23 @@ ul {
 #cboxPrevious {
 	left: -100px !important;
 	background: url(../img/prev.png) no-repeat !important;
+	background-size: 100% !important;
 }
 
 #cboxPrevious:hover {
 	background: url(../img/prev-hover.png) no-repeat !important;
+	background-size: 100% !important;
 }
 
 #cboxNext {
 	right: -100px !important;
 	background: url(../img/next.png) no-repeat !important;
+	background-size: 100% !important;
 }
 
 #cboxNext:hover {
 	background: url(../img/next-hover.png) no-repeat !important;
+	background-size: 100% !important;
 }
 
 @font-face {
@@ -2840,7 +2844,7 @@ ul.logotypes li a {
 	#surface-canvas {
 		width: 550px;
 		height: 389px;
-		margin-top: 50px;
+		margin-top: 125px;
 	}
 
 	#surface-canvas p {
@@ -2848,18 +2852,27 @@ ul.logotypes li a {
 		font-size: 175% !important;
 	}
 
+	#surface-canvas ul#helpers {
+		left: -10px;
+	}
+
+	#colorbox {
+		top: 20px !important;
+	}
+
 	#cboxWrapper {
 		background-color: transparent;
 	}
 
 	#cboxContent {
-		background-color: transparent;
+		background-color: transparent !important;
 	}
 
 	#cboxLoadedContent {
-		max-width: 750px !important;
+		/*max-width: 750px !important;*/
 		height: auto !important;
-		margin: 0 auto;
+		margin: 0 auto !important;
+		background-color: black;
 	}
 
 	.cboxPhoto {
@@ -2869,10 +2882,30 @@ ul.logotypes li a {
 
 	#cboxTitle {
 		padding: 15px 0 20px !important;
-		width: 750px !important;
+		/*width: 750px !important;*/
 		margin: 0 auto !important;
 		float: none !important;
 		position: relative !important;
+	}
+
+	#cboxTitle span {
+		width: 95% !important;
+	}
+
+	#cboxPrevious, #cboxNext {
+		bottom: 0 !important;
+		width: 50px !important;
+		top: 50%;
+		margin-top: -70px !important;
+		height: 50px;
+	}
+
+	#cboxPrevious {
+		left: 25px !important;
+	}
+
+	#cboxNext {
+		right: 25px !important;
 	}
 
 	#painting-img {
@@ -2881,17 +2914,24 @@ ul.logotypes li a {
 	}
 
 	ul.surfaces {
-		width: 200px;
-		margin-top: 135px;
-		margin-left: -480px;
-	}
-
-	#surface-canvas ul#helpers {
-		left: -10px;
+		width: 220px;
+		margin-top: 205px;
+		margin-left: -495px;
 	}
 	
 	ul.surfaces li {
 		float: left;
+		width: 110px;
+		height: 70px;
+	}
+
+	ul.surfaces li p {
+		font-size: 100%;
+	}
+
+	ul.surfaces li.metal {
+		float: none;
+		margin-top: 190px;
 	}
 
 	ul.tools-buttons li {
@@ -2935,15 +2975,6 @@ ul.logotypes li a {
 		width: 350px !important;
 		font-size: 125% !important;
 		padding: 15px 18px 18px !important;
-	}
-
-	ul.surfaces li p {
-		font-size: 100%;
-	}
-
-	ul.surfaces li.metal {
-		float: none;
-		margin-top: 175px;
 	}
 
 	.go-to-home {

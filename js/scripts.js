@@ -482,7 +482,7 @@ jQuery(document).ready(function($) {
 			$(this).children().css({'z-index': '100', 'opacity': 0});
 		});
 
-		if ($(window).width() < 737) {
+		if ($(window).width() < 1025) {
 			$('#surface-wrapper').fadeIn(300).removeClass('hidden').animate({'opacity': 1, 'height': 100 + '%'}, 200).css('z-index', '200');
 		} else {
 			$('#surface-wrapper').fadeIn(500).removeClass('hidden').animate({'opacity': 1, 'height': 660 + 'px'}, 500).css('z-index', '200');
