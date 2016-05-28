@@ -2871,19 +2871,18 @@ ul.logotypes li a {
 	#cboxLoadedContent {
 		height: auto !important;
 		margin: 0 auto !important;
-		background-color: black;
 	}
 
 	.cboxPhoto {
-		max-width: 750px !important;
-		height: auto !important;
+		max-height: 600px !important;
+		width: auto !important;
 	}
 
 	#cboxTitle {
 		padding: 15px 0 20px !important;
 		margin: 0 auto !important;
 		float: none !important;
-		position: relative !important;
+		position: fixed !important;
 	}
 
 	#cboxTitle span {
@@ -2895,16 +2894,16 @@ ul.logotypes li a {
 		bottom: 0 !important;
 		width: 50px !important;
 		top: 50%;
-		margin-top: -25px !important;
+		margin-top: -85px !important;
 		height: 50px;
 	}
 
 	#cboxPrevious {
-		left: 50px !important;
+		left: 25px !important;
 	}
 
 	#cboxNext {
-		right: 50px !important;
+		right: 25px !important;
 	}
 
 	#painting-img {
