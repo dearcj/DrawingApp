@@ -3469,9 +3469,9 @@ ul.logotypes li a {
 	}
 
 	p.first-exp {
-		margin-top: -125px !important;
+		margin-top: -135px !important;
 		font-size: 100% !important;
-		width: 125px !important;
+		width: 145px !important;
 	}
 
 	.museum-button.at-the-backyard {
@@ -3501,16 +3501,23 @@ ul.logotypes li a {
 		margin-right: -225px !important;
 	}
 
-	.museum-button.at-the-backyard {
-		top: -42px !important;
-	}
-
 	#museum-wrapper ul#helpers {
 		display: none;
 	}
 
 	#museum-wrapper {
 		height: 100% !important;
+	}
+}
+
+@media only screen and (max-device-width: 667px) and (orientation: landscape) {
+	p.first-exp {
+		margin-top: -125px !important;
+		width: 125px !important;
+	}
+
+	.new-painting {
+		margin-top: 80px !important;
 	}
 }
 
@@ -3919,11 +3926,14 @@ ul.logotypes li a {
 		margin-left: -112px;
 	}
 
-	.museum-painting,
-	.first-exp-canvas {
-		width: 210px;
-		height: 149px;
-		margin-left: -105px !important;
+	p.first-exp {
+		margin-top: -110px !important;
+		font-size: 95% !important;
+	}
+
+	#museum-wrapper div.at-the-backyard {
+		margin-top: 60px !important;
+		width: 85px !important;
 	}
 
 	.social-buttons {
