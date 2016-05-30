@@ -20,6 +20,7 @@ function msieversion() {
 }
 
 if ( $.browser.webkit ) {
+	console.log('burda');
 	$('#post-vk').css('display', 'none');
 	$('#post-fb').css({'float': 'none', 'margin': '0 auto'});
 }
