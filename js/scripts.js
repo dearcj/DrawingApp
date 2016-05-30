@@ -20,6 +20,10 @@ function msieversion() {
 	}
 }
 
+if ( $.browser.safari ) {
+	console.log('safari');
+}
+
 if (msieversion() == false) {
 	ZSound.Init([
 	{id: 'scotch', src: "scotch.ogg"},

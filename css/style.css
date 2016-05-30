@@ -3441,6 +3441,24 @@ ul.logotypes li a {
 		margin-top: 25px !important;
 	}
 
+	ul.paintings.left-side {
+		display: none !important;
+	}
+
+	.social-buttons {
+		top: 17% !important;
+		margin-right: -210px !important;
+	}
+
+	.social-buttons ul {
+		width: 75px !important;
+	}
+
+	.social-buttons ul li {
+		width: 35px !important;
+		height: 35px !important;
+	}
+
 	form.sending-form {
 		margin-right: -250px !important;
 		margin-top: 20px !important;
@@ -3615,7 +3633,7 @@ ul.logotypes li a {
 		width: 40px !important;
 		height: 180px !important;
 		top: 4%;
-		margin-left: -140px;
+		margin-left: -140px !important;
 	}
 
 	#surface-canvas {
@@ -3676,20 +3694,24 @@ ul.logotypes li a {
 		height: 105px !important;
 	}
 
+	#surface-canvas ul#helpers {
+		left: -5px !important;
+	}
+
 	ul.surfaces {
-		width: 140px !important;
+		width: 130px !important;
 		height: 0;
-		margin-top: 15px !important;
-		margin-left: -270px !important;
+		margin-top: 25px !important;
+		margin-left: -260px !important;
 	}
 
 	ul.surfaces li {
-		width: 70px !important;
-		height: 55px !important;
+		width: 65px !important;
+		height: 50px !important;
 	}
 
 	ul.surfaces li.metal {
-		margin-top: 145px !important;
+		margin-top: 130px !important;
 	}
 
 	#helper-7 span {
@@ -3707,11 +3729,6 @@ ul.logotypes li a {
 		height: 138px !important;
 		margin-left: -97px !important;
 		margin-top: -10px;
-	}
-
-	.social-buttons {
-		top: 19% !important;
-		margin-right: -225px !important;
 	}
 
 	.painting-info {
