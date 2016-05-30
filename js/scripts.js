@@ -1423,41 +1423,75 @@ jQuery(document).ready(function($) {
 
 	function helpersTextProperties() {
 		var span = $('ul#helpers li span'),
-			width = $(window).width();
+				width = $(window).width();
 
-		span.css({width: width*0.2 + 'px'});
+		span.css({width: width/100 * 20 + 'px'});
 
-		var spanWidth = parseInt(span.css('width')),
-		    coeff = 2.04838709677;
+		var spanWidth = parseInt(span.css('width'));
 
 		span.css({'font-size': spanWidth/2.93 + '%'});
+
 		window.spanPadding = spanWidth/13.6;
+
 		span.css({padding: spanPadding*0.89 + 'px ' + spanPadding + 'px ' + spanPadding + 'px'});
+
 		span.css({'border-radius': spanPadding/1.5 + 'px'});
+
 		window.spanTopPos = -spanWidth/5;
 
-		var arrVB = spanWidth/15.24;
-		var arrHB = spanWidth/21.166;
-
-		$('.up .triangle').css('border-width', arrVB + 'px ' + arrHB + 'px ' + '0 ' + arrHB + 'px');
-		$('.down .triangle').css('border-width', '0 ' + arrHB + 'px ' + arrVB + 'px ' + arrHB + 'px');
-
-		$('ul#helpers li#helper-1 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 3.53 + 'px'});
-		$('ul#helpers li#helper-2 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.677 + 'px'});
-		$('ul#helpers li#helper-3 span').css({left: -spanWidth/1.08857 + 'px', top: spanTopPos * 7.2178 + 'px'});
-		$('ul#helpers li#helper-4 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 6.955 + 'px'});
-		$('ul#helpers li#helper-5 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 5.485 + 'px'});
+		$('ul#helpers li#helper-1 span.down').css({left: -spanWidth/2 + 'px', top: spanTopPos * 3.6 + 'px'});
+		$('ul#helpers li#helper-2 span.down').css({left: -spanWidth/2 + 'px', top: spanTopPos * 2.75 + 'px'});
+		$('ul#helpers li#helper-3 span.up').css({left: -spanWidth + 'px', top: spanTopPos * 7.08 + 'px'});
+		$('ul#helpers li#helper-4 span.up').css({left: -spanWidth/2 + 'px', top: spanTopPos * 6.75 + 'px'});
+		$('ul#helpers li#helper-5 span.up').css({left: -spanWidth/2 + 'px', top: spanTopPos * 5.3 + 'px'});
 		$('ul#helpers li#helper-6 span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-6s span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
-		$('ul#helpers li#helper-7 span').css({left: -spanWidth/1.974 + 'px', top: -spanTopPos * 1.049 + 'px'});
-		$('ul#helpers li#helper-8 span').css({left: -spanWidth/1.974 + 'px', top: -spanTopPos * 1.049 + 'px', width: width/100 * 20 + 'px'});
-		$('ul#helpers li#helper-9 span').css({left: -spanWidth/2.609 + 'px', top: spanTopPos * 2.296 + 'px', width: width/100 * 15 + 'px'});
-		$('ul#helpers li#helper-10 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.7 + 'px'});
-		$('ul#helpers li#helper-11 span').css({left: -spanWidth/coeff + 'px', top: -spanTopPos * 0.9 + 'px'});
-		$('ul#helpers li#helper-12 span').css({left: -spanWidth/coeff + 'px', top: -spanTopPos * 0.9 + 'px'});
-		$('ul#helpers li#helper-13 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.4 + 'px'});
+		$('ul#helpers li#helper-7 span').css({left: -spanWidth/2 + 'px', top: -spanTopPos * 0.9 + 'px'});
+		$('ul#helpers li#helper-8 span').css({left: -width/200 * 20 + 'px', top: -spanTopPos * 0.9 + 'px', width: width/100 * 20 + 'px'});
+		$('ul#helpers li#helper-9 span').css({left: -width/200 * 15 + 'px', top: spanTopPos * 2 + 'px', width: width/100 * 15 + 'px'});
+		$('ul#helpers li#helper-10 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 2.7 + 'px'});
+		$('ul#helpers li#helper-11 span').css({left: -spanWidth/2 + 'px', top: -spanTopPos * 0.9 + 'px'});
+		$('ul#helpers li#helper-12 span').css({left: -spanWidth/2 + 'px', top: -spanTopPos * 0.9 + 'px'});
+		$('ul#helpers li#helper-13 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 2.4 + 'px'});
 		$('ul#helpers li#helper-14 span').css({left: -spanWidth + 'px', top: spanTopPos * 1.85 + 'px'});
-		$('ul#helpers li#helper-15 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.4 + 'px'});
+		$('ul#helpers li#helper-15 span').css({left: -spanWidth/2 + 'px', top: spanTopPos * 2.4 + 'px'});
+
+		/*		var span = $('ul#helpers li span'),
+		 width = $(window).width();
+
+		 span.css({width: width*0.2 + 'px'});
+
+		 var spanWidth = parseInt(span.css('width')),
+		 coeff = 2.04838709677;
+
+		 span.css({'font-size': spanWidth/2.93 + '%'});
+		 window.spanPadding = spanWidth/13.6;
+		 span.css({padding: spanPadding*0.89 + 'px ' + spanPadding + 'px ' + spanPadding + 'px'});
+		 span.css({'border-radius': spanPadding/1.5 + 'px'});
+		 window.spanTopPos = -spanWidth/5;
+
+		 var arrVB = spanWidth/15.24;
+		 var arrHB = spanWidth/21.166;
+
+		 $('.up .triangle').css('border-width', arrVB + 'px ' + arrHB + 'px ' + '0 ' + arrHB + 'px');
+		 $('.down .triangle').css('border-width', '0 ' + arrHB + 'px ' + arrVB + 'px ' + arrHB + 'px');
+
+		 $('ul#helpers li#helper-1 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 3.53 + 'px'});
+		 $('ul#helpers li#helper-2 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.677 + 'px'});
+		 $('ul#helpers li#helper-3 span').css({left: -spanWidth/1.08857 + 'px', top: spanTopPos * 7.2178 + 'px'});
+		 $('ul#helpers li#helper-4 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 6.955 + 'px'});
+		 $('ul#helpers li#helper-5 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 5.485 + 'px'});
+		 $('ul#helpers li#helper-6 span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
+		 $('ul#helpers li#helper-6s span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
+		 $('ul#helpers li#helper-7 span').css({left: -spanWidth/1.974 + 'px', top: -spanTopPos * 1.049 + 'px'});
+		 $('ul#helpers li#helper-8 span').css({left: -spanWidth/1.974 + 'px', top: -spanTopPos * 1.049 + 'px', width: width/100 * 20 + 'px'});
+		 $('ul#helpers li#helper-9 span').css({left: -spanWidth/2.609 + 'px', top: spanTopPos * 2.296 + 'px', width: width/100 * 15 + 'px'});
+		 $('ul#helpers li#helper-10 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.7 + 'px'});
+		 $('ul#helpers li#helper-11 span').css({left: -spanWidth/coeff + 'px', top: -spanTopPos * 0.9 + 'px'});
+		 $('ul#helpers li#helper-12 span').css({left: -spanWidth/coeff + 'px', top: -spanTopPos * 0.9 + 'px'});
+		 $('ul#helpers li#helper-13 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.4 + 'px'});
+		 $('ul#helpers li#helper-14 span').css({left: -spanWidth + 'px', top: spanTopPos * 1.85 + 'px'});
+		 $('ul#helpers li#helper-15 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.4 + 'px'});*/
 	}
 
 
