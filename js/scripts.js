@@ -675,7 +675,7 @@ jQuery(document).ready(function($) {
 			$('#museum-wrapper').css('display', 'block').animate({'opacity': 1, height: 100 + '%'}, 1000).css('z-index', '200');
 			$('.social-buttons ul').css('width', 75 + 'px');
 			$('.social-buttons ul li').css({width: 35 + 'px', height: 35 + 'px'});
-			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': 50 + '%'}, 500);
+			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': 45 + '%'}, 500);
 			$('#museum-wrapper > p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
 			$('#museum-wrapper').css('display', 'block').animate({'opacity': 1}, 1000).css('z-index', '200');
