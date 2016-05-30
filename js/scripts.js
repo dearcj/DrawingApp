@@ -1425,20 +1425,22 @@ jQuery(document).ready(function($) {
 		var span = $('ul#helpers li span'),
 			width = $(window).width();
 
-		span.css({width: width/100 * 20 + 'px'});
+		span.css({width: width*0.2 + 'px'});
 
-		var spanWidth = parseInt(span.css('width'));
-		var coeff = 2.04838709677;
+		var spanWidth = parseInt(span.css('width')),
+		    coeff = 2.04838709677;
 
 		span.css({'font-size': spanWidth/2.93 + '%'});
-
 		window.spanPadding = spanWidth/13.6;
-
 		span.css({padding: spanPadding*0.89 + 'px ' + spanPadding + 'px ' + spanPadding + 'px'});
-
 		span.css({'border-radius': spanPadding/1.5 + 'px'});
-
 		window.spanTopPos = -spanWidth/5;
+
+		var arrVB = spanWidth/15.24;
+		var arrHB = spanWidth/21.166;
+
+		$('.up .triangle').css('border-width', arrVB + 'px ' + arrHB + 'px ' + '0 ' + arrHB + 'px');
+		$('.down .triangle').css('border-width', '0 ' + arrHB + 'px ' + arrVB + 'px ' + arrHB + 'px');
 
 		$('ul#helpers li#helper-1 span.down').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 3.53 + 'px'});
 		$('ul#helpers li#helper-2 span.down').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.677 + 'px'});
@@ -1456,8 +1458,6 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-13 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.4 + 'px'});
 		$('ul#helpers li#helper-14 span').css({left: -spanWidth + 'px', top: spanTopPos * 1.85 + 'px'});
 		$('ul#helpers li#helper-15 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.4 + 'px'});
-
-		window.homeSpanWidth = parseInt($('ul#helpers li#helper-6 span').css('width'));
 	}
 
 

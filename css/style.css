@@ -51,14 +51,12 @@ ul {
 }
 
 .up .triangle {
-	border-width: 25px 18px 0 18px;
 	border-color: #31b2ee transparent transparent transparent;
 	top: 100%;
 	margin-top: 0;
 }
 
 .down .triangle {
-	border-width: 0 18px 25px 18px;
 	border-color: transparent transparent #31b2ee transparent;
 	top: 0;
 	margin-top: -25px;
