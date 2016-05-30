@@ -2578,9 +2578,9 @@ ul.logotypes li a {
 
 	.museum-painting,
 	.first-exp-canvas {
-		width: 400px;
-		height: 283px;
-		margin-left: -200px;
+		width: 400px !important;
+		height: 283px !important;
+		margin-left: -200px !important;
 	}
 
 	#helper-11 {
@@ -2612,6 +2612,14 @@ ul.logotypes li a {
 @media only screen and (max-width: 1275px) {
 	ul.tools {
 		margin-left: -575px;
+	}
+
+	.new-painting {
+		margin-top: 100px !important;
+	}
+
+	p.first-exp {
+		margin-top: -160px !important;
 	}
 
 	#museum-wrapper {
@@ -2650,6 +2658,16 @@ ul.logotypes li a {
 @media only screen and (max-width: 1150px) {
 	#museum-wrapper {
 		height: 500px;
+	}
+
+	p.first-exp {
+		margin-top: -155px !important;
+		font-size: 130% !important;
+		width: 200px !important;
+	}
+
+	.new-painting {
+		margin-top: 50px !important;
 	}
 
 	#wand {
@@ -2700,9 +2718,9 @@ ul.logotypes li a {
 
 	.museum-painting,
 	.first-exp-canvas {
-		width: 326px;
-		height: 230px;
-		margin-left: -163px;
+		width: 326px !important;
+		height: 230px !important;
+		margin-left: -163px !important;
 	}
 
 	ul#helpers li {
@@ -2818,9 +2836,9 @@ ul.logotypes li a {
 
 	.museum-painting,
 	.first-exp-canvas {
-		width: 250px;
-		height: 177px;
-		margin-left: -125px;
+		width: 250px !important;
+		height: 177px !important;
+		margin-left: -125px !important;
 	}
 
 	.painting-info {
@@ -3193,9 +3211,9 @@ ul.logotypes li a {
 
 	.museum-painting,
 	.first-exp-canvas {
-		width: 350px;
-		height: 231px;
-		margin-left: -175px;
+		width: 350px !important;
+		height: 231px !important;
+		margin-left: -175px !important;
 	}
 
 	#museum-wrapper {
@@ -3439,7 +3457,8 @@ ul.logotypes li a {
 		height: 165px;
 	}
 
-	.museum-painting {
+	.museum-painting,
+	.first-exp-canvas {
 		width: 240px;
 		height: 165px;
 		margin-left: -117px !important;
@@ -3485,6 +3504,19 @@ ul.logotypes li a {
 @media only screen and (max-device-width: 568px) and (orientation: landscape) {
 	ul.tools-buttons.tools-tb {
 		top: 272px;
+	}
+
+	p.first-exp {
+		margin-top: -105px !important;
+		font-size: 110% !important;
+		width: 115px !important;
+		padding: 10px 10px 15px !important;
+		border-radius: 8px !important;
+	}
+
+	.new-painting {
+		margin-top: 60px !important;
+		width: 100px !important;
 	}
 
 	#main-image {
@@ -3776,7 +3808,8 @@ ul.logotypes li a {
 		top: -120px !important;
 	}
 
-	.museum-painting {
+	.museum-painting,
+	.first-exp-canvas {
 		width: 195px !important;
 		height: 138px !important;
 		margin-left: -97px !important;
@@ -3871,7 +3904,8 @@ ul.logotypes li a {
 		margin-left: -112px;
 	}
 
-	.museum-painting {
+	.museum-painting,
+	.first-exp-canvas {
 		width: 210px;
 		height: 149px;
 		margin-left: -105px !important;
@@ -3887,7 +3921,8 @@ ul.logotypes li a {
 		height: 350px;
 	}
 
-	.museum-painting {
+	.museum-painting,
+	.first-exp-canvas {
 		width: 235px;
 		height: 166px;
 	}
