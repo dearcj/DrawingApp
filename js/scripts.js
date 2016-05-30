@@ -1440,17 +1440,17 @@ jQuery(document).ready(function($) {
 		var arrHB = spanWidth/21.166;
 
 		$('.up .triangle').css('border-width', arrVB + 'px ' + arrHB + 'px ' + '0 ' + arrHB + 'px');
-		$('.triangle').css('border-width', '0 ' + arrHB + 'px ' + arrVB + 'px ' + arrHB + 'px');
+		$('.down .triangle').css('border-width', '0 ' + arrHB + 'px ' + arrVB + 'px ' + arrHB + 'px');
 
-		$('ul#helpers li#helper-1 span.down').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 3.53 + 'px'});
-		$('ul#helpers li#helper-2 span.down').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.677 + 'px'});
-		$('ul#helpers li#helper-3 span.up').css({left: -spanWidth/1.08857 + 'px', top: spanTopPos * 7.2178 + 'px'});
-		$('ul#helpers li#helper-4 span.up').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 6.955 + 'px'});
-		$('ul#helpers li#helper-5 span.up').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 5.485 + 'px'});
+		$('ul#helpers li#helper-1 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 3.53 + 'px'});
+		$('ul#helpers li#helper-2 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.677 + 'px'});
+		$('ul#helpers li#helper-3 span').css({left: -spanWidth/1.08857 + 'px', top: spanTopPos * 7.2178 + 'px'});
+		$('ul#helpers li#helper-4 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 6.955 + 'px'});
+		$('ul#helpers li#helper-5 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 5.485 + 'px'});
 		$('ul#helpers li#helper-6 span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-6s span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-7 span').css({left: -spanWidth/1.974 + 'px', top: -spanTopPos * 1.049 + 'px'});
-		$('ul#helpers li#helper-8 span').css({left: -spanWidth/coeff + 'px', top: -spanTopPos * 1.049 + 'px', width: width/100 * 20 + 'px'});
+		$('ul#helpers li#helper-8 span').css({left: -spanWidth/1.974 + 'px', top: -spanTopPos * 1.049 + 'px', width: width/100 * 20 + 'px'});
 		$('ul#helpers li#helper-9 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2 + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-10 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.7 + 'px'});
 		$('ul#helpers li#helper-11 span').css({left: -spanWidth/coeff + 'px', top: -spanTopPos * 0.9 + 'px'});
