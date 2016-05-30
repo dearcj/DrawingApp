@@ -4,8 +4,6 @@ window.basePath = './wp-content/themes/mmoma/';
 
 window.selectedSurface = 1;
 
-console.log('pydar');
-
 function msieversion() {
 
 	var ua = window.navigator.userAgent;
@@ -50,7 +48,6 @@ ZSound.soundLoadedFunction = function() {
 	ZSound.PlayMusic('street');
 }
 
-jQuery(window).load(function($) {
 	$('#wrapper').animate({'opacity': 1}, 4000);
 
 	$('#mute').on(window.eventType, function(event) {
@@ -1563,4 +1560,3 @@ jQuery(window).load(function($) {
 	helpersTextProperties();
 	buttonHelpersPosition();
 	coordinateHelpers();
-});
