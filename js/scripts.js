@@ -675,14 +675,15 @@ jQuery(document).ready(function($) {
 			$('#museum-wrapper').css('display', 'block').animate({'opacity': 1, height: 100 + '%'}, 1000).css('z-index', '200');
 			$('.social-buttons ul').css('width', 75 + 'px');
 			$('.social-buttons ul li').css({width: 35 + 'px', height: 35 + 'px'});
-			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': -140 + 'px'}, 500);
+			$('.new-painting').css({width: 110 + 'px', height: 40 + 'px'}).delay(500).animate({'top': 50 + '%'}, 500);
 			$('#museum-wrapper > p').css({width: 145 + 'px', 'font-size': 100 + '%', 'padding': '18px 18px 22px', 'border-radius': 12 + 'px', top: -225 + 'px'});
 		} else {
 			$('#museum-wrapper').css('display', 'block').animate({'opacity': 1}, 1000).css('z-index', '200');
 			$('.new-painting').css({width: 150 + 'px', height: 50 + 'px'}).delay(500).animate({'top': 300 + 'px'}, 1000);
 			$('#museum-wrapper > p').css({width: 300 + 'px', 'font-size': 200 + '%', 'padding': '20px 20px 25px', 'border-radius': 20 + 'px', top: -285 + 'px'});
-			$('.first-exp-canvas').delay(1000).animate({top: 25 + 'px'}, 1000);
 		}
+
+		$('.first-exp-canvas').delay(1000).animate({top: 25 + 'px'}, 1000);
 
 		$('.social-buttons').delay(2500).animate({right: 50 + '%'}, 500);
 		$('.museum-painting').delay(1000).animate({top: 25 + 'px'}, 1000);
