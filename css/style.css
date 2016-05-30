@@ -2553,7 +2553,8 @@ ul.logotypes li a {
 	}
 
 	p.first-exp {
-		top: 115px !important;
+		top: 50%;
+		margin-top: -190px;
 		font-size: 170% !important;
 		width: 250px !important;
 	}
