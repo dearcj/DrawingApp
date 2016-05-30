@@ -48,8 +48,7 @@ jQuery(document).ready(function($) {
 	$('#wrapper').animate({'opacity': 1}, 4000);
 
 	if ( $.browser.webkit ) {
-		console.log('burda');
-		$('li#post-vk').css('display', 'none');
+		$('li#post-vk').addClass('test');
 		$('li#post-fb').css({'float': 'none', 'margin': '0 auto'});
 	}
 
