@@ -3459,9 +3459,24 @@ ul.logotypes li a {
 
 	.museum-painting,
 	.first-exp-canvas {
-		width: 240px;
-		height: 165px;
-		margin-left: -117px !important;
+		width: 240px !important;
+		height: 165px !important;
+		margin-left: -120px !important;
+	}
+
+	.new-painting {
+		margin-top: 70px !important;
+	}
+
+	p.first-exp {
+		margin-top: -125px !important;
+		font-size: 100% !important;
+		width: 125px !important;
+	}
+
+	.museum-button.at-the-backyard {
+		top: 0 !important;
+		width: 95px !important;
 	}
 
 	.painting-info {
