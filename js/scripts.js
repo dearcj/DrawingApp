@@ -1449,7 +1449,7 @@ jQuery(document).ready(function($) {
 		$('ul#helpers li#helper-5 span.up').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 5.485 + 'px'});
 		$('ul#helpers li#helper-6 span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-6s span').css({top: -spanTopPos + 'px', width: width/100 * 15 + 'px'});
-		$('ul#helpers li#helper-7 span').css({left: -spanWidth/2.264 + 'px', top: -spanTopPos * 0.9525 + 'px'});
+		$('ul#helpers li#helper-7 span').css({left: -spanWidth/1.974 + 'px', top: -spanTopPos * 0.9525 + 'px'});
 		$('ul#helpers li#helper-8 span').css({left: -spanWidth/coeff + 'px', top: -spanTopPos * 0.9525 + 'px', width: width/100 * 20 + 'px'});
 		$('ul#helpers li#helper-9 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2 + 'px', width: width/100 * 15 + 'px'});
 		$('ul#helpers li#helper-10 span').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.7 + 'px'});
