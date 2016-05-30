@@ -45,8 +45,16 @@ ul {
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 0 15px 20px 15px;
+	border-width: 0 18px 25px 18px;
 	border-color: transparent transparent #31b2ee transparent;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin-left: -18px;
+	margin-top: -25px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
 }
 
 #cboxPrevious,
