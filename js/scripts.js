@@ -47,7 +47,7 @@ ZSound.soundLoadedFunction = function() {
 jQuery(document).ready(function($) {
 	$('#wrapper').animate({'opacity': 1}, 4000);
 
-	if ( $.browser.webkit ) {
+	if ( $.browser.safari ) {
 		$('li#post-vk').css('display', 'none');
 		$('li#post-fb').css({'float': 'none', 'margin': '0 auto'});
 	}
