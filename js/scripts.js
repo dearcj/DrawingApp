@@ -19,8 +19,9 @@ function msieversion() {
 	}
 }
 
-if ( $.browser.safari ) {
-	console.log('safari');
+if ( $.browser.webkit ) {
+	$('#post-vk').css('display', 'none');
+	$('#post-fb').css({'float': 'none', 'margin': '0 auto'});
 }
 
 if (msieversion() == false) {
@@ -48,6 +49,7 @@ ZSound.soundLoadedFunction = function() {
 	ZSound.PlayMusic('street');
 }
 
+jQuery(window).load(function($) {
 	$('#wrapper').animate({'opacity': 1}, 4000);
 
 	$('#mute').on(window.eventType, function(event) {
@@ -1560,3 +1562,4 @@ ZSound.soundLoadedFunction = function() {
 	helpersTextProperties();
 	buttonHelpersPosition();
 	coordinateHelpers();
+});
