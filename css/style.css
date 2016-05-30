@@ -41,6 +41,14 @@ ul {
 	background: rgba(0,0,0,0.5);
 }
 
+.triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 15px 20px 15px;
+	border-color: transparent transparent #31b2ee transparent;
+}
+
 #cboxPrevious,
 #cboxNext {
 	display: block !important;
