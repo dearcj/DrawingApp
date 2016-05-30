@@ -3465,7 +3465,7 @@ ul.logotypes li a {
 	}
 
 	.new-painting {
-		margin-top: 70px !important;
+		margin-top: 80px !important;
 	}
 
 	p.first-exp {
@@ -3517,7 +3517,7 @@ ul.logotypes li a {
 	}
 
 	.new-painting {
-		margin-top: 80px !important;
+		margin-top: 75px !important;
 	}
 }
 
@@ -3529,8 +3529,8 @@ ul.logotypes li a {
 	}
 
 	p.first-exp {
-		margin-top: -105px !important;
-		font-size: 110% !important;
+		margin-top: -115px !important;
+		font-size: 105% !important;
 		width: 115px !important;
 		padding: 10px 10px 15px !important;
 		border-radius: 8px !important;
@@ -3764,8 +3764,9 @@ ul.logotypes li a {
 	}
 
 	#museum-wrapper div.at-the-backyard {
-		margin-top: 100px !important;
-		left: 3% !important;
+		margin-top: 55px !important;
+		left: 2% !important;
+		width: 80px !important;
 	}
 
 	#museum-wrapper ul.ux-buttons {
