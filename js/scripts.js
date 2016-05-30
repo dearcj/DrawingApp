@@ -4,6 +4,7 @@ window.basePath = './wp-content/themes/mmoma/';
 
 window.selectedSurface = 1;
 
+console.log('pydar');
 
 function msieversion() {
 
