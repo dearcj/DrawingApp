@@ -49,7 +49,7 @@ ZSound.soundLoadedFunction = function() {
 	ZSound.PlayMusic('street');
 }
 
-jQuery(document).ready(function($) {
+jQuery(window).load(function($) {
 	$('#wrapper').animate({'opacity': 1}, 4000);
 
 	$('#mute').on(window.eventType, function(event) {
