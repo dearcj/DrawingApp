@@ -19,12 +19,6 @@ function msieversion() {
 	}
 }
 
-if ( $.browser.webkit ) {
-	console.log('burda');
-	$('#post-vk').css('display', 'none');
-	$('#post-fb').css({'float': 'none', 'margin': '0 auto'});
-}
-
 if (msieversion() == false) {
 	ZSound.Init([
 	{id: 'scotch', src: "scotch.ogg"},
@@ -52,6 +46,12 @@ ZSound.soundLoadedFunction = function() {
 
 jQuery(document).ready(function($) {
 	$('#wrapper').animate({'opacity': 1}, 4000);
+
+	if ( $.browser.webkit ) {
+		console.log('burda');
+		$('li#post-vk').css('display', 'none');
+		$('li#post-fb').css({'float': 'none', 'margin': '0 auto'});
+	}
 
 	$('#mute').on(window.eventType, function(event) {
 		if ($(this).hasClass('on')) {
