@@ -1440,7 +1440,7 @@ jQuery(document).ready(function($) {
 		var arrHB = spanWidth/21.166;
 
 		$('.up .triangle').css('border-width', arrVB + 'px ' + arrHB + 'px ' + '0 ' + arrHB + 'px');
-		$('.down .triangle').css('border-width', '0 ' + arrHB + 'px ' + arrVB + 'px ' + arrHB + 'px');
+		$('.triangle').css('border-width', '0 ' + arrHB + 'px ' + arrVB + 'px ' + arrHB + 'px');
 
 		$('ul#helpers li#helper-1 span.down').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 3.53 + 'px'});
 		$('ul#helpers li#helper-2 span.down').css({left: -spanWidth/coeff + 'px', top: spanTopPos * 2.677 + 'px'});
