@@ -3273,20 +3273,6 @@ ul.logotypes li a {
 /*iPhone6&6+*/
 
 @media only screen and (max-device-width: 736px) {
-	#surface-canvas {
-		width: 360px;
-		height: 255px;
-		margin-top: 45px;
-	}
-
-	#surface-canvas p {
-		width: 270px !important;
-		border-radius: 12px !important;
-		top: 85px;
-		font-size: 140% !important;
-		padding: 20px 0 25px !important;
-	}
-
 	#painting-wrapper p {
 		width: 270px !important;
 		border-radius: 12px !important;
@@ -3326,6 +3312,20 @@ ul.logotypes li a {
 		width: 165px;
 	}
 
+/*	#surface-canvas {
+		width: 360px;
+		height: 255px;
+		margin-top: 45px;
+	}
+
+	#surface-canvas p {
+		width: 270px !important;
+		border-radius: 12px !important;
+		top: 85px;
+		font-size: 140% !important;
+		padding: 20px 0 25px !important;
+	}
+
 	ul.surfaces {
 		width: 145px;
 		margin-top: 90px;
@@ -3349,6 +3349,47 @@ ul.logotypes li a {
 
 	ul.surfaces li.metal {
 		margin-top: 155px;
+	}*/
+
+	#surface-canvas {
+		width: 240px !important;
+		height: 170px !important;
+		margin-top: 20px !important;
+	}
+
+	#surface-canvas p {
+		width: 190px !important;
+		border-radius: 8px !important;
+		top: 55px;
+		font-size: 100% !important;
+		padding: 10px 0 15px !important;
+	}
+
+	#surface-canvas ul#helpers {
+		left: -5px !important;
+	}
+
+	div.at-the-backyard {
+		width: 85px !important;
+		height: 45px !important;
+		left: 82% !important;
+		position: absolute !important;
+	}
+
+	ul.surfaces {
+		width: 130px !important;
+		height: 0;
+		margin-top: 25px !important;
+		margin-left: -260px !important;
+	}
+
+	ul.surfaces li {
+		width: 65px !important;
+		height: 50px !important;
+	}
+
+	ul.surfaces li.metal {
+		margin-top: 130px !important;
 	}
 
 	#helper-7 {
@@ -3748,27 +3789,6 @@ ul.logotypes li a {
 		margin-left: -140px !important;
 	}
 
-	#surface-canvas {
-		width: 240px !important;
-		height: 170px !important;
-		margin-top: 20px !important;
-	}
-
-	#surface-canvas p {
-		width: 190px !important;
-		border-radius: 8px !important;
-		top: 55px;
-		font-size: 100% !important;
-		padding: 10px 0 15px !important;
-	}
-
-	div.at-the-backyard {
-		width: 85px !important;
-		height: 45px !important;
-		left: 82% !important;
-		position: absolute !important;
-	}
-
 	#museum-wrapper div.at-the-backyard {
 		margin-top: 55px !important;
 		left: 2% !important;
@@ -3805,26 +3825,6 @@ ul.logotypes li a {
 
 	form.sending-form .work-author {
 		height: 105px !important;
-	}
-
-	#surface-canvas ul#helpers {
-		left: -5px !important;
-	}
-
-	ul.surfaces {
-		width: 130px !important;
-		height: 0;
-		margin-top: 25px !important;
-		margin-left: -260px !important;
-	}
-
-	ul.surfaces li {
-		width: 65px !important;
-		height: 50px !important;
-	}
-
-	ul.surfaces li.metal {
-		margin-top: 130px !important;
 	}
 
 	#helper-7 span {
