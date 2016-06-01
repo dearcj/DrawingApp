@@ -3343,10 +3343,6 @@ ul.logotypes li a {
 		bottom: 16px;
 	}
 
-	ul.surfaces li:nth-child(2n+2) {
-		margin-left: -5px;
-	}
-
 	ul.surfaces li.metal {
 		margin-top: 155px;
 	}*/
@@ -3373,6 +3369,7 @@ ul.logotypes li a {
 		width: 85px !important;
 		height: 45px !important;
 		left: 82% !important;
+		top: 15px !important;
 		position: absolute !important;
 	}
 
@@ -3392,6 +3389,10 @@ ul.logotypes li a {
 		margin-top: 130px !important;
 	}
 
+	ul.surfaces li:nth-child(2n+2) {
+		margin-left: -5px;
+	}
+
 	#helper-7 {
 		width: 32px !important;
 		height: 32px !important;
@@ -3401,11 +3402,11 @@ ul.logotypes li a {
 
 	#helper-7 span {
 		width: 300px !important;
-		font-size: 100% !important;
 		padding: 10px 15px 15px !important;
 		border-radius: 10px !important;
 		left: 0 !important;
 		top: 35px !important;
+		font-size: 90% !important;
 	}
 
 	#helper-10 {
@@ -3428,25 +3429,7 @@ ul.logotypes li a {
 		margin-left: -134px;
 	}
 
-	ul#undo-refresh {
-		top: 300px !important;
-		margin-left: -180px !important;
-	}
-
-	ul#undo-refresh li#undo {
-		margin-right: 10px;
-	}
-
-	ul.tools {
-		height: 0;
-	}
-
-	ul#undo-refresh li#refresh {
-		width: 19px;
-		height: 25px;
-	}
-
-	#back-canvas,
+/*	#back-canvas,
 	#main-canvas,
 	#cursor-canvas {
 		width: 360px;
@@ -3465,6 +3448,118 @@ ul.logotypes li a {
 
 	li.send-to-museum {
 		width: 165px !important;
+	}
+
+	ul#undo-refresh {
+		top: 300px !important;
+		margin-left: -180px !important;
+	}
+
+	ul#undo-refresh li#undo {
+		margin-right: 10px;
+	}
+
+	ul#undo-refresh li#refresh {
+		width: 19px;
+		height: 25px;
+	}*/
+
+	#back-canvas,
+	#main-canvas,
+	#cursor-canvas {
+		width: 240px !important;
+		height: 170px !important;
+		margin-left: -120px;
+		top: 20px !important;
+	}
+
+	ul.tools {
+		margin-top: 35px;
+		height: 0;
+	}
+
+	ul.tools > li:nth-child(2n+1) {
+		margin-left: -230px !important;
+	}
+
+	ul.tools > li:nth-child(2n+2) {
+		margin-left: 165px !important;
+	}
+
+	ul.tools > li#scotch {
+		left: -35px !important;
+	}
+	ul.tools li#btn-grass {
+		top: -60px !important;
+		left: 35px !important;
+	}
+
+	ul.tools li#denim {
+		left: -35px !important;
+		margin-top: -60px !important;
+	}
+
+	ul.tools li#needle {
+		margin-top: -120px !important;
+		left: 30px !important;
+	}
+
+	ul.tools li#btn-pistol {
+		top: -112px !important;
+		right: -38px !important;
+	}
+
+	ul.tools li#btn-catchup {
+		right: 32px !important;
+		top: -55px !important;
+	}
+
+	ul.tools li#btn-orange {
+		top: -55px !important;
+		left: 35px !important;
+	}
+
+	ul.tools li#coal {
+		right: 25px !important;
+	}
+
+	ul.tools-buttons.surface-tb {
+		width: 55px !important;
+	}
+
+	ul.tools-buttons.tools-tb {
+		top: 190px;
+		width: 190px;
+		margin-left: -95px;
+	}
+
+	ul.tools-buttons.surface-tb li,
+	ul.tools-buttons.tools-tb li,
+	ul.tools-buttons.filters-tb li {
+		width: 55px;
+		height: 55px;
+	}
+
+	li.send-to-museum {
+		width: 130px !important;
+	}
+
+	ul#undo-refresh {
+		width: 240px;
+		top: 200px !important;
+		margin-left: -120px !important;
+		z-index: 175 !important;
+	}
+
+	ul#undo-refresh li#undo {
+		width: 18px;
+		height: 18px;
+	}
+
+	ul#undo-refresh li#refresh {
+		width: 17px;
+		height: 23px;
+		float: right;
 	}
 
 	.filters-canvas {
@@ -3571,10 +3666,6 @@ ul.logotypes li a {
 /*iPhone5*/
 
 @media only screen and (max-device-width: 568px) and (orientation: landscape) {
-	ul.tools-buttons.tools-tb {
-		top: 272px;
-	}
-
 	p.first-exp {
 		margin-top: -115px !important;
 		font-size: 105% !important;
@@ -3619,15 +3710,6 @@ ul.logotypes li a {
 		width: 240px !important;
 	}
 
-	#back-canvas,
-	#main-canvas,
-	#cursor-canvas {
-		width: 240px !important;
-		height: 170px !important;
-		margin-left: -120px;
-		top: 20px !important;
-	}
-
 	#painting-img {
 		width: 240px !important;
 		height: 165px !important;
@@ -3640,94 +3722,6 @@ ul.logotypes li a {
 
 	#publication-wrapper ul#helpers {
 		top: 118px !important;
-	}
-
-	ul.tools {
-		margin-top: 35px;
-	}
-
-	ul.tools > li:nth-child(2n+1) {
-		margin-left: -230px !important;
-	}
-
-	ul.tools > li:nth-child(2n+2) {
-		margin-left: 165px !important;
-	}
-
-	ul.tools-buttons.tools-tb {
-		top: 190px;
-		width: 190px;
-		margin-left: -95px;
-	}
-
-	ul.tools > li#scotch {
-		left: -35px !important;
-	}
-	ul.tools li#btn-grass {
-		top: -60px !important;
-		left: 35px !important;
-	}
-
-	ul.tools li#denim {
-		left: -35px !important;
-		margin-top: -60px !important;
-	}
-
-	ul.tools li#needle {
-		margin-top: -120px !important;
-		left: 30px !important;
-	}
-
-	ul.tools li#btn-pistol {
-		top: -112px !important;
-		right: -38px !important;
-	}
-
-	ul.tools li#btn-catchup {
-		right: 32px !important;
-		top: -55px !important;
-	}
-
-	ul.tools li#btn-orange {
-		top: -55px !important;
-		left: 35px !important;
-	}
-
-	ul.tools li#coal {
-		right: 25px !important;
-	}
-
-	ul.tools-buttons.surface-tb {
-		width: 55px !important;
-	}
-
-	ul.tools-buttons.surface-tb li,
-	ul.tools-buttons.tools-tb li,
-	ul.tools-buttons.filters-tb li {
-		width: 55px;
-		height: 55px;
-	}
-
-	li.send-to-museum {
-		width: 130px !important;
-	}
-
-	ul#undo-refresh {
-		width: 240px;
-		top: 200px !important;
-		margin-left: -120px !important;
-		z-index: 175 !important;
-	}
-
-	ul#undo-refresh li#undo {
-		width: 18px;
-		height: 18px;
-	}
-
-	ul#undo-refresh li#refresh {
-		width: 17px;
-		height: 23px;
-		float: right;
 	}
 
 	.filters-canvas {
@@ -3825,11 +3819,6 @@ ul.logotypes li a {
 
 	form.sending-form .work-author {
 		height: 105px !important;
-	}
-
-	#helper-7 span {
-		font-size: 90% !important;
-		top: 35px !important;
 	}
 
 	#helper-10 span {
