@@ -3342,13 +3342,13 @@ ul.logotypes li a {
 	}
 
 	#helper-11 {
-		margin-right: -18.05rem;
-		top: 4px;
+		margin-right: -18.05rem !important;
+		top: 4px !important;
 	}
 
 	#helper-13 {
-		margin-left: -21.4rem;
-		top: 235px;
+		margin-left: -21.4rem !important;
+		top: 235px !important;
 	}
 
 	#helper-7,
