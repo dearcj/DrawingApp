@@ -2919,6 +2919,11 @@ ul.logotypes li a {
 		left: -10px;
 	}
 
+	.new-painting {
+		margin-top: 130px !important;
+		width: 120px !important;
+	}
+
 	p.first-exp {
 		margin-top: -150px !important;
 		font-size: 125% !important;
@@ -3009,6 +3014,7 @@ ul.logotypes li a {
 	div.at-the-backyard {
 		width: 120px !important;
 		height: 65px !important;
+		top: 40px !important;
 	}
 
 	#wand {
