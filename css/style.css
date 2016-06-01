@@ -3337,10 +3337,10 @@ ul.logotypes li a {
 	}
 
 	#museum-wrapper ul#helpers {
-		display: block;
+		display: none;
 	}
 
-	ul#helpers li {
+/*	#museum-wrapper ul#helpers li {
 		width: 28px !important;
 		height: 28px !important;
 	}
@@ -3350,10 +3350,15 @@ ul.logotypes li a {
 		top: 4px !important;
 	}
 
+	#helper-12 {
+		margin-left: -15rem;
+		top: 130px;
+	}
+
 	#helper-13 {
 		margin-left: -21.4rem !important;
 		top: 235px !important;
-	}
+	}*/
 
 	#helper-7,
 	#helper-8,
