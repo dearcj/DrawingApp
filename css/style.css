@@ -3282,70 +3282,14 @@ ul.logotypes li a {
 		padding: 20px 0 25px !important;
 	}
 
-	ul.tools {
-		margin-top: 40px;
-	}
-
-	ul.tools-buttons.tools-tb {
-		width: 255px;
-		top: 295px;
-		margin-left: -128px;
-	}
-
-	ul.tools-buttons.filters-tb {
-		width: 222px !important;
-		top: 255px !important;
+	#painting-wrapper ul#helpers {
+		top: 10px !important;
+		margin-right: -155px !important;
 	}
 
 	.its-done {
 		width: 162px !important;
 	}
-
-	ul.tools-buttons.surface-tb li,
-	ul.tools-buttons.tools-tb li,
-	ul.tools-buttons.filters-tb li {
-		width: 70px;
-		height: 70px;
-	}
-
-	ul.tools-buttons li.send-to-museum {
-		width: 165px;
-	}
-
-/*	#surface-canvas {
-		width: 360px;
-		height: 255px;
-		margin-top: 45px;
-	}
-
-	#surface-canvas p {
-		width: 270px !important;
-		border-radius: 12px !important;
-		top: 85px;
-		font-size: 140% !important;
-		padding: 20px 0 25px !important;
-	}
-
-	ul.surfaces {
-		width: 145px;
-		margin-top: 90px;
-		margin-left: -330px;
-	}
-
-	ul.surfaces li {
-		float: left;
-		width: 75px;
-		height: 60px;
-	}
-
-	ul.surfaces li p {
-		font-size: 90%;
-		bottom: 16px;
-	}
-
-	ul.surfaces li.metal {
-		margin-top: 155px;
-	}*/
 
 	#surface-canvas {
 		width: 240px !important;
@@ -3428,41 +3372,6 @@ ul.logotypes li a {
 		top: 144px;
 		margin-left: -134px;
 	}
-
-/*	#back-canvas,
-	#main-canvas,
-	#cursor-canvas {
-		width: 360px;
-		height: 255px;
-		margin-left: -180px;
-		margin-top: 0;
-	}
-
-	ul.tools > li:nth-child(2n+1) {
-		margin-left: -265px !important;
-	}
-
-	ul.tools > li:nth-child(2n+2) {
-		margin-left: 210px !important;
-	}
-
-	li.send-to-museum {
-		width: 165px !important;
-	}
-
-	ul#undo-refresh {
-		top: 300px !important;
-		margin-left: -180px !important;
-	}
-
-	ul#undo-refresh li#undo {
-		margin-right: 10px;
-	}
-
-	ul#undo-refresh li#refresh {
-		width: 19px;
-		height: 25px;
-	}*/
 
 	#back-canvas,
 	#main-canvas,
@@ -3650,6 +3559,98 @@ ul.logotypes li a {
 	#museum-wrapper {
 		height: 100% !important;
 	}
+
+	/*	#surface-canvas {
+		width: 360px;
+		height: 255px;
+		margin-top: 45px;
+	}
+
+	#surface-canvas p {
+		width: 270px !important;
+		border-radius: 12px !important;
+		top: 85px;
+		font-size: 140% !important;
+		padding: 20px 0 25px !important;
+	}
+
+	ul.surfaces {
+		width: 145px;
+		margin-top: 90px;
+		margin-left: -330px;
+	}
+
+	ul.surfaces li {
+		float: left;
+		width: 75px;
+		height: 60px;
+	}
+
+	ul.surfaces li p {
+		font-size: 90%;
+		bottom: 16px;
+	}
+
+	ul.surfaces li.metal {
+		margin-top: 155px;
+	}
+
+	#back-canvas,
+	#main-canvas,
+	#cursor-canvas {
+		width: 360px;
+		height: 255px;
+		margin-left: -180px;
+		margin-top: 0;
+	}
+
+	ul.tools > li:nth-child(2n+1) {
+		margin-left: -265px !important;
+	}
+
+	ul.tools > li:nth-child(2n+2) {
+		margin-left: 210px !important;
+	}
+
+	li.send-to-museum {
+		width: 165px !important;
+	}
+
+		ul.tools {
+		margin-top: 40px;
+	}
+
+	ul.tools-buttons.tools-tb {
+		width: 255px;
+		top: 295px;
+		margin-left: -128px;
+	}
+
+	ul.tools-buttons.filters-tb {
+		width: 222px !important;
+		top: 255px !important;
+	}
+
+	ul.tools-buttons.surface-tb li,
+	ul.tools-buttons.tools-tb li,
+	ul.tools-buttons.filters-tb li {
+		width: 70px;
+		height: 70px;
+	}
+
+	ul#undo-refresh {
+		top: 300px !important;
+		margin-left: -180px !important;
+	}
+
+	ul#undo-refresh li#undo {
+		margin-right: 10px;
+	}
+
+	ul#undo-refresh li#refresh {
+		width: 19px;
+		height: 25px;
+	}*/
 }
 
 @media only screen and (max-device-width: 667px) and (orientation: landscape) {
