@@ -3363,6 +3363,11 @@ ul.logotypes li a {
 		font-size: 90% !important;
 	}
 
+	#helper-9 {
+		width: 32px !important;
+		height: 32px !important;
+	}
+
 	#helper-10 {
 		width: 32px !important;
 		height: 32px !important;
@@ -3484,7 +3489,7 @@ ul.logotypes li a {
 	#filters-canvas {
 		width: 240px !important;
 		height: 170px !important;
-		margin-left: -120px !important;
+		margin-left: 0 !important;
 	}
 
 	.filters-canvas {
@@ -3497,7 +3502,7 @@ ul.logotypes li a {
 		width: 40px !important;
 		height: 180px !important;
 		top: 4%;
-		margin-left: -140px !important;
+		margin-left: 140px !important;
 	}
 
 	.its-done {
