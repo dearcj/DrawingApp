@@ -3287,10 +3287,6 @@ ul.logotypes li a {
 		margin-right: -155px !important;
 	}
 
-	.its-done {
-		width: 162px !important;
-	}
-
 	#surface-canvas {
 		width: 240px !important;
 		height: 170px !important;
@@ -3485,24 +3481,32 @@ ul.logotypes li a {
 		float: right;
 	}
 
-	.filters-canvas {
-		top: 35px !important;
+	#filters-canvas {
+		width: 240px !important;
+		height: 170px !important;
+		margin-left: -120px !important;
 	}
 
-	#filters-canvas {
-		width: 360px !important;
-		height: 255px !important;
-		left: 50%;
-		margin-left: -180px;
+	.filters-canvas {
+		top: 20px !important;
+		width: 240px !important;
+		height: 170px !important;
 	}
 
 	#wand {
-		width: 55px !important;
-		height: 235px !important;
-		top: 12%;
-		position: absolute;
-		margin-left: -130px;
-		left: 100%;
+		width: 40px !important;
+		height: 180px !important;
+		top: 4%;
+		margin-left: -140px !important;
+	}
+
+	.its-done {
+		width: 145px !important;
+	}
+
+	ul.tools-buttons.filters-tb {
+		width: 190px !important;
+		top: 170px !important;
 	}
 
 	#main-image {
@@ -3664,6 +3668,30 @@ ul.logotypes li a {
 	ul#undo-refresh li#refresh {
 		width: 19px;
 		height: 25px;
+	}
+
+	.filters-canvas {
+		top: 35px !important;
+	}
+
+	#filters-canvas {
+		width: 360px !important;
+		height: 255px !important;
+		left: 50%;
+		margin-left: -180px;
+	}
+
+	#wand {
+		width: 55px !important;
+		height: 235px !important;
+		top: 12%;
+		position: absolute;
+		margin-left: -130px;
+		left: 100%;
+	}
+
+	.its-done {
+		width: 162px !important;
 	}*/
 }
 
@@ -3739,21 +3767,6 @@ ul.logotypes li a {
 		top: 118px !important;
 	}
 
-	.filters-canvas {
-		top: 20px !important;
-	}
-
-	#filters-canvas {
-		width: 240px !important;
-		height: 170px !important;
-		margin-left: -120px !important;
-	}
-
-	.filters-canvas {
-		width: 240px !important;
-		height: 170px !important;
-	}
-
 	form.sending-form button {
 		width: 100% !important;
 		height: 60px !important;
@@ -3780,22 +3793,6 @@ ul.logotypes li a {
 	#painting-materials {
 		padding-top: 0 !important;
 		font-size: 85% !important;
-	}
-
-	.its-done {
-		width: 145px !important;
-	}
-
-	ul.tools-buttons.filters-tb {
-		width: 190px !important;
-		top: 170px !important;
-	}
-
-	#wand {
-		width: 40px !important;
-		height: 180px !important;
-		top: 4%;
-		margin-left: -140px !important;
 	}
 
 	#museum-wrapper div.at-the-backyard {
