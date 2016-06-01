@@ -3336,6 +3336,10 @@ ul.logotypes li a {
 		margin-left: -130px !important;
 	}
 
+	#museum-wrapper ul#helpers {
+		display: block;
+	}
+
 	ul#helpers li {
 		width: 28px !important;
 		height: 28px !important;
@@ -3610,10 +3614,6 @@ ul.logotypes li a {
 		margin-top: 0 !important;
 		left: 3% !important;
 		width: 80px !important;
-	}
-
-	#museum-wrapper ul#helpers {
-		display: none;
 	}
 
 	.social-buttons {
