@@ -3287,10 +3287,15 @@ ul.logotypes li a {
 		margin-right: -155px !important;
 	}
 
+	#filters-wrapper ul#helpers {
+		top: 87%;
+		margin-left: -2px;
+	}
+
 	#surface-canvas {
 		width: 240px !important;
 		height: 170px !important;
-		margin-top: 20px !important;
+		margin-top: 35px !important;
 	}
 
 	#surface-canvas p {
@@ -3316,7 +3321,7 @@ ul.logotypes li a {
 	ul.surfaces {
 		width: 130px !important;
 		height: 0;
-		margin-top: 25px !important;
+		margin-top: 35px !important;
 		margin-left: -260px !important;
 	}
 
@@ -3364,8 +3369,8 @@ ul.logotypes li a {
 	}
 
 	#helper-9 {
-		width: 32px !important;
-		height: 32px !important;
+		width: 28px !important;
+		height: 28px !important;
 	}
 
 	#helper-10 {
@@ -3394,11 +3399,11 @@ ul.logotypes li a {
 		width: 240px !important;
 		height: 170px !important;
 		margin-left: -120px;
-		top: 20px !important;
+		top: 35px !important;
 	}
 
 	ul.tools {
-		margin-top: 35px;
+		margin-top: 50px;
 		height: 0;
 	}
 
@@ -3452,9 +3457,9 @@ ul.logotypes li a {
 	}
 
 	ul.tools-buttons.tools-tb {
-		top: 190px;
-		width: 190px;
-		margin-left: -95px;
+		top: 210px;
+		width: 222px;
+		margin-left: -111px;
 	}
 
 	ul.tools-buttons.surface-tb li,
@@ -3464,14 +3469,22 @@ ul.logotypes li a {
 		height: 55px;
 	}
 
+	li.back-to-surface {
+		margin-right: -10px !important;
+	}
+
+	li.add-filter {
+		margin-left: -10px !important;
+	}
+
 	li.send-to-museum {
 		width: 130px !important;
 	}
 
 	ul#undo-refresh {
-		width: 240px;
-		top: 200px !important;
-		margin-left: -120px !important;
+		width: 280px;
+		top: 215px !important;
+		margin-left: -140px !important;
 		z-index: 175 !important;
 	}
 
@@ -3493,7 +3506,7 @@ ul.logotypes li a {
 	}
 
 	.filters-canvas {
-		top: 20px !important;
+		top: 35px !important;
 		width: 240px !important;
 		height: 170px !important;
 	}
@@ -3501,7 +3514,7 @@ ul.logotypes li a {
 	#wand {
 		width: 40px !important;
 		height: 180px !important;
-		top: 4%;
+		top: 3.5%;
 		margin-left: 140px !important;
 	}
 
@@ -3514,22 +3527,77 @@ ul.logotypes li a {
 		top: 170px !important;
 	}
 
+	/*Publ*/
 	#main-image {
-		position: absolute;
-		left: 0;
-		margin-left: -260px !important;
-		top: 50% !important;
-		margin-top: -83px !important;
+		margin-left: -250px !important;
+		top: 0 !important;
+		margin-top: 25px !important;
+	}
+
+	#painting-img {
+		width: 240px !important;
+		height: 165px !important;
+	}
+
+	ul.paintings.left-side {
+		display: none !important;
 	}
 
 	form.sending-form {
-		top: 50% !important;
-		right: 0;
-		margin-right: -260px !important;
-		border-radius: 10px;
-		width: 240px;
-		height: 165px;
+		width: 240px !important;
+		margin-top: 25px !important;
+		top: 0 !important;
+		right: 50% !important;
+		margin-right: -250px !important;
+		height: 165px !important;
 	}
+
+	form.sending-form button {
+		width: 100% !important;
+		height: 60px !important;
+		font-size: 100% !important;
+		border-radius: 0 0 10px 10px !important;
+	}
+
+	form.sending-form .work-author {
+		width: 100% !important;
+		height: 105px !important;
+	}
+
+	form.sending-form .work-author .item-field {
+		margin-top: 18px !important;
+	}
+
+	form.sending-form .work-author input {
+		width: 94% !important;
+		margin-left: 0 !important;
+	}
+
+	#publication-wrapper ul#helpers {
+		top: 142px !important;
+		margin-left: -130px !important;
+	}
+
+	.painting-info {
+		width: 275px;
+		top: 160px !important;
+		padding: 2px 0 0;
+	}
+
+	#painting-title {
+		font-size: 100%;
+	}
+
+	#painting-author {
+		font-size: 90%;
+	}
+
+	#painting-materials {
+		padding-top: 0 !important;
+		padding-bottom: 6px;
+		font-size: 85% !important;
+	}
+	/*end*/
 
 	.museum-painting,
 	.first-exp-canvas {
@@ -3551,23 +3619,6 @@ ul.logotypes li a {
 	.museum-button.at-the-backyard {
 		top: 0 !important;
 		width: 95px !important;
-	}
-
-	.painting-info {
-		width: 350px;
-		top: 205px !important;
-	}
-
-	#painting-title {
-		font-size: 110%;
-	}
-
-	#painting-author {
-		font-size: 100%;
-	}
-
-	#painting-materials {
-		font-size: 95%;
 	}
 
 	.social-buttons {
@@ -3697,6 +3748,40 @@ ul.logotypes li a {
 
 	.its-done {
 		width: 162px !important;
+	}
+
+	#main-image {
+		position: absolute;
+		left: 0;
+		margin-left: -260px !important;
+		top: 50% !important;
+		margin-top: -83px !important;
+	}
+
+	form.sending-form {
+		top: 50% !important;
+		right: 0;
+		margin-right: -260px !important;
+		border-radius: 10px;
+		width: 240px;
+		height: 165px;
+	}
+
+	.painting-info {
+		width: 350px;
+		top: 205px !important;
+	}
+
+	#painting-title {
+		font-size: 110%;
+	}
+
+	#painting-author {
+		font-size: 100%;
+	}
+
+	#painting-materials {
+		font-size: 95%;
 	}*/
 }
 
@@ -3727,16 +3812,6 @@ ul.logotypes li a {
 		width: 100px !important;
 	}
 
-	#main-image {
-		margin-left: -250px !important;
-		top: 0 !important;
-		margin-top: 25px !important;
-	}
-
-	ul.paintings.left-side {
-		display: none !important;
-	}
-
 	.social-buttons {
 		top: 17% !important;
 		margin-right: -210px !important;
@@ -3751,53 +3826,9 @@ ul.logotypes li a {
 		height: 35px !important;
 	}
 
-	form.sending-form {
-		margin-right: -250px !important;
-		margin-top: 20px !important;
-		top: 0 !important;
-		width: 240px !important;
-	}
-
-	#painting-img {
-		width: 240px !important;
-		height: 165px !important;
-	}
-
 	ul.ux-buttons {
 		bottom: 0 !important;
 		top: 195px;
-	}
-
-	#publication-wrapper ul#helpers {
-		top: 118px !important;
-	}
-
-	form.sending-form button {
-		width: 100% !important;
-		height: 60px !important;
-		font-size: 100% !important;
-		border-radius: 0 0 10px 10px !important;
-	}
-
-	form.sending-form .work-author .item-field {
-		margin-top: 18px !important;
-	}
-
-	form.sending-form .work-author {
-		width: 100% !important;
-	}
-
-	#painting-title {
-		font-size: 100%;
-	}
-
-	#painting-author {
-		font-size: 90%;
-	}
-
-	#painting-materials {
-		padding-top: 0 !important;
-		font-size: 85% !important;
 	}
 
 	#museum-wrapper div.at-the-backyard {
@@ -3808,34 +3839,6 @@ ul.logotypes li a {
 
 	#museum-wrapper ul.ux-buttons {
 		top: 180px !important;
-	}
-
-	form.sending-form {
-		margin-top: 25px !important;
-		top: 0 !important;
-		right: 50% !important;
-		margin-right: -250px !important;
-		height: 165px !important;
-	}
-
-	form.sending-form button {
-		width: 100% !important;
-		height: 60px !important;
-		font-size: 100% !important;
-	}
-
-	#publication-wrapper ul#helpers {
-		top: 142px !important;
-		margin-left: -130px !important;
-	}
-
-	form.sending-form .work-author input {
-		width: 94% !important;
-		margin-left: 0 !important;
-	}
-
-	form.sending-form .work-author {
-		height: 105px !important;
 	}
 
 	#helper-10 span {
@@ -3851,18 +3854,8 @@ ul.logotypes li a {
 		margin-top: -10px;
 	}
 
-	.painting-info {
-		width: 275px;
-		top: 160px !important;
-		padding: 2px 0 0;
-	}
-
 	ul.ux-buttons.home {
 		top: 72px !important;
-	}
-
-	#painting-materials {
-		padding-bottom: 6px;
 	}
 }
 
