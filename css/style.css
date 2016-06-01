@@ -3527,11 +3527,10 @@ ul.logotypes li a {
 		top: 170px !important;
 	}
 
-	/*Publ*/
 	#main-image {
 		margin-left: -250px !important;
 		top: 0 !important;
-		margin-top: 25px !important;
+		margin-top: 75px !important;
 	}
 
 	#painting-img {
@@ -3545,7 +3544,7 @@ ul.logotypes li a {
 
 	form.sending-form {
 		width: 240px !important;
-		margin-top: 25px !important;
+		margin-top: 75px !important;
 		top: 0 !important;
 		right: 50% !important;
 		margin-right: -250px !important;
@@ -3597,14 +3596,43 @@ ul.logotypes li a {
 		padding-bottom: 6px;
 		font-size: 85% !important;
 	}
-	/*end*/
+
+	#museum-wrapper {
+		height: 100% !important;
+	}
 
 	.museum-painting,
 	.first-exp-canvas {
-		width: 240px !important;
-		height: 165px !important;
-		margin-left: -120px !important;
+		width: 195px !important;
+		height: 138px !important;
+		margin-left: -97px !important;
+		margin-top: -10px;
 	}
+
+	#museum-wrapper div.at-the-backyard {
+		margin-top: 55px !important;
+		left: 2% !important;
+		width: 80px !important;
+	}
+
+	#museum-wrapper ul#helpers {
+		display: none;
+	}
+
+	.social-buttons {
+		top: 17% !important;
+		margin-right: -210px !important;
+	}
+
+	.social-buttons ul {
+		width: 75px !important;
+	}
+
+	.social-buttons ul li {
+		width: 35px !important;
+		height: 35px !important;
+	}
+	/*end*/
 
 	.new-painting {
 		margin-top: 80px !important;
@@ -3614,24 +3642,6 @@ ul.logotypes li a {
 		margin-top: -135px !important;
 		font-size: 100% !important;
 		width: 145px !important;
-	}
-
-	.museum-button.at-the-backyard {
-		top: 0 !important;
-		width: 95px !important;
-	}
-
-	.social-buttons {
-		right: 15%;
-		margin-right: -225px !important;
-	}
-
-	#museum-wrapper ul#helpers {
-		display: none;
-	}
-
-	#museum-wrapper {
-		height: 100% !important;
 	}
 
 	/*	#surface-canvas {
@@ -3782,7 +3792,25 @@ ul.logotypes li a {
 
 	#painting-materials {
 		font-size: 95%;
-	}*/
+	}
+
+	.museum-painting,
+	.first-exp-canvas {
+		width: 240px !important;
+		height: 165px !important;
+		margin-left: -120px !important;
+	}
+
+	.museum-button.at-the-backyard {
+		top: 0 !important;
+		width: 95px !important;
+	}
+
+	.social-buttons {
+		right: 15%;
+		margin-right: -225px !important;
+	}
+	*/
 }
 
 @media only screen and (max-device-width: 667px) and (orientation: landscape) {
@@ -3812,29 +3840,9 @@ ul.logotypes li a {
 		width: 100px !important;
 	}
 
-	.social-buttons {
-		top: 17% !important;
-		margin-right: -210px !important;
-	}
-
-	.social-buttons ul {
-		width: 75px !important;
-	}
-
-	.social-buttons ul li {
-		width: 35px !important;
-		height: 35px !important;
-	}
-
 	ul.ux-buttons {
 		bottom: 0 !important;
 		top: 195px;
-	}
-
-	#museum-wrapper div.at-the-backyard {
-		margin-top: 55px !important;
-		left: 2% !important;
-		width: 80px !important;
 	}
 
 	#museum-wrapper ul.ux-buttons {
@@ -3844,14 +3852,6 @@ ul.logotypes li a {
 	#helper-10 span {
 		font-size: 95% !important;
 		top: -120px !important;
-	}
-
-	.museum-painting,
-	.first-exp-canvas {
-		width: 195px !important;
-		height: 138px !important;
-		margin-left: -97px !important;
-		margin-top: -10px;
 	}
 
 	ul.ux-buttons.home {
