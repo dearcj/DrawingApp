@@ -3584,9 +3584,9 @@ ul.logotypes li a {
 
 	.museum-painting,
 	.first-exp-canvas {
-		width: 210px !important;
-		height: 149px !important;
-		margin-left: -105px !important;
+		width: 220px !important;
+		height: 156px !important;
+		margin-left: -110px !important;
 		margin-top: 0;
 	}
 
@@ -3808,18 +3808,59 @@ ul.logotypes li a {
 
 @media only screen and (max-device-width: 667px) and (orientation: landscape) {
 	p.first-exp {
-		margin-top: -125px !important;
 		width: 125px !important;
 	}
 
 	.new-painting {
-		margin-top: 75px !important;
+		margin-top: 70px !important;
 	}
 }
 
 /*iPhone5*/
 
 @media only screen and (max-device-width: 568px) and (orientation: landscape) {
+	#surface-canvas {
+		margin-top: 20px !important;
+	}
+
+	ul.surfaces {
+		margin-top: 20px !important;
+	}
+
+	#back-canvas,
+	#main-canvas,
+	#cursor-canvas {
+		top: 20px !important;
+	}
+
+	ul.tools {
+		margin-top: 35px;
+	}
+
+	ul.tools-buttons.tools-tb {
+		top: 190px ;
+	}
+
+	ul#undo-refresh {
+		top: 200px !important;
+	}
+
+	#painting-wrapper ul#helpers {
+		top: 10px !important;
+	}
+
+	.filters-canvas {
+		top: 20px !important;
+	}
+
+	#main-image {
+		margin-top: 25px !important;
+	}
+
+	form.sending-form {
+		margin-top: 25px !important;
+	}
+
 	p.first-exp {
 		margin-top: -115px !important;
 		font-size: 105% !important;
