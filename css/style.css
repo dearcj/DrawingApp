@@ -3336,6 +3336,11 @@ ul.logotypes li a {
 		margin-left: -130px !important;
 	}
 
+	ul#helpers li {
+		width: 28px !important;
+		height: 28px !important;
+	}
+
 	#helper-11 {
 		margin-right: -18.05rem;
 		top: 4px;
