@@ -3308,6 +3308,7 @@ ul.logotypes li a {
 
 	#surface-canvas ul#helpers {
 		left: -3px !important;
+		top: 9px !important;
 	}
 
 	div.at-the-backyard {
@@ -3346,45 +3347,36 @@ ul.logotypes li a {
 		height: 28px !important;
 	}
 
-	#helper-7 span {
+	ul#helpers li span {
 		width: 300px !important;
 		padding: 10px 15px 15px !important;
 		border-radius: 10px !important;
+		font-size: 90% !important;
+	}
+
+	#helper-7 span {
 		left: 0 !important;
 		top: 35px !important;
-		font-size: 90% !important;
 	}
 
 	#helper-8 span {
-		width: 300px !important;
-		padding: 10px 15px 15px !important;
-		border-radius: 10px !important;
 		left: -300px !important;
 		top: 35px !important;
-		font-size: 90% !important;
 	}
 
 	#helper-9 span {
-		width: 300px !important;
-		padding: 10px 15px 15px !important;
-		border-radius: 10px !important;
 		left: -300px !important;
-		top: -95px !important;
-		font-size: 95% !important;
+		top: -85px !important;
 	}
 
 	#helper-10 span {
-		width: 300px !important;
-		font-size: 95% !important;
-		padding: 15px 20px !important;
-		border-radius: 10px !important;
 		left: -150px !important;
 		top: -120px !important;
 	}
 
 	#publication-wrapper ul#helpers {
-		top: 144px;
-		margin-left: -134px;
+		top: 147px !important;
+		margin-left: -133px !important;
 	}
 
 	#back-canvas,
@@ -3573,7 +3565,7 @@ ul.logotypes li a {
 
 	.painting-info {
 		width: 275px;
-		top: 195px !important;
+		top: 185px !important;
 		padding: 2px 0 0;
 	}
 
@@ -3595,11 +3587,12 @@ ul.logotypes li a {
 		height: 100% !important;
 	}
 
-	.museum-painting, .first-exp-canvas {
-		width: 220px !important;
-		height: 156px !important;
-		margin-left: -110px !important;
-		margin-top: 0px;
+	.museum-painting,
+	.first-exp-canvas {
+		width: 210px !important;
+		height: 149px !important;
+		margin-left: -105px !important;
+		margin-top: 0;
 	}
 
 	#museum-wrapper div.at-the-backyard {
