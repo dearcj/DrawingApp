@@ -3282,33 +3282,10 @@ ul.logotypes li a {
 		padding: 20px 0 25px !important;
 	}
 
-	#painting-wrapper ul#helpers {
-		top: 22px !important;
-		margin-right: -158px !important;
-	}
-
-	#filters-wrapper ul#helpers {
-		top: 87%;
-		margin-left: -2px;
-	}
-
 	#surface-canvas {
 		width: 240px !important;
 		height: 170px !important;
 		margin-top: 35px !important;
-	}
-
-	#surface-canvas p {
-		width: 190px !important;
-		border-radius: 8px !important;
-		top: 55px;
-		font-size: 100% !important;
-		padding: 10px 0 15px !important;
-	}
-
-	#surface-canvas ul#helpers {
-		left: -3px !important;
-		top: 9px !important;
 	}
 
 	div.at-the-backyard {
@@ -3337,6 +3314,26 @@ ul.logotypes li a {
 
 	ul.surfaces li:nth-child(2n+2) {
 		margin-left: -5px;
+	}
+
+	#surface-wrapper ul#helpers {
+		left: -3px !important;
+		top: 9px !important;
+	}
+
+	#painting-wrapper ul#helpers {
+		top: 22px !important;
+		margin-right: -158px !important;
+	}
+
+	#filters-wrapper ul#helpers {
+		top: 87%;
+		margin-left: -2px;
+	}
+
+	#publication-wrapper ul#helpers {
+		top: 146px !important;
+		margin-left: -130px !important;
 	}
 
 	#helper-7,
@@ -3371,12 +3368,7 @@ ul.logotypes li a {
 
 	#helper-10 span {
 		left: -150px !important;
-		top: -120px !important;
-	}
-
-	#publication-wrapper ul#helpers {
-		top: 147px !important;
-		margin-left: -133px !important;
+		top: -115px !important;
 	}
 
 	#back-canvas,
@@ -3558,9 +3550,12 @@ ul.logotypes li a {
 		margin-left: 0 !important;
 	}
 
-	#publication-wrapper ul#helpers {
-		top: 142px !important;
-		margin-left: -130px !important;
+	#surface-canvas p {
+		width: 190px !important;
+		border-radius: 8px !important;
+		top: 55px;
+		font-size: 100% !important;
+		padding: 10px 0 15px !important;
 	}
 
 	.painting-info {
@@ -3618,7 +3613,6 @@ ul.logotypes li a {
 		width: 35px !important;
 		height: 35px !important;
 	}
-	/*end*/
 
 	.new-painting {
 		margin-top: 80px !important;
