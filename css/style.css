@@ -3624,6 +3624,19 @@ ul.logotypes li a {
 		width: 145px !important;
 	}
 
+	ul.ux-buttons {
+		bottom: 0 !important;
+		top: 210px;
+	}
+
+	ul.ux-buttons.home {
+		top: 82px !important;
+	}
+
+	#museum-wrapper ul.ux-buttons {
+		top: 180px !important;
+	}
+
 	/*	#surface-canvas {
 		width: 360px;
 		height: 255px;
@@ -3835,14 +3848,6 @@ ul.logotypes li a {
 	ul.ux-buttons {
 		bottom: 0 !important;
 		top: 195px;
-	}
-
-	#museum-wrapper ul.ux-buttons {
-		top: 180px !important;
-	}
-
-	ul.ux-buttons.home {
-		top: 72px !important;
 	}
 }
 
