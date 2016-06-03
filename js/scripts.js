@@ -403,8 +403,8 @@ jQuery(document).ready(function($) {
 				rightImgTitle = imgs[j-i].title;
 				rightImgAuthor = imgs[j-i].author;
 				rightImgMats = imgs[j-i].materials;
-				rightImgDesc = imgs[j-1].description;
-				rightImgYear = imgs[j-1].year;
+				rightImgDesc = imgs[j-i].description;
+				rightImgYear = imgs[j-i].year;
 
 				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.title').text(rightImgTitle);
 				$('ul.paintings.right-side a:nth-child(' + (i + 1) + ') span.author').text(rightImgAuthor);
