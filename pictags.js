@@ -142,7 +142,6 @@ var picTags = [
 		thumb: 'pictags/thumbs/tools/grass.jpg',
 		tag: 'трава',
 		innertag: 'трава',
-
 		title: '«Сирень»',
 		author: 'Александр Якут',
 		year: '2010',
