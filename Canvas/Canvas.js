@@ -151,8 +151,8 @@ Canvas.prototype.resetCanvas = function () {
 				ctx.drawImage(this, 0, 0);
 			};
 			imageObj.src = pathToSurfaces + 'board.jpg';
-			this.tags.push('доска');
-			this.innerTags.push('доска');
+			this.tags.push('школьная доска');
+			this.innerTags.push('школьная доска');
 
 			break;
 		case 3:
@@ -161,8 +161,8 @@ Canvas.prototype.resetCanvas = function () {
 				ctx.drawImage(this, 0, 0);
 			};
 			imageObj.src = pathToSurfaces + 'canvas.jpg';
-			this.tags.push('полотно');
-			this.innerTags.push('полотно');
+			this.tags.push('холст');
+			this.innerTags.push('холст');
 
 
 			break;
