@@ -109,6 +109,8 @@
   </div>
 
   <div id="wrapper">
+        <div id="disclaimer"><p>Пожалуйста, переверните устройство</p></div>
+
         <div id="index-wrapper" class="screens">
           <div id="sky"></div>
 
