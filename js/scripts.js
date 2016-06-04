@@ -45,6 +45,23 @@ ZSound.soundLoadedFunction = function() {
 }
 
 jQuery(document).ready(function($) {
+	function defineMobRatio () {
+		if ($(window).width() < $(window).height()) {
+			$('.langs').css('display', 'none');
+			$('#index-wrapper').css('display', 'none');
+			$('.podval_new').css('display', 'none');
+			$('#wrapper').css('height', 100 + '%');
+			$('#disclaimer').css('display', 'block');
+		} else {
+			$('.langs').css('display', 'block');
+			$('#index-wrapper').css('display', 'block');
+			$('#wrapper').css('height', 'auto');
+			$('#disclaimer').css('display', 'none');
+		}
+	}
+
+	defineMobRatio();
+
 	$('#wrapper').animate({'opacity': 1}, 4000);
 
 	if ( $.browser.safari ) {
@@ -187,7 +204,6 @@ jQuery(document).ready(function($) {
 		$('ul.tools-buttons.filters-tb li').css({'margin-top': 0 + 'px'});
 		$('#main-image').css({width: 240 + 'px', height: 165 + 'px', 'margin-top': 35 + 'px', 'margin-left': 35 + 'px', 'float': 'left'});
 		$('#painting-img').css({width: 240 + 'px', height: 165 + 'px'});
-		$('.paintings').css('display', 'none');
 
 		$('#main-image p').css({'opacity': 0, height: 0});
 		$('.museum-button.at-the-backyard').css({width: 100 + 'px', height: 55 + 'px', 'margin-top': 60 + 'px'});
@@ -1576,6 +1592,7 @@ jQuery(document).ready(function($) {
 		} else if (window.location.href.indexOf('inst') > 0 || window.location.href.indexOf('inter') > 0 || window.location.href.indexOf('perf') > 0 || window.location.href.indexOf('media') > 0) {
 			genericAnimation();
 		}
+		defineMobRatio();
 		setBgImageSize();
 		museumResponsive();
 		surfaceResponsive();

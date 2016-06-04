@@ -27,6 +27,26 @@ body #wrapper {
 	width: 100%;
 }
 
+#disclaimer {
+	display: none;
+	color: black;
+}
+
+#disclaimer p {
+	color: white;
+	background-color: #31b2ee;
+	padding: 15px 20px 18px;
+	font-size: 125%;
+	width: 200px;
+	text-align: center;
+	border-radius: 12px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -38px;
+	margin-left: -120px;
+}
+
 ul {
 	list-style: none;
 }
@@ -1638,7 +1658,8 @@ div.at-the-backyard {
     line-height: 120%;
     height: auto;
     position: relative;
-	top: 325px;
+	top: 50%;
+	margin-top: -66px;
     color: white;
 }
 
@@ -2921,7 +2942,7 @@ ul.logotypes li a {
 	}
 
 	#surface-canvas p {
-		top: 140px;
+		margin-top: -66px;
 		font-size: 175% !important;
 	}
 
@@ -3588,7 +3609,7 @@ ul.logotypes li a {
 	#surface-canvas p {
 		width: 190px !important;
 		border-radius: 8px !important;
-		top: 55px;
+		margin-top: -28px;
 		font-size: 100% !important;
 		padding: 10px 0 15px !important;
 	}
@@ -3761,7 +3782,7 @@ ul.logotypes li a {
 	ul.surfaces {
 		width: 120px;
 		margin-top: 70px;
-		margin-left: -238px
+		margin-left: -245px !important;
 	}
 
 	ul.surfaces li {
@@ -3781,7 +3802,6 @@ ul.logotypes li a {
 
 	#surface-canvas p {
 		width: 195px !important;
-		top: 50px;
 		font-size: 100% !important;
 	}
 

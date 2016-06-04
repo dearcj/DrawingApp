@@ -353,8 +353,8 @@ function applyFilter(canvId, imgData, filterNumber) {
 
   if (filterNumber == 8) {
     cb = kaleidoscope(saveImgCB, canvId, imgData);
-    window.filterTag = 'искажение';
-    window.filterInnerTag = 'искажение';
+    window.filterTag = 'калейдоскоп';
+    window.filterInnerTag = 'калейдоскоп';
 
   }
 
