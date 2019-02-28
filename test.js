@@ -1,7 +1,7 @@
 /**
  * Created by mac-pc on 12/12/15.
  */
-//
+
 var initApplication = function() {
   lcg.setSeed(100);
   window.brushMode = 0;
@@ -11,9 +11,6 @@ var initApplication = function() {
   var frontCtx = elDraw.getContext('2d');
 
   var canvas = new Canvas(frontCtx, backCtx, window.selectedSurface);
-
-//  history.replaceState( {} , null, this.location.pathname );
-
   window.mainCanvasObject = canvas;
 
   var brushScotch = new ScotchBrush();
@@ -24,9 +21,6 @@ var initApplication = function() {
   var brushThread = new ThreadBrush();
   var brushPistol = new PistolBrush();
   var brushCatchup = new CatchupBrush();
-
-  //canvas.currentBrush = brushOrange;
-  //brushOrange.mode = 1;
 
   document.getElementById('btn-scotch').addEventListener(window.eventType, function() {
     canvas.cursorSrc = window.relPath + 'cursors/c_scotch.png';
@@ -48,12 +42,6 @@ var initApplication = function() {
     canvas.currentBrush = brushScotch;
     brushScotch.onSelect();
   });
-
-/*  document.getElementById('btn-scotch-3').addEventListener(window.eventType, function() {
-    brushScotch.mode = 3;
-    canvas.currentBrush = brushScotch;
-    brushScotch.onSelect();
-  })*/
 
   document.getElementById('btn-coal-1').addEventListener(window.eventType, function() {
     canvas.cursorSrc = window.relPath + 'cursors/c_chalk-1.png';
@@ -188,34 +176,13 @@ var initApplication = function() {
     brushPistol.onSelect();
 
   });
-/*
 
-  btnScotch.addEventListener(window.eventType, function () {canvas.currentBrush = brushScotch;});
-  btnCoal.addEventListener(window.eventType, function () {canvas.currentBrush = brushCoal;});
-  btnOrange.addEventListener(window.eventType, function () {canvas.currentBrush = brushOrange;});
-  btnDenim.addEventListener(window.eventType, function () {canvas.currentBrush = brushDenim;});
-  btnGrass.addEventListener(window.eventType, function () {canvas.currentBrush = brushGrass;});
-  btnCatchup.addEventListener(window.eventType, function () {canvas.currentBrush = brushCatchup;});
-  btnPistol.addEventListener(window.eventType, function () {canvas.currentBrush = brushPistol;});
-  btnThread.addEventListener(window.eventType, function () {canvas.currentBrush = brushThread;});*/
   canvas.redraw(backCtx);
-  /*elDraw.onmousedown = function(e) {
-    console.log('start action');
-    e.preventDefault();
-    canvas.startAction(e);
-  };
-  */
 
   elDraw.ontouchstart = function(e) {
     e.preventDefault();
     canvas.startAction(e);
   };
-
-/*  elDraw.ontouchmove = function(e) {
-    console.log('touchmove eldraw');
-    canvas.mouseMoveAction(e);
-  };*/
-
 
   elDraw.click = function(e) {
     canvas.startAction(e);
@@ -247,7 +214,6 @@ var initApplication = function() {
     if (canvas.state.drawState)
       canvas.finishAction(e);  }, false );
 
-
   window.temporaryFilterImages = [];
   var src = relPath + 'filters/diptih.png';
   window.temporaryFilterImages[src] = new Image();
@@ -265,5 +231,4 @@ var initApplication = function() {
 };
 
 var goToTools = document.getElementById('go-to-tools');
-
 goToTools.addEventListener(window.eventType, function () {initApplication();});

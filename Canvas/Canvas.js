@@ -118,9 +118,6 @@ Canvas.prototype.mouseMoveAction = function(e) {
 
 };
 
-
-
-
 Canvas.prototype.resetCanvas = function () {
 
 	var cursCanv =   document.getElementById('cursor-canvas');
@@ -257,8 +254,6 @@ Canvas.prototype.finishAction = function (e) {
 	this.state.drawState = null;
 	this.actions[this.actions.length - 1].brush.onFinish();
 	var t = this;
-//	setTimeout(function(){}, 200);
-
 };
 
 Canvas.prototype.startAction = function (e) {

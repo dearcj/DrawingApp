@@ -1,12 +1,12 @@
 /**
- * Created by KURWINDALLAS on 14.12.2015.
+ * Created by dearcj on 14.12.2015.
  */
 extend(SmoothBrush, Brush);
 
 function SmoothBrush(color) {
 	Brush.apply(this, color);
 
-	this.name = 'мягкая кисть';
+	this.name = 'пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ';
 
 	this.w = 40;
 }

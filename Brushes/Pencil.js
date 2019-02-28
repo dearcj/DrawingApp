@@ -1,5 +1,5 @@
 /**
- * Created by KURWINDALLAS on 14.12.2015.
+ * Created by dearcj on 14.12.2015.
  */
 
 extend(Pencil, Brush);
